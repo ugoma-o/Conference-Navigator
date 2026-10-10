@@ -72,7 +72,7 @@ class PipelineTests(unittest.TestCase):
         self.assertIsNone(c['limitType'])
         self.assertEqual(self.data['conferences'][0]['start'],'2027-02-18')
     def test_prevent_bad_edit(self):
-        report={'proposals':[{'id':'123','record_type':'conference','record_id':'acro27','field':'open',
+        report={'schema_version':2,'proposals':[{'id':'123','record_type':'conference','record_id':'acro27','field':'open',
                 'current_value':'2026-08-14','proposed_value':'2026-11-12','source_url':'https://acro.org/page/abstracts','evidence':'one source'}]}
         with self.assertRaisesRegex(ValueError,'Opening cannot'):approve(copy.deepcopy(self.data),report,'123','Resident Admin')
     def test_no_xss_report(self):
@@ -107,7 +107,7 @@ class EndToEndTests(unittest.TestCase):
             proposed='2026-10-08' if old != '2026-10-08' else '2026-10-09'
             from pipeline.core import short_id
             pid=short_id('conference','acro27','deadline',proposed,rec['url'])
-            report={'proposals':[{'id':pid,'record_type':'conference','record_id':'acro27',
+            report={'schema_version':2,'proposals':[{'id':pid,'record_type':'conference','record_id':'acro27',
                      'field':'deadline','current_value':old,'proposed_value':proposed,
                      'source_url':rec['url'],'evidence':f'Abstract deadline {proposed}'}]}
             reportfile=root/'report.json';reportfile.write_text(json.dumps(report))

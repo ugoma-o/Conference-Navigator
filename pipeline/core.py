@@ -51,6 +51,8 @@ class VisibleHTML(HTMLParser):
             self.parts.append(text)
 
 def textify(page: str, is_html=True):
+    if not is_html:
+        page=re.sub(r'(?:\r?\n)+', ' . ', page)
     if is_html:
         parser = VisibleHTML()
         parser.feed(page)
@@ -68,39 +70,143 @@ def parse_date(text: str):
     except ValueError:
         return None
 
-def extract_labeled_dates(text, kind, year=None):
-    """Return only labeled, explicit-year dates with nearby verbatim evidence.
+# Each candidate must be attached to its own dated clause. Never attach the
+# closing date of an opening-to-closing range to the word "open".
+SHORT_DATE = rf'(?:{MONTH_PATTERN})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s+20\d{{2}})?'
+OPEN_CLOSE_RANGE = re.compile(
+    rf'\b(?:abstract\s+)?submissions?\s+(?:are\s+)?open\s+from\s+'
+    rf'(?P<first>{SHORT_DATE})\s+(?:through|to|until|[-–])\s+'
+    rf'(?P<second>{SHORT_DATE})', re.I)
+OPEN_AND_CLOSE = re.compile(
+    rf'\b(?:abstract\s+)?submissions?\s+open\s+'
+    rf'(?P<first>{SHORT_DATE})\s+and\s+close\s+'
+    rf'(?P<second>{SHORT_DATE})', re.I)
+AWARD_RANGE = re.compile(
+    rf'\b(?:award|grant|scholarship)\s+applications?\s+(?:are\s+)?open\s+from\s+'
+    rf'(?P<first>{SHORT_DATE})\s+(?:through|to|until|[-–])\s+'
+    rf'(?P<second>{SHORT_DATE})', re.I)
 
-    This is intentionally a candidate generator, not a generic LLM guess.
+# Extra labels exist in real source pages, including the AANS abstract center.
+CONFERENCE_LABELS['open'].extend([
+    r'abstract\s+center\s+opens?',
+    r'call\s+for\s+submissions?\s+open',
+])
+CONFERENCE_LABELS['deadline'].extend([
+    r'abstract\s+center\s+closes?',
+    r'abstract\s+center\s+extension',
+    r'call\s+for\s+submissions?\s+clos(?:e|es)',
+])
+
+def _parts(text):
+    # ' . ' is the separator inserted for block-level HTML elements by textify.
+    return [part.strip().strip(' .') for part in re.split(r'\s+\.\s+', text) if part.strip().strip(' .')]
+
+def _date_for_range(part, year_hint=None):
+    """Resolve an explicitly written date, or a yearless date only within a
+    clearly linked OPEN/CLOSE range where the second date supplies the year."""
+    val=parse_date(part)
+    if val:
+        return val
+    if year_hint is None:
+        return None
+    m=re.search(rf'(?P<month>{MONTH_PATTERN})\s+(?P<day>\d{{1,2}})',part,re.I)
+    if not m:
+        return None
+    try:
+        return dt.date(year_hint,MONTHS[m.group('month').lower()],int(m.group('day'))).isoformat()
+    except ValueError:
+        return None
+
+def _year_plausible(value, conference_year):
+    return not conference_year or conference_year-1 <= int(value[:4]) <= conference_year
+
+def _cycle_matches_page(text, kind, conference_year, record_name=None):
+    """Conservative meeting-year gate. Do not recycle a 2026-only abstract
+    page as proof of deadlines for a 2027 meeting. Missing context -> no proposal.
+    Awards can be standalone and may not mention a meeting year."""
+    if kind != 'conference' or not conference_year:
+        return True
+    if not re.search(rf'\b{conference_year}\b',text):
+        return False
+    # Some sites place a generic future-year promotion in navigation while
+    # the actual abstract call is explicitly for an older year (ACG 2026 on
+    # a page with unrelated 2027 navigation, for example). Detect strong
+    # society-acronym-plus-year context and do not let the navigation year
+    # override an explicit old-cycle identity.
+    acronym=re.match(r'([A-Z][A-Z0-9&-]{1,9})\b',record_name or '')
+    if acronym:
+        abbr=re.escape(acronym.group(1))
+        named=set()
+        for m in re.finditer(rf'\b{abbr}[\s:.-]+(20\d{{2}})\b|\b(20\d{{2}})[\s:.-]+{abbr}\b',text,re.I):
+            named.add(int(m.group(1) or m.group(2)))
+        if named and conference_year not in named:
+            return False
+    return True
+
+def extract_labeled_dates(text, kind, year=None, record_name=None):
+    """Extract candidates only when source language explicitly binds a date to
+    the correct submission event. Conflicts are evaluated by check_sources.
+
+    Important: this is a conservative candidate generator, not verification.
     """
-    labels = AWARD_LABELS if kind == 'award' else CONFERENCE_LABELS
-    candidates = []
-    for field, patterns in labels.items():
-        for pattern in patterns:
-            for match in re.finditer(pattern, text, re.I):
-                # Short bounded span; do not match across sentence/panel boundaries.
-                tail = text[match.end():match.end()+82]
-                boundary = re.search(r'\s+\.\s+', tail)
-                if boundary:
-                    tail = tail[:boundary.start()]
-                dm = DATE_RE.search(tail)
-                if not dm or dm.start() > 45:
-                    continue
-                val = parse_date(dm.group())
-                if not val:
-                    continue
-                if year and not (int(year)-1 <= int(val[:4]) <= int(year)):
-                    continue
-                start = max(0, match.start()-70)
-                stop = min(len(text), match.end()+dm.end()+50)
-                quote = text[start:stop].strip()
-                candidates.append({'field': field, 'value':val, 'evidence':quote})
-    # A generic 'deadline to submit' must be on a page discussing abstracts;
-    # an unrelated grant/application deadline cannot become a conference deadline.
-    if kind == 'conference' and not re.search(r'abstract|scientific\s+submission',text,re.I):
+    if not _cycle_matches_page(text,kind,year,record_name):
         return []
-    unique = {(c['field'], c['value']):c for c in candidates}
-    return list(unique.values())
+    labels=AWARD_LABELS if kind=='award' else CONFERENCE_LABELS
+    parts=_parts(text)
+    found=[]
+    for i,clause in enumerate(parts):
+        # Range statements require special treatment. The second date must
+        # explicitly supply the year; only then may the first inherit it.
+        ranges=[AWARD_RANGE] if kind=='award' else [OPEN_CLOSE_RANGE,OPEN_AND_CLOSE]
+        matched_range=False
+        for rx in ranges:
+            for match in rx.finditer(clause):
+                finish=parse_date(match.group('second'))
+                if not finish: continue
+                begin=_date_for_range(match.group('first'),int(finish[:4]))
+                if not begin or begin>finish or (dt.date.fromisoformat(finish)-dt.date.fromisoformat(begin)).days>365:
+                    continue
+                for field,val in [('open',begin),('deadline',finish)]:
+                    if _year_plausible(val,year):
+                        found.append({'field':field,'value':val,'evidence':clause[:400]})
+                        matched_range=True
+        if matched_range:
+            # Do NOT run a generic 'open' match on the same range clause.
+            continue
+        for field,patterns in labels.items():
+            for pattern in patterns:
+                for label in re.finditer(pattern,clause,re.I):
+                    # Late-breaking terms should never become regular dates.
+                    vicinity=clause[max(0,label.start()-32):min(len(clause),label.end()+18)]
+                    if kind=='conference' and field in ('open','deadline') and re.search(r'late[- ]breaking',vicinity,re.I):
+                        continue
+                    # A fragment "open DATE and close DATE" must only be
+                    # parsed via a coherent range above; otherwise abstain.
+                    if field=='open' and re.search(r'\b(?:and\s+close|through|until|\bto\b)\b',clause[label.end():label.end()+110],re.I):
+                        continue
+                    tail=clause[label.end():label.end()+85]
+                    # Do not jump over unrelated labeled fields to find a date.
+                    next_label=re.search(r'\b(?:open|opens|close|closes|deadline|due|begin|begins)\b',tail,re.I)
+                    dm=DATE_RE.search(tail)
+                    if not dm and len(clause)<85 and label.end()>=len(clause)-25 and i+1<len(parts):
+                        # A heading like "Abstract Center Closes" followed by
+                        # "Thursday, October 1, 2026" is valid. Require that
+                        # the following block STARTS with a date/day-of-week.
+                        after=parts[i+1]
+                        if re.match(r'^(?:(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day,?\s+)?(?:'+MONTH_PATTERN+r')\s+\d{1,2}',after,re.I):
+                            tail=after[:65];dm=DATE_RE.search(tail);next_label=None
+                    if not dm or dm.start()>65:
+                        continue
+                    if next_label and next_label.start()<dm.start():
+                        continue
+                    val=parse_date(dm.group())
+                    if val and _year_plausible(val,year):
+                        found.append({'field':field,'value':val,'evidence':clause[:400] if dm.group() in clause else (clause+' / '+tail)[:400]})
+    # Pages that are not about abstract submissions cannot be evidence for a
+    # conference abstract deadline, even when they contain an unrelated date.
+    if kind=='conference' and not re.search(r'abstract|call for submissions|scientific\s+submission',text,re.I):
+        return []
+    return list({(h['field'],h['value'],h['evidence']):h for h in found}.values())
 
 def source_targets(data):
     targets = {}
@@ -154,60 +260,75 @@ def short_id(kind, record_id, field, value, url):
     return hashlib.sha256(f'{kind}|{record_id}|{field}|{value}|{url}'.encode()).hexdigest()[:16]
 
 def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=14, checked_at=None):
-    """Return report and persistent cache; replace fetcher in deterministic tests."""
-    cache = cache or {}
-    checked_at = checked_at or dt.datetime.now(dt.timezone.utc).isoformat()
-    targets = list(source_targets(data).items())
-    if limit is not None:
-        targets=targets[:limit]
-    output=[]; proposals=[]; updated=dict(cache)
-    by_kind = {
-        'conference':{c['id']:c for c in data['conferences']},
-        'award':{a['id']:a for a in data['awards']},
-    }
+    """Collect evidence; never edit conference or award records. Ambiguous
+    candidates across one or multiple sources are quarantined as conflicts."""
+    cache=cache or {}
+    checked_at=checked_at or dt.datetime.now(dt.timezone.utc).isoformat()
+    targets=list(source_targets(data).items())
+    if limit is not None: targets=targets[:limit]
+    output=[]; observed=[]; updated=dict(cache)
+    by_kind={'conference':{c['id']:c for c in data['conferences']},
+             'award':{a['id']:a for a in data['awards']}}
     for i,(url,records) in enumerate(targets):
-        if i and delay: time.sleep(delay)
+        if i and delay:time.sleep(delay)
         prior=cache.get(url,{})
         try:
             page,is_html=fetcher(url,timeout=timeout)
-            content = textify(page,is_html)
-            if len(content)<70:
-                raise ValueError('Source text too short for reliable monitoring')
+            content=textify(page,is_html)
+            if len(content)<70: raise ValueError('Source text too short for reliable monitoring')
             digest=hashlib.sha256(content.encode()).hexdigest()
             state='baseline' if not prior.get('digest') else 'changed' if prior['digest']!=digest else 'unchanged'
             for ref in records:
                 record=by_kind[ref['kind']][ref['id']]
-                year= int(ref['start'][:4]) if ref.get('start') else next((int(y) for y in re.findall(r'20\d{2}',ref['name'])),None)
+                year=int(ref['start'][:4]) if ref.get('start') else next((int(y) for y in re.findall(r'20\d{2}',ref['name'])),None)
                 if ref['kind']=='award' and record.get('conferenceId'):
                     linked=by_kind['conference'].get(record['conferenceId'])
-                    if linked and linked.get('start'): year=int(linked['start'][:4])
-                extracted=extract_labeled_dates(content, ref['kind'], year)
-                grouped={}
-                for hit in extracted:
-                    grouped.setdefault(hit['field'],[]).append(hit)
-                for field,hits in grouped.items():
-                    values={x['value'] for x in hits}
-                    if len(values)!=1:
-                        # Conflicting dates on one source are not actionable proposals.
-                        continue
-                    hit=hits[0]; old=record.get(field) or (record.get('opens') if ref['kind']=='award' and field=='open' else None)
-                    if old==hit['value']:
-                        continue
-                    proposal={
-                        'id':short_id(ref['kind'],ref['id'],field,hit['value'],url),
-                        'record_type':ref['kind'],'record_id':ref['id'],'record_name':ref['name'],
-                        'field':field,'current_value':old,'proposed_value':hit['value'],
-                        'source_url':url,'evidence':hit['evidence'],
-                        'review_status':'requires_human_verification',
-                        'reason':'Missing published date' if not old else 'Source date differs from current record',
-                    }
-                    proposals.append(proposal)
+                    if linked and linked.get('start'):year=int(linked['start'][:4])
+                for hit in extract_labeled_dates(content,ref['kind'],year,ref['name']):
+                    observed.append({**hit,'record_type':ref['kind'],'record_id':ref['id'],
+                                     'record_name':ref['name'],'source_url':url})
             updated[url]={'digest':digest,'checked_at':checked_at,'length':len(content)}
-            output.append({'url':url,'status':state,'records':records,'checked_at':checked_at, 'proposed_count':sum(p['source_url']==url for p in proposals)})
+            output.append({'url':url,'status':state,'records':records,'checked_at':checked_at,'proposed_count':0})
         except (HTTPError,URLError,TimeoutError,ValueError,OSError,UnicodeError) as error:
-            output.append({'url':url,'status':'unavailable','records':records,'checked_at':checked_at,'error':str(error)[:300],'proposed_count':0})
+            output.append({'url':url,'status':'unavailable','records':records,'checked_at':checked_at,
+                           'error':str(error)[:300],'proposed_count':0})
+    grouped={}
+    for hit in observed:
+        grouped.setdefault((hit['record_type'],hit['record_id'],hit['field']),[]).append(hit)
+    proposals=[];conflicts=[]
+    for (kind,record_id,field),hits in grouped.items():
+        values=sorted({h['value'] for h in hits})
+        if len(values)>1:
+            conflicts.append({'record_type':kind,'record_id':record_id,'record_name':hits[0]['record_name'],
+                              'field':field,'values':values,'sources':[
+                                  {'value':h['value'],'url':h['source_url'],'evidence':h['evidence']} for h in hits]})
+            continue
+        hit=hits[0];record=by_kind[kind][record_id]
+        old=record.get(field) or (record.get('opens') if kind=='award' and field=='open' else None)
+        if old==hit['value']:continue
+        # Do not propose implausible chronology or inferred post-meeting dates.
+        v=hit['value']
+        existing_open=(v if field=='open' else record.get('open') or record.get('opens'))
+        existing_deadline=(v if field=='deadline' else record.get('deadline'))
+        if existing_open and existing_deadline and existing_open>existing_deadline:continue
+        if kind=='conference' and record.get('start') and field in ('open','deadline') and v>record['start']:
+            continue
+        proposals.append({
+            'id':short_id(kind,record_id,field,v,hit['source_url']),
+            'record_type':kind,'record_id':record_id,'record_name':hit['record_name'],
+            'field':field,'current_value':old,'proposed_value':v,
+            'source_url':hit['source_url'],'evidence':hit['evidence'],
+            'review_status':'requires_human_verification',
+            'reason':'Missing published date' if not old else 'Source date differs from current record'})
     proposals.sort(key=lambda x:(x['record_type'],x['record_id'],x['field'],x['proposed_value']))
-    return ({'checked_at':checked_at,'source_count':len(output),'counts':{k:sum(x['status']==k for x in output) for k in ('baseline','changed','unchanged','unavailable')},'checks':output,'proposals':proposals,'publication':'No records changed. Reviewer approval required.'},updated)
+    conflicts.sort(key=lambda x:(x['record_type'],x['record_id'],x['field']))
+    for item in output:
+        item['proposed_count']=sum(p['source_url']==item['url'] for p in proposals)
+    report={'schema_version':2,'checked_at':checked_at,'source_count':len(output),
+            'counts':{k:sum(x['status']==k for x in output) for k in ('baseline','changed','unchanged','unavailable')},
+            'checks':output,'proposals':proposals,'conflicts':conflicts,
+            'publication':'No records changed. Reviewer approval required. Conflicted dates never proposed.'}
+    return report,updated
 
 def draft_cycle(data, target_year):
     """Produce an unpublished draft; NEVER carry dates or old validation forward."""
@@ -220,11 +341,15 @@ def draft_cycle(data, target_year):
         future={**entry}
         old_id=entry['id'];future['id']=re.sub(r'\d{2}$',str(target_year)[-2:],old_id) if re.search(r'\d{2}$',old_id) else f'{old_id}-{target_year}'
         future['name']=re.sub(r'\b'+str(year)+r'\b',str(target_year),entry['name'])
-        for field in ('open','deadline','lateOpen','lateDeadline','start','end','deadlineTime'):
+        for field in ('open','deadline','lateOpen','lateDeadline','start','end','deadlineTime','city','venue','location','state','country'):
             future[field]=None
         for field in ('fee','limit','limitType','limitNote','flag','presentationFormats','presentationPolicy','submissionCategoriesVerified'):
             future[field]=[] if field=='presentationFormats' else False if field=='submissionCategoriesVerified' else None
         future['types']=[]
+        for field in ('url','guideline','submissionSource'):
+            if future.get(field):
+                future['priorCycleSource'+field.capitalize()]=future[field]
+            future[field]=None
         future['evidence']='unannounced'
         future['note']='UNPUBLISHED DRAFT: Upcoming cycle not verified. Dates, eligibility, and category rules intentionally blank.'
         future['priorCycleId']=old_id
@@ -244,6 +369,8 @@ def validate(data):
     return True
 
 def approve(data, report, candidate_id, reviewer, timestamp=None):
+    if report.get('schema_version') != 2:
+        raise ValueError('Legacy monitoring report is unsafe to approve; run the updated monitor to create a fresh report')
     if not reviewer or len(reviewer.strip())<2:
         raise ValueError('Reviewer name is required')
     hits=[p for p in report.get('proposals',[]) if p['id']==candidate_id]
@@ -258,6 +385,10 @@ def approve(data, report, candidate_id, reviewer, timestamp=None):
     old=hit.get(field) or (hit.get('opens') if collection=='awards' and field=='open' else None)
     if old!=p['current_value']:
         raise ValueError('Record has changed since proposal; review again')
+    if field not in ('open','deadline','lateOpen','lateDeadline'):
+        raise ValueError('Date field not on update allowlist')
+    if any(c['record_type']==p['record_type'] and c['record_id']==p['record_id'] and c['field']==field for c in report.get('conflicts',[])):
+        raise ValueError('This date field has conflicting official evidence')
     if not p['source_url'].startswith('https://') or not parse_date(p['proposed_value']):
         raise ValueError('Invalid source or date')
     # Ensure an application/abstract opening cannot be after an existing closing date, etc.

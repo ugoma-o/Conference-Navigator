@@ -22,10 +22,20 @@ def report_html(report, path):
     """Human-readable, inert report; all page text is escaped."""
     escape=html.escape
     head='''<!doctype html><html lang="en"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RISE source review</title><style>body{max-width:1000px;margin:2rem auto;padding:1rem;font:16px/1.55 system-ui;color:#193c40;background:#f5f8f7}article{background:white;border:1px solid #d9e6e1;border-radius:12px;padding:1rem;margin:1rem 0}small,code{color:#59706b}code{overflow-wrap:anywhere}h1{font-size:1.8rem}h2{font-size:1.12rem}blockquote{margin:1rem 0;padding:.7rem 1rem;border-left:4px solid #6c9a84;background:#edf4f1}a{color:#155d6b}</style>'''
-    body=f'<h1>RISE Source Review Queue</h1><p>Checked: {escape(report["checked_at"])} · Sources: {report["source_count"]} · Proposed changes: {len(report["proposals"])}</p><p><b>Nothing in this report has been published.</b> Check the official webpage before approving any proposal.</p>'
+    body=f'<h1>RISE Source Review Queue</h1><p>Checked: {escape(report["checked_at"])} · Sources: {report["source_count"]} · Proposed changes: {len(report["proposals"])} · Conflicts: {len(report.get("conflicts",[]))}</p><p><b>Nothing in this report has been published.</b> Check the official webpage before approving any proposal.</p>'
     for p in report['proposals']:
         link=escape(p['source_url'],quote=True)
         body+=f'<article><h2>{escape(p["record_name"])} — {escape(p["field"])}</h2><p>Current: <b>{escape(str(p["current_value"]))}</b> → Proposed: <b>{escape(p["proposed_value"])}</b></p><p>Review ID: <code>{escape(p["id"])}</code></p><blockquote>{escape(p["evidence"])}</blockquote><p><a href="{link}" rel="noopener noreferrer" target="_blank">Official source ↗</a></p></article>'
+    conflicts=report.get('conflicts',[])
+    if conflicts:
+        body+=f'<h2>Conflicting official dates — blocked ({len(conflicts)})</h2><p>These fields are NOT eligible for approval until the organizer reconciles the dates.</p>'
+    for conflict in conflicts:
+        body+=f'<article><h2>{escape(str(conflict["record_name"]))} — {escape(str(conflict["field"]))}</h2>'
+        body+='<p><strong>BLOCKED. Conflicting dates: '+escape(', '.join(conflict['values']))+'</strong></p>'
+        for source in conflict['sources']:
+            body+='<blockquote>'+escape(source['value']+' — '+source['evidence'])+'</blockquote>'
+            body+='<p><a target="_blank" rel="noopener noreferrer" href="'+escape(source['url'],quote=True)+'">Review source ↗</a></p>'
+        body+='</article>'
     bad=[x for x in report['checks'] if x['status']=='unavailable']
     body+=f'<h2>Sources unavailable ({len(bad)})</h2>'
     for x in bad:
@@ -62,7 +72,7 @@ def main():
         write_json(args.cache,new_cache)
         write_json(args.report,report)
         report_html(report,args.report.with_suffix('.html'))
-        print(f'Checked {report["source_count"]} sources; {len(report["proposals"])} review proposals, {report["counts"]["unavailable"]} unavailable.')
+        print(f'Checked {report["source_count"]} sources; {len(report["proposals"])} review proposals, {len(report["conflicts"])} blocked conflicts, {report["counts"]["unavailable"]} unavailable.')
         print(f'Review {args.report} and {args.report.with_suffix(".html")}. No data changed.')
     elif args.cmd=='approve':
         report=read_json(args.report)
