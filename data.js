@@ -1354,7 +1354,7 @@ window.RISE_DATA = {
       "start": "2027-01-30",
       "end": "2027-01-30",
       "city": "Rancho Mirage, CA",
-      "open": null,
+      "open": "2026-08-28",
       "deadline": "2026-10-13",
       "lateOpen": null,
       "lateDeadline": null,
@@ -1375,7 +1375,19 @@ window.RISE_DATA = {
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "open": {
+          "url": "https://www.sgim.org/sgim-community/regions/southwest/",
+          "checked_at": "2026-10-10T23:44:46.866395+00:00",
+          "verified_by": "RISE conservative auto-publisher",
+          "source_quote": "Call for Submissions OPEN: August 28, 2026",
+          "confidence": "explicit_statement",
+          "corroborating_sources": [
+            "https://www.sgim.org/sgim-community/regions/southwest/"
+          ]
+        }
+      }
     },
     {
       "id": "acro27",
