@@ -1,0 +1,48 @@
+name: Test and publish RISE
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'styles.css'
+      - 'app.js'
+      - 'data.json'
+      - 'data.js'
+      - 'sync_data.py'
+      - 'pipeline/**'
+      - 'tests/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run safety and extraction tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate and build allowlisted site
+        run: python -m pipeline.build_site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy approved data and app
+        id: deploy
+        uses: actions/deploy-pages@v4
