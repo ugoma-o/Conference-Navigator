@@ -1,0 +1,54 @@
+name: Monitor official conference sources
+on:
+  schedule:
+    # Every Monday at 10:17 UTC; avoids heavy loads near the hour.
+    - cron: '17 10 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run safety and first-run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Restore previous page fingerprints
+        uses: actions/cache/restore@v4
+        with:
+          path: pipeline/.source_cache.json
+          key: rise-source-cache-${{ github.run_id }}
+          restore-keys: |
+            rise-source-cache-
+      - name: Check official pages; create reviewed candidates
+        run: python -m pipeline.cli scan --all --delay 0.7 --timeout 13
+      - name: Generate upcoming-year draft list (not published)
+        run: |
+          YEAR=$(date -u +%Y)
+          python -m pipeline.cli draft-cycle --year "$((YEAR + 1))"
+          python -m pipeline.cli draft-cycle --year "$((YEAR + 2))" --out pipeline/reports/following_year_draft.json
+      - name: Save latest page fingerprints
+        uses: actions/cache/save@v4
+        with:
+          path: pipeline/.source_cache.json
+          key: rise-source-cache-${{ github.run_id }}
+      - name: Upload evidence and readable report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rise-review-${{ github.run_id }}
+          path: pipeline/reports/
+          retention-days: 90
+          if-no-files-found: warn
+      - name: Open or update single review queue issue
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          MONITOR_RUN: ${{ github.run_id }}
+        run: python -m pipeline.issue_queue
