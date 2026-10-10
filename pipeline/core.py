@@ -1,6 +1,7 @@
-"""Fetch, compare and propose reviewable changes to RISE conference data.
+"""Fetch official sources and propose date changes with supporting evidence.
 
-No proposal is published without explicit reviewer approval. Standard-library only.
+Extraction itself does not publish. The independent auto_publish module enforces
+a conservative, unattended publication policy. Standard-library only.
 """
 from __future__ import annotations
 import datetime as dt
@@ -304,6 +305,7 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
                                   {'value':h['value'],'url':h['source_url'],'evidence':h['evidence']} for h in hits]})
             continue
         hit=hits[0];record=by_kind[kind][record_id]
+        matching_sources=sorted({h['source_url'] for h in hits})
         old=record.get(field) or (record.get('opens') if kind=='award' and field=='open' else None)
         if old==hit['value']:continue
         # Do not propose implausible chronology or inferred post-meeting dates.
@@ -318,6 +320,7 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
             'record_type':kind,'record_id':record_id,'record_name':hit['record_name'],
             'field':field,'current_value':old,'proposed_value':v,
             'source_url':hit['source_url'],'evidence':hit['evidence'],
+            'corroborating_sources':matching_sources,
             'review_status':'requires_human_verification',
             'reason':'Missing published date' if not old else 'Source date differs from current record'})
     proposals.sort(key=lambda x:(x['record_type'],x['record_id'],x['field'],x['proposed_value']))
@@ -327,7 +330,7 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
     report={'schema_version':2,'checked_at':checked_at,'source_count':len(output),
             'counts':{k:sum(x['status']==k for x in output) for k in ('baseline','changed','unchanged','unavailable')},
             'checks':output,'proposals':proposals,'conflicts':conflicts,
-            'publication':'No records changed. Reviewer approval required. Conflicted dates never proposed.'}
+            'publication':'Raw evidence only. Automatic publication is decided by a separate strict policy; conflicts are held.'}
     return report,updated
 
 def draft_cycle(data, target_year):
