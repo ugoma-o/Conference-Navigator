@@ -1,0 +1,58 @@
+name: Review and propose a dated change
+on:
+  workflow_dispatch:
+    inputs:
+      monitor_run_id:
+        description: 'Run ID of source monitor whose evidence you inspected'
+        type: string
+        required: true
+      candidate_id:
+        description: '16-character candidate ID from review report'
+        type: string
+        required: true
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download source evidence from specified monitoring run
+        uses: actions/download-artifact@v4
+        with:
+          name: rise-review-${{ inputs.monitor_run_id }}
+          run-id: ${{ inputs.monitor_run_id }}
+          github-token: ${{ github.token }}
+          path: pipeline/reports
+      - name: Apply one explicitly reviewed change in branch workspace
+        env:
+          CANDIDATE: ${{ inputs.candidate_id }}
+          REVIEWER: ${{ github.actor }}
+        run: python -m pipeline.cli approve --report pipeline/reports/review_queue.json --candidate "$CANDIDATE" --reviewer "$REVIEWER" --apply
+      - name: Validate updated database and browser bundle
+        run: |
+          python -m unittest discover -s tests -v
+          python -m pipeline.cli validate
+      - name: Create PR requiring normal review/merge
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ github.token }}
+          branch: rise-reviewed-${{ inputs.candidate_id }}
+          delete-branch: true
+          commit-message: 'RISE: reviewed official date update ${{ inputs.candidate_id }}'
+          title: 'RISE: reviewed conference date candidate ${{ inputs.candidate_id }}'
+          body: |
+            Candidate reviewed by @${{ github.actor }} from monitoring run ${{ inputs.monitor_run_id }}.
+            - Source evidence: Actions → monitor run ${{ inputs.monitor_run_id }} → report artifact.
+            - Confirm official page directly before merging.
+            - Merging will trigger site deployment if Pages is enabled.
+          add-paths: |
+            data.json
+            data.js
+          labels: |
+            source-reviewed
