@@ -256,6 +256,7 @@ def source_targets(data):
             urls = [item.get('url')]
             if kind == 'conference':
                 urls += [item.get('guideline'), item.get('submissionSource')]
+                urls += item.get('additionalSources') or []
             for url in urls:
                 if url and url.startswith('https://'):
                     targets.setdefault(url, []).append({'kind':kind,'id':item['id'],'name':item['name'],'start':item.get('start')})
