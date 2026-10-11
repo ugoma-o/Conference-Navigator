@@ -1,0 +1,420 @@
+/* RISE Conference Navigator — optional dark appearance.
+   Existing light mode remains unchanged. Event categories preserve their distinct
+   green/deadline, blue/open, purple/meeting, and amber/award associations. */
+
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-width:111px;min-height:39px;padding:8px 12px;flex-shrink:0;border:1px solid #cbdde9;
+  border-radius:9px;background:#f3f8fb;color:#174e72;font:750 12px/1.2 'Manrope','Segoe UI',sans-serif;
+  white-space:nowrap;transition:background .16s ease,border-color .16s ease,color .16s ease;}
+.theme-toggle:hover{background:#e5f2fa;border-color:#8bbbd4}
+.theme-toggle-icon{height:18px;width:18px;display:inline-flex;align-items:center;justify-content:center}
+.theme-toggle-icon svg{height:18px;width:18px}
+.theme-toggle:focus-visible{outline:3px solid #087db7;outline-offset:3px}
+@media(max-width:750px){
+ .topbar{gap:8px;padding-left:16px;padding-right:16px}
+ .topbar-right .date-note{display:none}
+ .topbar-right{gap:7px}
+}
+@media(max-width:470px){
+ .theme-toggle{min-width:38px;width:40px;height:40px;padding:7px}
+ .theme-toggle-text{display:none}
+ .topbar{padding-left:11px;padding-right:12px}
+ .topbar-left{gap:7px;min-width:0}
+ .workspace-title{min-width:0}
+}
+
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0c1622;
+  --ink:#e8eef5;
+  --muted:#a8b9c9;
+  --border:#2d4254;
+  --white:#152535;
+  --cream:#23455a;
+  --navy:#102c46;
+  --navy-dark:#0c253b;
+  --green:#5dbda5;
+  --orange:#e1a773;
+  --shadow:0 4px 22px rgba(0,0,0,.16);
+  --dark-surface:#142333;
+  --dark-raised:#1b3041;
+  --dark-soft:#203648;
+  --dark-ink:#e8eef5;
+  --dark-muted:#afc0cc;
+  --dark-link:#90cfee;
+  --dark-border:#304657;
+}
+html[data-theme="dark"] body{background:var(--bg);color:var(--dark-ink)}
+html[data-theme="dark"] .sidebar{background:#082b44;color:#d9edf8}
+html[data-theme="dark"] .side-label{color:#a5cce0}
+html[data-theme="dark"] .nav-item{color:#d1e5f1}
+html[data-theme="dark"] .nav-item:hover{background:#185174;color:#fff}
+html[data-theme="dark"] .nav-item.active{background:#234c68;color:#fff}
+html[data-theme="dark"] .nav-item.active .nav-ico{color:#a5dcf4}
+html[data-theme="dark"] .side-bottom p{color:#c3dce9}
+html[data-theme="dark"] .side-bottom>span{color:#a6cada}
+html[data-theme="dark"] .topbar{background:linear-gradient(100deg,#122536,#162b3d 100%);border-bottom-color:#304657}
+html[data-theme="dark"] .workspace-rise{background:linear-gradient(125deg,#93d4fa 5%,#67c9c6 64%,#efbe8b 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
+html[data-theme="dark"] .workspace-name{color:#edf5fb}
+html[data-theme="dark"] .workspace-title,
+html[data-theme="dark"] .date-note{color:#a7bed1}
+html[data-theme="dark"] .theme-toggle{background:#213b50;border-color:#41647c;color:#e2f3fd}
+html[data-theme="dark"] .theme-toggle:hover{background:#2a4a62;border-color:#77a9c7}
+html[data-theme="dark"] .menu-button{color:#e8f1f8}
+
+/* Primary cards, navigation, date controls, and structural panels. */
+html[data-theme="dark"] .conference-card,
+html[data-theme="dark"] #discoverView .conference-card,
+html[data-theme="dark"] .panel,
+html[data-theme="dark"] .horizon-panel,
+html[data-theme="dark"] .calendar-container,
+html[data-theme="dark"] .calendar-month-rail,
+html[data-theme="dark"] .calendar-month-events,
+html[data-theme="dark"] .funding-card,
+html[data-theme="dark"] .quality-card,
+html[data-theme="dark"] .stat,
+html[data-theme="dark"] .modal,
+html[data-theme="dark"] .calendar-day-dialog,
+html[data-theme="dark"] .empty-state{
+  background:var(--dark-surface);border-color:var(--dark-border);color:var(--dark-ink);
+  box-shadow:var(--shadow);
+}
+html[data-theme="dark"] .conference-card:hover,
+html[data-theme="dark"] #discoverView .conference-card:hover{
+  background:#1a2f42;border-color:#6594b0;box-shadow:0 5px 20px rgba(0,0,0,.25);
+}
+html[data-theme="dark"] .discovery-intro h1,
+html[data-theme="dark"] .page-heading h1,
+html[data-theme="dark"] .section-header h2,
+html[data-theme="dark"] .listing-title,
+html[data-theme="dark"] .panel h2,
+html[data-theme="dark"] .conf-title,
+html[data-theme="dark"] .row-identity .conf-title,
+html[data-theme="dark"] .card-metadata-value,
+html[data-theme="dark"] .row-date strong,
+html[data-theme="dark"] .fund-amount,
+html[data-theme="dark"] .calendar-events-head,
+html[data-theme="dark"] .calendar-day-dialog-header h3,
+html[data-theme="dark"] .horizon-top strong,
+html[data-theme="dark"] .horizon-year-heading span,
+html[data-theme="dark"] .horizon-month-label,
+html[data-theme="dark"] .horizon-count-row strong,
+html[data-theme="dark"] .modal-head h2,
+html[data-theme="dark"] .modal-section-title,
+html[data-theme="dark"] .detail-value,
+html[data-theme="dark"] .fund-conference-btn,
+html[data-theme="dark"] .export-panel-head h3,
+html[data-theme="dark"] .export-event-main strong,
+html[data-theme="dark"] .roadmap-explainer strong,
+html[data-theme="dark"] .roadmap-awaiting strong,
+html[data-theme="dark"] .roadmap-legend-item strong,
+html[data-theme="dark"] .calendar-main-caption strong,
+html[data-theme="dark"] .calendar-rail-head strong{color:#e8f2fa}
+html[data-theme="dark"] .discovery-intro p,
+html[data-theme="dark"] .page-heading p,
+html[data-theme="dark"] .section-header p,
+html[data-theme="dark"] .directory-subtitle,
+html[data-theme="dark"] .muted,
+html[data-theme="dark"] .specialty-hint,
+html[data-theme="dark"] .mini-specialty,
+html[data-theme="dark"] .row-identity .mini-specialty,
+html[data-theme="dark"] .row-label,
+html[data-theme="dark"] .row-date small,
+html[data-theme="dark"] .card-metadata-label,
+html[data-theme="dark"] .card-metadata-detail,
+html[data-theme="dark"] .date-note,
+html[data-theme="dark"] .horizon-top span,
+html[data-theme="dark"] .horizon-help,
+html[data-theme="dark"] .horizon-count-row,
+html[data-theme="dark"] .horizon-none,
+html[data-theme="dark"] .horizon-year,
+html[data-theme="dark"] .section-header p,
+html[data-theme="dark"] .calendar-date-note,
+html[data-theme="dark"] .calendar-rail-head span,
+html[data-theme="dark"] .calendar-rail-help,
+html[data-theme="dark"] .calendar-events-head span,
+html[data-theme="dark"] .cal-jump,
+html[data-theme="dark"] .agenda-date,
+html[data-theme="dark"] .calendar-empty-month,
+html[data-theme="dark"] .input-help,
+html[data-theme="dark"] .panel-heading p,
+html[data-theme="dark"] .fund-desc,
+html[data-theme="dark"] .fund-society,
+html[data-theme="dark"] .fund-info-row,
+html[data-theme="dark"] .source-list p,
+html[data-theme="dark"] .source-bottom,
+html[data-theme="dark"] .detail-sub,
+html[data-theme="dark"] .modal-head p,
+html[data-theme="dark"] .modal-roadmap-head p,
+html[data-theme="dark"] .step-description,
+html[data-theme="dark"] .plan-summary p,
+html[data-theme="dark"] .roadmap-disclaimer,
+html[data-theme="dark"] .roadmap-bottom,
+html[data-theme="dark"] .roadmap-tick,
+html[data-theme="dark"] .footer,
+html[data-theme="dark"] .calendar-footnote,
+html[data-theme="dark"] .export-panel-head p,
+html[data-theme="dark"] .export-event-main small,
+html[data-theme="dark"] .export-panel-bottom p,
+html[data-theme="dark"] .award-extra-steps,
+html[data-theme="dark"] .format-note p,
+html[data-theme="dark"] .fit-note p,
+html[data-theme="dark"] .calendar-day-dialog>p{color:var(--dark-muted)}
+html[data-theme="dark"] .eyebrow,
+html[data-theme="dark"] .panel-kicker,
+html[data-theme="dark"] .page-heading .eyebrow,
+html[data-theme="dark"] .directory-month-heading{color:#94ccec}
+html[data-theme="dark"] .card-footer,
+html[data-theme="dark"] .fund-info-row,
+html[data-theme="dark"] #discoverView .listing-header,
+html[data-theme="dark"] .funding-results-heading{border-color:var(--dark-border)}
+html[data-theme="dark"] .view-details,
+html[data-theme="dark"] .external-link,
+html[data-theme="dark"] .fund-conference-btn:hover,
+html[data-theme="dark"] .conference-cost-note a,
+html[data-theme="dark"] .conference-cost-detail .detail-sub a,
+html[data-theme="dark"] .source-bottom a{color:var(--dark-link)}
+
+/* All interactive inputs must remain legible, including native date picker. */
+html[data-theme="dark"] .chip,
+html[data-theme="dark"] #discoverView .chip,
+html[data-theme="dark"] .funding-specialty-chips .chip,
+html[data-theme="dark"] .f-chip,
+html[data-theme="dark"] .search-box,
+html[data-theme="dark"] .list-controls select,
+html[data-theme="dark"] .calendar-right select,
+html[data-theme="dark"] .cal-jump input,
+html[data-theme="dark"] .form-input,
+html[data-theme="dark"] .modal-project-picker select,
+html[data-theme="dark"] .modal-project-type select,
+html[data-theme="dark"] .presentation-pref,
+html[data-theme="dark"] .mobile-specialty-picker select,
+html[data-theme="dark"] .funding-mobile-picker select,
+html[data-theme="dark"] .abstract-input,
+html[data-theme="dark"] .readiness-options button,
+html[data-theme="dark"] .icon-button,
+html[data-theme="dark"] .today-button,
+html[data-theme="dark"] .horizon-scroll-button{
+  background:var(--dark-raised);color:#e0edf5;border-color:#426073;
+}
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select{accent-color:#70bedf}
+html[data-theme="dark"] .search-box input,
+html[data-theme="dark"] .search-box svg{color:#e1edf4}
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder{color:#94aabd;opacity:1}
+html[data-theme="dark"] .chip:hover,
+html[data-theme="dark"] #discoverView .chip:hover,
+html[data-theme="dark"] .funding-specialty-chips .chip:hover:not(.active),
+html[data-theme="dark"] .f-chip:hover{background:#2d4960;border-color:#85bada;color:#eff7fa}
+html[data-theme="dark"] .chip.active,
+html[data-theme="dark"] #discoverView .chip.active,
+html[data-theme="dark"] .funding-specialty-chips .chip.active,
+html[data-theme="dark"] .f-chip.active{background:#245d81;border-color:#74afd1;color:#fff}
+html[data-theme="dark"] .selected-specialty{background:#20465d;color:#d3ecfb;border-color:#44758e}
+html[data-theme="dark"] .listing-count,
+html[data-theme="dark"] .directory-title-row .listing-count{color:#b4cddd;background:transparent}
+html[data-theme="dark"] .explore-mode-switch{background:#1e3345;border-color:#3a566b}
+html[data-theme="dark"] .explore-mode-button{color:#bad0df}
+html[data-theme="dark"] .explore-mode-button:hover{background:#29465b;color:#eff7fd}
+html[data-theme="dark"] .explore-mode-button.active{background:#345773;border-color:#689bb8;color:white}
+html[data-theme="dark"] .explore-calendar-description{color:#b6c9d6}
+html[data-theme="dark"] .btn-soft{background:#244559;color:#d3efff;border-color:#416d87}
+html[data-theme="dark"] .btn-primary{background:#177caf;color:#fff}
+html[data-theme="dark"] .btn-primary:hover{background:#106991}
+
+/* Horizon month selector and source/quality metrics. */
+html[data-theme="dark"] .horizon-month{background:#182b3a;border-color:#294457}
+html[data-theme="dark"] .horizon-month:hover,
+html[data-theme="dark"] .horizon-month.current{background:#244056;border-color:#476b81}
+html[data-theme="dark"] .horizon-month.selected{background:#274f6b;border-color:#6fb0d5;box-shadow:inset 0 0 0 1px #6fb0d5}
+html[data-theme="dark"] .horizon-count-row strong,
+html[data-theme="dark"] .horizon-month.selected .horizon-count-row strong,
+html[data-theme="dark"] .horizon-month.selected .horizon-count-row,
+html[data-theme="dark"] .horizon-month-label{color:#e4f1fa}
+html[data-theme="dark"] .horizon-month:not(.selected) .horizon-count{color:#afc4d1}
+html[data-theme="dark"] .horizon-year-heading{background:var(--dark-surface)}
+html[data-theme="dark"] .horizon-clear{color:#91caee}
+html[data-theme="dark"] .quality-card span{color:#b5c8d5}
+html[data-theme="dark"] .stat-label,
+html[data-theme="dark"] .stat-label-small{color:#a9bdcd}
+
+/* Calendar: dark cells but retain all five event legend colors. */
+html[data-theme="dark"] .weekday-grid{background:#203448;border-bottom-color:#385368}
+html[data-theme="dark"] .weekday-grid span{color:#c4d3df}
+html[data-theme="dark"] .day-cell{background:#162637;border-right-color:#344a5b;border-bottom-color:#344a5b}
+html[data-theme="dark"] .day-cell.outside{background:#101c2a}
+html[data-theme="dark"] .day-num{color:#cadce6}
+html[data-theme="dark"] .day-cell.outside .day-num{color:#72889a}
+html[data-theme="dark"] .day-cell.today .day-num{background:#387caa;color:white}
+html[data-theme="dark"] .calendar-month-rail{background:var(--dark-surface)}
+html[data-theme="dark"] .calendar-rail-head,
+html[data-theme="dark"] .calendar-rail-help{border-color:var(--dark-border)}
+html[data-theme="dark"] .calendar-rail-help{background:#192d3e}
+html[data-theme="dark"] .rail-year-label{background:#213e53;color:#d0e9f6;border-color:#36566d}
+html[data-theme="dark"] .rail-month{background:#172a3b;border-color:#30495d;color:#d5e3ee}
+html[data-theme="dark"] .rail-month:hover{background:#244258}
+html[data-theme="dark"] .rail-month.active,
+html[data-theme="dark"] .calendar-month-rail .active{background:#28516d;color:#eff9fc}
+html[data-theme="dark"] .rail-empty{color:#7892a7}
+html[data-theme="dark"] .calendar-main-caption>span{background:#1f3749;border-color:#35566c;color:#d5e5f1}
+html[data-theme="dark"] .calendar-month-events .agenda-row{border-color:#2e4659}
+html[data-theme="dark"] #calendarView .event-pill.open,
+html[data-theme="dark"] #calendarView .calendar-agenda-event.open{background:#203e55;color:#b8e0fa;border-color:#5da3d1}
+html[data-theme="dark"] #calendarView .event-pill.deadline,
+html[data-theme="dark"] #calendarView .calendar-agenda-event.deadline{background:#1c423c;color:#a4e6d4;border-color:#5baa97}
+html[data-theme="dark"] #calendarView .event-pill.meeting,
+html[data-theme="dark"] #calendarView .calendar-agenda-event.meeting{background:#403250;color:#e0c9f6;border-color:#9673be}
+html[data-theme="dark"] #calendarView .event-pill.awardOpen,
+html[data-theme="dark"] #calendarView .calendar-agenda-event.awardOpen{background:#214646;color:#a4e2df;border-color:#67aeab}
+html[data-theme="dark"] #calendarView .event-pill.award,
+html[data-theme="dark"] #calendarView .calendar-agenda-event.award{background:#4c392b;color:#f5d2a9;border-color:#c59a70}
+html[data-theme="dark"] #calendarView .calendar-agenda-event:hover{filter:brightness(1.14)}
+html[data-theme="dark"] #calendarView .calendar-grid .meeting-ribbon{background:#4b3b60;color:#ecdafa}
+html[data-theme="dark"] #calendarView .calendar-grid .meeting-ribbon:hover{background:#64507f}
+html[data-theme="dark"] .calendar-day-dialog-header button,
+html[data-theme="dark"] .modal-close{background:#294456;color:#eaf5fc;border:1px solid #45687c}
+html[data-theme="dark"] .calendar-day-dialog{background:#182b3c}
+html[data-theme="dark"] .calendar-day-list .calendar-agenda-event{color:#e4f0f7}
+
+/* Conference details, financial information, funding, source explanations. */
+html[data-theme="dark"] .modal-head{border-color:var(--dark-border)}
+html[data-theme="dark"] .detail-block,
+html[data-theme="dark"] .conference-costs,
+html[data-theme="dark"] .fund-conference,
+html[data-theme="dark"] .fund-conference.independent,
+html[data-theme="dark"] .related-award,
+html[data-theme="dark"] .award-window,
+html[data-theme="dark"] .calendar-export-panel,
+html[data-theme="dark"] .export-event-row,
+html[data-theme="dark"] .export-event-row:has(input:checked),
+html[data-theme="dark"] .modal-roadmap,
+html[data-theme="dark"] .roadmap-block,
+html[data-theme="dark"] .fit-note,
+html[data-theme="dark"] .format-note,
+html[data-theme="dark"] .submission-warning{
+  background:#1a2d3f;color:#dce9f2;border-color:#354f61;
+}
+html[data-theme="dark"] .detail-label,
+html[data-theme="dark"] .fund-conference>span,
+html[data-theme="dark"] .award-window span{color:#aac4d3}
+html[data-theme="dark"] .detail-sub,
+html[data-theme="dark"] .cost-detail-row span,
+html[data-theme="dark"] .conference-cost-description span,
+html[data-theme="dark"] .conference-cost-note,
+html[data-theme="dark"] .fund-conference small,
+html[data-theme="dark"] .category-provenance{color:#adc3d1}
+html[data-theme="dark"] .cost-detail-row strong,
+html[data-theme="dark"] .conference-cost-description strong,
+html[data-theme="dark"] .conference-cost-value,
+html[data-theme="dark"] .award-window strong,
+html[data-theme="dark"] .related-award-details strong,
+html[data-theme="dark"] .fit-note strong,
+html[data-theme="dark"] .format-note strong{color:#e5f0f8}
+html[data-theme="dark"] .conference-cost-line+.conference-cost-line,
+html[data-theme="dark"] .conference-cost-note,
+html[data-theme="dark"] .award-window>div+div,
+html[data-theme="dark"] .export-panel-bottom,
+html[data-theme="dark"] .export-event-group,
+html[data-theme="dark"] .format-note .preference-caption{border-color:#354f61}
+html[data-theme="dark"] .modal-note{background:#203a45;color:#d5e7e4;border-left-color:#5aa88c}
+html[data-theme="dark"] .modal-note.warning{background:#48382d;color:#f1c9a9;border-left-color:#c9905c}
+html[data-theme="dark"] .funding-banner,
+html[data-theme="dark"] .plan-summary,
+html[data-theme="dark"] .v6-feasibility,
+html[data-theme="dark"] .planner-type-highlight,
+html[data-theme="dark"] .modal-project-picker,
+html[data-theme="dark"] .lead-months-group,
+html[data-theme="dark"] .roadmap-awaiting{
+  background:#1c3547;border-color:#426477;color:#e2f0f7;
+}
+html[data-theme="dark"] .funding-banner strong,
+html[data-theme="dark"] .planner-type-label,
+html[data-theme="dark"] .planner-type-help,
+html[data-theme="dark"] .modal-project-picker .modal-project-type,
+html[data-theme="dark"] .modal-project-picker .modal-project-type strong,
+html[data-theme="dark"] .modal-project-picker .picker-step,
+html[data-theme="dark"] .modal-project-picker .picker-description,
+html[data-theme="dark"] .roadmap-awaiting{color:#d7e8f1}
+html[data-theme="dark"] .funding-banner p{color:#b7cddd}
+html[data-theme="dark"] .plan-warning,
+html[data-theme="dark"] .v6-feasibility.caution,
+html[data-theme="dark"] .v6-feasibility.missed{background:#45382d;border-color:#6c5340;color:#f5d4ac}
+html[data-theme="dark"] .plan-warning p,
+html[data-theme="dark"] .v6-feasibility.caution p,
+html[data-theme="dark"] .v6-feasibility.missed p{color:#edcba3}
+html[data-theme="dark"] .v6-feasibility p,
+html[data-theme="dark"] .v6-feasibility p span{color:#c2d5dd}
+html[data-theme="dark"] .modal-project-picker select,
+html[data-theme="dark"] .planner-type-highlight .planner-type-select{background:#142838!important;color:#e4f1f8!important;border-color:#5c8499!important}
+html[data-theme="dark"] .fund-conference-btn{color:#9cd6ed}
+html[data-theme="dark"] .fund-conference-btn:hover{color:#d5effb}
+html[data-theme="dark"] .fund-cat{color:#e3b88d}
+html[data-theme="dark"] .funding-card .fund-ico{background:#254e5a;color:#a6e4db}
+html[data-theme="dark"] .quality-card strong,
+html[data-theme="dark"] .funding-card strong{color:#eaf4fa}
+html[data-theme="dark"] .export-panel-dismiss{background:#2a4357;color:#d8edf6}
+html[data-theme="dark"] .export-event-row:hover,
+html[data-theme="dark"] .export-event-row:has(input:checked){border-color:#81b0c5}
+html[data-theme="dark"] .export-group-heading,
+html[data-theme="dark"] .export-event-main strong{color:#dceefa}
+html[data-theme="dark"] .export-group-heading span,
+html[data-theme="dark"] .export-empty,
+html[data-theme="dark"] .export-missing{color:#afc2d0}
+
+/* Research timeline backgrounds and labels. Keep event-marker colors unchanged. */
+html[data-theme="dark"] .roadmap-lane,
+html[data-theme="dark"] .v6-stages .roadmap-lane{
+  background:repeating-linear-gradient(90deg,#2a4252 0,#2a4252 1px,transparent 1px,transparent 10%);
+}
+html[data-theme="dark"] .roadmap-row-label,
+html[data-theme="dark"] .v6-stages .roadmap-row-label,
+html[data-theme="dark"] .v7-roadmap .v6-stages .roadmap-row-label{
+  background:#1a2d3f!important;color:#d9e9f2!important;box-shadow:5px 0 0 #1a2d3f,-2px 0 0 #1a2d3f!important;
+}
+html[data-theme="dark"] .roadmap-legend-item{background:#223747;border-color:#3b5265}
+html[data-theme="dark"] .roadmap-legend-item small{color:#b2c9d4}
+html[data-theme="dark"] .roadmap-ticks,
+html[data-theme="dark"] .v6-axis,
+html[data-theme="dark"] .v6-bottom-rail,
+html[data-theme="dark"] .roadmap-event-rail{border-color:#3a5263}
+html[data-theme="dark"] .roadmap-empty{background:#203647;color:#b5cbd6;border-color:#567287}
+html[data-theme="dark"] .v7-buffer-note{background:#3b372d;color:#f3d3ad;border-color:#746449}
+html[data-theme="dark"] .v7-buffer-note span{color:#e0cda6}
+html[data-theme="dark"] .v6-roadmap-heading,
+html[data-theme="dark"] .v6-roadmap-heading span,
+html[data-theme="dark"] .roadmap-axis-label,
+html[data-theme="dark"] .roadmap-tick{color:#afc5d1}
+html[data-theme="dark"] .v6-event-label.open,
+html[data-theme="dark"] .roadmap-event-flag.open{background:#23475f;color:#c0e2f6;border-color:#4b8ab0}
+html[data-theme="dark"] .v6-event-label.deadline,
+html[data-theme="dark"] .roadmap-event-flag.due{background:#245043;color:#b9ead3;border-color:#5caa8a}
+html[data-theme="dark"] .v6-event-label.conference,
+html[data-theme="dark"] .roadmap-event-flag.meeting{background:#49375e;color:#ead8fb;border-color:#9976b9}
+html[data-theme="dark"] .v7-roadmap .v6-event-label.internal{background:#4c432e;color:#f7ddac;border-color:#9f8545}
+html[data-theme="dark"] .v6-today-tag,
+html[data-theme="dark"] .roadmap-you{background:#4b3b2d;color:#f2c89d;border-color:#ad8156}
+html[data-theme="dark"] .readiness-options button{background:#1c3445;color:#d7eafa;border-color:#45677c}
+html[data-theme="dark"] .readiness-options button.selected{background:#347d85;color:white;border-color:#71b9bb}
+html[data-theme="dark"] .step-ball{background:#1d4050;color:#d6f6eb;border-color:#51888a}
+html[data-theme="dark"] .step-line{background:#375969}
+html[data-theme="dark"] .step-date,
+html[data-theme="dark"] .format-note .preference-caption{color:#a3d5d7}
+
+/* Status labels are informational; accessible contrast is maintained in dark. */
+html[data-theme="dark"] .status-pill.verified{background:#23483f;color:#b4e2cb}
+html[data-theme="dark"] .status-pill.tracker{background:#25465d;color:#b6e1f6}
+html[data-theme="dark"] .status-pill.pending{background:#334050;color:#d1deea}
+html[data-theme="dark"] .status-pill.conflict{background:#523e2e;color:#f4d0a5}
+html[data-theme="dark"] .status-pill.open{background:#245447;color:#c5f0d7}
+html[data-theme="dark"] .status-pill.closed{background:#333f4b;color:#c7d1d9}
+html[data-theme="dark"] .status-pill.upcoming{background:#513e2b;color:#f4cf9c}
+html[data-theme="dark"] .estimate-chip{background:#463b31;color:#f0ce9e;border-color:#aa875d}
+html[data-theme="dark"] .confirmed-chip{background:#254e42;color:#c5efdc;border-color:#619d86}
+html[data-theme="dark"] .mini-tag{background:#274356;color:#d9ebf6;border-color:#3d6277}
+html[data-theme="dark"] .toast{background:#2d4b60;color:#fff}
+
+@media(prefers-reduced-motion:reduce){
+ .theme-toggle{transition:none}
+}
