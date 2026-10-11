@@ -524,7 +524,7 @@ window.RISE_DATA = {
       "specialty": "Endocrinology",
       "start": "2027-06-05",
       "end": "2027-06-07",
-      "city": "Toronto, Canada",
+      "city": "Toronto, ON, Canada",
       "open": null,
       "deadline": null,
       "lateOpen": null,
@@ -540,12 +540,19 @@ window.RISE_DATA = {
       ],
       "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
       "guideline": null,
-      "evidence": "tracker",
-      "note": "International meeting. 2027 abstract dates not yet confirmed in RISE tracker.",
+      "evidence": "official",
+      "note": "International meeting. 2027 abstract dates not yet confirmed in RISE tracker. Meeting location and dates confirmed from the organizer's current published schedule.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "city": {
+          "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer page"
+        }
+      }
     },
     {
       "id": "acg27",
@@ -769,7 +776,7 @@ window.RISE_DATA = {
       "specialty": "Allergy & Immunology",
       "start": "2027-02-19",
       "end": "2027-02-22",
-      "city": "To be announced",
+      "city": "New Orleans, LA",
       "open": null,
       "deadline": null,
       "lateOpen": null,
@@ -785,13 +792,20 @@ window.RISE_DATA = {
         "Asthma"
       ],
       "url": "https://annualmeeting.aaaai.org/",
-      "guideline": null,
-      "evidence": "tracker",
-      "note": "Meeting dates seen in NIH events listing; abstract submission requires verification.",
+      "guideline": "https://annualmeeting.aaaai.org/attendee/future-dates-locations",
+      "evidence": "official",
+      "note": "Meeting dates seen in NIH events listing; abstract submission requires verification. Meeting location and dates confirmed from the organizer's current published schedule.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "city": {
+          "url": "https://annualmeeting.aaaai.org/attendee/future-dates-locations",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer page"
+        }
+      }
     },
     {
       "id": "aaim27",
@@ -891,9 +905,9 @@ window.RISE_DATA = {
       "name": "Florida ACC FIT Forum 2027",
       "society": "Florida Chapter of ACC",
       "specialty": "Cardiology",
-      "start": null,
-      "end": null,
-      "city": "Florida (TBA)",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "city": "Miami, FL",
       "open": null,
       "deadline": "2027-01-05",
       "lateOpen": null,
@@ -908,13 +922,30 @@ window.RISE_DATA = {
         "Cardiovascular cases"
       ],
       "url": "https://accfl.org/Fit-Forum",
-      "guideline": null,
-      "evidence": "tracker",
-      "note": "Eligibility may be focused on fellows in training rather than residents.",
+      "guideline": "https://accfl.org/events",
+      "evidence": "official",
+      "note": "Eligibility may be focused on fellows in training rather than residents. Meeting location and dates confirmed from the organizer's current published schedule.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "city": {
+          "url": "https://accfl.org/events",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer page"
+        },
+        "start": {
+          "url": "https://accfl.org/events",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer page"
+        },
+        "end": {
+          "url": "https://accfl.org/events",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer page"
+        }
+      }
     },
     {
       "id": "saem27",
@@ -1308,12 +1339,19 @@ window.RISE_DATA = {
       ],
       "url": "https://www.aad.org/member/meetings-education/am27",
       "guideline": null,
-      "evidence": "tracker",
-      "note": "Official site lists September 2 abstract proposal deadline; year/context should be verified from linked call.",
+      "evidence": "official",
+      "note": "The AAD 2027 official meeting page lists its abstract proposal deadline as September 2, 2026. Confirm the cutoff time and category with the organizer.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aad.org/member/meetings-education/am27",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer page"
+        }
+      }
     },
     {
       "id": "aapath27",
