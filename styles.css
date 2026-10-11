@@ -671,3 +671,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 #calendarView .calendar-grid .day-cell.has-ribbon:nth-child(7n + 6){z-index:3}
 #calendarView .calendar-grid .day-cell.has-ribbon:nth-child(7n + 7){z-index:2}
 #calendarView .calendar-grid .day-cell.has-ribbon:focus-within{z-index:20}
+
+/* Roadmap: visual and PDF export controls next to the existing calendar export. */
+.plan-output-head{align-items:flex-start;flex-wrap:wrap}
+.plan-export-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.plan-export-actions .btn{font-size:11px;white-space:nowrap;padding:10px 12px}
+@media(max-width:850px){.plan-export-actions{justify-content:flex-start;width:100%}}
