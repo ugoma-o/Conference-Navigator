@@ -54,6 +54,18 @@ class AbstractDiscoveryTests(unittest.TestCase):
         self.assertFalse(any('/membership/' in x['url'] for x in links))
         self.assertFalse(any('abstract-books' in x['url'] for x in links))
 
+    def test_generic_society_meetings_index_cannot_claim_another_event(self):
+        html='<html><a href="/meetings/other-meeting-2027/abstracts/">Submit Abstracts</a></html>'
+        found=discover_abstract_links(html,'https://society.example/meetings/',2027)
+        self.assertEqual(found,[])
+
+    def test_multi_meeting_site_keeps_the_specific_event_path(self):
+        html='''<html><a href="/meetings/oncology-2027/abstracts/">Abstract Information</a>
+        <a href="/meetings/cardiology-2027/abstracts/">Submit Abstracts</a></html>'''
+        found=discover_abstract_links(html,'https://society.example/meetings/oncology-2027/',2027)
+        self.assertEqual([item['url'] for item in found],
+                         ['https://society.example/meetings/oncology-2027/abstracts/'])
+
     def test_no_crawl_without_relevant_links(self):
         text='<html><a href="/annualmeeting/hotel/">Book Hotel</a></html>'
         self.assertEqual(discover_abstract_links(text,LANDING,2027),[])
