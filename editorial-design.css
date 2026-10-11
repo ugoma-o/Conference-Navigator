@@ -5,18 +5,18 @@
 
 /* 01. FOUNDATIONS */
 :root {
-  --ed-page:#f7f8f7;
+  --ed-page:#f3f7f9;
   --ed-paper:#ffffff;
-  --ed-paper-alt:#f1f4f4;
-  --ed-ink:#25333a;
-  --ed-heading:#1b303b;
-  --ed-muted:#60737e;
-  --ed-rule:#dce3e4;
-  --ed-accent:#176486;
-  --ed-accent-strong:#0d4e70;
-  --ed-hover:#f1f6f7;
-  --ed-serif:Georgia,'Iowan Old Style','Palatino Linotype',serif;
-  --ed-sans:Inter,'IBM Plex Sans','Segoe UI',Arial,sans-serif;
+  --ed-paper-alt:#e8f1f5;
+  --ed-ink:#253d4c;
+  --ed-heading:#103a59;
+  --ed-muted:#526d7b;
+  --ed-rule:#cbdce4;
+  --ed-accent:#008a96;
+  --ed-accent-strong:#00687e;
+  --ed-hover:#e1f2f4;
+  --ed-serif:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  --ed-sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;
   --bg:var(--ed-page);
   --ink:var(--ed-ink);
   --muted:var(--ed-muted);
@@ -24,16 +24,16 @@
   --shadow:none;
 }
 html[data-theme="dark"] {
-  --ed-page:#111b23;
-  --ed-paper:#16232d;
-  --ed-paper-alt:#1b2c38;
-  --ed-ink:#dfe9ee;
-  --ed-heading:#f0f5f7;
-  --ed-muted:#a7bdc9;
-  --ed-rule:#324653;
-  --ed-accent:#8ec5e3;
-  --ed-accent-strong:#c3e4f5;
-  --ed-hover:#213747;
+  --ed-page:#0c1925;
+  --ed-paper:#132736;
+  --ed-paper-alt:#203a4b;
+  --ed-ink:#dbeaf3;
+  --ed-heading:#f0f7fc;
+  --ed-muted:#a8c1d1;
+  --ed-rule:#355469;
+  --ed-accent:#51cbd1;
+  --ed-accent-strong:#a2e5ea;
+  --ed-hover:#244455;
   --bg:var(--ed-page);
   --ink:var(--ed-ink);
   --muted:var(--ed-muted);
@@ -161,9 +161,9 @@ html[data-theme="dark"] .theme-toggle:hover{background:var(--ed-hover);border-co
 .discovery-intro h1,.page-heading h1,
 html[data-theme="dark"] .discovery-intro h1,
 html[data-theme="dark"] .page-heading h1 {
-  font-family:var(--ed-serif);
+  font-family:var(--ed-sans);
   font-size:clamp(34px,3.5vw,46px);
-  font-weight:400;
+  font-weight:720;
   color:var(--ed-heading);
   letter-spacing:-.04em;
   line-height:1.17;
@@ -566,7 +566,7 @@ html[data-theme="dark"] .modal-project-picker{
 }
 .modal-head h2,
 html[data-theme="dark"] .modal-head h2{
-  font:400 clamp(26px,3vw,34px)/1.24 var(--ed-serif);
+  font:700 clamp(26px,3vw,34px)/1.24 var(--ed-sans);
   color:var(--ed-heading);
   letter-spacing:-.025em;
 }
@@ -737,3 +737,141 @@ html[data-theme="dark"] .matcher-strength{
 #discoverView .conference-card .month-match-meeting strong{color:#745496}
 html[data-theme="dark"] #discoverView .conference-card .month-match-due strong{color:#9bdabe}
 html[data-theme="dark"] #discoverView .conference-card .month-match-meeting strong{color:#d8bef0}
+
+
+/* 11. REFINED COLOR AND TYPOGRAPHY
+   One font family and a bolder, coherent institutional color hierarchy.
+   No left-border callouts, decorative stripes, or tinted note blocks. */
+html:not([data-design="classic"]) body,
+html:not([data-design="classic"]) body *:not(svg):not(path){
+  font-family:var(--ed-sans) !important;
+}
+/* Strong color is reserved for the sidebar, navigation, titles and actions. */
+html:not([data-design="classic"]) .sidebar,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar{
+  background:#0b3957;
+  color:#e7f2f6;
+  border-right:1px solid #1b526c;
+}
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar{background:#071f33}
+html:not([data-design="classic"]) .sidebar .brand-name,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .brand-name{color:#fff}
+html:not([data-design="classic"]) .sidebar .brand-subtitle,
+html:not([data-design="classic"]) .sidebar .side-label,
+html:not([data-design="classic"]) .sidebar .side-bottom p,
+html:not([data-design="classic"]) .sidebar .side-bottom>span,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .brand-subtitle,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .side-label,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .side-bottom p,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .side-bottom>span{color:#b8d8e4}
+html:not([data-design="classic"]) .sidebar .side-bottom-rule{background:rgba(201,231,239,.23)}
+html:not([data-design="classic"]) .sidebar .nav-item,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .nav-item{
+  color:#e9f3f7;
+  border:0;
+  border-radius:2px;
+  padding:11px 12px;
+}
+html:not([data-design="classic"]) .sidebar .nav-ico{color:#b7d9e5}
+html:not([data-design="classic"]) .sidebar .nav-item:hover,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .nav-item:hover{background:#174e67;color:#fff}
+html:not([data-design="classic"]) .sidebar .nav-item.active,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .nav-item.active{
+  background:#087e89;
+  color:#fff;
+  border:0;
+  font-weight:700;
+}
+html:not([data-design="classic"]) .sidebar .nav-item.active .nav-ico{color:#dffff9}
+html:not([data-design="classic"]) .topbar,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar{border-bottom:3px solid var(--ed-accent)}
+html:not([data-design="classic"]) .workspace-rise,
+html[data-theme="dark"]:not([data-design="classic"]) .workspace-rise{
+  font-weight:800;color:var(--ed-accent-strong);
+}
+html:not([data-design="classic"]) .discovery-intro h1,
+html:not([data-design="classic"]) .page-heading h1,
+html:not([data-design="classic"]) .modal-head h2,
+html[data-theme="dark"]:not([data-design="classic"]) .discovery-intro h1,
+html[data-theme="dark"]:not([data-design="classic"]) .page-heading h1,
+html[data-theme="dark"]:not([data-design="classic"]) .modal-head h2{
+  font-weight:720;
+  letter-spacing:-.035em;
+  color:var(--ed-heading);
+}
+html:not([data-design="classic"]) .section-header h2,
+html:not([data-design="classic"]) .listing-title,
+html:not([data-design="classic"]) .panel h2,
+html:not([data-design="classic"]) .modal-section-title{
+  font-weight:720;color:var(--ed-heading);
+}
+html:not([data-design="classic"]) .modal-section-title{font-size:19px;line-height:1.35}
+html:not([data-design="classic"]) .modal-note,
+html[data-theme="dark"]:not([data-design="classic"]) .modal-note,
+html:not([data-design="classic"]) .modal-note.warning,
+html[data-theme="dark"]:not([data-design="classic"]) .modal-note.warning{
+  display:block;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  padding:0;
+  margin:0;
+  color:var(--ed-ink);
+  font-size:16px;
+  line-height:1.75;
+  font-weight:400;
+}
+html:not([data-design="classic"]) .selected-specialty,
+html[data-theme="dark"]:not([data-design="classic"]) .selected-specialty{
+  border:0;background:transparent;padding:2px 0;
+  color:var(--ed-accent-strong);
+}
+html:not([data-design="classic"]) .matcher-strength,
+html[data-theme="dark"]:not([data-design="classic"]) .matcher-strength{border:0;background:transparent}
+html:not([data-design="classic"]) .matcher-reason,
+html[data-theme="dark"]:not([data-design="classic"]) .matcher-reason{
+  background:transparent;border:0;border-top:1px solid var(--ed-rule);
+  padding:12px 0;
+}
+html:not([data-design="classic"]) .status-pill{
+  background:transparent!important;
+  border:0;
+  border-bottom:2px solid currentColor;
+  padding:2px 0 3px;
+}
+html:not([data-design="classic"]) .horizon-month.selected,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-month.selected{
+  background:var(--ed-paper-alt);
+  border-bottom:3px solid var(--ed-accent);
+}
+html:not([data-design="classic"]) .horizon-month.selected .horizon-month-label,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-month.selected .horizon-month-label{
+  color:var(--ed-accent-strong);
+  font-weight:750;
+}
+html:not([data-design="classic"]) .btn-primary,
+html[data-theme="dark"]:not([data-design="classic"]) .btn-primary{
+  background:#007e8c;
+  border-color:#007e8c;
+  color:#fff;
+}
+html:not([data-design="classic"]) .btn-primary:hover,
+html[data-theme="dark"]:not([data-design="classic"]) .btn-primary:hover{
+  background:#006575;border-color:#006575;
+}
+html:not([data-design="classic"]) .row-identity .mini-specialty,
+html:not([data-design="classic"]) .matcher-specialty,
+html:not([data-design="classic"]) .modal-head .mini-specialty,
+html[data-theme="dark"]:not([data-design="classic"]) .row-identity .mini-specialty,
+html[data-theme="dark"]:not([data-design="classic"]) .matcher-specialty,
+html[data-theme="dark"]:not([data-design="classic"]) .modal-head .mini-specialty{
+  color:var(--ed-accent-strong);
+}
+@media(max-width:820px){
+ html:not([data-design="classic"]) .sidebar,
+ html[data-theme="dark"]:not([data-design="classic"]) .sidebar{
+   background:#0b3957;color:#e7f2f6
+ }
+ html[data-theme="dark"]:not([data-design="classic"]) .sidebar{background:#071f33}
+}
