@@ -2452,19 +2452,27 @@ window.RISE_DATA = {
       "lateOpen": "2026-11-09",
       "lateDeadline": "2026-12-04",
       "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
+      "limit": 2500,
+      "limitType": "characters_no_spaces",
       "limitNote": null,
       "fee": null,
-      "types": [],
+      "types": [
+        "MS and neuroimmunology",
+        "Clinical research",
+        "Case series"
+      ],
       "url": "https://www.forum.actrims.org/submit",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "Peer-reviewed MS/neuroimmunology scientific meeting; regular abstracts due November 6, 2026, late-breaking science December 4.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "presentationFormats": [
+        "Oral",
+        "Poster",
+        "ePoster"
+      ],
       "fieldSources": {
         "start": {
           "url": "https://www.forum.actrims.org/submit",
@@ -2514,22 +2522,30 @@ window.RISE_DATA = {
       "city": "Houston, TX",
       "open": null,
       "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
+      "lateOpen": "2026-09-30",
+      "lateDeadline": "2026-10-28",
+      "deadlineTime": "11:59 PM CDT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://professional.heart.org/en/meetings/international-stroke-conference",
+      "fee": "$45 AHA members; $95 nonmembers",
+      "types": [
+        "Stroke research",
+        "Neurocritical care",
+        "Clinical trials"
+      ],
+      "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "The 2027 general abstract deadline passed August 18, 2026. Late-breaking science/ongoing clinical trials deadline is October 28, 2026.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "presentationFormats": [
+        "Oral",
+        "Digital oral",
+        "Poster"
+      ],
       "fieldSources": {
         "start": {
           "url": "https://professional.heart.org/en/meetings/international-stroke-conference",
@@ -2542,6 +2558,16 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "lateOpen": {
+          "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official abstract page audit"
+        },
+        "lateDeadline": {
+          "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official abstract page audit"
         }
       }
     },
@@ -2585,114 +2611,6 @@ window.RISE_DATA = {
           "source_quote": "Official 2027 meeting dates"
         }
       }
-    },
-    {
-      "id": "aes27",
-      "name": "American Epilepsy Society Annual Meeting 2027",
-      "society": "American Epilepsy Society",
-      "specialty": "Neurology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.aesnet.org/annual-meeting",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ana27",
-      "name": "American Neurological Association Annual Meeting 2027",
-      "society": "American Neurological Association",
-      "specialty": "Neurology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://myana.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "mds27",
-      "name": "International Congress of Parkinson's Disease and Movement Disorders 2027",
-      "society": "International Parkinson and Movement Disorder Society",
-      "specialty": "Neurology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.mdscongress.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ahs27",
-      "name": "American Headache Society Annual Scientific Meeting 2027",
-      "society": "American Headache Society",
-      "specialty": "Neurology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://americanheadachesociety.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
     },
     {
       "id": "sobp27",
@@ -2753,10 +2671,10 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.aacap.org/AACAP/Your_Career/Early_Career_Psychiatrists/AACAP/CME_and_Meetings/Future_Annual_Meetings.aspx",
+      "url": "https://www.aacap.org/AACAP/CME_and_Meetings/Future_Annual_Meetings.aspx",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "Established child and adolescent psychiatry meeting; confirmed official 2027 meeting dates. Abstract deadline awaiting confirmation.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -2797,9 +2715,11 @@ window.RISE_DATA = {
       "url": "https://acnp.org/annual-meeting/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed. Attendance or participation may be restricted; check membership and invitation rules.",
+      "note": "Highly prestigious psychopharmacology meeting, but ACNP nonmembers require an invitation to attend. Not generally open for trainee registration.",
       "flag": null,
-      "tags": null,
+      "tags": [
+        "invitation-only"
+      ],
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
@@ -2826,7 +2746,7 @@ window.RISE_DATA = {
       "end": "2027-05-05",
       "city": "Denver, CO",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-08-28",
       "lateOpen": null,
       "lateDeadline": null,
       "deadlineTime": null,
@@ -2835,14 +2755,18 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://arrs.org/meetings",
+      "url": "https://www2.arrs.org/am27/call-for-abstracts-arrs-2027/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "Annual radiology research meeting. 2027 abstract deadline was August 28, 2026.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "presentationFormats": [
+        "Oral",
+        "Scientific online poster",
+        "Educational online poster"
+      ],
       "fieldSources": {
         "start": {
           "url": "https://arrs.org/meetings",
@@ -2855,6 +2779,11 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://www2.arrs.org/am27/call-for-abstracts-arrs-2027/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official abstract page audit"
         }
       }
     },
@@ -2941,47 +2870,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "acr-rad27",
-      "name": "ACR Annual Meeting 2027",
-      "society": "American College of Radiology",
-      "specialty": "Radiology",
-      "start": "2027-05-01",
-      "end": "2027-05-05",
-      "city": "Washington, DC",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.acr.org/Education-and-CME/Calendar/Annual-Meeting",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed. This is primarily a radiology leadership, education, and governance meeting; verify available abstract or poster calls.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.acr.org/Education-and-CME/Calendar/Annual-Meeting",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.acr.org/Education-and-CME/Calendar/Annual-Meeting",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        }
-      }
-    },
-    {
       "id": "nkf27",
       "name": "NKF Spring Clinical Meetings 2027",
       "society": "National Kidney Foundation",
@@ -2989,24 +2877,32 @@ window.RISE_DATA = {
       "start": "2027-05-11",
       "end": "2027-05-15",
       "city": "Orlando, FL",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
+      "open": "2026-09-01",
+      "deadline": "2026-12-01",
+      "lateOpen": "2027-01-13",
+      "lateDeadline": "2027-02-03",
+      "deadlineTime": "11:59 PM ET",
+      "limit": 2500,
+      "limitType": "characters",
       "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.kidney.org/spring-clinical",
+      "fee": "$60 per abstract",
+      "types": [
+        "Nephrology research",
+        "Case reports",
+        "QI"
+      ],
+      "url": "https://www.kidney.org/spring-clinical/abstracts",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "Case reports and QI eligible. Accepted original research may be published in AJKD; presenting authors pay registration.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "presentationFormats": [
+        "Poster",
+        "ePoster",
+        "Oral poster"
+      ],
       "fieldSources": {
         "start": {
           "url": "https://www.kidney.org/spring-clinical",
@@ -3019,6 +2915,26 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://www.kidney.org/spring-clinical/abstracts",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official abstract page audit"
+        },
+        "deadline": {
+          "url": "https://www.kidney.org/spring-clinical/abstracts",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official abstract page audit"
+        },
+        "lateOpen": {
+          "url": "https://www.kidney.org/spring-clinical/abstracts",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official abstract page audit"
+        },
+        "lateDeadline": {
+          "url": "https://www.kidney.org/spring-clinical/abstracts",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official abstract page audit"
         }
       }
     },
@@ -3031,7 +2947,7 @@ window.RISE_DATA = {
       "end": "2027-04-04",
       "city": "Kuala Lumpur, Malaysia",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-10-28",
       "lateOpen": null,
       "lateDeadline": null,
       "deadlineTime": null,
@@ -3040,10 +2956,10 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.theisn.org/in-action/events/world-congress-of-nephrology/",
+      "url": "https://www.theisn.org/wcn/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "Flagship World Congress of Nephrology. Abstract deadline Oct 28, 2026; travel-grant application deadline Oct 31.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -3060,6 +2976,11 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://www.theisn.org/wcn/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official abstract page audit"
         }
       }
     },
@@ -3223,33 +3144,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "panlar27",
-      "name": "PANLAR Congress 2027",
-      "society": "Pan American League of Associations for Rheumatology",
-      "specialty": "Rheumatology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://panlar.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
       "id": "shea27",
       "name": "SHEA Spring Conference 2027",
       "society": "Society for Healthcare Epidemiology of America",
@@ -3393,7 +3287,7 @@ window.RISE_DATA = {
       "url": "https://annualmeeting.aaaai.org/",
       "guideline": null,
       "evidence": "official",
-      "note": "Separate basic-science conference held alongside AAAAI Annual Meeting. Discovery abstract deadline verified as November 2, 2026; confirm eligibility, meeting-specific formats, and fees.",
+      "note": "Research-focused AAAAI Discovery conference held Feb 18–20, 2027 alongside the Annual Meeting. Abstract deadline Nov 2, 2026; verify distinction from main AAAAI submission.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -3437,7 +3331,7 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.geron.org/",
+      "url": "https://www.gsa2026.org/Program",
       "guideline": null,
       "evidence": "official",
       "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
@@ -3461,60 +3355,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "paltc27",
-      "name": "PALTC Annual Conference 2027",
-      "society": "Post-Acute and Long-Term Care Medical Association (AMDA)",
-      "specialty": "Geriatrics",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://paltc.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ihi27",
-      "name": "IHI Forum 2027",
-      "society": "Institute for Healthcare Improvement",
-      "specialty": "Hospital Medicine",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.ihi.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
       "id": "aamc-lsl27",
       "name": "Learn Serve Lead 2027",
       "society": "Association of American Medical Colleges",
@@ -3535,7 +3375,7 @@ window.RISE_DATA = {
       "url": "https://www.aamc.org/learn-network/learn-serve-lead",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "Major AAMC academic medicine meeting; primarily education, institutional leadership and networking. Confirm suitability for a specific original-research poster.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -3737,10 +3577,10 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.acep.org/ems/meetings",
+      "url": "https://www.acep.org/SA",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "ACEP national emergency medicine meeting; official 2027 dates verified. Confirm research presentation categories and deadlines.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -3802,74 +3642,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "napnap27",
-      "name": "NAPNAP National Conference on Pediatric Health Care 2027",
-      "society": "National Association of Pediatric Nurse Practitioners",
-      "specialty": "Pediatrics",
-      "start": "2027-03-21",
-      "end": "2027-03-24",
-      "city": "Sacramento, CA",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.napnap.org/national-conference-on-pediatric-health-care/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.napnap.org/national-conference-on-pediatric-health-care/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.napnap.org/national-conference-on-pediatric-health-care/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        }
-      }
-    },
-    {
-      "id": "appd27",
-      "name": "APPD Annual Spring Meeting 2027",
-      "society": "Association of Pediatric Program Directors",
-      "specialty": "Pediatrics",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.appd.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
       "id": "smfm27",
       "name": "SMFM Pregnancy Meeting 2027",
       "society": "Society for Maternal-Fetal Medicine",
@@ -3911,33 +3683,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "asrm-repro27",
-      "name": "ASRM Scientific Congress & Expo 2027",
-      "society": "American Society for Reproductive Medicine",
-      "specialty": "Obstetrics & Gynecology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.asrm.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
       "id": "soap27",
       "name": "SOAP Annual Meeting 2027",
       "society": "Society for Obstetric Anesthesia and Perinatology",
@@ -3977,60 +3722,6 @@ window.RISE_DATA = {
           "source_quote": "Official 2027 meeting dates"
         }
       }
-    },
-    {
-      "id": "asa27",
-      "name": "ANESTHESIOLOGY Annual Meeting 2027",
-      "society": "American Society of Anesthesiologists",
-      "specialty": "Anesthesiology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.asahq.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "iars27",
-      "name": "IARS Annual Meeting 2027",
-      "society": "International Anesthesia Research Society",
-      "specialty": "Anesthesiology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://iars.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
     },
     {
       "id": "sages27",
@@ -4194,7 +3885,7 @@ window.RISE_DATA = {
       "url": "https://www.ors.org/2027-annual-meeting/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "ORS 2027 regular abstracts closed Aug 31, 2026; late-breaking October 12–November 9 is for genuinely new findings.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -4215,14 +3906,12 @@ window.RISE_DATA = {
         "lateOpen": {
           "url": "https://www.ors.org/2027-annual-meeting/",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
+          "verified_by": "RISE official abstract page audit"
         },
         "lateDeadline": {
           "url": "https://www.ors.org/2027-annual-meeting/",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
+          "verified_by": "RISE official abstract page audit"
         }
       }
     },
@@ -4247,7 +3936,7 @@ window.RISE_DATA = {
       "url": "https://events.sportsmed.org/am2026",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "Official AOSSM site lists 2027 dates, July 7–10 Boston; current page hosts 2026 program so use for future meeting only.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -4309,33 +3998,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "isprm27",
-      "name": "ISPRM World Congress 2027",
-      "society": "International Society of Physical and Rehabilitation Medicine",
-      "specialty": "Physical Medicine & Rehabilitation",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.isprm.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
       "id": "asrm-micro27",
       "name": "ASRM Reconstructive Microsurgery Annual Meeting 2027",
       "society": "American Society for Reconstructive Microsurgery",
@@ -4375,33 +4037,6 @@ window.RISE_DATA = {
           "source_quote": "Official 2027 meeting dates"
         }
       }
-    },
-    {
-      "id": "aesthetic27",
-      "name": "The Aesthetic MEET 2027",
-      "society": "The Aesthetic Society",
-      "specialty": "Plastic Surgery",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.theaestheticsociety.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
     },
     {
       "id": "asds27",
@@ -4445,195 +4080,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "spd27",
-      "name": "Society for Pediatric Dermatology Annual Meeting 2027",
-      "society": "Society for Pediatric Dermatology",
-      "specialty": "Dermatology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://pedsderm.net/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ptcog27",
-      "name": "PTCOG Annual Conference 2027",
-      "society": "Particle Therapy Co-Operative Group",
-      "specialty": "Medical Physics",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.ptcog.ch/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "aspc27",
-      "name": "ASCP Annual Meeting 2027",
-      "society": "American Society for Clinical Pathology",
-      "specialty": "Pathology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.ascp.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "amp27",
-      "name": "AMP Annual Meeting & Expo 2027",
-      "society": "Association for Molecular Pathology",
-      "specialty": "Pathology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.amp.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ers27",
-      "name": "ERS Congress 2027",
-      "society": "European Respiratory Society",
-      "specialty": "Pulmonary & Critical Care",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.ersnet.org/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ecco27",
-      "name": "ECCO Congress 2027",
-      "society": "European Crohn's and Colitis Organisation",
-      "specialty": "Gastroenterology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.ecco-ibd.eu/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ueg27",
-      "name": "UEG Week 2027",
-      "society": "United European Gastroenterology",
-      "specialty": "Gastroenterology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://ueg.eu/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
       "id": "scai27",
       "name": "SCAI Scientific Sessions 2027",
       "society": "Society for Cardiovascular Angiography and Interventions",
@@ -4675,13 +4121,13 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "hfsa27",
-      "name": "HFSA Annual Scientific Meeting 2027",
-      "society": "Heart Failure Society of America",
-      "specialty": "Cardiology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
+      "id": "ahs27",
+      "name": "69th American Headache Society Annual Scientific Meeting",
+      "society": "American Headache Society",
+      "specialty": "Neurology",
+      "start": "2027-06-10",
+      "end": "2027-06-13",
+      "city": "San Diego, CA",
       "open": null,
       "deadline": null,
       "lateOpen": null,
@@ -4691,24 +4137,38 @@ window.RISE_DATA = {
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
-      "url": "https://hfsa.org/",
+      "types": [
+        "Headache and migraine research"
+      ],
+      "url": "https://americanheadachesociety.org/events",
       "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://americanheadachesociety.org/events",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://americanheadachesociety.org/events",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
     },
     {
-      "id": "nccn27",
-      "name": "NCCN Annual Conference 2027",
-      "society": "National Comprehensive Cancer Network",
-      "specialty": "Oncology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
+      "id": "mds27",
+      "name": "International Congress of Parkinson’s Disease and Movement Disorders 2027",
+      "society": "International Parkinson and Movement Disorder Society",
+      "specialty": "Neurology",
+      "start": "2027-09-26",
+      "end": "2027-09-30",
+      "city": "Amsterdam, Netherlands",
       "open": null,
       "deadline": null,
       "lateOpen": null,
@@ -4718,23 +4178,243 @@ window.RISE_DATA = {
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
-      "url": "https://www.nccn.org/",
+      "types": [
+        "Parkinson disease and movement disorders"
+      ],
+      "url": "https://www.mdscongress.org/About/Past-future",
       "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.mdscongress.org/About/Past-future",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.mdscongress.org/About/Past-future",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
     },
     {
-      "id": "nrg-jan27",
-      "name": "NRG Oncology Winter Meeting 2027",
-      "society": "NRG Oncology",
-      "specialty": "Radiation Oncology",
-      "start": "2027-01-28",
-      "end": "2027-01-30",
+      "id": "ean27",
+      "name": "EAN Congress 2027",
+      "society": "European Academy of Neurology",
+      "specialty": "Neurology",
+      "start": "2027-06-12",
+      "end": "2027-06-15",
+      "city": "Gothenburg, Sweden",
+      "open": "2026-10-29",
+      "deadline": "2027-01-14",
+      "lateOpen": "2027-04-01",
+      "lateDeadline": "2027-05-05",
+      "deadlineTime": "11:59 PM CEST",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Clinical neurology",
+        "Basic and translational research"
+      ],
+      "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster",
+        "Poster display"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "deadline": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "lateOpen": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "lateDeadline": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "iaprd27",
+      "name": "IAPRD World Congress on Parkinson’s Disease and Related Disorders 2027",
+      "society": "International Association of Parkinsonism and Related Disorders",
+      "specialty": "Neurology",
+      "start": "2027-05-12",
+      "end": "2027-05-15",
+      "city": "Mexico City, Mexico",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Movement disorders research"
+      ],
+      "url": "https://www.iaprd-world-congress.com/iaprd-2027/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.iaprd-world-congress.com/iaprd-2027/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.iaprd-world-congress.com/iaprd-2027/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "aua-urology27",
+      "name": "AUA Annual Meeting 2027 (Urology)",
+      "society": "American Urological Association",
+      "specialty": "Urology",
+      "start": "2027-05-21",
+      "end": "2027-05-24",
+      "city": "San Diego, CA",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Urologic research"
+      ],
+      "url": "https://www.auadailynews.org/meeting-coverage/article/22967770/mark-your-calendar-for-aua2027",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Flagship US urology meeting; note that AUA also abbreviates Association of University Anesthesiologists. 2027 abstract submission deadline not independently confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.auadailynews.org/meeting-coverage/article/22967770/mark-your-calendar-for-aua2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.auadailynews.org/meeting-coverage/article/22967770/mark-your-calendar-for-aua2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "eau27",
+      "name": "EAU Congress 2027",
+      "society": "European Association of Urology",
+      "specialty": "Urology",
+      "start": "2027-03-19",
+      "end": "2027-03-22",
+      "city": "Amsterdam, Netherlands",
+      "open": "2026-08-03",
+      "deadline": "2026-11-01",
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": "11:59 PM CET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Urologic oncology",
+        "Non-oncologic urology"
+      ],
+      "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+      "guideline": null,
+      "evidence": "official",
+      "note": "High-value European urology scientific congress; confirmed meeting dates and abstract deadline.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [
+        "Oral",
+        "Video abstract"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "deadline": {
+          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "aao-oph27",
+      "name": "AAO Annual Meeting 2027 (Ophthalmology)",
+      "society": "American Academy of Ophthalmology",
+      "specialty": "Ophthalmology",
+      "start": "2027-11-12",
+      "end": "2027-11-15",
       "city": "Las Vegas, NV",
       "open": null,
       "deadline": null,
@@ -4745,92 +4425,168 @@ window.RISE_DATA = {
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
-      "url": "https://www.nrgoncology.org/meetings/future-nrg-oncology-meeting-dates/",
+      "types": [
+        "Ophthalmology research"
+      ],
+      "url": "https://www.aao.org/annual-meeting/past-and-future-meetings",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed. Cooperative-group research meeting; presentation and access eligibility may differ from open abstract conferences.",
+      "note": "Flagship ophthalmology scientific congress. Organizer's future-meetings calendar lists Nov 12–15; submission dates not yet verified. Distinct from AAO-HNS.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.nrgoncology.org/meetings/future-nrg-oncology-meeting-dates/",
+          "url": "https://www.aao.org/annual-meeting/past-and-future-meetings",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
+          "verified_by": "RISE official society page audit"
         },
         "end": {
-          "url": "https://www.nrgoncology.org/meetings/future-nrg-oncology-meeting-dates/",
+          "url": "https://www.aao.org/annual-meeting/past-and-future-meetings",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
+          "verified_by": "RISE official society page audit"
         }
       }
     },
     {
-      "id": "ptcog-rt27",
-      "name": "PTCOG Particle Therapy Conference 2027",
-      "society": "Particle Therapy Co-Operative Group",
-      "specialty": "Radiation Oncology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
+      "id": "aao-hns27",
+      "name": "AAO-HNSF Annual Meeting & OTO EXPO 2027",
+      "society": "American Academy of Otolaryngology–Head and Neck Surgery Foundation",
+      "specialty": "Otolaryngology",
+      "start": "2027-09-18",
+      "end": "2027-09-21",
+      "city": "New Orleans, LA",
+      "open": "2026-10-17",
+      "deadline": "2026-12-16",
+      "lateOpen": "2027-04-12",
+      "lateDeadline": "2027-05-14",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
-      "url": "https://www.ptcog.ch/",
+      "types": [
+        "ENT basic science",
+        "Clinical research",
+        "Case reports"
+      ],
+      "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
       "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "deadline": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "lateOpen": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "lateDeadline": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
     },
     {
-      "id": "obesityweek27",
-      "name": "ObesityWeek 2027",
-      "society": "The Obesity Society",
-      "specialty": "Endocrinology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
+      "id": "vam27",
+      "name": "Vascular Annual Meeting 2027",
+      "society": "Society for Vascular Surgery",
+      "specialty": "Vascular Surgery",
+      "start": "2027-06-02",
+      "end": "2027-06-05",
+      "city": "San Diego, CA",
+      "open": "2026-11-18",
+      "deadline": "2027-01-13",
+      "lateOpen": "2027-02-10",
+      "lateDeadline": "2027-03-03",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
-      "url": "https://www.obesity.org/education/obesityweek/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
+      "types": [
+        "Vascular research"
+      ],
+      "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+      "guideline": "https://vam.vascular.org/present-at-vam/",
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://vam.vascular.org/present-at-vam/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "deadline": {
+          "url": "https://vam.vascular.org/present-at-vam/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "lateOpen": {
+          "url": "https://vam.vascular.org/present-at-vam/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "lateDeadline": {
+          "url": "https://vam.vascular.org/present-at-vam/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
     },
     {
-      "id": "ebmt27",
-      "name": "EBMT Annual Meeting 2027",
-      "society": "European Society for Blood and Marrow Transplantation",
-      "specialty": "Hematology & Oncology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
+      "id": "sts27",
+      "name": "STS Annual Meeting 2027",
+      "society": "The Society of Thoracic Surgeons",
+      "specialty": "Cardiothoracic Surgery",
+      "start": "2027-01-28",
+      "end": "2027-01-31",
+      "city": "San Diego, CA",
       "open": null,
       "deadline": null,
       "lateOpen": null,
@@ -4840,24 +4596,41 @@ window.RISE_DATA = {
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
-      "url": "https://www.ebmt.org/",
+      "types": [
+        "Cardiothoracic research"
+      ],
+      "url": "https://www.sts.org/abstract-submission",
       "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
+      "evidence": "official",
+      "note": "Flagship cardiothoracic surgery scientific meeting; official STS site confirms 2027 scientific abstract submissions have closed.",
+      "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.sts.org/abstract-submission",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.sts.org/abstract-submission",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
     },
     {
-      "id": "acp-im27",
-      "name": "ACP Internal Medicine Meeting 2027",
-      "society": "American College of Physicians",
-      "specialty": "General Internal Medicine",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
+      "id": "atc27",
+      "name": "American Transplant Congress 2027",
+      "society": "American Society of Transplantation and American Society of Transplant Surgeons",
+      "specialty": "Transplantation",
+      "start": "2027-06-05",
+      "end": "2027-06-09",
+      "city": "Seattle, WA",
       "open": null,
       "deadline": null,
       "lateOpen": null,
@@ -4867,15 +4640,122 @@ window.RISE_DATA = {
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
-      "url": "https://www.acponline.org/education-recertification/acp-courses-recordings-and-much-more/internal-medicine-meeting",
+      "types": [
+        "Transplant research"
+      ],
+      "url": "https://www.atcmeeting.org/",
       "guideline": null,
-      "evidence": "unannounced",
-      "note": "Recurring organizer meeting; the 2027 meeting edition, dates, and abstract submission details still require confirmation. Do not infer deadlines from a previous year.",
-      "flag": "unannounced",
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.atcmeeting.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.atcmeeting.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "aahpm27",
+      "name": "AAHPM Annual Assembly of Hospice and Palliative Care 2027",
+      "society": "American Academy of Hospice and Palliative Medicine and Hospice and Palliative Nurses Association",
+      "specialty": "Palliative Medicine",
+      "start": "2027-03-17",
+      "end": "2027-03-20",
+      "city": "Pittsburgh, PA",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Palliative research",
+        "Quality improvement"
+      ],
+      "url": "https://aahpm.org/education-events/annual-assembly/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "National scientific palliative medicine meeting; summer 2027 assembly abstract call closed July 7, 2026.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://aahpm.org/education-events/annual-assembly/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://aahpm.org/education-events/annual-assembly/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "apha27",
+      "name": "APHA Annual Meeting & Expo 2027",
+      "society": "American Public Health Association",
+      "specialty": "Public Health",
+      "start": "2027-11-07",
+      "end": "2027-11-10",
+      "city": "Philadelphia, PA",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Public health research",
+        "Population health"
+      ],
+      "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
     }
   ],
   "awards": [
