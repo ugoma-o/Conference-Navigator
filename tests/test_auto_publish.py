@@ -13,6 +13,15 @@ class AutoPublishTests(unittest.TestCase):
         self.assertEqual(data['conferences'][0]['open'],'2026-10-10')
         self.assertEqual(len(result['published']),1)
         self.assertIsNone(self.data['conferences'][0]['open'])
+    def test_joint_registration_and_abstract_announcement_accepted(self):
+        p=self.proposal(evidence='Registration & Abstract Submissions Opens October 10, 2026')
+        updated,result=publish_changes(self.data,self.report([p]))
+        self.assertEqual(updated['conferences'][0]['open'],'2026-10-10')
+        self.assertEqual(len(result['published']),1)
+    def test_joint_announcement_with_unrelated_date_is_held(self):
+        p=self.proposal(evidence='Registration closes October 1, 2026. Abstract Submissions Opens October 10, 2026')
+        updated,result=publish_changes(self.data,self.report([p]))
+        self.assertEqual(result['published'],[])
     def test_registration_date_held(self):
         _,result=publish_changes(self.data,self.report([self.proposal(evidence='Registration opens October 10, 2026')]))
         self.assertEqual(result['published'],[])
