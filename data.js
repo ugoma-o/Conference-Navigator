@@ -1,6 +1,6 @@
 /* Curated snapshot — verify dates against society sources. */
 window.RISE_DATA = {
-  "asOf": "2026-10-10",
+  "asOf": "2026-10-11",
   "conferences": [
     {
       "id": "aan27",
@@ -2397,6 +2397,47 @@ window.RISE_DATA = {
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {}
+    },
+    {
+      "id": "endo28",
+      "name": "ENDO 2028",
+      "society": "Endocrine Society",
+      "specialty": "Endocrinology",
+      "start": "2028-06-03",
+      "end": "2028-06-06",
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "flag": null,
+      "note": "Meeting dates verified from the official organizer page; abstract dates and submission rules have not yet been announced.",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "priorCycleId": "endo27",
+      "fieldSources": {
+        "start": {
+          "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+          "checked_at": "2026-10-11T01:44:54.833258+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": ". ENDO 2028 . June 3–6, 2028"
+        },
+        "end": {
+          "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+          "checked_at": "2026-10-11T01:44:54.833258+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": ". ENDO 2028 . June 3–6, 2028"
+        }
+      }
     }
   ],
   "awards": [
