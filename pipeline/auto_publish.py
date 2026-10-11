@@ -65,6 +65,25 @@ def same_evidence_date(p):
     labels=list(re.finditer(pattern,evidence,re.I))
     return len(labels)==1 and min(abs(labels[0].end()-dates[0].start()),abs(dates[0].end()-labels[0].start()))<=90
 
+def official_sources_for(record, report, record_type, record_id):
+    """Configured official URLs plus successfully fetched same-host links."""
+    configured={x for x in (record.get('url'),record.get('guideline'),
+                            record.get('submissionSource'),*(record.get('additionalSources') or []))
+                if x and urlparse(x).scheme=='https'}
+    accepted=set(configured)
+    for entry in report.get('discovered_sources',[]):
+        if entry.get('record_type')!=record_type or entry.get('record_id')!=record_id:
+            continue
+        parent=entry.get('parent_url','')
+        child=entry.get('source_url','')
+        if parent not in configured or not child or not entry.get('link_label'):
+            continue
+        p1=urlparse(parent);p2=urlparse(child)
+        if (p2.scheme=='https' and p2.hostname and p2.hostname==p1.hostname
+                and p2.username is None and p2.password is None):
+            accepted.add(child)
+    return accepted
+
 def resolve_updates(data,report,max_updates=8):
     validate(data)
     if report.get('schema_version')!=2:raise ValueError('Unexpected scan schema: no updates applied')
@@ -80,7 +99,7 @@ def resolve_updates(data,report,max_updates=8):
         elif key in conflicts:reason='Conflicting source evidence'
         elif field not in FIELDS or (key[0]=='award' and field not in ('open','deadline')):reason='Unsupported field'
         elif p.get('review_status')!='requires_human_verification':reason='Unexpected source status'
-        elif urlparse(p.get('source_url','')).scheme!='https' or p['source_url'] not in (record.get('url'),record.get('guideline'),record.get('submissionSource')):reason='Untrusted source URL'
+        elif urlparse(p.get('source_url','')).scheme!='https' or p['source_url'] not in official_sources_for(record,report,key[0],key[1]):reason='Untrusted source URL'
         elif not same_evidence_date(p):reason='Date and event label not clearly paired'
         else:
             try: date=dt.date.fromisoformat(val)
@@ -97,7 +116,7 @@ def resolve_updates(data,report,max_updates=8):
                 if field=='lateOpen' and record.get('lateDeadline') and val>record['lateDeadline']:reason='Invalid late abstract order'
                 if field=='lateDeadline' and record.get('lateOpen') and val<record['lateOpen']:reason='Invalid late abstract order'
             sources=set(p.get('corroborating_sources',[]))
-            allowed={x for x in (record.get('url'),record.get('guideline'),record.get('submissionSource')) if x}
+            allowed=official_sources_for(record,report,key[0],key[1])
             if not reason and old and record.get('evidence')!='tracker' and (len(sources & allowed)<2 or p['source_url'] not in sources):reason='Existing official date needs two agreeing configured official URLs'
         if reason:held.append({'id':p.get('id'),'reason':reason})
         else:accepted.append(p)
@@ -114,6 +133,11 @@ def publish_changes(data,report,max_updates=8,checked_at=None):
         records=updated['conferences' if p['record_type']=='conference' else 'awards']
         row=next(r for r in records if r['id']==p['record_id'])
         old=row.get(p['field']);row[p['field']]=p['proposed_value']
+        configured={x for x in (row.get('url'),row.get('guideline'),
+                                 row.get('submissionSource'),*(row.get('additionalSources') or [])) if x}
+        if p['source_url'] not in configured:
+            # Keep verified discovery targets in the future weekly allowlist.
+            row.setdefault('additionalSources',[]).append(p['source_url'])
         if p['record_type']=='award' and p['field']=='open':row['opens']=p['proposed_value']
         row.setdefault('fieldSources',{})[p['field']]={
             'url':p['source_url'],'checked_at':stamp,'verified_by':'RISE conservative auto-publisher',
