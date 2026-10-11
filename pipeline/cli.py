@@ -89,7 +89,8 @@ def main():
         write_json(args.cache,new_cache)
         write_json(args.report,report)
         report_html(report,args.report.with_suffix('.html'))
-        print(f'Checked {report["source_count"]} sources; {len(report["proposals"])} review proposals, {len(report["conflicts"])} blocked conflicts, {report["counts"]["unavailable"]} unavailable.')
+        print(f'Checked {report["source_count"]} sources ({len(report.get("discovered_sources",[]))} discovered official subpages); {len(report["proposals"])} proposals, {len(report["conflicts"])} blocked conflicts, {report["counts"]["unavailable"]} unavailable.')
+        print(f'Coverage gaps needing attention: {sum(c.get("needs_attention",False) for c in report.get("source_coverage",[]))} tracked conferences.')
         print(f'Review {args.report} and {args.report.with_suffix(".html")}. No data changed.')
     elif args.cmd=='approve':
         report=read_json(args.report)
