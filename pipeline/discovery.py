@@ -21,6 +21,12 @@ NEGATIVE = re.compile(
 PATH_RE = re.compile(
     r'(?:abstract|submission|call-for-|key-dates|important-dates|deadlines?)', re.I)
 YEAR = re.compile(r'(?<!\d)20\d{2}(?!\d)')
+# Society portals may list many unrelated meetings. Require the current
+# source's event-specific path prefix, not merely the same broad domain.
+GENERIC_PARTS={'en','meeting','meetings','events','education','meeting-calendar',
+               'meetings-and-events','meetings-education','learning','micro-sites',
+               'calendar','members','membership','about','professional',
+               'professionals','resources','education-and-resources','conferences'}
 
 class AnchorLinks(HTMLParser):
     def __init__(self):
@@ -69,8 +75,11 @@ def discover_abstract_links(page, base_url, meeting_year=None, max_links=2):
     parser=AnchorLinks()
     parser.feed(page)
     path_segments=[s for s in root.path.split('/') if s]
-    # The first segment scopes navigation to an event section if available.
-    site_section=path_segments[0].lower() if path_segments else None
+    # Stop at the first event-specific path component. A generic /meetings/
+    # index has no conference identity and cannot authorize linked dates.
+    scope_end=next((i+1 for i,seg in enumerate(path_segments)
+                    if seg.lower() not in GENERIC_PARTS),None)
+    scope=[seg.lower() for seg in path_segments[:scope_end]] if scope_end else []
     candidates={}
     for pos,(href,label) in enumerate(parser.links):
         label=' '.join(label.split())
@@ -87,8 +96,8 @@ def discover_abstract_links(page, base_url, meeting_year=None, max_links=2):
                 continue
             if any(parsed.path.lower().endswith(ext) for ext in ('.pdf','.zip','.doc','.docx','.xlsx','.jpg','.png')):
                 continue
-            target_section=next((x.lower() for x in parsed.path.split('/') if x),None)
-            if site_section and target_section!=site_section:
+            target_segments=[x.lower() for x in parsed.path.split('/') if x]
+            if not scope or target_segments[:len(scope)]!=scope:
                 continue
             # Year-specific links must match this conference's meeting edition.
             years={int(y) for y in YEAR.findall(parsed.path)}
@@ -99,8 +108,7 @@ def discover_abstract_links(page, base_url, meeting_year=None, max_links=2):
                 continue
             if not strong and not PATH_RE.search(parsed.path):
                 continue
-            if not site_section and not strong:
-                continue
+
             priority=(4 if strong else 0)+(2 if PATH_RE.search(parsed.path) else 0)
             priority+=1 if 'abstract' in parsed.path.lower() else 0
             if url not in candidates or priority>candidates[url][0]:
