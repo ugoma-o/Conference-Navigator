@@ -88,6 +88,28 @@ def publish_changes(data,report,max_updates=8,checked_at=None):
             'corroborating_sources':p.get('corroborating_sources',[])}
         audit.append({'id':p['id'],'record_id':p['record_id'],'field':p['field'],
                       'old':old,'new':p['proposed_value'],'source_url':p['source_url']})
+    # Publish a new annual edition only when official meeting dates are explicit.
+    from .rollover import make_cycle_record,series_year
+    existing_ids={c['id'] for c in updated['conferences']}
+    existing_series={c['id']:c for c in updated['conferences']}
+    additions=[]
+    for proposal in report.get('future_candidates',[]):
+        prior=existing_series.get(proposal.get('priorCycleId'))
+        cid=proposal.get('record_id')
+        if not prior or not cid or cid in existing_ids:
+            continue
+        if series_year(prior) is None or proposal.get('year')<=series_year(prior):
+            continue
+        if proposal.get('source_url') not in (prior.get('url'),prior.get('guideline'),prior.get('submissionSource')):
+            continue
+        if len(audit)+len(additions)>=max_updates:
+            held.append({'id':cid,'reason':'Weekly new-record safety limit'})
+            continue
+        record=make_cycle_record(prior,proposal,stamp)
+        additions.append(record);existing_ids.add(cid)
+        audit.append({'id':cid,'record_id':cid,'field':'new_cycle',
+                      'old':None,'new':record['start'],'source_url':proposal['source_url']})
+    updated['conferences'].extend(additions)
     if audit:updated['asOf']=stamp[:10]
     validate(updated)
     return updated,{'published':audit,'held':held,'automatic':True,'checked_at':stamp,
