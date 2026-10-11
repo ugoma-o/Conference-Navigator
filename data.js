@@ -1991,7 +1991,7 @@ window.RISE_DATA = {
       "start": "2027-05-12",
       "end": "2027-05-15",
       "city": "Orlando, FL",
-      "open": null,
+      "open": "2026-11-02",
       "deadline": null,
       "lateOpen": null,
       "lateDeadline": null,
@@ -2004,14 +2004,23 @@ window.RISE_DATA = {
         "Investigative dermatology",
         "Translational skin research"
       ],
-      "url": "https://www.sidnet.org/annualmeeting/key-dates/",
-      "guideline": null,
+      "url": "https://www.sidnet.org/annualmeeting/",
+      "guideline": "https://www.sidnet.org/annualmeeting/key-dates/",
       "evidence": "official",
-      "note": "Confirmed meeting dates; 2027 abstract opening/deadline not yet identified in the source reviewed.",
+      "note": "The 2027 SID Annual Meeting homepage confirms abstract submissions open November 2, 2026. The regular abstract closing date requires verification against the current official instructions.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "open": {
+          "url": "https://www.sidnet.org/annualmeeting/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official SID Annual Meeting page",
+          "source_quote": "Registration & Abstract Submissions Opens November 2, 2026",
+          "confidence": "explicit_statement"
+        }
+      }
     },
     {
       "id": "fsa27",
