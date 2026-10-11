@@ -709,3 +709,31 @@ html[data-theme="dark"] .matcher-strength{
   .view{animation:none}
   .conference-card,.btn,.chip{transition:none}
 }
+
+
+/* Month selection is based on abstract activity as well as meeting dates. */
+#discoverView .conference-card .month-match{
+ border-top:1px solid var(--ed-rule);
+ padding:12px 0 0;
+ margin-top:14px;
+ gap:5px;
+}
+#discoverView .conference-card .month-match-heading{
+ color:var(--ed-muted);
+ font-size:12px;
+ letter-spacing:.055em;
+ font-weight:650;
+}
+#discoverView .conference-card .month-match-item{
+ color:var(--ed-ink);
+ font-size:14px;
+ line-height:1.5;
+}
+#discoverView .conference-card .month-match-item strong{
+ font-weight:650;
+ color:var(--ed-accent-strong);
+}
+#discoverView .conference-card .month-match-due strong{color:#26765d}
+#discoverView .conference-card .month-match-meeting strong{color:#745496}
+html[data-theme="dark"] #discoverView .conference-card .month-match-due strong{color:#9bdabe}
+html[data-theme="dark"] #discoverView .conference-card .month-match-meeting strong{color:#d8bef0}
