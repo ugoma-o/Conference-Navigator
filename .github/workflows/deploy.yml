@@ -6,6 +6,8 @@ on:
       - 'index.html'
       - 'styles.css'
       - 'dark-theme.css'
+      - 'abstract-matcher.css'
+      - 'abstract-matcher.js'
       - 'app.js'
       - 'data.json'
       - 'data.js'
