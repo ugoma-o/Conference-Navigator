@@ -659,3 +659,15 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 #calendarView .calendar-grid .day-cell.has-ribbon{z-index:2}
 #calendarView .calendar-grid .meeting-ribbon{left:7px;right:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #calendarView .calendar-grid .day-cell.has-ribbon:focus-within{z-index:4}
+
+/* A multi-day ribbon is drawn in its starting day's cell and spans into later
+   cells. Earlier weekday cells must paint above later ones; otherwise a new
+   event beginning Saturday can cover Friday's Friday–Saturday meeting bar. */
+#calendarView .calendar-grid .day-cell.has-ribbon:nth-child(7n + 1){z-index:8}
+#calendarView .calendar-grid .day-cell.has-ribbon:nth-child(7n + 2){z-index:7}
+#calendarView .calendar-grid .day-cell.has-ribbon:nth-child(7n + 3){z-index:6}
+#calendarView .calendar-grid .day-cell.has-ribbon:nth-child(7n + 4){z-index:5}
+#calendarView .calendar-grid .day-cell.has-ribbon:nth-child(7n + 5){z-index:4}
+#calendarView .calendar-grid .day-cell.has-ribbon:nth-child(7n + 6){z-index:3}
+#calendarView .calendar-grid .day-cell.has-ribbon:nth-child(7n + 7){z-index:2}
+#calendarView .calendar-grid .day-cell.has-ribbon:focus-within{z-index:20}
