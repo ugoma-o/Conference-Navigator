@@ -28,7 +28,9 @@ class Structure(HTMLParser):
             self.stack.append((tag,ident))
 
     def handle_startendtag(self,tag,attrs):
-        pass
+        self.handle_starttag(tag,attrs)
+        if tag not in self.VOID:
+            self.handle_endtag(tag)
 
     def handle_endtag(self,tag):
         for i in range(len(self.stack)-1,-1,-1):
