@@ -9,6 +9,9 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/monitor.yml'
+      - 'pipeline/core.py'
+      - 'pipeline/auto_publish.py'
+      - 'pipeline/discovery.py'
 permissions:
   contents: write
   issues: write
