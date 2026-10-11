@@ -15,9 +15,9 @@ class TestDeployAssetVersions(unittest.TestCase):
             root = Path(directory)
             (root / 'data.json').write_text(json.dumps({'conferences': [], 'awards': []}), encoding='utf-8')
             (root / 'index.html').write_text(
-                '<link rel="stylesheet" href="styles.css" />'
+                '<link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="dark-theme.css" />'
                 '<script src="data.js"></script><script src="app.js"></script>', encoding='utf-8')
-            for filename in ('app.js', 'data.js', 'styles.css'):
+            for filename in ('app.js', 'data.js', 'styles.css', 'dark-theme.css'):
                 (root / filename).write_text('initial content', encoding='utf-8')
             with patch.object(build_site, 'ROOT', root), patch.object(build_site.subprocess, 'run'):
                 build_site.build(root / 'dist')
@@ -26,12 +26,19 @@ class TestDeployAssetVersions(unittest.TestCase):
                 self.assertIn(f'src="app.js?v={digest}"', html)
                 self.assertIn(f'src="data.js?v={digest}"', html)
                 self.assertIn(f'href="styles.css?v={digest}"', html)
+                self.assertIn(f'href="dark-theme.css?v={digest}"', html)
                 (root / 'app.js').write_text('new content', encoding='utf-8')
                 build_site.build(root / 'dist')
                 new_html = (root / 'dist' / 'index.html').read_text(encoding='utf-8')
                 new_digest = hashlib.sha256(b'new content').hexdigest()[:12]
                 self.assertIn(f'src="app.js?v={new_digest}"', new_html)
                 self.assertNotIn(f'src="app.js?v={digest}"', new_html)
+                (root / 'dark-theme.css').write_text('dark theme updated', encoding='utf-8')
+                build_site.build(root / 'dist')
+                theme_html = (root / 'dist' / 'index.html').read_text(encoding='utf-8')
+                theme_digest = hashlib.sha256(b'dark theme updated').hexdigest()[:12]
+                self.assertIn(f'href="dark-theme.css?v={theme_digest}"', theme_html)
+                self.assertNotIn(f'href="dark-theme.css?v={digest}"', theme_html)
 
 
 if __name__ == '__main__':
