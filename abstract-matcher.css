@@ -1,0 +1,93 @@
+/* Abstract Matcher — visual styling uses the existing RISE light/dark palettes. */
+.matcher-heading{margin-bottom:24px}
+.matcher-layout{display:grid;grid-template-columns:minmax(320px,410px) minmax(0,1fr);gap:22px;align-items:start}
+.matcher-input-panel{position:sticky;top:18px}
+.matcher-input-panel h2{margin:0 0 7px}
+.matcher-intro{color:#667d8c;font-size:13px;line-height:1.6;margin:0 0 20px}
+.matcher-abstract{display:block;width:100%;min-height:255px;padding:14px;resize:vertical;border:1px solid #cddfe8;border-radius:9px;background:#fcfefe;color:#1b4054;font:500 14px/1.6 'DM Sans','Segoe UI',sans-serif}
+.matcher-abstract:focus-visible{outline:3px solid rgba(0,114,167,.22);outline-offset:1px;border-color:#087eac}
+.matcher-input-meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:11px;color:#687d89;margin-top:8px;line-height:1.5}
+.matcher-input-meta>span:first-child{font-weight:800;color:#225e78}
+.matcher-check{display:flex;gap:9px;align-items:center;margin:18px 0;font-size:12px;font-weight:650;color:#416074;line-height:1.5;cursor:pointer}
+.matcher-check input{width:16px;height:16px;accent-color:#0878a7}
+.matcher-actions{display:flex;gap:10px;flex-wrap:wrap}
+.matcher-actions .btn-primary{flex:1}
+.matcher-actions .btn{min-height:43px}
+.matcher-privacy{display:flex;align-items:flex-start;gap:10px;margin-top:21px;padding:14px 13px;border:1px solid #cee4e4;border-radius:9px;background:#eff9f8;color:#1d716d}
+.matcher-privacy svg{flex:none;width:19px;height:19px}
+.matcher-privacy p{font-size:11px;line-height:1.6;margin:0;color:#416963}
+.matcher-privacy strong{color:#226963}
+.matcher-output{min-width:0}
+.matcher-placeholder{display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;padding:55px 26px;min-height:370px;background:#fff;border:1px dashed #b7d6e4;border-radius:12px}
+.matcher-placeholder-icon{width:56px;height:56px;border-radius:16px;background:#e9f4fa;color:#297ea7;display:flex;align-items:center;justify-content:center}
+.matcher-placeholder-icon svg{width:29px;height:29px}
+.matcher-placeholder h2{font:800 19px/1.35 'Manrope','Segoe UI',sans-serif;color:#1b4962;margin:18px 0 8px}
+.matcher-placeholder p{font-size:13px;line-height:1.65;color:#647e8d;max-width:430px;margin:0}
+.matcher-results-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:15px}
+.matcher-results-head h2{font:800 23px/1.3 'Manrope','Segoe UI',sans-serif;margin:0 0 5px;color:#19405b}
+.matcher-results-head p{font-size:12.5px;color:#587586;line-height:1.6;margin:0}
+.matcher-results-head strong{color:#215a7a}
+.matcher-detected{display:flex;flex-direction:column;gap:9px;margin-bottom:13px}
+.matcher-detected>span{font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:800;color:#557586}
+.matcher-topics{display:flex;flex-wrap:wrap;gap:7px}
+.matcher-topic{display:inline-block;padding:6px 10px;border-radius:6px;border:1px solid #cfe4ed;background:#edf7fc;font-size:11.5px;line-height:1.3;font-weight:700;color:#236686}
+.matcher-no-topics,.matcher-disclaimer{margin:11px 0 17px;font-size:12px;line-height:1.6;color:#6a7e88}
+.matcher-disclaimer{padding:11px 13px;background:#f5f8fa;border:1px solid #e2ebf0;border-radius:7px}
+.matcher-results{display:flex;flex-direction:column;gap:13px}
+.matcher-result-card{padding:20px;border:1px solid #d8e7ed;border-radius:11px;background:#fff;min-width:0;box-shadow:0 2px 8px rgba(16,58,82,.025)}
+.matcher-result-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.matcher-result-head>div{min-width:0}
+.matcher-rank{font-size:10px;letter-spacing:.08em;font-weight:850;color:#688a9a;text-transform:uppercase}
+.matcher-specialty{font-size:11.5px;font-weight:750;color:#0b769c;margin-top:8px}
+.matcher-result-card h3{font:800 16px/1.45 'Manrope','Segoe UI',sans-serif;margin:5px 0;color:#214358;overflow-wrap:anywhere}
+.matcher-society{font-size:11.5px;line-height:1.5;color:#718794;margin:0}
+.matcher-strength{flex:none;max-width:150px;display:inline-block;padding:6px 9px;border:1px solid #cde3dc;border-radius:6px;background:#eef8f2;color:#236b52;font-size:10.5px;line-height:1.4;font-weight:800;text-align:center}
+.matcher-reason{padding:11px 13px;margin:15px 0 12px;background:#f6f9fb;border:1px solid #e5eef2;border-radius:8px}
+.matcher-reason strong{font-size:11px;font-weight:850;color:#255d72}
+.matcher-reason p{margin:5px 0 0;font-size:12px;line-height:1.6;color:#587583}
+.matcher-result-details{display:grid;grid-template-columns:1fr 1fr;gap:14px;border-top:1px solid #e5eef1;padding-top:12px}
+.matcher-result-details>div{display:flex;flex-direction:column;gap:5px;min-width:0}
+.matcher-result-details>div>span{font-size:11px;color:#697e8c}
+.matcher-result-details strong{font-size:12px;color:#275168}
+.matcher-format{margin:13px 0;font-size:11.5px;line-height:1.6;border-radius:6px;padding:8px 10px}
+.matcher-format.matched{background:#edf7f1;color:#236d55}
+.matcher-format.check{background:#f4f6f7;color:#657985}
+.matcher-result-bottom{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap}
+.matcher-result-bottom .btn{padding:9px 12px;font-size:11.5px}
+.matcher-result-bottom .external-link{font-size:11.5px}
+.matcher-message{background:#f8fbfc;border:1px solid #d2e4eb;border-radius:10px;padding:22px;color:#32576a;font-size:13px;line-height:1.6}
+html[data-theme="dark"] .matcher-intro,html[data-theme="dark"] .matcher-input-meta,
+html[data-theme="dark"] .matcher-check,html[data-theme="dark"] .matcher-no-topics,
+html[data-theme="dark"] .matcher-disclaimer,html[data-theme="dark"] .matcher-results-head p,
+html[data-theme="dark"] .matcher-society,html[data-theme="dark"] .matcher-rank,
+html[data-theme="dark"] .matcher-reason p,html[data-theme="dark"] .matcher-result-details>div>span{color:#b2c5d2}
+html[data-theme="dark"] .matcher-abstract{background:#142637;border-color:#49687d;color:#ecf4fa}
+html[data-theme="dark"] .matcher-abstract::placeholder{color:#a3b7c5}
+html[data-theme="dark"] .matcher-input-meta>span:first-child,
+html[data-theme="dark"] .matcher-results-head h2,
+html[data-theme="dark"] .matcher-results-head strong,
+html[data-theme="dark"] .matcher-result-card h3,
+html[data-theme="dark"] .matcher-result-details strong,
+html[data-theme="dark"] .matcher-reason strong{color:#e2f2fc}
+html[data-theme="dark"] .matcher-privacy,
+html[data-theme="dark"] .matcher-placeholder,
+html[data-theme="dark"] .matcher-result-card,
+html[data-theme="dark"] .matcher-reason,
+html[data-theme="dark"] .matcher-disclaimer,
+html[data-theme="dark"] .matcher-message{background:#182d3e;border-color:#395c70}
+html[data-theme="dark"] .matcher-placeholder-icon{background:#29475e;color:#b5e5fa}
+html[data-theme="dark"] .matcher-privacy p,
+html[data-theme="dark"] .matcher-placeholder p,
+html[data-theme="dark"] .matcher-placeholder h2,
+html[data-theme="dark"] .matcher-message{color:#d1e3ee}
+html[data-theme="dark"] .matcher-privacy strong{color:#c0ebea}
+html[data-theme="dark"] .matcher-detected>span{color:#b1cddd}
+html[data-theme="dark"] .matcher-topic{background:#203f56;border-color:#47728a;color:#d0eaf9}
+html[data-theme="dark"] .matcher-specialty{color:#9cdaed}
+html[data-theme="dark"] .matcher-strength{background:#21453a;border-color:#44836c;color:#beebd0}
+html[data-theme="dark"] .matcher-result-details{border-color:#385164}
+html[data-theme="dark"] .matcher-format.matched{background:#234c41;color:#c1ead8}
+html[data-theme="dark"] .matcher-format.check{background:#293c4e;color:#c5d9e6}
+@media(max-width:1100px){.matcher-layout{grid-template-columns:minmax(285px,370px) minmax(0,1fr)}.matcher-result-head{flex-wrap:wrap}}
+@media(max-width:900px){.matcher-layout{grid-template-columns:1fr}.matcher-input-panel{position:static}.matcher-placeholder{min-height:230px}}
+@media(max-width:540px){.matcher-result-head{flex-direction:column}.matcher-strength{max-width:none}.matcher-result-details{gap:10px}.matcher-result-card{padding:15px}.matcher-actions .btn{flex:1 1 auto}}
