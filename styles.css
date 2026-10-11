@@ -601,3 +601,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
  .conference-cost-value{max-width:100%;text-align:left}
  .conference-cost-note{padding:12px 15px}
 }
+
+/* Conference details: prominent central planning action */
+.modal-actions{display:flex;flex-direction:column;align-items:stretch;gap:14px}
+.modal-plan-primary{display:flex;justify-content:center;width:100%}
+.modal-plan-button{font-size:15px;font-weight:800;padding:15px 32px;min-width:min(100%,300px);justify-content:center;text-align:center}
+.modal-secondary-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:9px}
