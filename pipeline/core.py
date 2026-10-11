@@ -267,7 +267,7 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
     checked_at=checked_at or dt.datetime.now(dt.timezone.utc).isoformat()
     targets=list(source_targets(data).items())
     if limit is not None: targets=targets[:limit]
-    output=[]; observed=[]; updated=dict(cache)
+    output=[]; observed=[]; future_observed=[]; updated=dict(cache)
     by_kind={'conference':{c['id']:c for c in data['conferences']},
              'award':{a['id']:a for a in data['awards']}}
     for i,(url,records) in enumerate(targets):
@@ -288,6 +288,13 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
                 for hit in extract_labeled_dates(content,ref['kind'],year,ref['name']):
                     observed.append({**hit,'record_type':ref['kind'],'record_id':ref['id'],
                                      'record_name':ref['name'],'source_url':url})
+            # Discover future editions of the SAME curated conference series only.
+            from .rollover import extract_future_meetings
+            for ref in records:
+                if ref['kind']=='conference':
+                    parent=by_kind['conference'][ref['id']]
+                    future_observed.extend(extract_future_meetings(content,parent,url,
+                        today=dt.date.fromisoformat(checked_at[:10])))
             updated[url]={'digest':digest,'checked_at':checked_at,'length':len(content)}
             output.append({'url':url,'status':state,'records':records,'checked_at':checked_at,'proposed_count':0})
         except (HTTPError,URLError,TimeoutError,ValueError,OSError,UnicodeError) as error:
@@ -323,6 +330,21 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
             'corroborating_sources':matching_sources,
             'review_status':'requires_human_verification',
             'reason':'Missing published date' if not old else 'Source date differs from current record'})
+    # Reject differing future dates for a single meeting edition.
+    future_by_id={}
+    for f in future_observed:
+        future_by_id.setdefault(f['record_id'],[]).append(f)
+    existing_ids={c['id'] for c in data['conferences']}
+    future_candidates=[]; future_conflicts=[]
+    for cid,hits in future_by_id.items():
+        if cid in existing_ids:continue
+        values={(h['start'],h['end']) for h in hits}
+        if len(values)>1:
+            future_conflicts.append({'record_id':cid,'values':sorted([list(x) for x in values])})
+            continue
+        hit=hits[0]
+        hit['corroborating_sources']=sorted({h['source_url'] for h in hits})
+        future_candidates.append(hit)
     proposals.sort(key=lambda x:(x['record_type'],x['record_id'],x['field'],x['proposed_value']))
     conflicts.sort(key=lambda x:(x['record_type'],x['record_id'],x['field']))
     for item in output:
@@ -330,6 +352,7 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
     report={'schema_version':2,'checked_at':checked_at,'source_count':len(output),
             'counts':{k:sum(x['status']==k for x in output) for k in ('baseline','changed','unchanged','unavailable')},
             'checks':output,'proposals':proposals,'conflicts':conflicts,
+            'future_candidates':future_candidates,'future_conflicts':future_conflicts,
             'publication':'Raw evidence only. Automatic publication is decided by a separate strict policy; conflicts are held.'}
     return report,updated
 
