@@ -105,6 +105,7 @@ AWARD_RANGE = re.compile(
 CONFERENCE_LABELS['open'].extend([
     r'abstract\s+center\s+opens?',
     r'call\s+for\s+submissions?\s+open',
+    r'call\s+for\s+abstracts?\s+(?:will\s+)?open(?:s)?(?:\s+on)?',
 ])
 CONFERENCE_LABELS['deadline'].extend([
     r'abstract\s+center\s+closes?',
@@ -347,7 +348,7 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
                     if ref['kind']!='conference':
                         continue
                     year=int(ref['start'][:4]) if ref.get('start') else next((int(y) for y in re.findall(r'20\d{2}',ref['name'])),None)
-                    for link in discover_abstract_links(page,url,year,max_links=3):
+                    for link in discover_abstract_links(page,url,year,max_links=3,record_name=ref['name']):
                         if link['url'] in configured_urls:
                             continue
                         key=ref['id']
