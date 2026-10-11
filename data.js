@@ -3155,24 +3155,34 @@ window.RISE_DATA = {
       "start": "2027-03-30",
       "end": "2027-04-02",
       "city": "Washington, DC",
-      "open": null,
-      "deadline": null,
+      "open": "2026-10-01",
+      "deadline": "2027-01-04",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
+      "deadlineTime": "11:59 PM EST",
+      "limit": 400,
+      "limitType": "words",
+      "limitNote": "Abstract body: maximum 400 words, excluding title and authors.",
       "fee": null,
-      "types": [],
+      "types": [
+        "Infection prevention",
+        "Antimicrobial stewardship",
+        "Healthcare epidemiology",
+        "Patient safety",
+        "Quality improvement",
+        "Implementation science"
+      ],
       "url": "https://sheaspring.org/",
-      "guideline": null,
+      "guideline": "https://sheaspring.org/attendees/abstracts/",
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "SHEA Spring 2027 has confirmed original research abstract submissions. Accepted presentations may be oral or poster; registration is required to present. Abstracts may be published in the Antimicrobial Stewardship & Healthcare Epidemiology online supplement. SHEA does not fund travel for accepted abstract presenters; a separate SHEA Spring Scholarship may be available.",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral presentation",
+        "Poster presentation"
+      ],
       "fieldSources": {
         "start": {
           "url": "https://sheaspring.org/",
@@ -3185,6 +3195,18 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://sheaspring.org/about/faqs/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE direct official-site verification",
+          "source_quote": "The Call for Abstracts will open on October 1, 2026."
+        },
+        "deadline": {
+          "url": "https://sheaspring.org/attendees/abstracts/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE direct official-site verification",
+          "source_quote": "The deadline to submit abstracts is January 4, 2027 11:59 pm EST."
         }
       }
     },
