@@ -128,7 +128,7 @@ function cleanIcs(str){return String(str||'').replace(/\\/g,'\\\\').replace(/\r?
 function foldIcsLine(text){let lines=[],part='',bytes=0;const enc=new TextEncoder();for(const char of text){const size=enc.encode(char).length;if(bytes+size>75){lines.push(part);part=' ';bytes=1;}part+=char;bytes+=size;}lines.push(part);return lines.join('\r\n')}
 function icsEvents(items){
  const stamp=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}Z$/,'Z');
- const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//RISE Collaborative//Conference Navigator//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:RISE Conference Milestones'];
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//RISE Collaborative//Conference Navigator//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:RISE Conference Navigator Milestones'];
  for(const e of items.filter(x=>x.date)){
   const end=e.end&&e.end>=e.date?e.end:e.date;
   const values=['BEGIN:VEVENT','UID:rise-'+String(e.uid).replace(/[^A-Za-z0-9_.-]/g,'-')+'@conference-navigator','DTSTAMP:'+stamp,'DTSTART;VALUE=DATE:'+e.date.replaceAll('-',''),'DTEND;VALUE=DATE:'+key(shift(date(end),1)).replaceAll('-',''),'SUMMARY:'+cleanIcs(e.title),'DESCRIPTION:'+cleanIcs(e.description||'')];
@@ -257,7 +257,7 @@ function initPlanner(){
   get('planReadiness').addEventListener('change',generatePlan);
   get('planPresentation').addEventListener('change',generatePlan);
  get('generatePlan').addEventListener('click',generatePlan);
- get('downloadPlan').addEventListener('click',()=>{if(!state.plan){showToast('Generate a timeline first');return}const items=state.plan.steps.map((s,i)=>({date:s.day,uid:`${state.plan.id}-${i}`,title:`RISE project milestone — ${s.title}${state.plan.estimated?' (provisional)':''}`,description:state.plan.name+' | '+s.desc+(state.plan.estimated?' | Dates based on assumed submission target, not official deadline.':'')}));downloadFile('RISE_research_roadmap.ics',icsEvents(items),'text/calendar;charset=utf-8');showToast('Research roadmap exported as .ics')});
+ get('downloadPlan').addEventListener('click',()=>{if(!state.plan){showToast('Generate a timeline first');return}const items=state.plan.steps.map((s,i)=>({date:s.day,uid:`${state.plan.id}-${i}`,title:`RISE Conference Navigator project milestone — ${s.title}${state.plan.estimated?' (provisional)':''}`,description:state.plan.name+' | '+s.desc+(state.plan.estimated?' | Dates based on assumed submission target, not official deadline.':'')}));downloadFile('RISE_research_roadmap.ics',icsEvents(items),'text/calendar;charset=utf-8');showToast('Research roadmap exported as .ics')});
  const next=C.find(c=>c.deadline&&c.deadline>=todayKey);get('planConference').value=next?next.id:list[0]?.id||'';
  generatePlan();
 }
