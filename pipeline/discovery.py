@@ -67,7 +67,8 @@ def discover_abstract_links(page, base_url, meeting_year=None, max_links=2):
 
     Require a relevant abstract/submission anchor, and keep child links within
     the same meeting section of the site (e.g. /annualmeeting/abstracts/).
-    For site root URLs, only strongly abstract-labelled links qualify.
+    Generic society-wide index pages are intentionally not used as evidence
+    for one particular conference edition.
     """
     root=urlsplit(base_url)
     if root.scheme!='https' or not root.hostname or root.username or root.password:
