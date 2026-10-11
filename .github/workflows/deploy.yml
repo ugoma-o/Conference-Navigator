@@ -7,6 +7,7 @@ on:
       - 'styles.css'
       - 'dark-theme.css'
       - 'abstract-matcher.css'
+      - 'accessibility.css'
       - 'abstract-matcher.js'
       - 'app.js'
       - 'data.json'
