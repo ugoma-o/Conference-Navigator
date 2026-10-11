@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: '17 10 * * 1'
   workflow_dispatch:
+  # Run promptly when the monitoring workflow itself is updated on main.
+  # This intentionally excludes data.json to avoid loops from bot commits.
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/monitor.yml'
 permissions:
   contents: write
   issues: write
