@@ -87,7 +87,7 @@ OPEN_AND_CLOSE = re.compile(
 # a "deadline." Require the entire linked statement before extracting either.
 OPEN_SUBMIT_BY = re.compile(
     rf'\b(?:abstract\s+)?submissions?\s+open\s+(?P<first>{SHORT_DATE})\s*,?\s+'
-    rf'and\s+must\s+be\s+submitted\s+by\b.{0,90}?\b(?P<second>{SHORT_DATE})',re.I)
+    rf'and\s+must\s+be\s+submitted\s+by\b.{{0,90}}?\b(?P<second>{SHORT_DATE})',re.I)
 # SID-style short ranges explicitly name late-breaking abstracts but express
 # the closing day as just a number: "March 1 – 18, 2027".
 LATE_BREAKING_RANGE = re.compile(
