@@ -15,9 +15,9 @@ class TestDeployAssetVersions(unittest.TestCase):
             root = Path(directory)
             (root / 'data.json').write_text(json.dumps({'conferences': [], 'awards': []}), encoding='utf-8')
             (root / 'index.html').write_text(
-                '<link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="dark-theme.css" /><link rel="stylesheet" href="abstract-matcher.css" />'
+                '<link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="dark-theme.css" /><link rel="stylesheet" href="abstract-matcher.css" /><link rel="stylesheet" href="accessibility.css" />'
                 '<script src="data.js"></script><script src="abstract-matcher.js"></script><script src="app.js"></script>', encoding='utf-8')
-            for filename in ('app.js', 'data.js', 'styles.css', 'dark-theme.css', 'abstract-matcher.js', 'abstract-matcher.css'):
+            for filename in ('app.js', 'data.js', 'styles.css', 'dark-theme.css', 'abstract-matcher.js', 'abstract-matcher.css', 'accessibility.css'):
                 (root / filename).write_text('initial content', encoding='utf-8')
             with patch.object(build_site, 'ROOT', root), patch.object(build_site.subprocess, 'run'):
                 build_site.build(root / 'dist')
@@ -28,6 +28,7 @@ class TestDeployAssetVersions(unittest.TestCase):
                 self.assertIn(f'href="styles.css?v={digest}"', html)
                 self.assertIn(f'href="dark-theme.css?v={digest}"', html)
                 self.assertIn(f'href="abstract-matcher.css?v={digest}"', html)
+                self.assertIn(f'href="accessibility.css?v={digest}"', html)
                 self.assertIn(f'src="abstract-matcher.js?v={digest}"', html)
                 (root / 'app.js').write_text('new content', encoding='utf-8')
                 build_site.build(root / 'dist')
@@ -41,6 +42,12 @@ class TestDeployAssetVersions(unittest.TestCase):
                 theme_digest = hashlib.sha256(b'dark theme updated').hexdigest()[:12]
                 self.assertIn(f'href="dark-theme.css?v={theme_digest}"', theme_html)
                 self.assertNotIn(f'href="dark-theme.css?v={digest}"', theme_html)
+                (root / 'accessibility.css').write_text('larger text updated', encoding='utf-8')
+                build_site.build(root / 'dist')
+                accessible_html = (root / 'dist' / 'index.html').read_text(encoding='utf-8')
+                accessible_digest = hashlib.sha256(b'larger text updated').hexdigest()[:12]
+                self.assertIn(f'href="accessibility.css?v={accessible_digest}"', accessible_html)
+                self.assertNotIn(f'href="accessibility.css?v={digest}"', accessible_html)
 
 
 if __name__ == '__main__':
