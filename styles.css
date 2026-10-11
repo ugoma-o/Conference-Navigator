@@ -618,3 +618,15 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .brand-subtitle{font-size:11px;letter-spacing:.035em;font-weight:800;color:#f4d6a2;margin-top:8px;line-height:1.35}
 @media(max-width:650px){.topbar{min-height:76px;padding-top:10px;padding-bottom:10px}.workspace-title{column-gap:7px}.workspace-rise{font-size:24px}.workspace-name{font-size:18px}.date-note{font-size:10px}}
 @media(max-width:420px){.workspace-title{max-width:220px}.workspace-rise{font-size:22px}.workspace-name{font-size:16px}}
+
+/* Display switch belongs immediately above the selected conference view. */
+#discoverView .explore-mode-switch{display:flex;width:max-content;margin:15px 0 12px}
+@media(max-width:650px){#discoverView .explore-mode-switch{width:100%;max-width:380px;margin:12px 0}}
+/* Consecutive conference days share connected ribbon segments within each calendar week. */
+.calendar-grid .day-cell{position:relative;overflow:visible}
+.calendar-grid .day-cell.has-meetings{padding-bottom:45px}
+.calendar-grid .meeting-ribbon{position:absolute;left:7px;right:7px;bottom:calc(7px + var(--meeting-lane)*19px);height:17px;line-height:17px;padding:0 5px;border:0;border-radius:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;font-size:9px;font-weight:800;color:#215e50;background:#ccebdd;z-index:2;cursor:pointer}
+.calendar-grid .meeting-ribbon.joins-prev{left:0;border-top-left-radius:0;border-bottom-left-radius:0}
+.calendar-grid .meeting-ribbon.joins-next{right:-1px;border-top-right-radius:0;border-bottom-right-radius:0}
+.calendar-grid .meeting-ribbon:hover{background:#a7ddc5;z-index:3}
+.calendar-grid .meeting-ribbon:focus-visible{outline:2px solid #07527f;outline-offset:1px;z-index:4}
