@@ -248,6 +248,141 @@ function roadmapMarkup(c,type,weeks,compact=false,leadMonths=6,readiness='idea',
  const bufferNotice=`<div class="v7-buffer-note"><span class="v7-buffer-symbol">✓</span><div><strong>Submit early: ${escape(fmt(target.internalDay))}</strong><span>${target.bufferDays?`${target.bufferDays}-day planning buffer before the ${target.estimated?'estimated':'listed'} cutoff`:'Submission window is too short for an advance buffer'}. Aim to finish the draft and coauthor review before this date.</span></div></div>`;
  return `<div class="roadmap-block v6-roadmap v7-roadmap ${compact?'compact':''} ${target.estimated?'provisional':''}"><div class="roadmap-explainer"><div><strong>${escape(fmt(key(start)))} – ${escape(fmt(target.internalDay))}</strong><span>${weeks}-week illustrative plan to your early submit-by goal</span></div>${tag}</div>${status}${bufferNotice}<div class="v6-roadmap-heading">PROJECT STAGES <span>Suggested work periods—not mandatory time commitments</span></div><div class="v6-canvas"><div class="v6-guides">${guides}</div><div class="v6-today-top"><span class="v6-today-tag" style="left:clamp(50px,${todayPct.toFixed(2)}%,calc(100% - 50px))">YOU ARE HERE <small>${escape(fmt(todayKey,{month:'short',day:'numeric',year:'numeric'}))}</small></span></div><div class="v6-axis">${ticks}</div><div class="v6-stages">${barRows}</div><div class="v6-bottom-rail"><div class="v6-event-labels">${eventFlags}</div></div></div><p class="roadmap-disclaimer">${c.open?'':'Abstract submission opening date not yet announced. '}${escape(target.explanation)} Submit-by goal is a planning recommendation—not an organizer deadline. Timelines are illustrative; institutional approvals and conference requirements take precedence.</p></div>`;
 }
+function roadmapExportSvg(plan){
+ const conf=C.find(c=>c.id===plan.id);
+ if(!conf||!plan.target||!plan.steps.length)throw Error('No research roadmap is available');
+ const W=1120, L=48, R=1072;
+ const target=plan.target, due=date(target.day), submit=date(target.internalDay);
+ const meetingStart=date(conf.start), meetingEnd=date(conf.end||conf.start);
+ const typeNames={retrospective:'Retrospective chart review',case:'Case report / case series',qi:'Quality improvement',systematic:'Systematic review / meta-analysis',medicaleducation:'Medical education',prospective:'Prospective clinical study'};
+ const readinessNames={idea:'Starting with an idea',working:'Project underway',ready:'Results or draft ready'};
+ const presentationNames={either:'Poster or oral',poster:'Poster',oral:'Oral presentation'};
+ const stages=plan.steps.map((step,i)=>({title:step.title,from:date(step.day),to:i+1<plan.steps.length?date(plan.steps[i+1].day):submit}));
+ if(meetingStart && meetingStart>due){
+   const from=new Date(Math.max(shift(meetingStart,-28).getTime(),due.getTime()));
+   if(from<meetingStart)stages.push({title:plan.presentation==='oral'?'Oral presentation preparation':plan.presentation==='poster'?'Poster preparation':'Presentation preparation',from,to:meetingStart});
+ }
+ const chartY=485,rowH=49,chartBottom=chartY+stages.length*rowH;
+ const legendY=chartBottom+40,milestoneTitleY=legendY+111,detailY=milestoneTitleY+35,detailH=90;
+ const bottom=detailY+plan.steps.length*detailH+118;
+ const parts=[`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${bottom}" viewBox="0 0 ${W} ${bottom}" role="img" aria-labelledby="reportTitle reportDesc"><title id="reportTitle">RISE Conference Navigator research roadmap for ${escape(conf.name)}</title><desc id="reportDesc">Downloadable visual project timeline with conference dates, abstract submission goal, project phases, and detailed milestones.</desc>`];
+ const add=markup=>parts.push(markup);
+ const rect=(x,y,w,h,fill,rx=0,stroke='none')=>add(`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${fill}" stroke="${stroke}"/>`);
+ const text=(x,y,str,size=14,color='#1d3d48',weight=500,extra='')=>add(`<text x="${x}" y="${y}" font-family="Arial, Helvetica, sans-serif" font-size="${size}" fill="${color}" font-weight="${weight}" ${extra}>${escape(str)}</text>`);
+ function lines(str,maxChars){
+   const words=String(str||'').split(/\s+/).filter(Boolean),result=[];
+   let current='';
+   for(const word of words){
+     if(current && (current+' '+word).length>maxChars){result.push(current);current=word;}
+     else current=current?current+' '+word:word;
+   }
+   if(current)result.push(current);
+   return result.length?result:[''];
+ }
+ rect(0,0,W,bottom,'#ffffff');
+ rect(0,0,W,168,'#12363f');
+ rect(48,28,288,5,'#e3b46e',3);
+ text(L,61,'RISE CONFERENCE NAVIGATOR',15,'#f3d59f',800,'letter-spacing="2"');
+ text(L,104,'RESEARCH ROADMAP',34,'#ffffff',800);
+ const nameLines=lines(conf.name,86);
+ nameLines.slice(0,2).forEach((line,i)=>text(L,137+i*21,line,17,'#d5e7e4',600));
+ const dates=[
+   ['PROJECT START',fmt(plan.start)],
+   ['AIM TO SUBMIT',fmt(target.internalDay)],
+   [target.estimated?'ESTIMATED ABSTRACT DUE':'ABSTRACT DEADLINE',fmt(target.day)]
+ ];
+ const cardY=191,cardW=322,cardGap=15;
+ dates.forEach(([label,value],i)=>{
+   const x=L+i*(cardW+cardGap);
+   rect(x,cardY,cardW,91,'#f2f7f7',12,'#d9e8e6');
+   text(x+20,cardY+29,label,12,'#63817e',700,'letter-spacing="1"');
+   text(x+20,cardY+63,value,23,'#173e45',800);
+ });
+ rect(L,299,W-2*L,120,target.estimated?'#fff7ea':'#f5f9f6',12,target.estimated?'#e6d0af':'#ddeae4');
+ const type=typeNames[plan.type]||plan.type;
+ text(L+19,324,`${type}  •  ${plan.weeks}-week illustrative plan`,16,'#173e45',800);
+ text(L+19,349,`Project status: ${readinessNames[plan.readiness]||'Not specified'}    |    Presentation: ${presentationNames[plan.presentation]||'Either'}`,13,'#4b716f',600);
+ const guidance=lines(plan.guidance,122).slice(0,2);
+ guidance.forEach((line,i)=>text(L+19,374+i*17,line,13,'#617f79',500));
+ text(L,452,'PROJECT TIMELINE',17,'#173e45',800,'letter-spacing="1.2"');
+ text(L,472,'Stage durations are illustrative; dates are not mandatory commitments.',12,'#6d8585',500);
+ rect(48,chartY,1024,stages.length*rowH+4,'#f8fafb',9,'#e0ebe9');
+ const xStart=350,xEnd=1040,chartSpan=xEnd-xStart;
+ const day0=Math.min(date(plan.start).getTime(),conf.open?date(conf.open).getTime():Infinity,today.getTime()-14*86400000);
+ const day1=Math.max((meetingEnd||due).getTime()+9*86400000,today.getTime()+14*86400000);
+ const span=Math.max(1,day1-day0);
+ const xDate=d=>xStart+Math.max(0,Math.min(1,(d.getTime()-day0)/span))*chartSpan;
+ const milestoneGuides=[
+  conf.open?{day:date(conf.open),color:'#4e93bd'}:null,
+  {day:submit,color:'#d28a3b'},
+  {day:due,color:'#bd697e'},
+  meetingStart?{day:meetingStart,color:'#6d5eaf'}:null
+ ].filter(Boolean);
+ milestoneGuides.forEach(m=>add(`<line x1="${xDate(m.day)}" y1="${chartY}" x2="${xDate(m.day)}" y2="${chartBottom}" stroke="${m.color}" stroke-width="1.7" opacity=".65" stroke-dasharray="5,4"/>`));
+ const barColors=['#337d9b','#368b88','#536caa','#7b77b0','#ba9071','#468f77','#926ba7'];
+ stages.forEach((stage,i)=>{
+   const y=chartY+i*rowH+10;
+   if(i) add(`<line x1="56" x2="1064" y1="${chartY+i*rowH}" y2="${chartY+i*rowH}" stroke="#e6edec"/>`);
+   const titleLines=lines(stage.title,34);
+   titleLines.slice(0,2).forEach((line,j)=>text(64,y+10+j*15,line,12,'#314f59',700));
+   const a=xDate(stage.from),b=xDate(stage.to);
+   rect(a,y,Math.max(5,b-a),25,barColors[i%barColors.length],5);
+   text(Math.min(a+7,xEnd-95),y+41,`${fmt(key(stage.from),{month:'short',day:'numeric'})}`,10,'#708486',500);
+ });
+ const legend=[
+  conf.open?['Submissions open',fmt(conf.open),'#4e93bd']:['Submissions open','Not announced','#aeb5b7'],
+  ['Your early submit-by goal',fmt(target.internalDay),'#d28a3b'],
+  [target.estimated?'Illustrative abstract deadline':'Listed abstract deadline',fmt(target.day),'#bd697e'],
+  ['Conference begins',fmt(conf.start),'#6d5eaf']
+ ];
+ legend.forEach(([label,value,color],i)=>{
+   const x=L+(i%2)*515,y=legendY+Math.floor(i/2)*35;
+   rect(x,y-10,8,8,color,2);
+   text(x+18,y-2,label,12,'#395c63',700);
+   text(x+280,y-2,value,12,'#395c63',600);
+ });
+ text(L,milestoneTitleY,'MILESTONES & DELIVERABLES',17,'#173e45',800,'letter-spacing="1"');
+ plan.steps.forEach((step,i)=>{
+   const y=detailY+i*detailH;
+   rect(L,y,W-L*2,detailH-9,i%2?'#f8fbfa':'#f1f7f6',9);
+   rect(L+15,y+16,26,26,'#2d7175',13);
+   text(L+28,y+34,String(i+1),12,'#ffffff',800,'text-anchor="middle"');
+   text(L+56,y+35,step.title,16,'#22434c',800);
+   text(R-19,y+34,fmt(step.day),13,'#3a746f',700,'text-anchor="end"');
+   lines(step.desc,136).slice(0,2).forEach((line,j)=>text(L+56,y+58+j*16,line,12,'#627c7e',500));
+ });
+ const footY=detailY+plan.steps.length*detailH+19;
+ add(`<line x1="${L}" x2="${R}" y1="${footY}" y2="${footY}" stroke="#d9e7e3"/>`);
+ const note=target.estimated?'The society abstract deadline is not announced. The indicated cutoff is an illustrative planning assumption.':target.conflict?'The listed abstract deadline has conflicting sources. Verify it directly with the organizer.':'Confirm the official abstract deadline, closing time, and submission requirements with the organizer.';
+ lines(note+' Your submit-by date is an internal planning target, not the conference deadline.',145).slice(0,2).forEach((line,i)=>text(L,footY+25+i*16,line,12,'#516d71',500));
+ text(L,footY+70,`RISE Conference Navigator  •  Generated ${new Date().toLocaleDateString('en-US')}`,12,'#7b9694',600);
+ add('</svg>');
+ return parts.join('');
+}
+
+function downloadRoadmapVisual(){
+ if(!state.plan){showToast('Generate a roadmap first');return;}
+ try{
+  const filename='RISE_Conference_Navigator_'+state.plan.id+'_Research_Roadmap.svg';
+  downloadFile(filename,roadmapExportSvg(state.plan),'image/svg+xml;charset=utf-8');
+  showToast('Visual roadmap downloaded as SVG');
+ }catch(err){showToast('Unable to export the visual roadmap');}
+}
+
+function printRoadmapPdf(){
+ if(!state.plan){showToast('Generate a roadmap first');return;}
+ const win=window.open('','_blank');
+ if(!win){showToast('Allow pop-ups to save the roadmap as PDF, or download the SVG');return;}
+ try{
+  const svg=roadmapExportSvg(state.plan);
+  win.document.open();
+  win.document.write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>RISE Conference Navigator — Research Roadmap</title><style>@page{size:A4 portrait;margin:8mm}*{box-sizing:border-box}body{margin:0;background:#edf3f2;font:13px Arial,sans-serif}.toolbar{padding:12px;text-align:center}.toolbar button{background:#164e60;color:white;border:0;border-radius:7px;padding:10px 18px;font-weight:700;cursor:pointer}.report{max-width:900px;margin:auto;box-shadow:0 7px 30px #0002;background:white}.report svg{display:block;width:100%;height:auto}@media print{.toolbar{display:none}body{background:white}.report{box-shadow:none;max-width:none}.report svg{width:100%;max-height:calc(297mm - 16mm);height:auto}}</style></head><body><div class="toolbar"><button onclick="window.print()">Print / Save as PDF</button><p>Choose “Save as PDF” in the print destination to download a PDF copy.</p></div><div class="report">'+svg+'</div></body></html>');
+  win.document.close();
+  win.focus();
+  win.setTimeout(()=>win.print(),350);
+ }catch(err){win.close();showToast('Unable to open the printable roadmap');}
+}
+
 function initPlanner(){
  const list=C.filter(c=>c.deadline||c.start).sort((a,b)=>deadlineOrder(a).localeCompare(deadlineOrder(b))||a.name.localeCompare(b.name));
  get('planConference').innerHTML=list.map(c=>`<option value="${escape(c.id)}">${escape(c.name)} (${c.deadline?fmt(c.deadline):'Estimated planning available'})</option>`).join('');
@@ -257,24 +392,26 @@ function initPlanner(){
   get('planReadiness').addEventListener('change',generatePlan);
   get('planPresentation').addEventListener('change',generatePlan);
  get('generatePlan').addEventListener('click',generatePlan);
+ get('downloadPlanVisual').addEventListener('click',downloadRoadmapVisual);
+ get('printPlanPdf').addEventListener('click',printRoadmapPdf);
  get('downloadPlan').addEventListener('click',()=>{if(!state.plan){showToast('Generate a timeline first');return}const items=state.plan.steps.map((s,i)=>({date:s.day,uid:`${state.plan.id}-${i}`,title:`RISE Conference Navigator project milestone — ${s.title}${state.plan.estimated?' (provisional)':''}`,description:state.plan.name+' | '+s.desc+(state.plan.estimated?' | Dates based on assumed submission target, not official deadline.':'')}));downloadFile('RISE_research_roadmap.ics',icsEvents(items),'text/calendar;charset=utf-8');showToast('Research roadmap exported as .ics')});
  const next=C.find(c=>c.deadline&&c.deadline>=todayKey);get('planConference').value=next?next.id:list[0]?.id||'';
  generatePlan();
 }
 function generatePlan(){
  const selectedType=get('planType').value;
- if(!selectedType){state.plan=null;get('planHeading').textContent='Choose your research project type';get('downloadPlan').disabled=true;get('planResult').innerHTML='<div class="roadmap-awaiting"><strong>Select a project type to begin</strong><span>Choose the type in the highlighted field to generate your research roadmap.</span></div>';return;}
- get('downloadPlan').disabled=false;
+ if(!selectedType){state.plan=null;get('planHeading').textContent='Choose your research project type';get('downloadPlan').disabled=true;get('downloadPlanVisual').disabled=true;get('printPlanPdf').disabled=true;get('planResult').innerHTML='<div class="roadmap-awaiting"><strong>Select a project type to begin</strong><span>Choose the type in the highlighted field to generate your research roadmap.</span></div>';return;}
+ get('downloadPlan').disabled=false;get('downloadPlanVisual').disabled=false;get('printPlanPdf').disabled=false;
  const c=C.find(c=>c.id===get('planConference').value),lead=Number(get('planLeadMonths').value)||6;
  const target=c?submissionPlanTarget(c,lead):null;
  get('planLeadGroup').classList.toggle('hidden',!!c?.deadline);
- if(!c||!target){state.plan=null;get('planResult').innerHTML='<div class="plan-summary plan-warning"><strong>No planning anchor available</strong><p>Select a conference with a meeting date or abstract submission deadline.</p></div>';return}
+ if(!c||!target){state.plan=null;get('downloadPlan').disabled=true;get('downloadPlanVisual').disabled=true;get('printPlanPdf').disabled=true;get('planResult').innerHTML='<div class="plan-summary plan-warning"><strong>No planning anchor available</strong><p>Select a conference with a meeting date or abstract submission deadline.</p></div>';return}
  const type=get('planType').value,w=Math.min(156,Math.max(2,defaults[type]));
  const end=date(target.internalDay),start=shift(end,-7*w),days=daysAway(target.day);
  const steps=models[type].map(([title,desc,portion])=>({title,desc,day:key(shift(start,Math.round(7*w*portion)))}));
  const needs=w<defaults[type]?`This ${w}-week schedule is shorter than the ${defaults[type]}-week illustrative baseline for this project type. `:'';
  const msg=days<0?'The planning target has passed; a future conference cycle may be more realistic.':key(start)<todayKey?'The suggested start date has passed. An already-in-progress project may be needed.':'This planning schedule can be adjusted as the submission window is announced.';
- state.plan={id:c.id,name:c.name,steps,estimated:target.estimated};
+ state.plan={id:c.id,name:c.name,steps,estimated:target.estimated,type,weeks:w,lead,readiness:get('planReadiness').value,presentation:get('planPresentation').value,target,start:key(start),guidance:needs+msg};
  get('planHeading').textContent=c.name;
  get('planResult').innerHTML=`<div class="plan-summary ${days<0||key(start)<todayKey||w<defaults[type]?'plan-warning':''}"><strong>${escape(fmt(key(start)))} → ${escape(fmt(target.internalDay))}</strong><span class="plan-goal-caption">Your early submit-by goal · ${target.bufferDays}-day buffer before ${escape(fmt(target.day))}</span>${target.estimated?'<span class="estimate-chip">Provisional, not an announced deadline</span>':''}<p>${escape(needs+msg)} ${escape(target.explanation)}</p></div>${roadmapMarkup(c,type,w,false,lead,get('planReadiness').value,get('planPresentation').value)}<details class="milestone-disclosure"><summary>View milestone descriptions and exact dates</summary><div class="milestone-table">${steps.map(s=>`<div><strong>${escape(s.title)}</strong><span>${escape(fmt(s.day))}</span><p>${escape(s.desc)}</p></div>`).join('')}</div></details>`;
 }
