@@ -607,3 +607,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .modal-plan-primary{display:flex;justify-content:center;width:100%}
 .modal-plan-button{font-size:15px;font-weight:800;padding:15px 32px;min-width:min(100%,300px);justify-content:center;text-align:center}
 .modal-secondary-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:9px}
+
+/* Elevated RISE branding — desktop and mobile */
+.topbar{min-height:92px;height:auto;padding-top:13px;padding-bottom:13px;background:linear-gradient(100deg,#ffffff 0%,#f3f9fa 100%)}
+.workspace-title{display:flex;align-items:baseline;flex-wrap:wrap;column-gap:13px;row-gap:3px;font-family:'Manrope','Segoe UI',sans-serif;line-height:1.12;letter-spacing:-.035em}
+.workspace-rise{font-size:30px;font-weight:900;letter-spacing:.055em;background:linear-gradient(125deg,#07527f 10%,#159c9b 72%,#d5a265 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.workspace-name{font-size:25px;font-weight:850;color:#12323b;letter-spacing:-.055em}
+.brand{padding-bottom:39px}
+.brand-name{font-size:41px;letter-spacing:.045em;font-weight:900;line-height:1.05;color:#fff;text-shadow:0 2px 18px rgba(96,217,215,.26)}
+.brand-subtitle{font-size:11px;letter-spacing:.035em;font-weight:800;color:#f4d6a2;margin-top:8px;line-height:1.35}
+@media(max-width:650px){.topbar{min-height:76px;padding-top:10px;padding-bottom:10px}.workspace-title{column-gap:7px}.workspace-rise{font-size:24px}.workspace-name{font-size:18px}.date-note{font-size:10px}}
+@media(max-width:420px){.workspace-title{max-width:220px}.workspace-rise{font-size:22px}.workspace-name{font-size:16px}}
