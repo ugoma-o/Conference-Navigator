@@ -534,3 +534,49 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 
 /* Legacy cached card scripts may still output invented initials; never display them. */
 #discoverView .conference-card .row-identity .conf-logo{display:none!important}
+
+/* List and calendar are two coordinated views under Explore conferences. */
+.workspace-title{
+  font:700 13px/1.3 'Manrope','Segoe UI',sans-serif;
+  color:#174e70;
+  letter-spacing:-.01em;
+}
+.explore-mode-switch{
+  display:inline-flex;
+  align-items:stretch;
+  gap:3px;
+  padding:4px;
+  margin:0 0 27px;
+  background:#edf5f9;
+  border:1px solid #d2e5ef;
+  border-radius:9px;
+}
+.explore-mode-button{
+  min-width:116px;
+  border:1px solid transparent;
+  border-radius:6px;
+  background:transparent;
+  color:#516f81;
+  padding:10px 17px;
+  font:700 12px/1.3 'Manrope','Segoe UI',sans-serif;
+  cursor:pointer;
+}
+.explore-mode-button:hover{color:#07527f;background:#e4f0f7}
+.explore-mode-button.active{
+  background:#fff;
+  border-color:#bdd8e6;
+  color:#07527f;
+  box-shadow:0 1px 3px rgba(0,67,104,.08);
+}
+.explore-mode-button:focus-visible{outline:2px solid #006098;outline-offset:2px}
+.explore-mode-panel:not(.active){display:none!important}
+.explore-mode-panel.active{display:block}
+.explore-calendar-description{color:#607887;font-size:13px;line-height:1.6;margin:0 0 19px}
+#discoverView #calendarView{min-width:0}
+#discoverView #calendarView .calendar-toolbar{margin-top:0}
+@media(max-width:650px){
+  .workspace-title{font-size:12px}
+  .explore-mode-switch{display:flex;width:100%;max-width:380px;margin-bottom:23px}
+  .explore-mode-button{flex:1;min-width:0;padding:10px 7px}
+  #discoverView #calendarView .calendar-workspace{min-width:0}
+}
