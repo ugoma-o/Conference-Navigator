@@ -2106,6 +2106,265 @@
         "Quick Shot",
         "Poster"
       ]
+    },
+    {
+      "id": "aacr27",
+      "name": "AACR Annual Meeting 2027",
+      "society": "American Association for Cancer Research",
+      "specialty": "Oncology",
+      "start": "2027-04-02",
+      "end": "2027-04-07",
+      "city": "Orlando, FL",
+      "open": "2026-09-28",
+      "deadline": "2026-11-10",
+      "lateOpen": "2026-12-02",
+      "lateDeadline": "2027-01-06",
+      "deadlineTime": "11:59 PM ET",
+      "types": [
+        "Basic cancer research",
+        "Translational research",
+        "Clinical cancer research",
+        "Population science and prevention"
+      ],
+      "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+      "guideline": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/",
+      "evidence": "official",
+      "note": "Regular abstracts and late-breaking/clinical trials abstracts have separate deadlines. Meeting held at Orange County Convention Center.",
+      "venue": "Orange County Convention Center",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "open": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "deadline": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "lateOpen": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "lateDeadline": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "sitc27",
+      "name": "SITC Annual Meeting 2027",
+      "society": "Society for Immunotherapy of Cancer",
+      "specialty": "Oncology",
+      "start": "2027-11-03",
+      "end": "2027-11-07",
+      "city": "National Harbor, MD",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "types": [
+        "Cancer immunotherapy",
+        "Clinical research",
+        "Translational immuno-oncology"
+      ],
+      "url": "https://www.sitcancer.org/edu/41st-annual-meeting/archive",
+      "evidence": "official",
+      "note": "Includes annual meeting and pre-conference programs; abstract submissions not yet confirmed.",
+      "venue": "Gaylord National Resort and Convention Center",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.sitcancer.org/edu/41st-annual-meeting/archive",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://www.sitcancer.org/edu/41st-annual-meeting/archive",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "sabcs27",
+      "name": "San Antonio Breast Cancer Symposium 2027",
+      "society": "San Antonio Breast Cancer Symposium",
+      "specialty": "Oncology",
+      "start": "2027-12-07",
+      "end": "2027-12-10",
+      "city": "San Antonio, TX",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "types": [
+        "Breast cancer",
+        "Clinical oncology",
+        "Translational breast cancer research"
+      ],
+      "url": "https://sabcs.org/media/future-symposia/",
+      "evidence": "official",
+      "note": "Organizer confirms the 2027 symposium dates; abstract submission dates not yet confirmed.",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://sabcs.org/media/future-symposia/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://sabcs.org/media/future-symposia/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "tct27",
+      "name": "TCT 2027",
+      "society": "Cardiovascular Research Foundation",
+      "specialty": "Cardiology",
+      "start": "2027-10-18",
+      "end": "2027-10-21",
+      "city": "San Francisco, CA",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "types": [
+        "Interventional cardiology",
+        "Clinical trials",
+        "Cardiovascular devices"
+      ],
+      "url": "https://www.tctmd.com/node/50962",
+      "evidence": "official",
+      "note": "Transcatheter Cardiovascular Therapeutics meeting. Future abstract submission windows have not yet been confirmed.",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.tctmd.com/node/50962",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://www.tctmd.com/node/50962",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "esmo27",
+      "name": "ESMO Congress 2027",
+      "society": "European Society for Medical Oncology",
+      "specialty": "Oncology",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "types": [
+        "Medical oncology",
+        "Clinical trials",
+        "Translational cancer research"
+      ],
+      "url": "https://www.esmo.org/meeting-calendar",
+      "evidence": "unannounced",
+      "flag": "unannounced",
+      "note": "International flagship medical oncology congress. 2027 meeting and abstract dates require organizer confirmation.",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {}
+    },
+    {
+      "id": "aasld27",
+      "name": "AASLD The Liver Meeting 2027",
+      "society": "American Association for the Study of Liver Diseases",
+      "specialty": "Gastroenterology",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "types": [
+        "Hepatology",
+        "Liver disease",
+        "Clinical research"
+      ],
+      "url": "https://www.aasld.org/the-liver-meeting",
+      "evidence": "unannounced",
+      "flag": "unannounced",
+      "note": "Flagship hepatology research meeting. No verified 2027 meeting or abstract dates; 2026 dates must not be carried forward.",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {}
     }
   ],
   "awards": [
