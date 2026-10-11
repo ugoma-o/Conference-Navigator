@@ -66,6 +66,12 @@ class AbstractDiscoveryTests(unittest.TestCase):
         self.assertEqual([item['url'] for item in found],
                          ['https://society.example/meetings/oncology-2027/abstracts/'])
 
+    def test_bare_anchor_attributes_do_not_crash_discovery(self):
+        html='''<html><a href="/annualmeeting/abstracts/" title
+            aria-label>Abstract Information</a><a href="/annualmeeting/rules/" title>Other</a></html>'''
+        links=discover_abstract_links(html,LANDING,2027)
+        self.assertIn(ABSTRACT,[x['url'] for x in links])
+
     def test_no_crawl_without_relevant_links(self):
         text='<html><a href="/annualmeeting/hotel/">Book Hotel</a></html>'
         self.assertEqual(discover_abstract_links(text,LANDING,2027),[])
