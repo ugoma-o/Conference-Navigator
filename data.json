@@ -843,32 +843,61 @@
       "name": "ACGME Annual Educational Conference 2027",
       "society": "ACGME",
       "specialty": "Medical Education",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
+      "start": "2027-02-25",
+      "end": "2027-02-27",
+      "city": "San Antonio, TX",
+      "open": "2026-08-17",
+      "deadline": "2026-09-24",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
+      "deadlineTime": "5:00 PM CT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [
-        "GME research",
-        "Assessment",
-        "Resident wellbeing"
+        "Graduate medical education research",
+        "Educational innovations",
+        "Quality improvement"
       ],
       "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/",
-      "guideline": null,
+      "guideline": "https://www.acgme.org/newsroom/e-communication/2026/august-3-2026/",
       "evidence": "unannounced",
-      "note": "",
+      "note": "ACGME 2027 Call for Abstracts opened August 17 and closed September 24, 2026, 5 PM CT. These are scientific/educational poster submissions, distinct from lecture proposals or photo contests.",
       "flag": "unannounced",
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "researchOpportunity": "Graduate medical education and accreditation"
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Poster",
+        "Selected oral poster"
+      ],
+      "researchOpportunity": "Graduate medical education and accreditation",
+      "fieldSources": {
+        "open": {
+          "url": "https://www.acgme.org/newsroom/e-communication/2026/august-3-2026/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "deadline": {
+          "url": "https://www.acgme.org/newsroom/e-communication/2026/august-3-2026/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "start": {
+          "url": "https://www.acgme.org/newsroom/e-communication/2026/august-3-2026/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "end": {
+          "url": "https://www.acgme.org/newsroom/e-communication/2026/august-3-2026/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        }
+      }
     },
     {
       "id": "flacp27",
@@ -1068,11 +1097,21 @@
       "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
       "guideline": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
       "evidence": "official",
-      "note": "Displayed deadline applies to New Research posters, not general session posters.",
+      "note": "Separate APA 2027 submission tracks: general sessions and regular posters closed September 10, 2026; New Research posters are open November 12, 2026–January 8, 2027 at 5 PM ET (the main displayed deadline). A distinct phase II–IV clinical trials plenary accepts submissions through January 8, 2027 at 2 PM ET. Do not confuse the 2 PM clinical trials cutoff with the 5 PM New Research poster cutoff.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "clinicalTrialsDeadline": "2027-01-08",
+      "clinicalTrialsDeadlineTime": "2:00 PM ET",
+      "clinicalTrialsSource": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
+      "fieldSources": {
+        "clinicalTrialsDeadline": {
+          "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE direct official-site review"
+        }
+      }
     },
     {
       "id": "rsna27",
@@ -1113,7 +1152,7 @@
       "start": "2027-09-18",
       "end": "2027-09-22",
       "city": "Chicago, IL",
-      "open": null,
+      "open": "2026-12-02",
       "deadline": null,
       "lateOpen": null,
       "lateDeadline": null,
@@ -1130,11 +1169,20 @@
       "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/am-exhibitors/general-information/future-annual-meeting",
       "guideline": null,
       "evidence": "official",
-      "note": "Abstract cycle unannounced. Society future meetings list September 18–22; expo September 19–21.",
+      "note": "ASTRO announced the 2027 Annual Meeting abstracts (including late-breaking abstract shells) will open December 2, 2026. The closing deadline has not yet been independently confirmed. Do not confuse this meeting with the separate March 2027 RPT or head-and-neck symposia, whose abstract deadlines are October 14, 2026.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "submissionSource": "https://www.astro.org/ASTRO/media/ASTRO/Meetings%20and%20Education/PDFs/AM26/AM26-Daily-News_Tuesday-1.pdf",
+      "fieldSources": {
+        "open": {
+          "url": "https://www.astro.org/ASTRO/media/ASTRO/Meetings%20and%20Education/PDFs/AM26/AM26-Daily-News_Tuesday-1.pdf",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        }
+      }
     },
     {
       "id": "acs27",
@@ -1841,7 +1889,7 @@
       "end": "2027-03-06",
       "city": "Las Vegas, NV",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-06-08",
       "lateOpen": null,
       "lateDeadline": null,
       "deadlineTime": null,
@@ -1850,17 +1898,30 @@
       "limitNote": null,
       "fee": null,
       "types": [
-        "Orthopedic surgery",
-        "Musculoskeletal research"
+        "Orthopedic clinical research",
+        "Orthopaedic education",
+        "Surgical techniques"
       ],
       "url": "https://www.aaos.org/annual/attend/future-meetings/",
-      "guideline": null,
+      "guideline": "https://www.aaos.org/annual/explore-the-program/abstracts-applications/",
       "evidence": "official",
-      "note": "Verified March 3–6, 2027 at Venetian Convention & Expo Center. Abstract submission window not confirmed.",
+      "note": "AAOS 2027 paper/poster/ePoster abstract applications had an extended submission deadline of June 8, 2026. Other educational, video and symposium applications have distinct deadlines.",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Scientific paper",
+        "Poster",
+        "ePoster"
+      ],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aaos.org/annual/explore-the-program/abstracts-applications/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        }
+      }
     },
     {
       "id": "aapmr27",
@@ -2792,42 +2853,57 @@
     },
     {
       "id": "asnr27",
-      "name": "ASNR Annual Meeting 2027",
+      "name": "ASHNR/ASNR Joint Annual Meeting 2027",
       "society": "American Society of Neuroradiology",
       "specialty": "Radiology",
-      "start": "2027-05-16",
+      "start": "2027-05-14",
       "end": "2027-05-19",
       "city": "San Diego, CA",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-11-04",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
+      "deadlineTime": "11:59 PM EST",
+      "limit": 500,
+      "limitType": "words",
+      "limitNote": "500 words combined across abstract fields; title/authors excluded.",
       "fee": null,
-      "types": [],
+      "types": [
+        "Neuroradiology original research",
+        "Case series / Excerpta",
+        "Neuroradiology education exhibits"
+      ],
       "url": "https://www.asnr.org/ashnr-asnr-annual-meeting-2027/",
-      "guideline": null,
+      "guideline": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "2027 meeting hosted by American Societies of Head and Neck Radiology and Neuroradiology. Abstracts due November 4, 2026; four accepted formats. Do not confuse this ASNR with the American Society of Neurorehabilitation.",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Scientific oral",
+        "ePoster",
+        "Excerpta",
+        "Educational exhibit"
+      ],
       "fieldSources": {
         "start": {
-          "url": "https://www.asnr.org/ashnr-asnr-annual-meeting-2027/",
+          "url": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
         },
         "end": {
           "url": "https://www.asnr.org/ashnr-asnr-annual-meeting-2027/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
         }
       }
     },
@@ -3643,23 +3719,30 @@
       "end": "2027-01-16",
       "city": "Austin, TX",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-09-01",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
+      "deadlineTime": "11:55 PM ET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
+      "types": [
+        "EMS original research",
+        "Quality improvement",
+        "Innovations in EMS education"
+      ],
       "url": "https://naemsp.org/2027-annual-meeting/",
-      "guideline": null,
+      "guideline": "https://naemsp.org/annual-meeting/call-for-abstracts/",
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "2027 NAEMSP Annual Meeting abstract submissions closed September 1, 2026 at 11:55 PM ET. Includes research, QI and EMS education innovation; do not confuse scientific abstracts with general speaker proposals.",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
       "fieldSources": {
         "start": {
           "url": "https://naemsp.org/2027-annual-meeting/",
@@ -3672,6 +3755,12 @@
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://naemsp.org/annual-meeting/call-for-abstracts/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
         }
       }
     },
@@ -3683,24 +3772,31 @@
       "start": "2027-03-21",
       "end": "2027-03-26",
       "city": "National Harbor, MD",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
+      "open": "2026-07-10",
+      "deadline": "2026-09-14",
+      "lateOpen": "2026-11-16",
+      "lateDeadline": "2026-12-21",
+      "deadlineTime": "9:00 PM ET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
+      "types": [
+        "Maternal-fetal medicine research",
+        "Obstetric complications",
+        "Perinatal research"
+      ],
       "url": "https://www.smfm.org/events/2027-pregnancy-meeting",
-      "guideline": null,
+      "guideline": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "SMFM 2027 regular abstracts closed September 14, 2026. Late-breaking abstract submissions run November 16–December 21, 2026 (9 PM ET). Presenting authors must register and attend; SMFM does not waive registration for abstract presenters.",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
       "fieldSources": {
         "start": {
           "url": "https://www.smfm.org/events/2027-pregnancy-meeting",
@@ -3713,6 +3809,30 @@
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "deadline": {
+          "url": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "lateOpen": {
+          "url": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "lateDeadline": {
+          "url": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
         }
       }
     },
