@@ -582,7 +582,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 }
 
 /* Conference detail cost information: separate registration from abstract fees. */
-.modal-grid>.conference-costs{grid-column:1/-1}
+.conference-cost-detail{min-width:0}
+.cost-detail-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-top:8px;font-size:11px;line-height:1.45}
+.cost-detail-row span{color:#71867d}
+.cost-detail-row strong{color:#2d5b4c;font-size:11px;text-align:right;overflow-wrap:anywhere}
+.conference-cost-detail .detail-sub a{color:#276b56;text-decoration:underline;text-underline-offset:2px}
 .conference-costs{display:flex;flex-direction:column;border:1px solid #e1ebe6;border-radius:10px;background:#f9fbfa;overflow:hidden}
 .conference-cost-line{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:16px 17px}
 .conference-cost-line+.conference-cost-line{border-top:1px solid #e4ede8}
