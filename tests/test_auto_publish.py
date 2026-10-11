@@ -35,6 +35,19 @@ class AutoPublishTests(unittest.TestCase):
         _,result=publish_changes(self.data,self.report([self.proposal()]),max_updates=0)
         self.assertTrue(result['circuit_breaker_triggered'])
         self.assertEqual(result['published'],[])
+    def test_official_source_supersedes_tracker_date(self):
+        self.data['conferences'][0]['evidence']='tracker'
+        p=self.proposal(field='deadline',date='2027-01-02',old='2027-01-01',evidence='Abstract submission deadline January 2, 2027')
+        updated,result=publish_changes(self.data,self.report([p]))
+        self.assertEqual(updated['conferences'][0]['deadline'],'2027-01-02')
+        self.assertEqual(len(result['published']),1)
+    def test_official_source_cannot_override_conflicting_official_pages(self):
+        self.data['conferences'][0]['evidence']='tracker'
+        p=self.proposal(field='deadline',date='2027-01-02',old='2027-01-01',evidence='Abstract submission deadline January 2, 2027')
+        conflict={'record_type':'conference','record_id':'x','field':'deadline'}
+        updated,result=publish_changes(self.data,self.report([p],conflicts=[conflict]))
+        self.assertEqual(updated['conferences'][0]['deadline'],'2027-01-01')
+        self.assertEqual(result['published'],[])
     def test_unexpected_schema_rejected(self):
         with self.assertRaises(ValueError):
             publish_changes(self.data,{'schema_version':1,'proposals':[]})
