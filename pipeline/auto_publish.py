@@ -11,7 +11,9 @@ from .core import ROOT, DATE_RE, parse_date, validate
 from .cli import write_json
 
 FIELDS={'open','deadline','lateOpen','lateDeadline'}
-EXCLUDE=re.compile(r'\b(?:registration|hotel|housing|workshops?|membership|exhibitor|sponsor|reservation|abstract notification|decisions? released)\b',re.I)
+EXCLUDE=re.compile(r'\b(?:workshops?|membership|exhibitor|sponsor|reservation|abstract notification|decisions? released)\b',re.I)
+# Registration and hotel terms may share an announcement with an explicit abstract
+# event. We still require exactly one date and a matching abstract label below.
 LABELS={
  ('conference','open'):r'(?:abstract submissions?|abstract center|call for submissions?)\s+(?:are\s+)?(?:open|opens|opening|begins?|starts?)',
  ('conference','deadline'):r'(?:abstract (?:submission )?deadline|(?:abstract )?submissions?\s+(?:close|closes|closing|due)|deadline to submit abstracts?)',
