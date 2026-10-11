@@ -81,6 +81,16 @@ class ExploreViewTests(unittest.TestCase):
         self.assertNotIn('Abstract length quick-check',self.js)
         self.assertNotIn("get('abstractText')",self.js)
         self.assertNotIn('id="counterResult"',self.js)
+    def test_costs_follow_conference_details_before_other_sections(self):
+        details_end=self.js.index("Meeting location',c.city||'To be announced'")
+        costs=self.js.index('<div class="modal-section-title">Conference costs</div>')
+        notes=self.js.index('<div class="modal-section-title">Important notes</div>')
+        categories=self.js.index('<div class="modal-section-title">Submission categories and presentation formats</div>')
+        self.assertLess(details_end,costs)
+        self.assertLess(costs,notes)
+        self.assertLess(notes,categories)
+        self.assertEqual(self.js.count('<div class="modal-section-title">Conference costs</div>'),1)
+
     def test_planner_project_type_has_no_step_one_or_slanted_arrow(self):
         self.assertIn('for="planType">PROJECT TYPE</label>',self.html)
         self.assertNotIn('STEP 1',self.html)
