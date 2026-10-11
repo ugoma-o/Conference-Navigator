@@ -42,8 +42,8 @@ class AnchorLinks(HTMLParser):
         if tag=='a' and not self.skip:
             args=dict(attrs)
             if self.anchor is None:
-                self.anchor={'href':args.get('href',''),'text':[], 'title':args.get('title',''),
-                             'aria':args.get('aria-label','')}
+                self.anchor={'href':args.get('href',''),'text':[], 'title':args.get('title') or '',
+                             'aria':args.get('aria-label') or ''}
                 self.depth=1
             else:
                 self.depth+=1
