@@ -130,6 +130,25 @@ class ExploreViewTests(unittest.TestCase):
         self.assertIn("if(state.status==='all')return true",self.js)
         self.assertIn('<option value="active">Active opportunities</option>',self.html)
 
+    def test_multi_day_meeting_bar_not_hidden_by_next_day(self):
+        # Pediatric Academic Societies runs Fri Apr 30 through Mon May 3:
+        # the Fri–Sat segment must not vanish beneath Saturday meeting cells.
+        import json
+        from datetime import date, timedelta
+        data=json.loads((ROOT/'data.json').read_text(encoding='utf-8'))
+        pas=next(c for c in data['conferences'] if c['id']=='pas27')
+        start=date.fromisoformat(pas['start'])
+        end=date.fromisoformat(pas['end'])
+        self.assertLessEqual(start,date(2027,5,1))
+        self.assertGreaterEqual(end,date(2027,5,1))
+        self.assertIn('for(let d=begin;d<=end;d=shift(d,1))',self.js)
+        self.assertIn('if(prev)return',self.js)
+        self.assertIn('width:calc(${span*100}% - 14px)',self.js)
+        for weekday in range(1,8):
+            selector=f'.day-cell.has-ribbon:nth-child(7n + {weekday})'
+            self.assertIn(selector,self.css)
+        self.assertIn('.day-cell.has-ribbon:focus-within{z-index:20}',self.css)
+
     def test_existing_calendar_controls_retained(self):
         for ident in ('calendarMonth','calendarGrid','calendarJump',
                       'calendarMonthRail','calendarSpecialty','calDeadlines',
