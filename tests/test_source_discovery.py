@@ -44,7 +44,7 @@ def mock_pages(url,timeout=14):
 class AbstractDiscoveryTests(unittest.TestCase):
     def test_finds_sid_abstract_link_from_homepage(self):
         links=discover_abstract_links(HOME,LANDING,2027)
-        self.assertEqual([x['url'] for x in links],[ABSTRACT])
+        self.assertEqual([x['url'] for x in links],[ABSTRACT,KEY_DATES])
         self.assertEqual(links[0]['label'],'Abstract Information')
 
     def test_rejects_cross_domain_and_unrelated_or_old_event_links(self):
