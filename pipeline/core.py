@@ -82,6 +82,20 @@ OPEN_AND_CLOSE = re.compile(
     rf'\b(?:abstract\s+)?submissions?\s+open\s+'
     rf'(?P<first>{SHORT_DATE})\s+and\s+close\s+'
     rf'(?P<second>{SHORT_DATE})', re.I)
+# Some official pages describe the abstract submission window as "opens DATE
+# and must be submitted by TIME on DATE" rather than labeling the close as
+# a "deadline." Require the entire linked statement before extracting either.
+OPEN_SUBMIT_BY = re.compile(
+    rf'\b(?:abstract\s+)?submissions?\s+open\s+(?P<first>{SHORT_DATE})\s*,?\s+'
+    rf'and\s+must\s+be\s+submitted\s+by\b.{0,90}?\b(?P<second>{SHORT_DATE})',re.I)
+# SID-style short ranges explicitly name late-breaking abstracts but express
+# the closing day as just a number: "March 1 – 18, 2027".
+LATE_BREAKING_RANGE = re.compile(
+    rf'\blate[- ]breaking\s+abstracts?\s+can\s+be\s+submitted\s+'
+    rf'(?P<first>{SHORT_DATE})\s*(?:-|–|—|to|through)\s*'
+    rf'(?:(?P<lastmonth>{MONTH_PATTERN})\s+)?'
+    rf'(?P<lastday>\d{{1,2}})(?:st|nd|rd|th)?,?\s+(?P<year>20\d{{2}})\b',re.I)
+
 AWARD_RANGE = re.compile(
     rf'\b(?:award|grant|scholarship)\s+applications?\s+(?:are\s+)?open\s+from\s+'
     rf'(?P<first>{SHORT_DATE})\s+(?:through|to|until|[-–])\s+'
@@ -171,8 +185,34 @@ def extract_labeled_dates(text, kind, year=None, record_name=None):
                     if _year_plausible(val,year):
                         found.append({'field':field,'value':val,'evidence':clause[:400]})
                         matched_range=True
+        if kind=='conference':
+            for match in OPEN_SUBMIT_BY.finditer(clause):
+                finish=parse_date(match.group('second'))
+                begin=_date_for_range(match.group('first'),int(finish[:4])) if finish else None
+                if not begin or begin>finish or (dt.date.fromisoformat(finish)-dt.date.fromisoformat(begin)).days>365:
+                    continue
+                for field,val in [('open',begin),('deadline',finish)]:
+                    if _year_plausible(val,year):
+                        found.append({'field':field,'value':val,'evidence':clause[:400]})
+                        matched_range=True
+            for match in LATE_BREAKING_RANGE.finditer(clause):
+                finish_year=int(match.group('year'))
+                begin=_date_for_range(match.group('first'),finish_year)
+                first_month=re.search(rf'(?P<month>{MONTH_PATTERN})',match.group('first'),re.I)
+                last_month=match.group('lastmonth') or (first_month.group('month') if first_month else None)
+                try:
+                    finish=dt.date(finish_year,MONTHS[last_month.lower()],int(match.group('lastday'))).isoformat()
+                except (AttributeError,KeyError,ValueError):
+                    continue
+                if not begin or begin>finish or (dt.date.fromisoformat(finish)-dt.date.fromisoformat(begin)).days>45:
+                    continue
+                for field,val in [('lateOpen',begin),('lateDeadline',finish)]:
+                    if _year_plausible(val,year):
+                        found.append({'field':field,'value':val,'evidence':clause[:400]})
+                        matched_range=True
         if matched_range:
-            # Do NOT run a generic 'open' match on the same range clause.
+            # Do not assign another field's date from a combined submission
+            # window to a generic label in the same paragraph.
             continue
         for field,patterns in labels.items():
             for pattern in patterns:

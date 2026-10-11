@@ -22,6 +22,24 @@ class AutoPublishTests(unittest.TestCase):
         p=self.proposal(evidence='Registration closes October 1, 2026. Abstract Submissions Opens October 10, 2026')
         updated,result=publish_changes(self.data,self.report([p]))
         self.assertEqual(result['published'],[])
+    def test_explicit_multidate_abstract_windows_are_validated_by_field(self):
+        from pipeline.auto_publish import same_evidence_date
+        phrase=('Abstract Submissions Open November 2, 2026, and must be submitted by '
+                '11:59 pm Eastern Time (US) on January 12, 2027. '
+                'Late-Breaking Abstracts can be submitted March 1 – 18, 2027.')
+        for field,value in [('open','2026-11-02'),('deadline','2027-01-12'),
+                            ('lateOpen','2027-03-01'),('lateDeadline','2027-03-18')]:
+            with self.subTest(field=field):
+                p=self.proposal(field=field,date=value,evidence=phrase)
+                self.assertTrue(same_evidence_date(p))
+                p['proposed_value']='2027-01-15'
+                self.assertFalse(same_evidence_date(p))
+    def test_unrelated_multiple_dates_cannot_be_published(self):
+        from pipeline.auto_publish import same_evidence_date
+        text='Abstract Submissions Open November 2, 2026. Registration closes January 12, 2027.'
+        self.assertFalse(same_evidence_date(self.proposal(
+            field='deadline',date='2027-01-12',evidence=text)))
+
     def test_registration_date_held(self):
         _,result=publish_changes(self.data,self.report([self.proposal(evidence='Registration opens October 10, 2026')]))
         self.assertEqual(result['published'],[])

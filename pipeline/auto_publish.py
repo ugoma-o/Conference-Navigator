@@ -7,7 +7,7 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import urlparse
-from .core import ROOT, DATE_RE, parse_date, validate
+from .core import ROOT, DATE_RE, MONTHS, OPEN_SUBMIT_BY, LATE_BREAKING_RANGE, _date_for_range, parse_date, validate
 from .cli import write_json
 
 FIELDS={'open','deadline','lateOpen','lateDeadline'}
@@ -23,10 +23,41 @@ LABELS={
  ('award','deadline'):r'(?:applications?\s+(?:deadline|close|closes|due|end|ends)|application deadline|apply by)'
 }
 
+def explicit_window_field(evidence, field):
+    """Validate a specific opening/closing date against one labelled pair.
+
+    Multi-date paragraphs must match an established abstract-range grammar;
+    arbitrary nearby dates remain disallowed.
+    """
+    if field in ('open','deadline'):
+        matches=list(OPEN_SUBMIT_BY.finditer(evidence))
+        if len(matches)!=1:return None
+        m=matches[0]
+        finish=parse_date(m.group('second'))
+        begin=_date_for_range(m.group('first'),int(finish[:4])) if finish else None
+        if not begin or begin>finish:return None
+        return begin if field=='open' else finish
+    if field in ('lateOpen','lateDeadline'):
+        matches=list(LATE_BREAKING_RANGE.finditer(evidence))
+        if len(matches)!=1:return None
+        m=matches[0]
+        year=int(m.group('year'))
+        begin=_date_for_range(m.group('first'),year)
+        first_month=re.search(r'(?i)\b(?:'+'|'.join(MONTHS)+r')\b',m.group('first'))
+        month=m.group('lastmonth') or (first_month.group() if first_month else None)
+        try:finish=dt.date(year,MONTHS[month.lower()],int(m.group('lastday'))).isoformat()
+        except (AttributeError,KeyError,ValueError):return None
+        if not begin or begin>finish or (dt.date.fromisoformat(finish)-dt.date.fromisoformat(begin)).days>45:return None
+        return begin if field=='lateOpen' else finish
+    return None
+
 def same_evidence_date(p):
     evidence=p.get('evidence','')
     pattern=LABELS.get((p.get('record_type'),p.get('field')))
     if not pattern or EXCLUDE.search(evidence):return False
+    if p.get('record_type')=='conference' and p.get('field') in ('open','deadline','lateOpen','lateDeadline'):
+        if explicit_window_field(evidence,p['field'])==p.get('proposed_value'):
+            return True
     dates=list(DATE_RE.finditer(evidence))
     if len(dates)!=1 or parse_date(dates[0].group())!=p.get('proposed_value'):return False
     late=bool(re.search(r'late[- ]breaking',evidence,re.I))

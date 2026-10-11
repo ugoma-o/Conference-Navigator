@@ -42,6 +42,46 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(changed['conferences'][0]['open'],'2026-11-02')
         self.assertEqual(len(audit['published']),1)
         self.assertIsNone(changed['conferences'][0]['deadline'])
+    def test_sid_dedicated_abstract_page_all_four_dates(self):
+        from pipeline.auto_publish import publish_changes
+        source='https://www.sidnet.org/annualmeeting/abstracts/'
+        data={'conferences':[{
+            'id':'sid27','name':'Society for Investigative Dermatology Annual Meeting 2027',
+            'society':'Society for Investigative Dermatology','specialty':'Dermatology',
+            'start':'2027-05-12','end':'2027-05-15',
+            'open':None,'deadline':None,'lateOpen':None,'lateDeadline':None,
+            'url':'https://www.sidnet.org/annualmeeting/','submissionSource':source
+        }],'awards':[]}
+        sample='''<h1>Share Your Science at SID 2027</h1>
+        <h3>Submission Timeline</h3>
+        <p>Abstract Submissions Open November 2, 2026, and must be submitted by
+        11:59 pm Eastern Time (US) on January 12, 2027.
+        Late-Breaking Abstracts can be submitted March 1 – 18, 2027.
+        See detailed timeline below.</p>
+        <h2>Abstract Submissions for SID 2026 are now closed.</h2>'''
+        report,_=check_sources(data,fetcher=self.fetcher({source:sample,
+            data['conferences'][0]['url']:'<h1>SID 2027 Annual Meeting</h1><p>Meeting May 12-15, 2027, Orlando.</p>'}),
+            delay=0,checked_at='2026-10-10T20:00:00Z')
+        found={(p['field'],p['proposed_value']) for p in report['proposals']}
+        self.assertEqual(found,{
+            ('open','2026-11-02'),('deadline','2027-01-12'),
+            ('lateOpen','2027-03-01'),('lateDeadline','2027-03-18')})
+        self.assertEqual(report['conflicts'],[])
+        updated,summary=publish_changes(data,report,checked_at='2026-10-10T20:00:00Z')
+        row=updated['conferences'][0]
+        self.assertEqual((row['open'],row['deadline'],row['lateOpen'],row['lateDeadline']),
+                         ('2026-11-02','2027-01-12','2027-03-01','2027-03-18'))
+        self.assertEqual(len(summary['published']),4)
+
+    def test_short_late_breaking_range_not_regular_abstract_deadline(self):
+        page='SID 2027: Late-Breaking Abstracts can be submitted March 1 – 18, 2027.'
+        dates=extract_labeled_dates(page,'conference',2027)
+        self.assertEqual({(v['field'],v['value']) for v in dates},
+                         {('lateOpen','2027-03-01'),('lateDeadline','2027-03-18')})
+    def test_undated_submit_by_must_not_be_guessed(self):
+        page='SID 2027. Abstract submissions open November 2 and must be submitted by January 12.'
+        self.assertEqual(extract_labeled_dates(page,'conference',2027),[])
+
     def test_sid_key_dates_without_explicit_close_must_not_guess(self):
         t=textify('<h1>Important Deadlines for the 2027 SID Annual Meeting</h1>'
                   '<p>Mark your calendar for abstract submission, registration, travel grants and hotel booking.</p>')

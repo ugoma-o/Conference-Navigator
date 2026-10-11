@@ -1991,10 +1991,10 @@
       "end": "2027-05-15",
       "city": "Orlando, FL",
       "open": "2026-11-02",
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
+      "deadline": "2027-01-12",
+      "lateOpen": "2027-03-01",
+      "lateDeadline": "2027-03-18",
+      "deadlineTime": "11:59 PM ET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -2006,20 +2006,42 @@
       "url": "https://www.sidnet.org/annualmeeting/",
       "guideline": "https://www.sidnet.org/annualmeeting/key-dates/",
       "evidence": "official",
-      "note": "The 2027 SID Annual Meeting homepage confirms abstract submissions open November 2, 2026. The regular abstract closing date requires verification against the current official instructions.",
+      "note": "Official SID 2027 abstract submission page confirms regular submissions November 2, 2026–January 12, 2027 (11:59 PM ET) and late-breaking submissions March 1–18, 2027. Separate late-breaking rules may apply.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "open": {
-          "url": "https://www.sidnet.org/annualmeeting/",
+          "url": "https://www.sidnet.org/annualmeeting/abstracts/",
           "checked_at": "2026-10-10",
-          "verified_by": "Official SID Annual Meeting page",
-          "source_quote": "Registration & Abstract Submissions Opens November 2, 2026",
-          "confidence": "explicit_statement"
+          "verified_by": "Official SID 2027 abstract submissions webpage",
+          "confidence": "explicit_statement",
+          "source_quote": "Abstract Submissions Open November 2, 2026, and must be submitted by 11:59 pm Eastern Time (US) on January 12, 2027."
+        },
+        "deadline": {
+          "url": "https://www.sidnet.org/annualmeeting/abstracts/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official SID 2027 abstract submissions webpage",
+          "confidence": "explicit_statement",
+          "source_quote": "Abstract Submissions Open November 2, 2026, and must be submitted by 11:59 pm Eastern Time (US) on January 12, 2027."
+        },
+        "lateOpen": {
+          "url": "https://www.sidnet.org/annualmeeting/abstracts/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official SID 2027 abstract submissions webpage",
+          "confidence": "explicit_statement",
+          "source_quote": "Late-Breaking Abstracts can be submitted March 1 – 18, 2027."
+        },
+        "lateDeadline": {
+          "url": "https://www.sidnet.org/annualmeeting/abstracts/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official SID 2027 abstract submissions webpage",
+          "confidence": "explicit_statement",
+          "source_quote": "Late-Breaking Abstracts can be submitted March 1 – 18, 2027."
         }
-      }
+      },
+      "submissionSource": "https://www.sidnet.org/annualmeeting/abstracts/"
     },
     {
       "id": "fsa27",
