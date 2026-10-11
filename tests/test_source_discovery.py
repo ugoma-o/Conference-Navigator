@@ -72,6 +72,44 @@ class AbstractDiscoveryTests(unittest.TestCase):
         links=discover_abstract_links(html,LANDING,2027)
         self.assertIn(ABSTRACT,[x['url'] for x in links])
 
+    def test_dedicated_event_root_discovers_shea_abstracts(self):
+        root='https://sheaspring.org/'
+        abstracts='https://sheaspring.org/attendees/abstracts/'
+        home='''<html><body><h1>SHEA Spring Conference</h1>
+        <p>Washington, DC, March 30 through April 2, 2027</p>
+        <nav><a href="/attendees/abstracts/">Abstracts</a>
+        <a href="/about/faqs/">Frequently Asked Questions</a>
+        <a href="/industry-partners/abstracts/">Past abstract archive</a></nav>
+        </body></html>'''
+        body='''<html><body><h1>2027 SHEA Spring Abstracts</h1>
+        <p>The deadline to submit abstracts is January 4, 2027 11:59 pm EST.</p>
+        <p>Oral Presentations and Poster Presentations are supported.</p></body></html>'''
+        links=discover_abstract_links(home,root,2027,record_name='SHEA Spring Conference 2027')
+        self.assertEqual([x['url'] for x in links],[abstracts])
+        row={'id':'shea27','name':'SHEA Spring Conference 2027','society':'SHEA',
+             'specialty':'Infectious Diseases','start':'2027-03-30','end':'2027-04-02',
+             'open':None,'deadline':None,'url':root}
+        def get(url,timeout=14):
+            return {root:home,abstracts:body}[url],True
+        report,_=check_sources({'conferences':[row],'awards':[]},fetcher=get,
+                               checked_at='2026-10-11T04:00:00Z')
+        self.assertEqual(report['source_count'],2)
+        self.assertEqual([(p['field'],p['proposed_value']) for p in report['proposals']],
+                         [('deadline','2027-01-04')])
+        updated,result=publish_changes({'conferences':[row],'awards':[]},report)
+        self.assertEqual(updated['conferences'][0]['deadline'],'2027-01-04')
+        self.assertEqual(len(result['published']),1)
+        self.assertIn(abstracts,updated['conferences'][0]['additionalSources'])
+
+    def test_root_society_homepage_is_not_treated_as_an_event(self):
+        root='https://example.org/'
+        home='''<html><h1>Society for Healthcare Epidemiology</h1>
+        <p>Upcoming 2027 meetings include SHEA Spring and many other events.</p>
+        <a href="/attendees/abstracts/">Abstracts</a></html>'''
+        found=discover_abstract_links(home,root,2027,
+                                      record_name='SHEA Spring Conference 2027')
+        self.assertEqual(found,[])
+
     def test_no_crawl_without_relevant_links(self):
         text='<html><a href="/annualmeeting/hotel/">Book Hotel</a></html>'
         self.assertEqual(discover_abstract_links(text,LANDING,2027),[])
