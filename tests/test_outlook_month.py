@@ -60,8 +60,8 @@ console.log(JSON.stringify(ev));
 """
         value=self.run_javascript(script)
         self.assertEqual([(e['kind'],e['day']) for e in value],
-                         [('meeting','2026-10-01'),('open','2026-10-01'),('due','2026-10-12')])
-        self.assertIn('2026-09-29',value[0]['display'])
+                         [('open','2026-10-01'),('meeting','2026-10-01'),('due','2026-10-12')])
+        self.assertIn('2026-09-29',value[1]['display'])
 
     def test_same_day_repeated_regular_late_dates_not_double_counted(self):
         script=self.helpers()+r"""
