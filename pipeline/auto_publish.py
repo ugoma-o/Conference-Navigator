@@ -65,7 +65,7 @@ def resolve_updates(data,report,max_updates=8):
                 if field=='lateDeadline' and record.get('lateOpen') and val<record['lateOpen']:reason='Invalid late abstract order'
             sources=set(p.get('corroborating_sources',[]))
             allowed={x for x in (record.get('url'),record.get('guideline'),record.get('submissionSource')) if x}
-            if not reason and old and (len(sources & allowed)<2 or p['source_url'] not in sources):reason='Existing date needs two agreeing configured official URLs'
+            if not reason and old and record.get('evidence')!='tracker' and (len(sources & allowed)<2 or p['source_url'] not in sources):reason='Existing official date needs two agreeing configured official URLs'
         if reason:held.append({'id':p.get('id'),'reason':reason})
         else:accepted.append(p)
     if len(accepted)>max_updates:
