@@ -149,6 +149,25 @@ class ExploreViewTests(unittest.TestCase):
             self.assertIn(selector,self.css)
         self.assertIn('.day-cell.has-ribbon:focus-within{z-index:20}',self.css)
 
+    def test_research_roadmap_exports_visual_and_calendar(self):
+        # Keep .ics export available while ensuring the whole roadmap can
+        # be downloaded as vector artwork or printed to a PDF.
+        for ident in ('downloadPlan', 'downloadPlanVisual', 'printPlanPdf'):
+            with self.subTest(ident=ident):
+                self.assertEqual(self.dom.counts.get(ident), 1)
+        self.assertIn('function roadmapExportSvg(plan)', self.js)
+        self.assertIn('function downloadRoadmapVisual()', self.js)
+        self.assertIn('function printRoadmapPdf()', self.js)
+        self.assertIn("'image/svg+xml;charset=utf-8'", self.js)
+        self.assertIn("get('downloadPlanVisual').addEventListener('click',downloadRoadmapVisual)",self.js)
+        self.assertIn("get('printPlanPdf').addEventListener('click',printRoadmapPdf)",self.js)
+        self.assertIn('get(\'downloadPlanVisual\').disabled=true', self.js)
+        self.assertIn('get(\'printPlanPdf\').disabled=true', self.js)
+        self.assertIn('step.desc', self.js)
+        self.assertIn('plan.target', self.js)
+        self.assertIn("Save as PDF", self.html)
+        self.assertIn("Download visual (.svg)", self.html)
+
     def test_existing_calendar_controls_retained(self):
         for ident in ('calendarMonth','calendarGrid','calendarJump',
                       'calendarMonthRail','calendarSpecialty','calDeadlines',
