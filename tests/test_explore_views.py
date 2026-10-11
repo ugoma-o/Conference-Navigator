@@ -62,6 +62,31 @@ class ExploreViewTests(unittest.TestCase):
         self.assertIn('function setExploreMode(mode)',self.js)
         self.assertIn(".explore-mode-panel:not(.active)",self.css)
 
+    def test_conference_modal_is_focused_on_conference_details(self):
+        # Conference detail no longer duplicates the interactive Research Planner.
+        self.assertNotIn('From idea to presentation',self.js)
+        self.assertNotIn("get('modalRoadmapType')",self.js)
+        self.assertNotIn('<div class="modal-roadmap">',self.js)
+        self.assertNotIn('Choose a project type to explore potential submission categories',self.js)
+        self.assertNotIn('id="submissionFit"',self.js)
+        self.assertIn("get('presentationOptions').innerHTML=presentationOptions(c)",self.js)
+        self.assertIn('Formats confirmed for this meeting:',self.js)
+        self.assertIn("get('planConference').value=c.id;state.plan=null;closeModal();nav('planner')",self.js)
+    def test_cost_panel_replaces_abstract_quick_check(self):
+        self.assertIn('Conference costs',self.js)
+        self.assertIn('Registration fee',self.js)
+        self.assertIn('Abstract submission fee',self.js)
+        self.assertIn("c.registrationFee||'Not verified in RISE'",self.js)
+        self.assertIn("c.fee||'Not verified in RISE'",self.js)
+        self.assertNotIn('Abstract length quick-check',self.js)
+        self.assertNotIn("get('abstractText')",self.js)
+        self.assertNotIn('id="counterResult"',self.js)
+    def test_planner_project_type_has_no_step_one_or_slanted_arrow(self):
+        self.assertIn('for="planType">PROJECT TYPE</label>',self.html)
+        self.assertNotIn('STEP 1',self.html)
+        self.assertNotIn('<span class="awaiting-icon">↗</span>',self.js)
+        self.assertIn("get('planType').addEventListener('change',generatePlan)",self.js)
+
     def test_header_is_project_name(self):
         self.assertIn('RISE Conference Navigator</span>',self.html)
         self.assertNotIn('id="breadcrumbCurrent"',self.html)
