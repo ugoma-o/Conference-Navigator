@@ -62,7 +62,42 @@ class AnchorLinks(HTMLParser):
         if self.anchor is not None and not self.skip:
             self.anchor['text'].append(text)
 
-def discover_abstract_links(page, base_url, meeting_year=None, max_links=2):
+class EventHeadings(HTMLParser):
+    """Collect visible H1 headings to validate a dedicated event-site root."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.headings=[]
+        self._in_heading=False
+        self._text=[]
+    def handle_starttag(self,tag,attrs):
+        if tag=='h1':
+            self._in_heading=True
+            self._text=[]
+    def handle_endtag(self,tag):
+        if tag=='h1' and self._in_heading:
+            self.headings.append(' '.join(' '.join(self._text).split()))
+            self._in_heading=False
+    def handle_data(self,data):
+        if self._in_heading:
+            self._text.append(data)
+
+def _eligible_event_root(page, meeting_year, record_name):
+    """Allow same-host discovery from / only for a clearly named event site.
+
+    A general professional-society homepage must not authorize abstracts
+    from other meetings merely because its navigation mentions a meeting year.
+    """
+    if not meeting_year or not record_name:
+        return False
+    event=' '.join(re.sub(r'\b20\d{2}\b','',record_name).casefold().split())
+    if len(event)<12 or not re.search(rf'\b{int(meeting_year)}\b',page):
+        return False
+    parser=EventHeadings()
+    parser.feed(page)
+    return any(event in ' '.join(heading.casefold().split())
+               for heading in parser.headings)
+    
+def discover_abstract_links(page, base_url, meeting_year=None, max_links=2, record_name=None):
     """Return sorted same-host candidate URLs, with their visible anchor text.
 
     Require a relevant abstract/submission anchor, and keep child links within
@@ -81,6 +116,11 @@ def discover_abstract_links(page, base_url, meeting_year=None, max_links=2):
     scope_end=next((i+1 for i,seg in enumerate(path_segments)
                     if seg.lower() not in GENERIC_PARTS),None)
     scope=[seg.lower() for seg in path_segments[:scope_end]] if scope_end else []
+    # Root conference microsites, such as sheaspring.org, often put abstracts
+    # under /attendees/abstracts/. Bound discovery by a matching event H1.
+    root_event=not path_segments and _eligible_event_root(page, meeting_year, record_name)
+    if not scope and not root_event:
+        return []
     candidates={}
     for pos,(href,label) in enumerate(parser.links):
         label=' '.join(label.split())
@@ -98,7 +138,9 @@ def discover_abstract_links(page, base_url, meeting_year=None, max_links=2):
             if any(parsed.path.lower().endswith(ext) for ext in ('.pdf','.zip','.doc','.docx','.xlsx','.jpg','.png')):
                 continue
             target_segments=[x.lower() for x in parsed.path.split('/') if x]
-            if not scope or target_segments[:len(scope)]!=scope:
+            if scope and target_segments[:len(scope)]!=scope:
+                continue
+            if root_event and not PATH_RE.search(parsed.path):
                 continue
             # Year-specific links must match this conference's meeting edition.
             years={int(y) for y in YEAR.findall(parsed.path)}
