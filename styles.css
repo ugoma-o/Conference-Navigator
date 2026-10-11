@@ -653,3 +653,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 #calendarView .calendar-month-events .agenda-row{grid-template-columns:minmax(145px,210px) minmax(0,1fr);gap:15px}
 #calendarView .calendar-month-events .agenda-date{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:normal;line-height:1.55}
 @media(max-width:650px){#calendarView .calendar-month-events .agenda-row{grid-template-columns:minmax(110px,38%) minmax(0,1fr);gap:8px}}
+
+/* Single clickable bar spans every consecutive meeting day in its week.
+   The title is clipped only at the actual end of the meeting, never at an intervening day boundary. */
+#calendarView .calendar-grid .day-cell.has-ribbon{z-index:2}
+#calendarView .calendar-grid .meeting-ribbon{left:7px;right:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#calendarView .calendar-grid .day-cell.has-ribbon:focus-within{z-index:4}
