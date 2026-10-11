@@ -262,7 +262,8 @@ window.RISE_DATA = {
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "researchOpportunity": "Hospital medicine and scholarly practice"
     },
     {
       "id": "aace27",
@@ -867,7 +868,8 @@ window.RISE_DATA = {
       "flag": "unannounced",
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "researchOpportunity": "Graduate medical education and accreditation"
     },
     {
       "id": "flacp27",
@@ -2735,7 +2737,9 @@ window.RISE_DATA = {
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         }
-      }
+      },
+      "researchOpportunity": "Restricted participation",
+      "accessRequirement": "Nonmembers require invitation from an ACNP member. Consult organizer's invitation policies before planning a submission or trip."
     },
     {
       "id": "arrs27",
@@ -3331,26 +3335,24 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.gsa2026.org/Program",
+      "url": "https://www.geron.org/home-original",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "Established multidisciplinary gerontology scientific research meeting. The organizing society's future meeting schedule confirms November 3–6, 2027 in Phoenix; 2027 abstract call not yet confirmed.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.geron.org/",
+          "url": "https://www.geron.org/home-original",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
+          "verified_by": "RISE official society 2027 future-meetings page"
         },
         "end": {
-          "url": "https://www.geron.org/",
+          "url": "https://www.geron.org/home-original",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
+          "verified_by": "RISE official society 2027 future-meetings page"
         }
       }
     },
@@ -3393,7 +3395,8 @@ window.RISE_DATA = {
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         }
-      }
+      },
+      "researchOpportunity": "Academic education and leadership"
     },
     {
       "id": "aamc-innovation27",
@@ -3412,15 +3415,25 @@ window.RISE_DATA = {
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
+      "types": [
+        "Medical education research",
+        "Curricular innovation",
+        "Scholarship of teaching and learning"
+      ],
       "url": "https://www.aamc.org/learn-network/affinity-groups/curriculum-assessment-instruction-research-evaluation-group",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "AAMC medical education scholarly meeting; its verified 2027 call includes research, educational innovation, posters, oral talks and workshops. It is not a traditional clinical-specialty basic-science congress.",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Research poster",
+        "Innovation poster",
+        "Oral presentation",
+        "Workshop",
+        "Panel"
+      ],
       "fieldSources": {
         "start": {
           "url": "https://www.aamc.org/learn-network/affinity-groups/curriculum-assessment-instruction-research-evaluation-group",
