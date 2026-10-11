@@ -172,14 +172,14 @@ function matchAbstract(abstract,conferences,options) {
    var specific=t.phrases.some(function(p){return p.length>=5 && ctext.indexOf(' '+p+' ')>=0});
    return {label:t.label,affinity:aff,focused:specific};
   }).filter(function(t){return t.affinity>.0||t.focused});
-  var ranked=topicItems.map(function(t){return Math.max(t.affinity*.75,t.focused?.98:0)}).sort(function(a,b){return b-a});
-  var strength=ranked.length?Math.min(1,(ranked[0]||0)*.72+(ranked[1]||0)*.22+(ranked[2]||0)*.06):0;
+  var ranked=topicItems.map(function(t){return Math.max(t.affinity*.75,t.focused ? 0.98 : 0)}).sort(function(a,b){return b-a});
+  var strength=ranked.length?Math.min(1,(ranked[0]||0)*.90+(ranked[1]||0)*.08+(ranked[2]||0)*.02):0;
   var keyword=similarity(query,tf(docs[i],idf));
   var fit=formatFit(c,format);
   // Topic fit dominates generic research terms; format matters only if verified.
-  var score=.74*strength+.23*keyword+(fit.status==='confirmed'?.03:0);
+  var score=.82*strength+.15*keyword+(fit.status==='confirmed' ? .03 : 0);
   if(fit.status==='unconfirmed')score*=.93;
-  if(topical.length===0)score=.85*keyword+(fit.status==='confirmed'?.02:0);
+  if(topical.length===0)score=.85*keyword+(fit.status==='confirmed' ? .02 : 0);
   var opportunityInfo=opportunity(c,today);
   var shared=Array.from(new Set(words.filter(function(t){return docs[i].indexOf(t)>=0}))).slice(0,4);
   return {
