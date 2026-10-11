@@ -644,3 +644,12 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .calendar-day-dialog>p{font-size:12px;color:#728a89;margin:10px 0 17px}
 .calendar-day-list{display:flex;flex-direction:column;gap:8px}
 .calendar-day-list .calendar-agenda-event{width:100%;text-align:left;cursor:pointer}
+
+/* Allocate a dedicated lane for every meeting in a week; no fallback daily pills. */
+#calendarView .calendar-grid .day-cell{box-sizing:border-box;min-height:127px}
+#calendarView .calendar-grid .meeting-ribbon{background:#efe8f8;color:#78529c}
+#calendarView .calendar-grid .meeting-ribbon:hover{background:#dfd0f1}
+/* Allow long date ranges to wrap rather than clip in the monthly agenda. */
+#calendarView .calendar-month-events .agenda-row{grid-template-columns:minmax(145px,210px) minmax(0,1fr);gap:15px}
+#calendarView .calendar-month-events .agenda-date{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:normal;line-height:1.55}
+@media(max-width:650px){#calendarView .calendar-month-events .agenda-row{grid-template-columns:minmax(110px,38%) minmax(0,1fr);gap:8px}}
