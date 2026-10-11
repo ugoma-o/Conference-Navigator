@@ -36,6 +36,23 @@ def report_html(report, path):
             body+='<blockquote>'+escape(source['value']+' — '+source['evidence'])+'</blockquote>'
             body+='<p><a target="_blank" rel="noopener noreferrer" href="'+escape(source['url'],quote=True)+'">Review source ↗</a></p>'
         body+='</article>'
+    discovered=report.get('discovered_sources',[])
+    body+=f'<h2>Automatically discovered official subpages ({len(discovered)})</h2>'
+    for item in discovered:
+        url=escape(item['source_url'],quote=True)
+        body+=('<p><b>'+escape(item['record_id'])+'</b>: '
+               +'<a href="'+url+'" rel="noopener noreferrer" target="_blank">'
+               +escape(item.get('link_label','Abstract submission page'))+'</a>'
+               +' — extracted: '+escape(', '.join(item.get('extracted_fields',[])) or 'no dates recognized')+'</p>')
+    missing=[c for c in report.get('source_coverage',[]) if c.get('needs_attention')]
+    body+=f'<h2>Possible coverage gaps ({len(missing)})</h2>'
+    body+='<p>These conferences have unrecorded opening/deadline fields that were not confirmed by scanned sources. This does not mean organizers have not published them.</p>'
+    for item in missing:
+        body+=('<p><b>'+escape(item['record_name'])+'</b>: '
+               +escape(', '.join(item.get('missing_fields',[])))
+               +' unrecorded · '+escape(str(item.get('sources_reachable',0)))
+               +' sources reachable · '+escape(str(item.get('discovered_pages',0)))
+               +' linked pages checked</p>')
     bad=[x for x in report['checks'] if x['status']=='unavailable']
     body+=f'<h2>Sources unavailable ({len(bad)})</h2>'
     for x in bad:
