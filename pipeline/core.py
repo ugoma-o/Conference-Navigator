@@ -256,6 +256,7 @@ def source_targets(data):
             urls = [item.get('url')]
             if kind == 'conference':
                 urls += [item.get('guideline'), item.get('submissionSource')]
+                urls += item.get('additionalSources') or []
             for url in urls:
                 if url and url.startswith('https://'):
                     targets.setdefault(url, []).append({'kind':kind,'id':item['id'],'name':item['name'],'start':item.get('start')})
@@ -308,6 +309,12 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
     targets=list(source_targets(data).items())
     if limit is not None: targets=targets[:limit]
     output=[]; observed=[]; future_observed=[]; updated=dict(cache)
+    # One-hop discovery of official abstract pages; no general web crawling.
+    from .discovery import discover_abstract_links
+    configured_urls={url for url,_ in targets}
+    discovered_targets={}
+    discovered_by_record={}
+    discovered_sources=[]
     by_kind={'conference':{c['id']:c for c in data['conferences']},
              'award':{a['id']:a for a in data['awards']}}
     for i,(url,records) in enumerate(targets):
@@ -335,11 +342,57 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
                     parent=by_kind['conference'][ref['id']]
                     future_observed.extend(extract_future_meetings(content,parent,url,
                         today=dt.date.fromisoformat(checked_at[:10])))
+            if is_html:
+                for ref in records:
+                    if ref['kind']!='conference':
+                        continue
+                    year=int(ref['start'][:4]) if ref.get('start') else next((int(y) for y in re.findall(r'20\d{2}',ref['name'])),None)
+                    for link in discover_abstract_links(page,url,year,max_links=3):
+                        if link['url'] in configured_urls:
+                            continue
+                        key=ref['id']
+                        already=discovered_by_record.setdefault(key,set())
+                        if link['url'] in already or len(already)>=2:
+                            continue
+                        already.add(link['url'])
+                        discovered_targets.setdefault(link['url'],[]).append({
+                            'kind':'conference','id':key,'name':ref['name'],
+                            'start':ref.get('start'),'parent_url':url,
+                            'link_label':link['label']})
             updated[url]={'digest':digest,'checked_at':checked_at,'length':len(content)}
             output.append({'url':url,'status':state,'records':records,'checked_at':checked_at,'proposed_count':0})
         except (HTTPError,URLError,TimeoutError,ValueError,OSError,UnicodeError) as error:
             output.append({'url':url,'status':'unavailable','records':records,'checked_at':checked_at,
                            'error':str(error)[:300],'proposed_count':0})
+    # Follow only the best two qualifying links per conference, once each.
+    # A discovered page is checked but never allowed to discover further pages.
+    for i,(url,records) in enumerate(discovered_targets.items()):
+        if delay:time.sleep(delay)
+        prior=cache.get(url,{})
+        try:
+            page,is_html=fetcher(url,timeout=timeout)
+            content=textify(page,is_html)
+            if len(content)<70:
+                raise ValueError('Discovered source text too short for reliable monitoring')
+            digest=hashlib.sha256(content.encode()).hexdigest()
+            state='baseline' if not prior.get('digest') else 'changed' if prior['digest']!=digest else 'unchanged'
+            for ref in records:
+                year=int(ref['start'][:4]) if ref.get('start') else next((int(y) for y in re.findall(r'20\d{2}',ref['name'])),None)
+                hits=extract_labeled_dates(content,ref['kind'],year,ref['name'])
+                for hit in hits:
+                    observed.append({**hit,'record_type':'conference','record_id':ref['id'],
+                                     'record_name':ref['name'],'source_url':url})
+                discovered_sources.append({
+                    'record_type':'conference','record_id':ref['id'],
+                    'source_url':url,'parent_url':ref['parent_url'],
+                    'link_label':ref['link_label'],'extracted_fields':sorted({h['field'] for h in hits})})
+            updated[url]={'digest':digest,'checked_at':checked_at,'length':len(content)}
+            output.append({'url':url,'status':state,'records':records,
+                           'checked_at':checked_at,'proposed_count':0,'discovered':True})
+        except (HTTPError,URLError,TimeoutError,ValueError,OSError,UnicodeError) as error:
+            output.append({'url':url,'status':'unavailable','records':records,
+                           'checked_at':checked_at,'error':str(error)[:300],
+                           'proposed_count':0,'discovered':True})
     grouped={}
     for hit in observed:
         grouped.setdefault((hit['record_type'],hit['record_id'],hit['field']),[]).append(hit)
@@ -389,9 +442,25 @@ def check_sources(data, cache=None, fetcher=fetch, limit=None, delay=0, timeout=
     conflicts.sort(key=lambda x:(x['record_type'],x['record_id'],x['field']))
     for item in output:
         item['proposed_count']=sum(p['source_url']==item['url'] for p in proposals)
+    coverage=[]
+    for conf in data['conferences']:
+        related=[item for item in output if any(
+            r['kind']=='conference' and r['id']==conf['id']
+            for r in item['records'])]
+        reachable=sum(item['status']!='unavailable' for item in related)
+        candidates=sorted({hit['field'] for hit in observed
+            if hit['record_type']=='conference' and hit['record_id']==conf['id']})
+        missing=[field for field in ('open','deadline') if not conf.get(field)]
+        coverage.append({'record_id':conf['id'],'record_name':conf['name'],
+                         'sources_attempted':len(related),'sources_reachable':reachable,
+                         'discovered_pages':sum(bool(item.get('discovered')) for item in related),
+                         'extracted_fields':candidates,'missing_fields':missing,
+                         'needs_attention':bool(missing and
+                             (reachable==0 or not set(missing).intersection(candidates)))})
     report={'schema_version':2,'checked_at':checked_at,'source_count':len(output),
             'counts':{k:sum(x['status']==k for x in output) for k in ('baseline','changed','unchanged','unavailable')},
             'checks':output,'proposals':proposals,'conflicts':conflicts,
+            'discovered_sources':discovered_sources,'source_coverage':coverage,
             'future_candidates':future_candidates,'future_conflicts':future_conflicts,
             'publication':'Raw evidence only. Automatic publication is decided by a separate strict policy; conflicts are held.'}
     return report,updated

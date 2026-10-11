@@ -1,0 +1,28 @@
+name: RISE pull request tests
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'app.js'
+      - 'styles.css'
+      - 'data.json'
+      - 'data.js'
+      - 'pipeline/**'
+      - 'tests/**'
+      - '.github/workflows/ci.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run RISE unit and source discovery tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate RISE database and site build
+        run: python -m pipeline.build_site
