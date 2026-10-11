@@ -76,7 +76,7 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
             <h2>Find relevant conferences</h2>
             <p class="matcher-intro">The matcher recognizes medical terminology and related concepts, rather than relying on exact conference-name matches.</p>
             <label class="form-label" for="matchAbstractText">Research abstract</label>
-            <textarea id="matchAbstractText" class="matcher-abstract" rows="12" maxlength="14000" placeholder="Paste your abstract here, including its background, objectives, methods, results, and conclusion."></textarea>
+            <textarea id="matchAbstractText" class="matcher-abstract" rows="12" maxlength="14000" autocomplete="off" spellcheck="false" placeholder="Paste your abstract here, including its background, objectives, methods, results, and conclusion."></textarea>
             <div class="matcher-input-meta"><span id="matchWordCount">0 words</span><span>For more meaningful results, include 30+ words</span></div>
             <label class="form-label" for="matchFormat">Abstract / project type</label>
             <select id="matchFormat" class="form-input">
@@ -89,7 +89,7 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
             </select>
             <label class="matcher-check"><input id="matchShowClosed" type="checkbox" /><span>Include conferences with closed submission windows</span></label>
             <div class="matcher-actions"><button id="matchRun" class="btn btn-primary" type="button">Find matching conferences <span aria-hidden="true">→</span></button><button id="matchClear" class="btn btn-soft" type="button">Clear</button></div>
-            <div class="matcher-privacy" role="note"><span data-icon="shield"></span><p><strong>Private by design.</strong> Matching runs locally in your browser. The pasted text is not sent to RISE or an external AI service, and it is not saved to your device. Remove patient identifiers and other confidential information before pasting.</p></div>
+            <div class="matcher-privacy" role="note"><span data-icon="shield"></span><p><strong>Private by design.</strong> Matching runs locally in your browser. The pasted text is not sent to RISE or an external AI service, and it is not uploaded or stored by RISE. Remove patient identifiers and other confidential information before pasting.</p></div>
           </div>
           <div class="matcher-output" id="matchOutput" aria-live="polite" aria-atomic="false">
             <div class="matcher-placeholder">
