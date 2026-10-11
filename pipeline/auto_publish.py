@@ -102,7 +102,7 @@ def publish_changes(data,report,max_updates=8,checked_at=None):
             continue
         if proposal.get('source_url') not in (prior.get('url'),prior.get('guideline'),prior.get('submissionSource')):
             continue
-        if len(additions)>=max_updates or len(audit)+len(additions)>=max_updates:
+        if len(audit)+len(additions)>=max_updates:
             held.append({'id':cid,'reason':'Weekly new-record safety limit'})
             continue
         record=make_cycle_record(prior,proposal,stamp)
