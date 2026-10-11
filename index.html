@@ -16,7 +16,7 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <link rel="stylesheet" href="abstract-matcher.css" />
 <link rel="stylesheet" href="accessibility.css" />
 <link rel="stylesheet" href="editorial-design.css" />
-<script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; document.querySelector('link[href="editorial-design.css"]').disabled = true; }</script>
+<script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
 <div class="app-shell">
