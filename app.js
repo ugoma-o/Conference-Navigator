@@ -460,6 +460,82 @@ get('fundingMobileSpecialty').addEventListener('change',e=>setFundingSpecialty(e
 get('fundingReset').addEventListener('click',()=>{state.funding='all';setFundingSpecialty('All specialties')});
 get('fundingGrid').addEventListener('click',e=>{const b=e.target.closest('[data-fund-conference]');if(b)showConference(b.dataset.fundConference)});
 document.querySelectorAll('[data-funding]').forEach(btn=>btn.addEventListener('click',()=>{state.funding=btn.dataset.funding;renderFunding()}));
+
+/* Conference Abstract Matcher — all analysis stays in the current browser tab.
+   Neither raw text nor extracted terms are persisted or sent to an API. */
+function renderMatcherPlaceholder(){
+ get('matchOutput').innerHTML='<div class="matcher-placeholder"><span class="matcher-placeholder-icon">'+ico('search')+'</span><h2>Your conference matches will appear here</h2><p>Enter an abstract to compare its topics and research methods with the currently listed meetings.</p></div>';
+}
+function matcherWordCount(){
+ const value=get('matchAbstractText').value.trim();
+ get('matchWordCount').textContent=(value?value.split(/\s+/).length:0)+' words';
+}
+function matcherDate(value){return value?fmt(value):'Not announced'}
+function matcherResultItem(match,number){
+ const labels=match.topics.map(x=>x.label);
+ const why=labels.length?('Topic connections: '+labels.slice(0,3).join(', ')+'.'):match.matchedTerms.length?('Overlapping terminology: '+match.matchedTerms.join(', ')+'.'):'Broader specialty relationship.';
+ const record=C.find(c=>c.id===match.id);
+ const deadline=match.opportunity.date?matcherDate(match.opportunity.date):'Not announced';
+ const statusName=match.opportunity.status==='open'?'Open':match.opportunity.status==='closed'?'Closed':match.opportunity.status==='upcoming'?'Upcoming':match.opportunity.status==='review'?'Verify dates':'Not announced';
+ const late=record&&record.lateDeadline===match.opportunity.date && (record.deadline!==match.opportunity.date);
+ const deadlineType=late?'Late-breaking due':'Submission deadline';
+ const statusCls=match.opportunity.status==='open'?'open':match.opportunity.status==='closed'?'closed':match.opportunity.status==='upcoming'?'upcoming':'pending';
+ const verified=match.fit.status==='confirmed';
+ return `<article class="matcher-result-card">
+ <div class="matcher-result-head"><div><span class="matcher-rank">#${number} matched conference</span><div class="matcher-specialty">${escape(match.specialty)}</div><h3>${escape(match.name)}</h3><p class="matcher-society">${escape(match.society)}</p></div><span class="matcher-strength">${escape(match.strength)}</span></div>
+ <div class="matcher-reason"><strong>Why it matches</strong><p>${escape(why)}</p></div>
+ <div class="matcher-result-details"><div><span>${escape(deadlineType)}</span><strong>${escape(deadline)}</strong></div><div><span>Submission status</span><strong><span class="status-pill ${statusCls}">${escape(statusName)}</span></strong></div></div>
+ <p class="matcher-format ${verified?'matched':'check'}">${verified?'✓':'i'} ${escape(match.fit.label)}${verified?' — verify current call requirements.':' — do not assume this abstract type is accepted.'}</p>
+ <div class="matcher-result-bottom"><button type="button" class="btn btn-soft" data-match-open="${escape(match.id)}">View conference details <span aria-hidden="true">→</span></button>${match.url?safeExternal(match.url,'Official submission source'):''}</div>
+ </article>`;
+}
+function runMatcher(){
+ const abstract=get('matchAbstractText').value;
+ const engine=window.RISE_ABSTRACT_MATCHER;
+ if(!engine||typeof engine.matchAbstract!=='function'){
+  get('matchOutput').innerHTML='<div class="matcher-message" role="alert">The matcher could not be loaded. Refresh the page and try again.</div>';
+  return;
+ }
+ const result=engine.matchAbstract(abstract,C,{
+  format:get('matchFormat').value,
+  includeClosed:get('matchShowClosed').checked,
+  today:todayKey,
+  limit:12
+ });
+ if(result.error){
+  get('matchOutput').innerHTML='<div class="matcher-message" role="status">'+escape(result.error)+'</div>';
+  return;
+ }
+ const n=result.results.length;
+ const topicTags=result.topics.slice(0,9).map(t=>'<span class="matcher-topic">'+escape(t)+'</span>').join('');
+ const topics=result.topics.length?'<div class="matcher-detected"><span>Recognized subjects</span><div class="matcher-topics">'+topicTags+'</div></div>':
+ '<p class="matcher-no-topics">No specific subject phrase was recognized. These suggestions rely on overlapping terminology and should be reviewed particularly carefully.</p>';
+ const heading=`<div class="matcher-results-head"><div><h2>${n} potential conference ${n===1?'match':'matches'}</h2><p>Abstract type: <strong>${escape(result.formatLabel)}</strong> · Ranked by topical alignment, not acceptance likelihood.</p></div></div>`;
+ const notice='<p class="matcher-disclaimer">Matching considers subject matter and available organizer metadata. A strong topical match does not establish eligibility, acceptance, an active call for abstracts, or an appropriate presentation category. Check official requirements before submitting.</p>';
+ const items=n?result.results.map((m,i)=>matcherResultItem(m,i+1)).join(''):'<div class="matcher-message">No sufficiently relevant conference was found in the current directory with these filters. Try including closed meetings or adding more clinical subject detail.</div>';
+ get('matchOutput').innerHTML=heading+topics+notice+'<div class="matcher-results">'+items+'</div>';
+}
+get('matchAbstractText').addEventListener('input',matcherWordCount);
+get('matchRun').addEventListener('click',runMatcher);
+get('matchClear').addEventListener('click',()=>{
+ get('matchAbstractText').value='';
+ get('matchFormat').value='auto';
+ get('matchShowClosed').checked=false;
+ matcherWordCount();
+ renderMatcherPlaceholder();
+ get('matchAbstractText').focus();
+});
+get('matchFormat').addEventListener('change',()=>{
+ if(get('matchOutput').querySelector('.matcher-results-head'))runMatcher();
+});
+get('matchShowClosed').addEventListener('change',()=>{
+ if(get('matchOutput').querySelector('.matcher-results-head'))runMatcher();
+});
+get('matchOutput').addEventListener('click',event=>{
+ const button=event.target.closest('button[data-match-open]');
+ if(button)showConference(button.dataset.matchOpen);
+});
+
 function renderSources(){let v=C.filter(c=>source(c)==='verified').length,conf=C.filter(c=>source(c)==='conflict').length,unknown=C.filter(c=>!c.deadline).length;get('qualityCards').innerHTML=`<div class="quality-card"><strong>${v}</strong><span>Conference records with official-source review</span></div><div class="quality-card"><strong>${unknown}</strong><span>Abstract deadlines awaiting publication or confirmation</span></div><div class="quality-card"><strong>${conf}</strong><span>Conference records with conflicting source dates</span></div>`}
 function exportCSV(){const cols=['name','society','specialty','open','deadline','lateOpen','lateDeadline','start','end','city','deadlineTime','limit','limitType','fee','evidence','flag','url','guideline','note'];const quote=s=>'"'+String(s??'').replaceAll('"','""')+'"';downloadFile('RISE_conferences_2026_2027.csv',[cols.join(','),...C.map(c=>cols.map(k=>quote(c[k])).join(','))].join('\r\n'),'text/csv;charset=utf-8');showToast('Conference CSV exported')}get('exportCsv').addEventListener('click',exportCSV);
 let toastTimer;function showToast(msg){const el=get('toast');el.textContent=msg;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),3400)}
