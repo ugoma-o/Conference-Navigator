@@ -15,8 +15,8 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <link rel="stylesheet" href="dark-theme.css" />
 <link rel="stylesheet" href="abstract-matcher.css" />
 <link rel="stylesheet" href="accessibility.css" />
-<script>if (new URLSearchParams(location.search).get("design") === "classic") document.documentElement.dataset.design = "classic";</script>
 <link rel="stylesheet" href="editorial-design.css" />
+<script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; document.querySelector('link[href="editorial-design.css"]').disabled = true; }</script>
 </head>
 <body>
 <div class="app-shell">
