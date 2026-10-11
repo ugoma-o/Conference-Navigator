@@ -72,24 +72,35 @@ class ExploreViewTests(unittest.TestCase):
         self.assertIn("get('presentationOptions').innerHTML=presentationOptions(c)",self.js)
         self.assertIn('Formats confirmed for this meeting:',self.js)
         self.assertIn("get('planConference').value=c.id;state.plan=null;closeModal();nav('planner')",self.js)
-    def test_cost_panel_replaces_abstract_quick_check(self):
-        self.assertIn('Conference costs',self.js)
-        self.assertIn('Registration fee',self.js)
-        self.assertIn('Abstract submission fee',self.js)
-        self.assertIn("c.registrationFee||'Not verified in RISE'",self.js)
-        self.assertIn("c.fee||'Not verified in RISE'",self.js)
+    def test_cost_tile_replaces_abstract_quick_check(self):
+        self.assertIn('class="detail-block conference-cost-detail"',self.js)
+        self.assertIn('<div class="detail-label">Conference costs</div>',self.js)
+        self.assertIn('Registration</span>',self.js)
+        self.assertIn('Abstract submission</span>',self.js)
+        self.assertIn("c.registrationFee||'Not verified'",self.js)
+        self.assertIn("c.fee||'Not verified'",self.js)
+        self.assertIn("safeExternal(c.registrationSource||c.url,'Check official fees')",self.js)
         self.assertNotIn('Abstract length quick-check',self.js)
         self.assertNotIn("get('abstractText')",self.js)
         self.assertNotIn('id="counterResult"',self.js)
-    def test_costs_follow_conference_details_before_other_sections(self):
-        details_end=self.js.index("Meeting location',c.city||'To be announced'")
-        costs=self.js.index('<div class="modal-section-title">Conference costs</div>')
+
+    def test_costs_are_sixth_tile_in_conference_details_grid(self):
+        grid=self.js.index('<div class="modal-section-title">Conference details</div><div class="modal-grid">')
+        labels=[
+            "detail('Abstract submissions open'",
+            "detail('Regular abstract deadline'",
+            "detail('Late-breaking deadline'",
+            "detail('Length requirement'",
+            "detail('Meeting location'",
+            '<div class="detail-block conference-cost-detail">'
+        ]
+        positions=[self.js.index(label,grid) for label in labels]
+        self.assertEqual(positions,sorted(positions))
         notes=self.js.index('<div class="modal-section-title">Important notes</div>')
         categories=self.js.index('<div class="modal-section-title">Submission categories and presentation formats</div>')
-        self.assertLess(details_end,costs)
-        self.assertLess(costs,notes)
+        self.assertLess(positions[-1],notes)
         self.assertLess(notes,categories)
-        self.assertEqual(self.js.count('<div class="modal-section-title">Conference costs</div>'),1)
+        self.assertIn('.cost-detail-row{',self.css)
 
     def test_planner_project_type_has_no_step_one_or_slanted_arrow(self):
         self.assertIn('for="planType">PROJECT TYPE</label>',self.html)
@@ -98,7 +109,9 @@ class ExploreViewTests(unittest.TestCase):
         self.assertIn("get('planType').addEventListener('change',generatePlan)",self.js)
 
     def test_header_is_project_name(self):
-        self.assertIn('RISE Conference Navigator</span>',self.html)
+        self.assertIn('<span class="workspace-title"><span class="workspace-rise">RISE</span><span class="workspace-name">Conference Navigator</span></span>',self.html)
+        self.assertIn('.workspace-rise{',self.css)
+        self.assertIn('.workspace-name{',self.css)
         self.assertNotIn('id="breadcrumbCurrent"',self.html)
         self.assertNotIn("get('breadcrumbCurrent')",self.js)
 
