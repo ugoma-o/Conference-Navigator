@@ -39,7 +39,8 @@ class EditorialStyleTests(unittest.TestCase):
 
     def test_old_style_still_available_for_comparison(self):
         self.assertIn('get("design") === "classic"',self.html)
-        self.assertIn("document.querySelector('link[href=\"editorial-design.css\"]').disabled = true",self.html)
+        self.assertIn("document.querySelector('link[href^=\\\"editorial-design.css\\\"]')",self.html)
+        self.assertIn("if (editorialSheet) editorialSheet.disabled = true",self.html)
         self.assertIn('<link rel="stylesheet" href="editorial-design.css" />',self.html)
 
 if __name__=='__main__':
