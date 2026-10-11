@@ -67,6 +67,21 @@ class ExploreViewTests(unittest.TestCase):
         self.assertNotIn('id="breadcrumbCurrent"',self.html)
         self.assertNotIn("get('breadcrumbCurrent')",self.js)
 
+    def test_list_defaults_to_all_conferences_including_closed(self):
+        # Meeting discovery should not conceal an upcoming meeting simply
+        # because its regular abstract deadline has passed (AAD 2027).
+        import json
+        data=json.loads((ROOT/'data.json').read_text(encoding='utf-8'))
+        aad=next(c for c in data['conferences'] if c['id']=='aad27')
+        self.assertLess(aad['deadline'],aad['start'])
+        self.assertIn('id="statusFilter"',self.html)
+        self.assertIn('<option value="all" selected>All conferences</option>',self.html)
+        self.assertIn("search:'',status:'all',sort:'meeting'",self.js)
+        self.assertIn("state.status='all';state.sort='meeting'",self.js)
+        self.assertIn("get('statusFilter').value='all'",self.js)
+        self.assertIn("if(state.status==='all')return true",self.js)
+        self.assertIn('<option value="active">Active opportunities</option>',self.html)
+
     def test_existing_calendar_controls_retained(self):
         for ident in ('calendarMonth','calendarGrid','calendarJump',
                       'calendarMonthRail','calendarSpecialty','calDeadlines',
