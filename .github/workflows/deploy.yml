@@ -8,6 +8,7 @@ on:
       - 'dark-theme.css'
       - 'abstract-matcher.css'
       - 'accessibility.css'
+      - 'editorial-design.css'
       - 'abstract-matcher.js'
       - 'app.js'
       - 'data.json'
