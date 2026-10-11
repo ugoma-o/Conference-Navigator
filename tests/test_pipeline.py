@@ -25,6 +25,27 @@ class PipelineTests(unittest.TestCase):
         fields={(v['field'],v['value']) for v in extract_labeled_dates(textify(self.first), 'conference',2027)}
         self.assertIn(('open','2026-08-14'),fields)
         self.assertIn(('deadline','2026-10-09'),fields)
+    def test_sid_main_annual_meeting_abstract_opening_detected(self):
+        from pipeline.auto_publish import publish_changes
+        official_url='https://www.sidnet.org/annualmeeting/'
+        meeting={'id':'sid27','name':'Society for Investigative Dermatology Annual Meeting 2027',
+                 'start':'2027-05-12','end':'2027-05-15','open':None,'deadline':None,
+                 'url':official_url,'society':'Society for Investigative Dermatology',
+                 'specialty':'Dermatology'}
+        data={'conferences':[meeting],'awards':[]}
+        page='<html><h1>2027 SID Annual Meeting</h1><p>May 12-15, 2027 Orlando</p><h3>Registration & Abstract Submissions Opens November 2, 2026</h3></html>'
+        report,_=check_sources(data,fetcher=self.fetcher({official_url:page}),delay=0,
+                               checked_at='2026-10-10T12:00:00Z')
+        self.assertEqual([(p['field'],p['proposed_value']) for p in report['proposals']],
+                         [('open','2026-11-02')])
+        changed,audit=publish_changes(data,report,checked_at='2026-10-10T12:00:00Z')
+        self.assertEqual(changed['conferences'][0]['open'],'2026-11-02')
+        self.assertEqual(len(audit['published']),1)
+        self.assertIsNone(changed['conferences'][0]['deadline'])
+    def test_sid_key_dates_without_explicit_close_must_not_guess(self):
+        t=textify('<h1>Important Deadlines for the 2027 SID Annual Meeting</h1>'
+                  '<p>Mark your calendar for abstract submission, registration, travel grants and hotel booking.</p>')
+        self.assertEqual(extract_labeled_dates(t,'conference',2027),[])
     def test_baseline_and_stable_and_change(self):
         pages={'https://acro.org/page/abstracts':self.first,
                'https://acro.org/page/travel':'<html><body><h1>ACRO trainee award</h1><p>Award applications open November 1, 2026. Application deadline November 16, 2026.</p></body></html>'}
