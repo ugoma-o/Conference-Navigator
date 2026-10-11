@@ -21,6 +21,7 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
     <div class="side-label">WORKSPACE</div>
     <nav class="side-nav" aria-label="Main navigation">
       <button type="button" class="nav-item active" data-view="discover"><span class="nav-ico" data-icon="grid"></span>Explore conferences<span class="nav-cue">›</span></button>
+      <button type="button" class="nav-item" data-view="matcher"><span class="nav-ico" data-icon="search"></span>Abstract matcher</button>
       <button type="button" class="nav-item" data-view="planner"><span class="nav-ico" data-icon="layers"></span>Research planner</button>
       <button type="button" class="nav-item" data-view="funding"><span class="nav-ico" data-icon="award"></span>Funding & awards</button>
     </nav>
@@ -64,6 +65,40 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
         <div class="calendar-footnote"><span class="legend-dot deadline"></span> Abstract due <span class="legend-dot meeting"></span> Conference <span class="legend-dot award-open"></span> Award applications open <span class="legend-dot award"></span> Award deadline <span class="legend-dot open"></span> Submissions open <span class="divider-sm">•</span> Select an event to open its conference or award.</div>
       </section>
       </section>
+      <section id="matcherView" class="view" aria-label="Match an abstract to conferences">
+        <div class="page-heading matcher-heading">
+          <h1>Conference Abstract Matcher</h1>
+          <p>Paste your abstract to discover conferences that align with its medical topics, scientific focus, and presentation type.</p>
+        </div>
+        <div class="matcher-layout">
+          <div class="panel matcher-input-panel">
+            <h2>Find relevant conferences</h2>
+            <p class="matcher-intro">The matcher recognizes medical terminology and related concepts, rather than relying on exact conference-name matches.</p>
+            <label class="form-label" for="matchAbstractText">Research abstract</label>
+            <textarea id="matchAbstractText" class="matcher-abstract" rows="12" maxlength="14000" placeholder="Paste your abstract here, including its background, objectives, methods, results, and conclusion."></textarea>
+            <div class="matcher-input-meta"><span id="matchWordCount">0 words</span><span>For more meaningful results, include 30+ words</span></div>
+            <label class="form-label" for="matchFormat">Abstract / project type</label>
+            <select id="matchFormat" class="form-input">
+              <option value="auto" selected>Automatically detect from the abstract</option>
+              <option value="original">Original clinical or basic research</option>
+              <option value="case">Case report / clinical vignette</option>
+              <option value="qi">Quality improvement / patient safety</option>
+              <option value="education">Medical education</option>
+              <option value="review">Systematic review / meta-analysis</option>
+            </select>
+            <label class="matcher-check"><input id="matchShowClosed" type="checkbox" /><span>Include conferences with closed submission windows</span></label>
+            <div class="matcher-actions"><button id="matchRun" class="btn btn-primary" type="button">Find matching conferences <span aria-hidden="true">→</span></button><button id="matchClear" class="btn btn-soft" type="button">Clear</button></div>
+            <div class="matcher-privacy" role="note"><span data-icon="shield"></span><p><strong>Private by design.</strong> Matching runs locally in your browser. The pasted text is not sent to RISE or an external AI service, and it is not saved to your device. Remove patient identifiers and other confidential information before pasting.</p></div>
+          </div>
+          <div class="matcher-output" id="matchOutput" aria-live="polite" aria-atomic="false">
+            <div class="matcher-placeholder">
+              <span class="matcher-placeholder-icon" data-icon="search"></span>
+              <h2>Your conference matches will appear here</h2>
+              <p>We'll look for scientific subject areas, specialty connections, and available submission information in the RISE conference directory.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="plannerView" class="view" aria-label="Research planner"><div class="page-heading"><h1>Research roadmap</h1><p>Reverse-plan your milestones based on your project type and the submission deadline you’re targeting.</p></div><div class="planner-layout"><div class="panel planner-form"><div class="panel-heading"><h2>Build your timeline</h2><p>Select a conference and project type to calculate an estimated preparation timeline.</p></div><label class="form-label" for="planConference">Target conference</label><select id="planConference" class="form-input"></select><div class="planner-type-highlight"><label class="form-label planner-type-label" for="planType">PROJECT TYPE</label><span class="planner-type-help">Choose one to reveal your timeline</span><select id="planType" class="form-input planner-type-select"><option value="" selected disabled>Choose your project type…</option><option value="retrospective">Retrospective chart review</option><option value="case">Case report / case series</option><option value="qi">Quality improvement project</option><option value="systematic">Systematic review / meta-analysis</option><option value="medicaleducation">Medical education project</option><option value="prospective">Prospective clinical study</option></select></div><div class="planner-extra-controls"><label class="form-label" for="planReadiness">PROJECT STATUS</label><select id="planReadiness" class="form-input"><option value="idea">Starting with an idea</option><option value="working">Project underway</option><option value="ready">Results or abstract draft ready</option></select><label class="form-label" for="planPresentation">PRESENTATION GOAL</label><select id="planPresentation" class="form-input"><option value="either">Poster or oral</option><option value="poster">Poster</option><option value="oral">Oral presentation</option></select></div><div class="lead-months-group" id="planLeadGroup"><label class="form-label" for="planLeadMonths">Assumed abstract submission date</label><select id="planLeadMonths" class="form-input"><option value="3">3 months before conference</option><option value="4">4 months before conference</option><option value="6" selected>6 months before conference</option><option value="8">8 months before conference</option><option value="10">10 months before conference</option></select><p class="input-help">Choose when to assume abstracts are due, relative to the meeting. For unannounced deadlines only; dates are estimates.</p></div><p class="input-help">Defaults are project-type estimates, not guarantees. Regulatory and data-access lead times vary.</p><button type="button" class="btn btn-primary btn-full" id="generatePlan">Generate timeline <span>→</span></button><div class="form-info"><span data-icon="shield"></span><p>Begin with a protocol and request IRB review, exemption, or QI determination when required. Do not collect regulated research data before appropriate authorization.</p></div></div><div class="panel plan-output"><div class="plan-output-head"><div><h2 id="planHeading">Your project milestones</h2></div><div class="plan-export-actions"><button type="button" class="btn btn-soft" id="downloadPlan" title="Export dates to your calendar">Export .ics</button><button type="button" class="btn btn-soft" id="downloadPlanVisual" title="Download the timeline, dates, and detailed milestone descriptions as a vector image">Download visual (.svg)</button><button type="button" class="btn btn-primary" id="printPlanPdf" title="Open a print-ready report and save it as a PDF">Save as PDF</button></div></div><div id="planResult"></div></div></div></section>
       <section id="fundingView" class="view" aria-label="Funding and awards"><div class="page-heading"><h1>Funding & awards</h1><p>Resident-relevant society scholarships, conference travel support, and institution-based funding pathways.</p></div><div class="funding-banner"><span class="banner-icon" data-icon="shield"></span><div><strong>Funding information</strong><p>Funding is labeled by source, eligibility and award type. Institutional review may be needed even for nonprofit awards. No sponsored placement or commercial ranking.</p></div></div><div class="section-header funding-specialty-heading"><div><h2>Explore funding by specialty</h2></div><span class="specialty-hint">Awards linked to meetings appear with those conferences</span></div>
         <div class="funding-specialty-chips" id="fundingSpecialtyChips" role="group" aria-label="Funding specialty"></div>
@@ -79,6 +114,7 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <div id="calendarDayOverlay" class="calendar-day-overlay hidden" role="presentation"><div class="calendar-day-dialog" role="dialog" aria-modal="true" aria-labelledby="calendarDayTitle"><div class="calendar-day-dialog-header"><h3 id="calendarDayTitle"></h3><button type="button" id="calendarDayClose" aria-label="Close day events">×</button></div><p>Select any event to open its details.</p><div id="calendarDayList" class="calendar-day-list"></div></div></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script src="data.js"></script>
+<script src="abstract-matcher.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
