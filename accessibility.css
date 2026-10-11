@@ -224,3 +224,19 @@ button,select,input,textarea{max-width:100%}
 #calendarView .calendar-grid .meeting-ribbon:focus-visible{
  outline:3px solid #078bc0;outline-offset:1px
 }
+
+
+/* Explain why a future conference matches an earlier submission month. */
+.month-match{margin:13px 0 0;padding:10px 0 2px;border-top:1px solid var(--border);display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
+.month-match-heading{font-size:12.5px;line-height:1.5;letter-spacing:.035em;font-weight:750;color:#456b81}
+.month-match-item{font-size:14px;line-height:1.5;color:#3c5566;overflow-wrap:anywhere}
+.month-match-item strong{font-weight:750;color:#215371}
+.month-match-due strong{color:#146954}
+.month-match-open strong{color:#266c96}
+.month-match-meeting strong{color:#76549d}
+html[data-theme="dark"] .month-match{border-color:#385465}
+html[data-theme="dark"] .month-match-heading{color:#bbd1df}
+html[data-theme="dark"] .month-match-item{color:#d2e1eb}
+html[data-theme="dark"] .month-match-due strong{color:#a7e0c8}
+html[data-theme="dark"] .month-match-open strong{color:#a4d5f4}
+html[data-theme="dark"] .month-match-meeting strong{color:#d9c0f2}
