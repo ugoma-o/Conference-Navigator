@@ -243,6 +243,8 @@ function initPlanner(){
  get('planConference').addEventListener('change',generatePlan);
  get('planLeadMonths').addEventListener('change',generatePlan);
  get('planType').addEventListener('change',generatePlan);
+  get('planReadiness').addEventListener('change',generatePlan);
+  get('planPresentation').addEventListener('change',generatePlan);
  get('generatePlan').addEventListener('click',generatePlan);
  get('downloadPlan').addEventListener('click',()=>{if(!state.plan){showToast('Generate a timeline first');return}const items=state.plan.steps.map((s,i)=>({date:s.day,uid:`${state.plan.id}-${i}`,title:`RISE project milestone — ${s.title}${state.plan.estimated?' (provisional)':''}`,description:state.plan.name+' | '+s.desc+(state.plan.estimated?' | Dates based on assumed submission target, not official deadline.':'')}));downloadFile('RISE_research_roadmap.ics',icsEvents(items),'text/calendar;charset=utf-8');showToast('Research roadmap exported as .ics')});
  const next=C.find(c=>c.deadline&&c.deadline>=todayKey);get('planConference').value=next?next.id:list[0]?.id||'';
@@ -263,7 +265,7 @@ function generatePlan(){
  const msg=days<0?'The planning target has passed; a future conference cycle may be more realistic.':key(start)<todayKey?'The suggested start date has passed. An already-in-progress project may be needed.':'This planning schedule can be adjusted as the submission window is announced.';
  state.plan={id:c.id,name:c.name,steps,estimated:target.estimated};
  get('planHeading').textContent=c.name;
- get('planResult').innerHTML=`<div class="plan-summary ${days<0||key(start)<todayKey||w<defaults[type]?'plan-warning':''}"><strong>${escape(fmt(key(start)))} → ${escape(fmt(target.internalDay))}</strong><span class="plan-goal-caption">Your early submit-by goal · ${target.bufferDays}-day buffer before ${escape(fmt(target.day))}</span>${target.estimated?'<span class="estimate-chip">Provisional, not an announced deadline</span>':''}<p>${escape(needs+msg)} ${escape(target.explanation)}</p></div>${roadmapMarkup(c,type,w,false,lead,'idea','either')}<details class="milestone-disclosure"><summary>View milestone descriptions and exact dates</summary><div class="milestone-table">${steps.map(s=>`<div><strong>${escape(s.title)}</strong><span>${escape(fmt(s.day))}</span><p>${escape(s.desc)}</p></div>`).join('')}</div></details>`;
+ get('planResult').innerHTML=`<div class="plan-summary ${days<0||key(start)<todayKey||w<defaults[type]?'plan-warning':''}"><strong>${escape(fmt(key(start)))} → ${escape(fmt(target.internalDay))}</strong><span class="plan-goal-caption">Your early submit-by goal · ${target.bufferDays}-day buffer before ${escape(fmt(target.day))}</span>${target.estimated?'<span class="estimate-chip">Provisional, not an announced deadline</span>':''}<p>${escape(needs+msg)} ${escape(target.explanation)}</p></div>${roadmapMarkup(c,type,w,false,lead,get('planReadiness').value,get('planPresentation').value)}<details class="milestone-disclosure"><summary>View milestone descriptions and exact dates</summary><div class="milestone-table">${steps.map(s=>`<div><strong>${escape(s.title)}</strong><span>${escape(fmt(s.day))}</span><p>${escape(s.desc)}</p></div>`).join('')}</div></details>`;
 }
 function renderPlan(){if(!state.plan)generatePlan()}
 function renderFunding(){
