@@ -1228,22 +1228,32 @@
       "lateOpen": null,
       "lateDeadline": null,
       "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
+      "limit": 320,
+      "limitType": "words",
+      "limitNote": "Abstract body maximum 320 words.",
       "fee": null,
       "types": [
-        "Original research",
-        "Clinical science"
+        "Original neurosurgical research",
+        "Cerebrovascular",
+        "Spine",
+        "Pediatric neurosurgery",
+        "Neurosurgical oncology"
       ],
       "url": "https://annualmeeting.aans.org/abstract-center/",
       "guideline": null,
       "evidence": "official",
-      "note": "Official abstract page presents conflicting close dates (Oct 1/4/5, 2026); deadline withheld pending reconciliation.",
+      "note": "AANS 2027 official abstract page lists conflicting closing dates: October 1, October 4 (extension and submission FAQ), and October 5, 2026 (older paragraph). Site says submissions closed; deadline left unresolved rather than selecting an unsupported definitive date. Scientific abstracts maximum 320 words.",
       "flag": "conflict",
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral presentation",
+        "Rapid-fire oral",
+        "Oral paper poster",
+        "ePoster"
+      ],
+      "fieldSources": {},
+      "additionalSources": []
     },
     {
       "id": "aaem27",
@@ -1891,7 +1901,7 @@
       "open": null,
       "deadline": "2026-06-08",
       "lateOpen": null,
-      "lateDeadline": null,
+      "lateDeadline": "2026-10-30",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -1905,7 +1915,7 @@
       "url": "https://www.aaos.org/annual/attend/future-meetings/",
       "guideline": "https://www.aaos.org/annual/explore-the-program/abstracts-applications/",
       "evidence": "official",
-      "note": "AAOS 2027 paper/poster/ePoster abstract applications had an extended submission deadline of June 8, 2026. Other educational, video and symposium applications have distinct deadlines.",
+      "note": "Regular paper/poster/ePoster submissions closed June 8, 2026. A separate late-breaking research call closes October 30, 2026; only substantial new data unavailable during the regular cycle qualify. Previously rejected, withdrawn, or updated submissions from the regular round are ineligible. Late-breaking opening date not confirmed.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": true,
@@ -1920,8 +1930,15 @@
           "checked_at": "2026-10-11",
           "verified_by": "RISE review of official 2027 organizer pages",
           "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "lateDeadline": {
+          "url": "https://www.aaos.org/annual/explore-the-program/abstracts-applications/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official meeting evidence review",
+          "source_quote": "2027 AAOS late-breaking orthopaedic abstracts due October 30, 2026."
         }
-      }
+      },
+      "additionalSources": []
     },
     {
       "id": "aapmr27",
@@ -2184,14 +2201,14 @@
       "limitNote": "500 combined words for background, methods, objectives and results; excluding title/authors. CASE REPORTS NOT ACCEPTED.",
       "fee": "$60 per abstract",
       "types": [
-        "Clinical breast surgery research",
-        "Prospective studies",
-        "Late-breaking prospective trials"
+        "Breast surgery original research",
+        "Prospective clinical trials",
+        "International poster research"
       ],
       "url": "https://www.breastsurgeons.org/meeting/2027/abstracts",
       "guideline": null,
       "evidence": "official",
-      "note": "Regular abstracts due Nov 4, 2026. Late-breaking Jan 20, 2027 is limited to consented prospective trials. Case reports explicitly excluded; abstract content must be written by authors.",
+      "note": "2027 regular abstract deadline November 4, 2026, with $60 nonrefundable submission fee and 500-word body. Early international-only poster submissions closed October 5, 2026. Late-breaking window closes January 20, 2027 and is restricted to prospective clinical trials with patient informed consent and final results; case reports are not accepted.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": true,
@@ -2199,7 +2216,9 @@
         "Oral",
         "Quick Shot",
         "Poster"
-      ]
+      ],
+      "fieldSources": {},
+      "additionalSources": []
     },
     {
       "id": "aacr27",
@@ -3722,10 +3741,10 @@
       "deadline": "2026-09-01",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": "11:55 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
+      "deadlineTime": null,
+      "limit": 350,
+      "limitType": "words",
+      "limitNote": "Scientific/QI abstract body maximum 350 words, excluding section headings.",
       "fee": null,
       "types": [
         "EMS original research",
@@ -3735,8 +3754,8 @@
       "url": "https://naemsp.org/2027-annual-meeting/",
       "guideline": "https://naemsp.org/annual-meeting/call-for-abstracts/",
       "evidence": "official",
-      "note": "2027 NAEMSP Annual Meeting abstract submissions closed September 1, 2026 at 11:55 PM ET. Includes research, QI and EMS education innovation; do not confuse scientific abstracts with general speaker proposals.",
-      "flag": null,
+      "note": "2027 abstract deadline date is confirmed as September 1, 2026. NAEMSP's official page has conflicting cutoffs: its opening instructions state 11:55 PM ET, while the electronic submission rules state 11:59 PM ET. Time deliberately left unresolved; the earlier 11:55 PM would have been safest. Research, quality improvement and education innovation abstracts were eligible.",
+      "flag": "conflict",
       "tags": null,
       "submissionCategoriesVerified": true,
       "presentationFormats": [
@@ -3762,7 +3781,8 @@
           "verified_by": "RISE review of official 2027 organizer pages",
           "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
         }
-      }
+      },
+      "additionalSources": []
     },
     {
       "id": "smfm27",
@@ -4908,6 +4928,221 @@
           "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
           "checked_at": "2026-10-11",
           "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "asent27",
+      "name": "ASENT Annual Meeting 2027",
+      "society": "American Society for Experimental Neurotherapeutics",
+      "specialty": "Neurology",
+      "start": "2027-03-17",
+      "end": "2027-03-19",
+      "city": "Bethesda, MD",
+      "open": "2026-09-07",
+      "deadline": "2026-10-30",
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": "$25 trainees; $75 members; $175 nonmembers",
+      "types": [
+        "Neurotherapeutics development",
+        "Clinical trials",
+        "Translational neuroscience"
+      ],
+      "url": "https://www.asent.org/AnnualMeeting2027",
+      "guideline": "https://www.asent.org/event-6830500",
+      "evidence": "official",
+      "note": "Established scientific and translational neurotherapeutics society. Abstracts include trials-in-progress and encore abstracts, but case reports are not accepted. Clinical trials course occurs March 15–16; annual scientific meeting March 17–19.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.asent.org/AnnualMeeting2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "end": {
+          "url": "https://www.asent.org/AnnualMeeting2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "open": {
+          "url": "https://www.asent.org/event-6830500",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "deadline": {
+          "url": "https://www.asent.org/event-6830500",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        }
+      }
+    },
+    {
+      "id": "ans-neurotology27",
+      "name": "American Neurotology Society Spring Meeting 2027",
+      "society": "American Neurotology Society",
+      "specialty": "Otolaryngology",
+      "start": "2027-04-09",
+      "end": "2027-04-10",
+      "city": "Seattle, WA",
+      "open": "2026-09-01",
+      "deadline": "2026-10-22",
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": "11:59 PM PT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Neurotology and vestibular science",
+        "Otology clinical research"
+      ],
+      "url": "https://www.americanneurotologysociety.com/ans-spring-meeting-2027-seattle",
+      "guideline": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
+      "evidence": "official",
+      "note": "Established specialist research meeting during the Combined Otolaryngology Spring Meetings. Scientific oral and poster opportunities include trainee awards and vestibular research support.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral scientific session",
+        "Scientific poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.americanneurotologysociety.com/ans-spring-meeting-2027-seattle",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "end": {
+          "url": "https://www.americanneurotologysociety.com/ans-spring-meeting-2027-seattle",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "open": {
+          "url": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "deadline": {
+          "url": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        }
+      }
+    },
+    {
+      "id": "creog-apgo27",
+      "name": "CREOG & APGO Annual Meeting 2027",
+      "society": "Council on Resident Education in Obstetrics and Gynecology and Association of Professors of Gynecology and Obstetrics",
+      "specialty": "Obstetrics & Gynecology",
+      "start": "2027-02-24",
+      "end": "2027-02-27",
+      "city": "Denver, CO",
+      "open": null,
+      "deadline": "2026-08-04",
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": "5:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Obstetrics and gynecology medical education research",
+        "Teaching innovation"
+      ],
+      "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "A research and scholarship meeting specific to OB/GYN education. Call for abstracts and session proposals closed August 4, 2026 at 5:00 PM ET; accepts oral abstracts, posters and educational films.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral abstract",
+        "Poster",
+        "Educational film"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "end": {
+          "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "deadline": {
+          "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        }
+      }
+    },
+    {
+      "id": "asnr-rehab27",
+      "name": "American Society of Neurorehabilitation Annual Meeting 2027",
+      "society": "American Society of Neurorehabilitation",
+      "specialty": "Physical Medicine & Rehabilitation",
+      "start": null,
+      "end": null,
+      "city": "Durham, NC",
+      "open": null,
+      "deadline": "2026-11-29",
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": "11:59 PM CST",
+      "limit": 300,
+      "limitType": "words",
+      "limitNote": "Structured abstract body maximum 300 words; title maximum 50 words.",
+      "fee": null,
+      "types": [
+        "Neurorehabilitation original research",
+        "Case reports and series",
+        "Systematic reviews",
+        "Qualitative research"
+      ],
+      "url": "https://www.asnr.com/asnr2027-poster-abstracts/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Legitimate American Society of Neurorehabilitation scientific meeting (asnr.com), distinct from the American Society of Neuroradiology (asnr.org). Abstract deadline confirmed for November 29, 2026, but 2027 meeting dates not yet independently established; site indicates Durham, NC. Results must be included; no late submissions.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Poster"
+      ],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.asnr.com/asnr2027-poster-abstracts/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
         }
       }
     }
