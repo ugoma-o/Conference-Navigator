@@ -1630,3 +1630,63 @@ html:not([data-design="classic"]) #discoverView .horizon-month .horizon-none{
     outline-offset:2px;
   }
 }
+
+/* RISE LIST-VIEW CONFERENCE CARDS — framed rows with clear separation. */
+html:not([data-design="classic"]) #discoverListPanel #conferenceGrid,
+html[data-theme="dark"]:not([data-design="classic"]) #discoverListPanel #conferenceGrid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:12px;
+  border-top:0;
+  background:transparent;
+  min-width:0;
+}
+html:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card,
+html[data-theme="dark"]:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card{
+  min-width:0;
+  margin:0;
+  padding:19px 20px;
+  background:var(--ed-paper);
+  border:1px solid var(--ed-rule);
+  border-radius:12px;
+  box-shadow:0 2px 9px rgba(14,53,78,.045);
+  transition:background-color .16s ease,border-color .16s ease,box-shadow .16s ease;
+}
+html:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card:hover,
+html[data-theme="dark"]:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card:hover{
+  background:var(--ed-hover);
+  border-color:var(--ed-accent);
+  box-shadow:0 5px 17px rgba(14,53,78,.10);
+  transform:none;
+}
+html:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card:focus-visible{
+  outline:3px solid var(--ed-accent);
+  outline-offset:2px;
+}
+html:not([data-design="classic"]) #discoverListPanel #conferenceGrid .directory-month-heading{
+  border-bottom:0;
+  padding:14px 4px 1px;
+  margin:0;
+}
+html[data-theme="dark"]:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card{
+  box-shadow:0 2px 12px rgba(0,0,0,.14);
+}
+html[data-theme="dark"]:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card:hover{
+  box-shadow:0 6px 19px rgba(0,0,0,.23);
+}
+@media(max-width:760px){
+  html:not([data-design="classic"]) #discoverListPanel #conferenceGrid,
+  html[data-theme="dark"]:not([data-design="classic"]) #discoverListPanel #conferenceGrid{
+    gap:10px;
+  }
+  html:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card,
+  html[data-theme="dark"]:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card{
+    padding:17px 15px;
+    border-radius:10px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  html:not([data-design="classic"]) #discoverListPanel #conferenceGrid .conference-card{
+    transition:none;
+  }
+}
