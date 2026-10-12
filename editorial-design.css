@@ -676,7 +676,7 @@ html[data-theme="dark"] .matcher-strength{
     width:255px;flex-basis:255px;
     background:var(--ed-paper);
   }
-  .topbar{padding:12px 19px}
+  .topbar,html[data-theme="dark"] .topbar{padding:12px 19px}
   .main-content{padding:27px 18px 55px}
 }
 @media(max-width:760px){
@@ -695,10 +695,10 @@ html[data-theme="dark"] .matcher-strength{
 }
 @media(max-width:540px){
   .main-content{padding:23px 14px 45px}
-  .topbar{min-height:82px;padding:12px 12px}
+  .topbar,html[data-theme="dark"] .topbar{min-height:82px;padding:12px 12px}
   .workspace-title{column-gap:8px;row-gap:4px}
-  .workspace-rise{font-size:27px}
-  .workspace-name{font-size:20px}
+  .workspace-rise,html[data-theme="dark"] .workspace-rise{font-size:27px}
+  .workspace-name,html[data-theme="dark"] .workspace-name{font-size:20px}
   .discovery-intro h1,.page-heading h1{font-size:35px}
   .chip-row{gap:6px}
   #discoverView .explore-mode-switch{width:100%;gap:22px;margin:14px 0 20px}
