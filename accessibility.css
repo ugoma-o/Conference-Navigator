@@ -249,3 +249,52 @@ html[data-theme="dark"] .month-match-meeting strong{color:#d9c0f2}
 html[data-theme="dark"] .horizon-date-label{color:#c8dce8}
 html[data-theme="dark"] .horizon-date-label select{background:#1c3446;color:#e5f3fa;border-color:#577487}
 @media(max-width:760px){.horizon-top{flex-wrap:wrap}.horizon-actions{flex-wrap:wrap}.horizon-date-label{width:100%}.horizon-date-label select{flex:1;max-width:100%}}
+
+
+/* Conference date multi-select: one compact accessible control. */
+.list-controls{overflow:visible}
+.date-filter-menu{position:relative;min-width:176px;flex:0 1 auto;z-index:15}
+.date-filter-menu[open]{z-index:55}
+.date-filter-menu>summary{
+ display:flex;justify-content:space-between;align-items:center;gap:10px;
+ min-height:44px;min-width:176px;max-width:265px;padding:10px 12px;
+ font-size:15px;font-weight:600;line-height:1.4;color:#244357;
+ background:#fff;border:1px solid #cbdce4;border-radius:3px;
+ cursor:pointer;list-style:none;user-select:none
+}
+.date-filter-menu>summary::-webkit-details-marker{display:none}
+.date-filter-menu>summary::marker{content:''}
+.date-filter-menu>summary:focus-visible{outline:3px solid #178ba6;outline-offset:2px}
+.date-filter-chevron{font-size:18px;color:#326c86;transition:transform .15s ease}
+.date-filter-menu[open] .date-filter-chevron{transform:rotate(180deg)}
+.date-filter-panel{
+ position:absolute;right:0;top:calc(100% + 5px);width:min(294px,calc(100vw - 30px));
+ padding:13px 10px;display:flex;flex-direction:column;gap:2px;
+ background:#fff;border:1px solid #a9c6d6;border-radius:4px;
+ box-shadow:0 8px 22px rgba(12,47,67,.16);z-index:70
+}
+.date-filter-heading{font-size:13px;font-weight:700;color:#476475;padding:2px 8px 8px}
+.date-filter-option{display:flex;align-items:center;gap:10px;padding:9px 8px;
+ font-size:15px;line-height:1.4;color:#254658;cursor:pointer;border-radius:3px;min-height:43px}
+.date-filter-option:hover{background:#eaf3f7}
+.date-filter-option:focus-within{outline:2px solid #178ba6;outline-offset:-2px}
+.date-filter-option input{width:18px;height:18px;flex-shrink:0;accent-color:#087e89}
+.date-filter-separator{border-top:1px solid #cbdce4;margin:8px 0}
+.clear-filters-button{min-height:44px;padding:10px 13px;font-size:15px;font-weight:650;
+ white-space:nowrap;color:#14627a;background:transparent;border:1px solid #bed1dc;border-radius:3px;cursor:pointer}
+.clear-filters-button:hover{background:#e4f1f5;border-color:#5792a8}
+.clear-filters-button:focus-visible{outline:3px solid #178ba6;outline-offset:2px}
+html[data-theme="dark"] .date-filter-menu>summary,
+html[data-theme="dark"] .date-filter-panel{background:#182d3e;color:#e3f1f8;border-color:#507284}
+html[data-theme="dark"] .date-filter-chevron,html[data-theme="dark"] .date-filter-heading{color:#bcd8e8}
+html[data-theme="dark"] .date-filter-option{color:#e3f1f8}
+html[data-theme="dark"] .date-filter-option:hover{background:#284859}
+html[data-theme="dark"] .date-filter-separator{border-color:#3d5b70}
+html[data-theme="dark"] .clear-filters-button{color:#b5e2ed;border-color:#4b7183}
+html[data-theme="dark"] .clear-filters-button:hover{background:#23485b}
+@media(max-width:760px){
+ .date-filter-menu{flex:1 1 180px}
+ .date-filter-menu>summary{max-width:none;width:100%}
+ .clear-filters-button{flex:0 0 auto}
+}
+@media(prefers-reduced-motion:reduce){.date-filter-chevron{transition:none}}
