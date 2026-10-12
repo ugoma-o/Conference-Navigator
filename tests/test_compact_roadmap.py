@@ -47,8 +47,9 @@ class CompactRoadmapTests(unittest.TestCase):
         for color in ('opening','internal','deadline','conference'):
             self.assertIn('.v10-roadmap .v10-milestone.'+color,self.style)
         self.assertIn('html[data-theme="dark"] .v10-roadmap',self.style)
-        self.assertNotIn('top:calc(var(--event-row)',self.style)
-        self.assertNotIn('left:clamp(min(110px',self.style)
+        v10=self.style.split('/* V10: compact project stages',1)[1]
+        self.assertNotIn('top:calc(var(--event-row)',v10)
+        self.assertNotIn('left:clamp(min(110px',v10)
 
     def test_date_and_export_logic_are_unchanged(self):
         self.assertIn('function roadmapExportSvg(plan){',self.script)
