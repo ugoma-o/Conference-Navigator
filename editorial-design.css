@@ -1262,3 +1262,13 @@ html[data-theme="dark"]:not([data-design="classic"]) #discoverView .horizon-mont
   html:not([data-design="classic"]) #discoverView .horizon-month{transition:none}
   html:not([data-design="classic"]) #discoverView .horizon-month:hover:not(.selected){transform:none}
 }
+
+/* Guide visitors from the 18-month outlook into the conference directory. */
+#discoverView .horizon-panel{margin-bottom:0}
+#discoverView .conference-selection-hint{
+  margin:14px 0 22px;
+  color:var(--ed-muted);
+  font-size:14px;
+  font-weight:650;
+  line-height:1.5;
+}
