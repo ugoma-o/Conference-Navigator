@@ -309,7 +309,7 @@ html[data-theme="dark"] .clear-filters-button:hover{background:#23485b}
   left:auto!important;
   right:6px!important;
   transform:none!important;
-  top:calc(var(--event-row) * 49px - 23px)!important;
+  top:calc(var(--event-row) * 49px - 62px)!important;
   width:min(220px, calc(100% - 12px));
   max-width:none;
   min-height:45px;
