@@ -168,6 +168,8 @@ function matchAbstract(abstract,conferences,options) {
  var results=conferenceList.map(function(c,i) {
   var topicItems=topical.map(function(t){
    var aff=t.affinity[c.specialty]||0;
+   // Combined Heme/Onc conferences retain both legacy topic affinities.
+   if(c.specialty==='Hematology & Oncology')aff=Math.max(aff,t.affinity.Hematology||0,t.affinity.Oncology||0);
    var ctext=' '+norm(confText(c))+' ';
    var specific=t.phrases.some(function(p){return p.length>=5 && ctext.indexOf(' '+p+' ')>=0});
    return {label:t.label,affinity:aff,focused:specific};
