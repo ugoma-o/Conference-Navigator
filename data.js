@@ -1,6 +1,6 @@
 /* Curated snapshot — verify dates against society sources. */
 window.RISE_DATA = {
-  "asOf": "2026-10-11",
+  "asOf": "2026-10-12",
   "conferences": [
     {
       "id": "aan27",
@@ -5144,6 +5144,129 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE official 2027 society verification",
           "source_quote": "Official year-specific meeting or abstract call."
+        }
+      }
+    },
+    {
+      "id": "vam28",
+      "name": "Vascular Annual Meeting 2028",
+      "society": "Society for Vascular Surgery",
+      "specialty": "Vascular Surgery",
+      "start": "2028-05-31",
+      "end": "2028-06-03",
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+      "guideline": null,
+      "evidence": "official",
+      "flag": null,
+      "note": "Meeting dates verified from the official organizer page; abstract dates and submission rules have not yet been announced.",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "priorCycleId": "vam27",
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+          "checked_at": "2026-10-12T19:52:59.373079+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": ". 2028 Vascular Annual Meeting (VAM28) . . May 31 - June 3, 2028"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+          "checked_at": "2026-10-12T19:52:59.373079+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": ". 2028 Vascular Annual Meeting (VAM28) . . May 31 - June 3, 2028"
+        }
+      }
+    },
+    {
+      "id": "vam29",
+      "name": "Vascular Annual Meeting 2029",
+      "society": "Society for Vascular Surgery",
+      "specialty": "Vascular Surgery",
+      "start": "2029-06-13",
+      "end": "2029-06-16",
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+      "guideline": null,
+      "evidence": "official",
+      "flag": null,
+      "note": "Meeting dates verified from the official organizer page; abstract dates and submission rules have not yet been announced.",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "priorCycleId": "vam27",
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+          "checked_at": "2026-10-12T19:52:59.373079+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": ". 2029 Vascular Annual Meeting (VAM29) . . June 13 - 16, 2029"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+          "checked_at": "2026-10-12T19:52:59.373079+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": ". 2029 Vascular Annual Meeting (VAM29) . . June 13 - 16, 2029"
+        }
+      }
+    },
+    {
+      "id": "vam30",
+      "name": "Vascular Annual Meeting 2030",
+      "society": "Society for Vascular Surgery",
+      "specialty": "Vascular Surgery",
+      "start": "2030-06-19",
+      "end": "2030-06-22",
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "lateOpen": null,
+      "lateDeadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://vam.vascular.org/present-at-vam/",
+      "guideline": null,
+      "evidence": "official",
+      "flag": null,
+      "note": "Meeting dates verified from the official organizer page; abstract dates and submission rules have not yet been announced.",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "priorCycleId": "vam27",
+      "fieldSources": {
+        "start": {
+          "url": "https://vam.vascular.org/present-at-vam/",
+          "checked_at": "2026-10-12T19:52:59.373079+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": "2030 Vascular Annual Meeting (VAM30) . June 19 - 22, 2030"
+        },
+        "end": {
+          "url": "https://vam.vascular.org/present-at-vam/",
+          "checked_at": "2026-10-12T19:52:59.373079+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": "2030 Vascular Annual Meeting (VAM30) . June 19 - 22, 2030"
         }
       }
     }
