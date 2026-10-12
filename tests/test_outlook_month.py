@@ -91,16 +91,49 @@ misplaced:misplaced.length,future:future.length,examples:future.slice(0,4).map(x
         self.assertGreater(report['future'],0)
         self.assertGreater(report['due'],0)
 
+
+    def test_date_type_filters_are_exclusive(self):
+        script=self.helpers()+r"""
+const c={start:'2027-05-07',end:'2027-05-09',open:'2026-10-01',
+         deadline:'2026-10-18',lateOpen:'2026-10-20',lateDeadline:'2026-10-30'};
+const types=['all','meeting','open','deadline','lateOpen','lateDeadline'];
+const selected={};
+for(const t of types)selected[t]=monthMatches(c,'2026-10',t).map(x=>x.field);
+selected.meetingInMay=monthMatches(c,'2027-05','meeting').map(x=>x.field);
+selected.noMonth=monthMatches(c,null,'deadline').map(x=>x.day);
+console.log(JSON.stringify(selected));
+"""
+        found=self.run_javascript(script)
+        self.assertEqual(found['meeting'],[])
+        self.assertEqual(found['open'],['open'])
+        self.assertEqual(found['deadline'],['deadline'])
+        self.assertEqual(found['lateOpen'],['lateOpen'])
+        self.assertEqual(found['lateDeadline'],['lateDeadline'])
+        self.assertEqual(found['meetingInMay'],['meeting'])
+        self.assertEqual(found['noMonth'],['2026-10-18'])
+        self.assertEqual(len(found['all']),4)
+
+    def test_date_type_select_changes_directory(self):
+        app=(ROOT/'app.js').read_text(encoding='utf-8')
+        html=(ROOT/'index.html').read_text(encoding='utf-8')
+        self.assertIn('id="dateTypeFilter"',html)
+        for kind in ('all','meeting','open','deadline','lateOpen','lateDeadline'):
+            self.assertIn(f'<option value="{kind}"',html)
+        self.assertIn("get('dateTypeFilter').addEventListener('change'",app)
+        self.assertIn("matchesMonth(c,state.monthKey,state.dateType)",app)
+        self.assertIn("get('dateTypeFilter').value='all'",app)
+        self.assertIn("const dated=Boolean(state.monthKey||state.dateType!=='all')",app)
+
     def test_month_sort_and_why_this_matches_are_visible(self):
         app=(ROOT/'app.js').read_text(encoding='utf-8')
         html=(ROOT/'index.html').read_text(encoding='utf-8')
-        self.assertIn("state.sort=next?'month':'meeting'",app)
-        self.assertIn("monthMatches(c,state.monthKey)",app)
-        self.assertIn('WHY THIS APPEARS IN',app)
+        self.assertIn("state.sort=dated?'month':'meeting'",app)
+        self.assertIn("monthMatches(c,state.monthKey,state.dateType)",app)
+        self.assertIn('MATCHING ',app)
         self.assertIn('get(\'monthSortOption\').disabled',app)
         self.assertIn('id="monthSortOption" disabled',html)
-        self.assertIn('These conferences have an event in ',app)
-        self.assertIn("const monthEvents=list.flatMap(c=>monthMatches(c,m))",app)
+        self.assertIn("'Filtered by '+DATE_TYPE_NAMES[state.dateType]",app)
+        self.assertIn("const monthEvents=list.flatMap(c=>monthMatches(c,m,state.dateType))",app)
 
 if __name__=='__main__':
     unittest.main()
