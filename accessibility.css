@@ -240,3 +240,12 @@ html[data-theme="dark"] .month-match-item{color:#d2e1eb}
 html[data-theme="dark"] .month-match-due strong{color:#a7e0c8}
 html[data-theme="dark"] .month-match-open strong{color:#a4d5f4}
 html[data-theme="dark"] .month-match-meeting strong{color:#d9c0f2}
+
+
+/* Event-type filter for the rolling conference outlook. */
+.horizon-date-label{display:flex;gap:8px;align-items:center;font-size:14px;font-weight:650;color:#416176;white-space:nowrap}
+.horizon-date-label select{min-height:44px;font-size:15px;font-weight:550;padding:8px 12px;border:1px solid #cbdce4;background:#fff;color:#244357;border-radius:3px;max-width:225px}
+.horizon-date-label select:focus-visible{outline:3px solid #178ba6;outline-offset:2px}
+html[data-theme="dark"] .horizon-date-label{color:#c8dce8}
+html[data-theme="dark"] .horizon-date-label select{background:#1c3446;color:#e5f3fa;border-color:#577487}
+@media(max-width:760px){.horizon-top{flex-wrap:wrap}.horizon-actions{flex-wrap:wrap}.horizon-date-label{width:100%}.horizon-date-label select{flex:1;max-width:100%}}
