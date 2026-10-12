@@ -5,16 +5,16 @@
 
 /* 01. FOUNDATIONS */
 :root {
-  --ed-page:#f3f7f9;
+  --ed-page:#f4f8fa;
   --ed-paper:#ffffff;
-  --ed-paper-alt:#e8f1f5;
-  --ed-ink:#253d4c;
-  --ed-heading:#103a59;
-  --ed-muted:#526d7b;
-  --ed-rule:#cbdce4;
-  --ed-accent:#008a96;
-  --ed-accent-strong:#00687e;
-  --ed-hover:#e1f2f4;
+  --ed-paper-alt:#e5f2f4;
+  --ed-ink:#1c394b;
+  --ed-heading:#0b334f;
+  --ed-muted:#456677;
+  --ed-rule:#cadce4;
+  --ed-accent:#007d88;
+  --ed-accent-strong:#006773;
+  --ed-hover:#e3f3f4;
   --ed-serif:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
   --ed-sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,Helvetica,sans-serif;
   --bg:var(--ed-page);
@@ -24,16 +24,16 @@
   --shadow:none;
 }
 html[data-theme="dark"] {
-  --ed-page:#0c1925;
-  --ed-paper:#132736;
-  --ed-paper-alt:#203a4b;
-  --ed-ink:#dbeaf3;
-  --ed-heading:#f0f7fc;
-  --ed-muted:#a8c1d1;
-  --ed-rule:#355469;
-  --ed-accent:#51cbd1;
-  --ed-accent-strong:#a2e5ea;
-  --ed-hover:#244455;
+  --ed-page:#0b1825;
+  --ed-paper:#132b3d;
+  --ed-paper-alt:#214457;
+  --ed-ink:#e0edf4;
+  --ed-heading:#f3f9fc;
+  --ed-muted:#afc8d4;
+  --ed-rule:#36596b;
+  --ed-accent:#5ad5d6;
+  --ed-accent-strong:#a9eeee;
+  --ed-hover:#23495b;
   --bg:var(--ed-page);
   --ink:var(--ed-ink);
   --muted:var(--ed-muted);
@@ -875,4 +875,257 @@ html[data-theme="dark"]:not([data-design="classic"]) .modal-head .mini-specialty
    background:#0b3957;color:#e7f2f6
  }
  html[data-theme="dark"]:not([data-design="classic"]) .sidebar{background:#071f33}
+}
+
+
+/* 12. RISE SIGNATURE PALETTE
+   Solid academic navy + high-contrast teal + controlled copper/amber.
+   No gradients, decorative pills, left-edge note stripes or additional cards.
+   These overrides intentionally preserve the calendar's category palette
+   and the original full-height research roadmap. */
+:root{
+  --rise-navy:#0b3553;
+  --rise-navy-deep:#092b44;
+  --rise-teal:#006975;        /* 6.4:1 white-on-teal contrast */
+  --rise-teal-bright:#54c9c9;
+  --rise-copper:#91530f;
+  --rise-highlight:#edf7f7;
+  --rise-header-text:#f5fbff;
+  --rise-header-sub:#c7e5ed;
+}
+html[data-theme="dark"]{
+  --rise-navy:#0e334e;
+  --rise-navy-deep:#071c2e;
+  --rise-teal:#59d2d3;
+  --rise-teal-bright:#59d2d3;
+  --rise-copper:#e8b76b;
+  --rise-highlight:#1d4250;
+  --rise-header-text:#f5fbff;
+  --rise-header-sub:#bfd9e7;
+}
+
+/* A bold masthead, not a gradient banner or marketing card. */
+html:not([data-design="classic"]) .topbar,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar{
+  background:var(--rise-navy);
+  border-bottom:3px solid var(--rise-teal-bright);
+  color:var(--rise-header-text);
+}
+html:not([data-design="classic"]) .topbar .workspace-rise,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-rise{
+  color:var(--rise-teal-bright);
+}
+html:not([data-design="classic"]) .topbar .workspace-name,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-name{
+  color:var(--rise-header-text);
+}
+html:not([data-design="classic"]) .topbar .date-note,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar .date-note{
+  color:var(--rise-header-sub);
+}
+html:not([data-design="classic"]) .topbar .theme-toggle,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar .theme-toggle{
+  color:var(--rise-header-text);
+  background:transparent;
+  border-color:#79a9ba;
+  border-radius:3px;
+}
+html:not([data-design="classic"]) .topbar .theme-toggle:hover,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar .theme-toggle:hover{
+  background:#1c506b;
+  border-color:#b7e3ea;
+}
+html:not([data-design="classic"]) .topbar .menu-button{color:var(--rise-header-text)}
+
+/* Deep navigation with an unmistakable selected state. */
+html:not([data-design="classic"]) .sidebar,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar{
+  background:var(--rise-navy-deep);
+  border-right:1px solid #20536c;
+}
+html:not([data-design="classic"]) .sidebar .nav-item.active,
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .nav-item.active{
+  background:#006975;
+  color:#fff;
+}
+html:not([data-design="classic"]) .sidebar .nav-item:hover:not(.active),
+html[data-theme="dark"]:not([data-design="classic"]) .sidebar .nav-item:hover:not(.active){
+  background:#174d68;
+  color:#fff;
+}
+html:not([data-design="classic"]) .sidebar .side-label{color:#b3d3e2}
+html:not([data-design="classic"]) .sidebar .brand-subtitle{color:#c3e0ec}
+
+/* Clear editorial hierarchy: color serves headings, navigation and data. */
+html:not([data-design="classic"]) .discovery-intro h1,
+html:not([data-design="classic"]) .page-heading h1,
+html:not([data-design="classic"]) .listing-title,
+html:not([data-design="classic"]) .section-header h2,
+html[data-theme="dark"]:not([data-design="classic"]) .discovery-intro h1,
+html[data-theme="dark"]:not([data-design="classic"]) .page-heading h1,
+html[data-theme="dark"]:not([data-design="classic"]) .listing-title,
+html[data-theme="dark"]:not([data-design="classic"]) .section-header h2{
+  color:var(--ed-heading);
+  font-weight:750;
+}
+html:not([data-design="classic"]) .eyebrow,
+html:not([data-design="classic"]) .panel-kicker,
+html:not([data-design="classic"]) .row-identity .mini-specialty,
+html:not([data-design="classic"]) .matcher-specialty{
+  color:var(--ed-accent-strong);
+  font-weight:750;
+}
+html:not([data-design="classic"]) .workspace-title{font-weight:650}
+
+/* Substantive controls: teal when selected, neutral when unselected. */
+html:not([data-design="classic"]) .chip.active,
+html:not([data-design="classic"]) #discoverView .chip.active,
+html:not([data-design="classic"]) .funding-specialty-chips .chip.active,
+html:not([data-design="classic"]) .f-chip.active,
+html[data-theme="dark"]:not([data-design="classic"]) .chip.active,
+html[data-theme="dark"]:not([data-design="classic"]) #discoverView .chip.active,
+html[data-theme="dark"]:not([data-design="classic"]) .funding-specialty-chips .chip.active{
+  background:#006975;
+  border-color:#006975;
+  color:#fff;
+  font-weight:700;
+}
+html:not([data-design="classic"]) .explore-mode-button.active,
+html[data-theme="dark"]:not([data-design="classic"]) .explore-mode-button.active{
+  border-bottom:3px solid var(--ed-accent);
+  color:var(--ed-accent-strong);
+  background:transparent;
+}
+html:not([data-design="classic"]) .btn-primary,
+html[data-theme="dark"]:not([data-design="classic"]) .btn-primary{
+  background:#006975;
+  border-color:#006975;
+  color:#fff;
+}
+html:not([data-design="classic"]) .btn-primary:hover,
+html[data-theme="dark"]:not([data-design="classic"]) .btn-primary:hover{
+  background:#084e5b;
+  border-color:#084e5b;
+}
+html:not([data-design="classic"]) .clear-filters-button,
+html:not([data-design="classic"]) .view-details,
+html:not([data-design="classic"]) .external-link{
+  color:var(--ed-accent-strong);
+}
+
+/* The rolling outlook becomes a distinct, purposeful data section.
+   Its selected month is a solid selection, not another pale rounded pill. */
+html:not([data-design="classic"]) .horizon-panel,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-panel{
+  background:var(--ed-paper);
+  border:1px solid var(--ed-rule);
+  border-radius:3px;
+  padding:0 0 13px;
+}
+html:not([data-design="classic"]) .horizon-top,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-top{
+  margin:0 0 11px;
+  padding:14px 17px;
+  background:var(--rise-navy);
+  color:var(--rise-header-text);
+}
+html:not([data-design="classic"]) .horizon-top strong,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-top strong{
+  color:var(--rise-header-text);
+  font-weight:750;
+  font-size:18px;
+}
+html:not([data-design="classic"]) .horizon-top span,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-top span{
+  color:var(--rise-header-sub);
+  font-size:13px;
+}
+html:not([data-design="classic"]) .horizon-top .horizon-clear,
+html:not([data-design="classic"]) .horizon-top .horizon-scroll-button,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-top .horizon-clear,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-top .horizon-scroll-button{
+  border:1px solid #7ca8b9;
+  background:transparent;
+  color:#fff;
+  min-height:38px;
+}
+html:not([data-design="classic"]) .horizon-top .horizon-clear:hover,
+html:not([data-design="classic"]) .horizon-top .horizon-scroll-button:hover{
+  background:#20526d;
+  border-color:#b2dce4;
+}
+html:not([data-design="classic"]) .horizon-scroll,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-scroll{
+  padding:0 13px 5px;
+}
+html:not([data-design="classic"]) .horizon-help,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-help{
+  padding:3px 16px 0;
+  color:var(--ed-muted);
+}
+html:not([data-design="classic"]) .horizon-year-heading,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-year-heading{
+  background:var(--ed-paper);
+}
+html:not([data-design="classic"]) .horizon-year-heading span{
+  color:var(--ed-heading);
+  font-weight:800;
+}
+html:not([data-design="classic"]) .horizon-year-heading small{
+  color:var(--rise-copper);
+  font-weight:800;
+  letter-spacing:.07em;
+}
+html:not([data-design="classic"]) .horizon-month.selected,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-month.selected{
+  background:#006975;
+  border:1px solid #006975;
+  border-bottom:3px solid var(--rise-copper);
+  box-shadow:none;
+}
+html:not([data-design="classic"]) .horizon-month.selected .horizon-month-label,
+html:not([data-design="classic"]) .horizon-month.selected .horizon-count-row,
+html:not([data-design="classic"]) .horizon-month.selected .horizon-count-row strong,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-month.selected .horizon-month-label,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-month.selected .horizon-count-row,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-month.selected .horizon-count-row strong{
+  color:#fff;
+}
+html:not([data-design="classic"]) .horizon-month:hover:not(.selected){
+  background:var(--ed-hover);
+  border-bottom-color:var(--ed-accent);
+}
+
+/* Academic directory: crisp row divisions and richer, legible metadata. */
+html:not([data-design="classic"]) #discoverView .conference-card,
+html[data-theme="dark"]:not([data-design="classic"]) #discoverView .conference-card{
+  border-bottom:1px solid var(--ed-rule);
+}
+html:not([data-design="classic"]) #discoverView .conference-card:hover,
+html[data-theme="dark"]:not([data-design="classic"]) #discoverView .conference-card:hover{
+  background:var(--ed-hover);
+}
+html:not([data-design="classic"]) .conference-card .conf-title,
+html[data-theme="dark"]:not([data-design="classic"]) .conference-card .conf-title{
+  color:var(--ed-heading);
+  font-weight:700;
+}
+
+/* One restrained warm accent on real numerical/financial information. */
+html:not([data-design="classic"]) .stat strong,
+html:not([data-design="classic"]) .fund-amount,
+html[data-theme="dark"]:not([data-design="classic"]) .stat strong,
+html[data-theme="dark"]:not([data-design="classic"]) .fund-amount{
+  color:var(--ed-heading);
+  font-weight:780;
+}
+html:not([data-design="classic"]) .fund-cat{
+  color:var(--rise-copper);
+  font-weight:750;
+}
+
+/* Maintain color category semantics in the calendar and the existing roadmap.
+   Those hues carry meaning; they are not recolored to fit the brand. */
+@media(max-width:760px){
+  html:not([data-design="classic"]) .horizon-top{gap:10px}
 }
