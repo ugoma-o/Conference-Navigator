@@ -298,3 +298,109 @@ html[data-theme="dark"] .clear-filters-button:hover{background:#23485b}
  .clear-filters-button{flex:0 0 auto}
 }
 @media(prefers-reduced-motion:reduce){.date-filter-chevron{transition:none}}
+
+
+/* Compact research roadmap: fewer empty vertical gaps and no clipped milestones.
+   V8 deliberately changes only the visual roadmap, not its dates or export data. */
+.v8-roadmap .v8-chart-area{position:relative;isolation:isolate;min-width:0}
+.v8-roadmap .v8-chart-area .v6-guides{inset:9px 0 5px}
+.v8-roadmap .v6-today-top{height:41px}
+.v8-roadmap .v6-axis{height:29px}
+.v8-roadmap .v6-stages{padding:4px 0 11px}
+.v8-roadmap .v6-stages .roadmap-row{
+  min-height:0!important;
+  height:auto;
+  padding:3px 0 7px!important;
+  gap:3px;
+}
+.v8-roadmap .v6-stages .roadmap-row-label{
+  font-size:14px;
+  line-height:1.4;
+  font-weight:650;
+  padding:0 3px 1px 0!important;
+  max-width:100%;
+  overflow-wrap:normal;
+}
+.v8-roadmap .v6-stages .roadmap-lane{height:16px;min-height:16px}
+.v8-roadmap .v6-stages .roadmap-bar{top:0;bottom:0}
+.v8-roadmap .v6-bottom-rail{
+  position:relative;
+  height:auto;
+  padding:12px 0 0;
+  margin:0;
+  border-top:1px solid #dce5e9;
+}
+.v8-roadmap .v8-key-dates-heading{
+  color:#42677e;
+  font-size:13px;
+  font-weight:750;
+  line-height:1.4;
+  letter-spacing:.07em;
+}
+.v8-roadmap .v8-event-grid{
+  position:relative;
+  height:auto!important;
+  min-height:0!important;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 18px;
+  margin-top:7px;
+}
+.v8-roadmap .v8-event-grid .v6-event-label{
+  position:static!important;
+  top:auto!important;left:auto!important;transform:none!important;
+  width:100%;
+  min-width:0;
+  max-width:none;
+  height:auto;
+  display:flex;
+  flex-direction:row!important;
+  flex-wrap:wrap;
+  align-items:baseline;
+  justify-content:flex-start;
+  gap:4px 8px;
+  padding:9px 0!important;
+  margin:0;
+  text-align:left;
+  font-size:14px;
+  line-height:1.5;
+  font-weight:500;
+  white-space:normal;
+  overflow-wrap:normal;
+  background:transparent!important;
+  box-shadow:none!important;
+  border:0!important;
+  border-bottom:1px solid #e3eaed!important;
+  border-radius:0!important;
+}
+.v8-roadmap .v8-event-grid .v6-event-label strong{
+  font-size:14px;
+  font-weight:750;
+  line-height:1.45;
+  white-space:normal;
+}
+.v8-roadmap .v8-event-grid .v6-event-label small{
+  font-size:14px;
+  line-height:1.45;
+  font-weight:500;
+  white-space:normal;
+  overflow-wrap:normal;
+}
+.v8-roadmap .v8-event-grid .v6-event-label.open strong{color:#235f83}
+.v8-roadmap .v8-event-grid .v6-event-label.internal strong{color:#8e6d2a}
+.v8-roadmap .v8-event-grid .v6-event-label.deadline strong{color:#176c50}
+.v8-roadmap .v8-event-grid .v6-event-label.conference strong{color:#7b5392}
+.v8-roadmap .roadmap-disclaimer{margin:12px 0 0;padding-top:10px}
+html[data-theme="dark"] .v8-roadmap .v6-bottom-rail{border-color:#365268}
+html[data-theme="dark"] .v8-roadmap .v8-key-dates-heading{color:#b8d4e3}
+html[data-theme="dark"] .v8-roadmap .v8-event-grid .v6-event-label{border-bottom-color:#304a5e!important}
+html[data-theme="dark"] .v8-roadmap .v8-event-grid .v6-event-label.open strong{color:#97cde9}
+html[data-theme="dark"] .v8-roadmap .v8-event-grid .v6-event-label.internal strong{color:#ebc887}
+html[data-theme="dark"] .v8-roadmap .v8-event-grid .v6-event-label.deadline strong{color:#91dab4}
+html[data-theme="dark"] .v8-roadmap .v8-event-grid .v6-event-label.conference strong{color:#d2b5ec}
+@media(max-width:580px){
+  .v8-roadmap .v8-event-grid{grid-template-columns:minmax(0,1fr)}
+  .v8-roadmap .v6-stages .roadmap-row{padding:4px 0 8px!important}
+  .v8-roadmap .v6-stages .roadmap-row-label{font-size:14px}
+  .v8-roadmap .v6-today-tag{max-width:min(175px,65vw)}
+}
