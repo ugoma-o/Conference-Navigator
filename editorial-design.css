@@ -122,14 +122,14 @@ html[data-theme="dark"] .side-bottom>span{font-size:12px;color:var(--ed-muted);l
 html[data-theme="dark"] .topbar{
   background:var(--ed-paper);
   border-bottom:1px solid var(--ed-rule);
-  min-height:77px;
+  min-height:92px;
   height:auto;
-  padding:12px 36px;
+  padding:15px 36px;
 }
 .workspace-title{gap:9px;align-items:baseline}
 .workspace-rise,
 html[data-theme="dark"] .workspace-rise{
-  font:750 23px/1.2 var(--ed-sans);
+  font:800 34px/1.15 var(--ed-sans);
   letter-spacing:.045em;
   background:none;
   -webkit-background-clip:initial;
@@ -138,7 +138,7 @@ html[data-theme="dark"] .workspace-rise{
 }
 .workspace-name,
 html[data-theme="dark"] .workspace-name{
-  font:600 18px/1.2 var(--ed-sans);
+  font:650 25px/1.2 var(--ed-sans);
   letter-spacing:-.025em;
   color:var(--ed-heading);
 }
@@ -695,9 +695,10 @@ html[data-theme="dark"] .matcher-strength{
 }
 @media(max-width:540px){
   .main-content{padding:23px 14px 45px}
-  .topbar{min-height:72px;padding:10px 12px}
-  .workspace-rise{font-size:20px}
-  .workspace-name{font-size:16px}
+  .topbar{min-height:82px;padding:12px 12px}
+  .workspace-title{column-gap:8px;row-gap:4px}
+  .workspace-rise{font-size:27px}
+  .workspace-name{font-size:20px}
   .discovery-intro h1,.page-heading h1{font-size:35px}
   .chip-row{gap:6px}
   #discoverView .explore-mode-switch{width:100%;gap:22px;margin:14px 0 20px}
