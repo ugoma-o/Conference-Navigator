@@ -9,7 +9,7 @@ const freshnessLabel = get('lastDatasetUpdated');
 if(freshnessLabel && /^\d{4}-\d{2}-\d{2}$/.test(asOf||'')) freshnessLabel.textContent = new Date(asOf+'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
 const today = (() => { const q = new URLSearchParams(location.search).get('demoDate'); return q && /^\d{4}-\d{2}-\d{2}$/.test(q) ? new Date(q+'T12:00:00') : new Date(); })();
 const todayKey = key(today);
-const state={view:'discover',exploreMode:'list', specialty:'All specialties',search:'',status:'all',sort:'meeting',monthKey:null,dateType:'all',calDate:new Date(today.getFullYear(),today.getMonth(),1),calSpecialty:'All', funding:'all', fundingSpecialty:'All specialties', selected:null,plan:null};
+const state={view:'discover',exploreMode:'list', specialty:'All specialties',search:'',status:'all',sort:'meeting',monthKey:null,dateTypes:[],calDate:new Date(today.getFullYear(),today.getMonth(),1),calSpecialty:'All', funding:'all', fundingSpecialty:'All specialties', selected:null,plan:null};
 function key(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
 function date(s){return s ? new Date(s+'T12:00:00'):null}
 function shift(d,days){let r=new Date(d);r.setDate(r.getDate()+days);return r}
@@ -78,26 +78,27 @@ function monthId(s){return s?.slice(0,7)||''}
    Keep the exact dates for an honest explanation on every filtered result. */
 function monthMatches(c,m,type='all'){
  if(m&&!/^\d{4}-\d{2}$/.test(m))return [];
- if(!m&&type==='all')return [];
+ const types=Array.isArray(type)?type:(type==='all'?[]:[type]),all=!types.length;
+ if(!m&&all)return [];
  const begin=m?m+'-01':null,end=m?key(new Date(Number(m.slice(0,4)),Number(m.slice(5)),0)):null,found=[];
  for(const [field,label,kind] of [
   ['deadline','Abstract deadline','due'],['lateDeadline','Late-breaking deadline','due'],
   ['open','Abstract submissions open','open'],['lateOpen','Late-breaking submissions open','open']
  ]){
   const day=c[field];
-  if(type!=='all'&&field!==type)continue;
+  if(!all&&!types.includes(field))continue;
   if(day&&(!begin||(day>=begin&&day<=end)) &&
     !(field==='lateDeadline'&&day===c.deadline) &&
     !(field==='lateOpen'&&day===c.open))found.push({day,field,label,kind,display:fmt(day)});
  }
- if((type==='all'||type==='meeting')&&c.start &&
+ if((all||types.includes('meeting'))&&c.start &&
     (!begin||(c.start<=end&&(c.end||c.start)>=begin)))
   found.push({day:begin&&c.start<begin?begin:c.start,field:'meeting',label:'Conference meeting',kind:'meeting',display:dateRange(c.start,c.end||c.start)});
  return found.sort((a,b)=>a.day.localeCompare(b.day)||
    ({due:0,open:1,meeting:2}[a.kind])-({due:0,open:1,meeting:2}[b.kind]));
 }
-function matchesMonth(c,m,type='all'){return (!m&&type==='all')||monthMatches(c,m,type).length>0}
-function selectedDate(c){return monthMatches(c,state.monthKey,state.dateType)[0]?.day||'9999'}
+function matchesMonth(c,m,type='all'){return (!m&&(type==='all'||Array.isArray(type)&&type.length===0))||monthMatches(c,m,type).length>0}
+function selectedDate(c){return monthMatches(c,state.monthKey,state.dateTypes)[0]?.day||'9999'}
 const DATE_TYPE_NAMES={all:'all dates',meeting:'meeting dates',open:'abstract openings',deadline:'abstract deadlines',lateOpen:'late-breaking openings',lateDeadline:'late-breaking deadlines'};
 function horizonMonths(){const t=new Date(today.getFullYear(),today.getMonth(),1);return Array.from({length:18},(_,i)=>{const d=new Date(t.getFullYear(),t.getMonth()+i,1);return key(d).slice(0,7)})}
 function renderHorizon(){
@@ -105,7 +106,7 @@ function renderHorizon(){
  const months=horizonMonths();const yearGroups=new Map();
  for(const m of months){
   // Use the same event classification for counts and selected-month results.
-  const monthEvents=list.flatMap(c=>monthMatches(c,m,state.dateType));
+  const monthEvents=list.flatMap(c=>monthMatches(c,m,state.dateTypes));
   const abstracts=monthEvents.filter(e=>e.kind==='due').length;
   const meetings=monthEvents.filter(e=>e.kind==='meeting').length;
   const opens=monthEvents.filter(e=>e.kind==='open').length;
@@ -121,17 +122,50 @@ function renderHorizon(){
  // When the next year enters the viewport, the previous year's header exits naturally.
  get('horizonStrip').innerHTML=[...yearGroups.entries()].map(([year,group])=>`<section class="horizon-year-group" data-outlook-year="${year}" aria-label="${year} conference outlook"><div class="horizon-year-heading"><span>${year}</span><small>CONFERENCE OUTLOOK</small></div><div class="horizon-year-months">${group.join('')}</div></section>`).join('');
  const when=state.monthKey?' in '+date(state.monthKey+'-01').toLocaleString('en-US',{month:'long',year:'numeric'}):'';
- const msg=state.dateType!=='all'?'Showing '+DATE_TYPE_NAMES[state.dateType]+when+'.':state.monthKey?'Showing recorded abstract and meeting events'+when+'.':'Select a month or date type to filter conferences.';
+ const typeText=state.dateTypes.length?state.dateTypes.map(t=>DATE_TYPE_NAMES[t]).join(', '):'all date types';
+ const msg=state.dateTypes.length?'Showing '+typeText+when+'.':state.monthKey?'Showing all recorded date types'+when+'.':'Select date types and/or a month to filter conferences.';
  get('horizonContext').textContent=msg;get('clearMonth').classList.toggle('hidden',!state.monthKey);
 }
 function applyDateView(){
- const view=get('dateTypeFilter').value;
- state.dateType=view==='name'?'all':view;
- state.sort=view==='name'?'name':(state.monthKey||state.dateType!=='all'?'month':'meeting');
+ state.dateTypes=[...document.querySelectorAll('input[name="date-type"]:checked')].map(input=>input.value);
+ const alphabetical=get('dateSortName').checked;
+ state.sort=alphabetical?'name':(state.monthKey||state.dateTypes.length?'month':'meeting');
+ const count=state.dateTypes.length;
+ const label=count===0?'All dates':count===1?({
+  meeting:'Meeting dates',open:'Abstract opens',deadline:'Abstract closes',
+  lateOpen:'Late-breaking opens',lateDeadline:'Late-breaking closes'
+ })[state.dateTypes[0]]:count+' date types';
+ get('dateFilterLabel').textContent=label+(alphabetical?' · A–Z':'');
  renderHorizon();renderDirectory();
 }
 function selectOutlookMonth(next){state.monthKey=next;applyDateView()}
-get('dateTypeFilter').addEventListener('change',applyDateView);
+get('dateFilterMenu').addEventListener('change',applyDateView);
+document.addEventListener('click',event=>{
+ if(!get('dateFilterMenu').contains(event.target))get('dateFilterMenu').open=false;
+});
+get('dateFilterMenu').addEventListener('keydown',event=>{
+ if(event.key==='Escape'){get('dateFilterMenu').open=false;get('dateFilterSummary').focus();}
+});
+function clearAllConferenceFilters(){
+ state.specialty='All specialties';
+ state.calSpecialty='All';
+ state.search='';
+ state.status='all';
+ state.monthKey=null;
+ state.dateTypes=[];
+ state.sort='meeting';
+ get('searchInput').value='';
+ get('statusFilter').value='all';
+ document.querySelectorAll('input[name="date-type"]').forEach(input=>{input.checked=false;});
+ get('dateSortName').checked=false;
+ get('dateFilterLabel').textContent='All dates';
+ get('dateFilterMenu').open=false;
+ initSpecialties();
+ get('calendarSpecialty').value='All';
+ renderHorizon();renderDirectory();
+ if(state.exploreMode==='calendar')renderCalendar();
+}
+get('clearAllFilters').addEventListener('click',clearAllConferenceFilters);
 get('horizonStrip').addEventListener('click',e=>{const btn=e.target.closest('[data-outlook-month]');if(!btn)return;selectOutlookMonth(state.monthKey===btn.dataset.outlookMonth?null:btn.dataset.outlookMonth)});
 get('clearMonth').addEventListener('click',()=>selectOutlookMonth(null));
 get('outlookPrev').addEventListener('click',()=>get('horizonScroll').scrollBy({left:-530,behavior:'smooth'}));get('outlookNext').addEventListener('click',()=>get('horizonScroll').scrollBy({left:530,behavior:'smooth'}));
@@ -142,14 +176,16 @@ function awardMatchesSpecialty(a,s){return s==='All specialties'||awardSpecialti
 function setFundingSpecialty(s){state.fundingSpecialty=s;renderFunding();}
 function navigateToAward(id){const a=A.find(a=>a.id===id);if(!a)return;closeModal();state.funding='all';state.fundingSpecialty=awardSpecialties(a).find(s=>s!=='All specialties')||'All specialties';nav('funding');setTimeout(()=>{const card=document.querySelector('[data-award-card="'+id+'"]');if(card){card.scrollIntoView({behavior:'smooth',block:'center'});card.classList.add('funding-highlight');setTimeout(()=>card.classList.remove('funding-highlight'),2600)}},60)}
 function initSpecialties(){get('specialtyChips').innerHTML=specialties.map(s=>`<button type="button" class="chip ${s===state.specialty?'active':''}" data-specialty="${escape(s)}">${escape(s)}</button>`).join('');get('mobileSpecialty').innerHTML=specialties.map(s=>`<option value="${escape(s)}">${escape(s)}</option>`).join('');get('mobileSpecialty').value=state.specialty;get('calendarSpecialty').innerHTML=`<option value="All">All specialties</option>`+specialties.filter(s=>s!=='All specialties').map(s=>`<option value="${escape(s)}">${escape(s)}</option>`).join('');}
-function selectSpecialty(s,scroll=true){state.specialty=s;state.calSpecialty=s==='All specialties'?'All':s;state.monthKey=null;state.sort=get('dateTypeFilter').value==='name'?'name':(state.dateType==='all'?'meeting':'month');initSpecialties();get('calendarSpecialty').value=state.calSpecialty;renderHorizon();renderDirectory();if(state.exploreMode==='calendar')renderCalendar();if(scroll)(state.exploreMode==='calendar'?get('calendarView'):get('directorySection')).scrollIntoView({behavior:'smooth',block:'start'})}
+function selectSpecialty(s,scroll=true){state.specialty=s;state.calSpecialty=s==='All specialties'?'All':s;initSpecialties();get('calendarSpecialty').value=state.calSpecialty;renderHorizon();renderDirectory();if(state.exploreMode==='calendar')renderCalendar();if(scroll)(state.exploreMode==='calendar'?get('calendarView'):get('directorySection')).scrollIntoView({behavior:'smooth',block:'start'})}
 get('specialtyChips').addEventListener('click',e=>{let t=e.target.closest('[data-specialty]');if(t)selectSpecialty(t.dataset.specialty)});get('mobileSpecialty').addEventListener('change',e=>selectSpecialty(e.target.value));
-function visibleConferences(){let list=C.filter(c=>state.specialty==='All specialties'||state.specialty===c.specialty).filter(c=>!state.search||[c.name,c.society,c.specialty,c.city,(c.types||[]).join(' ')].join(' ').toLowerCase().includes(state.search));list=list.filter(c=>{if(state.status==='all')return true;if(state.status==='active')return status(c)[1]!=='closed'&&(!c.end||c.end>=todayKey);if(state.status==='closed')return status(c)[1]==='closed'||!!c.end&&c.end<todayKey;if(state.status==='upcoming')return !!c.deadline&&c.deadline>=todayKey;if(state.status==='open')return !!c.deadline&&c.deadline>=todayKey&&!!c.open&&c.open<=todayKey;if(state.status==='unannounced')return !c.deadline;if(state.status==='conflict')return !!c.flag;return true});list=list.filter(c=>matchesMonth(c,state.monthKey,state.dateType));list.sort((a,b)=>state.sort==='name'?a.name.localeCompare(b.name):state.sort==='month'&&(state.monthKey||state.dateType!=='all')?(selectedDate(a).localeCompare(selectedDate(b))||a.name.localeCompare(b.name)):state.sort==='meeting'?((a.start||a.deadline||'9999').localeCompare(b.start||b.deadline||'9999')||a.name.localeCompare(b.name)):(deadlineOrder(a).localeCompare(deadlineOrder(b))||(a.start||'9999').localeCompare(b.start||'9999')));return list}
-function card(c){const st=status(c);const monthEvents=monthMatches(c,state.monthKey,state.dateType);const related=monthEvents.length?`<div class="month-match" aria-label="Dates matching the selected month"><span class="month-match-heading">MATCHING ${escape(state.monthKey?date(state.monthKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'}):DATE_TYPE_NAMES[state.dateType].toUpperCase())}</span>${monthEvents.map(ev=>`<span class="month-match-item month-match-${ev.kind}"><strong>${escape(ev.label)}:</strong> ${escape(ev.display)}</span>`).join('')}</div>`:'';return `<article class="conference-card" data-conference="${c.id}" tabindex="0" role="button" aria-label="View ${escape(c.name)} details"><div class="row-identity"><div class="conf-titlewrap"><div class="mini-specialty">${escape(c.specialty)} · ${escape(c.society)}</div><div class="conf-title">${escape(c.name)}</div><span class="status-pill ${st[1]}">${escape(st[0])}</span>${related}</div></div><div class="row-date"><span class="row-label">ABSTRACT DEADLINE</span><strong>${escape(fmt(c.deadline))}</strong><small>${escape(c.open?'Opens '+fmt(c.open):c.deadline?'See submission requirements':'Awaiting official dates')}</small></div><div class="row-date"><span class="row-label">CONFERENCE</span><strong>${escape(dateRange(c.start,c.end))}</strong><small>${escape(c.city||'Location to be announced')}</small></div><span class="row-arrow" aria-hidden="true">→</span></article>`}
-function renderDirectory(){const x=visibleConferences();get('selectedSpecialty').textContent=state.specialty;const totalInSpecialty=C.filter(c=>state.specialty==='All specialties'||c.specialty===state.specialty).length;const activeOnly=state.status==='active'&&!state.search&&!state.monthKey;const closedOnly=state.status==='closed'&&!state.search&&!state.monthKey;get('visibleCount').textContent=x.length===totalInSpecialty?`${totalInSpecialty} conferences`:`${totalInSpecialty} total · ${x.length} ${activeOnly?'active':closedOnly?'closed':'shown'}`;get('directorySubtitle').textContent=(state.monthKey||state.dateType!=='all')?'Filtered by '+DATE_TYPE_NAMES[state.dateType]+(state.monthKey?' in '+date(state.monthKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'}):'')+'.':state.specialty==='All specialties'?'Published meeting dates and abstract opportunities across all specialties.':'Browse '+state.specialty.toLowerCase()+' conferences, submission periods and future opportunities.';
- let last='';get('conferenceGrid').innerHTML=x.map(c=>{if(state.sort==='name')return card(c);let d=state.sort==='month'&&(state.monthKey||state.dateType!=='all')?selectedDate(c):state.sort==='meeting'?(c.start||c.deadline):(c.deadline||c.start);let group=d?fmt(d,{month:'long',year:'numeric'}):'Dates to be announced';let hd=group!==last?`<div class="directory-month-heading">${escape(group)}</div>`:'';last=group;return hd+card(c)}).join('');get('emptyDiscover').classList.toggle('hidden',!!x.length);get('emptyDiscover').querySelector('h3').textContent=(state.monthKey||state.dateType!=='all')?'No dates match this filter':'No matching conferences';get('emptyDiscover').querySelector('p').textContent=(state.monthKey||state.dateType!=='all')?'Choose another month or date type. Unannounced dates are not estimated.':'Try a different specialty, search term, or status filter.'}
+function visibleConferences(){let list=C.filter(c=>state.specialty==='All specialties'||state.specialty===c.specialty).filter(c=>!state.search||[c.name,c.society,c.specialty,c.city,(c.types||[]).join(' ')].join(' ').toLowerCase().includes(state.search));list=list.filter(c=>{if(state.status==='all')return true;if(state.status==='active')return status(c)[1]!=='closed'&&(!c.end||c.end>=todayKey);if(state.status==='closed')return status(c)[1]==='closed'||!!c.end&&c.end<todayKey;if(state.status==='upcoming')return !!c.deadline&&c.deadline>=todayKey;if(state.status==='open')return !!c.deadline&&c.deadline>=todayKey&&!!c.open&&c.open<=todayKey;if(state.status==='unannounced')return !c.deadline;if(state.status==='conflict')return !!c.flag;return true});list=list.filter(c=>matchesMonth(c,state.monthKey,state.dateTypes));list.sort((a,b)=>state.sort==='name'?a.name.localeCompare(b.name):state.sort==='month'&&(state.monthKey||state.dateTypes.length>0)?(selectedDate(a).localeCompare(selectedDate(b))||a.name.localeCompare(b.name)):state.sort==='meeting'?((a.start||a.deadline||'9999').localeCompare(b.start||b.deadline||'9999')||a.name.localeCompare(b.name)):(deadlineOrder(a).localeCompare(deadlineOrder(b))||(a.start||'9999').localeCompare(b.start||'9999')));return list}
+function card(c){const st=status(c);const monthEvents=monthMatches(c,state.monthKey,state.dateTypes);const related=monthEvents.length?`<div class="month-match" aria-label="Dates matching the selected month"><span class="month-match-heading">MATCHING ${escape(state.monthKey?date(state.monthKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'}):state.dateTypes.map(t=>DATE_TYPE_NAMES[t]).join(', ').toUpperCase())}</span>${monthEvents.map(ev=>`<span class="month-match-item month-match-${ev.kind}"><strong>${escape(ev.label)}:</strong> ${escape(ev.display)}</span>`).join('')}</div>`:'';return `<article class="conference-card" data-conference="${c.id}" tabindex="0" role="button" aria-label="View ${escape(c.name)} details"><div class="row-identity"><div class="conf-titlewrap"><div class="mini-specialty">${escape(c.specialty)} · ${escape(c.society)}</div><div class="conf-title">${escape(c.name)}</div><span class="status-pill ${st[1]}">${escape(st[0])}</span>${related}</div></div><div class="row-date"><span class="row-label">ABSTRACT DEADLINE</span><strong>${escape(fmt(c.deadline))}</strong><small>${escape(c.open?'Opens '+fmt(c.open):c.deadline?'See submission requirements':'Awaiting official dates')}</small></div><div class="row-date"><span class="row-label">CONFERENCE</span><strong>${escape(dateRange(c.start,c.end))}</strong><small>${escape(c.city||'Location to be announced')}</small></div><span class="row-arrow" aria-hidden="true">→</span></article>`}
+function renderDirectory(){const x=visibleConferences();get('selectedSpecialty').textContent=state.specialty;const totalInSpecialty=C.filter(c=>state.specialty==='All specialties'||c.specialty===state.specialty).length;const activeOnly=state.status==='active'&&!state.search&&!state.monthKey;const closedOnly=state.status==='closed'&&!state.search&&!state.monthKey;get('visibleCount').textContent=x.length===totalInSpecialty?`${totalInSpecialty} conferences`:`${totalInSpecialty} total · ${x.length} ${activeOnly?'active':closedOnly?'closed':'shown'}`;get('directorySubtitle').textContent=(state.monthKey||state.dateTypes.length>0)?'Filtered by '+(state.dateTypes.length?state.dateTypes.map(t=>DATE_TYPE_NAMES[t]).join(', '):'all dates')+(state.monthKey?' in '+date(state.monthKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'}):'')+'.':state.specialty==='All specialties'?'Published meeting dates and abstract opportunities across all specialties.':'Browse '+state.specialty.toLowerCase()+' conferences, submission periods and future opportunities.';
+ let last='';get('conferenceGrid').innerHTML=x.map(c=>{if(state.sort==='name')return card(c);let d=state.sort==='month'&&(state.monthKey||state.dateTypes.length>0)?selectedDate(c):state.sort==='meeting'?(c.start||c.deadline):(c.deadline||c.start);let group=d?fmt(d,{month:'long',year:'numeric'}):'Dates to be announced';let hd=group!==last?`<div class="directory-month-heading">${escape(group)}</div>`:'';last=group;return hd+card(c)}).join('');get('emptyDiscover').classList.toggle('hidden',!!x.length);get('emptyDiscover').querySelector('h3').textContent=(state.monthKey||state.dateTypes.length>0)?'No dates match this filter':'No matching conferences';get('emptyDiscover').querySelector('p').textContent=(state.monthKey||state.dateTypes.length>0)?'Choose another month or date type. Unannounced dates are not estimated.':'Try a different specialty, search term, or status filter.'}
 get('conferenceGrid').addEventListener('click',e=>{const c=e.target.closest('[data-conference]');if(c)showConference(c.dataset.conference)});get('conferenceGrid').addEventListener('keydown',e=>{const c=e.target.closest('[data-conference]');if(c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();showConference(c.dataset.conference)}});
-get('searchInput').addEventListener('input',e=>{state.search=e.target.value.trim().toLowerCase();renderDirectory()});get('statusFilter').addEventListener('change',e=>{state.status=e.target.value;renderDirectory()});get('resetFilters').addEventListener('click',()=>{state.specialty='All specialties';state.search='';state.status='all';state.sort='meeting';state.monthKey=null;state.dateType='all';get('dateTypeFilter').value='all';get('searchInput').value='';get('statusFilter').value='all';initSpecialties();renderHorizon();renderDirectory()});
+get('searchInput').addEventListener('input',e=>{state.search=e.target.value.trim().toLowerCase();renderDirectory()});
+get('statusFilter').addEventListener('change',e=>{state.status=e.target.value;renderDirectory()});
+get('resetFilters').addEventListener('click',clearAllConferenceFilters);
 function events(){const E=[];for(const c of C){if(c.deadline)E.push({day:c.deadline,kind:'deadline',title:c.name,label:'Abstract due: '+shortName(c),id:c.id});if(c.open)E.push({day:c.open,kind:'open',title:c.name,label:'Abstracts open: '+shortName(c),id:c.id});if(c.lateDeadline)E.push({day:c.lateDeadline,kind:'deadline',title:c.name+' late-breaking',label:'Late deadline: '+shortName(c),id:c.id});if(c.start){const begin=date(c.start),end=date(c.end||c.start);for(let d=begin;d<=end;d=shift(d,1))E.push({day:key(d),kind:'meeting',title:c.name,label:shortName(c),id:c.id});}}
 for(const a of A){const shortAward=a.name.length>23?a.name.slice(0,22)+'…':a.name;if(a.open)E.push({day:a.open,kind:'awardOpen',title:a.name,label:'Award opens: '+shortAward,id:a.conferenceId||null,awardId:a.id});if(a.deadline)E.push({day:a.deadline,kind:'award',title:a.name,label:(a.deadlineLabel||'Award due')+': '+shortAward,id:a.conferenceId||null,awardId:a.id});for(const stage of a.stages||[])if(stage.date)E.push({day:stage.date,kind:'award',title:a.name+' — '+stage.label,label:stage.label+': '+shortAward,id:a.conferenceId||null,awardId:a.id});}
 return E}
@@ -175,7 +211,7 @@ get('calendarDayOverlay')?.addEventListener('click',e=>{if(e.target===get('calen
 get('calendarDayList')?.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;closeCalendarDayEvents();if(b.dataset.awardId)navigateToAward(b.dataset.awardId);else if(b.dataset.eventId)showConference(b.dataset.eventId)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCalendarDayEvents()});
 get('calendarGrid').addEventListener('click',onCalendarEventClick);get('calendarMonthEventList').addEventListener('click',onCalendarEventClick);
-get('prevMonth').addEventListener('click',()=>setCalendarMonth(state.calDate.getFullYear(),state.calDate.getMonth()-1));get('nextMonth').addEventListener('click',()=>setCalendarMonth(state.calDate.getFullYear(),state.calDate.getMonth()+1));get('todayMonth').addEventListener('click',()=>setCalendarMonth(today.getFullYear(),today.getMonth()));get('calendarJump').addEventListener('change',e=>{if(/^\d{4}-\d{2}-\d{2}$/.test(e.target.value)){const [y,m]=e.target.value.split('-').map(Number);setCalendarMonth(y,m-1)}});get('calendarSpecialty').addEventListener('change',e=>{state.calSpecialty=e.target.value;state.specialty=state.calSpecialty==='All'?'All specialties':state.calSpecialty;state.monthKey=null;state.sort=get('dateTypeFilter').value==='name'?'name':(state.dateType==='all'?'meeting':'month');initSpecialties();get('calendarSpecialty').value=state.calSpecialty;renderHorizon();renderDirectory();renderCalendar()});['calDeadlines','calMeetings','calAwards'].forEach(id=>get(id).addEventListener('change',renderCalendar));
+get('prevMonth').addEventListener('click',()=>setCalendarMonth(state.calDate.getFullYear(),state.calDate.getMonth()-1));get('nextMonth').addEventListener('click',()=>setCalendarMonth(state.calDate.getFullYear(),state.calDate.getMonth()+1));get('todayMonth').addEventListener('click',()=>setCalendarMonth(today.getFullYear(),today.getMonth()));get('calendarJump').addEventListener('change',e=>{if(/^\d{4}-\d{2}-\d{2}$/.test(e.target.value)){const [y,m]=e.target.value.split('-').map(Number);setCalendarMonth(y,m-1)}});get('calendarSpecialty').addEventListener('change',e=>{state.calSpecialty=e.target.value;state.specialty=state.calSpecialty==='All'?'All specialties':state.calSpecialty;initSpecialties();get('calendarSpecialty').value=state.calSpecialty;renderHorizon();renderDirectory();renderCalendar()});['calDeadlines','calMeetings','calAwards'].forEach(id=>get(id).addEventListener('change',renderCalendar));
 function downloadFile(name,body,mime){const a=document.createElement('a');let u=URL.createObjectURL(new Blob([body],{type:mime}));a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1200)}
 function cleanIcs(str){return String(str||'').replace(/\\/g,'\\\\').replace(/\r?\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;')}
 // iCalendar content lines should not exceed 75 octets. Fold without splitting a Unicode character.
