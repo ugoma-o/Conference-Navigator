@@ -1565,3 +1565,68 @@ html:not([data-design="classic"]) #discoverView .horizon-month .horizon-none{
   font-size:12px;
   line-height:1.45;
 }
+
+/* Multi-select specialty checklist on narrow screens.
+   Desktop keeps the existing chips; mobile uses an expandable group of
+   independent toggle buttons, including "All specialties" to reset. */
+@media(max-width:650px){
+  html:not([data-design="classic"]) details.specialty-multi-picker,
+  html:not([data-design="classic"]) .mobile-specialty-picker,
+  html:not([data-design="classic"]) .funding-mobile-picker{
+    display:block;
+    margin:0 0 24px;
+    min-width:0;
+  }
+  html:not([data-design="classic"]) details.specialty-multi-picker > summary{
+    display:list-item;
+    list-style:disclosure-closed inside;
+    cursor:pointer;
+    padding:13px 15px;
+    background:var(--ed-paper);
+    border:1px solid var(--ed-rule);
+    border-radius:7px;
+    color:var(--ed-heading);
+    font-size:16px;
+    font-weight:700;
+    line-height:1.5;
+  }
+  html:not([data-design="classic"]) details.specialty-multi-picker[open] > summary{
+    list-style:disclosure-open inside;
+    border-color:var(--ed-accent);
+    border-radius:7px 7px 0 0;
+  }
+  html:not([data-design="classic"]) .specialty-mobile-options{
+    max-height:min(50vh,335px);
+    overflow-y:auto;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    padding:10px;
+    border:1px solid var(--ed-rule);
+    border-top:0;
+    border-radius:0 0 7px 7px;
+    background:var(--ed-paper);
+  }
+  html:not([data-design="classic"]) .specialty-mobile-options .chip,
+  html:not([data-design="classic"]) #discoverView .specialty-mobile-options .chip,
+  html:not([data-design="classic"]) #fundingView .specialty-mobile-options .chip{
+    width:100%;
+    min-height:44px;
+    display:block;
+    text-align:left;
+    white-space:normal;
+    padding:10px 14px;
+    font-size:16px;
+    line-height:1.45;
+    flex:none;
+  }
+  html:not([data-design="classic"]) .specialty-mobile-options .chip[aria-pressed="true"]{
+    border-color:var(--ed-accent);
+    font-weight:750;
+  }
+  html:not([data-design="classic"]) details.specialty-multi-picker > summary:focus-visible,
+  html:not([data-design="classic"]) .specialty-mobile-options .chip:focus-visible{
+    outline:3px solid var(--ed-accent);
+    outline-offset:2px;
+  }
+}
