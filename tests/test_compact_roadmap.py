@@ -34,6 +34,24 @@ class RoadmapLayoutTests(unittest.TestCase):
         self.assertIn("marker('opening','Submissions open'",markup)
         self.assertNotIn('v10-key-dates',markup)
 
+    def test_right_edge_conference_flag_is_legible_and_raised(self):
+        # The conference is usually close to the plot's right boundary.
+        css=self.style.split("/* Targeted roadmap label adjustments",1)[1]
+        self.assertIn(".v7-roadmap .v6-event-label.conference",css)
+        self.assertIn("left:auto!important",css)
+        self.assertIn("right:6px!important",css)
+        self.assertIn("transform:none!important",css)
+        self.assertIn("top:calc(var(--event-row) * 49px - 23px)!important",css)
+        self.assertIn("width:min(220px, calc(100% - 12px))",css)
+        self.assertIn("max-width:none",css)
+        self.assertIn("font-size:14px",css)
+
+    def test_today_flag_has_space_above_month_labels(self):
+        css=self.style.split("/* Targeted roadmap label adjustments",1)[1]
+        self.assertIn(".v7-roadmap .v6-today-top",css)
+        self.assertIn("height:64px",css)
+        self.assertIn('class="v6-axis">',self.script)
+
     def test_roadmap_exports_still_available(self):
         self.assertIn('function roadmapExportSvg(plan){',self.script)
         self.assertIn('function downloadRoadmapVisual(){',self.script)
