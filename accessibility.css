@@ -406,118 +406,125 @@ html[data-theme="dark"] .v8-roadmap .v8-event-grid .v6-event-label.conference st
 }
 
 
-/* V9: keep compact stage spacing while restoring date-aligned benchmarks.
-   Each event occupies its own fully visible row; clamps prevent edge clipping. */
-.v9-roadmap .v9-canvas{
+/* V10: compact project stages with a clear chronological benchmark legend.
+   Guide lines end at the chart baseline; dates live in a separate readable grid. */
+.v10-roadmap .v10-canvas{position:relative;isolation:isolate;min-width:0;overflow:visible}
+.v10-roadmap .v10-chart-area{
   position:relative;
-  isolation:isolate;
+  min-width:0;
   overflow:visible;
+  isolation:isolate;
 }
-.v9-roadmap .v9-canvas > .v6-guides{
+.v10-roadmap .v10-chart-area > .v6-guides{
   position:absolute;
-  inset:8px 0 3px!important;
+  inset:6px 0 0!important;
   z-index:1!important;
   pointer-events:none;
 }
-.v9-roadmap .v9-canvas .v6-guide.internal{
-  border-left:2px dotted #b78939;
+.v10-roadmap .v10-chart-area .v6-guide{
+  border-left-width:2px;
   opacity:.95;
+  color:#718b99;
 }
-.v9-roadmap .v9-canvas .v6-guide.today{
-  border-left:2px solid #ca7945;
-  opacity:1;
+.v10-roadmap .v10-chart-area .v6-guide.today{border-left:2px solid #bc7541;color:#bc7541}
+.v10-roadmap .v10-chart-area .v6-guide.opening{border-left:2px dotted #407fa9;color:#407fa9}
+.v10-roadmap .v10-chart-area .v6-guide.internal{border-left:2px dotted #a77b30;color:#a77b30}
+.v10-roadmap .v10-chart-area .v6-guide.deadline{border-left:2px dashed #18805e;color:#18805e}
+.v10-roadmap .v10-chart-area .v6-guide.deadline.estimated{border-left-color:#ad854c;color:#ad854c}
+.v10-roadmap .v10-chart-area .v6-guide.conference{border-left:2px solid #9361a8;color:#9361a8}
+.v10-roadmap .v10-chart-area .v6-guide:not(.today)::after{
+ content:"";
+ position:absolute;
+ bottom:-4px;
+ left:-5px;
+ width:9px;
+ height:9px;
+ border-radius:50%;
+ background:currentColor;
+ box-shadow:0 0 0 2px #fff;
 }
-.v9-roadmap .v9-canvas .v6-guide.deadline{
-  border-left:2px dashed #167e61;
-  opacity:1;
+.v10-roadmap .v10-chart-area .v6-today-top{position:relative;z-index:6}
+.v10-roadmap .v10-chart-area .v6-axis{position:relative;z-index:2}
+.v10-roadmap .v10-chart-area .v6-stages{position:relative;z-index:3}
+/* A grid avoids shifting milestones into misleading horizontal positions
+   when October 3 and October 13 occur almost at the same x-coordinate. */
+.v10-roadmap .v6-bottom-rail{
+ position:relative;
+ z-index:4;
+ margin-top:5px;
+ padding:14px 0 1px;
+ background:var(--ed-paper,#fff);
+ border-top:1px solid var(--ed-rule,#dce5e9);
 }
-.v9-roadmap .v9-canvas .v6-guide.conference{
-  border-left:2px solid #8757a0;
-  opacity:1;
+.v10-roadmap .v8-key-dates-heading{
+ color:var(--ed-heading,#20455a);
+ font-weight:750;
+ font-size:14px;
+ letter-spacing:.035em;
+ line-height:1.4;
 }
-.v9-roadmap .v8-chart-area{position:relative;z-index:2;overflow:visible}
-.v9-roadmap .v6-bottom-rail{
-  position:relative;
-  z-index:2;
-  background:transparent;
-  padding-top:10px;
+.v10-roadmap .v10-key-dates{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ column-gap:20px;
+ row-gap:0;
+ width:100%;
+ margin-top:8px;
+ overflow:visible;
 }
-.v9-roadmap .v9-event-track{
-  --benchmark-row-height:62px;
-  display:block;
-  position:relative;
-  width:100%;
-  min-width:0;
-  height:calc(var(--event-count) * var(--benchmark-row-height) + 3px)!important;
-  min-height:0!important;
-  overflow:visible;
-  margin:8px 0 0;
+.v10-roadmap .v10-milestone{
+ display:flex;
+ align-items:center;
+ gap:12px;
+ min-height:68px;
+ min-width:0;
+ padding:10px 6px 10px 0;
+ border-bottom:1px solid var(--ed-rule,#e0e8ed);
+ background:transparent;
 }
-.v9-roadmap .v9-event-track .v6-event-label{
-  position:absolute!important;
-  left:clamp(min(110px, 50%), var(--event-x), max(calc(100% - 110px), 50%))!important;
-  top:calc(var(--event-row) * var(--benchmark-row-height) + 3px)!important;
-  transform:translateX(-50%)!important;
-  display:flex!important;
-  flex-direction:column!important;
-  align-items:flex-start;
-  justify-content:center;
-  gap:2px;
-  box-sizing:border-box;
-  width:min(220px, calc(100% - 12px));
-  min-height:50px;
-  max-width:none;
-  height:auto;
-  padding:6px 10px!important;
-  margin:0;
-  white-space:normal;
-  text-align:left;
-  overflow-wrap:normal;
-  word-break:normal;
-  border:1px solid #d7e3e9!important;
-  border-bottom:2px solid currentColor!important;
-  border-radius:4px!important;
-  background:#fff!important;
-  box-shadow:none!important;
-  font-size:14px!important;
-  line-height:1.25!important;
-  z-index:7!important;
+.v10-roadmap .v10-milestone-symbol{
+ flex:0 0 11px;
+ width:11px;
+ height:11px;
+ border-radius:50%;
+ background:currentColor;
 }
-.v9-roadmap .v9-event-track .v6-event-label strong{
-  display:block;
-  font-size:14px!important;
-  line-height:1.25!important;
-  font-weight:750;
-  white-space:normal;
+.v10-roadmap .v10-milestone-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.v10-roadmap .v10-milestone strong{
+ font-size:15px!important;
+ font-weight:750;
+ line-height:1.4;
+ color:currentColor;
+ white-space:normal;
+ overflow-wrap:break-word;
 }
-.v9-roadmap .v9-event-track .v6-event-label small{
-  display:block;
-  font-size:14px!important;
-  line-height:1.3!important;
-  white-space:normal;
+.v10-roadmap .v10-milestone time{
+ font-size:15px!important;
+ font-weight:500;
+ line-height:1.45;
+ color:var(--ed-ink,#244456);
+ white-space:normal;
 }
-.v9-roadmap .v9-event-track .v6-event-label.opening{color:#235f83!important}
-.v9-roadmap .v9-event-track .v6-event-label.internal{color:#906f2d!important}
-.v9-roadmap .v9-event-track .v6-event-label.deadline{color:#176c50!important}
-.v9-roadmap .v9-event-track .v6-event-label.conference{color:#805a9d!important}
-.v9-roadmap .v9-event-track .v6-event-label.estimated{
-  border-bottom-style:dashed!important;
+.v10-roadmap .v10-milestone.opening{color:#246b99}
+.v10-roadmap .v10-milestone.internal{color:#946e27}
+.v10-roadmap .v10-milestone.deadline{color:#176b4f}
+.v10-roadmap .v10-milestone.deadline.estimated{color:#a57940}
+.v10-roadmap .v10-milestone.conference{color:#805596}
+.v10-roadmap .roadmap-disclaimer{
+ margin:12px 0 0;
+ padding:12px 0 0;
+ border-top:1px solid var(--ed-rule,#e0e8ed);
 }
-html[data-theme="dark"] .v9-roadmap .v9-event-track .v6-event-label{
-  background:#1a2f40!important;
-  border-color:#476379!important;
-}
-html[data-theme="dark"] .v9-roadmap .v9-event-track .v6-event-label.opening{color:#a0d3f0!important}
-html[data-theme="dark"] .v9-roadmap .v9-event-track .v6-event-label.internal{color:#ebc787!important}
-html[data-theme="dark"] .v9-roadmap .v9-event-track .v6-event-label.deadline{color:#93dfbb!important}
-html[data-theme="dark"] .v9-roadmap .v9-event-track .v6-event-label.conference{color:#d8baf0!important}
-html[data-theme="dark"] .v9-roadmap .v9-canvas .v6-guide.internal{border-color:#d7a75a}
-html[data-theme="dark"] .v9-roadmap .v9-canvas .v6-guide.deadline{border-color:#83d6ad}
-html[data-theme="dark"] .v9-roadmap .v9-canvas .v6-guide.conference{border-color:#c39de0}
+html[data-theme="dark"] .v10-roadmap .v6-bottom-rail{background:var(--ed-paper,#162939)}
+html[data-theme="dark"] .v10-roadmap .v10-chart-area .v6-guide:not(.today)::after{box-shadow:0 0 0 2px #162939}
+html[data-theme="dark"] .v10-roadmap .v10-milestone.opening{color:#99c9e9}
+html[data-theme="dark"] .v10-roadmap .v10-milestone.internal{color:#ebc786}
+html[data-theme="dark"] .v10-roadmap .v10-milestone.deadline{color:#94d8b9}
+html[data-theme="dark"] .v10-roadmap .v10-milestone.conference{color:#d3b2eb}
+html[data-theme="dark"] .v10-roadmap .v10-milestone time{color:var(--ed-ink,#e0ebf5)}
 @media(max-width:580px){
-  .v9-roadmap .v9-event-track{--benchmark-row-height:67px}
-  .v9-roadmap .v9-event-track .v6-event-label{
-    width:min(220px, calc(100% - 12px));
-    font-size:14px!important;
-  }
+ .v10-roadmap .v10-key-dates{grid-template-columns:minmax(0,1fr);row-gap:0}
+ .v10-roadmap .v10-milestone{min-height:61px}
+ .v10-roadmap .v10-milestone strong,
+ .v10-roadmap .v10-milestone time{font-size:14px!important}
 }
