@@ -1358,13 +1358,11 @@ html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-name{
 }
 
 
-/* Four-color RISE wordmark and legibility pass — October 2026.
-   Palette sampled from the supplied four-tile RISE mark:
-   deep blue #005c95, cyan #1ca8e3, lime #82c345, green #015d58.
-   Each tile uses a contrasting letter color on the navy masthead. */
+/* Refined RISE masthead: four logo-inspired letter hues, no colored tiles,
+   no underline. Keep Conference Navigator large and mobile-friendly. */
 html:not([data-design="classic"]) .topbar,
 html[data-theme="dark"]:not([data-design="classic"]) .topbar{
-  min-height:106px;
+  min-height:104px;
   padding:15px 28px;
 }
 html:not([data-design="classic"]) .topbar-left,
@@ -1379,7 +1377,7 @@ html[data-theme="dark"]:not([data-design="classic"]) .topbar-right{
 html:not([data-design="classic"]) .topbar .workspace-title,
 html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-title{
   display:inline-flex;
-  align-items:center;
+  align-items:baseline;
   flex-wrap:nowrap;
   gap:16px;
   min-width:0;
@@ -1387,13 +1385,13 @@ html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-title{
 html:not([data-design="classic"]) .topbar .workspace-rise,
 html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-rise{
   display:inline-flex;
-  align-items:center;
+  align-items:baseline;
   flex:none;
-  gap:4px;
+  gap:0;
   padding:0;
   background:none;
   text-shadow:none;
-  letter-spacing:0;
+  letter-spacing:.015em;
   line-height:1;
 }
 html:not([data-design="classic"]) .topbar .workspace-rise::after,
@@ -1403,23 +1401,26 @@ html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-rise::af
 }
 html:not([data-design="classic"]) .topbar .workspace-rise .rise-letter,
 html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-rise .rise-letter{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:clamp(34px,3.1vw,45px);
-  height:clamp(43px,3.7vw,53px);
-  border-radius:8px;
-  font-size:clamp(30px,2.7vw,39px);
+  display:inline;
+  width:auto;
+  height:auto;
+  border-radius:0;
+  background:transparent;
+  font-size:clamp(37px,3.4vw,46px);
   line-height:1;
-  font-weight:900;
-  letter-spacing:-.04em;
+  font-weight:850;
+  letter-spacing:-.035em;
   text-shadow:none;
-  padding-bottom:2px;
+  padding:0;
 }
-html:not([data-design="classic"]) .topbar .rise-letter-r{background:#005c95;color:#fff}
-html:not([data-design="classic"]) .topbar .rise-letter-i{background:#1ca8e3;color:#092b44}
-html:not([data-design="classic"]) .topbar .rise-letter-s{background:#82c345;color:#092b44}
-html:not([data-design="classic"]) .topbar .rise-letter-e{background:#015d58;color:#fff}
+html:not([data-design="classic"]) .topbar .rise-letter-r,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar .rise-letter-r{color:#b5dcef}
+html:not([data-design="classic"]) .topbar .rise-letter-i,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar .rise-letter-i{color:#91d4e9}
+html:not([data-design="classic"]) .topbar .rise-letter-s,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar .rise-letter-s{color:#bddb9a}
+html:not([data-design="classic"]) .topbar .rise-letter-e,
+html[data-theme="dark"]:not([data-design="classic"]) .topbar .rise-letter-e{color:#91d4c4}
 html:not([data-design="classic"]) .topbar .workspace-name,
 html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-name{
   font-size:clamp(27px,2.75vw,36px);
@@ -1435,7 +1436,7 @@ html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-name{
 @media(max-width:760px){
   html:not([data-design="classic"]) .topbar,
   html[data-theme="dark"]:not([data-design="classic"]) .topbar{
-    min-height:115px;
+    min-height:110px;
     padding:11px 13px;
   }
   html:not([data-design="classic"]) .topbar .workspace-title,
@@ -1447,13 +1448,8 @@ html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-name{
   }
   html:not([data-design="classic"]) .topbar .workspace-rise .rise-letter,
   html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-rise .rise-letter{
-    width:32px;
-    height:38px;
-    border-radius:6px;
-    font-size:29px;
+    font-size:34px;
   }
-  html:not([data-design="classic"]) .topbar .workspace-rise,
-  html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-rise{gap:3px}
   html:not([data-design="classic"]) .topbar .workspace-name,
   html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-name{
     font-size:clamp(19px,4.9vw,23px);
@@ -1462,11 +1458,7 @@ html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-name{
 }
 @media(max-width:365px){
   html:not([data-design="classic"]) .topbar .workspace-rise .rise-letter,
-  html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-rise .rise-letter{
-    width:29px;
-    height:35px;
-    font-size:27px;
-  }
+  html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-rise .rise-letter{font-size:31px}
   html:not([data-design="classic"]) .topbar .workspace-name,
   html[data-theme="dark"]:not([data-design="classic"]) .topbar .workspace-name{font-size:18px}
 }
@@ -1480,15 +1472,6 @@ html:not([data-design="classic"]) .side-bottom p,
 html:not([data-design="classic"]) .side-bottom>span{font-size:15px;line-height:1.5}
 html:not([data-design="classic"]) .topbar .date-note,
 html:not([data-design="classic"]) .topbar .theme-toggle{font-size:16px}
-html:not([data-design="classic"]) .discovery-intro p,
-html:not([data-design="classic"]) .page-heading p,
-html:not([data-design="classic"]) .panel-heading p,
-html:not([data-design="classic"]) .section-header p,
-html:not([data-design="classic"]) .directory-subtitle,
-html:not([data-design="classic"]) .specialty-hint{font-size:17px;line-height:1.6}
-html:not([data-design="classic"]) .section-header h2,
-html:not([data-design="classic"]) .listing-title{font-size:27px}
-html:not([data-design="classic"]) .panel h2{font-size:24px}
 html:not([data-design="classic"]) .chip,
 html:not([data-design="classic"]) #discoverView .chip,
 html:not([data-design="classic"]) .funding-specialty-chips .chip,
@@ -1519,18 +1502,6 @@ html:not([data-design="classic"]) .view-details,
 html:not([data-design="classic"]) .status-pill,
 html:not([data-design="classic"]) .selected-specialty,
 html:not([data-design="classic"]) .listing-count{font-size:15px;line-height:1.45}
-html:not([data-design="classic"]) .horizon-top span,
-html:not([data-design="classic"]) .horizon-month-label,
-html:not([data-design="classic"]) .horizon-count-row,
-html:not([data-design="classic"]) .horizon-count-row strong,
-html:not([data-design="classic"]) .horizon-none,
-html:not([data-design="classic"]) .horizon-help,
-html:not([data-design="classic"]) .horizon-year-heading small,
-html:not([data-design="classic"]) .horizon-clear,
-html:not([data-design="classic"]) .horizon-date-label,
-html:not([data-design="classic"]) .month-match-heading,
-html:not([data-design="classic"]) .month-match-item{font-size:15.5px;line-height:1.5}
-html:not([data-design="classic"]) .horizon-month-label{font-size:17px}
 html:not([data-design="classic"]) .calendar-rail-help,
 html:not([data-design="classic"]) .calendar-date-note,
 html:not([data-design="classic"]) .calendar-main-caption>span,
