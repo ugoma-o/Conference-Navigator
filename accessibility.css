@@ -298,3 +298,41 @@ html[data-theme="dark"] .clear-filters-button:hover{background:#23485b}
  .clear-filters-button{flex:0 0 auto}
 }
 @media(prefers-reduced-motion:reduce){.date-filter-chevron{transition:none}}
+
+/* Targeted roadmap label adjustments (retain original spacious timeline). */
+.v7-roadmap .v6-today-top {
+  height:64px; /* breathing room before the month-axis labels */
+}
+.v7-roadmap .v6-event-label.conference {
+  /* The conference usually sits near the far right edge of the timeline.
+     Anchor from that edge rather than centering and clipping it. */
+  left:auto!important;
+  right:6px!important;
+  transform:none!important;
+  top:calc(var(--event-row) * 49px - 23px)!important;
+  width:min(220px, calc(100% - 12px));
+  max-width:none;
+  min-height:45px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:baseline;
+  justify-content:flex-start;
+  gap:4px 8px;
+  padding:9px 12px;
+  text-align:left;
+  white-space:normal;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.v7-roadmap .v6-event-label.conference strong,
+.v7-roadmap .v6-event-label.conference small {
+  font-size:14px;
+  line-height:1.35;
+  white-space:nowrap;
+}
+@media(max-width:420px) {
+  .v7-roadmap .v6-event-label.conference {
+    width:min(220px, calc(100% - 12px));
+  }
+}
