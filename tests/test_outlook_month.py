@@ -113,27 +113,28 @@ console.log(JSON.stringify(selected));
         self.assertEqual(found['noMonth'],['2026-10-18'])
         self.assertEqual(len(found['all']),4)
 
-    def test_date_type_select_changes_directory(self):
+    def test_one_unified_date_and_sort_control(self):
         app=(ROOT/'app.js').read_text(encoding='utf-8')
         html=(ROOT/'index.html').read_text(encoding='utf-8')
-        self.assertIn('id="dateTypeFilter"',html)
-        for kind in ('all','meeting','open','deadline','lateOpen','lateDeadline'):
+        self.assertEqual(html.count('id="dateTypeFilter"'),1)
+        self.assertNotIn('id="sortFilter"',html)
+        self.assertNotIn('id="monthSortOption"',html)
+        for kind in ('all','meeting','open','deadline','lateOpen','lateDeadline','name'):
             self.assertIn(f'<option value="{kind}"',html)
-        self.assertIn("get('dateTypeFilter').addEventListener('change'",app)
+        self.assertIn("get('dateTypeFilter').addEventListener('change',applyDateView)",app)
+        self.assertIn("state.dateType=view==='name'?'all':view",app)
+        self.assertIn("state.sort=view==='name'?'name':(state.monthKey||state.dateType!=='all'?'month':'meeting')",app)
         self.assertIn("matchesMonth(c,state.monthKey,state.dateType)",app)
         self.assertIn("get('dateTypeFilter').value='all'",app)
-        self.assertIn("const dated=Boolean(state.monthKey||state.dateType!=='all')",app)
+        self.assertNotIn("get('sortFilter')",app)
+        self.assertNotIn("get('monthSortOption')",app)
 
-    def test_month_sort_and_why_this_matches_are_visible(self):
+    def test_month_context_and_filtered_rows_are_visible(self):
         app=(ROOT/'app.js').read_text(encoding='utf-8')
-        html=(ROOT/'index.html').read_text(encoding='utf-8')
-        self.assertIn("state.sort=dated?'month':'meeting'",app)
-        self.assertIn("monthMatches(c,state.monthKey,state.dateType)",app)
         self.assertIn('MATCHING ',app)
-        self.assertIn('get(\'monthSortOption\').disabled',app)
-        self.assertIn('id="monthSortOption" disabled',html)
         self.assertIn("'Filtered by '+DATE_TYPE_NAMES[state.dateType]",app)
         self.assertIn("const monthEvents=list.flatMap(c=>monthMatches(c,m,state.dateType))",app)
+        self.assertIn("function selectOutlookMonth(next){state.monthKey=next;applyDateView()}",app)
 
 if __name__=='__main__':
     unittest.main()
