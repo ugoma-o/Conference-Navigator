@@ -648,6 +648,75 @@ window.RISE_DATA = {
       "presentationFormats": []
     },
     {
+      "id": "ash26",
+      "name": "ASH Annual Meeting 2026",
+      "society": "American Society of Hematology",
+      "specialty": "Hematology & Oncology",
+      "start": "2026-12-12",
+      "end": "2026-12-15",
+      "city": "New Orleans, Louisiana",
+      "open": "2026-06-02",
+      "deadline": "2026-08-04",
+      "lateOpen": "2026-10-14",
+      "lateDeadline": "2026-10-28",
+      "deadlineTime": "11:59 p.m. Pacific time",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Hematology research",
+        "Clinical trials",
+        "Translational science"
+      ],
+      "url": "https://www.hematology.org/meetings/annual-meeting",
+      "guideline": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+      "evidence": "official",
+      "note": "68th ASH Annual Meeting (2026). Meeting December 12–15 in New Orleans; regular abstracts closed August 4. Late-breaking abstract submissions October 14–28, 2026. These dates do not apply to the 2027 meeting.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.hematology.org/meetings/annual-meeting",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official meeting-page review",
+          "source_quote": "68th ASH Annual Meeting and Exposition, taking place December 12–15, 2026"
+        },
+        "end": {
+          "url": "https://www.hematology.org/meetings/annual-meeting",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official meeting-page review",
+          "source_quote": "December 12–15, 2026"
+        },
+        "open": {
+          "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official abstract-page review",
+          "source_quote": "Abstract submission site opens June 2, 2026"
+        },
+        "deadline": {
+          "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official abstract-page review",
+          "source_quote": "Abstract submission deadline August 4, 2026"
+        },
+        "lateOpen": {
+          "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official abstract-page review",
+          "source_quote": "Call for late-breaking abstract submissions October 14-28, 2026"
+        },
+        "lateDeadline": {
+          "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official abstract-page review",
+          "source_quote": "Call for late-breaking abstract submissions October 14-28, 2026"
+        }
+      }
+    },
+    {
       "id": "ash27",
       "name": "ASH Annual Meeting 2027",
       "society": "American Society of Hematology",
@@ -672,11 +741,14 @@ window.RISE_DATA = {
       "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
       "guideline": null,
       "evidence": "unannounced",
-      "note": "2027 abstract dates are unannounced; 2026 late-breaking abstracts close October 28, 2026.",
+      "note": "The official ASH annual-meeting website currently describes the December 12–15, 2026 edition. Meeting and abstract dates for ASH 2027 have not been verified; do not carry 2026 dates forward.",
       "flag": "unannounced",
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "additionalSources": [
+        "https://www.hematology.org/meetings/annual-meeting"
+      ]
     },
     {
       "id": "acr27",
