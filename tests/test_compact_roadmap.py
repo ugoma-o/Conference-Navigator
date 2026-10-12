@@ -41,7 +41,7 @@ class RoadmapLayoutTests(unittest.TestCase):
         self.assertIn("left:auto!important",css)
         self.assertIn("right:6px!important",css)
         self.assertIn("transform:none!important",css)
-        self.assertIn("top:calc(var(--event-row) * 49px - 23px)!important",css)
+        self.assertIn("top:calc(var(--event-row) * 49px - 62px)!important",css)
         self.assertIn("width:min(220px, calc(100% - 12px))",css)
         self.assertIn("max-width:none",css)
         self.assertIn("font-size:14px",css)
