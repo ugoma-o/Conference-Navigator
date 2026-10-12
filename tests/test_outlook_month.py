@@ -24,7 +24,7 @@ class OutlookMonthTests(unittest.TestCase):
         return r"""
 const fs=require('fs');
 const app=fs.readFileSync('./app.js','utf8');
-const start=app.indexOf('function monthMatches(c,m){');
+const start=app.indexOf("function monthMatches(c,m,type='all'){");
 const end=app.indexOf('function horizonMonths(){',start);
 if(start<0||end<0)throw new Error('Month matching implementation missing');
 const helpers=new Function('key','fmt','dateRange',app.slice(start,end)+';return {monthMatches,matchesMonth};');
