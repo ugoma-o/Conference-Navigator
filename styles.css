@@ -677,3 +677,18 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .plan-export-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .plan-export-actions .btn{font-size:11px;white-space:nowrap;padding:10px 12px}
 @media(max-width:850px){.plan-export-actions{justify-content:flex-start;width:100%}}
+
+
+/* Keep the mobile masthead visible while the document scrolls. */
+@media(max-width:850px){
+  html{scroll-padding-top:112px}
+  .content-shell > .topbar{
+    position:sticky;
+    top:0;
+    z-index:30;
+    flex-shrink:0;
+  }
+  /* The open navigation drawer and its scrim must stay above the sticky header. */
+  .mobile-overlay{z-index:40}
+  .sidebar{z-index:41}
+}
