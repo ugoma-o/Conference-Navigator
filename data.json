@@ -5838,16 +5838,19 @@
       "category": "Research grant",
       "deadline": "2027-01-22",
       "opens": null,
-      "eligibility": "Eligible radiology resident investigators conducting mentored scientific research. Confirm effort, membership, and institutional requirements.",
+      "eligibility": "RSNA-member residents in radiology, radiation oncology, nuclear medicine or medical physics carrying out a mentored research project at an eligible North American institution; required research effort and advisor/institutional approvals apply.",
       "url": "https://www.rsna.org/research/funding-opportunities/research-grants/resident-fellow-research-grant",
-      "note": "Application deadline 11:59 PM CT. Project support—not a conference travel grant.",
+      "note": "2027 grant applications are open; deadline Jan. 22, 2027 at 11:59 p.m. CT. Resident award up to $50,000 over 1–2 years; fellow award is a distinct $75,000 track. RSNA permits one R&E Foundation grant application per cycle.",
       "flag": null,
       "specialties": [
         "Radiology"
       ],
       "scope": "independent",
       "relatedConferenceId": "rsna27",
-      "open": null
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.rsna.org/research/funding-opportunities/research-grants/resident-fellow-research-grant",
+      "verificationNote": "2027 deadline, award amounts and resident eligibility verified on official RSNA program page."
     },
     {
       "id": "acrotravel27",
@@ -5915,7 +5918,7 @@
         "Radiation Oncology",
         "Nuclear Medicine"
       ],
-      "note": "2027 deadline Feb. 5 at 11:59 p.m. CT. Project period is one year. This is a research stipend, not a meeting travel prize.",
+      "note": "2027 deadline Feb. 5 at 11:59 p.m. CT. RSNA provides a $3,000 stipend, which must be matched by the sponsoring department ($6,000 total student stipend). Project involves 8–10 weeks full time. This is not meeting travel funding.",
       "lastVerified": "2026-10-12",
       "verificationSource": "https://www.rsna.org/research/funding-opportunities/research-grants/medical-student-research-grant",
       "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
