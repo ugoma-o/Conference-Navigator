@@ -1165,11 +1165,15 @@
       "url": "https://annualmeeting.acog.org/call-for-proposals-2027/",
       "guideline": null,
       "evidence": "official",
-      "note": "Abstract call listed as open; closing date must be confirmed on submission portal.",
+      "note": "ACOG's official 2027 ACSM call confirms academic/industry abstracts, Stump the Professors cases, and films are accepting submissions. The 2027 abstract submission portal is linked, but the organizer has not published a date-confirmed abstract closing deadline on the accessible conference page. Do not substitute the separate session-proposal deadline or abstract reviewer deadlines.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "submissionSource": "https://www.abstractsonline.com/dashboard/login.asp?aId=2454&targetMKey=%7BE689B4A4-BE3B-435A-8185-1A79006B804B%7D&targetMod=submit",
+      "additionalSources": [
+        "https://annualmeeting.acog.org/call-for-proposals-2027/"
+      ]
     },
     {
       "id": "apa27",
@@ -3750,9 +3754,9 @@
       "fee": null,
       "types": [],
       "url": "https://stfm.org/conferences/annual/overview/",
-      "guideline": null,
+      "guideline": "https://www.stfm.org/annualcfp",
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "The 2027 STFM Annual Spring Conference general presentation/session proposal call closed September 4, 2026. This is NOT the separate Fellow/Resident/Student completed or work-in-progress research poster call, which the official organizer states will open later in 2026. Its abstract/poster deadline remains unannounced; do not label September 4 as the research poster deadline.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
