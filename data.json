@@ -5581,7 +5581,11 @@
         "Cardiology"
       ],
       "scope": "conference",
-      "open": null
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-travel-stipend-for-epi-lifestyle-scientific-sessions-no-abstract-required",
+      "verificationNote": "2026 application deadline and $1,000 travel amount confirmed.",
+      "fieldSources": {}
     },
     {
       "id": "ahaabstract",
@@ -5600,7 +5604,11 @@
         "Cardiology"
       ],
       "scope": "conference",
-      "open": null
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-early-career-travel-stipend-for-epi-lifetstyle-scientific-sessions-abstract-required",
+      "verificationNote": "2026 abstract deadline and $1,000 travel award confirmed.",
+      "fieldSources": {}
     },
     {
       "id": "agastudent",
@@ -5620,26 +5628,35 @@
       ],
       "scope": "conference",
       "open": "2026-11-16",
-      "dateEvidence": "AGA official 2027 application cycle; https://gastro.org/research-and-awards/apply-for-awards/award/aga-student-abstract-award/"
+      "dateEvidence": "AGA official 2027 application cycle; https://gastro.org/research-and-awards/apply-for-awards/award/aga-student-abstract-award/",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://gastro.org/research-and-awards/apply-for-awards/award/aga-student-abstract-award/",
+      "verificationNote": "2027 AGA opening and deadline; travel awards $500–$1,000 verified.",
+      "fieldSources": {}
     },
     {
       "id": "aacegrant",
       "name": "AACE Resident/Fellow Travel Grant",
       "society": "American Association of Clinical Endocrinology",
-      "amount": "Up to $1,000",
+      "amount": "Up to $1,000 (2 domestic awards)",
       "category": "Travel award",
-      "deadline": null,
-      "opens": null,
-      "eligibility": "Domestic residents/fellows; selected based on merit of accepted abstract; up to two grants.",
+      "deadline": "2026-12-01",
+      "opens": "2026-08-10",
+      "eligibility": "Up to two domestic residents/fellows receive travel awards based on the scientific merit of accepted AACE 2027 abstracts; not a separate standalone grant application.",
       "url": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
       "conferenceId": "aace27",
-      "note": "Award selection tied to conference abstract review; no separate deadline verified.",
+      "note": "Awarded through conference abstract review. Regular abstracts due Dec. 1, 2026; late-breaking abstracts have a separate March 1, 2027 deadline and may have different award eligibility. Do not interpret this date as a separate travel-grant application deadline.",
       "flag": null,
       "specialties": [
         "Endocrinology"
       ],
       "scope": "conference",
-      "open": null
+      "open": "2026-08-10",
+      "deadlineLabel": "Regular abstract submission deadline",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
+      "verificationNote": "2027 award amount, eligibility, and regular abstract window confirmed from AACE organizer.",
+      "fieldSources": {}
     },
     {
       "id": "ascomerit",
@@ -5668,36 +5685,44 @@
       "category": "Trainee scholarship",
       "deadline": null,
       "opens": null,
-      "eligibility": "Selected medical students and residents; verify current nomination and application rules.",
-      "url": "https://annualmeeting.sgim.org/",
+      "eligibility": "Medical students, interns and residents interested in general internal medicine; active SGIM membership required. Abstract presentation is not mandatory.",
+      "url": "https://www.sgim.org/professional-career-development/programs/trainee-engagement-programs/",
       "conferenceId": "sgim27",
-      "note": "",
+      "note": "SGIM says the 2027 scholarship program will open in December 2026; an exact day and application deadline are not yet published. The February 19, 2026 deadline shown on the page belongs to the prior cycle.",
       "flag": null,
       "specialties": [
         "General Internal Medicine"
       ],
       "scope": "conference",
-      "open": null
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.sgim.org/professional-career-development/programs/trainee-engagement-programs/",
+      "verificationNote": "2027 opening month confirmed; exact date and deadline not yet verified.",
+      "fieldSources": {}
     },
     {
       "id": "ashachieve",
       "name": "ASH Abstract Achievement Awards",
       "society": "American Society of Hematology",
-      "amount": "Varies",
+      "amount": "$500",
       "category": "Merit award",
       "deadline": null,
       "opens": null,
-      "eligibility": "Select trainees with high-scoring ASH annual meeting abstracts.",
-      "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+      "eligibility": "Medical students, resident physicians and eligible other trainees who are qualifying first/senior authors and presenters of a high-scoring ASH annual meeting abstract. Trainee declaration and mentor/program-director letter required.",
+      "url": "https://www.hematology.org/awards/achievement-awards",
       "conferenceId": "ash27",
-      "note": "2027 terms/deadline not yet confirmed.",
+      "note": "Annual ASH award amount and procedure are confirmed; application occurs within ASH annual meeting abstract submission. ASH 2027 abstract submission and award cycle dates remain unannounced; do not copy 2026 dates.",
       "flag": null,
       "specialties": [
         "Hematology & Oncology"
       ],
       "scope": "conference",
       "open": null,
-      "applicationProcess": "2026 guidance: request consideration within the annual meeting abstract submission; 2027 process must be confirmed."
+      "applicationProcess": "2026 guidance: request consideration within the annual meeting abstract submission; 2027 process must be confirmed.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.hematology.org/awards/achievement-awards",
+      "verificationNote": "Evergreen award rules confirmed, 2027 cycle dates not available.",
+      "fieldSources": {}
     },
     {
       "id": "rsnaprize",
@@ -5707,16 +5732,20 @@
       "category": "Presentation prize",
       "deadline": null,
       "opens": null,
-      "eligibility": "RSNA Member-in-Training with qualifying outstanding scientific presentation.",
+      "eligibility": "RSNA Member-in-Training; scientific abstract presenter who is a radiology resident, fellow, medical student, or medical physics trainee and receives an outstanding presentation score.",
       "url": "https://www.rsna.org/annual-meeting/abstract-submission",
       "conferenceId": "rsna27",
-      "note": "",
+      "note": "Competitive prize judged on meeting scientific presentation; no verified separate prize application deadline for RSNA 2027. Do not substitute the 2026 meeting's abstract dates.",
       "flag": null,
       "specialties": [
         "Radiology"
       ],
       "scope": "conference",
-      "open": null
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.rsna.org/annual-meeting/abstract-submission",
+      "verificationNote": "Prize amount and general eligibility verified; 2027 submission dates unavailable.",
+      "fieldSources": {}
     },
     {
       "id": "institutional",
@@ -5757,12 +5786,15 @@
       "open": null,
       "stages": [
         {
-          "date": "2026-11-19",
-          "label": "Invited full proposal due",
-          "evidence": "Society of 67 official deadline; only if invited after LOI"
+          "label": "Invited full proposal",
+          "date": "2026-11-19"
         }
       ],
-      "deadlineLabel": "Letter of intent due"
+      "deadlineLabel": "Letter of intent deadline",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.apcprods.org/societyof67-grant-trainee",
+      "verificationNote": "2026 LOI and full-proposal deadline confirmed.",
+      "fieldSources": {}
     },
     {
       "id": "ahns-pilot",
@@ -5784,7 +5816,19 @@
       "scope": "independent",
       "relatedConferenceId": null,
       "open": "2026-10-01",
-      "dateEvidence": "AHNS official applications-now-open announcement dated October 1, 2026; https://www.ahns.info/2027-grant-applications-now-open/"
+      "dateEvidence": "AHNS official applications-now-open announcement dated October 1, 2026; https://www.ahns.info/2027-grant-applications-now-open/",
+      "deadlineLabel": "Letter of intent deadline",
+      "stages": [
+        {
+          "label": "Full application (after LOI)",
+          "date": "2027-01-15"
+        }
+      ],
+      "applicationProcess": "Submit a CORE letter of intent through ProposalCentral by December 15, 2026, 11:59 p.m. ET; eligible full applications are due January 15, 2027.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/",
+      "verificationNote": "2027 CORE letter-of-intent and full application deadlines confirmed.",
+      "fieldSources": {}
     },
     {
       "id": "rsna-resident",
@@ -5822,7 +5866,11 @@
       "specialties": [
         "Radiation Oncology"
       ],
-      "scope": "conference"
+      "scope": "conference",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://acro.org/page/acro-travel-grant",
+      "verificationNote": "2027 $500 travel award deadline, eligibility and documentation confirmed.",
+      "fieldSources": {}
     },
     {
       "id": "asbrsres27",
@@ -5841,7 +5889,142 @@
       "specialties": [
         "Surgery"
       ],
-      "scope": "conference"
+      "scope": "conference",
+      "deadlineLabel": "Manuscript deadline (not abstracts)",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.breastsurgeons.org/meeting/2027/abstracts",
+      "verificationNote": "Award eligibility and manuscript deadline for ASBrS 2027 confirmed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "rsna-medstudent27",
+      "name": "RSNA Medical Student Research Grant",
+      "society": "Radiological Society of North America",
+      "amount": "$3,000 stipend",
+      "category": "Research grant",
+      "opens": null,
+      "open": null,
+      "deadline": "2027-02-05",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Full-time medical students at accredited North American medical schools; RSNA membership required (free for students); 8–10 weeks of full-time mentored research in radiology, radiation oncology or nuclear medicine.",
+      "url": "https://www.rsna.org/research/funding-opportunities/research-grants/medical-student-research-grant",
+      "scope": "independent",
+      "conferenceId": null,
+      "specialties": [
+        "Radiology",
+        "Radiation Oncology",
+        "Nuclear Medicine"
+      ],
+      "note": "2027 deadline Feb. 5 at 11:59 p.m. CT. Project period is one year. This is a research stipend, not a meeting travel prize.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.rsna.org/research/funding-opportunities/research-grants/medical-student-research-grant",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aao-hns-core-resident27",
+      "name": "AAO-HNSF CORE Resident Research Grant 2027",
+      "society": "American Academy of Otolaryngology–Head and Neck Surgery Foundation",
+      "amount": "$10,000",
+      "category": "Research grant",
+      "opens": "2026-10-01",
+      "open": "2026-10-01",
+      "deadline": "2026-12-15",
+      "deadlineLabel": "Letter of intent deadline",
+      "eligibility": "Eligible otolaryngology residents seeking mentored research funding; see the 2027 CORE resident award opportunity for full requirements. A letter of intent is mandatory.",
+      "url": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "scope": "independent",
+      "conferenceId": null,
+      "specialties": [
+        "Otolaryngology"
+      ],
+      "note": "2027 CORE LOI due December 15, 2026, at 11:59 p.m. ET. Full application due January 15, 2027 if eligible.",
+      "stages": [
+        {
+          "label": "Full application",
+          "date": "2027-01-15"
+        }
+      ],
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ahns-trainee-pilot27",
+      "name": "AHNS Trainee Pilot Research Award 2027",
+      "society": "American Head and Neck Society",
+      "amount": "Up to $20,000",
+      "category": "Research grant",
+      "opens": "2026-10-01",
+      "open": "2026-10-01",
+      "deadline": "2026-12-15",
+      "deadlineLabel": "Letter of intent deadline",
+      "eligibility": "AHNS members who are U.S./Canada-based medical students, residents, fellows or graduate students in head and neck oncology research; faculty mentoring and departmental support letters required.",
+      "url": "https://www.ahns.info/2027-grant-applications-now-open/",
+      "scope": "independent",
+      "conferenceId": null,
+      "specialties": [
+        "Otolaryngology",
+        "Hematology & Oncology",
+        "Radiation Oncology"
+      ],
+      "note": "Separate from the Alando J. Ballantyne Resident Research Pilot Grant. CORE LOI is due December 15, 2026; full application January 15, 2027. No duplicate funding for the same project.",
+      "stages": [
+        {
+          "label": "Full application",
+          "date": "2027-01-15"
+        }
+      ],
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.ahns.info/2027-grant-applications-now-open/",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aace-garber27",
+      "name": "AACE Jeffrey R. Garber Trainee Abstract Award 2027",
+      "society": "American Association of Clinical Endocrinology",
+      "amount": "$500 (up to 2)",
+      "category": "Merit award",
+      "opens": "2026-08-10",
+      "open": "2026-08-10",
+      "deadline": "2026-12-01",
+      "deadlineLabel": "Regular abstract submission deadline",
+      "eligibility": "Trainees whose AACE 2027 abstracts address clinical endocrinology practice innovation, guideline implementation, education or decision-support; up to two recipients selected via abstract review.",
+      "url": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
+      "scope": "conference",
+      "conferenceId": "aace27",
+      "specialties": [
+        "Endocrinology"
+      ],
+      "note": "Award determined from eligible conference abstracts; no separate grant application identified. Regular abstracts due Dec. 1, 2026; late-breaking abstract rules differ.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ash-outstanding27",
+      "name": "ASH Outstanding Abstract Achievement Awards",
+      "society": "American Society of Hematology",
+      "amount": "$2,000 plus eligible travel",
+      "category": "Merit award",
+      "opens": null,
+      "open": null,
+      "deadline": null,
+      "eligibility": "Trainees with highest-scoring ASH meeting abstracts, including eligible medical students and resident physicians, who meet annual abstract author/presenter and mentor verification requirements.",
+      "url": "https://www.hematology.org/awards/achievement-awards",
+      "scope": "conference",
+      "conferenceId": "ash27",
+      "specialties": [
+        "Hematology & Oncology"
+      ],
+      "note": "Distinct from the $500 standard Abstract Achievement Awards. Annual program terms confirmed, but 2027 submission dates are not yet announced.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.hematology.org/awards/achievement-awards",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
     }
   ]
 }
