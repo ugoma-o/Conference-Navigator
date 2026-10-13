@@ -1719,11 +1719,11 @@
       "start": "2027-03-14",
       "end": "2027-03-16",
       "city": "San Diego, CA",
-      "open": null,
-      "deadline": null,
+      "open": "2026-06-01",
+      "deadline": "2026-09-03",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
+      "deadlineTime": "11:59 p.m. CT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -1736,11 +1736,28 @@
       "url": "https://www.sccm.org/annual-congress/future-congress-dates",
       "guideline": null,
       "evidence": "official",
-      "note": "Congress 14–16 March; pre-congress programs 12–13 March. Abstract deadline not confirmed in this review.",
+      "note": "Congress 14–16 March; pre-congress programs 12–13 March. Abstract deadline not confirmed in this review. 2027 Critical Care Congress regular abstract and case report submissions opened June 1 and closed September 3, 2026 at 11:59 p.m. CT.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "submissionSource": "https://www.sccm.org/annual-congress/abstracts-and-case-reports",
+      "fieldSources": {
+        "open": {
+          "url": "https://www.sccm.org/annual-congress/abstracts-and-case-reports",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "June 1, 2026: Submission period opens. September 3, 2026: Submission period closes at 11:59 p.m. Central Time.",
+          "confidence": "explicit_statement"
+        },
+        "deadline": {
+          "url": "https://www.sccm.org/annual-congress/abstracts-and-case-reports",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "June 1, 2026: Submission period opens. September 3, 2026: Submission period closes at 11:59 p.m. Central Time.",
+          "confidence": "explicit_statement"
+        }
+      }
     },
     {
       "id": "sgo27",
@@ -2856,10 +2873,10 @@
       "end": "2027-01-13",
       "city": "San Diego, CA",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-08-27",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
+      "deadlineTime": "5:00 p.m. CT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -2868,7 +2885,7 @@
       "url": "https://acnp.org/annual-meeting/",
       "guideline": null,
       "evidence": "official",
-      "note": "Highly prestigious psychopharmacology meeting, but ACNP nonmembers require an invitation to attend. Not generally open for trainee registration.",
+      "note": "Highly prestigious psychopharmacology meeting, but ACNP nonmembers require an invitation to attend. Not generally open for trainee registration. The ACNP 2027 general poster deadline was August 27, 2026 at 5:00 p.m. CT. Separate Promising Targets abstracts are due October 28, 2026 at 5:00 p.m. CT; that is NOT an extension of general poster submissions. Attendance/invitation requirements apply.",
       "flag": null,
       "tags": [
         "invitation-only"
@@ -2887,10 +2904,18 @@
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://acnp.org/annual-meeting/submissions/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "The final deadline to submit was August 27, 2026 at 5:00pm Central time.",
+          "confidence": "explicit_statement"
         }
       },
       "researchOpportunity": "Restricted participation",
-      "accessRequirement": "Nonmembers require invitation from an ACNP member. Consult organizer's invitation policies before planning a submission or trip."
+      "accessRequirement": "Nonmembers require invitation from an ACNP member. Consult organizer's invitation policies before planning a submission or trip.",
+      "submissionSource": "https://acnp.org/annual-meeting/submissions/"
     },
     {
       "id": "arrs27",
@@ -3553,19 +3578,19 @@
       "end": "2027-11-16",
       "city": "Washington, DC",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-12-07",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
+      "deadlineTime": "11:59 p.m. PT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [],
       "url": "https://www.aamc.org/learn-network/learn-serve-lead",
-      "guideline": null,
+      "guideline": "https://www.aamc.org/about-us/medical-education/scholarship-submissions",
       "evidence": "official",
-      "note": "Major AAMC academic medicine meeting; primarily education, institutional leadership and networking. Confirm suitability for a specific original-research poster.",
+      "note": "Major AAMC academic medicine meeting; primarily education, institutional leadership and networking. Confirm suitability for a specific original-research poster. Learn Serve Lead 2027 medical education call covers research abstracts, innovation abstracts and sessions. Deadline December 7, 2026 at 11:59 p.m. PT; this is not the reviewer-interest deadline.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -3582,9 +3607,17 @@
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://abstractscorecard.com/cfp/submit/login.asp?EventKey=AVDHHBQQ",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Abstracts must be submitted online no later than 11:59pm (PST) on December 7, 2026.",
+          "confidence": "explicit_statement"
         }
       },
-      "researchOpportunity": "Academic education and leadership"
+      "researchOpportunity": "Academic education and leadership",
+      "submissionSource": "https://abstractscorecard.com/cfp/submit/login.asp?EventKey=AVDHHBQQ"
     },
     {
       "id": "aamc-innovation27",
@@ -3595,10 +3628,10 @@
       "end": "2027-04-20",
       "city": "Indianapolis, IN",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-09-15",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
+      "deadlineTime": "11:59 p.m. HST",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -3611,7 +3644,7 @@
       "url": "https://www.aamc.org/learn-network/affinity-groups/curriculum-assessment-instruction-research-evaluation-group",
       "guideline": null,
       "evidence": "official",
-      "note": "AAMC medical education scholarly meeting; its verified 2027 call includes research, educational innovation, posters, oral talks and workshops. It is not a traditional clinical-specialty basic-science congress.",
+      "note": "AAMC medical education scholarly meeting; its verified 2027 call includes research, educational innovation, posters, oral talks and workshops. It is not a traditional clinical-specialty basic-science congress. Medical Education Innovation Conference call for abstracts: oral abstracts, posters, workshops, panels and small-group discussions. 2027 abstracts/proposals closed September 15, 2026 at 11:59 p.m. HST.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": true,
@@ -3634,8 +3667,16 @@
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=IAEHWKDF",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "All submissions must be submitted online no later than September 15, 2026 at 11:59pm HST.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=IAEHWKDF"
     },
     {
       "id": "stfm-spring27",
@@ -3687,7 +3728,7 @@
       "end": "2027-02-07",
       "city": "Anaheim, CA",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-06-17",
       "lateOpen": null,
       "lateDeadline": null,
       "deadlineTime": null,
@@ -3699,7 +3740,7 @@
       "url": "https://stfm.org/conferences/generalinformation/future-dates/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed. STFM 2027 Conference on Medical Student Education call for presentations (including completed/in-progress research presentations and posters) closed June 17, 2026; confirm specific format requirements.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -3716,8 +3757,16 @@
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://www.stfm.org/conferences/mse/callforpresentations/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "STFM official call for 2027 Conference on Medical Student Education presentations closes June 17, 2026.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://www.stfm.org/conferences/mse/callforpresentations/"
     },
     {
       "id": "stfm-qi27",
@@ -4118,8 +4167,8 @@
       "start": "2027-02-19",
       "end": "2027-02-23",
       "city": "San Francisco, CA",
-      "open": null,
-      "deadline": null,
+      "open": "2026-06-15",
+      "deadline": "2026-08-31",
       "lateOpen": "2026-10-12",
       "lateDeadline": "2026-11-09",
       "deadlineTime": null,
@@ -4131,7 +4180,7 @@
       "url": "https://www.ors.org/2027-annual-meeting/",
       "guideline": null,
       "evidence": "official",
-      "note": "ORS 2027 regular abstracts closed Aug 31, 2026; late-breaking October 12–November 9 is for genuinely new findings.",
+      "note": "ORS 2027 regular abstracts closed Aug 31, 2026; late-breaking October 12–November 9 is for genuinely new findings. ORS 2027 regular abstract window June 15–August 31, 2026; late-breaking October 12–November 9, 2026 is reserved for truly new findings.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -4158,8 +4207,23 @@
           "url": "https://www.ors.org/2027-annual-meeting/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE official abstract page audit"
+        },
+        "open": {
+          "url": "https://www.ors.org/futureannualmeetings/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "ORS 2027 Annual Meeting: Abstract Submission June 15 – August 31; Late Breaking Abstract Submission October 12 – November 9.",
+          "confidence": "explicit_statement"
+        },
+        "deadline": {
+          "url": "https://www.ors.org/futureannualmeetings/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "ORS 2027 Annual Meeting: Abstract Submission June 15 – August 31; Late Breaking Abstract Submission October 12 – November 9.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://www.ors.org/2027-annual-meeting/"
     },
     {
       "id": "aossm27",
@@ -4211,10 +4275,10 @@
       "end": "2027-02-20",
       "city": "Long Beach, CA",
       "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
+      "deadline": "2026-09-10",
+      "lateOpen": "2026-11-02",
+      "lateDeadline": "2026-11-23",
+      "deadlineTime": "11:59 p.m. ET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -4223,7 +4287,7 @@
       "url": "https://www.physiatry.org/meetings-events/annual-meeting/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed. Physiatry '27 regular abstract submissions closed September 10, 2026 at 11:59 p.m. ET; late-breaking abstracts November 2–23, 2026. Confirm late-breaking eligibility and exact closing time with AAP.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -4240,8 +4304,30 @@
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://www.physiatry.org/meetings-events/annual-meeting/abstracts/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "All submissions must be received via online submission by 11:59 pm (EST) September 10, 2026. Late Breaking Abstracts accepted Nov. 2-23.",
+          "confidence": "explicit_statement"
+        },
+        "lateOpen": {
+          "url": "https://www.physiatry.org/meetings-events/annual-meeting/abstracts/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "All submissions must be received via online submission by 11:59 pm (EST) September 10, 2026. Late Breaking Abstracts accepted Nov. 2-23.",
+          "confidence": "explicit_statement"
+        },
+        "lateDeadline": {
+          "url": "https://www.physiatry.org/meetings-events/annual-meeting/abstracts/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "All submissions must be received via online submission by 11:59 pm (EST) September 10, 2026. Late Breaking Abstracts accepted Nov. 2-23.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://www.physiatry.org/meetings-events/annual-meeting/abstracts/"
     },
     {
       "id": "asrm-micro27",
