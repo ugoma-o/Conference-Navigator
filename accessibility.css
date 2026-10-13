@@ -336,3 +336,75 @@ html[data-theme="dark"] .clear-filters-button:hover{background:#23485b}
     width:min(220px, calc(100% - 12px));
   }
 }
+
+/* Roadmap collision-safe milestone lanes and event-specific line endpoints. */
+/* A separate row for each dated milestone prevents collisions regardless of
+   how closely together the associated events occur on the time axis. */
+.v7-roadmap{
+  --event-lane-step:78px;
+  --event-rail-height:326px;
+}
+.v7-roadmap .v6-event-labels{
+  height:var(--event-rail-height);
+  min-height:var(--event-rail-height);
+  position:relative;
+}
+.v7-roadmap .v6-event-label,
+.v7-roadmap .v6-event-label.conference{
+  top:calc(var(--event-row) * var(--event-lane-step) + 9px)!important;
+  min-height:43px;
+  max-height:calc(var(--event-lane-step) - 13px);
+  max-width:min(210px,calc(100% - 16px));
+  padding:9px 11px;
+  white-space:normal;
+  overflow-wrap:normal;
+  word-break:normal;
+  line-height:1.35;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:4px 8px;
+}
+.v7-roadmap .v6-event-label:not(.conference){
+  left:clamp(106px,var(--event-x),calc(100% - 106px));
+  transform:translateX(-50%);
+}
+.v7-roadmap .v6-event-label.conference{
+  max-height:calc(var(--event-lane-step) - 13px);
+  width:min(220px,calc(100% - 12px));
+  max-width:none;
+}
+/* The guides travel through the project stages, but each ends exactly at
+   its own event card's top edge instead of continuing underneath it.
+   The "you are here" guide stops before the dated milestone rail. */
+.v7-roadmap .v6-guide.today{
+  bottom:calc(var(--event-rail-height) + 9px);
+}
+.v7-roadmap .v6-guide.opening{
+  bottom:calc(var(--event-rail-height) - 9px);
+}
+.v7-roadmap .v6-guide.deadline{
+  bottom:calc(var(--event-rail-height) - (2 * var(--event-lane-step) + 9px));
+}
+.v7-roadmap .v6-guide.conference{
+  bottom:calc(var(--event-rail-height) - (3 * var(--event-lane-step) + 9px));
+}
+@media(max-width:540px){
+  .v7-roadmap{
+    --event-lane-step:93px;
+    --event-rail-height:385px;
+  }
+  .v7-roadmap .v6-event-label,
+  .v7-roadmap .v6-event-label.conference{
+    max-height:calc(var(--event-lane-step) - 13px);
+    padding:9px 10px;
+    max-width:min(190px,calc(100% - 16px));
+    font-size:13px;
+  }
+  .v7-roadmap .v6-event-label:not(.conference){
+    left:clamp(96px,var(--event-x),calc(100% - 96px));
+  }
+  .v7-roadmap .v6-event-label.conference{
+    width:min(220px,calc(100% - 12px));
+    max-width:none;
+  }
+}
