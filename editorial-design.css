@@ -1761,3 +1761,32 @@ html[data-theme="dark"]:not([data-design="classic"]) .modal-official-footer .mod
     padding:15px;
   }
 }
+
+/* Navigator history back control: appears only after an in-app navigation. */
+.navigator-back{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:max-content;
+  max-width:100%;
+  gap:8px;
+  margin:0 0 20px;
+  padding:9px 15px;
+  background:var(--ed-paper-alt,#eef5f8);
+  border:1px solid var(--ed-rule,#d2e1e9);
+  border-radius:9px;
+  color:var(--ed-accent-strong,#075b83);
+  font-size:14px;
+  font-weight:750;
+  line-height:1.4;
+  cursor:pointer;
+}
+.navigator-back span{font-size:19px;line-height:1}
+.navigator-back:hover{
+  background:var(--ed-hover,#e6f3f8);
+  border-color:var(--ed-accent,#0e7496);
+}
+.navigator-back:focus-visible{outline:3px solid var(--ed-accent,#0e7496);outline-offset:3px}
+@media(max-width:650px){
+  .navigator-back{margin-bottom:14px;padding:9px 13px;min-height:44px}
+}

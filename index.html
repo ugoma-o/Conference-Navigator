@@ -15,7 +15,7 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <link rel="stylesheet" href="dark-theme.css?v=3ee8e5c35e76" />
 <link rel="stylesheet" href="abstract-matcher.css?v=529158aa3252" />
 <link rel="stylesheet" href="accessibility.css?v=8de43c224762" />
-<link rel="stylesheet" href="editorial-design.css?v=d760e30ef42f" />
+<link rel="stylesheet" href="editorial-design.css?v=ebbbd0307f86" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -43,6 +43,7 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
       <div class="topbar-right"><span class="date-note" id="asOfLabel">Data snapshot · Oct 10, 2026</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode"><span class="theme-toggle-icon" data-icon="moon" aria-hidden="true"></span><span class="theme-toggle-text" id="themeToggleText">Dark mode</span></button></div>
     </header>
     <main id="main" class="main-content">
+      <button type="button" id="navBack" class="navigator-back hidden" aria-label="Back to previous navigator screen"><span aria-hidden="true">←</span> Back</button>
       <section id="discoverView" class="view active" aria-label="Conference discovery">
         <div class="discovery-intro"><h1>Explore conferences</h1><p>Browse conferences, submission deadlines, and meeting dates.</p></div>
         
@@ -120,6 +121,6 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script src="data.js?v=c6188898c930"></script>
 <script src="abstract-matcher.js?v=09714b7267a3"></script>
-<script src="app.js?v=56e91eada8fa"></script>
+<script src="app.js?v=6ba717da0018"></script>
 </body>
 </html>

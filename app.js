@@ -59,10 +59,72 @@ function sourceLabel(c){return ({conflict:'Source conflict',tracker:'Needs offic
 function daysAway(s){if(!s)return null;const a=date(todayKey),b=date(s);return Math.round((b-a)/86400000)}
 function deadlineOrder(c){return c.deadline && c.deadline>=todayKey?c.deadline:'9999-12-31'}
 function safeExternal(url,txt,cl='external-link'){return url ? `<a class="${cl}" target="_blank" rel="noopener noreferrer" href="${escape(url)}">${escape(txt)} ${ico('external')}</a>`:'<span class="muted">Contact local office</span>'}
-function nav(view){const previousView=state.view;if(view==='funding'&&previousView==='discover'&&state.specialties.length)state.fundingSpecialties=state.specialties.filter(s=>fundingSpecialties.includes(s));state.view=view;document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===view+'View'));document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));get('sidebar').classList.remove('open');get('mobileOverlay').classList.remove('open');window.scrollTo({top:0,behavior:'instant'});if(view==='discover'&&state.exploreMode==='calendar')renderCalendar();if(view==='funding')renderFunding();if(view==='sources')renderSources();if(view==='planner')renderPlan()}
+/* Keep the navigator in session history so Back/Forward return to views and
+   open conference details instead of unexpectedly leaving GitHub Pages. */
+const NAV_VIEWS=['discover','matcher','planner','funding','sources'];
+function routeFromHash(){
+ const parts=location.hash.replace(/^#/,'').split('/').filter(Boolean);
+ let view=NAV_VIEWS.includes(parts[0])?parts[0]:'discover';
+ let offset=view==='discover'&&parts[0]!=='discover'?0:1;
+ const mode=view==='discover'&&parts[offset]==='calendar'?'calendar':'list';
+ if(mode==='calendar')offset++;
+ let modal=null;
+ if(parts[offset]==='conference'&&parts[offset+1]){
+  try{modal=decodeURIComponent(parts[offset+1])}catch(error){modal=null}
+ }
+ if(modal&&!C.some(c=>c.id===modal))modal=null;
+ return {view,mode,modal,depth:0};
+}
+function routeURL(route){
+ const parts=[route.view];
+ if(route.view==='discover'&&route.mode==='calendar')parts.push('calendar');
+ if(route.modal)parts.push('conference',encodeURIComponent(route.modal));
+ const fragment=route.view==='discover'&&route.mode==='list'&&!route.modal?'':'#'+parts.join('/');
+ return location.pathname+location.search+fragment;
+}
+function routeSnapshot(){
+ return {view:state.view,mode:state.exploreMode,
+         modal:get('modalScrim').classList.contains('hidden')?null:state.selected};
+}
+function updateBackButton(){
+ const button=get('navBack');
+ if(button)button.classList.toggle('hidden',!(history.state?.riseNavigator?.depth>0));
+}
+function recordRoute(replace=false){
+ const current=history.state?.riseNavigator;
+ const route=routeSnapshot();
+ if(!replace&&current&&current.view===route.view&&current.mode===route.mode&&current.modal===route.modal)return;
+ const depth=replace?(current?.depth||0):(current?.depth||0)+1;
+ history[replace?'replaceState':'pushState']({...history.state,riseNavigator:{...route,depth}},'',routeURL(route));
+ updateBackButton();
+}
+function dismissModal(){
+ get('modalScrim').classList.add('hidden');
+ document.body.style.overflow='';
+ state.selected=null;
+}
+function nav(view,track=true){
+ if(!NAV_VIEWS.includes(view))return;
+ const previousView=state.view;
+ const wasModal=!get('modalScrim').classList.contains('hidden');
+ if(wasModal)dismissModal();
+ if(view==='funding'&&previousView==='discover'&&state.specialties.length)
+  state.fundingSpecialties=state.specialties.filter(s=>fundingSpecialties.includes(s));
+ state.view=view;
+ document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===view+'View'));
+ document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
+ get('sidebar').classList.remove('open');get('mobileOverlay').classList.remove('open');
+ if(track&&view!==previousView||track&&wasModal)recordRoute();
+ if(track)window.scrollTo({top:0,behavior:'instant'});
+ if(view==='discover'&&state.exploreMode==='calendar')renderCalendar();
+ if(view==='funding')renderFunding();
+ if(view==='sources')renderSources();
+ if(view==='planner')renderPlan();
+}
 document.querySelectorAll('[data-view]').forEach(btn=>btn.addEventListener('click',()=>nav(btn.dataset.view)));
-function setExploreMode(mode){
+function setExploreMode(mode,track=true){
  if(mode!=='list'&&mode!=='calendar')return;
+ const changed=state.exploreMode!==mode;
  state.exploreMode=mode;
  const calendar=mode==='calendar';
  get('discoverListPanel').classList.toggle('active',!calendar);
@@ -80,6 +142,7 @@ function setExploreMode(mode){
   }
   renderCalendar();
  }
+ if(changed&&track&&state.view==='discover')recordRoute();
 }
 document.querySelectorAll('[data-explore-mode]').forEach(btn=>btn.addEventListener('click',()=>setExploreMode(btn.dataset.exploreMode)));
 
@@ -186,7 +249,7 @@ const fundingSpecialties=['All specialties',...new Set(A.flatMap(a=>a.specialtie
 function awardSpecialties(a){return a.specialties?.length?a.specialties:(a.conferenceId?[C.find(c=>c.id===a.conferenceId)?.specialty].filter(Boolean):['All specialties']);}
 function awardMatchesSpecialty(a,selected){const terms=awardSpecialties(a);return !selected.length||terms.includes('All specialties')||selected.some(s=>terms.includes(s));}
 function setFundingSpecialty(s){state.fundingSpecialties=toggleSelectedSpecialty(state.fundingSpecialties,s);renderFunding();}
-function navigateToAward(id){const a=A.find(a=>a.id===id);if(!a)return;closeModal();state.funding='all';state.fundingSpecialties=awardSpecialties(a).filter(s=>s!=='All specialties').slice(0,1);nav('funding');setTimeout(()=>{const card=document.querySelector('[data-award-card="'+id+'"]');if(card){card.scrollIntoView({behavior:'smooth',block:'center'});card.classList.add('funding-highlight');setTimeout(()=>card.classList.remove('funding-highlight'),2600)}},60)}
+function navigateToAward(id){const a=A.find(a=>a.id===id);if(!a)return;state.funding='all';state.fundingSpecialties=awardSpecialties(a).filter(s=>s!=='All specialties').slice(0,1);nav('funding');setTimeout(()=>{const card=document.querySelector('[data-award-card="'+id+'"]');if(card){card.scrollIntoView({behavior:'smooth',block:'center'});card.classList.add('funding-highlight');setTimeout(()=>card.classList.remove('funding-highlight'),2600)}},60)}
 function matchesSelectedSpecialty(s,selected){return !selected.length||selected.includes(s)}
 function toggleSelectedSpecialty(selected,s){if(s==='All specialties')return [];return selected.includes(s)?selected.filter(x=>x!==s):[...selected,s]}
 function specialtyLabel(selected){return !selected.length?'All specialties':selected.length===1?selected[0]:selected.length===2?selected.join(' + '):selected.length+' specialties selected'}
@@ -283,17 +346,26 @@ function downloadConference(c,events){
  downloadFile('RISE_'+c.id+'_dates.ics',icsEvents(events),'text/calendar;charset=utf-8');
  showToast(`${events.length} calendar ${events.length===1?'event':'events'} exported in one .ics file`);
 }
-function closeModal(){get('modalScrim').classList.add('hidden');document.body.style.overflow=''}get('modalClose').addEventListener('click',closeModal);get('modalScrim').addEventListener('click',e=>{if(e.target===get('modalScrim'))closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+function closeModal(){
+ if(get('modalScrim').classList.contains('hidden'))return;
+ const route=history.state?.riseNavigator;
+ if(route?.modal===state.selected&&route.depth>0){history.back();return}
+ dismissModal();
+ recordRoute(true);
+}
+get('modalClose').addEventListener('click',closeModal);
+get('modalScrim').addEventListener('click',e=>{if(e.target===get('modalScrim'))closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 function awardLinkHTML(a){return `<div class="related-award"><div class="related-award-details"><span class="award-type">${escape(a.category)} · ${escape(a.amount)}</span><strong>${escape(a.name)}</strong><small>${a.open?'Opens '+escape(fmt(a.open))+' · ':''}${a.deadline?(a.deadlineLabel||'Apply by')+' '+escape(fmt(a.deadline)):'Closing date not confirmed'}</small></div><button type="button" class="btn btn-soft" data-related-award="${escape(a.id)}">View funding details →</button></div>`}
 function presentationOptions(c){const formats=c.presentationFormats||[];const status=formats.length?`<strong>Formats confirmed for this meeting:</strong> ${escape(formats.join(' · '))}`:'<strong>Presentation formats have not been verified for this meeting year.</strong>';const guidance=c.presentationPolicy||'Your preferred format is not a guaranteed option. Societies may select oral/poster placement, restrict formats by category, or use a separate application.';return `<div class="format-note">${status}<p>${escape(guidance)}</p>${c.presentationSource?safeExternal(c.presentationSource,'Official presentation policy'):''}</div>`}
-function showConference(id){const c=C.find(c=>c.id===id);if(!c)return;state.selected=id;const awardList=A.filter(a=>a.conferenceId===id||a.relatedConferenceId===id);let limitText=c.limit?`${c.limit.toLocaleString()} ${c.limitType==='words'?'words':'characters'}${c.limitType==='characters_no_spaces'?' (spaces excluded)':''}`:'Not yet confirmed';const detail=(label,value,sub='')=>`<div class="detail-block"><div class="detail-label">${label}</div><div class="detail-value">${escape(value)}</div>${sub?`<div class="detail-sub">${escape(sub)}</div>`:''}</div>`;get('modalBody').innerHTML=`<div class="modal-head"><div class="mini-specialty">${escape(c.specialty)} · ${escape(c.society)}</div><h2 id="modalTitle">${escape(c.name)}</h2><p>${ico('map')} ${escape(c.city)} &nbsp;·&nbsp; ${escape(c.start?fmt(c.start)+' – '+fmt(c.end||c.start):'Meeting date to be announced')}</p><div class="card-status"><span class="status-pill ${source(c)}">${escape(sourceLabel(c))}</span> <span class="status-pill ${status(c)[1]}">${escape(status(c)[0])}</span></div></div><div class="modal-content"><div class="modal-quick-actions"><div class="modal-quick-official">${safeExternal(c.url,'Official conference details','btn btn-soft modal-official-link')}</div><div class="modal-quick-plan"><button type="button" class="btn btn-primary modal-plan-button" id="modalPlan">Plan for this meeting →</button></div></div><div class="modal-section-title">Conference details</div><div class="modal-grid">${detail('Abstract submissions open',fmt(c.open),c.open?'':'Not posted / not checked')}${detail('Regular abstract deadline',fmt(c.deadline),c.deadlineTime||'')}${detail('Late-breaking deadline',fmt(c.lateDeadline),c.lateOpen?'Opens '+fmt(c.lateOpen):'')}${detail('Length requirement',limitText,c.limitNote||'Different categories may have separate rules')}${detail('Meeting location',c.city||'To be announced',dateRange(c.start,c.end))}<div class="detail-block conference-cost-detail"><div class="detail-label">Conference costs</div><div class="cost-detail-row"><span>Registration</span><strong>${escape(c.registrationFee||'Not verified')}</strong></div><div class="cost-detail-row"><span>Abstract submission</span><strong>${escape(c.fee||'Not verified')}</strong></div><div class="detail-sub">${safeExternal(c.registrationSource||c.url,'Check official fees')}</div></div></div>${c.note?`<div class="modal-section-title">Important notes</div><div class="modal-note ${c.flag==='conflict'?'warning':''}">${escape(c.note)}</div>`:''}<div class="modal-section-title">Submission categories and presentation formats</div><div class="submission-warning">Topic labels are provided for reference; confirm accepted submission categories and oral or poster presentation options in the official instructions.</div><div class="mini-tags">${(c.types||[]).map(t=>`<span class="mini-tag">${escape(t)}</span>`).join('')}</div><p class="category-provenance">${c.submissionCategoriesVerified?'Official meeting categories reviewed':'Tracker-listed topics; exact categories and eligibility not verified for this meeting year'}</p><div id="presentationOptions" aria-live="polite"></div>${awardList.length?`<div class="modal-section-title">Funding and awards</div><div class="related-awards">${awardList.map(awardLinkHTML).join('')}</div>`:''}<div class="modal-actions"><div class="modal-secondary-actions">${c.guideline?safeExternal(c.guideline,'Submission rules','btn btn-soft'):''}${c.submissionSource&&c.submissionSource!==c.guideline?safeExternal(c.submissionSource,'Submission portal','btn btn-soft'):''}<button type="button" class="btn btn-soft" id="modalExport" aria-controls="calendarExportPanel" aria-expanded="false">Export conference dates ↓</button></div></div>${exportPanelMarkup(c,conferenceExportOptions(c))}</div>`;get('modalScrim').classList.remove('hidden');document.body.style.overflow='hidden';get('conferenceModal').scrollTop=0;get('presentationOptions').innerHTML=presentationOptions(c);get('modalBody').querySelectorAll('[data-related-award]').forEach(b=>b.addEventListener('click',()=>navigateToAward(b.dataset.relatedAward)));const exportButton=get('modalExport'),exportPanel=get('calendarExportPanel'),allOptions=conferenceExportOptions(c);
+function showConference(id,track=true){const c=C.find(c=>c.id===id);if(!c)return;state.selected=id;const awardList=A.filter(a=>a.conferenceId===id||a.relatedConferenceId===id);let limitText=c.limit?`${c.limit.toLocaleString()} ${c.limitType==='words'?'words':'characters'}${c.limitType==='characters_no_spaces'?' (spaces excluded)':''}`:'Not yet confirmed';const detail=(label,value,sub='')=>`<div class="detail-block"><div class="detail-label">${label}</div><div class="detail-value">${escape(value)}</div>${sub?`<div class="detail-sub">${escape(sub)}</div>`:''}</div>`;get('modalBody').innerHTML=`<div class="modal-head"><div class="mini-specialty">${escape(c.specialty)} · ${escape(c.society)}</div><h2 id="modalTitle">${escape(c.name)}</h2><p>${ico('map')} ${escape(c.city)} &nbsp;·&nbsp; ${escape(c.start?fmt(c.start)+' – '+fmt(c.end||c.start):'Meeting date to be announced')}</p><div class="card-status"><span class="status-pill ${source(c)}">${escape(sourceLabel(c))}</span> <span class="status-pill ${status(c)[1]}">${escape(status(c)[0])}</span></div></div><div class="modal-content"><div class="modal-quick-actions"><div class="modal-quick-official">${safeExternal(c.url,'Official conference details','btn btn-soft modal-official-link')}</div><div class="modal-quick-plan"><button type="button" class="btn btn-primary modal-plan-button" id="modalPlan">Plan for this meeting →</button></div></div><div class="modal-section-title">Conference details</div><div class="modal-grid">${detail('Abstract submissions open',fmt(c.open),c.open?'':'Not posted / not checked')}${detail('Regular abstract deadline',fmt(c.deadline),c.deadlineTime||'')}${detail('Late-breaking deadline',fmt(c.lateDeadline),c.lateOpen?'Opens '+fmt(c.lateOpen):'')}${detail('Length requirement',limitText,c.limitNote||'Different categories may have separate rules')}${detail('Meeting location',c.city||'To be announced',dateRange(c.start,c.end))}<div class="detail-block conference-cost-detail"><div class="detail-label">Conference costs</div><div class="cost-detail-row"><span>Registration</span><strong>${escape(c.registrationFee||'Not verified')}</strong></div><div class="cost-detail-row"><span>Abstract submission</span><strong>${escape(c.fee||'Not verified')}</strong></div><div class="detail-sub">${safeExternal(c.registrationSource||c.url,'Check official fees')}</div></div></div>${c.note?`<div class="modal-section-title">Important notes</div><div class="modal-note ${c.flag==='conflict'?'warning':''}">${escape(c.note)}</div>`:''}<div class="modal-section-title">Submission categories and presentation formats</div><div class="submission-warning">Topic labels are provided for reference; confirm accepted submission categories and oral or poster presentation options in the official instructions.</div><div class="mini-tags">${(c.types||[]).map(t=>`<span class="mini-tag">${escape(t)}</span>`).join('')}</div><p class="category-provenance">${c.submissionCategoriesVerified?'Official meeting categories reviewed':'Tracker-listed topics; exact categories and eligibility not verified for this meeting year'}</p><div id="presentationOptions" aria-live="polite"></div>${awardList.length?`<div class="modal-section-title">Funding and awards</div><div class="related-awards">${awardList.map(awardLinkHTML).join('')}</div>`:''}<div class="modal-actions"><div class="modal-secondary-actions">${c.guideline?safeExternal(c.guideline,'Submission rules','btn btn-soft'):''}${c.submissionSource&&c.submissionSource!==c.guideline?safeExternal(c.submissionSource,'Submission portal','btn btn-soft'):''}<button type="button" class="btn btn-soft" id="modalExport" aria-controls="calendarExportPanel" aria-expanded="false">Export conference dates ↓</button></div></div>${exportPanelMarkup(c,conferenceExportOptions(c))}</div>`;get('modalScrim').classList.remove('hidden');document.body.style.overflow='hidden';get('conferenceModal').scrollTop=0;if(track)recordRoute();get('presentationOptions').innerHTML=presentationOptions(c);get('modalBody').querySelectorAll('[data-related-award]').forEach(b=>b.addEventListener('click',()=>navigateToAward(b.dataset.relatedAward)));const exportButton=get('modalExport'),exportPanel=get('calendarExportPanel'),allOptions=conferenceExportOptions(c);
  const chosenExportEvents=()=>allOptions.filter(o=>exportPanel.querySelector(`[data-ics-option=\"${o.id}\"]`)?.checked);
  const refreshExportCount=()=>{const n=chosenExportEvents().length;get('exportSelectedCount').textContent=`(${n})`;get('exportSelectedDates').disabled=!n};
  exportButton.addEventListener('click',()=>{const isHidden=exportPanel.classList.toggle('hidden');exportButton.setAttribute('aria-expanded',String(!isHidden));if(!isHidden){refreshExportCount();exportPanel.scrollIntoView({block:'nearest',behavior:'smooth'})}});
  get('closeCalendarExport').addEventListener('click',()=>{exportPanel.classList.add('hidden');exportButton.setAttribute('aria-expanded','false')});
  exportPanel.addEventListener('change',refreshExportCount);
  get('exportSelectedDates').addEventListener('click',()=>downloadConference(c,chosenExportEvents()));
- get('modalPlan').addEventListener('click',()=>{get('planConference').value=c.id;state.plan=null;closeModal();nav('planner')})}
+ get('modalPlan').addEventListener('click',()=>{get('planConference').value=c.id;state.plan=null;nav('planner')})}
 const defaults={retrospective:24,case:8,qi:24,systematic:20,medicaleducation:20,prospective:52};
 const models={retrospective:[['Scope question & find mentor','Agree on study population, feasibility, endpoints and faculty oversight.',0],['Protocol, IRB/determination & data access','Obtain required IRB review/exemption/determination and permissions before regulated extraction.',.14],['Chart abstraction & data quality','Collect approved data, maintain secure records, validate inclusion criteria.',.32],['Analysis & interpretation','Run primary analyses and review limitations with collaborators.',.65],['Draft abstract & coauthor review','Check conference structure, word limits, authorship, originality and embargo.',.81],['Internal review & submit','Allow time for mentor sign-off, disclosures and submission portal checks.',.94]],case:[['Identify teaching point & mentor','Confirm novelty, learning objectives and conference fit.',0],['Consent and de-identification','Follow institutional case-report consent and privacy requirements.',.16],['Clinical narrative & literature review','Assemble chronology, differential and relevant comparisons.',.35],['Draft structured abstract','Match conference category and length/figure requirements.',.60],['Coauthor review & submit','Secure approvals and submit ahead of portal closure.',.89]],qi:[['Define aim & measures','Establish aim statement, balancing measures and stakeholder team.',0],['QI vs research determination','Obtain institutional determination and any required approvals.',.12],['Baseline measurement','Establish reliable data collection and process map.',.28],['Intervention / PDSA cycles','Test changes, monitor implementation and track outcomes.',.45],['Analyze results','Assess improvement, sustainability, limitations and unintended consequences.',.72],['Draft abstract & submit','Focus on intervention, methods, outcomes and conclusions.',.87]],systematic:[['Define PICO and protocol','Align on question, eligibility criteria, team and registration needs.',0],['Search strategy & registration','Develop reproducible search; register protocol where appropriate.',.14],['Screen and extract evidence','Duplicate screening and structured extraction.',.31],['Risk of bias & synthesis','Appraise evidence, consider quantitative pooling if appropriate.',.59],['Draft findings','Ensure conclusions reflect evidence and heterogeneity.',.80],['Coauthor approval & submit','Finalize disclosures, references, category and word count.',.93]],medicaleducation:[['Identify educational gap','Select learning objectives and evaluation strategy.',0],['Approvals and curriculum design','Confirm QI/research pathway and permissions as applicable.',.15],['Implement educational intervention','Deliver curriculum, gather appropriate evaluation data.',.36],['Evaluate outcomes','Analyze learner and implementation outcomes.',.66],['Write innovation abstract','Describe replicability, impact and barriers.',.83],['Coauthor review & submit','Finalize abstract and disclosures.',.94]],prospective:[['Feasibility & funding','Finalize hypothesis, design, site, recruitment and resources.',0],['Protocol & regulatory review','Obtain required approvals, consent processes and registration.',.17],['Recruitment & data collection','Prospective enrollment and prespecified data capture after clearance.',.35],['Data cleaning & analysis','Reconcile missing data and analyze planned endpoints.',.72],['Manuscript-level review','Interpret findings and meet coauthor obligations.',.87],['Finalize abstract & submit','Submit only when required results are sufficiently mature.',.96]]};
 // A planning assumption is never persisted as, or styled as, an official submission deadline.
@@ -632,5 +704,17 @@ get('matchOutput').addEventListener('click',event=>{
 function renderSources(){let v=C.filter(c=>source(c)==='verified').length,conf=C.filter(c=>source(c)==='conflict').length,unknown=C.filter(c=>!c.deadline).length;get('qualityCards').innerHTML=`<div class="quality-card"><strong>${v}</strong><span>Conference records with official-source review</span></div><div class="quality-card"><strong>${unknown}</strong><span>Abstract deadlines awaiting publication or confirmation</span></div><div class="quality-card"><strong>${conf}</strong><span>Conference records with conflicting source dates</span></div>`}
 function exportCSV(){const cols=['name','society','specialty','open','deadline','lateOpen','lateDeadline','start','end','city','deadlineTime','limit','limitType','fee','evidence','flag','url','guideline','note'];const quote=s=>'"'+String(s??'').replaceAll('"','""')+'"';downloadFile('RISE_conferences_2026_2027.csv',[cols.join(','),...C.map(c=>cols.map(k=>quote(c[k])).join(','))].join('\r\n'),'text/csv;charset=utf-8');showToast('Conference CSV exported')}get('exportCsv').addEventListener('click',exportCSV);
 let toastTimer;function showToast(msg){const el=get('toast');el.textContent=msg;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),3400)}
+function restoreRoute(route){
+ const view=NAV_VIEWS.includes(route?.view)?route.view:'discover';
+ nav(view,false);
+ setExploreMode(view==='discover'&&route?.mode==='calendar'?'calendar':state.exploreMode,false);
+ if(route?.modal&&C.some(c=>c.id===route.modal))showConference(route.modal,false);
+ updateBackButton();
+}
+window.addEventListener('popstate',event=>restoreRoute(event.state?.riseNavigator||routeFromHash()));
+get('navBack').addEventListener('click',()=>{if(history.state?.riseNavigator?.depth>0)history.back()});
 initSummary();initSpecialties();renderHorizon();renderDirectory();initPlanner();renderSources();
+const initialRoute=history.state?.riseNavigator||routeFromHash();
+history.replaceState({...history.state,riseNavigator:initialRoute},'',location.href);
+restoreRoute(initialRoute);
 })();
