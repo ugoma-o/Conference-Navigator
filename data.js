@@ -2692,7 +2692,7 @@ window.RISE_DATA = {
       "end": "2027-02-12",
       "city": "Houston, TX",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-08-18",
       "lateOpen": "2026-09-30",
       "lateDeadline": "2026-10-28",
       "deadlineTime": "11:59 PM CDT",
@@ -2708,7 +2708,7 @@ window.RISE_DATA = {
       "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
       "guideline": null,
       "evidence": "official",
-      "note": "The 2027 general abstract deadline passed August 18, 2026. Late-breaking science/ongoing clinical trials deadline is October 28, 2026.",
+      "note": "The 2027 general abstract deadline passed August 18, 2026. Late-breaking science/ongoing clinical trials deadline is October 28, 2026. Regular ISC abstract deadline August 18, 2026; late-breaking and ongoing clinical trials close October 28, 2026. Separate case-study window differs.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -2739,8 +2739,16 @@ window.RISE_DATA = {
           "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
           "checked_at": "2026-10-11",
           "verified_by": "RISE official abstract page audit"
+        },
+        "deadline": {
+          "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Trainees should submit their ISC abstract by the August 18 deadline. Late Breaking Science submission September 30–October 28, 2026.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science"
     },
     {
       "id": "childcns27",
@@ -4339,10 +4347,10 @@ window.RISE_DATA = {
       "end": "2027-02-02",
       "city": "Aventura, FL",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-07-16",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
+      "deadlineTime": "11:59 p.m. CT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -4351,7 +4359,7 @@ window.RISE_DATA = {
       "url": "https://www.microsurg.org/future-asrm-meetings",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed. ASRM 2027 reconstructive microsurgery conference oral abstracts closed July 16, 2026 at 11:59 p.m. CT (ASRM category, not AAHS or ASPN).",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -4368,8 +4376,16 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://aahsaspnasrm.confex.com/aahsaspnasrm/2027/cfp.cgi",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "ASRM DEADLINE: Thursday, July 16, 2026 at 11:59pm (CT)",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://aahsaspnasrm.confex.com/aahsaspnasrm/2027/cfp.cgi"
     },
     {
       "id": "asds27",
