@@ -852,8 +852,8 @@ window.RISE_DATA = {
       "city": "New Orleans, LA",
       "open": null,
       "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
+      "lateOpen": "2026-10-19",
+      "lateDeadline": "2026-11-02",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -867,7 +867,7 @@ window.RISE_DATA = {
       "url": "https://annualmeeting.aaaai.org/",
       "guideline": "https://annualmeeting.aaaai.org/attendee/future-dates-locations",
       "evidence": "official",
-      "note": "Meeting dates seen in NIH events listing; abstract submission requires verification. Meeting location and dates confirmed from the organizer's current published schedule.",
+      "note": "Meeting dates seen in NIH events listing; abstract submission requires verification. Meeting location and dates confirmed from the organizer's current published schedule. The 2027 AAAAI Discovery basic-science abstract deadline is November 2, 2026 at 11:59 p.m. CT; late-breaking window October 19–November 2, 2026. The general standard abstract deadline was not independently verified and remains blank.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -877,8 +877,23 @@ window.RISE_DATA = {
           "url": "https://annualmeeting.aaaai.org/attendee/future-dates-locations",
           "checked_at": "2026-10-10",
           "verified_by": "Official organizer page"
+        },
+        "lateOpen": {
+          "url": "https://annualmeeting.aaaai.org/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "2027 AAAAI late-breaking abstract submission opens October 19 and closes November 2; Discovery abstracts also due November 2, 2026.",
+          "confidence": "explicit_statement"
+        },
+        "lateDeadline": {
+          "url": "https://annualmeeting.aaaai.org/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "2027 AAAAI late-breaking abstract submission opens October 19 and closes November 2; Discovery abstracts also due November 2, 2026.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://annualmeeting.aaaai.org/attendee/discovery-program"
     },
     {
       "id": "aaim27",
@@ -1958,7 +1973,7 @@ window.RISE_DATA = {
       "end": "2027-02-20",
       "city": "Orlando, FL",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-10-09",
       "lateOpen": null,
       "lateDeadline": null,
       "deadlineTime": null,
@@ -1974,11 +1989,21 @@ window.RISE_DATA = {
       "url": "https://cibmtr.org/CIBMTR/Meetings/Tandem-Meetings",
       "guideline": null,
       "evidence": "official",
-      "note": "Main scientific meeting Feb 17–20, with Feb 16 preconference; abstract deadline not confirmed.",
+      "note": "Main scientific meeting Feb 17–20, with Feb 16 preconference; abstract deadline not confirmed. CIBMTR confirms 2027 Tandem regular abstracts due Friday, October 9, 2026. The Tandem organizer's abstract page may still show 2026-cycle historical dates; avoid importing them.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "submissionSource": "https://www.tandemmeetings.com/Abstracts/Abstract-Information",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://cibmtr.org/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Please submit your 2027 Tandem Meetings abstracts by Friday, October 9, 2026.",
+          "confidence": "explicit_statement"
+        }
+      }
     },
     {
       "id": "aaos27",
@@ -4242,11 +4267,11 @@ window.RISE_DATA = {
       "start": "2027-07-07",
       "end": "2027-07-10",
       "city": "Boston, MA",
-      "open": null,
-      "deadline": null,
+      "open": "2026-07-15",
+      "deadline": "2026-09-09",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
+      "deadlineTime": "1:00 p.m. ET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -4255,7 +4280,7 @@ window.RISE_DATA = {
       "url": "https://events.sportsmed.org/am2026",
       "guideline": null,
       "evidence": "official",
-      "note": "Official AOSSM site lists 2027 dates, July 7–10 Boston; current page hosts 2026 program so use for future meeting only.",
+      "note": "Official AOSSM site lists 2027 dates, July 7–10 Boston; current page hosts 2026 program so use for future meeting only. 2027 AOSSM abstract and instructional course submissions opened July 15, 2026 and closed September 9, 2026 at 1:00 p.m. ET.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -4272,8 +4297,23 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://www.sportsmed.org/education/abstract-and-instructional-course-submissions",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "AOSSM 2027 Abstract and Instructional Course Center opens July 15, 2026, closes September 9, 2026.",
+          "confidence": "explicit_statement"
+        },
+        "deadline": {
+          "url": "https://www.sportsmed.org/education/abstract-and-instructional-course-submissions",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "AOSSM 2027 Abstract and Instructional Course Center opens July 15, 2026, closes September 9, 2026.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=QLTZSHMP"
     },
     {
       "id": "physiatry27",
@@ -4937,7 +4977,7 @@ window.RISE_DATA = {
       "end": "2027-01-31",
       "city": "San Diego, CA",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-08-31",
       "lateOpen": null,
       "lateDeadline": null,
       "deadlineTime": null,
@@ -4951,7 +4991,7 @@ window.RISE_DATA = {
       "url": "https://www.sts.org/abstract-submission",
       "guideline": null,
       "evidence": "official",
-      "note": "Flagship cardiothoracic surgery scientific meeting; official STS site confirms 2027 scientific abstract submissions have closed.",
+      "note": "Flagship cardiothoracic surgery scientific meeting; official STS site confirms 2027 scientific abstract submissions have closed. STS 2027 scientific abstract deadline August 31, 2026; submissions closed. Date confirmed by the organizer's Annual Meeting FAQ.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -4969,8 +5009,16 @@ window.RISE_DATA = {
           "url": "https://www.sts.org/abstract-submission",
           "checked_at": "2026-10-11",
           "verified_by": "RISE official society page audit"
+        },
+        "deadline": {
+          "url": "https://www.sts.org/annual-meeting-faq",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Submissions cannot be accepted after the Aug. 31, 2026 deadline.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://www.sts.org/annual-meeting-faq"
     },
     {
       "id": "atc27",
@@ -5024,11 +5072,11 @@ window.RISE_DATA = {
       "start": "2027-03-17",
       "end": "2027-03-20",
       "city": "Pittsburgh, PA",
-      "open": null,
-      "deadline": null,
-      "lateOpen": null,
-      "lateDeadline": null,
-      "deadlineTime": null,
+      "open": "2026-06-15",
+      "deadline": "2026-07-07",
+      "lateOpen": "2026-09-08",
+      "lateDeadline": "2026-09-28",
+      "deadlineTime": "11:59 p.m. PT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -5040,7 +5088,7 @@ window.RISE_DATA = {
       "url": "https://aahpm.org/education-events/annual-assembly/",
       "guideline": null,
       "evidence": "official",
-      "note": "National scientific palliative medicine meeting; summer 2027 assembly abstract call closed July 7, 2026.",
+      "note": "National scientific palliative medicine meeting; summer 2027 assembly abstract call closed July 7, 2026. 2027 AAHPM Assembly primary/summer abstracts June 15–July 7, 2026; fall call Sept 8–28 included early-career and late-breaking research. Submission eligibility varies by category.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -5058,8 +5106,40 @@ window.RISE_DATA = {
           "url": "https://aahpm.org/education-events/annual-assembly/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Summer Call for Abstracts opens Monday June 15 through Tuesday July 7, 2026; Fall Call for Abstracts Sept 8–28, 2026.",
+          "confidence": "explicit_statement"
+        },
+        "deadline": {
+          "url": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Summer Call for Abstracts opens Monday June 15 through Tuesday July 7, 2026; Fall Call for Abstracts Sept 8–28, 2026.",
+          "confidence": "explicit_statement"
+        },
+        "lateOpen": {
+          "url": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Summer Call for Abstracts opens Monday June 15 through Tuesday July 7, 2026; Fall Call for Abstracts Sept 8–28, 2026.",
+          "confidence": "explicit_statement"
+        },
+        "lateDeadline": {
+          "url": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Summer Call for Abstracts opens Monday June 15 through Tuesday July 7, 2026; Fall Call for Abstracts Sept 8–28, 2026.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
+      "additionalSources": [
+        "https://aahpm.org/education-events/annual-assembly/fall-abstract-call/"
+      ]
     },
     {
       "id": "apha27",
