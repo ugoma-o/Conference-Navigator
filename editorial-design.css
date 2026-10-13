@@ -1690,3 +1690,19 @@ html[data-theme="dark"]:not([data-design="classic"]) #discoverListPanel #confere
     transition:none;
   }
 }
+
+/* Keep abstract due/open labels on one line inside outlook month bubbles. */
+html:not([data-design="classic"]) #discoverView .horizon-month,
+html[data-theme="dark"]:not([data-design="classic"]) #discoverView .horizon-month{
+  min-width:164px;
+  width:164px;
+  max-width:164px;
+  padding-left:12px;
+  padding-right:12px;
+}
+html:not([data-design="classic"]) #discoverView .horizon-month .horizon-count-row,
+html[data-theme="dark"]:not([data-design="classic"]) #discoverView .horizon-month .horizon-count-row{
+  white-space:nowrap;
+  overflow-wrap:normal;
+  word-break:normal;
+}
