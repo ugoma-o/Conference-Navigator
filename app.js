@@ -365,7 +365,7 @@ function showConference(id,track=true){const c=C.find(c=>c.id===id);if(!c)return
  get('closeCalendarExport').addEventListener('click',()=>{exportPanel.classList.add('hidden');exportButton.setAttribute('aria-expanded','false')});
  exportPanel.addEventListener('change',refreshExportCount);
  get('exportSelectedDates').addEventListener('click',()=>downloadConference(c,chosenExportEvents()));
- get('modalPlan').addEventListener('click',()=>{get('planConference').value=c.id;state.plan=null;nav('planner')})}
+ get('modalPlan').addEventListener('click',()=>{selectPlannerTarget(c.id);state.plan=null;nav('planner')})}
 const defaults={retrospective:24,case:8,qi:24,systematic:20,medicaleducation:20,prospective:52};
 const models={retrospective:[['Scope question & find mentor','Agree on study population, feasibility, endpoints and faculty oversight.',0],['Protocol, IRB/determination & data access','Obtain required IRB review/exemption/determination and permissions before regulated extraction.',.14],['Chart abstraction & data quality','Collect approved data, maintain secure records, validate inclusion criteria.',.32],['Analysis & interpretation','Run primary analyses and review limitations with collaborators.',.65],['Draft abstract & coauthor review','Check conference structure, word limits, authorship, originality and embargo.',.81],['Internal review & submit','Allow time for mentor sign-off, disclosures and submission portal checks.',.94]],case:[['Identify teaching point & mentor','Confirm novelty, learning objectives and conference fit.',0],['Consent and de-identification','Follow institutional case-report consent and privacy requirements.',.16],['Clinical narrative & literature review','Assemble chronology, differential and relevant comparisons.',.35],['Draft structured abstract','Match conference category and length/figure requirements.',.60],['Coauthor review & submit','Secure approvals and submit ahead of portal closure.',.89]],qi:[['Define aim & measures','Establish aim statement, balancing measures and stakeholder team.',0],['QI vs research determination','Obtain institutional determination and any required approvals.',.12],['Baseline measurement','Establish reliable data collection and process map.',.28],['Intervention / PDSA cycles','Test changes, monitor implementation and track outcomes.',.45],['Analyze results','Assess improvement, sustainability, limitations and unintended consequences.',.72],['Draft abstract & submit','Focus on intervention, methods, outcomes and conclusions.',.87]],systematic:[['Define PICO and protocol','Align on question, eligibility criteria, team and registration needs.',0],['Search strategy & registration','Develop reproducible search; register protocol where appropriate.',.14],['Screen and extract evidence','Duplicate screening and structured extraction.',.31],['Risk of bias & synthesis','Appraise evidence, consider quantitative pooling if appropriate.',.59],['Draft findings','Ensure conclusions reflect evidence and heterogeneity.',.80],['Coauthor approval & submit','Finalize disclosures, references, category and word count.',.93]],medicaleducation:[['Identify educational gap','Select learning objectives and evaluation strategy.',0],['Approvals and curriculum design','Confirm QI/research pathway and permissions as applicable.',.15],['Implement educational intervention','Deliver curriculum, gather appropriate evaluation data.',.36],['Evaluate outcomes','Analyze learner and implementation outcomes.',.66],['Write innovation abstract','Describe replicability, impact and barriers.',.83],['Coauthor review & submit','Finalize abstract and disclosures.',.94]],prospective:[['Feasibility & funding','Finalize hypothesis, design, site, recruitment and resources.',0],['Protocol & regulatory review','Obtain required approvals, consent processes and registration.',.17],['Recruitment & data collection','Prospective enrollment and prespecified data capture after clearance.',.35],['Data cleaning & analysis','Reconcile missing data and analyze planned endpoints.',.72],['Manuscript-level review','Interpret findings and meet coauthor obligations.',.87],['Finalize abstract & submit','Submit only when required results are sufficiently mature.',.96]]};
 // A planning assumption is never persisted as, or styled as, an official submission deadline.
@@ -568,19 +568,89 @@ function printRoadmapPdf(){
  }catch(err){win.close();showToast('Unable to open the printable roadmap');}
 }
 
+/* The selected conference stays independent from search/filter results so
+   users can explore alternatives without silently changing their roadmap. */
+const plannerConferences=C.filter(c=>c.deadline||c.start);
+let plannerVisibleLimit=9;
+function plannerTargetSort(a,b,sort){
+ const alpha=()=>a.name.localeCompare(b.name);
+ if(sort==='name')return alpha();
+ if(sort==='latest')return (b.start||b.deadline||'').localeCompare(a.start||a.deadline||'')||alpha();
+ const when=c=>sort==='deadline'?(c.deadline||c.lateDeadline||null):(c.start||c.deadline||null);
+ const coming=d=>d&&d>=todayKey?d:'9999-12-31';
+ return coming(when(a)).localeCompare(coming(when(b)))
+     || (when(a)||'9999-12-31').localeCompare(when(b)||'9999-12-31')
+     || alpha();
+}
+function plannerTargetMatches(){
+ const terms=get('planSearch').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+ const specialty=get('planSpecialty').value;
+ const sort=get('planSort').value;
+ return plannerConferences.filter(c=>{
+  if(specialty!=='all'&&c.specialty!==specialty)return false;
+  const haystack=[c.name,c.society,c.specialty,c.city,c.start,c.end,c.deadline,c.lateDeadline,
+   c.start?fmt(c.start,{month:'long',day:'numeric',year:'numeric'}):'',
+   c.deadline?fmt(c.deadline,{month:'long',day:'numeric',year:'numeric'}):''
+  ].filter(Boolean).join(' ').toLocaleLowerCase();
+  return terms.every(term=>haystack.includes(term));
+ }).sort((a,b)=>plannerTargetSort(a,b,sort));
+}
+function renderPlannerTargets(){
+ const active=get('planConference').value;
+ const selected=C.find(c=>c.id===active);
+ const results=plannerTargetMatches();
+ const visible=results.slice(0,plannerVisibleLimit);
+ get('planSelectedConference').innerHTML=selected?
+  `<span class="planner-current-label">SELECTED CONFERENCE</span><strong>${escape(selected.name)}</strong><span>${escape(selected.specialty)} · ${escape(selected.start?dateRange(selected.start,selected.end):'Meeting date not announced')}</span>`:
+  '<span class="planner-current-label">SELECT A CONFERENCE</span>';
+ get('planResultCount').textContent=results.length?
+  `Showing ${visible.length} of ${results.length} matching ${results.length===1?'conference':'conferences'}`:
+  'No conferences match these filters';
+ get('planConferenceMatches').innerHTML=visible.length?visible.map(c=>{
+  const isActive=c.id===active,meeting=c.start?dateRange(c.start,c.end):'Meeting date not announced';
+  const due=c.deadline?`Abstract due: ${fmt(c.deadline)}`:c.lateDeadline?`Late-breaking due: ${fmt(c.lateDeadline)}`:'Abstract deadline not announced';
+  return `<button type="button" class="planner-target-option ${isActive?'selected':''}" data-planner-target="${escape(c.id)}" aria-pressed="${isActive?'true':'false'}"><strong>${escape(c.name)}</strong><span>${escape(c.specialty)} · ${escape(meeting)}</span><small>${escape(due)}</small></button>`;
+ }).join(''):'<p class="planner-target-empty">No matches. Try another specialty or search term.</p>';
+ get('planMoreConferences').classList.toggle('hidden',results.length<=plannerVisibleLimit);
+ get('planMoreConferences').textContent=`Show more conferences (${results.length-visible.length} remaining) ↓`;
+}
+function selectPlannerTarget(id){
+ if(!plannerConferences.some(c=>c.id===id))return;
+ get('planConference').value=id;
+ get('planSearch').value='';
+ get('planSpecialty').value='all';
+ plannerVisibleLimit=9;
+ renderPlannerTargets();
+}
 function initPlanner(){
- const list=C.filter(c=>c.deadline||c.start).sort((a,b)=>deadlineOrder(a).localeCompare(deadlineOrder(b))||a.name.localeCompare(b.name));
- get('planConference').innerHTML=list.map(c=>`<option value="${escape(c.id)}">${escape(c.name)} (${c.deadline?fmt(c.deadline):'Estimated planning available'})</option>`).join('');
- get('planConference').addEventListener('change',generatePlan);
+ const list=[...plannerConferences].sort((a,b)=>plannerTargetSort(a,b,'deadline'));
+ get('planConference').innerHTML=plannerConferences.map(c=>`<option value="${escape(c.id)}">${escape(c.name)}</option>`).join('');
+ get('planSpecialty').innerHTML='<option value="all">All specialties</option>'+
+  [...new Set(plannerConferences.map(c=>c.specialty).filter(Boolean))].sort((a,b)=>a.localeCompare(b)).map(s=>`<option value="${escape(s)}">${escape(s)}</option>`).join('');
+ get('planSearch').addEventListener('input',()=>{plannerVisibleLimit=9;renderPlannerTargets()});
+ get('planSpecialty').addEventListener('change',()=>{plannerVisibleLimit=9;renderPlannerTargets()});
+ get('planSort').addEventListener('change',()=>{plannerVisibleLimit=9;renderPlannerTargets()});
+ get('planClearFilters').addEventListener('click',()=>{get('planSearch').value='';get('planSpecialty').value='all';get('planSort').value='meeting';plannerVisibleLimit=9;renderPlannerTargets()});
+ get('planMoreConferences').addEventListener('click',()=>{plannerVisibleLimit+=9;renderPlannerTargets()});
+ get('planConferenceMatches').addEventListener('click',e=>{
+  const option=e.target.closest('[data-planner-target]');
+  if(!option)return;
+  get('planConference').value=option.dataset.plannerTarget;
+  renderPlannerTargets();
+  generatePlan();
+ });
+ get('planConference').addEventListener('change',()=>{renderPlannerTargets();generatePlan()});
  get('planLeadMonths').addEventListener('change',generatePlan);
  get('planType').addEventListener('change',generatePlan);
-  get('planReadiness').addEventListener('change',generatePlan);
-  get('planPresentation').addEventListener('change',generatePlan);
+ get('planReadiness').addEventListener('change',generatePlan);
+ get('planPresentation').addEventListener('change',generatePlan);
  get('generatePlan').addEventListener('click',generatePlan);
  get('downloadPlanVisual').addEventListener('click',downloadRoadmapVisual);
  get('printPlanPdf').addEventListener('click',printRoadmapPdf);
  get('downloadPlan').addEventListener('click',()=>{if(!state.plan){showToast('Generate a timeline first');return}const items=state.plan.steps.map((s,i)=>({date:s.day,uid:`${state.plan.id}-${i}`,title:`RISE Conference Navigator project milestone — ${s.title}${state.plan.estimated?' (provisional)':''}`,description:state.plan.name+' | '+s.desc+(state.plan.estimated?' | Dates based on assumed submission target, not official deadline.':'')}));downloadFile('RISE_research_roadmap.ics',icsEvents(items),'text/calendar;charset=utf-8');showToast('Research roadmap exported as .ics')});
- const next=C.find(c=>c.deadline&&c.deadline>=todayKey);get('planConference').value=next?next.id:list[0]?.id||'';
+ const next=list.find(c=>c.deadline&&c.deadline>=todayKey)||list.find(c=>c.start&&c.start>=todayKey);
+ get('planConference').value=next?next.id:list[0]?.id||'';
+ renderPlannerTargets();
  generatePlan();
 }
 function generatePlan(){

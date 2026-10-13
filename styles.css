@@ -793,3 +793,32 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
     padding:11px 8px;
   }
 }
+
+/* Research Roadmap — searchable conference directory rather than a long dropdown. */
+.planner-target-picker{margin:0 0 18px}
+.planner-target-heading{margin-top:12px;margin-bottom:9px;font-size:12px;color:#274b61}
+.planner-target-search .form-input{width:100%;font-size:12px;min-height:45px;background:#fff;border-color:#cddfe5;padding:11px 13px}
+.planner-target-search .form-input:focus{border-color:#327fa5;outline:2px solid rgba(32,132,181,.15);outline-offset:1px}
+.planner-target-filters{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:10px 0 12px}
+.planner-target-filters .form-label{display:block;margin:0;font-size:10.5px;line-height:1.5}
+.planner-target-filters select{display:block;width:100%;margin-top:5px;min-width:0;min-height:43px;font-size:11px;padding:8px 7px}
+.planner-current-target{display:flex;flex-direction:column;gap:5px;padding:13px 14px;margin:12px 0;border:1px solid #b8dbe7;border-left:4px solid #1475a5;border-radius:9px;background:#f0f8fc;min-width:0}
+.planner-current-label{font-size:9px;font-weight:900;letter-spacing:.1em;color:#366e8c}
+.planner-current-target strong{font:800 12px/1.4 'Manrope','Segoe UI',sans-serif;color:#173f57;overflow-wrap:anywhere}
+.planner-current-target>span:last-child{font-size:10.5px;line-height:1.5;color:#597f92}
+.planner-target-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:7px;margin:12px 0 8px}
+.planner-target-meta span{font-size:10.5px;color:#70898e;font-weight:650}
+.planner-reset{border:0;padding:5px;background:transparent;color:#076a9f;font-size:10.5px;font-weight:800;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.planner-target-results{display:flex;flex-direction:column;gap:6px;max-height:300px;overflow-y:auto;overscroll-behavior:contain;padding:3px 4px 4px 0;scrollbar-width:thin;scrollbar-color:#bed7df transparent}
+.planner-target-option{width:100%;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;border:1px solid #e0e8e9;background:#fff;color:#274c57;border-radius:9px;padding:12px 13px;cursor:pointer;transition:background .16s,border-color .16s,box-shadow .16s}
+.planner-target-option strong{font:800 11.5px/1.4 'Manrope','Segoe UI',sans-serif;overflow-wrap:anywhere}
+.planner-target-option span{color:#587c87;font-size:10.5px;line-height:1.45}
+.planner-target-option small{color:#7a9294;font-size:10px;line-height:1.4}
+.planner-target-option:hover{background:#f1f8fa;border-color:#a4cfdf}
+.planner-target-option.selected{background:#ebf6fb;border-color:#378dad;box-shadow:inset 3px 0 0 #1780a8}
+.planner-target-option.selected strong{color:#075984}
+.planner-target-option:focus-visible,.planner-more-targets:focus-visible{outline:3px solid #60a7bf;outline-offset:2px}
+.planner-target-empty{font-size:11px;line-height:1.6;color:#6b898e;background:#f6fafb;border:1px dashed #c8d9dd;border-radius:9px;padding:16px;margin:0}
+.planner-more-targets{width:100%;background:#eaf5fa;border:1px solid #c7dfea;border-radius:8px;color:#17638a;padding:11px 9px;margin-top:8px;font-weight:800;font-size:11px;cursor:pointer}
+.planner-more-targets:hover{background:#d9edf7}
+@media(max-width:390px){.planner-target-filters{grid-template-columns:minmax(0,1fr)}}
