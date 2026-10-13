@@ -748,3 +748,48 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   .modal-plan-top .modal-plan-button{min-width:0;width:100%;min-height:54px}
   .modal-official-footer .modal-official-link{font-size:17px;min-height:58px;padding:15px}
 }
+
+/* Conference modal: both primary decisions are immediately visible up top. */
+.modal-content .modal-quick-actions{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:14px;
+  align-items:stretch;
+  margin:0 0 26px;
+}
+.modal-content .modal-quick-official,
+.modal-content .modal-quick-plan{display:flex;min-width:0}
+.modal-content .modal-quick-actions .modal-official-link,
+.modal-content .modal-quick-actions .modal-plan-button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-width:0;
+  min-height:60px;
+  padding:13px 15px;
+  border-radius:10px;
+  font:800 clamp(14px,1.5vw,17px)/1.35 'Manrope','Segoe UI',sans-serif;
+  text-align:center;
+  white-space:normal;
+}
+.modal-content .modal-quick-actions .modal-official-link{
+  border:2px solid #8eb7ce;
+  background:#e5f5fc;
+  color:#075a85;
+  box-shadow:none;
+}
+.modal-content .modal-quick-actions .modal-official-link:hover{
+  background:#d3edf9;
+  color:#034e77;
+  border-color:#006098;
+}
+@media(max-width:540px){
+  .modal-content .modal-quick-actions{gap:8px;margin-bottom:22px}
+  .modal-content .modal-quick-actions .modal-official-link,
+  .modal-content .modal-quick-actions .modal-plan-button{
+    font-size:12px;
+    min-height:60px;
+    padding:11px 8px;
+  }
+}
