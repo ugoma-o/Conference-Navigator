@@ -122,7 +122,7 @@ window.RISE_DATA = {
       "url": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts",
       "guideline": "https://accscientificsession.acc.org/Information-Pages/Frequently-Asked-Questions/Abstract-and-Case-Submission",
       "evidence": "official",
-      "note": "CONFLICT: ACC submission page gives Oct 8; FAQ still gives Oct 6. Official submission page used for display; verify with organizer.",
+      "note": "DATE CONFLICT: ACC.27's official abstract submission page lists October 8, 2026 at 1 p.m. ET, while its FAQ and downloadable submission policies list October 6, 2026 at 1 p.m. ET. The navigator displays October 8 because it is on the current submission-specific page, but this remains disputed; verify the authoritative deadline with the organizer. Submissions are now closed.",
       "flag": "conflict",
       "tags": null,
       "submissionCategoriesVerified": true,
@@ -132,7 +132,19 @@ window.RISE_DATA = {
         "Traditional poster"
       ],
       "presentationPolicy": "The ACC program considers eligible abstracts for oral, moderated poster, and traditional poster placement; presenters are not guaranteed their preferred format.",
-      "presentationSource": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts"
+      "presentationSource": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official-source date conflict audit",
+          "source_quote": "Submission Dates: Aug. 25 - Oct. 8 at 1 p.m. ET on current abstract page; official FAQ states October 6, 2026.",
+          "confidence": "disputed_between_official_pages",
+          "corroborating_sources": [
+            "https://accscientificsession.acc.org/Information-Pages/Frequently-Asked-Questions/Abstract-and-Case-Submission"
+          ]
+        }
+      }
     },
     {
       "id": "ats27",
@@ -1312,10 +1324,10 @@ window.RISE_DATA = {
       "end": "2027-04-12",
       "city": "San Diego, CA",
       "open": "2026-07-22",
-      "deadline": null,
+      "deadline": "2026-10-04",
       "lateOpen": null,
       "lateDeadline": null,
-      "deadlineTime": null,
+      "deadlineTime": "11:59 p.m. ET",
       "limit": 320,
       "limitType": "words",
       "limitNote": "Abstract body maximum 320 words.",
@@ -1330,8 +1342,8 @@ window.RISE_DATA = {
       "url": "https://annualmeeting.aans.org/abstract-center/",
       "guideline": null,
       "evidence": "official",
-      "note": "AANS 2027 official abstract page lists conflicting closing dates: October 1, October 4 (extension and submission FAQ), and October 5, 2026 (older paragraph). Site says submissions closed; deadline left unresolved rather than selecting an unsupported definitive date. Scientific abstracts maximum 320 words.",
-      "flag": "conflict",
+      "note": "AANS extended its 2027 Annual Scientific Meeting abstract submission deadline to October 4, 2026, at 11:59 p.m. ET (submission site closed). The main Abstract Center headings and submission FAQ confirm October 4 as the extension; older page copy also mentions October 1 (original close) and October 5, but these are superseded by the posted extension. Scientific abstracts maximum 320 words.",
+      "flag": null,
       "tags": null,
       "submissionCategoriesVerified": true,
       "presentationFormats": [
@@ -1340,7 +1352,15 @@ window.RISE_DATA = {
         "Oral paper poster",
         "ePoster"
       ],
-      "fieldSources": {},
+      "fieldSources": {
+        "deadline": {
+          "url": "https://annualmeeting.aans.org/abstract-center/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official 2027 meeting audit",
+          "source_quote": "Abstract Center Extension Sunday, October 4, 2026 – CLOSED. Authors may edit before the submission deadline, October 4, 2026, 11:59PM ET.",
+          "confidence": "explicit_final_extension"
+        }
+      },
       "additionalSources": []
     },
     {
@@ -5365,8 +5385,8 @@ window.RISE_DATA = {
       "name": "American Society of Neurorehabilitation Annual Meeting 2027",
       "society": "American Society of Neurorehabilitation",
       "specialty": "Physical Medicine & Rehabilitation",
-      "start": null,
-      "end": null,
+      "start": "2027-03-16",
+      "end": "2027-03-18",
       "city": "Durham, NC",
       "open": null,
       "deadline": "2026-11-29",
@@ -5386,7 +5406,7 @@ window.RISE_DATA = {
       "url": "https://www.asnr.com/asnr2027-poster-abstracts/",
       "guideline": null,
       "evidence": "official",
-      "note": "Legitimate American Society of Neurorehabilitation scientific meeting (asnr.com), distinct from the American Society of Neuroradiology (asnr.org). Abstract deadline confirmed for November 29, 2026, but 2027 meeting dates not yet independently established; site indicates Durham, NC. Results must be included; no late submissions.",
+      "note": "American Society of Neurorehabilitation (asnr.com), distinct from the American Society of Neuroradiology (asnr.org). ASNR's official 2027 announcements give March 16–18, 2027 at Durham Convention Center, Durham, NC. Poster abstract deadline is November 29, 2026 at 11:59 p.m. CST. Results are required; no late submissions.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": true,
@@ -5399,6 +5419,20 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE official 2027 society verification",
           "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "start": {
+          "url": "https://bsky.app/profile/asnrehab.bsky.social",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official ASNR 2027 announcement corroborated by WFNR event calendar",
+          "source_quote": "ASNR2027 March 16-18, 2027 Durham Convention Center; ASNR Annual Meeting",
+          "confidence": "explicit_meeting_dates"
+        },
+        "end": {
+          "url": "https://bsky.app/profile/asnrehab.bsky.social",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official ASNR 2027 announcement corroborated by WFNR event calendar",
+          "source_quote": "ASNR2027 March 16-18, 2027 Durham Convention Center; ASNR Annual Meeting",
+          "confidence": "explicit_meeting_dates"
         }
       }
     },
