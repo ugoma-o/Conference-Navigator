@@ -377,16 +377,16 @@ html[data-theme="dark"] .clear-filters-button:hover{background:#23485b}
    its own event card's top edge instead of continuing underneath it.
    The "you are here" guide stops before the dated milestone rail. */
 .v7-roadmap .v6-guide.today{
-  bottom:calc(var(--event-rail-height) + 9px);
+  bottom:calc(var(--event-rail-height) - 8px);
 }
 .v7-roadmap .v6-guide.opening{
-  bottom:calc(var(--event-rail-height) - 9px);
+  bottom:calc(var(--event-rail-height) - 17px);
 }
 .v7-roadmap .v6-guide.deadline{
-  bottom:calc(var(--event-rail-height) - (2 * var(--event-lane-step) + 9px));
+  bottom:calc(var(--event-rail-height) - var(--event-lane-step) - var(--event-lane-step) - 17px);
 }
 .v7-roadmap .v6-guide.conference{
-  bottom:calc(var(--event-rail-height) - (3 * var(--event-lane-step) + 9px));
+  bottom:calc(var(--event-rail-height) - var(--event-lane-step) - var(--event-lane-step) - var(--event-lane-step) - 17px);
 }
 @media(max-width:540px){
   .v7-roadmap{
