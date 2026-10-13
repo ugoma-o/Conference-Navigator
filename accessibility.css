@@ -82,9 +82,12 @@ button,select,input,textarea{max-width:100%}
 #calendarView .calendar-container .event-pill,
 .event-pill{font-size:13px;line-height:1.35;min-height:28px;padding:5px 6px}
 .more-events{font-size:13px;line-height:1.4;min-height:25px}
+/* Multi-day meeting ribbons intentionally span adjacent calendar cells.
+   Override the global max-width:100% applied to buttons for accessibility,
+   which otherwise clips the ribbon to its first day's cell. */
 #calendarView .calendar-grid .meeting-ribbon,
 .calendar-grid .meeting-ribbon{font-size:13px;height:27px;line-height:27px;padding:0 6px;
- bottom:calc(8px + var(--meeting-lane)*30px)}
+ bottom:calc(8px + var(--meeting-lane)*30px);max-width:none}
 .calendar-rail-head strong,.calendar-events-head strong{font-size:17px;line-height:1.4}
 .calendar-rail-head span,.calendar-rail-help,.calendar-empty-month,.calendar-events-head span,
 .calendar-main-caption>span,.calendar-footnote,.agenda-date,.agenda-kind,
