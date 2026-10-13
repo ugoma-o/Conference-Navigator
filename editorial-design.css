@@ -1790,3 +1790,13 @@ html[data-theme="dark"]:not([data-design="classic"]) .modal-official-footer .mod
 @media(max-width:650px){
   .navigator-back{margin-bottom:14px;padding:9px 13px;min-height:44px}
 }
+
+/* Funding award provenance: show the date the award details were reviewed. */
+.award-verified{
+  margin:3px 0 0;
+  font-size:12px;
+  line-height:1.5;
+  font-weight:650;
+  color:var(--ed-muted,#607b87);
+}
+html[data-theme="dark"] .award-verified{color:var(--ed-muted,#aac2ce)}
