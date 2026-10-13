@@ -122,8 +122,10 @@ function nav(view,track=true){
  if(view==='planner')renderPlan();
 }
 document.querySelectorAll('[data-view]').forEach(btn=>btn.addEventListener('click',()=>nav(btn.dataset.view)));
+const MOBILE_LIST_ONLY=window.matchMedia('(max-width: 750px)');
 function setExploreMode(mode,track=true){
  if(mode!=='list'&&mode!=='calendar')return;
+ if(MOBILE_LIST_ONLY.matches)mode='list';
  const changed=state.exploreMode!==mode;
  state.exploreMode=mode;
  const calendar=mode==='calendar';
@@ -145,6 +147,12 @@ function setExploreMode(mode,track=true){
  if(changed&&track&&state.view==='discover')recordRoute();
 }
 document.querySelectorAll('[data-explore-mode]').forEach(btn=>btn.addEventListener('click',()=>setExploreMode(btn.dataset.exploreMode)));
+MOBILE_LIST_ONLY.addEventListener('change',event=>{
+ if(event.matches&&state.exploreMode==='calendar'){
+  setExploreMode('list',false);
+  recordRoute(true);
+ }
+});
 
 get('menuBtn').addEventListener('click',()=>{get('sidebar').classList.add('open');get('mobileOverlay').classList.add('open')});get('mobileOverlay').addEventListener('click',()=>{get('sidebar').classList.remove('open');get('mobileOverlay').classList.remove('open')});
 function initSummary(){get('asOfLabel').textContent='Data snapshot · '+fmt(asOf);}
@@ -249,6 +257,9 @@ const fundingSpecialties=['All specialties',...new Set(A.flatMap(a=>a.specialtie
 function awardSpecialties(a){return a.specialties?.length?a.specialties:(a.conferenceId?[C.find(c=>c.id===a.conferenceId)?.specialty].filter(Boolean):['All specialties']);}
 function awardMatchesSpecialty(a,selected){const terms=awardSpecialties(a);return !selected.length||terms.includes('All specialties')||selected.some(s=>terms.includes(s));}
 function setFundingSpecialty(s){state.fundingSpecialties=toggleSelectedSpecialty(state.fundingSpecialties,s);renderFunding();}
+get('clearFundingSpecialties').addEventListener('click',()=>{
+ if(state.fundingSpecialties.length)setFundingSpecialty('All specialties');
+});
 function navigateToAward(id){const a=A.find(a=>a.id===id);if(!a)return;state.funding='all';state.fundingSpecialties=awardSpecialties(a).filter(s=>s!=='All specialties').slice(0,1);nav('funding');setTimeout(()=>{const card=document.querySelector('[data-award-card="'+id+'"]');if(card){card.scrollIntoView({behavior:'smooth',block:'center'});card.classList.add('funding-highlight');setTimeout(()=>card.classList.remove('funding-highlight'),2600)}},60)}
 function matchesSelectedSpecialty(s,selected){return !selected.length||selected.includes(s)}
 function toggleSelectedSpecialty(selected,s){if(s==='All specialties')return [];return selected.includes(s)?selected.filter(x=>x!==s):[...selected,s]}
@@ -259,10 +270,14 @@ function initSpecialties(){
  get('specialtyChips').innerHTML=specialtyButtons(specialties,state.specialties,'data-specialty');
  get('mobileSpecialtyOptions').innerHTML=specialtyButtons(specialties,state.specialties,'data-specialty');
  get('mobileSpecialtySummary').textContent='Specialties: '+specialtyLabel(state.specialties);
+ get('clearConferenceSpecialties').classList.toggle('hidden',!state.specialties.length);
  get('calendarSpecialty').innerHTML=`<option value="All">All specialties</option>`+(state.specialties.length>1?`<option value="Selected">${state.specialties.length} selected specialties</option>`:'')+specialties.filter(s=>s!=='All specialties').map(s=>`<option value="${escape(s)}">${escape(s)}</option>`).join('');
  syncCalendarSpecialty();
 }
 function selectSpecialty(s){state.specialties=toggleSelectedSpecialty(state.specialties,s);initSpecialties();renderHorizon();renderDirectory();if(state.exploreMode==='calendar')renderCalendar();}
+get('clearConferenceSpecialties').addEventListener('click',()=>{
+ if(state.specialties.length)selectSpecialty('All specialties');
+});
 get('specialtyChips').addEventListener('click',e=>{const t=e.target.closest('[data-specialty]');if(t)selectSpecialty(t.dataset.specialty)});get('mobileSpecialtyOptions').addEventListener('click',e=>{const t=e.target.closest('[data-specialty]');if(t)selectSpecialty(t.dataset.specialty)});
 function visibleConferences(){let list=C.filter(c=>matchesSelectedSpecialty(c.specialty,state.specialties)).filter(c=>!state.search||[c.name,c.society,c.specialty,c.city,(c.types||[]).join(' ')].join(' ').toLowerCase().includes(state.search));list=list.filter(c=>{if(state.status==='all')return true;if(state.status==='active')return status(c)[1]!=='closed'&&(!c.end||c.end>=todayKey);if(state.status==='closed')return status(c)[1]==='closed'||!!c.end&&c.end<todayKey;if(state.status==='upcoming')return (!!c.deadline&&c.deadline>=todayKey)||!!c.lateDeadline&&c.lateDeadline>=todayKey;if(state.status==='open')return (!!c.deadline&&c.deadline>=todayKey&&!!c.open&&c.open<=todayKey)||!!c.lateDeadline&&c.lateDeadline>=todayKey&&!!c.lateOpen&&c.lateOpen<=todayKey;if(state.status==='unannounced')return !c.deadline&&!c.lateDeadline;if(state.status==='conflict')return !!c.flag;return true});list=list.filter(c=>matchesMonth(c,state.monthKey,state.dateTypes));list.sort((a,b)=>state.sort==='name'?a.name.localeCompare(b.name):state.sort==='month'&&(state.monthKey||state.dateTypes.length>0)?(selectedDate(a).localeCompare(selectedDate(b))||a.name.localeCompare(b.name)):state.sort==='meeting'?((a.start||a.deadline||'9999').localeCompare(b.start||b.deadline||'9999')||a.name.localeCompare(b.name)):(deadlineOrder(a).localeCompare(deadlineOrder(b))||(a.start||'9999').localeCompare(b.start||'9999')));return list}
 function card(c){const st=status(c);const monthEvents=monthMatches(c,state.monthKey,state.dateTypes);const related=monthEvents.length?`<div class="month-match" aria-label="Dates matching the selected month"><span class="month-match-heading">MATCHING ${escape(state.monthKey?date(state.monthKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'}):state.dateTypes.map(t=>DATE_TYPE_NAMES[t]).join(', ').toUpperCase())}</span>${monthEvents.map(ev=>`<span class="month-match-item month-match-${ev.kind}"><strong>${escape(ev.label)}:</strong> ${escape(ev.display)}</span>`).join('')}</div>`:'';return `<article class="conference-card" data-conference="${c.id}" tabindex="0" role="button" aria-label="View ${escape(c.name)} details"><div class="row-identity"><div class="conf-titlewrap"><div class="mini-specialty">${escape(c.specialty)} · ${escape(c.society)}</div><div class="conf-title">${escape(c.name)}</div><span class="status-pill ${st[1]}">${escape(st[0])}</span>${related}</div></div><div class="row-date"><span class="row-label">ABSTRACT DEADLINE</span><strong>${escape(fmt(c.deadline))}</strong><small>${escape(c.open?'Opens '+fmt(c.open):c.deadline?'See submission requirements':'Awaiting official dates')}</small></div><div class="row-date"><span class="row-label">CONFERENCE</span><strong>${escape(dateRange(c.start,c.end))}</strong><small>${escape(c.city||'Location to be announced')}</small></div><span class="row-arrow" aria-hidden="true">→</span></article>`}
@@ -676,6 +691,7 @@ function renderFunding(){
  get('fundingSpecialtyChips').innerHTML=specialtyButtons(fundingSpecialties,spec,'data-fund-specialty');
  get('fundingMobileSpecialtyOptions').innerHTML=specialtyButtons(fundingSpecialties,spec,'data-fund-specialty');
  get('fundingMobileSpecialtySummary').textContent='Specialties: '+specialtyLabel(spec);
+ get('clearFundingSpecialties').classList.toggle('hidden',!spec.length);
  get('fundingSelectedSpecialty').textContent=specialtyLabel(spec);
  document.querySelectorAll('[data-funding]').forEach(x=>x.classList.toggle('active',x.dataset.funding===state.funding));
  const list=A.filter(a=>awardMatchesSpecialty(a,spec)&&(state.funding==='all'||a.category===state.funding)&&(get('fundingShowClosed')?.checked||!a.deadline||a.deadline>=todayKey));
@@ -778,6 +794,7 @@ function restoreRoute(route){
  const view=NAV_VIEWS.includes(route?.view)?route.view:'discover';
  nav(view,false);
  setExploreMode(view==='discover'&&route?.mode==='calendar'?'calendar':state.exploreMode,false);
+ if(MOBILE_LIST_ONLY.matches&&route?.mode==='calendar')recordRoute(true);
  if(route?.modal&&C.some(c=>c.id===route.modal))showConference(route.modal,false);
  updateBackButton();
 }
