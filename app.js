@@ -794,8 +794,8 @@ function restoreRoute(route){
  const view=NAV_VIEWS.includes(route?.view)?route.view:'discover';
  nav(view,false);
  setExploreMode(view==='discover'&&route?.mode==='calendar'?'calendar':state.exploreMode,false);
- if(MOBILE_LIST_ONLY.matches&&route?.mode==='calendar')recordRoute(true);
  if(route?.modal&&C.some(c=>c.id===route.modal))showConference(route.modal,false);
+ if(MOBILE_LIST_ONLY.matches&&route?.mode==='calendar')recordRoute(true);
  updateBackButton();
 }
 window.addEventListener('popstate',event=>restoreRoute(event.state?.riseNavigator||routeFromHash()));
