@@ -3909,8 +3909,8 @@ window.RISE_DATA = {
       "url": "https://naemsp.org/2027-annual-meeting/",
       "guideline": "https://naemsp.org/annual-meeting/call-for-abstracts/",
       "evidence": "official",
-      "note": "2027 abstract deadline date is confirmed as September 1, 2026. NAEMSP's official page has conflicting cutoffs: its opening instructions state 11:55 PM ET, while the electronic submission rules state 11:59 PM ET. Time deliberately left unresolved; the earlier 11:55 PM would have been safest. Research, quality improvement and education innovation abstracts were eligible.",
-      "flag": "conflict",
+      "note": "The regular research, quality-improvement, and EMS education innovation abstract deadline was September 1, 2026 (date confirmed; submissions closed). The organizer's page inconsistently lists 11:55 p.m. ET and 11:59 p.m. ET, so no submission time is displayed. Meeting January 11–16, 2027, in Austin.",
+      "flag": null,
       "tags": null,
       "submissionCategoriesVerified": true,
       "presentationFormats": [
@@ -3932,9 +3932,10 @@ window.RISE_DATA = {
         },
         "deadline": {
           "url": "https://naemsp.org/annual-meeting/call-for-abstracts/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE review of official 2027 organizer pages",
-          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official meeting-source review",
+          "source_quote": "The submission site will automatically close at 11:55 PM ET on Tuesday, September 1, 2026. Electronic Submission Rules list 11:59 PM ET on the same date.",
+          "confidence": "date_confirmed_time_conflicted"
         }
       },
       "additionalSources": []
