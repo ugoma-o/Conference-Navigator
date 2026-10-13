@@ -1706,3 +1706,58 @@ html[data-theme="dark"]:not([data-design="classic"]) #discoverView .horizon-mont
   overflow-wrap:normal;
   word-break:normal;
 }
+
+/* Conference modal actions — plan at the top, official site across the bottom. */
+html:not([data-design="classic"]) .modal-content .modal-plan-top,
+html[data-theme="dark"]:not([data-design="classic"]) .modal-content .modal-plan-top{
+  justify-content:center;
+  margin-bottom:27px;
+}
+html:not([data-design="classic"]) .modal-plan-top .modal-plan-button,
+html[data-theme="dark"]:not([data-design="classic"]) .modal-plan-top .modal-plan-button{
+  min-width:min(100%,370px);
+  font-size:19px;
+  font-weight:800;
+  min-height:57px;
+  border-radius:9px;
+  line-height:1.3;
+}
+html:not([data-design="classic"]) .modal-content .modal-official-footer,
+html[data-theme="dark"]:not([data-design="classic"]) .modal-content .modal-official-footer{
+  border-top:1px solid var(--ed-rule);
+  margin-top:26px;
+  padding-top:22px;
+}
+html:not([data-design="classic"]) .modal-official-footer .modal-official-link,
+html[data-theme="dark"]:not([data-design="classic"]) .modal-official-footer .modal-official-link{
+  display:flex;
+  width:100%;
+  min-height:64px;
+  border:2px solid var(--ed-accent);
+  background:var(--ed-paper-alt);
+  color:var(--ed-heading);
+  border-radius:9px;
+  padding:16px 22px;
+  font-size:19px;
+  font-weight:800;
+  line-height:1.4;
+}
+html:not([data-design="classic"]) .modal-official-footer .modal-official-link:hover,
+html[data-theme="dark"]:not([data-design="classic"]) .modal-official-footer .modal-official-link:hover{
+  background:var(--ed-hover);
+  border-color:var(--ed-accent-strong);
+}
+@media(max-width:540px){
+  html:not([data-design="classic"]) .modal-plan-top .modal-plan-button,
+  html[data-theme="dark"]:not([data-design="classic"]) .modal-plan-top .modal-plan-button{
+    width:100%;
+    min-width:0;
+    font-size:18px;
+  }
+  html:not([data-design="classic"]) .modal-official-footer .modal-official-link,
+  html[data-theme="dark"]:not([data-design="classic"]) .modal-official-footer .modal-official-link{
+    font-size:17px;
+    min-height:58px;
+    padding:15px;
+  }
+}
