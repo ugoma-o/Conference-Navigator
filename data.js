@@ -2931,6 +2931,7 @@ window.RISE_DATA = {
       "end": "2027-01-13",
       "city": "San Diego, CA",
       "open": null,
+      "openMonth": "2026-06",
       "deadline": "2026-08-27",
       "lateOpen": null,
       "lateDeadline": null,
@@ -2943,7 +2944,7 @@ window.RISE_DATA = {
       "url": "https://acnp.org/annual-meeting/",
       "guideline": null,
       "evidence": "official",
-      "note": "Highly prestigious psychopharmacology meeting, but ACNP nonmembers require an invitation to attend. Not generally open for trainee registration. The ACNP 2027 general poster deadline was August 27, 2026 at 5:00 p.m. CT. Separate Promising Targets abstracts are due October 28, 2026 at 5:00 p.m. CT; that is NOT an extension of general poster submissions. Attendance/invitation requirements apply.",
+      "note": "Highly prestigious psychopharmacology meeting, but ACNP nonmembers require an invitation to attend. Not generally open for trainee registration. The ACNP 2027 general poster deadline was August 27, 2026 at 5:00 p.m. CT. Separate Promising Targets submissions open October 14, 2026, and abstracts are due October 28, 2026 at 5:00 p.m. CT; that is NOT an extension of general poster submissions. Attendance/invitation requirements apply.",
       "flag": null,
       "tags": [
         "invitation-only"
@@ -2969,6 +2970,13 @@ window.RISE_DATA = {
           "verified_by": "RISE manual official-source audit",
           "source_quote": "The final deadline to submit was August 27, 2026 at 5:00pm Central time.",
           "confidence": "explicit_statement"
+        },
+        "openMonth": {
+          "url": "https://acnp.org/annual-meeting/submissions/",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE official-source review",
+          "source_quote": "The College started accepting poster abstracts for consideration for the January 2027 Annual Meeting in June.",
+          "precision": "month"
         }
       },
       "researchOpportunity": "Restricted participation",
