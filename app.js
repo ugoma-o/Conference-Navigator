@@ -251,7 +251,6 @@ function clearAllConferenceFilters(){
 get('clearAllFilters').addEventListener('click',clearAllConferenceFilters);
 get('horizonStrip').addEventListener('click',e=>{const btn=e.target.closest('[data-outlook-month]');if(!btn)return;selectOutlookMonth(state.monthKey===btn.dataset.outlookMonth?null:btn.dataset.outlookMonth)});
 get('clearMonth').addEventListener('click',()=>selectOutlookMonth(null));
-get('outlookPrev').addEventListener('click',()=>get('horizonScroll').scrollBy({left:-530,behavior:'smooth'}));get('outlookNext').addEventListener('click',()=>get('horizonScroll').scrollBy({left:530,behavior:'smooth'}));
 const specialties=['All specialties',...new Set(C.map(c=>c.specialty))].sort((a,b)=>a==='All specialties'?-1:b==='All specialties'?1:a.localeCompare(b));
 const fundingSpecialties=['All specialties',...new Set(A.flatMap(a=>a.specialties||[]).filter(s=>s!=='All specialties'))].sort((a,b)=>a==='All specialties'?-1:b==='All specialties'?1:a.localeCompare(b));
 function awardSpecialties(a){return a.specialties?.length?a.specialties:(a.conferenceId?[C.find(c=>c.id===a.conferenceId)?.specialty].filter(Boolean):['All specialties']);}
