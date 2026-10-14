@@ -1,6 +1,6 @@
 /* Curated snapshot — verify dates against society sources. */
 window.RISE_DATA = {
-  "asOf": "2026-10-12",
+  "asOf": "2026-10-13",
   "conferences": [
     {
       "id": "aan27",
@@ -1054,7 +1054,7 @@ window.RISE_DATA = {
       "url": "https://accfl.org/Fit-Forum",
       "guideline": "https://accfl.org/events",
       "evidence": "official",
-      "note": "Eligibility may be focused on fellows in training rather than residents. Meeting location and dates confirmed from the organizer's current published schedule.",
+      "note": "Eligibility may be focused on fellows in training rather than residents. Meeting location and dates confirmed from the organizer's current published schedule. FIT Forum 2027 scientific and case study abstract competition: opening month 2026-11 confirmed; exact day not published.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -1074,8 +1074,17 @@ window.RISE_DATA = {
           "url": "https://accfl.org/events",
           "checked_at": "2026-10-10",
           "verified_by": "Official organizer page"
+        },
+        "openMonth": {
+          "url": "https://accfl.org/Fit-Forum",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE official-source opening-date audit",
+          "source_quote": "The submission site for the winter meeting opens November 2026.",
+          "confidence": "official_month_only",
+          "precision": "month"
         }
-      }
+      },
+      "openMonth": "2026-11"
     },
     {
       "id": "saem27",
@@ -1135,11 +1144,22 @@ window.RISE_DATA = {
       "url": "https://aapexperience.org/call-for-educational-content/",
       "guideline": null,
       "evidence": "official",
-      "note": "Abstract submission expected to open February 2027 (exact day unannounced); April 9 deadline confirmed.",
+      "note": "Abstract submission expected to open February 2027 (exact day unannounced); April 9 deadline confirmed. AAP 2027 National Conference abstracts, not the separate plenary session proposal call: opening month 2027-02 confirmed; exact day not published.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "openMonth": "2027-02",
+      "fieldSources": {
+        "openMonth": {
+          "url": "https://aapexperience.org/call-for-educational-content/",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE official-source opening-date audit",
+          "source_quote": "The Call for Abstracts will open February 2027.",
+          "confidence": "official_month_only",
+          "precision": "month"
+        }
+      }
     },
     {
       "id": "acog27",
@@ -1495,7 +1515,7 @@ window.RISE_DATA = {
       "start": "2027-03-19",
       "end": "2027-03-23",
       "city": "San Francisco, CA",
-      "open": null,
+      "open": "2026-06-10",
       "deadline": "2026-09-02",
       "lateOpen": null,
       "lateDeadline": null,
@@ -1511,7 +1531,7 @@ window.RISE_DATA = {
       "url": "https://www.aad.org/member/meetings-education/am27",
       "guideline": null,
       "evidence": "official",
-      "note": "The AAD 2027 official meeting page lists its abstract proposal deadline as September 2, 2026. Confirm the cutoff time and category with the organizer.",
+      "note": "The AAD 2027 official meeting page lists its abstract proposal deadline as September 2, 2026. Confirm the cutoff time and category with the organizer. Regular 2027 AAD Annual Meeting abstract programs (Gross & Microscopic, Resident/Fellows, and Poster Exhibit): submissions open 2026-06-10.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -1521,6 +1541,13 @@ window.RISE_DATA = {
           "url": "https://www.aad.org/member/meetings-education/am27",
           "checked_at": "2026-10-10",
           "verified_by": "Official organizer page"
+        },
+        "open": {
+          "url": "https://www.aad.org/member/meetings-education/am27/faculty/abstracts",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE official-source opening-date audit",
+          "source_quote": "Submission timeline: June 10 - Sept. 2, 2026, at 11:59 a.m. CST",
+          "confidence": "explicit_statement"
         }
       }
     },
@@ -3207,7 +3234,7 @@ window.RISE_DATA = {
       "start": "2027-04-01",
       "end": "2027-04-04",
       "city": "Kuala Lumpur, Malaysia",
-      "open": null,
+      "open": "2026-06-22",
       "deadline": "2026-10-28",
       "lateOpen": null,
       "lateDeadline": null,
@@ -3220,7 +3247,7 @@ window.RISE_DATA = {
       "url": "https://www.theisn.org/wcn/",
       "guideline": null,
       "evidence": "official",
-      "note": "Flagship World Congress of Nephrology. Abstract deadline Oct 28, 2026; travel-grant application deadline Oct 31.",
+      "note": "Flagship World Congress of Nephrology. Abstract deadline Oct 28, 2026; travel-grant application deadline Oct 31. World Congress of Nephrology 2027 abstract submissions: submissions open 2026-06-22.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -3242,6 +3269,13 @@ window.RISE_DATA = {
           "url": "https://www.theisn.org/wcn/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE official abstract page audit"
+        },
+        "open": {
+          "url": "https://www.theisn.org/wcn/abstracts/",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE official-source opening-date audit",
+          "source_quote": "Important dates: Submission opens June 22, 2026; Submission deadline October 28, 2026",
+          "confidence": "explicit_statement"
         }
       }
     },
