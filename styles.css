@@ -943,3 +943,22 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   }
   #discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .row-arrow{right:10px;top:15px}
 }
+
+/* Arrow-free presentation: use readable labels on actual navigation controls. */
+.cal-month-nav .icon-button{
+  width:auto;
+  min-width:53px;
+  height:34px;
+  padding:7px 11px;
+  font-size:12px;
+  font-weight:750;
+  line-height:1;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card.conference-card-timeline{
+  padding-right:20px;
+}
+@media(max-width:620px){
+  #discoverView #discoverListPanel #conferenceGrid .conference-card.conference-card-timeline{
+    padding-right:16px;
+  }
+}
