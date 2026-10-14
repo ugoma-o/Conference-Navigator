@@ -286,7 +286,7 @@ function abstractOpeningDisplay(c){
  if(c.open)return fmt(c.open);
  if(c.openMonth&&/^20\d{2}-(0[1-9]|1[0-2])$/.test(c.openMonth))
   return fmt(c.openMonth+'-01',{month:'long',year:'numeric'});
- return c.lateOpen?fmt(c.lateOpen):c.deadline?'Opening date not published':'Not announced';
+ return c.deadline?'Opening date not published':c.lateOpen?fmt(c.lateOpen):'Not announced';
 }
 function card(c){
  const st=status(c);
@@ -295,7 +295,7 @@ function card(c){
  const monthEvents=monthMatches(c,state.monthKey,state.dateTypes).filter(ev=>
    ev.field!=='meeting'&&
    !(ev.field==='open'&&c.open)&&
-   !(ev.field==='lateOpen'&&!c.open)&&
+   !(ev.field==='lateOpen'&&!c.deadline&&!c.open)&&
    !(ev.field==='deadline'&&c.deadline)&&
    !(ev.field==='lateDeadline'&&!c.deadline)
  );
@@ -303,7 +303,7 @@ function card(c){
  return `<article class="conference-card conference-card-timeline" data-conference="${escape(c.id)}" tabindex="0" role="button" aria-label="View ${escape(c.name)} details">
   <div class="conf-card-heading"><div class="mini-specialty">${escape(c.specialty)} · ${escape(c.society)}</div><div class="conf-card-name-row"><div class="conf-title">${escape(c.name)}</div><span class="status-pill ${st[1]}">${escape(st[0])}</span></div></div>
   <div class="conf-card-dates">
-   <div class="row-date conf-open-date"><span class="row-label">ABSTRACT OPENS</span><strong>${escape(openingLabel)}</strong>${c.openMonth&&!c.open?'<small>Month confirmed; day not published</small>':!c.open&&c.lateOpen?'<small>Late-breaking submissions</small>':''}</div>
+   <div class="row-date conf-open-date"><span class="row-label">${c.deadline?'ABSTRACT OPENS':c.lateDeadline?'LATE-BREAKING OPENS':'ABSTRACT OPENS'}</span><strong>${escape(openingLabel)}</strong>${c.openMonth&&!c.open?'<small>Month confirmed; day not published</small>':!c.deadline&&!c.open&&c.lateOpen?'<small>Late-breaking submissions</small>':''}</div>
    <div class="row-date conf-deadline-date"><span class="row-label">${c.deadline?'ABSTRACT DEADLINE':c.lateDeadline?'LATE-BREAKING DEADLINE':'ABSTRACT DEADLINE'}</span><strong>${escape(fmt(deadlineDate))}</strong></div>
    <div class="row-date conf-meeting-date"><span class="row-label">CONFERENCE</span><strong>${escape(dateRange(c.start,c.end))}</strong><small>${escape(c.city||'Location to be announced')}</small></div>
   </div>
