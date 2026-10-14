@@ -825,3 +825,121 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 
 /* Keep conference browsing compact on narrow screens; results scroll inside the picker. */
 @media(max-width:650px){.planner-target-results{max-height:145px}}
+
+/* Conference directory cards: full-width identity, then three equal date columns.
+   Scoped specificity intentionally beats classic, accessible, and editorial grids. */
+#discoverView #discoverListPanel #conferenceGrid .conference-card.conference-card-timeline{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  position:relative;
+  align-items:stretch;
+  gap:14px;
+  padding-right:36px;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-heading{
+  grid-column:1;
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  min-width:0;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .mini-specialty{
+  display:block;
+  font-size:12px;
+  font-weight:750;
+  line-height:1.4;
+  letter-spacing:.055em;
+  color:var(--ed-muted,#577886);
+  text-transform:uppercase;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-name-row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  align-items:baseline;
+  min-width:0;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-title{
+  font-size:clamp(16px,1.45vw,19px);
+  font-weight:800;
+  line-height:1.38;
+  margin:0;
+  min-width:0;
+  color:var(--ed-heading,#163d56);
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .status-pill{
+  flex:none;
+  margin:0;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-dates{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+  grid-column:1;
+  padding-top:13px;
+  border-top:1px solid var(--ed-rule,#e4ecef);
+  min-width:0;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-dates .row-date{
+  display:flex;
+  grid-column:auto;
+  grid-row:auto;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:6px;
+  min-width:0;
+  padding:0 15px;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-dates .row-date:first-child{padding-left:0}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-dates .row-date + .row-date{border-left:1px solid var(--ed-rule,#e4ecef)}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .row-label{
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:.055em;
+  line-height:1.4;
+  color:var(--ed-muted,#6b8793);
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .row-date strong{
+  font-size:clamp(13px,1.2vw,16px);
+  font-weight:750;
+  line-height:1.45;
+  overflow-wrap:break-word;
+  color:var(--ed-heading,#163d56);
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .row-date small{
+  font-size:12px;
+  line-height:1.45;
+  color:var(--ed-muted,#6b8793);
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-extra{
+  grid-column:1;
+  min-width:0;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .month-match{
+  margin-top:0;
+  padding-top:11px;
+}
+#discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .row-arrow{
+  position:absolute;
+  right:15px;
+  top:17px;
+  grid-column:auto;
+  grid-row:auto;
+  font-size:20px;
+}
+@media(max-width:620px){
+  #discoverView #discoverListPanel #conferenceGrid .conference-card.conference-card-timeline{gap:12px;padding-right:23px}
+  #discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-dates{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    row-gap:15px;
+  }
+  #discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-dates .row-date{padding:0 9px}
+  #discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-dates .row-date:first-child{padding-left:0}
+  #discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .conf-card-dates .row-date.conf-meeting-date{
+    grid-column:1/-1;
+    padding:11px 0 0;
+    border-left:0;
+    border-top:1px solid var(--ed-rule,#e4ecef);
+  }
+  #discoverView #discoverListPanel #conferenceGrid .conference-card-timeline .row-arrow{right:10px;top:15px}
+}
