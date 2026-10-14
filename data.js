@@ -3591,7 +3591,7 @@ window.RISE_DATA = {
       "start": "2027-02-18",
       "end": "2027-02-20",
       "city": "New Orleans, LA",
-      "open": null,
+      "open": "2026-06-26",
       "deadline": "2026-11-02",
       "lateOpen": null,
       "lateDeadline": null,
@@ -3602,9 +3602,12 @@ window.RISE_DATA = {
       "fee": null,
       "types": [],
       "url": "https://annualmeeting.aaaai.org/",
+      "additionalSources": [
+        "https://annualmeeting.aaaai.org/attendee/full-meeting-timeline"
+      ],
       "guideline": null,
       "evidence": "official",
-      "note": "Research-focused AAAAI Discovery conference held Feb 18–20, 2027 alongside the Annual Meeting. Abstract deadline Nov 2, 2026; verify distinction from main AAAAI submission.",
+      "note": "Research-focused AAAAI Discovery conference held Feb 18–20, 2027 alongside the Annual Meeting. Discovery submissions opened June 26, 2026 (official annual meeting timeline image); Discovery abstract deadline Nov 2, 2026. This opening is explicitly shared with main meeting abstracts and case reports; it is not the October 19 late-breaking submission opening.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -3627,6 +3630,14 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 abstract submission dates"
+        },
+        "open": {
+          "url": "https://annualmeeting.aaaai.org/UserFiles/image/AMTimeline-Member_v2.png",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE manual review of official 2027 timeline graphic",
+          "source_quote": "June 26, 2026 — Abstract sites open (AM Abstracts, Discovery, Case Reports)",
+          "confidence": "official_visual_timeline",
+          "precision": "day"
         }
       }
     },
