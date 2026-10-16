@@ -113,7 +113,6 @@ function nav(view,track=true){
  if(track)window.scrollTo({top:0,behavior:'instant'});
  if(view==='discover'&&state.exploreMode==='calendar')renderCalendar();
  if(view==='funding')renderFunding();
- if(view==='sources')renderSources();
  if(view==='planner')renderPlan();
 }
 document.querySelectorAll('[data-view]').forEach(btn=>btn.addEventListener('click',()=>nav(btn.dataset.view)));
@@ -803,7 +802,6 @@ get('matchOutput').addEventListener('click',event=>{
  if(button)showConference(button.dataset.matchOpen);
 });
 
-function renderSources(){let v=C.filter(c=>source(c)==='verified').length,conf=C.filter(c=>source(c)==='conflict').length,unknown=C.filter(c=>!c.deadline).length;get('qualityCards').innerHTML=`<div class="quality-card"><strong>${v}</strong><span>Conference records with official-source review</span></div><div class="quality-card"><strong>${unknown}</strong><span>Abstract deadlines awaiting publication or confirmation</span></div><div class="quality-card"><strong>${conf}</strong><span>Conference records with conflicting source dates</span></div>`}
 function exportCSV(){const cols=['name','society','specialty','open','deadline','start','end','city','deadlineTime','limit','limitType','fee','evidence','flag','url','guideline','note'];const quote=s=>'"'+String(s??'').replaceAll('"','""')+'"';downloadFile('RISE_conferences_2026_2027.csv',[cols.join(','),...C.map(c=>cols.map(k=>quote(c[k])).join(','))].join('\r\n'),'text/csv;charset=utf-8');showToast('Conference CSV exported')}get('exportCsv').addEventListener('click',exportCSV);
 let toastTimer;function showToast(msg){const el=get('toast');el.textContent=msg;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),3400)}
 function restoreRoute(route){
@@ -816,7 +814,7 @@ function restoreRoute(route){
 }
 window.addEventListener('popstate',event=>restoreRoute(event.state?.riseNavigator||routeFromHash()));
 get('navBack').addEventListener('click',()=>{if(history.state?.riseNavigator?.depth>0)history.back()});
-initSummary();initSpecialties();renderHorizon();renderDirectory();initPlanner();renderSources();
+initSummary();initSpecialties();renderHorizon();renderDirectory();initPlanner();
 const initialRoute=history.state?.riseNavigator||routeFromHash();
 history.replaceState({...history.state,riseNavigator:initialRoute},'',location.href);
 restoreRoute(initialRoute);
