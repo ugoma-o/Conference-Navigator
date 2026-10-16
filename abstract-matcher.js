@@ -134,13 +134,7 @@ function formatFit(c,format) {
 }
 function opportunity(c,today) {
  if(c.flag==='conflict')return {status:'review',label:'Dates need verification',date:c.deadline||null};
- var late=c.lateDeadline && c.lateDeadline>=today;
  var regular=c.deadline && c.deadline>=today;
- if(late && (!regular||c.deadline<today)) {
-  if(c.lateOpen && c.lateOpen>today)return {status:'upcoming',label:'Late-breaking opens '+c.lateOpen,date:c.lateDeadline};
-  if(!c.lateOpen)return {status:'upcoming',label:'Late-breaking deadline '+c.lateDeadline+' — opening unverified',date:c.lateDeadline};
-  return {status:'open',label:'Late-breaking window open until '+c.lateDeadline,date:c.lateDeadline};
- }
  if(regular) {
   if(c.open && c.open>today)return {status:'upcoming',label:'Opens '+c.open,date:c.deadline};
   if(!c.open)return {status:'upcoming',label:'Deadline '+c.deadline+' — opening unverified',date:c.deadline};

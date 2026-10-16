@@ -42,12 +42,7 @@ get('themeToggle').addEventListener('click',()=>{
 function status(c){
  if(c.flag==='conflict')return ['Source conflict','conflict'];
  const regularAvailable=!!c.deadline&&c.deadline>=todayKey;
- const lateAvailable=!!c.lateDeadline&&c.lateDeadline>=todayKey;
- if(lateAvailable&&!regularAvailable)
-  return [c.lateOpen&&c.lateOpen<=todayKey?'Late-breaking open':'Late-breaking upcoming',
-          c.lateOpen&&c.lateOpen<=todayKey?'open':'upcoming'];
  if(c.deadline&&c.deadline<todayKey)return ['Closed','closed'];
- if(c.lateDeadline&&c.lateDeadline<todayKey&&!c.deadline)return ['Late-breaking closed','closed'];
  if(c.evidence==='unannounced')return ['Not announced','pending'];
  if(!c.deadline)return ['Monitor cycle',c.evidence==='official'?'verified':'tracker'];
  if(!c.open)return ['Upcoming deadline','upcoming'];
@@ -166,14 +161,12 @@ function monthMatches(c,m,type='all'){
  if(!m&&all)return [];
  const begin=m?m+'-01':null,end=m?key(new Date(Number(m.slice(0,4)),Number(m.slice(5)),0)):null,found=[];
  for(const [field,label,kind] of [
-  ['deadline','Abstract deadline','due'],['lateDeadline','Late-breaking deadline','due'],
-  ['open','Abstract submissions open','open'],['lateOpen','Late-breaking submissions open','open']
+  ['deadline','Abstract deadline','due'],
+  ['open','Abstract submissions open','open']
  ]){
   const day=c[field];
   if(!all&&!types.includes(field))continue;
-  if(day&&(!begin||(day>=begin&&day<=end)) &&
-    !(field==='lateDeadline'&&day===c.deadline) &&
-    !(field==='lateOpen'&&day===c.open))found.push({day,field,label,kind,display:fmt(day)});
+  if(day&&(!begin||(day>=begin&&day<=end)))found.push({day,field,label,kind,display:fmt(day)});
  }
  if((all||types.includes('meeting'))&&c.start &&
     (!begin||(c.start<=end&&(c.end||c.start)>=begin)))
@@ -183,7 +176,7 @@ function monthMatches(c,m,type='all'){
 }
 function matchesMonth(c,m,type='all'){return (!m&&(type==='all'||Array.isArray(type)&&type.length===0))||monthMatches(c,m,type).length>0}
 function selectedDate(c){return monthMatches(c,state.monthKey,state.dateTypes)[0]?.day||'9999'}
-const DATE_TYPE_NAMES={all:'all dates',meeting:'meeting dates',open:'abstract openings',deadline:'abstract deadlines',lateOpen:'late-breaking openings',lateDeadline:'late-breaking deadlines'};
+const DATE_TYPE_NAMES={all:'all dates',meeting:'meeting dates',open:'abstract openings',deadline:'abstract deadlines'};
 function horizonMonths(){const t=new Date(today.getFullYear(),today.getMonth(),1);return Array.from({length:18},(_,i)=>{const d=new Date(t.getFullYear(),t.getMonth()+i,1);return key(d).slice(0,7)})}
 function renderHorizon(){
  const list=C.filter(c=>matchesSelectedSpecialty(c.specialty,state.specialties));
@@ -216,8 +209,7 @@ function applyDateView(){
  state.sort=alphabetical?'name':(state.monthKey||state.dateTypes.length?'month':'meeting');
  const count=state.dateTypes.length;
  const label=count===0?'All dates':count===1?({
-  meeting:'Meeting dates',open:'Abstract opens',deadline:'Abstract closes',
-  lateOpen:'Late-breaking opens',lateDeadline:'Late-breaking closes'
+  meeting:'Meeting dates',open:'Abstract opens',deadline:'Abstract closes'
  })[state.dateTypes[0]]:count+' date types';
  get('dateFilterLabel').textContent=label+(alphabetical?' · A–Z':'');
  renderHorizon();renderDirectory();
@@ -278,32 +270,30 @@ get('clearConferenceSpecialties').addEventListener('click',()=>{
  if(state.specialties.length)selectSpecialty('All specialties');
 });
 get('specialtyChips').addEventListener('click',e=>{const t=e.target.closest('[data-specialty]');if(t)selectSpecialty(t.dataset.specialty)});get('mobileSpecialtyOptions').addEventListener('click',e=>{const t=e.target.closest('[data-specialty]');if(t)selectSpecialty(t.dataset.specialty)});
-function visibleConferences(){let list=C.filter(c=>matchesSelectedSpecialty(c.specialty,state.specialties)).filter(c=>!state.search||[c.name,c.society,c.specialty,c.city,(c.types||[]).join(' ')].join(' ').toLowerCase().includes(state.search));list=list.filter(c=>{if(state.status==='all')return true;if(state.status==='active')return status(c)[1]!=='closed'&&(!c.end||c.end>=todayKey);if(state.status==='closed')return status(c)[1]==='closed'||!!c.end&&c.end<todayKey;if(state.status==='upcoming')return (!!c.deadline&&c.deadline>=todayKey)||!!c.lateDeadline&&c.lateDeadline>=todayKey;if(state.status==='open')return (!!c.deadline&&c.deadline>=todayKey&&!!c.open&&c.open<=todayKey)||!!c.lateDeadline&&c.lateDeadline>=todayKey&&!!c.lateOpen&&c.lateOpen<=todayKey;if(state.status==='unannounced')return !c.deadline&&!c.lateDeadline;if(state.status==='conflict')return !!c.flag;return true});list=list.filter(c=>matchesMonth(c,state.monthKey,state.dateTypes));list.sort((a,b)=>state.sort==='name'?a.name.localeCompare(b.name):state.sort==='month'&&(state.monthKey||state.dateTypes.length>0)?(selectedDate(a).localeCompare(selectedDate(b))||a.name.localeCompare(b.name)):state.sort==='meeting'?((a.start||a.deadline||'9999').localeCompare(b.start||b.deadline||'9999')||a.name.localeCompare(b.name)):(deadlineOrder(a).localeCompare(deadlineOrder(b))||(a.start||'9999').localeCompare(b.start||'9999')));return list}
+function visibleConferences(){let list=C.filter(c=>matchesSelectedSpecialty(c.specialty,state.specialties)).filter(c=>!state.search||[c.name,c.society,c.specialty,c.city,(c.types||[]).join(' ')].join(' ').toLowerCase().includes(state.search));list=list.filter(c=>{if(state.status==='all')return true;if(state.status==='active')return status(c)[1]!=='closed'&&(!c.end||c.end>=todayKey);if(state.status==='closed')return status(c)[1]==='closed'||!!c.end&&c.end<todayKey;if(state.status==='upcoming')return !!c.deadline&&c.deadline>=todayKey;if(state.status==='open')return !!c.deadline&&c.deadline>=todayKey&&!!c.open&&c.open<=todayKey;if(state.status==='unannounced')return !c.deadline;if(state.status==='conflict')return !!c.flag;return true});list=list.filter(c=>matchesMonth(c,state.monthKey,state.dateTypes));list.sort((a,b)=>state.sort==='name'?a.name.localeCompare(b.name):state.sort==='month'&&(state.monthKey||state.dateTypes.length>0)?(selectedDate(a).localeCompare(selectedDate(b))||a.name.localeCompare(b.name)):state.sort==='meeting'?((a.start||a.deadline||'9999').localeCompare(b.start||b.deadline||'9999')||a.name.localeCompare(b.name)):(deadlineOrder(a).localeCompare(deadlineOrder(b))||(a.start||'9999').localeCompare(b.start||'9999')));return list}
 /* Month-only organizer announcements are displayed but never assigned an
    invented calendar day. Date-based calendars and exports still require YYYY-MM-DD. */
 function abstractOpeningDisplay(c){
  if(c.open)return fmt(c.open);
  if(c.openMonth&&/^20\d{2}-(0[1-9]|1[0-2])$/.test(c.openMonth))
   return fmt(c.openMonth+'-01',{month:'long',year:'numeric'});
- return c.deadline?'Opening date not published':c.lateOpen?fmt(c.lateOpen):'Not announced';
+ return c.deadline?'Opening date not published':'Not announced';
 }
 function card(c){
  const st=status(c);
  const openingLabel=abstractOpeningDisplay(c);
- const deadlineDate=c.deadline||c.lateDeadline;
+ const deadlineDate=c.deadline;
  const monthEvents=monthMatches(c,state.monthKey,state.dateTypes).filter(ev=>
    ev.field!=='meeting'&&
    !(ev.field==='open'&&c.open)&&
-   !(ev.field==='lateOpen'&&!c.deadline&&!c.open)&&
-   !(ev.field==='deadline'&&c.deadline)&&
-   !(ev.field==='lateDeadline'&&!c.deadline)
+   !(ev.field==='deadline'&&c.deadline)
  );
  const related=monthEvents.length?`<div class="month-match" aria-label="Additional dates matching the selected month"><span class="month-match-heading">ADDITIONAL DATES · ${escape(state.monthKey?date(state.monthKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'}):state.dateTypes.map(t=>DATE_TYPE_NAMES[t]).join(', ').toUpperCase())}</span>${monthEvents.map(ev=>`<span class="month-match-item month-match-${ev.kind}"><strong>${escape(ev.label)}:</strong> ${escape(ev.display)}</span>`).join('')}</div>`:'';
  return `<article class="conference-card conference-card-timeline" data-conference="${escape(c.id)}" tabindex="0" role="button" aria-label="View ${escape(c.name)} details">
   <div class="conf-card-heading"><div class="mini-specialty">${escape(c.specialty)} · ${escape(c.society)}</div><div class="conf-card-name-row"><div class="conf-title">${escape(c.name)}</div><span class="status-pill ${st[1]}">${escape(st[0])}</span></div></div>
   <div class="conf-card-dates">
-   <div class="row-date conf-open-date"><span class="row-label">${c.deadline?'ABSTRACT OPENS':c.lateDeadline?'LATE-BREAKING OPENS':'ABSTRACT OPENS'}</span><strong>${escape(openingLabel)}</strong>${c.openMonth&&!c.open?'<small>Month confirmed; day not published</small>':!c.deadline&&!c.open&&c.lateOpen?'<small>Late-breaking submissions</small>':''}</div>
-   <div class="row-date conf-deadline-date"><span class="row-label">${c.deadline?'ABSTRACT DEADLINE':c.lateDeadline?'LATE-BREAKING DEADLINE':'ABSTRACT DEADLINE'}</span><strong>${escape(fmt(deadlineDate))}</strong></div>
+   <div class="row-date conf-open-date"><span class="row-label">ABSTRACT OPENS</span><strong>${escape(openingLabel)}</strong>${c.openMonth&&!c.open?'<small>Month confirmed; day not published</small>':''}</div>
+   <div class="row-date conf-deadline-date"><span class="row-label">ABSTRACT DEADLINE</span><strong>${escape(fmt(deadlineDate))}</strong></div>
    <div class="row-date conf-meeting-date"><span class="row-label">CONFERENCE</span><strong>${escape(dateRange(c.start,c.end))}</strong><small>${escape(c.city||'Location to be announced')}</small></div>
   </div>
   ${related?`<div class="conf-card-extra">${related}</div>`:''}
@@ -316,7 +306,7 @@ get('conferenceGrid').addEventListener('click',e=>{const c=e.target.closest('[da
 get('searchInput').addEventListener('input',e=>{state.search=e.target.value.trim().toLowerCase();renderDirectory()});
 get('statusFilter').addEventListener('change',e=>{state.status=e.target.value;renderDirectory()});
 get('resetFilters').addEventListener('click',clearAllConferenceFilters);
-function events(){const E=[];for(const c of C){if(c.deadline)E.push({day:c.deadline,kind:'deadline',title:c.name,label:'Abstract due: '+shortName(c),id:c.id});if(c.open)E.push({day:c.open,kind:'open',title:c.name,label:'Abstracts open: '+shortName(c),id:c.id});if(c.lateDeadline)E.push({day:c.lateDeadline,kind:'deadline',title:c.name+' late-breaking',label:'Late deadline: '+shortName(c),id:c.id});if(c.start){const begin=date(c.start),end=date(c.end||c.start);for(let d=begin;d<=end;d=shift(d,1))E.push({day:key(d),kind:'meeting',title:c.name,label:shortName(c),id:c.id});}}
+function events(){const E=[];for(const c of C){if(c.deadline)E.push({day:c.deadline,kind:'deadline',title:c.name,label:'Abstract due: '+shortName(c),id:c.id});if(c.open)E.push({day:c.open,kind:'open',title:c.name,label:'Abstracts open: '+shortName(c),id:c.id});if(c.start){const begin=date(c.start),end=date(c.end||c.start);for(let d=begin;d<=end;d=shift(d,1))E.push({day:key(d),kind:'meeting',title:c.name,label:shortName(c),id:c.id});}}
 for(const a of A){const shortAward=a.name.length>23?a.name.slice(0,22)+'…':a.name;if(a.open)E.push({day:a.open,kind:'awardOpen',title:a.name,label:'Award opens: '+shortAward,id:a.conferenceId||null,awardId:a.id});if(a.deadline)E.push({day:a.deadline,kind:'award',title:a.name,label:(a.deadlineLabel||'Award due')+': '+shortAward,id:a.conferenceId||null,awardId:a.id});for(const stage of a.stages||[])if(stage.date)E.push({day:stage.date,kind:'award',title:a.name+' — '+stage.label,label:stage.label+': '+shortAward,id:a.conferenceId||null,awardId:a.id});}
 return E}
 function shortName(c){return c.name.split(' 2027')[0].replace(' Annual Meeting','').replace(' Scientific Sessions','').slice(0,20)}
@@ -365,8 +355,6 @@ function conferenceExportOptions(c){
  add('abstract-open',c.open,null,'Abstract submissions open',c.name+' — Abstract submissions open');
  add('abstract-due',c.deadline,null,'Abstract submission deadline',c.name+' — Abstract submission deadline','conference',true,c.flag==='conflict'?'Deadline disputed across official sources; verify with organizer.': 'Check official cutoff time and time zone.');
  add('meeting',c.start,c.end||c.start,'Conference dates',c.name+' — Conference','conference',true,'All-day event covering the recorded meeting dates.');
- add('late-open',c.lateOpen,null,'Late-breaking submissions open',c.name+' — Late-breaking submissions open','conference',false);
- add('late-due',c.lateDeadline,null,'Late-breaking abstract deadline',c.name+' — Late-breaking abstract deadline','conference',false);
  // Only an explicit conferenceId makes an award conference-linked. Related-society
  // research grants with no meeting requirement should not be auto-attached.
  for(const a of A.filter(a=>a.conferenceId===c.id)){
@@ -402,7 +390,7 @@ get('modalScrim').addEventListener('click',e=>{if(e.target===get('modalScrim'))c
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 function awardLinkHTML(a){return `<div class="related-award"><div class="related-award-details"><span class="award-type">${escape(a.category)} · ${escape(a.amount)}</span><strong>${escape(a.name)}</strong><small>${a.open?'Opens '+escape(fmt(a.open))+' · ':''}${a.deadline?(a.deadlineLabel||'Apply by')+' '+escape(fmt(a.deadline)):'Closing date not confirmed'}</small></div><button type="button" class="btn btn-soft" data-related-award="${escape(a.id)}">View funding details</button></div>`}
 function presentationOptions(c){const formats=c.presentationFormats||[];const status=formats.length?`<strong>Formats confirmed for this meeting:</strong> ${escape(formats.join(' · '))}`:'<strong>Presentation formats have not been verified for this meeting year.</strong>';const guidance=c.presentationPolicy||'Your preferred format is not a guaranteed option. Societies may select oral/poster placement, restrict formats by category, or use a separate application.';return `<div class="format-note">${status}<p>${escape(guidance)}</p>${c.presentationSource?safeExternal(c.presentationSource,'Official presentation policy'):''}</div>`}
-function showConference(id,track=true){const c=C.find(c=>c.id===id);if(!c)return;state.selected=id;const awardList=A.filter(a=>a.conferenceId===id||a.relatedConferenceId===id);let limitText=c.limit?`${c.limit.toLocaleString()} ${c.limitType==='words'?'words':'characters'}${c.limitType==='characters_no_spaces'?' (spaces excluded)':''}`:'Not yet confirmed';const detail=(label,value,sub='')=>`<div class="detail-block"><div class="detail-label">${label}</div><div class="detail-value">${escape(value)}</div>${sub?`<div class="detail-sub">${escape(sub)}</div>`:''}</div>`;get('modalBody').innerHTML=`<div class="modal-head"><div class="mini-specialty">${escape(c.specialty)} · ${escape(c.society)}</div><h2 id="modalTitle">${escape(c.name)}</h2><p>${ico('map')} ${escape(c.city)} &nbsp;·&nbsp; ${escape(c.start?fmt(c.start)+' – '+fmt(c.end||c.start):'Meeting date to be announced')}</p><div class="card-status"><span class="status-pill ${source(c)}">${escape(sourceLabel(c))}</span> <span class="status-pill ${status(c)[1]}">${escape(status(c)[0])}</span></div></div><div class="modal-content"><div class="modal-quick-actions"><div class="modal-quick-official">${safeExternal(c.url,'Official conference details','btn btn-soft modal-official-link')}</div><div class="modal-quick-plan"><button type="button" class="btn btn-primary modal-plan-button" id="modalPlan">Plan for this meeting</button></div></div><div class="modal-section-title">Conference details</div><div class="modal-grid">${detail('Abstract submissions open',abstractOpeningDisplay(c),c.openMonth&&!c.open?'Exact day not published':c.open?'':c.deadline?'Opening date not published':'Not posted / not checked')}${detail('Regular abstract deadline',fmt(c.deadline),c.deadlineTime||'')}${detail('Late-breaking deadline',fmt(c.lateDeadline),c.lateOpen?'Opens '+fmt(c.lateOpen):'')}${detail('Length requirement',limitText,c.limitNote||'Different categories may have separate rules')}${detail('Meeting location',c.city||'To be announced',dateRange(c.start,c.end))}<div class="detail-block conference-cost-detail"><div class="detail-label">Conference costs</div><div class="cost-detail-row"><span>Registration</span><strong>${escape(c.registrationFee||'Not verified')}</strong></div><div class="cost-detail-row"><span>Abstract submission</span><strong>${escape(c.fee||'Not verified')}</strong></div><div class="detail-sub">${safeExternal(c.registrationSource||c.url,'Check official fees')}</div></div></div>${c.note?`<div class="modal-section-title">Important notes</div><div class="modal-note ${c.flag==='conflict'?'warning':''}">${escape(c.note)}</div>`:''}<div class="modal-section-title">Submission categories and presentation formats</div><div class="submission-warning">Topic labels are provided for reference; confirm accepted submission categories and oral or poster presentation options in the official instructions.</div><div class="mini-tags">${(c.types||[]).map(t=>`<span class="mini-tag">${escape(t)}</span>`).join('')}</div><p class="category-provenance">${c.submissionCategoriesVerified?'Official meeting categories reviewed':'Tracker-listed topics; exact categories and eligibility not verified for this meeting year'}</p><div id="presentationOptions" aria-live="polite"></div>${awardList.length?`<div class="modal-section-title">Funding and awards</div><div class="related-awards">${awardList.map(awardLinkHTML).join('')}</div>`:''}<div class="modal-actions"><div class="modal-secondary-actions">${c.guideline?safeExternal(c.guideline,'Submission rules','btn btn-soft'):''}${c.submissionSource&&c.submissionSource!==c.guideline?safeExternal(c.submissionSource,'Submission portal','btn btn-soft'):''}<button type="button" class="btn btn-soft" id="modalExport" aria-controls="calendarExportPanel" aria-expanded="false">Export conference dates</button></div></div>${exportPanelMarkup(c,conferenceExportOptions(c))}</div>`;get('modalScrim').classList.remove('hidden');document.body.style.overflow='hidden';get('conferenceModal').scrollTop=0;if(track)recordRoute();get('presentationOptions').innerHTML=presentationOptions(c);get('modalBody').querySelectorAll('[data-related-award]').forEach(b=>b.addEventListener('click',()=>navigateToAward(b.dataset.relatedAward)));const exportButton=get('modalExport'),exportPanel=get('calendarExportPanel'),allOptions=conferenceExportOptions(c);
+function showConference(id,track=true){const c=C.find(c=>c.id===id);if(!c)return;state.selected=id;const awardList=A.filter(a=>a.conferenceId===id||a.relatedConferenceId===id);let limitText=c.limit?`${c.limit.toLocaleString()} ${c.limitType==='words'?'words':'characters'}${c.limitType==='characters_no_spaces'?' (spaces excluded)':''}`:'Not yet confirmed';const detail=(label,value,sub='')=>`<div class="detail-block"><div class="detail-label">${label}</div><div class="detail-value">${escape(value)}</div>${sub?`<div class="detail-sub">${escape(sub)}</div>`:''}</div>`;get('modalBody').innerHTML=`<div class="modal-head"><div class="mini-specialty">${escape(c.specialty)} · ${escape(c.society)}</div><h2 id="modalTitle">${escape(c.name)}</h2><p>${ico('map')} ${escape(c.city)} &nbsp;·&nbsp; ${escape(c.start?fmt(c.start)+' – '+fmt(c.end||c.start):'Meeting date to be announced')}</p><div class="card-status"><span class="status-pill ${source(c)}">${escape(sourceLabel(c))}</span> <span class="status-pill ${status(c)[1]}">${escape(status(c)[0])}</span></div></div><div class="modal-content"><div class="modal-quick-actions"><div class="modal-quick-official">${safeExternal(c.url,'Official conference details','btn btn-soft modal-official-link')}</div><div class="modal-quick-plan"><button type="button" class="btn btn-primary modal-plan-button" id="modalPlan">Plan for this meeting</button></div></div><div class="modal-section-title">Conference details</div><div class="modal-grid">${detail('Abstract submissions open',abstractOpeningDisplay(c),c.openMonth&&!c.open?'Exact day not published':c.open?'':c.deadline?'Opening date not published':'Not posted / not checked')}${detail('Regular abstract deadline',fmt(c.deadline),c.deadlineTime||'')}${detail('Length requirement',limitText,c.limitNote||'Different categories may have separate rules')}${detail('Meeting location',c.city||'To be announced',dateRange(c.start,c.end))}<div class="detail-block conference-cost-detail"><div class="detail-label">Conference costs</div><div class="cost-detail-row"><span>Registration</span><strong>${escape(c.registrationFee||'Not verified')}</strong></div><div class="cost-detail-row"><span>Abstract submission</span><strong>${escape(c.fee||'Not verified')}</strong></div><div class="detail-sub">${safeExternal(c.registrationSource||c.url,'Check official fees')}</div></div></div>${c.note?`<div class="modal-section-title">Important notes</div><div class="modal-note ${c.flag==='conflict'?'warning':''}">${escape(c.note)}</div>`:''}<div class="modal-section-title">Submission categories and presentation formats</div><div class="submission-warning">Topic labels are provided for reference; confirm accepted submission categories and oral or poster presentation options in the official instructions.</div><div class="mini-tags">${(c.types||[]).map(t=>`<span class="mini-tag">${escape(t)}</span>`).join('')}</div><p class="category-provenance">${c.submissionCategoriesVerified?'Official meeting categories reviewed':'Tracker-listed topics; exact categories and eligibility not verified for this meeting year'}</p><div id="presentationOptions" aria-live="polite"></div>${awardList.length?`<div class="modal-section-title">Funding and awards</div><div class="related-awards">${awardList.map(awardLinkHTML).join('')}</div>`:''}<div class="modal-actions"><div class="modal-secondary-actions">${c.guideline?safeExternal(c.guideline,'Submission rules','btn btn-soft'):''}${c.submissionSource&&c.submissionSource!==c.guideline?safeExternal(c.submissionSource,'Submission portal','btn btn-soft'):''}<button type="button" class="btn btn-soft" id="modalExport" aria-controls="calendarExportPanel" aria-expanded="false">Export conference dates</button></div></div>${exportPanelMarkup(c,conferenceExportOptions(c))}</div>`;get('modalScrim').classList.remove('hidden');document.body.style.overflow='hidden';get('conferenceModal').scrollTop=0;if(track)recordRoute();get('presentationOptions').innerHTML=presentationOptions(c);get('modalBody').querySelectorAll('[data-related-award]').forEach(b=>b.addEventListener('click',()=>navigateToAward(b.dataset.relatedAward)));const exportButton=get('modalExport'),exportPanel=get('calendarExportPanel'),allOptions=conferenceExportOptions(c);
  const chosenExportEvents=()=>allOptions.filter(o=>exportPanel.querySelector(`[data-ics-option=\"${o.id}\"]`)?.checked);
  const refreshExportCount=()=>{const n=chosenExportEvents().length;get('exportSelectedCount').textContent=`(${n})`;get('exportSelectedDates').disabled=!n};
  exportButton.addEventListener('click',()=>{const isHidden=exportPanel.classList.toggle('hidden');exportButton.setAttribute('aria-expanded',String(!isHidden));if(!isHidden){refreshExportCount();exportPanel.scrollIntoView({block:'nearest',behavior:'smooth'})}});
@@ -463,7 +451,7 @@ function roadmapMarkup(c,type,weeks,compact=false,leadMonths=6,readiness='idea',
    +marker('conference','Conference',fmt(c.start),meetingPct,3);
  const days=daysAway(target.day),internalDays=daysAway(target.internalDay),shortPlan=Math.max(14,Math.round(weeks*7*.35));
  let signal,advice;
- if(days<0){signal='missed';advice=`The abstract cutoff was ${Math.abs(days)} days ago. Check for an eligible late-breaking category or consider the next annual cycle.`;}
+ if(days<0){signal='missed';advice=`The abstract cutoff was ${Math.abs(days)} days ago. Consider the next regular abstract submission cycle.`;}
  else if(days===0){signal='caution';advice='The listed abstract cutoff is today. The early-submission buffer is gone; check the official portal and closing time immediately.';}
  else if(internalDays<0){signal='caution';advice=`Your suggested submit-by target has passed. ${days} days remain until the ${target.estimated?'provisional':'published'} abstract cutoff. Prioritize coauthor sign-off and submit as soon as ready.`;}
  else if(internalDays===0){signal='caution';advice=`Today is the suggested submit-by date. If the abstract is ready and approved, submit rather than waiting until the final cutoff.`;}
@@ -620,7 +608,7 @@ function plannerTargetSort(a,b,sort){
  const alpha=()=>a.name.localeCompare(b.name);
  if(sort==='name')return alpha();
  if(sort==='latest')return (b.start||b.deadline||'').localeCompare(a.start||a.deadline||'')||alpha();
- const when=c=>sort==='deadline'?(c.deadline||c.lateDeadline||null):(c.start||c.deadline||null);
+ const when=c=>sort==='deadline'?(c.deadline||null):(c.start||c.deadline||null);
  const coming=d=>d&&d>=todayKey?d:'9999-12-31';
  return coming(when(a)).localeCompare(coming(when(b)))
      || (when(a)||'9999-12-31').localeCompare(when(b)||'9999-12-31')
@@ -632,7 +620,7 @@ function plannerTargetMatches(){
  const sort=get('planSort').value;
  return plannerConferences.filter(c=>{
   if(specialty!=='all'&&c.specialty!==specialty)return false;
-  const haystack=[c.name,c.society,c.specialty,c.city,c.start,c.end,c.deadline,c.lateDeadline,
+  const haystack=[c.name,c.society,c.specialty,c.city,c.start,c.end,c.deadline,
    c.start?fmt(c.start,{month:'long',day:'numeric',year:'numeric'}):'',
    c.deadline?fmt(c.deadline,{month:'long',day:'numeric',year:'numeric'}):''
   ].filter(Boolean).join(' ').toLocaleLowerCase();
@@ -652,7 +640,7 @@ function renderPlannerTargets(){
   'No conferences match these filters';
  get('planConferenceMatches').innerHTML=visible.length?visible.map(c=>{
   const isActive=c.id===active,meeting=c.start?dateRange(c.start,c.end):'Meeting date not announced';
-  const due=c.deadline?`Abstract due: ${fmt(c.deadline)}`:c.lateDeadline?`Late-breaking due: ${fmt(c.lateDeadline)}`:'Abstract deadline not announced';
+  const due=c.deadline?`Abstract due: ${fmt(c.deadline)}`:'Abstract deadline not announced';
   return `<button type="button" class="planner-target-option ${isActive?'selected':''}" data-planner-target="${escape(c.id)}" aria-pressed="${isActive?'true':'false'}"><strong>${escape(c.name)}</strong><span>${escape(c.specialty)} · ${escape(meeting)}</span><small>${escape(due)}</small></button>`;
  }).join(''):'<p class="planner-target-empty">No matches. Try another specialty or search term.</p>';
  get('planMoreConferences').classList.toggle('hidden',results.length<=plannerVisibleLimit);
@@ -757,8 +745,7 @@ function matcherResultItem(match,number){
  const record=C.find(c=>c.id===match.id);
  const deadline=match.opportunity.date?matcherDate(match.opportunity.date):'Not announced';
  const statusName=match.opportunity.status==='open'?'Open':match.opportunity.status==='closed'?'Closed':match.opportunity.status==='upcoming'?'Upcoming':match.opportunity.status==='review'?'Verify dates':'Not announced';
- const late=record&&record.lateDeadline===match.opportunity.date && (record.deadline!==match.opportunity.date);
- const deadlineType=late?'Late-breaking due':'Submission deadline';
+ const deadlineType='Submission deadline';
  const statusCls=match.opportunity.status==='open'?'open':match.opportunity.status==='closed'?'closed':match.opportunity.status==='upcoming'?'upcoming':'pending';
  const verified=match.fit.status==='confirmed';
  return `<article class="matcher-result-card">
@@ -817,7 +804,7 @@ get('matchOutput').addEventListener('click',event=>{
 });
 
 function renderSources(){let v=C.filter(c=>source(c)==='verified').length,conf=C.filter(c=>source(c)==='conflict').length,unknown=C.filter(c=>!c.deadline).length;get('qualityCards').innerHTML=`<div class="quality-card"><strong>${v}</strong><span>Conference records with official-source review</span></div><div class="quality-card"><strong>${unknown}</strong><span>Abstract deadlines awaiting publication or confirmation</span></div><div class="quality-card"><strong>${conf}</strong><span>Conference records with conflicting source dates</span></div>`}
-function exportCSV(){const cols=['name','society','specialty','open','deadline','lateOpen','lateDeadline','start','end','city','deadlineTime','limit','limitType','fee','evidence','flag','url','guideline','note'];const quote=s=>'"'+String(s??'').replaceAll('"','""')+'"';downloadFile('RISE_conferences_2026_2027.csv',[cols.join(','),...C.map(c=>cols.map(k=>quote(c[k])).join(','))].join('\r\n'),'text/csv;charset=utf-8');showToast('Conference CSV exported')}get('exportCsv').addEventListener('click',exportCSV);
+function exportCSV(){const cols=['name','society','specialty','open','deadline','start','end','city','deadlineTime','limit','limitType','fee','evidence','flag','url','guideline','note'];const quote=s=>'"'+String(s??'').replaceAll('"','""')+'"';downloadFile('RISE_conferences_2026_2027.csv',[cols.join(','),...C.map(c=>cols.map(k=>quote(c[k])).join(','))].join('\r\n'),'text/csv;charset=utf-8');showToast('Conference CSV exported')}get('exportCsv').addEventListener('click',exportCSV);
 let toastTimer;function showToast(msg){const el=get('toast');el.textContent=msg;el.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('visible'),3400)}
 function restoreRoute(route){
  const view=NAV_VIEWS.includes(route?.view)?route.view:'discover';
