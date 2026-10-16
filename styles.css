@@ -962,3 +962,22 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
     padding-right:16px;
   }
 }
+
+/* Concise Sources & Updates page */
+#sourcesView .page-heading{margin-bottom:22px}
+#sourcesView .source-panel-compact{
+  max-width:790px;
+  padding:20px 24px;
+  box-shadow:none;
+}
+#sourcesView .source-summary-section+.source-summary-section{
+  margin-top:17px;
+  padding-top:16px;
+  border-top:1px solid var(--border);
+}
+#sourcesView .source-summary-section h2{font-size:16px;margin:0 0 6px}
+#sourcesView .source-summary-section p{font-size:13px;line-height:1.6;margin:0;color:var(--ed-muted,#607580)}
+#sourcesView .source-bottom-compact{display:block;max-width:790px;font-size:12px;line-height:1.6;margin:12px 0 0}
+@media(max-width:650px){
+ #sourcesView .source-panel-compact{padding:17px 18px}
+}
