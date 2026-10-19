@@ -1,6 +1,6 @@
 /* Curated snapshot — verify dates against society sources. */
 window.RISE_DATA = {
-  "asOf": "2026-10-16",
+  "asOf": "2026-10-19",
   "conferences": [
     {
       "id": "aan27",
@@ -830,8 +830,8 @@ window.RISE_DATA = {
       "name": "Academic Internal Medicine Week 2027",
       "society": "Alliance for Academic Internal Medicine",
       "specialty": "Medical Education",
-      "start": null,
-      "end": null,
+      "start": "2027-04-04",
+      "end": "2027-04-07",
       "city": "To be announced",
       "open": null,
       "deadline": null,
@@ -847,12 +847,34 @@ window.RISE_DATA = {
       ],
       "url": "https://www.im.org/",
       "guideline": null,
-      "evidence": "unannounced",
+      "evidence": "official",
       "note": "",
-      "flag": "unannounced",
+      "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "end": {
+          "url": "https://www.im.org/",
+          "checked_at": "2026-10-19T17:23:06.663246+00:00",
+          "verified_by": "RISE conservative auto-publisher",
+          "source_quote": ". Academic Internal Medicine Week 2027 . . April 4 - 7, 2027 | Baltimore, MD",
+          "confidence": "explicit_statement",
+          "corroborating_sources": [
+            "https://www.im.org/"
+          ]
+        },
+        "start": {
+          "url": "https://www.im.org/",
+          "checked_at": "2026-10-19T17:23:06.663246+00:00",
+          "verified_by": "RISE conservative auto-publisher",
+          "source_quote": ". Academic Internal Medicine Week 2027 . . April 4 - 7, 2027 | Baltimore, MD",
+          "confidence": "explicit_statement",
+          "corroborating_sources": [
+            "https://www.im.org/"
+          ]
+        }
+      }
     },
     {
       "id": "acgme27",
