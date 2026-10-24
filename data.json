@@ -7949,7 +7949,7 @@
       "end": "2027-04-23",
       "city": "Kyoto, Japan",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-10-19",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -7958,10 +7958,10 @@
       "types": [
         "Research abstracts (confirm society-specific submission rules)"
       ],
-      "url": "https://apaophth.org/congress/calendar/",
+      "url": "https://worldglaucomacongress.org/",
       "guideline": null,
       "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "note": "The WGC 2027 regular abstract deadline was October 19, 2026. Organizer published only July 2026 (month) for submission opening; precise day unknown.",
       "flag": null,
       "tags": [
         "resident-relevant"
@@ -7979,8 +7979,22 @@
           "url": "https://apaophth.org/congress/calendar/",
           "checked_at": "2026-10-24",
           "verified_by": "Official society meeting calendar"
+        },
+        "deadline": {
+          "url": "https://worldglaucomacongress.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "WGC official 2027 program",
+          "source_quote": "Abstract submissions closing: October 19, 2026"
+        },
+        "openMonth": {
+          "url": "https://worldglaucomacongress.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "WGC official 2027 program",
+          "precision": "month",
+          "source_quote": "Registration & Abstracts submission opening: July 2026"
         }
-      }
+      },
+      "openMonth": "2026-07"
     },
     {
       "id": "soe27",
@@ -8252,10 +8266,10 @@
       "types": [
         "Research abstracts (confirm society-specific submission rules)"
       ],
-      "url": "https://www.acgme.org/newsroom/2026/1/2026-2028-back-to-bedside-cycle/",
+      "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/future-annual-educational-conference-dates-and-locations/",
       "guideline": null,
       "evidence": "official",
-      "note": "The 2028 conference location and dates are from the ACGME Back to Bedside funding-cycle announcement; research abstract call not yet posted.",
+      "note": "2028 ACGME Annual Educational Conference, February 24-26, Orlando, Florida. Regular abstract submission schedule not yet published.",
       "flag": null,
       "tags": [
         "resident-relevant"
@@ -8265,14 +8279,14 @@
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.acgme.org/newsroom/2026/1/2026-2028-back-to-bedside-cycle/",
+          "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/future-annual-educational-conference-dates-and-locations/",
           "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
+          "verified_by": "ACGME published future conference calendar"
         },
         "end": {
-          "url": "https://www.acgme.org/newsroom/2026/1/2026-2028-back-to-bedside-cycle/",
+          "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/future-annual-educational-conference-dates-and-locations/",
           "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
+          "verified_by": "ACGME published future conference calendar"
         }
       }
     },
@@ -10960,6 +10974,381 @@
       "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/bcvs-cardiovascular-outreach-awards",
       "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
       "fieldSources": {}
+    },
+    {
+      "id": "aaaai-resident-travel27",
+      "name": "AAAAI 2027 Medical Resident Travel Scholarship",
+      "society": "American Academy of Allergy, Asthma & Immunology",
+      "amount": "Travel and meeting support",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-11-27",
+      "deadlineLabel": "Scholarship application deadline",
+      "eligibility": "Eligible medical residents interested in allergy and immunology who meet the AAAAI 2027 scholarship requirements.",
+      "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+      "conferenceId": "aaaai27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Apply to the AAAAI Medical Resident Travel Scholarship; deadline is 11:59 a.m. Central Time.",
+      "specialties": [
+        "Allergy & Immunology",
+        "Internal Medicine",
+        "Pediatrics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "aaaai-fellow-travel27",
+      "name": "AAAAI 2027 Domestic Fellows-in-Training Travel Scholarship",
+      "society": "American Academy of Allergy, Asthma & Immunology",
+      "amount": "Travel and meeting support",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-11-27",
+      "deadlineLabel": "Scholarship application deadline",
+      "eligibility": "US-based allergy/immunology fellows-in-training meeting 2027 AAAAI society and conference participation criteria.",
+      "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+      "conferenceId": "aaaai27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Apply by 11:59 a.m. CT on Nov. 27, 2026.",
+      "specialties": [
+        "Allergy & Immunology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "aaaai-international-fellow27",
+      "name": "AAAAI 2027 International Fellows-in-Training Travel Scholarship",
+      "society": "American Academy of Allergy, Asthma & Immunology",
+      "amount": "Travel and meeting support",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-11-06",
+      "deadlineLabel": "Scholarship application deadline",
+      "eligibility": "International fellows-in-training who satisfy annual AAAAI eligibility rules.",
+      "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+      "conferenceId": "aaaai27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Apply by 3:00 p.m. CT on Nov. 6, 2026.",
+      "specialties": [
+        "Allergy & Immunology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "aats-resident-investigator27",
+      "name": "AATS Foundation Resident Surgical Investigator Award",
+      "society": "American Association for Thoracic Surgery",
+      "amount": "Up to $40,000 annually for 2 years",
+      "category": "Research grant",
+      "open": "2026-09-01",
+      "opens": "2026-09-01",
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible surgical residents pursuing mentored cardiothoracic surgery research, with an established research mentor and formal career/research statement.",
+      "url": "https://www.aats.org/foundation/resident-surgical-investigator-award",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "The official AATS page shows conflicting Dec. 1 and Dec. 2, 2026 deadline references; confirm the exact cutoff with AATS.",
+      "applicationProcess": "Apply with research plan, mentor support, and statement of career goals.",
+      "specialties": [
+        "Cardiothoracic Surgery",
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aats.org/foundation/resident-surgical-investigator-award",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aats-sugarbaker27",
+      "name": "AATS David J. Sugarbaker Surgical Resident Investigator Award",
+      "society": "American Association for Thoracic Surgery",
+      "amount": "Mentored research funding",
+      "category": "Research grant",
+      "open": "2026-09-01",
+      "opens": "2026-09-01",
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible surgical residents conducting mentored translational or clinical thoracic oncology research, including mesothelioma or lung cancer.",
+      "url": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Official page has Dec. 1/2 deadline discrepancy; verify exact cutoff.",
+      "applicationProcess": "Apply through AATS Foundation with required mentor and research documentation.",
+      "specialties": [
+        "Cardiothoracic Surgery",
+        "Hematology & Oncology",
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aats-blackstone-ai27",
+      "name": "AATS Eugene H. Blackstone Resident Surgical Investigator in AI and Data Science",
+      "society": "American Association for Thoracic Surgery",
+      "amount": "Resident research funding",
+      "category": "Research grant",
+      "open": "2026-09-01",
+      "opens": "2026-09-01",
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Residents undertaking mentored cardiothoracic surgery research involving artificial intelligence, data science or analytic innovation.",
+      "url": "https://www.aats.org/foundation/all",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Official listings contain Dec. 1/2 submission deadline conflict; confirm with the AATS Foundation.",
+      "applicationProcess": "Apply to designated AI and Data Science resident investigator track.",
+      "specialties": [
+        "Cardiothoracic Surgery",
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aats.org/foundation/all",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aats-ethics27",
+      "name": "AATS Cardiothoracic Ethics Forum Scholarship",
+      "society": "American Association for Thoracic Surgery",
+      "amount": "Recognition",
+      "category": "Trainee scholarship",
+      "open": "2026-09-01",
+      "opens": "2026-09-01",
+      "deadline": "2026-12-01",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Residents or fellows with a demonstrated interest in ethical issues in cardiothoracic surgery.",
+      "url": "https://www.aats.org/foundation/all",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Apply to the AATS Foundation Cardiothoracic Ethics Forum scholarship.",
+      "specialties": [
+        "Cardiothoracic Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aats.org/foundation/all",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aats.org/foundation/all",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "aats-resident-abstract27",
+      "name": "AATS 2027 Resident Abstract Mini-Orals and Poster Competition",
+      "society": "American Association for Thoracic Surgery",
+      "amount": "Recognition",
+      "category": "Presentation prize",
+      "open": "2026-09-01",
+      "opens": "2026-09-01",
+      "deadline": "2026-12-01",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Surgical residents submitting eligible original research posters or mini-orals as part of an AATS Foundation competition.",
+      "url": "https://www.aats.org/foundation/all",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Enter the AATS resident abstract mini-oral or poster competition according to application instructions.",
+      "specialties": [
+        "Cardiothoracic Surgery",
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aats.org/foundation/all",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aats.org/foundation/all",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "aats-resident-case27",
+      "name": "AATS 2027 Resident Case Report Competition",
+      "society": "American Association for Thoracic Surgery",
+      "amount": "Recognition",
+      "category": "Presentation prize",
+      "open": "2026-09-01",
+      "opens": "2026-09-01",
+      "deadline": "2026-12-01",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible cardiothoracic surgery residents submitting a clinical case report to the AATS Foundation program.",
+      "url": "https://www.aats.org/foundation/all",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Submit an eligible clinical case report using current AATS competition rules.",
+      "specialties": [
+        "Cardiothoracic Surgery",
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aats.org/foundation/all",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aats.org/foundation/all",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "svs-yao27",
+      "name": "SVS James S.T. Yao Resident Research Award 2027",
+      "society": "Society for Vascular Surgery",
+      "amount": "$5,000 and scientific presentation",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": "2027-01-13",
+      "deadlineLabel": "Research award application deadline",
+      "eligibility": "Surgery residents, vascular surgery residents, or vascular fellows in US/Canadian training programs with original, unpublished, publication-quality vascular research.",
+      "url": "https://vascular.org/svs-foundation/programs-and-awards/james-st-yao-resident-research-award",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Apply to the SVS Research Council; 11:59 p.m. Central Time deadline; one recipient.",
+      "specialties": [
+        "Vascular Surgery",
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://vascular.org/svs-foundation/programs-and-awards/james-st-yao-resident-research-award",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://vascular.org/svs-foundation/programs-and-awards/james-st-yao-resident-research-award",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "gsa-schutz26",
+      "name": "GSA Carol A. Schutz Student / Early-Career Travel Stipend",
+      "society": "Gerontological Society of America",
+      "amount": "Travel stipend (lottery)",
+      "category": "Travel award",
+      "open": "2026-06-09",
+      "opens": "2026-06-09",
+      "deadline": "2026-07-28",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Current GSA student or early-career member with eligible membership and annual-meeting attendance; residents must verify their GSA membership eligibility.",
+      "url": "https://www.geron.org/Membership/Member-Center/Awards/Student-Travel-Stipends-/Carol-A-Schutz-Travel-Stipend",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Closed 2026 cycle; recipient selected by lottery.",
+      "applicationProcess": "Apply according to GSA Student and Early Career membership requirements.",
+      "specialties": [
+        "Geriatrics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.geron.org/Membership/Member-Center/Awards/Student-Travel-Stipends-/Carol-A-Schutz-Travel-Stipend",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.geron.org/Membership/Member-Center/Awards/Student-Travel-Stipends-/Carol-A-Schutz-Travel-Stipend",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "gsa-tj26",
+      "name": "GSA TJ McCallum Memorial Student Travel Award",
+      "society": "Gerontological Society of America",
+      "amount": "Travel support",
+      "category": "Travel award",
+      "open": "2026-06-09",
+      "opens": "2026-06-09",
+      "deadline": "2026-07-28",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "GSA student or early-career members with an accepted paper, poster or symposium contribution focused on caregiving or technology and aging.",
+      "url": "https://www.geron.org/membership/member-center/awards/student-travel-stipends-/tj-mccallum-memorial-student-travel-award",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "2026 cycle closed; clinical residents must independently meet GSA membership eligibility.",
+      "applicationProcess": "Self-nominate with blinded/unblinded paper, abstract ID, and coauthor statement.",
+      "specialties": [
+        "Geriatrics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.geron.org/membership/member-center/awards/student-travel-stipends-/tj-mccallum-memorial-student-travel-award",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.geron.org/membership/member-center/awards/student-travel-stipends-/tj-mccallum-memorial-student-travel-award",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
     }
   ]
 }
