@@ -11265,7 +11265,7 @@ window.RISE_DATA = {
       "category": "Research grant",
       "open": "2026-09-01",
       "opens": "2026-09-01",
-      "deadline": null,
+      "deadline": "2026-12-02",
       "deadlineLabel": "Application deadline",
       "eligibility": "Eligible surgical residents pursuing mentored cardiothoracic surgery research, with an established research mentor and formal career/research statement.",
       "url": "https://www.aats.org/foundation/resident-surgical-investigator-award",
@@ -11282,7 +11282,18 @@ window.RISE_DATA = {
       "lastVerified": "2026-10-24",
       "verificationSource": "https://www.aats.org/foundation/resident-surgical-investigator-award",
       "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
-      "fieldSources": {}
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aats.org/foundation/resident-surgical-investigator-award",
+          "checked_at": "2026-10-24T20:59:27.895807+00:00",
+          "verified_by": "RISE conservative auto-publisher",
+          "source_quote": "Apply by the December 2, 2026 deadline in order to be considered",
+          "confidence": "explicit_statement",
+          "corroborating_sources": [
+            "https://www.aats.org/foundation/resident-surgical-investigator-award"
+          ]
+        }
+      }
     },
     {
       "id": "aats-sugarbaker27",
@@ -11292,7 +11303,7 @@ window.RISE_DATA = {
       "category": "Research grant",
       "open": "2026-09-01",
       "opens": "2026-09-01",
-      "deadline": null,
+      "deadline": "2026-12-02",
       "deadlineLabel": "Application deadline",
       "eligibility": "Eligible surgical residents conducting mentored translational or clinical thoracic oncology research, including mesothelioma or lung cancer.",
       "url": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
@@ -11310,7 +11321,18 @@ window.RISE_DATA = {
       "lastVerified": "2026-10-24",
       "verificationSource": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
       "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
-      "fieldSources": {}
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
+          "checked_at": "2026-10-24T20:59:27.895807+00:00",
+          "verified_by": "RISE conservative auto-publisher",
+          "source_quote": "Apply by the December 2, 2026 deadline in order to be considered",
+          "confidence": "explicit_statement",
+          "corroborating_sources": [
+            "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award"
+          ]
+        }
+      }
     },
     {
       "id": "aats-blackstone-ai27",
