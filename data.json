@@ -10987,7 +10987,7 @@
       "deadlineLabel": "Scholarship application deadline",
       "eligibility": "Eligible medical residents interested in allergy and immunology who meet the AAAAI 2027 scholarship requirements.",
       "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
-      "conferenceId": "aaaai27",
+      "conferenceId": "aaaa27",
       "nominationBased": false,
       "scope": "conference",
       "note": "",
@@ -11021,7 +11021,7 @@
       "deadlineLabel": "Scholarship application deadline",
       "eligibility": "US-based allergy/immunology fellows-in-training meeting 2027 AAAAI society and conference participation criteria.",
       "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
-      "conferenceId": "aaaai27",
+      "conferenceId": "aaaa27",
       "nominationBased": false,
       "scope": "conference",
       "note": "",
@@ -11053,7 +11053,7 @@
       "deadlineLabel": "Scholarship application deadline",
       "eligibility": "International fellows-in-training who satisfy annual AAAAI eligibility rules.",
       "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
-      "conferenceId": "aaaai27",
+      "conferenceId": "aaaa27",
       "nominationBased": false,
       "scope": "conference",
       "note": "",
@@ -11349,6 +11349,285 @@
           "verified_by": "Society award program"
         }
       }
+    },
+    {
+      "id": "aap-mclean-physiatry",
+      "name": "AAP McLean Outstanding Resident/Fellow Award",
+      "society": "Association of Academic Physiatrists",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "AAP resident or fellow member demonstrating exemplary academic leadership, teaching, education and research.",
+      "url": "https://www.physiatry.org/about-aap/awards/",
+      "conferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "Annual AAP award; 2026 honorees announced. Next nomination deadline not yet confirmed.",
+      "applicationProcess": "Nomination letter, CV, recommendation from program director; up to three additional letters of support.",
+      "specialties": [
+        "Physical Medicine & Rehabilitation"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.physiatry.org/about-aap/awards/",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "amssm-resident-scholar",
+      "name": "AMSSM Foundation Resident Scholarship Award",
+      "society": "American Medical Society for Sports Medicine",
+      "amount": "$500 for six residents",
+      "category": "Trainee scholarship",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Resident AMSSM members who demonstrate a commitment to a career in sports medicine; eligible specialties may include family medicine, internal medicine, pediatrics, emergency medicine and PM&R.",
+      "url": "https://www.amssm.org/Residency.php",
+      "conferenceId": "amssm27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "2027 date not yet published; awarded annually.",
+      "applicationProcess": "Resident scholarship application opens in late fall; reviewed by AMSSM Membership Committee.",
+      "specialties": [
+        "Sports Medicine",
+        "Family Medicine",
+        "Internal Medicine",
+        "Pediatrics",
+        "Emergency Medicine",
+        "Physical Medicine & Rehabilitation"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.amssm.org/Residency.php",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "amssm-davenport",
+      "name": "AMSSM Jason Davenport Memorial Scholarship",
+      "society": "AMSSM Foundation",
+      "amount": "$500",
+      "category": "Trainee scholarship",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible underrepresented-minority AMSSM members presenting an accepted case report or research abstract at the upcoming AMSSM Annual Meeting.",
+      "url": "https://www.amssm.org/Resident-Scholarships.php",
+      "conferenceId": "amssm27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Submit scholarship application and qualifying case/research abstract; accepted poster or podium presentation required.",
+      "specialties": [
+        "Sports Medicine",
+        "Family Medicine",
+        "Internal Medicine",
+        "Pediatrics",
+        "Emergency Medicine",
+        "Physical Medicine & Rehabilitation"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.amssm.org/Resident-Scholarships.php",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "arvo-travel27",
+      "name": "ARVO 2027 Member-in-Training and Early Career Travel Grants",
+      "society": "Association for Research in Vision and Ophthalmology",
+      "amount": "Meeting registration + travel stipend",
+      "category": "Travel award",
+      "open": "2026-10-16",
+      "opens": "2026-10-16",
+      "deadline": "2026-12-04",
+      "deadlineLabel": "Abstract and travel-grant deadline",
+      "eligibility": "ARVO member-in-training or early-career researchers with accepted original abstracts for ARVO Annual Meeting 2027.",
+      "url": "https://www.arvo.org/awards-and-grants/travel-grants",
+      "conferenceId": "arvo27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Select travel-grant application during regular ARVO 2027 abstract submission; accepted abstract required.",
+      "specialties": [
+        "Ophthalmology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.arvo.org/awards-and-grants/travel-grants",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.arvo.org/awards-and-grants/travel-grants",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "arvo-clinician-scientist27",
+      "name": "ARVO Foundation 2027 Early Career Clinician-Scientist Research Awards",
+      "society": "ARVO Foundation",
+      "amount": "Early-career research recognition",
+      "category": "Merit award",
+      "open": "2026-10-16",
+      "opens": "2026-10-16",
+      "deadline": "2026-12-04",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Early-career ophthalmology or vision scientists presenting important original research with clinician-scientist career commitment.",
+      "url": "https://www.arvo.org/awards",
+      "conferenceId": "arvo27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Apply during 2027 ARVO abstract submission and meet eligibility criteria.",
+      "specialties": [
+        "Ophthalmology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.arvo.org/awards",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.arvo.org/awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "arvo-mit-poster27",
+      "name": "ARVO 2027 Members-in-Training Outstanding Poster Award",
+      "society": "Association for Research in Vision and Ophthalmology",
+      "amount": "Recognition",
+      "category": "Presentation prize",
+      "open": "2026-10-16",
+      "opens": "2026-10-16",
+      "deadline": "2026-12-04",
+      "deadlineLabel": "Abstract and award opt-in deadline",
+      "eligibility": "Members-in-training presenting high-scoring original vision or ophthalmology research as posters at ARVO 2027.",
+      "url": "https://www.arvo.org/annual-meeting/abstracts/policies-and-procedures",
+      "conferenceId": "arvo27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Award application must be included in regular ARVO abstract submission.",
+      "specialties": [
+        "Ophthalmology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.arvo.org/annual-meeting/abstracts/policies-and-procedures",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.arvo.org/annual-meeting/abstracts/policies-and-procedures",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "rrf-choose-rheum26",
+      "name": "Rheumatology Research Foundation Choose Rheumatology Scholarship",
+      "society": "Rheumatology Research Foundation",
+      "amount": "$2,000 + meeting registration (2026)",
+      "category": "Trainee scholarship",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-08-03",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Medical students and residents, particularly from geographically underserved US areas, exploring careers in rheumatology.",
+      "url": "https://www.rheumresearch.org/acr-convergence-awards",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "The 2026 ACR Convergence award cycle closed; 2027 deadline not posted. The 2026 award is associated with ACR Convergence 2026, not the 2027 meeting.",
+      "applicationProcess": "Apply for annual RRF Choose Rheumatology scholarship under workforce expansion criteria.",
+      "specialties": [
+        "Rheumatology",
+        "Internal Medicine"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.rheumresearch.org/acr-convergence-awards",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.rheumresearch.org/acr-convergence-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "rrf-student-resident26",
+      "name": "RRF Student & Resident Research Award",
+      "society": "Rheumatology Research Foundation",
+      "amount": "$1,000 award + $1,000 travel (2026)",
+      "category": "Merit award",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-08-03",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Medical students or residents authoring or co-authoring research abstracts submitted to ACR Convergence.",
+      "url": "https://www.rheumresearch.org/acr-convergence-awards",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "2026 award deadline closed; 2027 annual cycle not yet announced. The 2026 award is associated with ACR Convergence 2026, not the 2027 meeting.",
+      "applicationProcess": "Submit ACR Convergence original abstract and apply to the RRF Student & Resident Research Award.",
+      "specialties": [
+        "Rheumatology",
+        "Internal Medicine",
+        "Pediatrics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.rheumresearch.org/acr-convergence-awards",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.rheumresearch.org/acr-convergence-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "rrf-resident-preceptor",
+      "name": "RRF Resident Research Preceptorship",
+      "society": "Rheumatology Research Foundation",
+      "amount": "Up to $15,000 research support",
+      "category": "Research grant",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible residents pursuing a three-month rheumatology research preceptorship with a supervising mentor.",
+      "url": "https://www.rheumresearch.org/awards-grants",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Multiple deadlines by annual application cycle; exact current cycle deadline not confirmed.",
+      "applicationProcess": "Review annual Resident Research Preceptorship application periods and sponsor requirements.",
+      "specialties": [
+        "Rheumatology",
+        "Internal Medicine",
+        "Pediatrics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.rheumresearch.org/awards-grants",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {}
     }
   ]
 }
