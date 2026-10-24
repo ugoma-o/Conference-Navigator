@@ -15,7 +15,7 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <link rel="stylesheet" href="dark-theme.css?v=3ee8e5c35e76" />
 <link rel="stylesheet" href="abstract-matcher.css?v=529158aa3252" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
-<link rel="stylesheet" href="editorial-design.css?v=ab4c6a8b475c" />
+<link rel="stylesheet" href="editorial-design.css?v=f1ab339b2942" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -45,6 +45,35 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
     <main id="main" class="main-content">
       <button type="button" id="navBack" class="navigator-back hidden" aria-label="Back to previous navigator screen">Back</button>
       <section id="discoverView" class="view active" aria-label="Conference discovery">
+        <aside class="featured-gme-banner" id="featuredGmeBanner" aria-label="Featured AdventHealth GME Research Day conference">
+          <div class="featured-gme-topline">
+            <span class="featured-gme-label"><span class="featured-gme-indicator" aria-hidden="true"></span> FEATURED FOR RESIDENTS &amp; FELLOWS</span>
+            <span class="featured-gme-brand">AdventHealth Research Institute</span>
+          </div>
+          <div class="featured-gme-hero">
+            <div class="featured-gme-primary">
+              <span class="featured-gme-overline">SAVE THE DATE · EDUCATION + DISCOVERY</span>
+              <h2>GME Research Day <span>2027</span></h2>
+              <p>Friday, April 30, 2027 <span class="featured-gme-separator" aria-hidden="true">·</span> 10:00 AM–4:00 PM</p>
+              <span class="featured-gme-location">Whole Life Church · 2800 N Orange Ave, Orlando, FL</span>
+            </div>
+            <div class="featured-gme-side">
+              <span class="featured-gme-side-kicker">ALSO FEATURED</span>
+              <strong>AdventHealth Research Day</strong>
+              <span>Thursday, April 29, 2027</span>
+              <small>Celebrating research by clinicians and scientists</small>
+            </div>
+          </div>
+          <div class="featured-gme-bottom">
+            <div class="featured-gme-marquee" aria-label="Research celebrations April 29 and 30, 2027, at Whole Life Church in Orlando. GME Research Day is Friday, April 30.">
+              <div class="featured-gme-marquee-track" aria-hidden="true">
+                <span class="featured-gme-marquee-group"><b>APRIL 29–30, 2027</b><i></i><span>Two days. Two research celebrations. One shared mission.</span><i></i><b>GME RESEARCH DAY · FRIDAY APRIL 30</b><i></i><span>Doors open at 9:30 AM</span><i></i></span>
+                <span class="featured-gme-marquee-group"><b>APRIL 29–30, 2027</b><i></i><span>Two days. Two research celebrations. One shared mission.</span><i></i><b>GME RESEARCH DAY · FRIDAY APRIL 30</b><i></i><span>Doors open at 9:30 AM</span><i></i></span>
+              </div>
+            </div>
+            <button class="featured-gme-action" type="button" id="featuredGmeOpen" aria-label="View AdventHealth GME Research Day 2027 conference details">View conference details</button>
+          </div>
+        </aside>
         <div class="discovery-intro"><h1>Explore conferences</h1><p>Browse conferences, submission deadlines, and meeting dates.</p></div>
         
         <div class="section-header specialty-heading"><div><h2>Explore by specialty</h2></div><div class="specialty-heading-tools"><span class="specialty-hint">Select a specialty to filter</span><button type="button" id="clearConferenceSpecialties" class="specialty-clear-button hidden" aria-label="Clear all selected conference specialties">Clear all</button></div></div>
@@ -143,8 +172,8 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <div class="modal-scrim hidden" id="modalScrim" role="presentation"><div class="modal" id="conferenceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button id="modalClose" type="button" class="modal-close" aria-label="Close details">×</button><div id="modalBody"></div></div></div>
 <div id="calendarDayOverlay" class="calendar-day-overlay hidden" role="presentation"><div class="calendar-day-dialog" role="dialog" aria-modal="true" aria-labelledby="calendarDayTitle"><div class="calendar-day-dialog-header"><h3 id="calendarDayTitle"></h3><button type="button" id="calendarDayClose" aria-label="Close day events">×</button></div><p>Select any event to open its details.</p><div id="calendarDayList" class="calendar-day-list"></div></div></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script src="data.js?v=d65e5043f5b3"></script>
+<script src="data.js?v=12dd3f2704bb"></script>
 <script src="abstract-matcher.js?v=efe82c480572"></script>
-<script src="app.js?v=b8010cc7eeef"></script>
+<script src="app.js?v=aba43d9f74eb"></script>
 </body>
 </html>

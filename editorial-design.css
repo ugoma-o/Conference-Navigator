@@ -1846,3 +1846,226 @@ html[data-theme="dark"] .award-verified{color:var(--ed-muted,#aac2ce)}
   .specialty-heading-tools{margin-left:auto}
   .specialty-clear-button{min-height:44px}
 }
+
+
+/* AdventHealth research celebration: always-visible featured resident event
+   on Explore Conferences. The moving strip is decorative; all information
+   remains available in static text and a keyboard-accessible details button. */
+#discoverView .featured-gme-banner {
+  --gme-navy: #123c70;
+  --gme-ocean: #0b5f9e;
+  --gme-teal: #02c0b4;
+  --gme-orange: #ffac67;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(29,140,184,.43);
+  border-radius: 17px;
+  background:
+    radial-gradient(circle at 93% 18%,rgba(13,212,188,.20),transparent 31%),
+    radial-gradient(circle at 49% 100%,rgba(5,183,194,.11),transparent 43%),
+    linear-gradient(120deg,#113968 0%,#174c81 58%,#0a5e8c 100%);
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(9,52,89,.13);
+  margin: 0 0 22px;
+}
+#discoverView .featured-gme-banner::before {
+  content:"";
+  position:absolute;
+  right: -35px;
+  top: -85px;
+  width: 340px;
+  height: 340px;
+  border:1px solid rgba(66,221,218,.16);
+  border-radius: 50%;
+  box-shadow: 0 0 0 55px rgba(64,206,217,.035), 0 0 0 110px rgba(64,206,217,.022);
+  pointer-events:none;
+  z-index:-1;
+}
+#discoverView .featured-gme-topline,
+#discoverView .featured-gme-hero,
+#discoverView .featured-gme-bottom {position: relative; z-index: 1;}
+#discoverView .featured-gme-topline {
+  display:flex;
+  justify-content: space-between;
+  gap:12px;
+  align-items:center;
+  padding:17px 21px 0;
+}
+#discoverView .featured-gme-label {
+  font-size:10px;
+  font-weight:850;
+  letter-spacing: .11em;
+  color:#a6f6ef;
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+}
+#discoverView .featured-gme-indicator {
+  display:inline-block;
+  height:8px;
+  width:8px;
+  border-radius:50%;
+  background:#18dbc8;
+  box-shadow:0 0 0 4px rgba(29,224,198,.18);
+}
+#discoverView .featured-gme-brand {
+  color:#e5f5ff;
+  font-size:12px;
+  font-weight:750;
+  text-align:right;
+}
+#discoverView .featured-gme-hero {
+  display:grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(190px, .85fr);
+  gap:18px;
+  align-items:center;
+  padding:18px 21px 19px;
+}
+#discoverView .featured-gme-overline,
+#discoverView .featured-gme-side-kicker {
+  display:block;
+  font-size:10px;
+  font-weight:850;
+  letter-spacing:.085em;
+  color:#8df1e7;
+  line-height:1.4;
+}
+#discoverView .featured-gme-primary h2 {
+  font-size:clamp(22px,3vw,31px);
+  font-weight:850;
+  letter-spacing:-.032em;
+  line-height:1.12;
+  color:#fff;
+  margin:5px 0 8px;
+}
+#discoverView .featured-gme-primary h2 span {color:#a5f1ea}
+#discoverView .featured-gme-primary p {
+  margin:0;
+  font-size:clamp(13px,1.6vw,16px);
+  line-height:1.45;
+  font-weight:750;
+  color:#fff;
+}
+#discoverView .featured-gme-separator{color:#87dbd8;margin:0 6px}
+#discoverView .featured-gme-location {
+  display:block;
+  color:#e0ebf4;
+  font-size:12px;
+  line-height:1.55;
+  margin-top:5px;
+}
+#discoverView .featured-gme-side {
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  padding:13px 16px;
+  background:rgba(9,27,60,.20);
+  border:1px solid rgba(255,255,255,.23);
+  border-left:3px solid var(--gme-orange);
+  border-radius:11px;
+}
+#discoverView .featured-gme-side-kicker{color:#ffc494}
+#discoverView .featured-gme-side strong {
+  font-size:14px;
+  font-weight:800;
+  line-height:1.3;
+  color:#fff;
+}
+#discoverView .featured-gme-side span:not(.featured-gme-side-kicker) {
+  color:#fff2df;
+  font-size:12px;
+  font-weight:700;
+}
+#discoverView .featured-gme-side small {
+  color:#e5edf5;
+  font-size:11px;
+  line-height:1.35;
+}
+#discoverView .featured-gme-bottom {
+  display:flex;
+  align-items:stretch;
+  border-top:1px solid rgba(255,255,255,.2);
+  min-height:47px;
+  background:rgba(2,20,51,.28);
+}
+#discoverView .featured-gme-marquee {
+  min-width:0;
+  overflow:hidden;
+  flex:1;
+  display:flex;
+  align-items:center;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 3%,#000 97%,transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0%,#000 3%,#000 97%,transparent 100%);
+}
+#discoverView .featured-gme-marquee-track {
+  display:flex;
+  align-items:center;
+  white-space:nowrap;
+  width:max-content;
+  animation:gme-research-marquee 34s linear infinite;
+}
+#discoverView .featured-gme-marquee-group {
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  gap:18px;
+  padding:0 18px 0 0;
+  font-size:11px;
+  letter-spacing:.008em;
+  color:#ecf8ff;
+}
+#discoverView .featured-gme-marquee-group b{font-weight:800;color:#a9f6ea}
+#discoverView .featured-gme-marquee-group i {
+  width:5px;
+  height:5px;
+  flex:0 0 5px;
+  border-radius:100%;
+  background:#fbb26f;
+}
+@keyframes gme-research-marquee {from{transform:translateX(0)}to{transform:translateX(-50%)}}
+#discoverView .featured-gme-banner:hover .featured-gme-marquee-track,
+#discoverView .featured-gme-banner:focus-within .featured-gme-marquee-track {animation-play-state:paused}
+#discoverView .featured-gme-action {
+  appearance:none;
+  border:0;
+  border-left:1px solid rgba(255,255,255,.2);
+  border-radius:0;
+  background:#05b9b1;
+  color:#062e4a;
+  font-family:inherit;
+  font-size:12px;
+  font-weight:850;
+  padding:9px 16px;
+  flex:0 0 auto;
+  cursor:pointer;
+  min-height:47px;
+  transition:background .16s ease;
+}
+#discoverView .featured-gme-action:hover{background:#72ece0}
+#discoverView .featured-gme-action:focus-visible{outline:3px solid #fff;outline-offset:-5px}
+#discoverView .featured-gme-action span {font-size:17px;margin-left:7px;vertical-align:-1px}
+@media(max-width:800px) {
+  #discoverView .featured-gme-hero{grid-template-columns:minmax(0,1fr) minmax(155px,.6fr);gap:10px}
+  #discoverView .featured-gme-primary h2{font-size:24px}
+}
+@media(max-width:570px) {
+  #discoverView .featured-gme-banner{border-radius:13px;margin-bottom:17px}
+  #discoverView .featured-gme-topline{padding:14px 15px 0;align-items:flex-start}
+  #discoverView .featured-gme-brand{font-size:10px;max-width:130px}
+  #discoverView .featured-gme-label{font-size:9px;letter-spacing:.04em}
+  #discoverView .featured-gme-hero{grid-template-columns:1fr;padding:15px;gap:13px}
+  #discoverView .featured-gme-primary h2{font-size:25px}
+  #discoverView .featured-gme-primary p{font-size:13px}
+  #discoverView .featured-gme-side{padding:10px 12px}
+  #discoverView .featured-gme-side small{display:none}
+  #discoverView .featured-gme-bottom{flex-wrap:wrap}
+  #discoverView .featured-gme-marquee{min-height:38px;flex-basis:100%}
+  #discoverView .featured-gme-action{flex-basis:100%;border-left:0;border-top:1px solid rgba(255,255,255,.2);min-height:44px}
+}
+@media(prefers-reduced-motion:reduce) {
+  #discoverView .featured-gme-marquee-track{animation:none}
+  #discoverView .featured-gme-action{transition:none}
+}

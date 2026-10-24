@@ -8631,6 +8631,63 @@
           "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
         }
       }
+    },
+    {
+      "id": "adventhealth-gme-research-day27",
+      "name": "AdventHealth GME Research Day 2027",
+      "society": "AdventHealth Graduate Medical Education / AdventHealth Research Institute",
+      "specialty": "Medical Education",
+      "featuredForAllSpecialties": true,
+      "eventType": "institutional_research_day",
+      "start": "2027-04-30",
+      "end": "2027-04-30",
+      "city": "Orlando, FL",
+      "venue": "Whole Life Church, 2800 N Orange Ave, Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Original and clinical research",
+        "Quality improvement",
+        "Case studies",
+        "Medical education"
+      ],
+      "url": "https://www.adventhealth.com/adventhealth-graduate-medical-education/research",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Featured AdventHealth resident and fellow research event, Friday, April 30, 2027, 10:00 AM–4:00 PM (doors open 9:30 AM), Whole Life Church, 2800 N Orange Ave, Orlando, FL. Companion AdventHealth Research Day for clinicians and scientists is Thursday, April 29, 2027. Dates and venue are from the AdventHealth Research Institute save-the-date flyer provided to RISE; the linked institutional research page describes prior GME Research Days and awards but does not yet publish the 2027 abstract call. Confirm participant eligibility, abstract submission opening/deadline, and categories with the AdventHealth GME Research Office.",
+      "flag": null,
+      "tags": [
+        "trainee",
+        "resident",
+        "fellow",
+        "institutional",
+        "featured"
+      ],
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "dateEvidence": "AdventHealth Research Institute save-the-date announcement supplied to RISE on 2026-10-24",
+      "eventTime": "10:00 AM–4:00 PM ET; doors open at 9:30 AM",
+      "fieldSources": {
+        "start": {
+          "checked_at": "2026-10-24",
+          "verified_by": "AdventHealth Research Institute save-the-date flyer provided to RISE",
+          "source_quote": "GME Research Day — Friday, April 30, 2027",
+          "confidence": "organizer_flyer",
+          "source_kind": "organizer_flyer"
+        },
+        "end": {
+          "checked_at": "2026-10-24",
+          "verified_by": "AdventHealth Research Institute save-the-date flyer provided to RISE",
+          "source_quote": "GME Research Day — Friday, April 30, 2027",
+          "confidence": "organizer_flyer",
+          "source_kind": "organizer_flyer"
+        }
+      }
     }
   ],
   "awards": [
