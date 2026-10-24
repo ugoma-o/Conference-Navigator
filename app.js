@@ -602,74 +602,33 @@ function printRoadmapPdf(){
 /* The selected conference stays independent from search/filter results so
    users can explore alternatives without silently changing their roadmap. */
 const plannerConferences=C.filter(c=>c.deadline||c.start);
-let plannerVisibleLimit=9;
-function plannerTargetSort(a,b,sort){
- const alpha=()=>a.name.localeCompare(b.name);
- if(sort==='name')return alpha();
- if(sort==='latest')return (b.start||b.deadline||'').localeCompare(a.start||a.deadline||'')||alpha();
- const when=c=>sort==='deadline'?(c.deadline||null):(c.start||c.deadline||null);
- const coming=d=>d&&d>=todayKey?d:'9999-12-31';
- return coming(when(a)).localeCompare(coming(when(b)))
-     || (when(a)||'9999-12-31').localeCompare(when(b)||'9999-12-31')
-     || alpha();
-}
-function plannerTargetMatches(){
- const terms=get('planSearch').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
- const specialty=get('planSpecialty').value;
- const sort=get('planSort').value;
- return plannerConferences.filter(c=>{
-  if(specialty!=='all'&&c.specialty!==specialty)return false;
-  const haystack=[c.name,c.society,c.specialty,c.city,c.start,c.end,c.deadline,
-   c.start?fmt(c.start,{month:'long',day:'numeric',year:'numeric'}):'',
-   c.deadline?fmt(c.deadline,{month:'long',day:'numeric',year:'numeric'}):''
-  ].filter(Boolean).join(' ').toLocaleLowerCase();
-  return terms.every(term=>haystack.includes(term));
- }).sort((a,b)=>plannerTargetSort(a,b,sort));
-}
 function renderPlannerTargets(){
- const active=get('planConference').value;
- const selected=C.find(c=>c.id===active);
- const results=plannerTargetMatches();
- const visible=results.slice(0,plannerVisibleLimit);
+ const selected=C.find(c=>c.id===get('planConference').value);
  get('planSelectedConference').innerHTML=selected?
   `<span class="planner-current-label">SELECTED CONFERENCE</span><strong>${escape(selected.name)}</strong><span>${escape(selected.specialty)} · ${escape(selected.start?dateRange(selected.start,selected.end):'Meeting date not announced')}</span>`:
-  '<span class="planner-current-label">SELECT A CONFERENCE</span>';
- get('planResultCount').textContent=results.length?
-  `Showing ${visible.length} of ${results.length} matching ${results.length===1?'conference':'conferences'}`:
-  'No conferences match these filters';
- get('planConferenceMatches').innerHTML=visible.length?visible.map(c=>{
-  const isActive=c.id===active,meeting=c.start?dateRange(c.start,c.end):'Meeting date not announced';
-  const due=c.deadline?`Abstract due: ${fmt(c.deadline)}`:'Abstract deadline not announced';
-  return `<button type="button" class="planner-target-option ${isActive?'selected':''}" data-planner-target="${escape(c.id)}" aria-pressed="${isActive?'true':'false'}"><strong>${escape(c.name)}</strong><span>${escape(c.specialty)} · ${escape(meeting)}</span><small>${escape(due)}</small></button>`;
- }).join(''):'<p class="planner-target-empty">No matches. Try another specialty or search term.</p>';
- get('planMoreConferences').classList.toggle('hidden',results.length<=plannerVisibleLimit);
- get('planMoreConferences').textContent=`Show more conferences (${results.length-visible.length} remaining)`;
+  '';
 }
 function selectPlannerTarget(id){
- if(!plannerConferences.some(c=>c.id===id))return;
+ const selected=plannerConferences.find(c=>c.id===id);
+ if(!selected)return;
  get('planConference').value=id;
- get('planSearch').value='';
- get('planSpecialty').value='all';
- plannerVisibleLimit=9;
+ get('planSearch').value=selected.name;
  renderPlannerTargets();
+ generatePlan();
 }
 function initPlanner(){
- const list=[...plannerConferences].sort((a,b)=>plannerTargetSort(a,b,'deadline'));
- get('planConference').innerHTML=plannerConferences.map(c=>`<option value="${escape(c.id)}">${escape(c.name)}</option>`).join('');
- get('planSpecialty').innerHTML='<option value="all">All specialties</option>'+
-  [...new Set(plannerConferences.map(c=>c.specialty).filter(Boolean))].sort((a,b)=>a.localeCompare(b)).map(s=>`<option value="${escape(s)}">${escape(s)}</option>`).join('');
- get('planSearch').addEventListener('input',()=>{plannerVisibleLimit=9;renderPlannerTargets()});
- get('planSpecialty').addEventListener('change',()=>{plannerVisibleLimit=9;renderPlannerTargets()});
- get('planSort').addEventListener('change',()=>{plannerVisibleLimit=9;renderPlannerTargets()});
- get('planClearFilters').addEventListener('click',()=>{get('planSearch').value='';get('planSpecialty').value='all';get('planSort').value='meeting';plannerVisibleLimit=9;renderPlannerTargets()});
- get('planMoreConferences').addEventListener('click',()=>{plannerVisibleLimit+=9;renderPlannerTargets()});
- get('planConferenceMatches').addEventListener('click',e=>{
-  const option=e.target.closest('[data-planner-target]');
-  if(!option)return;
-  get('planConference').value=option.dataset.plannerTarget;
-  renderPlannerTargets();
-  generatePlan();
- });
+ const sorted=[...plannerConferences].sort((a,b)=>a.name.localeCompare(b.name));
+ get('planConference').innerHTML='<option value=""></option>'+sorted.map(c=>`<option value="${escape(c.id)}">${escape(c.name)}</option>`).join('');
+ get('planConference').value='';
+ get('planConferenceSuggestions').innerHTML=sorted.map(c=>`<option value="${escape(c.name)}"></option>`).join('');
+ const resolveSearch=()=>{
+  const query=get('planSearch').value.trim().toLocaleLowerCase();
+  const exact=sorted.find(c=>c.name.toLocaleLowerCase()===query);
+  if(exact){selectPlannerTarget(exact.id);return;}
+  if(get('planConference').value){get('planConference').value='';renderPlannerTargets();}
+ };
+ get('planSearch').addEventListener('input',resolveSearch);
+ get('planSearch').addEventListener('change',resolveSearch);
  get('planConference').addEventListener('change',()=>{renderPlannerTargets();generatePlan()});
  get('planLeadMonths').addEventListener('change',generatePlan);
  get('planType').addEventListener('change',generatePlan);
@@ -679,8 +638,8 @@ function initPlanner(){
  get('downloadPlanVisual').addEventListener('click',downloadRoadmapVisual);
  get('printPlanPdf').addEventListener('click',printRoadmapPdf);
  get('downloadPlan').addEventListener('click',()=>{if(!state.plan){showToast('Generate a timeline first');return}const items=state.plan.steps.map((s,i)=>({date:s.day,uid:`${state.plan.id}-${i}`,title:`RISE Conference Navigator project milestone — ${s.title}${state.plan.estimated?' (provisional)':''}`,description:state.plan.name+' | '+s.desc+(state.plan.estimated?' | Dates based on assumed submission target, not official deadline.':'')}));downloadFile('RISE_research_roadmap.ics',icsEvents(items),'text/calendar;charset=utf-8');showToast('Research roadmap exported as .ics')});
- const next=list.find(c=>c.deadline&&c.deadline>=todayKey)||list.find(c=>c.start&&c.start>=todayKey);
- get('planConference').value=next?next.id:list[0]?.id||'';
+ get('planConference').value='';
+ get('planSearch').value='';
  renderPlannerTargets();
  generatePlan();
 }
