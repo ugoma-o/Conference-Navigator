@@ -1949,7 +1949,7 @@
         "Orthopaedic education",
         "Surgical techniques"
       ],
-      "url": "https://www.aaos.org/annual/attend/future-meetings/",
+      "url": "https://www.aaos.org/annual",
       "guideline": "https://www.aaos.org/annual/explore-the-program/abstracts-applications/",
       "evidence": "official",
       "note": "Regular paper/poster/ePoster submissions closed June 8, 2026. Confirm accepted presentation formats directly with the organizer.",
@@ -1967,6 +1967,16 @@
           "checked_at": "2026-10-11",
           "verified_by": "RISE review of official 2027 organizer pages",
           "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "start": {
+          "url": "https://www.aaos.org/annual",
+          "checked_at": "2026-10-24",
+          "verified_by": "AAOS 2027 organizer"
+        },
+        "end": {
+          "url": "https://www.aaos.org/annual",
+          "checked_at": "2026-10-24",
+          "verified_by": "AAOS 2027 organizer"
         }
       },
       "additionalSources": []
@@ -2845,7 +2855,7 @@
       "city": "San Diego, CA",
       "open": null,
       "deadline": "2026-11-04",
-      "deadlineTime": "11:59 PM EST",
+      "deadlineTime": "11:59 PM ET",
       "limit": 500,
       "limitType": "words",
       "limitNote": "500 words combined across abstract fields; title/authors excluded.",
@@ -2855,7 +2865,7 @@
         "Case series / Excerpta",
         "Neuroradiology education exhibits"
       ],
-      "url": "https://www.asnr.org/ashnr-asnr-annual-meeting-2027/",
+      "url": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
       "guideline": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
       "evidence": "official",
       "note": "2027 meeting hosted by American Societies of Head and Neck Radiology and Neuroradiology. Abstracts due November 4, 2026; four accepted formats. Do not confuse this ASNR with the American Society of Neurorehabilitation.",
@@ -2883,9 +2893,9 @@
         },
         "deadline": {
           "url": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE review of official 2027 organizer pages",
-          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+          "checked_at": "2026-10-24",
+          "verified_by": "ASHNR/ASNR official 2027 call",
+          "source_quote": "Deadline: Wednesday, November 4, at 11:59 PM EST"
         }
       }
     },
@@ -7257,6 +7267,1131 @@
           "verified_by": "Official organizer website"
         }
       }
+    },
+    {
+      "id": "acp-ok26",
+      "name": "ACP Oklahoma Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-13",
+      "end": "2026-11-14",
+      "city": "Tulsa, OK",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "regional",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "acp-or26",
+      "name": "ACP Oregon Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-12",
+      "end": "2026-11-13",
+      "city": "Salem, OR",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "regional",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "acp-ma26",
+      "name": "ACP Massachusetts Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "city": "Waltham, MA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "regional",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "acp-ny26",
+      "name": "ACP New York Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "city": "Albany, NY",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "regional",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "acp-ca-s3-26",
+      "name": "ACP Southern California Region 3 Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-10-24",
+      "end": "2026-10-24",
+      "city": "San Diego, CA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "regional",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "acp-oh26",
+      "name": "ACP Ohio / Air Force Chapters Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-10-25",
+      "end": "2026-10-27",
+      "city": "Columbus, OH",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "regional",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "acp-fl26",
+      "name": "ACP Florida Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-10-23",
+      "end": "2026-10-25",
+      "city": "Fort Lauderdale, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Resident poster competition included; abstract submission ended August 23, 2026.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "regional",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "napcrg26",
+      "name": "NAPCRG 54th Annual Meeting 2026",
+      "society": "North American Primary Care Research Group",
+      "specialty": "Family Medicine",
+      "start": "2026-11-20",
+      "end": "2026-11-24",
+      "city": "Toronto, Canada",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://napcrgwebsite.azurewebsites.net/conferences/annual/annualmeeting/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://napcrgwebsite.azurewebsites.net/conferences/annual/annualmeeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://napcrgwebsite.azurewebsites.net/conferences/annual/annualmeeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "napcrg27",
+      "name": "NAPCRG 55th Annual Meeting 2027",
+      "society": "North American Primary Care Research Group",
+      "specialty": "Family Medicine",
+      "start": "2027-11-13",
+      "end": "2027-11-17",
+      "city": "Vancouver, Canada",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://napcrgwebsite.azurewebsites.net/conferences/future-conferences/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://napcrgwebsite.azurewebsites.net/conferences/future-conferences/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://napcrgwebsite.azurewebsites.net/conferences/future-conferences/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "savs27",
+      "name": "Southern Association for Vascular Surgery Annual Meeting 2027",
+      "society": "Southern Association for Vascular Surgery",
+      "specialty": "Vascular Surgery",
+      "start": "2027-01-14",
+      "end": "2027-01-17",
+      "city": "Naples, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://vascular.org/vascular-specialists/meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "regional",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "vesswinter27",
+      "name": "Vascular and Endovascular Surgery Society Winter Meeting 2027",
+      "society": "Vascular and Endovascular Surgery Society",
+      "specialty": "Vascular Surgery",
+      "start": "2027-01-21",
+      "end": "2027-01-24",
+      "city": "Steamboat Springs, CO",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://vascular.org/vascular-specialists/meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "avf27",
+      "name": "American Venous Forum Annual Meeting 2027",
+      "society": "American Venous Forum",
+      "specialty": "Vascular Surgery",
+      "start": "2027-02-27",
+      "end": "2027-03-02",
+      "city": "Nashville, TN",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://vascular.org/vascular-specialists/meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "womensvascular27",
+      "name": "Women's Vascular Summit 2027",
+      "society": "Women's Vascular Summit",
+      "specialty": "Vascular Surgery",
+      "start": "2027-04-30",
+      "end": "2027-05-02",
+      "city": "Washington, DC",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://vascular.org/vascular-specialists/meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "tsves26",
+      "name": "Texas Society for Vascular and Endovascular Surgery Annual Meeting 2026",
+      "society": "Texas Society for Vascular and Endovascular Surgery",
+      "specialty": "Vascular Surgery",
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "city": "Dallas, TX",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://vascular.org/vascular-specialists/meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "regional",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "veith26",
+      "name": "VEITHsymposium 2026",
+      "society": "VEITHsymposium",
+      "specialty": "Vascular Surgery",
+      "start": "2026-11-17",
+      "end": "2026-11-21",
+      "city": "New York, NY",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://vascular.org/vascular-specialists/meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "apao27",
+      "name": "Asia-Pacific Academy of Ophthalmology Congress 2027",
+      "society": "Asia-Pacific Academy of Ophthalmology",
+      "specialty": "Ophthalmology",
+      "start": "2027-03-18",
+      "end": "2027-03-21",
+      "city": "Singapore",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://apaophth.org/congress/calendar/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://apaophth.org/congress/calendar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://apaophth.org/congress/calendar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "wgc27",
+      "name": "World Glaucoma Congress 2027",
+      "society": "World Glaucoma Association",
+      "specialty": "Ophthalmology",
+      "start": "2027-04-20",
+      "end": "2027-04-23",
+      "city": "Kyoto, Japan",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://apaophth.org/congress/calendar/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://apaophth.org/congress/calendar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://apaophth.org/congress/calendar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "soe27",
+      "name": "European Society of Ophthalmology Congress 2027",
+      "society": "European Society of Ophthalmology",
+      "specialty": "Ophthalmology",
+      "start": "2027-06-18",
+      "end": "2027-06-20",
+      "city": "Athens, Greece",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://apaophth.org/congress/calendar/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://apaophth.org/congress/calendar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://apaophth.org/congress/calendar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "apspos27",
+      "name": "Asia-Pacific Strabismus & Paediatric Ophthalmology Congress 2027",
+      "society": "Asia-Pacific Strabismus & Paediatric Ophthalmology Society",
+      "specialty": "Ophthalmology",
+      "start": "2027-04-15",
+      "end": "2027-04-17",
+      "city": "Tianjin, China",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://apaophth.org/congress/calendar/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://apaophth.org/congress/calendar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://apaophth.org/congress/calendar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "era27",
+      "name": "ERA Congress 2027 (European Renal Association)",
+      "society": "European Renal Association",
+      "specialty": "Nephrology",
+      "start": "2027-06-03",
+      "end": "2027-06-06",
+      "city": "Rotterdam, Netherlands",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.era-online.org/events/rotterdam-2027/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.era-online.org/events/rotterdam-2027/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.era-online.org/events/rotterdam-2027/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "amssm27",
+      "name": "AMSSM Annual Meeting 2027",
+      "society": "American Medical Society for Sports Medicine",
+      "specialty": "Sports Medicine",
+      "start": "2027-04-16",
+      "end": "2027-04-21",
+      "city": "Louisville, KY",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.amssm.org/Conferences.html",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.amssm.org/Conferences.html",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.amssm.org/Conferences.html",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "amssm-fellows27",
+      "name": "AMSSM Fellows Research & Leadership Conference 2027",
+      "society": "American Medical Society for Sports Medicine",
+      "specialty": "Sports Medicine",
+      "start": "2027-07-22",
+      "end": "2027-07-25",
+      "city": "Minneapolis, MN",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.amssm.org/Conferences.html",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Fellows-focused research and leadership; resident eligibility must be confirmed.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.amssm.org/Conferences.html",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.amssm.org/Conferences.html",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "assr27",
+      "name": "American Society of Spine Radiology Annual Symposium 2027",
+      "society": "American Society of Spine Radiology",
+      "specialty": "Radiology",
+      "start": "2027-02-10",
+      "end": "2027-02-13",
+      "city": "San Francisco, CA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.asnr.org/future-events/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.asnr.org/future-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.asnr.org/future-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "acgme-conclave28",
+      "name": "ACGME Annual Educational Conference 2028",
+      "society": "Accreditation Council for Graduate Medical Education",
+      "specialty": "Medical Education",
+      "start": "2028-02-24",
+      "end": "2028-02-26",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.acgme.org/newsroom/2026/1/2026-2028-back-to-bedside-cycle/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "The 2028 conference location and dates are from the ACGME Back to Bedside funding-cycle announcement; research abstract call not yet posted.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acgme.org/newsroom/2026/1/2026-2028-back-to-bedside-cycle/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.acgme.org/newsroom/2026/1/2026-2028-back-to-bedside-cycle/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "acpm-pm27",
+      "name": "ACPM Preventive Medicine (PM2027) Conference",
+      "society": "American College of Preventive Medicine",
+      "specialty": "Preventive Medicine",
+      "start": "2027-05-03",
+      "end": "2027-05-06",
+      "city": "San Diego, CA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific research abstract submissions (check official call)"
+      ],
+      "url": "https://acpm.org/membership-partners/awards-scholarships/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting dates verified; abstract deadline not yet verified.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://acpm.org/membership-partners/awards-scholarships/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://acpm.org/membership-partners/awards-scholarships/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "aha-bcvs27",
+      "name": "AHA Basic Cardiovascular Sciences Sessions 2027",
+      "society": "American Heart Association",
+      "specialty": "Cardiology",
+      "start": "2027-07-19",
+      "end": "2027-07-22",
+      "city": "Boston, MA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific research abstract submissions (check official call)"
+      ],
+      "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting dates verified; abstract deadline not yet verified.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "aha-vascular-discovery27",
+      "name": "AHA Vascular Discovery Sessions 2027",
+      "society": "American Heart Association",
+      "specialty": "Vascular Surgery",
+      "start": "2027-07-22",
+      "end": "2027-07-25",
+      "city": "Boston, MA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific research abstract submissions (check official call)"
+      ],
+      "url": "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting dates verified; abstract deadline not yet verified.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        }
+      }
     }
   ],
   "awards": [
@@ -9285,6 +10420,545 @@
       "lastVerified": "2026-10-24",
       "verificationSource": "https://www.ishlt.org/about/news-detail/2026/08/03/now-open--ishlt2027-call-for-abstracts",
       "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acs-resident-teaching",
+      "name": "ACS Resident Award for Exemplary Teaching",
+      "society": "American College of Surgeons",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "Residents in good standing in an accredited surgery residency, including surgical specialty programs, demonstrating exceptional teaching and educational scholarship.",
+      "url": "https://www.facs.org/for-medical-professionals/education/residents/acs-resident-award-for-exemplary-teaching/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "2026 nominations closed; next cycle not announced.",
+      "applicationProcess": "Program director or department chair nominates; provide CV, teaching philosophy, awards and educational evidence.",
+      "specialties": [
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.facs.org/for-medical-professionals/education/residents/acs-resident-award-for-exemplary-teaching/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acs-chassin-professionalism",
+      "name": "Jameson L. Chassin Award for Professionalism in General Surgery",
+      "society": "American College of Surgeons",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "General surgery chief residents recognized for compassion, clinical and technical excellence, professionalism, and scholarly commitment.",
+      "url": "https://www.facs.org/for-medical-professionals/professional-growth-and-wellness/scholarships-fellowships-and-awards/resident/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "2026 cycle closed; confirm next nomination deadline.",
+      "applicationProcess": "Residency leadership nomination through ACS resident award selection.",
+      "specialties": [
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.facs.org/for-medical-professionals/professional-growth-and-wellness/scholarships-fellowships-and-awards/resident/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acs-resident-volunteerism",
+      "name": "ACS Resident Surgical Volunteerism Award",
+      "society": "American College of Surgeons / ACS HOPE",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "ACS member surgeons from any surgical specialty who performed meaningful organized surgical volunteerism during postgraduate surgical training.",
+      "url": "https://www.facs.org/for-medical-professionals/membership-community/acs-hope/acs-pfizer-awards/resident-surgical-volunteerism-award/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "Standalone surgical volunteerism recognition.",
+      "applicationProcess": "Nominate a resident surgeon with substantial documented domestic or international surgical service; confirm annual criteria.",
+      "specialties": [
+        "Surgery",
+        "Plastic Surgery",
+        "Orthopedic Surgery",
+        "Vascular Surgery",
+        "Neurosurgery",
+        "Cardiothoracic Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.facs.org/for-medical-professionals/membership-community/acs-hope/acs-pfizer-awards/resident-surgical-volunteerism-award/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aaem-resident-of-year",
+      "name": "AAEM Resident of the Year Award",
+      "society": "American Academy of Emergency Medicine",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "Current emergency medicine resident who is an AAEM/RSA member with exceptional service, leadership, education, or contributions to the academy.",
+      "url": "https://www.aaem.org/about-us/awards/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Society annual award nomination; current-cycle nomination window must be verified.",
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aaem.org/about-us/awards/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "asps-rising-star",
+      "name": "ASPS Rising Star Award",
+      "society": "American Society of Plastic Surgeons",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Plastic surgery resident or fellow with significant contributions to ASPS or its membership during the preceding year.",
+      "url": "https://www.plasticsurgery.org/for-medical-professionals/community/young-plastic-surgeons-forum/rising-star-award",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "Society states applications reopen in April 2027; no exact opening or deadline announced.",
+      "applicationProcess": "Apply under the annual Rising Star Awards call; nominations/letters based on official instructions.",
+      "specialties": [
+        "Plastic Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.plasticsurgery.org/for-medical-professionals/community/young-plastic-surgeons-forum/rising-star-award",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "apsf-trainee-qi",
+      "name": "APSF Trainee Quality Improvement / Patient Safety Recognition",
+      "society": "Anesthesia Patient Safety Foundation",
+      "amount": "Conference travel and presentation (2026)",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Current physician anesthesiology residents or trainees who graduated in the immediately preceding academic year presenting anesthesia patient-safety or quality-improvement projects.",
+      "url": "https://www.apsf.org/grants-and-awards/quality-improvement-awards/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "2026 submission cycle closed June 30; 2027 rules pending.",
+      "applicationProcess": "Submit QI/patient-safety project summary as a document or brief video and notify APSF.",
+      "specialties": [
+        "Anesthesiology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.apsf.org/grants-and-awards/quality-improvement-awards/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acog-creighton-edwards",
+      "name": "CREOG Creighton L. Edwards, MD Award in Compassionate Care",
+      "society": "American College of Obstetricians and Gynecologists",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "Obstetrics/gynecology resident training in Texas recognized for compassionate care.",
+      "url": "https://www.acog.org/education-and-events/creog/get-involved/awards",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "Texas-specific resident recognition; consult CREOG for program nomination process.",
+      "applicationProcess": "Contact CREOG and residency leadership regarding annual nomination and documentation.",
+      "specialties": [
+        "Obstetrics & Gynecology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.acog.org/education-and-events/creog/get-involved/awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aad-resident-qi27",
+      "name": "AAD 2027 Resident Quality Improvement Award",
+      "society": "American Academy of Dermatology",
+      "amount": "Up to $2,000",
+      "category": "Recognition award",
+      "open": "2026-06-12",
+      "opens": "2026-06-12",
+      "deadline": "2026-08-28",
+      "deadlineLabel": "Award application deadline",
+      "eligibility": "AAD member dermatology residents in accredited US training programs implementing measurable resident-led quality or safety improvement projects.",
+      "url": "https://www.aad.org/member/career/awards/resident-improvement",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "2027 award-cycle deadline has passed; awardees present at AAD March 2027.",
+      "applicationProcess": "Submit mentored QI proposal; faculty sponsorship and improvement measures required.",
+      "specialties": [
+        "Dermatology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aad.org/member/career/awards/resident-improvement",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aad.org/member/career/awards/resident-improvement",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "acr-philips-leaders",
+      "name": "ACR Philips Emerging Leader Scholarship",
+      "society": "American College of Radiology",
+      "amount": "Leadership training, travel and mentoring (2026)",
+      "category": "Trainee scholarship",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Current ACR-member resident or fellow enrolled in an accredited US or Canadian program, with leadership experience and relevant training level.",
+      "url": "https://www.acr.org/Education-and-CME/Radiology-Leadership-Institute/Scholarship-Recognitions",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "2026 requirements applied specifically to R3–R4 trainees/fellows.",
+      "applicationProcess": "Application, CV, leadership statements and program director/chair support letter; verify 2027 cohort criteria.",
+      "specialties": [
+        "Radiology",
+        "Radiation Oncology",
+        "Nuclear Medicine",
+        "Medical Physics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.acr.org/Education-and-CME/Radiology-Leadership-Institute/Scholarship-Recognitions",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "auanet-resident-research",
+      "name": "AUA Urology Care Foundation Residency Research Award",
+      "society": "American Urological Association / Urology Care Foundation",
+      "amount": "Recognition",
+      "category": "Research grant",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Urology residents at accredited programs undertaking mentored research with institutional support and appropriate protected research time.",
+      "url": "https://www.auanet.org/about-us/aua-governance/awards/urology-care-foundation-awards",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Do not infer a 2027 deadline from historical 2025 funding announcements.",
+      "applicationProcess": "Apply to annual Urology Care Foundation residency research funding call with mentor, project plan, and institutional commitments.",
+      "specialties": [
+        "Urology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.auanet.org/about-us/aua-governance/awards/urology-care-foundation-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aaos-rock-study",
+      "name": "AAOS ROCK / ResStudy Resident Achievement Awards",
+      "society": "American Academy of Orthopaedic Surgeons",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Orthopaedic surgery residents and residency programs showing strong engagement in ROCK learning and ResStudy educational activities.",
+      "url": "https://www.aaos.org/education/resident-orthopaedic-core-knowledge/rock-awards/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Selection depends on educational-platform engagement metrics; not a traditional open nomination.",
+      "applicationProcess": "Recognized through AAOS ROCK / ResStudy participation and residency education engagement.",
+      "specialties": [
+        "Orthopedic Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aaos.org/education/resident-orthopaedic-core-knowledge/rock-awards/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aao-hns-amd-resident",
+      "name": "AMD Resident Research Award (CORE)",
+      "society": "Association of Migraine Disorders / AAO-HNS CORE",
+      "amount": "$12,000 (2027 CORE)",
+      "category": "Research grant",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Residents in accredited residency training programs worldwide undertaking research advancing migraine disease.",
+      "url": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Part of official cross-society 2027 CORE awards.",
+      "applicationProcess": "Apply through the 2027 CORE grants program; confirm deadline, mentor and institutional eligibility.",
+      "specialties": [
+        "Otolaryngology",
+        "Neurology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ars-resident-rhinology",
+      "name": "American Rhinologic Society CORE Resident Research Grant 2027",
+      "society": "American Rhinologic Society / CORE",
+      "amount": "$10,000 (2027 CORE)",
+      "category": "Research grant",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Residents in approved US or Canadian training programs conducting rhinology research with an ARS-member supervising faculty co-investigator.",
+      "url": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Submit grant application through CORE with supervising faculty support.",
+      "specialties": [
+        "Otolaryngology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acpm-gemson27",
+      "name": "ACPM Donald Gemson Resident Award 2027",
+      "society": "American College of Preventive Medicine",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": "2027-01-14",
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "Current ACPM resident members at any postgraduate level distinguished in community service, teaching, research, scholarship and leadership.",
+      "url": "https://acpm.org/membership-partners/awards-scholarships/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Self-nomination or nomination by a colleague through ACPM member awards portal.",
+      "specialties": [
+        "Preventive Medicine",
+        "Public Health"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://acpm.org/membership-partners/awards-scholarships/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://acpm.org/membership-partners/awards-scholarships/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "acpm-resident-scholarship27",
+      "name": "ACPM PM2027 Resident Conference Scholarships",
+      "society": "American College of Preventive Medicine",
+      "amount": "Recognition",
+      "category": "Trainee scholarship",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Current PH/GPM, occupational medicine, or aerospace medicine residents attending the 2027 preventive medicine annual meeting.",
+      "url": "https://acpm.org/membership-partners/awards-scholarships/",
+      "conferenceId": "acpm-pm27",
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Review ACPM's 2027 scholarship application page for eligibility and travel-support criteria.",
+      "specialties": [
+        "Preventive Medicine",
+        "Public Health"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://acpm.org/membership-partners/awards-scholarships/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aha-laennec-fit",
+      "name": "AHA Laennec Fellow-in-Training Clinician Award",
+      "society": "American Heart Association",
+      "amount": "Recognition",
+      "category": "Merit award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Clinical cardiology fellows-in-training undertaking notable clinical research; eligibility and AHA Council membership requirements vary by annual cycle.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "AHA council-specific early-career award competition; check current program's eligibility and abstract requirements.",
+      "specialties": [
+        "Cardiology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aha-3cpr-early",
+      "name": "AHA Cournand and Comroe Early Career Investigator Award",
+      "society": "American Heart Association",
+      "amount": "Recognition",
+      "category": "Merit award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Qualifying early-career cardiopulmonary, resuscitation and critical-care investigators with original science.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Abstract-based AHA council competition; resident eligibility depends on career-stage conditions.",
+      "specialties": [
+        "Cardiology",
+        "Pulmonary & Critical Care",
+        "Anesthesiology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aha-stroke-siekert",
+      "name": "AHA Robert G. Siekert New Investigator Award",
+      "society": "American Heart Association / Stroke Council",
+      "amount": "Recognition",
+      "category": "Merit award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Qualifying new investigators with original stroke research selected for the International Stroke Conference.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "conferenceId": "isc27",
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Submit eligible regular stroke conference abstract; verify investigator-stage requirements.",
+      "specialties": [
+        "Neurology",
+        "Cardiology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aha-bcvs-outreach",
+      "name": "AHA BCVS Cardiovascular Outreach Awards",
+      "society": "American Heart Association",
+      "amount": "Up to ten $500 awards",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "US early-career basic cardiovascular science investigators and students from groups underrepresented in research; strong abstract preferred but not mandatory.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/bcvs-cardiovascular-outreach-awards",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Provide CV and endorsement letters; 2027 cycle abstract call scheduled spring 2027.",
+      "specialties": [
+        "Cardiology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/bcvs-cardiovascular-outreach-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
       "fieldSources": {}
     }
   ]
