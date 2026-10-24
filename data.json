@@ -5441,24 +5441,24 @@
       "types": [
         "Scientific program / submission categories to confirm"
       ],
-      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "url": "https://www.acponline.org/about-acp/chapters-regions/global-chapters/japan-chapter",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "note": "Kyoto University; confirmed directly on the ACP Japan Chapter page.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "url": "https://www.acponline.org/about-acp/chapters-regions/global-chapters/japan-chapter",
           "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
+          "verified_by": "ACP Japan Chapter official calendar"
         },
         "end": {
-          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "url": "https://www.acponline.org/about-acp/chapters-regions/global-chapters/japan-chapter",
           "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
+          "verified_by": "ACP Japan Chapter official calendar"
         }
       }
     },
@@ -5715,7 +5715,7 @@
       "end": "2027-04-13",
       "city": "Helsinki, Finland",
       "open": null,
-      "deadline": "2026-11-05",
+      "deadline": null,
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -5727,7 +5727,7 @@
       "url": "https://www.escardio.org/events/congresses/ehra-congress/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "note": "Abstract deadline requires event-specific official confirmation; previously suggested November 5 date intentionally withheld.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -5739,11 +5739,6 @@
           "verified_by": "Official society page review"
         },
         "end": {
-          "url": "https://www.escardio.org/events/congresses/ehra-congress/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "deadline": {
           "url": "https://www.escardio.org/events/congresses/ehra-congress/",
           "checked_at": "2026-10-24",
           "verified_by": "Official society page review"
@@ -6076,7 +6071,7 @@
       "end": "2027-04-06",
       "city": "Florence, Italy",
       "open": null,
-      "deadline": "2026-10-07",
+      "deadline": null,
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -6088,7 +6083,7 @@
       "url": "https://epa-congress.org/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "note": "Regular abstract deadline not independently confirmed; resident awards may have a different deadline.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -6100,11 +6095,6 @@
           "verified_by": "Official society page review"
         },
         "end": {
-          "url": "https://epa-congress.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "deadline": {
           "url": "https://epa-congress.org/",
           "checked_at": "2026-10-24",
           "verified_by": "Official society page review"
@@ -6274,6 +6264,997 @@
           "url": "https://idf2027.org/",
           "checked_at": "2026-10-24",
           "verified_by": "Official society page review"
+        }
+      }
+    },
+    {
+      "id": "acpaz26",
+      "name": "ACP Arizona Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-06",
+      "end": "2026-11-06",
+      "city": "Tucson, AZ",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "acpin26",
+      "name": "ACP Indiana Chapter Internal Medicine Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-06",
+      "end": "2026-11-06",
+      "city": "Carmel, IN",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/indiana-chapter/news-meetings/2026-indiana-chapter-internal-medicine-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/indiana-chapter/news-meetings/2026-indiana-chapter-internal-medicine-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/indiana-chapter/news-meetings/2026-indiana-chapter-internal-medicine-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "acppa26",
+      "name": "ACP Pennsylvania Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "city": "Hershey, PA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "acpwa26",
+      "name": "ACP Washington Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "city": "Seattle, WA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "acpdc26",
+      "name": "ACP District of Columbia Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "city": "Bethesda, MD",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "acptx26",
+      "name": "ACP Texas Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-13",
+      "end": "2026-11-13",
+      "city": "Plano, TX",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "acpbc26",
+      "name": "ACP Prairie Provinces and British Columbia Regional Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-12",
+      "end": "2026-11-13",
+      "city": "Canmore, Alberta, Canada",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "acpne26",
+      "name": "ACP Nebraska Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-13",
+      "end": "2026-11-13",
+      "city": "Omaha, NE",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "acpmexico26",
+      "name": "ACP Mexico Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2026-11-02",
+      "end": "2026-11-03",
+      "city": "Virtual",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.acponline.org/meetings-courses/acp-chapter-meetings/domestic-and-international",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "arvo27",
+      "name": "ARVO Annual Meeting 2027",
+      "society": "Association for Research in Vision and Ophthalmology",
+      "specialty": "Ophthalmology",
+      "start": "2027-05-02",
+      "end": "2027-05-06",
+      "city": "San Diego, CA",
+      "open": "2026-10-16",
+      "deadline": "2026-12-04",
+      "deadlineTime": "5:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.arvo.org/annual-meeting/about",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 ARVO membership required to submit a regular abstract.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.arvo.org/annual-meeting/about",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.arvo.org/annual-meeting/about",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "open": {
+          "url": "https://www.arvo.org/annual-meeting/about",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://www.arvo.org/annual-meeting/about",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "asrs27",
+      "name": "ASRS Annual Meeting 2027",
+      "society": "American Society of Retina Specialists",
+      "specialty": "Ophthalmology",
+      "start": "2027-07-28",
+      "end": "2027-07-31",
+      "city": "San Francisco, CA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.asrs.org/annual-meeting/future-annual-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.asrs.org/annual-meeting/future-annual-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.asrs.org/annual-meeting/future-annual-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "agsglaucoma27",
+      "name": "American Glaucoma Society Annual Meeting 2027",
+      "society": "American Glaucoma Society",
+      "specialty": "Ophthalmology",
+      "start": "2027-03-04",
+      "end": "2027-03-07",
+      "city": "Tucson, AZ",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.americanglaucomasociety.net/events/calendar",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.americanglaucomasociety.net/events/calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.americanglaucomasociety.net/events/calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "ishlt27",
+      "name": "ISHLT 47th Annual Meeting & Scientific Sessions 2027",
+      "society": "International Society for Heart and Lung Transplantation",
+      "specialty": "Transplantation",
+      "start": "2027-04-14",
+      "end": "2027-04-17",
+      "city": "Sydney, Australia",
+      "open": "2026-08-03",
+      "deadline": "2026-09-29",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.ishlt.org/annual-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Cardiothoracic transplant, heart failure, pulmonary vascular medicine and mechanical circulatory support. Annual travel awards open December 2026.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.ishlt.org/annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.ishlt.org/annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "open": {
+          "url": "https://www.ishlt.org/annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://www.ishlt.org/annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aats27",
+      "name": "AATS 107th Annual Meeting 2027",
+      "society": "American Association for Thoracic Surgery",
+      "specialty": "Cardiothoracic Surgery",
+      "start": "2027-05-01",
+      "end": "2027-05-04",
+      "city": "Los Angeles, CA",
+      "open": null,
+      "deadline": "2026-10-13",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://events.aats.org/am27",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Regular abstract and surgical case-video deadline October 13, 2026.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://events.aats.org/am27",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://events.aats.org/am27",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://events.aats.org/am27",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "spaaap27",
+      "name": "SPA-AAP Pediatric Anesthesiology 2027",
+      "society": "Society for Pediatric Anesthesia / American Academy of Pediatrics",
+      "specialty": "Anesthesiology",
+      "start": "2027-03-05",
+      "end": "2027-03-07",
+      "city": "Nassau, Bahamas",
+      "open": null,
+      "deadline": "2026-10-26",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Regular abstract deadline October 26, 2026; resident and medical student meeting scholarships.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "ccas27",
+      "name": "Congenital Cardiac Anesthesia Society Annual Meeting 2027",
+      "society": "Congenital Cardiac Anesthesia Society",
+      "specialty": "Anesthesiology",
+      "start": "2027-03-04",
+      "end": "2027-03-04",
+      "city": "Nassau, Bahamas",
+      "open": null,
+      "deadline": "2026-10-26",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "sppm27",
+      "name": "Society for Pediatric Pain Medicine Annual Meeting 2027",
+      "society": "Society for Pediatric Pain Medicine",
+      "specialty": "Anesthesiology",
+      "start": "2027-03-04",
+      "end": "2027-03-04",
+      "city": "Nassau, Bahamas",
+      "open": null,
+      "deadline": "2026-10-26",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "spaannual27",
+      "name": "Society for Pediatric Anesthesia Annual Meeting 2027",
+      "society": "Society for Pediatric Anesthesia",
+      "specialty": "Anesthesiology",
+      "start": "2027-10-15",
+      "end": "2027-10-15",
+      "city": "Boston, MA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aapmspring27",
+      "name": "AAPM Spring Clinical Meeting 2027",
+      "society": "American Association of Physicists in Medicine",
+      "specialty": "Medical Physics",
+      "start": "2027-04-10",
+      "end": "2027-04-13",
+      "city": "Denver, CO",
+      "open": "2026-08-05",
+      "deadline": "2026-09-16",
+      "deadlineTime": "8:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://site.aapm.org/spring-clinical/2027",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Clinical case presentations, medical physics research and best poster competition.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://site.aapm.org/spring-clinical/2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://site.aapm.org/spring-clinical/2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "open": {
+          "url": "https://site.aapm.org/spring-clinical/2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://site.aapm.org/spring-clinical/2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aapmsummer27",
+      "name": "AAPM Summer School 2027",
+      "society": "American Association of Physicists in Medicine",
+      "specialty": "Medical Physics",
+      "start": "2027-06-24",
+      "end": "2027-06-29",
+      "city": "Boston, MA",
+      "open": "",
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://site.aapm.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Educational summer school; verify whether it accepts original scientific abstracts.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://site.aapm.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://site.aapm.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "capcseminar27",
+      "name": "CAPC National Seminar 2027",
+      "society": "Center to Advance Palliative Care",
+      "specialty": "Palliative Medicine",
+      "start": "2027-10-13",
+      "end": "2027-10-15",
+      "city": "Columbus, OH",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.capc.org/seminar/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Interdisciplinary palliative care leadership, systems innovation, policy and research; registration opens in early 2027.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.capc.org/seminar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.capc.org/seminar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aacrras27",
+      "name": "AACR Special Conference: Targeting RAS 2027",
+      "society": "American Association for Cancer Research",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-01-28",
+      "end": "2027-01-31",
+      "city": "San Diego, CA",
+      "open": null,
+      "deadline": "2026-11-02",
+      "deadlineTime": "1:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Specialized cancer biology and therapeutic research.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aatsonc27",
+      "name": "AATS International Thoracic Surgical Oncology Summit 2027",
+      "society": "American Association for Thoracic Surgery",
+      "specialty": "Cardiothoracic Surgery",
+      "start": "2027-09-17",
+      "end": "2027-09-18",
+      "city": "New York, NY",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.aats.org/all-future-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aats.org/all-future-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.aats.org/all-future-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aatsmitral27",
+      "name": "AATS Mitral Conclave 2027",
+      "society": "American Association for Thoracic Surgery",
+      "specialty": "Cardiothoracic Surgery",
+      "start": "2027-12-16",
+      "end": "2027-12-17",
+      "city": "New York, NY",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.aats.org/all-future-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aats.org/all-future-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.aats.org/all-future-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
         }
       }
     }
@@ -8024,6 +9005,287 @@
           "verified_by": "Official society website"
         }
       }
+    },
+    {
+      "id": "aap-catchresident27",
+      "name": "AAP 2027 CATCH Resident Grant",
+      "society": "American Academy of Pediatrics",
+      "amount": "$2,000",
+      "category": "Research grant",
+      "open": "2026-11-01",
+      "opens": "2026-11-01",
+      "deadline": "2027-01-19",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Pediatric residents in the US or Canada with at least two years of training remaining, proposing an innovative community-based health intervention.",
+      "url": "https://grants.aap.org/res/p/available-grant-applicati/",
+      "conferenceId": null,
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Apply to the 2027 CATCH Resident program with a community intervention project.",
+      "note": "November 1, 2026 through January 19, 2027, 11:59 PM CST.",
+      "flag": null,
+      "specialties": [
+        "Pediatrics"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://grants.aap.org/res/p/available-grant-applicati/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://grants.aap.org/res/p/available-grant-applicati/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award description"
+        }
+      }
+    },
+    {
+      "id": "ascp-40under40",
+      "name": "ASCP 40 Under Forty Recognition",
+      "society": "American Society for Clinical Pathology",
+      "amount": "Leadership recognition, career development; Top Five award",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination / application deadline",
+      "eligibility": "ASCP pathologist, resident, fellow-in-training, or eligible laboratory professional member under age 40. Students and prior honorees are ineligible.",
+      "url": "https://www.ascp.org/membership-resources/awards-recognition/40-under-forty",
+      "conferenceId": null,
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Submit nomination or application demonstrating leadership, accomplishments and innovation.",
+      "note": "2026 cohort named; the next award application cycle is not yet posted.",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.ascp.org/membership-resources/awards-recognition/40-under-forty",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "uscap-benjamin-castleman27",
+      "name": "USCAP Benjamin Castleman Award 2027",
+      "society": "United States and Canadian Academy of Pathology",
+      "amount": "$1,500",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Pathologist or pathology resident/fellow younger than 40 when an eligible original human pathology research paper was published.",
+      "url": "https://uscap.org/benjamin-castleman-award/",
+      "conferenceId": null,
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit an outstanding single English-language human-pathology publication from the award's eligible 12-month window; attendance at USCAP Annual Meeting not required.",
+      "note": "Independent publication recognition; confirm current cycle deadline.",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://uscap.org/benjamin-castleman-award/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "uscap-stowell27",
+      "name": "USCAP Stowell-Orbison Pathologist-in-Training Awards 2027",
+      "society": "United States and Canadian Academy of Pathology",
+      "amount": "Up to four $500 prizes",
+      "category": "Presentation prize",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Pathology residents or fellows who are major-contributor first authors of one qualifying USCAP annual-meeting abstract/poster.",
+      "url": "https://uscap.org/stowell-orbison-awards/",
+      "conferenceId": "uscap27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Complete the USCAP poster award eligibility verification during regular abstract submission.",
+      "note": "Surgical pathology and autopsy pathology subsidiary prizes also considered.",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://uscap.org/stowell-orbison-awards/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "uscap-travel27",
+      "name": "USCAP 2027 Pathologist-in-Training Travel Award",
+      "society": "United States and Canadian Academy of Pathology",
+      "amount": "$1,000; 20 awards",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "US- or Canada-based USCAP-member pathology trainees who are first authors of an accepted 2027 Annual Meeting abstract.",
+      "url": "https://uscap.org/pathologist-in-training-travel-award/",
+      "conferenceId": "uscap27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Separate application opens November 2026; deadline not yet set.",
+      "note": "Application expected to open November 2026, no day confirmed.",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://uscap.org/pathologist-in-training-travel-award/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "uscap-adasp27",
+      "name": "USCAP ADASP Surgical / Autopsy Pathology Trainee Awards",
+      "society": "USCAP and Association of Directors of Anatomic and Surgical Pathology",
+      "amount": "Two $500 prizes",
+      "category": "Presentation prize",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Pathology resident or fellow with an original morphology-based surgical pathology or autopsy abstract entered into the Stowell-Orbison poster competition.",
+      "url": "https://uscap.org/stowell-orbison-awards/",
+      "conferenceId": "uscap27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit eligible first-author abstract to the Stowell-Orbison competition.",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://uscap.org/stowell-orbison-awards/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "spa-resident-scholarship27",
+      "name": "SPA-AAP Pediatric Anesthesiology 2027 Resident & Student Meeting Scholarships",
+      "society": "Society for Pediatric Anesthesia",
+      "amount": "Meeting scholarship; amount to verify",
+      "category": "Trainee scholarship",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible anesthesiology residents and medical students interested in pediatric anesthesiology and attending the SPA-AAP 2027 meeting.",
+      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+      "conferenceId": "spaaap27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Review 2027 Society for Pediatric Anesthesia resident and medical student scholarship rules.",
+      "note": "Conference advertises trainee scholarships; separate application dates not verified.",
+      "flag": null,
+      "specialties": [
+        "Anesthesiology",
+        "Pediatrics"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aapm-ecis27",
+      "name": "AAPM 2027 Spring Clinical Early Career Investigator Symposium",
+      "society": "American Association of Physicists in Medicine",
+      "amount": "Oral presentation distinction",
+      "category": "Presentation prize",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-09-16",
+      "deadlineLabel": "Abstract submission deadline",
+      "eligibility": "Early-career clinical medical physicists submitting top-rated qualifying scientific abstracts to the 2027 Spring Clinical Meeting.",
+      "url": "https://site.aapm.org/spring-clinical/2027/program",
+      "conferenceId": "aapmspring27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit original scientific abstract by regular abstract deadline.",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Medical Physics"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://site.aapm.org/spring-clinical/2027/program",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://site.aapm.org/spring-clinical/2027/program",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award description"
+        }
+      }
+    },
+    {
+      "id": "aapm-bestposter27",
+      "name": "AAPM 2027 Spring Clinical Best Poster Competition",
+      "society": "American Association of Physicists in Medicine",
+      "amount": "Best poster recognition",
+      "category": "Presentation prize",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-09-16",
+      "deadlineLabel": "Abstract submission deadline",
+      "eligibility": "Clinical medical physics presenters with accepted, competitively evaluated Spring Clinical Meeting posters.",
+      "url": "https://site.aapm.org/spring-clinical/2027/program",
+      "conferenceId": "aapmspring27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit regular scientific abstract; accepted posters judged for clinical relevance, originality and clarity.",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Medical Physics"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://site.aapm.org/spring-clinical/2027/program",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://site.aapm.org/spring-clinical/2027/program",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award description"
+        }
+      }
+    },
+    {
+      "id": "ishlt-travel27",
+      "name": "ISHLT 2027 Trainee / Presenter Travel Awards",
+      "society": "International Society for Heart and Lung Transplantation",
+      "amount": "Travel/registration assistance",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible ISHLT annual-meeting abstract presenters including trainees and junior investigators, with application requirements to be confirmed.",
+      "url": "https://www.ishlt.org/about/news-detail/2026/08/03/now-open--ishlt2027-call-for-abstracts",
+      "conferenceId": "ishlt27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "2027 travel award applications open December 2026; separate criteria and deadline pending.",
+      "note": "ISHLT confirms December 2026 opening but no exact day.",
+      "flag": null,
+      "specialties": [
+        "Transplantation",
+        "Cardiothoracic Surgery",
+        "Pulmonary & Critical Care"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.ishlt.org/about/news-detail/2026/08/03/now-open--ishlt2027-call-for-abstracts",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
     }
   ]
 }
