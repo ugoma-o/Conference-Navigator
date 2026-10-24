@@ -7223,6 +7223,1415 @@ window.RISE_DATA = {
           "verified_by": "Official organizer"
         }
       }
+    },
+    {
+      "id": "acp-fl26",
+      "name": "ACP Florida Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians — Florida Chapter",
+      "specialty": "Internal Medicine",
+      "start": "2026-10-23",
+      "end": "2026-10-25",
+      "city": "Fort Lauderdale, FL",
+      "open": null,
+      "deadline": "2026-08-23",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Resident clinical vignette",
+        "Research poster competition",
+        "Doctor's Dilemma"
+      ],
+      "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Florida resident and student abstract competition closed August 23, 2026; meeting October 23–25. Do not assume a 2027 meeting date.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "acp-fl-next",
+      "name": "ACP Florida Chapter Annual Scientific Meeting — Next Edition",
+      "society": "American College of Physicians — Florida Chapter",
+      "specialty": "Internal Medicine",
+      "start": null,
+      "end": null,
+      "city": "Florida (location not announced)",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Resident scientific posters and clinical vignettes (historical; 2027 rules pending)"
+      ],
+      "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "Florida regional meeting. Recurring Florida Chapter meeting; 2027 dates and regular abstract deadline are not yet published. No prior-year deadline carried over.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {}
+    },
+    {
+      "id": "flacc27",
+      "name": "Florida ACC FIT Forum & Jeopardy 2027",
+      "society": "Florida Chapter of the American College of Cardiology",
+      "specialty": "Cardiology",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "city": "Miami, FL",
+      "open": null,
+      "deadline": "2027-01-05",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Florida resident/fellow research abstracts",
+        "Clinical case presentation",
+        "Poster competition"
+      ],
+      "url": "https://www.accfl.org/Fit-Forum",
+      "guideline": "https://www.accfl.org/Fit-Forum",
+      "evidence": "official",
+      "note": "Florida regional meeting. For residents, students, and adult/pediatric cardiology fellows in Florida programs; submissions due January 5, 2027. Verify event-specific format.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.accfl.org/Fit-Forum",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.accfl.org/Fit-Forum",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://www.accfl.org/Fit-Forum",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "flacc-annual27",
+      "name": "Florida Chapter ACC Annual Meeting 2027",
+      "society": "Florida Chapter of the American College of Cardiology",
+      "specialty": "Cardiology",
+      "start": "2027-08-06",
+      "end": "2027-08-08",
+      "city": "Florida (venue pending)",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Cardiovascular clinical education",
+        "Scientific program — submission rules pending"
+      ],
+      "url": "https://www.accfl.org/Calendar",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Florida ACC state annual meeting; official calendar lists August 6–8. Registration opening is not an abstract opening.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.accfl.org/Calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.accfl.org/Calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-neuro27",
+      "name": "Florida Society of Neurology Annual Meeting 2027",
+      "society": "Florida Society of Neurology",
+      "specialty": "Neurology",
+      "start": "2027-01-16",
+      "end": "2027-01-17",
+      "city": "Lake Buena Vista, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Resident/fellow research posters",
+        "Neurology research and clinical practice"
+      ],
+      "url": "https://fsneuro.org/annual-meeting-info-6/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Disney's Yacht & Beach Club; resident/fellow poster sessions confirmed, submission cutoff not posted.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://fsneuro.org/annual-meeting-info-6/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fsneuro.org/annual-meeting-info-6/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fsa27",
+      "name": "Florida Society of Anesthesiologists Annual Meeting 2027",
+      "society": "Florida Society of Anesthesiologists",
+      "specialty": "Anesthesiology",
+      "start": "2027-06-11",
+      "end": "2027-06-13",
+      "city": "Palm Beach, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Anesthesiology research abstracts",
+        "Clinical education"
+      ],
+      "url": "https://fsahq.org/2027-annual-meeting/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Abstract call listed as October 2026 on one organizer page and November 2026 on another. Exact submission opening/day and deadline unconfirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://fsahq.org/2027-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fsahq.org/2027-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fm-spring27",
+      "name": "FAFP Ignite Spring Forum 2027",
+      "society": "Florida Academy of Family Physicians",
+      "specialty": "Family Medicine",
+      "start": "2027-04-09",
+      "end": "2027-04-11",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Family medicine CME / scholarly submissions to confirm"
+      ],
+      "url": "https://www.fafp.org/education-and-events",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Caribe Royale Orlando; submission track and dates not announced.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fm-summer27",
+      "name": "FAFP Elevate Summer Retreat 2027",
+      "society": "Florida Academy of Family Physicians",
+      "specialty": "Family Medicine",
+      "start": "2027-07-09",
+      "end": "2027-07-11",
+      "city": "Clearwater Beach, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Family medicine continuing education; research abstracts to confirm"
+      ],
+      "url": "https://www.fafp.org/education-and-events",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Wyndham Grand Clearwater Beach; not confirmed to have a resident research abstract call.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fm-annual27",
+      "name": "FAFP Summit Family Medicine Annual Meeting 2027",
+      "society": "Florida Academy of Family Physicians",
+      "specialty": "Family Medicine",
+      "start": "2027-12-10",
+      "end": "2027-12-12",
+      "city": "Amelia Island, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Primary care education; resident scientific submission eligibility to confirm"
+      ],
+      "url": "https://www.fafp.org/education-and-events",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. The Ritz-Carlton Amelia Island; call for resident abstracts not posted.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-acs27",
+      "name": "Florida ACS Annual Meeting & Copeland Resident Research Symposium 2027",
+      "society": "Florida Chapter of the American College of Surgeons",
+      "specialty": "Surgery",
+      "start": "2027-04-24",
+      "end": "2027-04-25",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": "2027-01-31",
+      "deadlineTime": null,
+      "limit": 250,
+      "limitType": "words",
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Basic science resident papers",
+        "Clinical science resident papers",
+        "Commission on Cancer research",
+        "Advocacy / education / cases",
+        "Poster"
+      ],
+      "url": "https://www.floridafacs.org/2027-annual-meeting",
+      "guideline": "https://www.floridafacs.org/abstract-submissions-1",
+      "evidence": "official",
+      "note": "Florida regional meeting. Florida surgical residents and fellows eligible for research podium awards; Florida medical students may submit posters. Call opens Nov 2 (day shown; precise opening year not explicitly stated).",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.floridafacs.org/2027-annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.floridafacs.org/2027-annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://www.floridafacs.org/abstract-submissions-1",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-ortho27",
+      "name": "Florida Orthopaedic Society FL OrthoCon 2027",
+      "society": "Florida Orthopaedic Society",
+      "specialty": "Orthopedic Surgery",
+      "start": "2027-05-20",
+      "end": "2027-05-23",
+      "city": "Key Largo, FL",
+      "open": null,
+      "deadline": "2027-01-08",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Orthopaedic scientific research abstracts"
+      ],
+      "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Ocean Reef Club; research abstract deadline January 8, 2027.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-nephro27",
+      "name": "Florida Society of Nephrology 60th Annual Meeting 2027",
+      "society": "Florida Society of Nephrology",
+      "specialty": "Nephrology",
+      "start": "2027-01-15",
+      "end": "2027-01-17",
+      "city": "Tampa, FL",
+      "open": null,
+      "deadline": "2026-11-01",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Robert Geronemus renal research competition",
+        "Resident/fellow original research",
+        "Posters"
+      ],
+      "url": "https://www.floridasocietyofnephrology.com/events/EventDetails.aspx?id=2032249",
+      "guideline": "https://www.floridasocietyofnephrology.com/page/ResearchCompetition",
+      "evidence": "official",
+      "note": "Florida regional meeting. Florida PGY-2/3 IM residents and nephrology fellows eligible for Nov 1 research competition; oral finalists and poster presentations.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.floridasocietyofnephrology.com/events/EventDetails.aspx?id=2032249",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.floridasocietyofnephrology.com/events/EventDetails.aspx?id=2032249",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://www.floridasocietyofnephrology.com/page/ResearchCompetition",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-rheum27",
+      "name": "Florida Society of Rheumatology Annual Meeting 2027",
+      "society": "Florida Society of Rheumatology",
+      "specialty": "Rheumatology",
+      "start": "2027-07-22",
+      "end": "2027-07-25",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Florida trainee original research",
+        "Resident/fellow case reports",
+        "Competitive oral presentations"
+      ],
+      "url": "https://floridarheumatology.org/events/EventDetails.aspx?id=2012072",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Hyatt Regency Grand Cypress; organization invites Florida trainees for abstract competition, 2027 submission deadline not confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://floridarheumatology.org/events/EventDetails.aspx?id=2012072",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://floridarheumatology.org/events/EventDetails.aspx?id=2012072",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-path27",
+      "name": "Florida Society of Pathologists Annual Pathology Conference 2027",
+      "society": "Florida Society of Pathologists",
+      "specialty": "Pathology",
+      "start": "2027-02-12",
+      "end": "2027-02-14",
+      "city": "Lake Buena Vista, FL",
+      "open": null,
+      "deadline": "2026-12-01",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Original case and research posters",
+        "Resident/fellow poster competition",
+        "Medical student poster competition",
+        "Rare and interesting cases"
+      ],
+      "url": "https://flpath.org/event/Conference2027",
+      "guideline": "https://flpath.org/page/Poster_Submissions",
+      "evidence": "official",
+      "note": "Florida regional meeting. Poster submissions close December 1, 2026. Separate Rare & Interesting Case Competition closes November 27, 2026; not the regular poster deadline.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://flpath.org/event/Conference2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://flpath.org/event/Conference2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://flpath.org/page/Poster_Submissions",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-psych27",
+      "name": "Florida Psychiatric Society Spring CME Meeting 2027",
+      "society": "Florida Psychiatric Society",
+      "specialty": "Psychiatry",
+      "start": "2027-04-02",
+      "end": "2027-04-04",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Psychiatry continuing education; abstract submission eligibility to confirm"
+      ],
+      "url": "https://www.floridapsych.org/page/AnnualMeetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Renaissance Orlando at SeaWorld; submission program unannounced.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.floridapsych.org/page/AnnualMeetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.floridapsych.org/page/AnnualMeetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-radiology27",
+      "name": "Florida Radiological Society Annual Meeting 2027",
+      "society": "Florida Radiological Society and Florida Radiology Business Management Association",
+      "specialty": "Radiology",
+      "start": "2027-07-16",
+      "end": "2027-07-18",
+      "city": "Amelia Island, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Radiology education / trainees; research abstract categories to confirm"
+      ],
+      "url": "https://www.flrad.org/frs-annual-meeting/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Ritz-Carlton Amelia Island; scientific abstract submission date not available.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.flrad.org/frs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.flrad.org/frs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-derm27",
+      "name": "Florida Academy of Dermatology Annual Meeting 2027",
+      "society": "Florida Academy of Dermatology",
+      "specialty": "Dermatology",
+      "start": "2027-07-09",
+      "end": "2027-07-11",
+      "city": "Palm Beach, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Dermatology scientific meeting; resident presentation call to confirm"
+      ],
+      "url": "https://www.faderm.org/future_meetings.php",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. The Breakers; original research deadline unannounced.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.faderm.org/future_meetings.php",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.faderm.org/future_meetings.php",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-ophth27",
+      "name": "Florida Society of Ophthalmology Masters in Ophthalmology 2027",
+      "society": "Florida Society of Ophthalmology",
+      "specialty": "Ophthalmology",
+      "start": "2027-06-04",
+      "end": "2027-06-06",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Ophthalmology education / resident mentorship"
+      ],
+      "url": "https://beta.mdeye.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Waldorf Astoria Orlando; original abstract submission not confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://beta.mdeye.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://beta.mdeye.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fvs27",
+      "name": "Florida Vascular Society Scientific Sessions 2027",
+      "society": "Florida Vascular Society",
+      "specialty": "Vascular Surgery",
+      "start": "2027-04-15",
+      "end": "2027-04-18",
+      "city": "Orlando, FL",
+      "open": "2026-09-01",
+      "deadline": "2026-10-23",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Resident vascular research oral presentations",
+        "Surgery and vascular fellow scientific abstracts",
+        "Clinical case reports"
+      ],
+      "url": "https://fvs.org/fvs-annual-meeting/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Regular abstract deadline extended from October 16 through October 23, 2026; multiple Florida resident research prizes offered.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://fvs.org/fvs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fvs.org/fvs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "open": {
+          "url": "https://fvs.org/fvs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://fvs.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fstcs27",
+      "name": "Florida Society of Thoracic and Cardiovascular Surgeons Annual Meeting 2027",
+      "society": "Florida Society of Thoracic & Cardiovascular Surgeons",
+      "specialty": "Cardiothoracic Surgery",
+      "start": "2027-07-08",
+      "end": "2027-07-11",
+      "city": "Key Largo, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Cardiothoracic surgery education; original research submissions to confirm"
+      ],
+      "url": "https://www.fstcs.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Ocean Reef Club, Key Largo; no regular abstract deadline posted.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fstcs.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fstcs.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-onc-fellows26",
+      "name": "FLASCO Fellows & Residents Training Program 2026",
+      "society": "Florida Society of Clinical Oncology",
+      "specialty": "Hematology & Oncology",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Oncology trainee research presentations",
+        "Fellow and resident education",
+        "Mentorship"
+      ],
+      "url": "https://flasco.org/flasco-events/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. JW Marriott Orlando Bonnet Creek; society advertises research presentations, but no general abstract submission date confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://flasco.org/flasco-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://flasco.org/flasco-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-onc-thoracic27",
+      "name": "FLASCO Thoracic Oncology Summit 2027",
+      "society": "Florida Society of Clinical Oncology",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-04-02",
+      "end": "2027-04-03",
+      "city": "Aventura, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Thoracic oncology clinical and translational education; abstracts to confirm"
+      ],
+      "url": "https://flasco.org/flasco-events/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Hilton Miami Aventura; regular resident abstract submission not confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://flasco.org/flasco-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://flasco.org/flasco-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-geriatric27",
+      "name": "Florida Geriatrics Society Annual Symposium 2027",
+      "society": "Florida Geriatrics Society",
+      "specialty": "Geriatrics",
+      "start": "2027-06-12",
+      "end": "2027-06-13",
+      "city": "Clearwater Beach, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Geriatric medicine research posters",
+        "David T. Lowenthal Founder's Poster Session"
+      ],
+      "url": "https://www.floridageriatricssociety.org/Events-%26-Meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Society event listing confirms June 12–13; separate home page includes a June 11 premeeting and inconsistent end-day text. Poster abstract opening noted for September; exact cutoff unverified.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.floridageriatricssociety.org/Events-%26-Meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.floridageriatricssociety.org/Events-%26-Meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-gi27",
+      "name": "ACG / Florida Gastroenterology Society Annual Spring Symposium 2027",
+      "society": "American College of Gastroenterology / Florida Gastroenterology Society",
+      "specialty": "Gastroenterology",
+      "start": "2027-03-05",
+      "end": "2027-03-07",
+      "city": "Naples, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Esophagus school",
+        "Gastroenterology continuing education (abstracts unconfirmed)"
+      ],
+      "url": "https://gi.org/2027acg-fgs/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Regional clinical education symposium. Original research submission pathway not confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://gi.org/2027acg-fgs/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://gi.org/2027acg-fgs/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-ent26",
+      "name": "Florida Combined Otolaryngology Meeting 2026",
+      "society": "Florida Society of Otolaryngology – Head & Neck Surgery",
+      "specialty": "Otolaryngology",
+      "start": "2026-11-12",
+      "end": "2026-11-15",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Medical student research posters",
+        "Florida resident ENT poster competition"
+      ],
+      "url": "https://fcomnow.com/",
+      "guideline": "https://fcomnow.com/poster-submissions/medstudent-resident/",
+      "evidence": "official",
+      "note": "Florida regional meeting. Official 2026 home page reports November 12–15; a future-events page also lists November 12–16 (end-date discrepancy). Residency poster competition restricted to Florida trainees.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://fcomnow.com/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fcomnow.com/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-ent27",
+      "name": "Florida Combined Otolaryngology Meeting 2027",
+      "society": "Florida Society of Otolaryngology – Head & Neck Surgery",
+      "specialty": "Otolaryngology",
+      "start": "2027-11-11",
+      "end": "2027-11-14",
+      "city": "Boca Raton, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "ENT education and research posters (2027 criteria pending)"
+      ],
+      "url": "https://fcomnow.com/future-events/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Boca Raton Resort, official future meetings schedule; do not reuse 2026 research poster deadline.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://fcomnow.com/future-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fcomnow.com/future-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fsps26",
+      "name": "Florida Society of Plastic Surgeons Annual Meeting 2026",
+      "society": "Florida Society of Plastic Surgeons",
+      "specialty": "Plastic Surgery",
+      "start": "2026-12-10",
+      "end": "2026-12-13",
+      "city": "Palm Beach, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Plastic surgery research and clinical education (submission rules to verify)"
+      ],
+      "url": "https://www.fsps.org/meetings/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. The Breakers, Palm Beach; official page confirms 2026 event.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fsps.org/meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fsps.org/meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-em-fcep27",
+      "name": "FCEP Symposium by the Sea — Next Edition",
+      "society": "Florida College of Emergency Physicians",
+      "specialty": "Emergency Medicine",
+      "start": null,
+      "end": null,
+      "city": "Florida (date and site pending)",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Emergency medicine CME and resident engagement; 2027 abstract call unannounced"
+      ],
+      "url": "https://fcep.org/events-and-cme/",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "Florida regional meeting. Annual statewide meeting confirmed as recurring, but 2027 edition date, city and abstract deadline are not published.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {}
+    },
+    {
+      "id": "fl-peds-fpp27",
+      "name": "Florida AAP Future of Pediatric Practice — Next Edition",
+      "society": "Florida Chapter of the American Academy of Pediatrics",
+      "specialty": "Pediatrics",
+      "start": null,
+      "end": null,
+      "city": "Florida (date and site pending)",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Competitive resident forum",
+        "Medical student research forum"
+      ],
+      "url": "https://www.fcaap.org/the-future-of-pediatric-practice/",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "Florida regional meeting. Annual Florida pediatrics conference held around Labor Day; no verified exact 2027 date or abstract submission deadline.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {}
+    },
+    {
+      "id": "fl-fso-urol26",
+      "name": "Florida Urological Society Annual Meeting 2026",
+      "society": "Florida Urological Society",
+      "specialty": "Urology",
+      "start": "2026-12-11",
+      "end": null,
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Urology annual academic meeting; research submission rules unconfirmed"
+      ],
+      "url": "https://lugpa.memberclicks.net/all-urology-wide-calendar",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. External urology association calendar lists Dec. 11, 2026 but not meeting end date; no official society event page corroboration; confirm before travel.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://lugpa.memberclicks.net/all-urology-wide-calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
     }
   ],
   "awards": [
