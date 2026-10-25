@@ -81,17 +81,12 @@ function routeSnapshot(){
  return {view:state.view,mode:state.exploreMode,
          modal:get('modalScrim').classList.contains('hidden')?null:state.selected};
 }
-function updateBackButton(){
- const button=get('navBack');
- if(button)button.classList.toggle('hidden',!(history.state?.riseNavigator?.depth>0));
-}
 function recordRoute(replace=false){
  const current=history.state?.riseNavigator;
  const route=routeSnapshot();
  if(!replace&&current&&current.view===route.view&&current.mode===route.mode&&current.modal===route.modal)return;
  const depth=replace?(current?.depth||0):(current?.depth||0)+1;
  history[replace?'replaceState':'pushState']({...history.state,riseNavigator:{...route,depth}},'',routeURL(route));
- updateBackButton();
 }
 function dismissModal(){
  get('modalScrim').classList.add('hidden');
@@ -141,6 +136,12 @@ function setExploreMode(mode,track=true){
  if(changed&&track&&state.view==='discover')recordRoute();
 }
 document.querySelectorAll('[data-explore-mode]').forEach(btn=>btn.addEventListener('click',()=>setExploreMode(btn.dataset.exploreMode)));
+document.querySelectorAll('[data-home-nav]').forEach(button=>button.addEventListener('click',()=>{
+ nav('discover',false);
+ setExploreMode('list',false);
+ recordRoute();
+ window.scrollTo({top:0,behavior:'instant'});
+}));
 MOBILE_LIST_ONLY.addEventListener('change',event=>{
  if(event.matches&&state.exploreMode==='calendar'){
   setExploreMode('list',false);
@@ -772,10 +773,8 @@ function restoreRoute(route){
  setExploreMode(view==='discover'&&route?.mode==='calendar'?'calendar':state.exploreMode,false);
  if(route?.modal&&C.some(c=>c.id===route.modal))showConference(route.modal,false);
  if(MOBILE_LIST_ONLY.matches&&route?.mode==='calendar')recordRoute(true);
- updateBackButton();
 }
 window.addEventListener('popstate',event=>restoreRoute(event.state?.riseNavigator||routeFromHash()));
-get('navBack').addEventListener('click',()=>{if(history.state?.riseNavigator?.depth>0)history.back()});
 initSummary();initSpecialties();renderHorizon();renderDirectory();initPlanner();
 const initialRoute=history.state?.riseNavigator||routeFromHash();
 history.replaceState({...history.state,riseNavigator:initialRoute},'',location.href);
