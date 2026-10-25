@@ -15,8 +15,8 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <link rel="stylesheet" href="dark-theme.css?v=3ee8e5c35e76" />
 <link rel="stylesheet" href="abstract-matcher.css?v=529158aa3252" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
-<link rel="stylesheet" href="editorial-design.css?v=6af3fcbe" />
-<script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css?v=6af3fcbe"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
+<link rel="stylesheet" href="editorial-design.css?v=5bd1adb923" />
+<script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css?v=5bd1adb923"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
 <div class="app-shell">
@@ -44,23 +44,29 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
     </header>
     <main id="main" class="main-content">
       <section id="discoverView" class="view active" aria-label="Conference discovery">
-        <aside class="featured-gme-banner" id="featuredGmeBanner" aria-label="GME Research Day 2027 and AdventHealth Research Day">
+        <aside class="featured-gme-banner" id="featuredGmeBanner" aria-label="Featured AdventHealth GME Research Day conference">
           <div class="featured-gme-hero">
             <div class="featured-gme-primary">
-              <span class="featured-gme-overline">AdventHealth · Graduate Medical Education</span>
+              <span class="featured-gme-overline">SAVE THE DATE · EDUCATION + DISCOVERY</span>
               <h2>GME Research Day <span>2027</span></h2>
-              <p class="featured-gme-date">Friday, April 30, 2027 <span>10:00 AM–4:00 PM</span></p>
-              <p class="featured-gme-location">Whole Life Church · 2800 N Orange Ave, Orlando, FL</p>
+              <p>Friday, April 30, 2027 <span class="featured-gme-separator" aria-hidden="true">·</span> 10:00 AM–4:00 PM</p>
+              <span class="featured-gme-location">Whole Life Church · 2800 N Orange Ave, Orlando, FL</span>
             </div>
             <div class="featured-gme-side">
-              <span class="featured-gme-side-kicker">Also on the calendar</span>
+              <span class="featured-gme-side-kicker">ALSO FEATURED</span>
               <strong>AdventHealth Research Day</strong>
               <span>Thursday, April 29, 2027</span>
+              <small>Celebrating research by clinicians and scientists</small>
             </div>
           </div>
           <div class="featured-gme-bottom">
-            <span class="featured-gme-note">Research events · Orlando, Florida · April 29–30, 2027</span>
-            <button class="featured-gme-action" type="button" id="featuredGmeOpen" aria-label="View GME Research Day 2027 conference details">View conference details</button>
+            <div class="featured-gme-marquee" aria-label="Research celebrations April 29 and 30, 2027, at Whole Life Church in Orlando. GME Research Day is Friday, April 30.">
+              <div class="featured-gme-marquee-track" aria-hidden="true">
+                <span class="featured-gme-marquee-group"><b>APRIL 29–30, 2027</b><i></i><span>Two days. Two research celebrations. One shared mission.</span><i></i><b>GME RESEARCH DAY · FRIDAY APRIL 30</b><i></i><span>Doors open at 9:30 AM</span><i></i></span>
+                <span class="featured-gme-marquee-group"><b>APRIL 29–30, 2027</b><i></i><span>Two days. Two research celebrations. One shared mission.</span><i></i><b>GME RESEARCH DAY · FRIDAY APRIL 30</b><i></i><span>Doors open at 9:30 AM</span><i></i></span>
+              </div>
+            </div>
+            <button class="featured-gme-action" type="button" id="featuredGmeOpen" aria-label="View AdventHealth GME Research Day 2027 conference details">View conference details</button>
           </div>
         </aside>
         <div class="discovery-intro"><h1>Explore conferences</h1><p>Browse conferences, submission deadlines, and meeting dates.</p></div>
