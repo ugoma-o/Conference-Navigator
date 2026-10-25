@@ -7421,20 +7421,21 @@ window.RISE_DATA = {
       "end": "2027-01-17",
       "city": "Lake Buena Vista, FL",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-12-01",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [
-        "Resident/fellow research posters",
-        "Neurology research and clinical practice"
+        "Original research",
+        "Case reports and case series",
+        "Previously presented abstracts"
       ],
       "url": "https://fsneuro.org/annual-meeting-info-6/",
-      "guideline": null,
+      "guideline": "https://fsneuro.org/abstract-submissions/",
       "evidence": "official",
-      "note": "Florida regional meeting. Disney's Yacht & Beach Club; resident/fellow poster sessions confirmed, submission cutoff not posted.",
+      "note": "Florida regional meeting Jan 16–17, 2027 at Disney's Yacht & Beach Club. The 20th Annual Resident & Fellow Research Day is Sat, Jan 16. Peer-reviewed platform and poster presentations; case reports/series and previously presented abstracts welcome. First author must be a resident, fellow, or student (medical, graduate, or undergraduate). No meeting registration fee for residents/fellows; accepted medical/graduate student presenters also receive waived registration. Abstract submission deadline Dec 1, 2026. Opening date and submission cutoff time not stated in the available announcement.",
       "flag": null,
       "tags": [
         "florida-regional",
@@ -7442,8 +7443,11 @@ window.RISE_DATA = {
       ],
       "level": "regional",
       "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
       "fieldSources": {
         "start": {
           "url": "https://fsneuro.org/annual-meeting-info-6/",
@@ -7456,6 +7460,12 @@ window.RISE_DATA = {
           "checked_at": "2026-10-24",
           "verified_by": "Official Florida society meeting or submission page",
           "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://fsneuro.org/abstract-submissions/",
+          "checked_at": "2026-10-25",
+          "verified_by": "Official Florida Society of Neurology page (screenshot of call for abstracts)",
+          "source_quote": "DEADLINE – DECEMBER 1, 2026"
         }
       }
     },
