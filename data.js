@@ -1,6 +1,6 @@
 /* Curated snapshot — verify dates against society sources. */
 window.RISE_DATA = {
-  "asOf": "2026-10-24",
+  "asOf": "2026-10-25",
   "conferences": [
     {
       "id": "aan27",
@@ -1086,7 +1086,7 @@ window.RISE_DATA = {
       "end": "2027-09-22",
       "city": "Chicago, IL",
       "open": "2026-12-02",
-      "deadline": null,
+      "deadline": "2027-02-24",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -1100,18 +1100,24 @@ window.RISE_DATA = {
       "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/am-exhibitors/general-information/future-annual-meeting",
       "guideline": null,
       "evidence": "official",
-      "note": "ASTRO announced 2027 Annual Meeting abstract submissions open December 2, 2026. The regular abstract deadline has not been independently confirmed. The March 2027 RPT and head-and-neck symposia are separate meetings.",
+      "note": "ASTRO's October 14, 2026 announcement confirms the 2027 Annual Meeting regular abstract window: December 2, 2026 to February 24, 2027. Other 2027 symposia have separate submissions.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
-      "submissionSource": "https://www.astro.org/ASTRO/media/ASTRO/Meetings%20and%20Education/PDFs/AM26/AM26-Daily-News_Tuesday-1.pdf",
+      "submissionSource": "https://www.astro.org/news-and-publications/astrogram/2026/astrogram_101426",
       "fieldSources": {
         "open": {
           "url": "https://www.astro.org/ASTRO/media/ASTRO/Meetings%20and%20Education/PDFs/AM26/AM26-Daily-News_Tuesday-1.pdf",
           "checked_at": "2026-10-11",
           "verified_by": "RISE review of official 2027 organizer pages",
           "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "deadline": {
+          "url": "https://www.astro.org/news-and-publications/astrogram/2026/astrogram_101426",
+          "checked_at": "2026-10-25",
+          "verified_by": "Official ASTRO newsletter published October 14, 2026",
+          "source_quote": "Abstracts submissions: December 2, 2026 – February 24, 2027"
         }
       }
     },
