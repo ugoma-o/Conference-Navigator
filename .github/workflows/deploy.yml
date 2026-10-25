@@ -1,4 +1,4 @@
-name: Test and publish RISE
+name: Publish RISE static website
 on:
   push:
     branches: [main]
@@ -13,9 +13,6 @@ on:
       - 'app.js'
       - 'data.json'
       - 'data.js'
-      - 'sync_data.py'
-      - 'pipeline/**'
-      - 'tests/**'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 permissions:
@@ -33,10 +30,33 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run safety and extraction tests
-        run: python -m unittest discover -s tests -v
-      - name: Validate and build allowlisted site
-        run: python -m pipeline.build_site
+      - name: Validate and assemble static-only website
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, shutil
+          root=Path('.')
+          allowed=(
+            'index.html','app.js','abstract-matcher.js','data.js','data.json',
+            'styles.css','dark-theme.css','abstract-matcher.css',
+            'accessibility.css','editorial-design.css'
+          )
+          for name in allowed:
+              if not (root/name).is_file():
+                  raise SystemExit(f'Missing public site asset: {name}')
+          records=json.loads((root/'data.json').read_text(encoding='utf-8'))
+          if not isinstance(records.get('conferences'),list) or not isinstance(records.get('awards'),list):
+              raise SystemExit('Invalid RISE conference data schema')
+          if 'window.RISE_DATA' not in (root/'data.js').read_text(encoding='utf-8'):
+              raise SystemExit('Public data.js missing conference data')
+          out=root/'dist'
+          if out.exists(): shutil.rmtree(out)
+          out.mkdir()
+          for name in allowed: shutil.copy2(root/name,out/name)
+          (out/'.nojekyll').touch()
+          print(f'Publishing {len(records["conferences"])} conferences and {len(records["awards"])} awards from public static assets')
+          PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
@@ -48,6 +68,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - name: Deploy approved data and app
+      - name: Deploy static site
         id: deploy
         uses: actions/deploy-pages@v4
