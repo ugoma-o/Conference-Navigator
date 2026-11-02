@@ -681,6 +681,30 @@ function renderFunding(){
    return `<article class="funding-card" data-award-card="${escape(a.id)}"><div class="fund-top"><div class="fund-ico">${ico('award')}</div><div class="fund-amount">${escape(a.amount)}</div></div><div><div class="fund-cat">${escape(a.category)} · ${escape(kind)}</div><div class="fund-title">${escape(a.name)}</div><div class="fund-society">${escape(a.society)}</div></div>${meeting}<div class="fund-desc">${escape(a.eligibility)} ${a.note?escape(a.note):''}</div><div class="award-window"><div><span>${a.nominationBased?'NOMINATIONS OPEN':'APPLICATIONS OPEN'}</span><strong>${a.open?fmt(a.open):'Not announced'}</strong></div><div><span>${escape(a.deadlineLabel||'APPLICATION DEADLINE').toUpperCase()}</span><strong>${a.deadline?fmt(a.deadline):'Not confirmed'}</strong></div></div>${a.stages?.length?'<div class="award-extra-steps">'+a.stages.map(s=>escape(s.label)+': '+fmt(s.date)).join(' · ')+'</div>':''}${a.applicationProcess?'<p class="award-extra-steps"><strong>'+(a.nominationBased?'Nomination: ':'How to apply: ')+'</strong>'+escape(a.applicationProcess)+'</p>':''}<p class="award-verified">${a.lastVerified?'Award details reviewed '+escape(fmt(a.lastVerified)):a.scope==='institutional'?'Confirm funding with your institution':'Current-cycle details not fully verified'}</p><div class="fund-info-row"><span>${a.deadline&&a.deadline<todayKey?'Closed · Last published deadline: '+fmt(a.deadline):a.open&&a.deadline?'Application window: '+fmt(a.open)+' – '+fmt(a.deadline):a.deadline?'Deadline: '+fmt(a.deadline):a.nominationBased?'Nomination dates to verify':'Application dates to verify'}</span>${safeExternal(a.url,'Award details')}</div></article>`;
  }).join('');
 }
+// This countdown reads the curated conference date and updates as the calendar day changes.
+function refreshFeaturedGmeCountdown(){
+ const container=get('featuredGmeCountdown');
+ if(!container)return;
+ const featured=C.find(c=>c.id==='adventhealth-gme-research-day27');
+ const target=featured?.start;
+ if(!/^20\d{2}-\d{2}-\d{2}$/.test(target||'')){container.hidden=true;return}
+ const preview=new URLSearchParams(location.search).get('demoDate');
+ const current=preview&&/^20\d{2}-\d{2}-\d{2}$/.test(preview)?preview:key(new Date());
+ const utcDay=s=>{const [year,month,day]=s.split('-').map(Number);return Date.UTC(year,month-1,day)};
+ const remaining=Math.round((utcDay(target)-utcDay(current))/86400000);
+ const value=get('featuredGmeCountdownValue'),label=get('featuredGmeCountdownLabel');
+ if(remaining>1){value.textContent=remaining.toLocaleString('en-US');label.textContent='days until GME Research Day'}
+ else if(remaining===1){value.textContent='1';label.textContent='day until GME Research Day'}
+ else if(remaining===0){value.textContent='Today';label.textContent='GME Research Day is here'}
+ else{value.textContent='Completed';label.textContent='GME Research Day 2027'}
+ container.setAttribute('aria-label',value.textContent+' '+label.textContent);
+ container.hidden=false;
+}
+refreshFeaturedGmeCountdown();
+// Refresh after a day rollover, when returning to a tab, and when refocusing the window.
+setInterval(refreshFeaturedGmeCountdown,60*60*1000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshFeaturedGmeCountdown()});
+window.addEventListener('focus',refreshFeaturedGmeCountdown);
 // The featured AdventHealth event stays discoverable above specialty filters.
 const featuredGmeButton=get('featuredGmeOpen');
 if(featuredGmeButton)featuredGmeButton.addEventListener('click',()=>showConference('adventhealth-gme-research-day27'));
