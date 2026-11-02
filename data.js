@@ -541,11 +541,14 @@ window.RISE_DATA = {
       "url": "https://acgmeetings.gi.org/abstracts-closed/",
       "guideline": null,
       "evidence": "unannounced",
-      "note": "2027 submission cycle requires monitoring.",
+      "note": "The official ACG 2026 submission portal expressly states the ACG 2027 submission period will OPEN SPRING 2027 and CLOSE EARLY JUNE 2027. Exact dates are not published. The March 2–June 1 calendar on the ACG abstract page is for 2026, not 2027; do not copy it.",
       "flag": "unannounced",
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "additionalSources": [
+        "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=STDAYIWX"
+      ]
     },
     {
       "id": "asn27",
@@ -743,11 +746,14 @@ window.RISE_DATA = {
       "url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting",
       "guideline": null,
       "evidence": "official",
-      "note": "International meeting; 2027 abstract cycle not yet confirmed.",
+      "note": "CHEST 2027 organizer page lists a December 1, 2026 2:00 p.m. CT CALL FOR EDUCATIONAL TOPICS/SESSION IDEAS, NOT a regular scientific research abstract deadline. The 2027 standard research abstract opening/closing dates remain unverified.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "additionalSources": [
+        "https://info.chestnet.org/chest-call-for-topics"
+      ]
     },
     {
       "id": "idweek27",
@@ -1748,13 +1754,14 @@ window.RISE_DATA = {
       "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences",
       "guideline": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
       "evidence": "official",
-      "note": "BCVS Scientific Sessions (July 19–22) is a separate meeting from the consecutive Vascular Discovery Scientific Sessions (July 22–25). Abstract window not yet verified.",
+      "note": "AHA BCVS 2027 will run July 19–22, 2027. The organizer's Abstracts and Awards page explicitly states its published content is BCVS 2026 information and says to watch for spring 2027 updates. Do NOT reuse 2026 abstract dates.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "additionalSources": [
-        "https://professional.heart.org/en/meetings/bcvs-and-vascular-discovery-run-consecutively-in-2027"
+        "https://professional.heart.org/en/meetings/bcvs-and-vascular-discovery-run-consecutively-in-2027",
+        "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards"
       ],
       "fieldSources": {
         "start": {
@@ -1791,14 +1798,15 @@ window.RISE_DATA = {
       "url": "https://professional.heart.org/en/meetings/vascular-discovery-from-genes-to-medicine",
       "guideline": null,
       "evidence": "official",
-      "note": "Vascular Discovery Scientific Sessions (July 22–25) is a separate meeting from the preceding BCVS Scientific Sessions (July 19–22). Abstract opening month is Autumn 2026 per organizer; exact day not established.",
+      "note": "The official Vascular Discovery 2027 Key Dates give 'Autumn 2026 — Abstracts open,' but no exact date or cutoff day; this is a season-only forecast, not a verifiable opening date. Vascular Discovery (July 22–25) is DISTINCT from the BCVS meeting July 19–22.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "additionalSources": [
         "https://professional.heart.org/en/meetings/bcvs-and-vascular-discovery-run-consecutively-in-2027",
-        "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events"
+        "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events",
+        "https://professional.heart.org/en/meetings/vascular-discovery-from-genes-to-medicine"
       ],
       "fieldSources": {
         "start": {
