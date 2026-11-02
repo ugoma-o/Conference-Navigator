@@ -10,7 +10,7 @@ window.RISE_DATA = {
       "start": "2027-05-01",
       "end": "2027-05-05",
       "city": "Washington, DC",
-      "open": null,
+      "open": "2026-08-27",
       "deadline": "2026-10-13",
       "deadlineTime": "11:59 PM CT",
       "limit": null,
@@ -30,7 +30,16 @@ window.RISE_DATA = {
         "trainee"
       ],
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "open": {
+          "url": "https://www.aan.com/events/annual-meeting/abstracts",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of official 2027 abstract page",
+          "source_quote": "Abstract submissions will open on August 27, 2026. The submission deadline is October 13, 2026, at 11:59 p.m. CT.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
     },
     {
       "id": "ascogu27",
@@ -282,11 +291,22 @@ window.RISE_DATA = {
       "url": "https://www.meeting.americangeriatrics.org/submissions",
       "guideline": null,
       "evidence": "official",
-      "note": "May 19 is preconference; main scientific meeting May 20–22.",
+      "note": "2027 AGS regular research abstracts: organizer meeting submissions overview identifies opening in mid-September 2026 (exact calendar day not stated) and closing December 2, 2026 at 11:59 p.m. ET. Educational program proposals have a separate June 30 deadline.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "openMonth": "2026-09",
+      "fieldSources": {
+        "openMonth": {
+          "url": "https://stagemeeting.americangeriatrics.org/submissions",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual inspection of organizer-controlled staging meeting overview",
+          "source_quote": "2027 Submissions Overview: Mid-September: Call for Abstracts Opens; December 2, 2026, 11:59pm ET: Abstract Submission Deadline",
+          "confidence": "month_only_official_staging_page",
+          "precision": "month"
+        }
+      }
     },
     {
       "id": "ddw27",
@@ -1019,7 +1039,7 @@ window.RISE_DATA = {
       "city": "New York, NY",
       "open": "2026-11-12",
       "deadline": "2027-01-08",
-      "deadlineTime": "5:00 PM ET",
+      "deadlineTime": "5:00 PM ET (New Research posters)",
       "limit": 3000,
       "limitType": "characters_with_spaces",
       "limitNote": "New Research poster category; regular general/poster session deadline was Sept 10, 2026.",
@@ -1032,7 +1052,7 @@ window.RISE_DATA = {
       "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
       "guideline": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
       "evidence": "official",
-      "note": "Separate APA 2027 submission tracks: general sessions and regular posters closed September 10, 2026; New Research posters are open November 12, 2026–January 8, 2027 at 5 PM ET (the main displayed deadline). A distinct phase II–IV clinical trials plenary accepts submissions through January 8, 2027 at 2 PM ET. Do not confuse the 2 PM clinical trials cutoff with the 5 PM New Research poster cutoff.",
+      "note": "Dates shown are the APA 2027 New Research poster submission window (November 12, 2026–January 8, 2027, 5:00 p.m. ET). General sessions, courses, and other poster categories had an earlier September 10, 2026, 5:00 p.m. ET deadline. Clinical Trials Plenary has a separate January 8 cutoff at 2:00 p.m. ET. These are distinct submission tracks; verify category eligibility on the official FAQ.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -1045,6 +1065,20 @@ window.RISE_DATA = {
           "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
           "checked_at": "2026-10-11",
           "verified_by": "RISE direct official-site review"
+        },
+        "open": {
+          "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of official 2027 APA FAQ",
+          "source_quote": "New Research poster submission site opens November 12, 2026 and closes January 8, 2027 at 5:00 p.m. ET.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of official 2027 APA FAQ",
+          "source_quote": "New Research poster submission site opens November 12, 2026 and closes January 8, 2027 at 5:00 p.m. ET.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -1501,8 +1535,8 @@ window.RISE_DATA = {
       "end": "2027-05-16",
       "city": "San Francisco, CA",
       "open": null,
-      "deadline": null,
-      "deadlineTime": null,
+      "deadline": "2026-12-16",
+      "deadlineTime": "11:59 PM EST",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -1512,14 +1546,23 @@ window.RISE_DATA = {
         "Device therapy",
         "Arrhythmia research"
       ],
-      "url": "https://www.hrsonline.org/event/heart-rhythm-2027/",
+      "url": "https://heartrhythm.com/present",
       "guideline": null,
       "evidence": "official",
-      "note": "Conference dates verified by Heart Rhythm Society; abstract submission dates not confirmed.",
+      "note": "2027 HRS Scientific Abstracts deadline December 16, 2026, 11:59 p.m. Eastern Standard Time; open as of November 2, 2026, but the exact opening date is not published on the linked organizer page. Reviewer application closes November 15, a separate process.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://heartrhythm.com/present",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent 2027 organizer webpage manual audit",
+          "source_quote": "Call for Scientific Abstracts: submissions are now open; deadline December 16, 2026 at 11:59 PM EST; official meeting May 13–16, 2027. No exact opening day provided.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
     },
     {
       "id": "sccm27",
@@ -1597,7 +1640,16 @@ window.RISE_DATA = {
       "presentationFormats": [
         "Oral",
         "Poster"
-      ]
+      ],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.sgo.org/events/abstracts/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
+          "source_quote": "SGO 2027: Deadline Extended: Submit Your Abstract by Monday, September 21, 2026, at 11:59 p.m. CT.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
     },
     {
       "id": "pas27",
@@ -1652,11 +1704,27 @@ window.RISE_DATA = {
       "url": "https://www.academicpeds.org/events/phmmeeting/phmmeeting2027-keydates/",
       "guideline": null,
       "evidence": "official",
-      "note": "Official PHM meeting timeline: abstract/conundrum submissions open Jan 11, 2027; close Feb 10, 2027. Separate content proposals have different deadlines.",
+      "note": "Abstracts and clinical conundrums submit January 11–February 10, 2027; earlier October 12–December 14, 2026 Call for Content concerns educational content, not regular research abstracts.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "fieldSources": {
+        "open": {
+          "url": "https://www.academicpeds.org/events/phmmeeting/phmmeeting2027-keydates/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
+          "source_quote": "Call for Abstracts and Conundrums Monday, January 11, 2027; Abstracts and Conundrums Deadline Wednesday, February 10, 2027. Call for Content October 12, 2026 is a different pathway.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.academicpeds.org/events/phmmeeting/phmmeeting2027-keydates/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
+          "source_quote": "Call for Abstracts and Conundrums Monday, January 11, 2027; Abstracts and Conundrums Deadline Wednesday, February 10, 2027. Call for Content October 12, 2026 is a different pathway.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
     },
     {
       "id": "ahabcvs27",
@@ -1931,7 +1999,7 @@ window.RISE_DATA = {
       "end": "2027-09-19",
       "city": "Baltimore, MD",
       "open": null,
-      "deadline": null,
+      "deadline": "2027-02-25",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -1944,11 +2012,21 @@ window.RISE_DATA = {
       "url": "https://www.plasticsurgerythemeeting.com/registration/plan-now-for-2027",
       "guideline": null,
       "evidence": "official",
-      "note": "Annual meeting date and venue confirmed by ASPS; abstract dates unannounced.",
+      "note": "2027 Plastic Surgery The Meeting general Oral and Poster Abstract deadline: February 25, 2027 (opening day not stated). Separate RESIDENT-ONLY call, restricted to current residents (not fellows/students), opens March 4, 2027 and closes April 30, 2027 at 11:59 p.m. US Eastern. Each abstract may enter only one call.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "submissionSource": "https://ww6.aievolution.com/asps/index.cfm?do=cnt.page&pg=1013",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://ww6.aievolution.com/asps/index.cfm?do=cnt.page&pg=1013",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual inspection of the official meeting abstract submission portal",
+          "source_quote": "Main Meeting Call for Abstracts and Posters deadline February 25, 2027; Resident Only opens March 4, 2027, deadline April 30, 2027, 11:59 pm US Eastern.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
     },
     {
       "id": "aafpfmx27",
@@ -2710,7 +2788,7 @@ window.RISE_DATA = {
       "end": "2027-05-19",
       "city": "San Diego, CA",
       "open": null,
-      "deadline": "2026-11-04",
+      "deadline": "2026-11-11",
       "deadlineTime": "11:59 PM ET",
       "limit": 500,
       "limitType": "words",
@@ -2749,9 +2827,10 @@ window.RISE_DATA = {
         },
         "deadline": {
           "url": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
-          "checked_at": "2026-10-24",
-          "verified_by": "ASHNR/ASNR official 2027 call",
-          "source_quote": "Deadline: Wednesday, November 4, at 11:59 PM EST"
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of official 2027 abstract page",
+          "source_quote": "The Abstract submission period has been extended! New submission deadline: Wednesday, November 11, 2026, at 11:59 pm ET!",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -2817,7 +2896,7 @@ window.RISE_DATA = {
       "url": "https://www.kidney.org/spring-clinical/abstracts",
       "guideline": null,
       "evidence": "official",
-      "note": "Case reports and QI eligible. Accepted original research may be published in AJKD; presenting authors pay registration.",
+      "note": "2027 NKF Spring Clinical Meetings: General Research Abstracts September 1–December 1, 2026 (11:59 p.m. ET); late-breaking research has separate January 13–February 3, 2027 window.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -2841,13 +2920,17 @@ window.RISE_DATA = {
         },
         "open": {
           "url": "https://www.kidney.org/spring-clinical/abstracts",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official abstract page audit"
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
+          "source_quote": "General Research Abstracts: September 1, 2026 submissions open; December 1, 2026 by 11:59 PM ET submissions close. Late-breaking is January 13 to February 3, 2027.",
+          "confidence": "direct_official_edition_statement"
         },
         "deadline": {
           "url": "https://www.kidney.org/spring-clinical/abstracts",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official abstract page audit"
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
+          "source_quote": "General Research Abstracts: September 1, 2026 submissions open; December 1, 2026 by 11:59 PM ET submissions close. Late-breaking is January 13 to February 3, 2027.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -3112,18 +3195,18 @@ window.RISE_DATA = {
       "start": "2027-06-22",
       "end": "2027-06-25",
       "city": "Chicago, IL",
-      "open": null,
-      "deadline": null,
+      "open": "2026-12-02",
+      "deadline": "2027-01-20",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://asm.org/events/asm-microbe/home",
+      "url": "https://asm.org/events/asm-microbe/present",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "2027 ASM Microbe regular abstract window: December 2, 2026–January 20, 2027; separate early abstract window is November 10–December 1, 2026. Do not conflate the early deadline with the main regular deadline.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -3140,6 +3223,20 @@ window.RISE_DATA = {
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://asm.org/events/asm-microbe/present",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE individual manual review of organizer webpage",
+          "source_quote": "Dec. 2 Regular Abstract submission opens; Jan. 20, 2027 Regular Abstract submission closes. Early abstracts use a separate November 10–December 1, 2026 window.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://asm.org/events/asm-microbe/present",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE individual manual review of organizer webpage",
+          "source_quote": "Dec. 2 Regular Abstract submission opens; Jan. 20, 2027 Regular Abstract submission closes. Early abstracts use a separate November 10–December 1, 2026 window.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -4201,7 +4298,7 @@ window.RISE_DATA = {
       "city": "Gothenburg, Sweden",
       "open": "2026-10-29",
       "deadline": "2027-01-14",
-      "deadlineTime": "11:59 PM CEST",
+      "deadlineTime": "11:59 PM CET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -4211,7 +4308,7 @@ window.RISE_DATA = {
         "Basic and translational research"
       ],
       "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
-      "guideline": null,
+      "guideline": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
       "evidence": "official",
       "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
       "flag": null,
@@ -4240,8 +4337,9 @@ window.RISE_DATA = {
         },
         "deadline": {
           "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual official date/time verification",
+          "source_quote": "Abstract Submission Deadline Thursday 14 January 2027, 23:59 CET (not CEST)."
         }
       }
     },
@@ -4345,8 +4443,8 @@ window.RISE_DATA = {
       "start": "2027-11-12",
       "end": "2027-11-15",
       "city": "Las Vegas, NV",
-      "open": null,
-      "deadline": null,
+      "open": "2027-03-11",
+      "deadline": "2027-04-13",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -4355,10 +4453,10 @@ window.RISE_DATA = {
       "types": [
         "Ophthalmology research"
       ],
-      "url": "https://www.aao.org/annual-meeting/past-and-future-meetings",
+      "url": "https://www.aao.org/annual-meeting/presenter/dates",
       "guideline": null,
       "evidence": "official",
-      "note": "Flagship ophthalmology scientific congress. Organizer's future-meetings calendar lists Nov 12–15; submission dates not yet verified. Distinct from AAO-HNS.",
+      "note": "2027 AAO Paper/Poster and Video abstract window: March 11–April 13, 2027. Instruction Courses use a separate December 10, 2026–January 12, 2027 submission period; do not confuse the two.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -4373,6 +4471,20 @@ window.RISE_DATA = {
           "url": "https://www.aao.org/annual-meeting/past-and-future-meetings",
           "checked_at": "2026-10-11",
           "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://www.aao.org/annual-meeting/presenter/dates",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent 2027 organizer webpage manual audit",
+          "source_quote": "AAO 2027 Paper/Poster and Video abstract submitter opens March 11, 2027 and closes April 13, 2027; Instruction Course submitter has separate December 10, 2026 through January 12, 2027 dates.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.aao.org/annual-meeting/presenter/dates",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent 2027 organizer webpage manual audit",
+          "source_quote": "AAO 2027 Paper/Poster and Video abstract submitter opens March 11, 2027 and closes April 13, 2027; Instruction Course submitter has separate December 10, 2026 through January 12, 2027 dates.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -4787,9 +4899,10 @@ window.RISE_DATA = {
         },
         "deadline": {
           "url": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent manual official congress review",
+          "source_quote": "The Call for Papers officially closed on October 22, 2026. Deadline Thursday, October 22, 2026 at 11:59 PM Pacific Time.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -5103,7 +5216,7 @@ window.RISE_DATA = {
       "end": "2027-08-30",
       "city": "Milan, Italy",
       "open": null,
-      "deadline": null,
+      "deadline": "2027-03-01",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -5113,9 +5226,9 @@ window.RISE_DATA = {
         "Scientific program / submission categories to confirm"
       ],
       "url": "https://www.escardio.org/events/congresses/esc-congress/",
-      "guideline": null,
+      "guideline": "https://www.escardio.org/events/congresses/esc-congress/",
       "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "note": "Official ESC Congress 2027 page states that Call for Science opens in mid-December 2026, with regular abstract deadline March 1, 2027. The opening is month-level only; March 8 clinical case and June 1 late-breaking deadlines are separate.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -5130,8 +5243,23 @@ window.RISE_DATA = {
           "url": "https://www.escardio.org/events/congresses/esc-congress/",
           "checked_at": "2026-10-24",
           "verified_by": "Official society page review"
+        },
+        "openMonth": {
+          "url": "https://www.escardio.org/events/congresses/esc-congress/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent manual official congress review",
+          "source_quote": "The Call for Science and registration open in mid-December. Abstract submission deadline 01 Mar 2027.",
+          "confidence": "official_month_only"
+        },
+        "deadline": {
+          "url": "https://www.escardio.org/events/congresses/esc-congress/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent manual official congress review",
+          "source_quote": "The Call for Science and registration open in mid-December. Abstract submission deadline 01 Mar 2027.",
+          "confidence": "direct_official_edition_statement"
         }
-      }
+      },
+      "openMonth": "2026-12"
     },
     {
       "id": "ers27",
@@ -5225,7 +5353,7 @@ window.RISE_DATA = {
       "end": "2027-04-06",
       "city": "Florence, Italy",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-10-07",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -5234,10 +5362,10 @@ window.RISE_DATA = {
       "types": [
         "Scientific program / submission categories to confirm"
       ],
-      "url": "https://epa-congress.org/",
+      "url": "https://epa-congress.org/abstract-submission/",
       "guideline": null,
       "evidence": "official",
-      "note": "Regular abstract deadline not independently confirmed; resident awards may have a different deadline.",
+      "note": "Regular abstract deadline not independently confirmed; resident awards may have a different deadline. 2027 main regular abstract deadline extended to October 7, 2026; exact opening date not confirmed on official 2027 submission page.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -5252,6 +5380,13 @@ window.RISE_DATA = {
           "url": "https://epa-congress.org/",
           "checked_at": "2026-10-24",
           "verified_by": "Official society page review"
+        },
+        "deadline": {
+          "url": "https://epa-congress.org/abstract-submission/",
+          "checked_at": "2026-11-02",
+          "verified_by": "Manual review of official 2027 meeting submission page",
+          "source_quote": "Abstracts must be received by the extended deadline on 7 October 2026. Abstracts received after the deadline will not be considered.",
+          "confidence": "direct_official_statement"
         }
       }
     },
@@ -5264,7 +5399,7 @@ window.RISE_DATA = {
       "end": "2027-06-26",
       "city": "Guadalajara, Mexico",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-10-12",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -5274,9 +5409,9 @@ window.RISE_DATA = {
         "Scientific program / submission categories to confirm"
       ],
       "url": "https://www.ilds.org/what-we-do/world-congress-of-dermatology/wcd2027/",
-      "guideline": null,
+      "guideline": "https://www.wcd2027guadalajara.org/scientific-programme/abstract-submission/",
       "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines. 2027 congress official FAQ verifies abstract submissions closed October 12, 2026. Official February 12 announcement says submissions were already open on that date, but does not establish exact opening day.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -5291,6 +5426,13 @@ window.RISE_DATA = {
           "url": "https://www.ilds.org/what-we-do/world-congress-of-dermatology/wcd2027/",
           "checked_at": "2026-10-24",
           "verified_by": "Official society page review"
+        },
+        "deadline": {
+          "url": "https://www.wcd2027guadalajara.org/faqs/",
+          "checked_at": "2026-11-02",
+          "verified_by": "Manual review of official 2027 meeting submission page",
+          "source_quote": "Abstract submission period closed on 12 October 2026. No new abstracts can be submitted.",
+          "confidence": "direct_official_statement"
         }
       }
     },
@@ -5478,8 +5620,8 @@ window.RISE_DATA = {
       "start": "2027-07-28",
       "end": "2027-07-31",
       "city": "San Francisco, CA",
-      "open": null,
-      "deadline": null,
+      "open": "2026-12-03",
+      "deadline": "2027-01-28",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -5488,10 +5630,10 @@ window.RISE_DATA = {
       "types": [
         "See official call for abstracts or educational program"
       ],
-      "url": "https://www.asrs.org/annual-meeting/future-annual-meetings",
+      "url": "https://www.asrs.org/annual-meeting",
       "guideline": null,
       "evidence": "official",
-      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "note": "Annual ASRS meeting regular abstracts open December 3, 2026 and close January 28, 2027. Late-breaking research uses different May–June 2027 window.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -5506,6 +5648,20 @@ window.RISE_DATA = {
           "url": "https://www.asrs.org/annual-meeting/future-annual-meetings",
           "checked_at": "2026-10-24",
           "verified_by": "Official organizer website"
+        },
+        "open": {
+          "url": "https://www.asrs.org/annual-meeting",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of 2027 organizer's abstract information",
+          "source_quote": "Mark your calendar for our 45th ASRS Annual Scientific Meeting, July 28-31 in San Francisco. Abstract submissions will open on December 3, 2026 and close on January 28, 2027.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.asrs.org/annual-meeting",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of 2027 organizer's abstract information",
+          "source_quote": "Mark your calendar for our 45th ASRS Annual Scientific Meeting, July 28-31 in San Francisco. Abstract submissions will open on December 3, 2026 and close on January 28, 2027.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -5517,9 +5673,9 @@ window.RISE_DATA = {
       "start": "2027-03-04",
       "end": "2027-03-07",
       "city": "Tucson, AZ",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
+      "open": "2026-09-02",
+      "deadline": "2026-10-19",
+      "deadlineTime": "11:59 PM CT (general submissions)",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -5527,10 +5683,10 @@ window.RISE_DATA = {
       "types": [
         "See official call for abstracts or educational program"
       ],
-      "url": "https://www.americanglaucomasociety.net/events/calendar",
+      "url": "https://www.americanglaucomasociety.net/meetings-events/annual-meeting/abstracts",
       "guideline": null,
       "evidence": "official",
-      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "note": "General abstract deadline October 19, 2026; resident/student forum has an EARLIER deadline. Organizer's own webpage conflicts: headline lists October 2, 2026, while the FAQ lists October 1, 2026. Resident-specific deadline therefore requires organizer clarification; use the earlier date for conservative planning.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -5545,6 +5701,20 @@ window.RISE_DATA = {
           "url": "https://www.americanglaucomasociety.net/events/calendar",
           "checked_at": "2026-10-24",
           "verified_by": "Official organizer website"
+        },
+        "open": {
+          "url": "https://www.americanglaucomasociety.net/meetings-events/annual-meeting/abstracts",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of 2027 organizer's abstract information",
+          "source_quote": "Submission of abstract proposals ... for the 2027 Annual Meeting will open Wednesday, September 2, 2026. Deadline for AGS members and non-members ... Monday, October 19, 2026, 11:59pm Central.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.americanglaucomasociety.net/meetings-events/annual-meeting/abstracts",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of 2027 organizer's abstract information",
+          "source_quote": "Submission of abstract proposals ... for the 2027 Annual Meeting will open Wednesday, September 2, 2026. Deadline for AGS members and non-members ... Monday, October 19, 2026, 11:59pm Central.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -5816,7 +5986,7 @@ window.RISE_DATA = {
       "end": "2027-01-31",
       "city": "San Diego, CA",
       "open": null,
-      "deadline": "2026-11-02",
+      "deadline": "2026-11-09",
       "deadlineTime": "1:00 PM ET",
       "limit": null,
       "limitType": null,
@@ -5828,7 +5998,7 @@ window.RISE_DATA = {
       "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
       "guideline": null,
       "evidence": "official",
-      "note": "Specialized cancer biology and therapeutic research.",
+      "note": "Specialized cancer biology and therapeutic research. Regular abstract deadline extended by organizer to November 9, 2026 at 1:00 p.m. U.S. ET; replaces previously displayed November 2 date.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
@@ -5846,8 +6016,10 @@ window.RISE_DATA = {
         },
         "deadline": {
           "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE individual manual review of organizer webpage",
+          "source_quote": "Extended Abstract Submission Deadline: Monday, November 9, 2026, 1 p.m. U.S. ET.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -6288,8 +6460,8 @@ window.RISE_DATA = {
       "end": "2027-04-21",
       "city": "Louisville, KY",
       "open": null,
-      "deadline": null,
-      "deadlineTime": null,
+      "deadline": "2026-12-01",
+      "deadlineTime": "11:00 AM CT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -6297,10 +6469,10 @@ window.RISE_DATA = {
       "types": [
         "Research abstracts (confirm society-specific submission rules)"
       ],
-      "url": "https://www.amssm.org/Conferences.html",
+      "url": "https://www.amssm.org/Submissions.php",
       "guideline": null,
       "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "note": "2027 research abstract submissions opened in late August 2026 (organizer identifies month only; not an exact day). Submission closes December 1, 2026 at 11:00 AM Central Time. Society membership required to submit. Case reports may have a distinct schedule.",
       "flag": null,
       "tags": [
         "resident-relevant"
@@ -6318,8 +6490,23 @@ window.RISE_DATA = {
           "url": "https://www.amssm.org/Conferences.html",
           "checked_at": "2026-10-24",
           "verified_by": "Official society meeting calendar"
+        },
+        "openMonth": {
+          "url": "https://www.amssm.org/Submissions.php",
+          "checked_at": "2026-11-02",
+          "verified_by": "Manual review of official 2027 meeting submission page",
+          "source_quote": "Research Abstract Submission for the 2027 Annual Meeting will open in late August. Deadline: December 1, 2026, at 11:00am Central Time.",
+          "confidence": "official_month_only"
+        },
+        "deadline": {
+          "url": "https://www.amssm.org/Submissions.php",
+          "checked_at": "2026-11-02",
+          "verified_by": "Manual review of official 2027 meeting submission page",
+          "source_quote": "Research Abstract Submission for the 2027 Annual Meeting will open in late August. Deadline: December 1, 2026, at 11:00am Central Time.",
+          "confidence": "direct_official_statement"
         }
-      }
+      },
+      "openMonth": "2026-08"
     },
     {
       "id": "amssm-fellows27",
@@ -6740,7 +6927,7 @@ window.RISE_DATA = {
       "end": "2027-06-13",
       "city": "Palm Beach, FL",
       "open": null,
-      "deadline": null,
+      "deadline": "2027-02-26",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
@@ -6753,7 +6940,7 @@ window.RISE_DATA = {
       "url": "https://fsahq.org/2027-annual-meeting/",
       "guideline": null,
       "evidence": "official",
-      "note": "Florida regional meeting. Abstract call listed as October 2026 on one organizer page and November 2026 on another. Exact submission opening/day and deadline unconfirmed.",
+      "note": "Florida regional meeting. Abstract call listed as October 2026 on one organizer page and November 2026 on another. Exact submission opening/day and deadline unconfirmed. FSA 2027 organizer timeline specifies Call for Abstracts October 2026 (month only, exact day unannounced) and deadline February 26, 2027. Call for Topics September–October 2026 is a separate category.",
       "flag": null,
       "tags": [
         "florida-regional",
@@ -6775,8 +6962,23 @@ window.RISE_DATA = {
           "checked_at": "2026-10-24",
           "verified_by": "Official Florida society meeting or submission page",
           "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "openMonth": {
+          "url": "https://fsahq.org/2027-annual-meeting/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual inspection of official 2027 meeting timeline",
+          "source_quote": "Call for Abstracts: October 2026; Call for Abstracts Deadline: February 26, 2027.",
+          "confidence": "official_month_only"
+        },
+        "deadline": {
+          "url": "https://fsahq.org/2027-annual-meeting/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual inspection of official 2027 meeting timeline",
+          "source_quote": "Call for Abstracts: October 2026; Call for Abstracts Deadline: February 26, 2027.",
+          "confidence": "direct_official_edition_statement"
         }
-      }
+      },
+      "openMonth": "2026-10"
     },
     {
       "id": "fl-fm-spring27",
