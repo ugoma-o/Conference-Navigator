@@ -1,6 +1,6 @@
 /* Curated snapshot — verify dates against society sources. */
 window.RISE_DATA = {
-  "asOf": "2026-10-25",
+  "asOf": "2026-11-02",
   "conferences": [
     {
       "id": "aan27",
@@ -1677,14 +1677,29 @@ window.RISE_DATA = {
         "Basic cardiovascular science",
         "Translational cardiology"
       ],
-      "url": "https://professional.heart.org/en/meetings/bcvs-and-vascular-discovery-run-consecutively-in-2027",
-      "guideline": null,
+      "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences",
+      "guideline": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
       "evidence": "official",
-      "note": "Co-located with Vascular Discovery (Jul 22–25), separate scientific meeting and abstract cycle not yet verified.",
+      "note": "BCVS Scientific Sessions (July 19–22) is a separate meeting from the consecutive Vascular Discovery Scientific Sessions (July 22–25). Abstract window not yet verified.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "additionalSources": [
+        "https://professional.heart.org/en/meetings/bcvs-and-vascular-discovery-run-consecutively-in-2027"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        }
+      }
     },
     {
       "id": "ahavascular27",
@@ -1705,14 +1720,30 @@ window.RISE_DATA = {
         "Vascular biology",
         "Arteriosclerosis and thrombosis"
       ],
-      "url": "https://professional.heart.org/en/meetings/bcvs-and-vascular-discovery-run-consecutively-in-2027",
+      "url": "https://professional.heart.org/en/meetings/vascular-discovery-from-genes-to-medicine",
       "guideline": null,
       "evidence": "official",
-      "note": "Back-to-back with BCVS (Jul 19–22); abstract call not yet verified.",
+      "note": "Vascular Discovery Scientific Sessions (July 22–25) is a separate meeting from the preceding BCVS Scientific Sessions (July 19–22). Abstract opening month is Autumn 2026 per organizer; exact day not established.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": []
+      "presentationFormats": [],
+      "additionalSources": [
+        "https://professional.heart.org/en/meetings/bcvs-and-vascular-discovery-run-consecutively-in-2027",
+        "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
+        }
+      }
     },
     {
       "id": "croi27",
@@ -4215,45 +4246,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "iaprd27",
-      "name": "IAPRD World Congress on Parkinson’s Disease and Related Disorders 2027",
-      "society": "International Association of Parkinsonism and Related Disorders",
-      "specialty": "Neurology",
-      "start": "2027-05-12",
-      "end": "2027-05-15",
-      "city": "Mexico City, Mexico",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Movement disorders research"
-      ],
-      "url": "https://www.iaprd-world-congress.com/iaprd-2027/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.iaprd-world-congress.com/iaprd-2027/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://www.iaprd-world-congress.com/iaprd-2027/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        }
-      }
-    },
-    {
       "id": "aua-urology27",
       "name": "AUA Annual Meeting 2027 (Urology)",
       "society": "American Urological Association",
@@ -5025,55 +5017,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "sgimeu27",
-      "name": "European Congress of Internal Medicine (ECIM) 2027",
-      "society": "European Federation of Internal Medicine",
-      "specialty": "Internal Medicine",
-      "start": "2027-03-31",
-      "end": "2027-04-03",
-      "city": "Paris, France",
-      "open": "2026-06-01",
-      "deadline": "2026-10-30",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://ecim2027.org/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://ecim2027.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://ecim2027.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "open": {
-          "url": "https://ecim2027.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "deadline": {
-          "url": "https://ecim2027.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
       "id": "aaimwinter27",
       "name": "AAIM APM Winter Meeting 2027",
       "society": "Alliance for Academic Internal Medicine",
@@ -5191,279 +5134,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "eapci27",
-      "name": "EAPCI Congress 2027",
-      "society": "European Association of Percutaneous Cardiovascular Interventions",
-      "specialty": "Cardiology",
-      "start": "2027-02-18",
-      "end": "2027-02-20",
-      "city": "Milan, Italy",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.escardio.org/events/congresses/eapci-congress/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.escardio.org/events/congresses/eapci-congress/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.escardio.org/events/congresses/eapci-congress/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "escacc27",
-      "name": "ESC Acute Cardiovascular Care 2027",
-      "society": "European Society of Cardiology",
-      "specialty": "Cardiology",
-      "start": "2027-03-19",
-      "end": "2027-03-20",
-      "city": "Seville, Spain",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.escardio.org/events/congresses/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.escardio.org/events/congresses/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.escardio.org/events/congresses/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "ehra27",
-      "name": "EHRA Congress 2027",
-      "society": "European Heart Rhythm Association",
-      "specialty": "Cardiology",
-      "start": "2027-04-11",
-      "end": "2027-04-13",
-      "city": "Helsinki, Finland",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.escardio.org/events/congresses/ehra-congress/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Abstract deadline requires event-specific official confirmation; previously suggested November 5 date intentionally withheld.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.escardio.org/events/congresses/ehra-congress/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.escardio.org/events/congresses/ehra-congress/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "escprev27",
-      "name": "ESC Preventive Cardiology 2027",
-      "society": "European Society of Cardiology",
-      "specialty": "Cardiology",
-      "start": "2027-04-15",
-      "end": "2027-04-17",
-      "city": "Lisbon, Portugal",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.escardio.org/events/congresses/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.escardio.org/events/congresses/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.escardio.org/events/congresses/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "eschf27",
-      "name": "Heart Failure Congress 2027",
-      "society": "Heart Failure Association of the ESC",
-      "specialty": "Cardiology",
-      "start": "2027-05-22",
-      "end": "2027-05-25",
-      "city": "London, UK",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.escardio.org/events/congresses/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.escardio.org/events/congresses/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.escardio.org/events/congresses/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "esccardionc27",
-      "name": "ESC Cardio-Oncology 2027",
-      "society": "European Society of Cardiology",
-      "specialty": "Cardiology",
-      "start": "2027-06-04",
-      "end": "2027-06-05",
-      "city": "Porto, Portugal",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.escardio.org/events/congresses/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.escardio.org/events/congresses/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.escardio.org/events/congresses/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "accasia27",
-      "name": "ACC Asia / Hong Kong College of Cardiology Congress 2027",
-      "society": "American College of Cardiology",
-      "specialty": "Cardiology",
-      "start": "2027-06-11",
-      "end": "2027-06-13",
-      "city": "Hong Kong, China",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.acc.org/education-and-meetings/meetings/meeting-items/2026/07/03/2027-asia",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.acc.org/education-and-meetings/meetings/meeting-items/2026/07/03/2027-asia",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.acc.org/education-and-meetings/meetings/meeting-items/2026/07/03/2027-asia",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
       "id": "ers27",
       "name": "European Respiratory Society Congress 2027",
       "society": "European Respiratory Society",
@@ -5502,84 +5172,6 @@ window.RISE_DATA = {
         },
         "open": {
           "url": "https://www.ersnet.org/congress-and-events/congress/abstract-and-clinical-case-submission/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "erslung27",
-      "name": "ERS Lung Science Conference 2027",
-      "society": "European Respiratory Society",
-      "specialty": "Pulmonary & Critical Care",
-      "start": "2027-03-18",
-      "end": "2027-03-20",
-      "city": "Estoril, Portugal",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.ersnet.org/congress-and-events/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.ersnet.org/congress-and-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.ersnet.org/congress-and-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "ersdetect27",
-      "name": "ERS Early Detection and Early Action Conference 2027",
-      "society": "European Respiratory Society",
-      "specialty": "Pulmonary & Critical Care",
-      "start": "2027-06-30",
-      "end": "2027-07-02",
-      "city": "Rotterdam, Netherlands",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.ersnet.org/events/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.ersnet.org/events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.ersnet.org/events/",
           "checked_at": "2026-10-24",
           "verified_by": "Official society page review"
         }
@@ -6044,138 +5636,6 @@ window.RISE_DATA = {
         },
         "deadline": {
           "url": "https://events.aats.org/am27",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "spaaap27",
-      "name": "SPA-AAP Pediatric Anesthesiology 2027",
-      "society": "Society for Pediatric Anesthesia / American Academy of Pediatrics",
-      "specialty": "Anesthesiology",
-      "start": "2027-03-05",
-      "end": "2027-03-07",
-      "city": "Nassau, Bahamas",
-      "open": null,
-      "deadline": "2026-10-26",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Regular abstract deadline October 26, 2026; resident and medical student meeting scholarships.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "deadline": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "ccas27",
-      "name": "Congenital Cardiac Anesthesia Society Annual Meeting 2027",
-      "society": "Congenital Cardiac Anesthesia Society",
-      "specialty": "Anesthesiology",
-      "start": "2027-03-04",
-      "end": "2027-03-04",
-      "city": "Nassau, Bahamas",
-      "open": null,
-      "deadline": "2026-10-26",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "deadline": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "sppm27",
-      "name": "Society for Pediatric Pain Medicine Annual Meeting 2027",
-      "society": "Society for Pediatric Pain Medicine",
-      "specialty": "Anesthesiology",
-      "start": "2027-03-04",
-      "end": "2027-03-04",
-      "city": "Nassau, Bahamas",
-      "open": null,
-      "deadline": "2026-10-26",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "deadline": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
           "checked_at": "2026-10-24",
           "verified_by": "Official organizer website"
         }
@@ -6722,48 +6182,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "apao27",
-      "name": "Asia-Pacific Academy of Ophthalmology Congress 2027",
-      "society": "Asia-Pacific Academy of Ophthalmology",
-      "specialty": "Ophthalmology",
-      "start": "2027-03-18",
-      "end": "2027-03-21",
-      "city": "Singapore",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://apaophth.org/congress/calendar/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "international",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://apaophth.org/congress/calendar/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://apaophth.org/congress/calendar/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
       "id": "wgc27",
       "name": "World Glaucoma Congress 2027",
       "society": "World Glaucoma Association",
@@ -6818,90 +6236,6 @@ window.RISE_DATA = {
         }
       },
       "openMonth": "2026-07"
-    },
-    {
-      "id": "soe27",
-      "name": "European Society of Ophthalmology Congress 2027",
-      "society": "European Society of Ophthalmology",
-      "specialty": "Ophthalmology",
-      "start": "2027-06-18",
-      "end": "2027-06-20",
-      "city": "Athens, Greece",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://apaophth.org/congress/calendar/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "international",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://apaophth.org/congress/calendar/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://apaophth.org/congress/calendar/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
-      "id": "apspos27",
-      "name": "Asia-Pacific Strabismus & Paediatric Ophthalmology Congress 2027",
-      "society": "Asia-Pacific Strabismus & Paediatric Ophthalmology Society",
-      "specialty": "Ophthalmology",
-      "start": "2027-04-15",
-      "end": "2027-04-17",
-      "city": "Tianjin, China",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://apaophth.org/congress/calendar/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "international",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://apaophth.org/congress/calendar/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://apaophth.org/congress/calendar/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
     },
     {
       "id": "era27",
@@ -7147,84 +6481,6 @@ window.RISE_DATA = {
         },
         "end": {
           "url": "https://acpm.org/membership-partners/awards-scholarships/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer"
-        }
-      }
-    },
-    {
-      "id": "aha-bcvs27",
-      "name": "AHA Basic Cardiovascular Sciences Sessions 2027",
-      "society": "American Heart Association",
-      "specialty": "Cardiology",
-      "start": "2027-07-19",
-      "end": "2027-07-22",
-      "city": "Boston, MA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific research abstract submissions (check official call)"
-      ],
-      "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Meeting dates verified; abstract deadline not yet verified.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer"
-        },
-        "end": {
-          "url": "https://professional.heart.org/en/meetings/basic-cardiovascular-sciences/abstracts-and-awards",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer"
-        }
-      }
-    },
-    {
-      "id": "aha-vascular-discovery27",
-      "name": "AHA Vascular Discovery Sessions 2027",
-      "society": "American Heart Association",
-      "specialty": "Vascular Surgery",
-      "start": "2027-07-22",
-      "end": "2027-07-25",
-      "city": "Boston, MA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific research abstract submissions (check official call)"
-      ],
-      "url": "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Meeting dates verified; abstract deadline not yet verified.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer"
-        },
-        "end": {
-          "url": "https://professional.heart.org/en/professional-membership/scientific-councils/atvb/early-career/events",
           "checked_at": "2026-10-24",
           "verified_by": "Official organizer"
         }
@@ -10137,99 +9393,6 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "esc-preventive-young27",
-      "name": "ESC Preventive Cardiology 2027 Young Investigators Award",
-      "society": "European Society of Cardiology",
-      "amount": "Recognition",
-      "category": "Merit award",
-      "deadline": "2026-11-19",
-      "opens": "2026-09-17",
-      "open": "2026-09-17",
-      "eligibility": "Investigators under 40 submitting qualifying research to the 2027 ESC Preventive Cardiology scientific program.",
-      "url": "https://www.escardio.org/events/congresses/esc-preventive-cardiology/call-for-science/abstracts/",
-      "conferenceId": "escprev27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Cardiology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Submit an eligible regular abstract and select appropriate Young Investigators competition.",
-      "deadlineLabel": "Abstract submission deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.escardio.org/events/congresses/esc-preventive-cardiology/call-for-science/abstracts/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.escardio.org/events/congresses/esc-preventive-cardiology/call-for-science/abstracts/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "eapci-educational27",
-      "name": "EAPCI 2027 Congress Educational Grant",
-      "society": "European Association of Percutaneous Cardiovascular Interventions",
-      "amount": "€400 + free registration",
-      "category": "Travel award",
-      "deadline": "2026-10-31",
-      "opens": null,
-      "open": null,
-      "eligibility": "Selected qualifying EAPCI abstract or clinical-case presenters with limited access to funding.",
-      "url": "https://www.escardio.org/events/congresses/eapci-congress/call-for-science/abstracts/",
-      "conferenceId": "eapci27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Cardiology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Apply for EAPCI Congress educational grant; verify presenter eligibility.",
-      "deadlineLabel": "Grant application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.escardio.org/events/congresses/eapci-congress/call-for-science/abstracts/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.escardio.org/events/congresses/eapci-congress/call-for-science/abstracts/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "accasia-abstract27",
-      "name": "ACC Asia 2027 Top Abstract Presenter Travel Scholarships",
-      "society": "American College of Cardiology",
-      "amount": "Recognition",
-      "category": "Presentation prize",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Selected top abstract presenters at ACC Asia 2027 with an opportunity to present at ACC.28.",
-      "url": "https://www.acc.org/education-and-meetings/meetings/meeting-items/2026/07/03/2027-asia",
-      "conferenceId": "accasia27",
-      "note": "Three top abstract winners receive travel scholarship to ACC.28; submissions expected to open Dec 2026.",
-      "flag": null,
-      "specialties": [
-        "Cardiology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Present qualifying abstract at ACC Asia 2027; follow opening announcement.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.acc.org/education-and-meetings/meetings/meeting-items/2026/07/03/2027-asia",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
       "id": "isn-wcntravel27",
       "name": "ISN WCN 2027 Travel Grants",
       "society": "International Society of Nephrology",
@@ -10514,33 +9677,6 @@ window.RISE_DATA = {
       ],
       "lastVerified": "2026-10-24",
       "verificationSource": "https://uscap.org/stowell-orbison-awards/",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {}
-    },
-    {
-      "id": "spa-resident-scholarship27",
-      "name": "SPA-AAP Pediatric Anesthesiology 2027 Resident & Student Meeting Scholarships",
-      "society": "Society for Pediatric Anesthesia",
-      "amount": "Meeting scholarship; amount to verify",
-      "category": "Trainee scholarship",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Eligible anesthesiology residents and medical students interested in pediatric anesthesiology and attending the SPA-AAP 2027 meeting.",
-      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-      "conferenceId": "spaaap27",
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Review 2027 Society for Pediatric Anesthesia resident and medical student scholarship rules.",
-      "note": "Conference advertises trainee scholarships; separate application dates not verified.",
-      "flag": null,
-      "specialties": [
-        "Anesthesiology",
-        "Pediatrics"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
       "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
       "fieldSources": {}
     },
