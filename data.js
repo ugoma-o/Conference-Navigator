@@ -2802,7 +2802,7 @@ window.RISE_DATA = {
       "url": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
       "guideline": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
       "evidence": "official",
-      "note": "2027 meeting hosted by American Societies of Head and Neck Radiology and Neuroradiology. Abstracts due November 4, 2026; four accepted formats. Do not confuse this ASNR with the American Society of Neurorehabilitation.",
+      "note": "2027 joint ASHNR/ASNR deadline extended from November 4 to November 11, 2026 at 11:59 PM ET; no exact opening date published on the official call page.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": true,
@@ -2828,8 +2828,8 @@ window.RISE_DATA = {
         "deadline": {
           "url": "https://www.asnr.org/ashnr-asnr-2027-call-for-abstracts/",
           "checked_at": "2026-11-02",
-          "verified_by": "RISE manual review of official 2027 abstract page",
-          "source_quote": "The Abstract submission period has been extended! New submission deadline: Wednesday, November 11, 2026, at 11:59 pm ET!",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "The abstract submission period has been extended! New submission deadline Wednesday November 11, 2026 at 11:59 pm ET.",
           "confidence": "direct_official_edition_statement"
         }
       }
@@ -4980,9 +4980,9 @@ window.RISE_DATA = {
         "Qualitative research"
       ],
       "url": "https://www.asnr.com/asnr2027-poster-abstracts/",
-      "guideline": null,
+      "guideline": "https://www.asnr.com/asnr2027-poster-abstracts/",
       "evidence": "official",
-      "note": "American Society of Neurorehabilitation (asnr.com), distinct from the American Society of Neuroradiology (asnr.org). ASNR's official 2027 announcements give March 16–18, 2027 at Durham Convention Center, Durham, NC. Poster abstract deadline is November 29, 2026 at 11:59 p.m. CST. Results are required; no late submissions.",
+      "note": "ASNR2027 research poster abstract deadline November 29, 2026 11:59 PM US Central Standard Time; submission site open by November 2, but the exact opening day is not stated.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": true,
@@ -4992,9 +4992,10 @@ window.RISE_DATA = {
       "fieldSources": {
         "deadline": {
           "url": "https://www.asnr.com/asnr2027-poster-abstracts/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "ASNR2027 Poster Abstracts DUE Sunday, November 29, 2026 at 11:59pm Central. Abstract submission site is now OPEN!",
+          "confidence": "direct_official_edition_statement"
         },
         "start": {
           "url": "https://bsky.app/profile/asnrehab.bsky.social",
@@ -6834,9 +6835,9 @@ window.RISE_DATA = {
         "Scientific program — submission rules pending"
       ],
       "url": "https://www.accfl.org/Calendar",
-      "guideline": null,
+      "guideline": "https://www.accfl.org/Annual-Meeting-Home/",
       "evidence": "official",
-      "note": "Florida regional meeting. Florida ACC state annual meeting; official calendar lists August 6–8. Registration opening is not an abstract opening.",
+      "note": "Florida ACC 2027 Scientific Abstract/Case Study/Quality competitions are scheduled to open March 2027 (only a month is supplied; exact opening day and closing date not announced). Registration opens February 15, 2027, which is not the abstract opening.",
       "flag": null,
       "tags": [
         "florida-regional",
@@ -6858,8 +6859,16 @@ window.RISE_DATA = {
           "checked_at": "2026-10-24",
           "verified_by": "Official Florida society meeting or submission page",
           "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "openMonth": {
+          "url": "https://www.accfl.org/Annual-Meeting-Home/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "Florida Chapter ACC 2027 Annual Meeting August 6-8: Scientific Abstract, Case Study & Quality Competitions Open March 2027",
+          "confidence": "official_month_only"
         }
-      }
+      },
+      "openMonth": "2027-03"
     },
     {
       "id": "fl-neuro27",
@@ -7126,7 +7135,7 @@ window.RISE_DATA = {
       "start": "2027-04-24",
       "end": "2027-04-25",
       "city": "Orlando, FL",
-      "open": null,
+      "open": "2026-11-02",
       "deadline": "2027-01-31",
       "deadlineTime": null,
       "limit": 250,
@@ -7141,9 +7150,9 @@ window.RISE_DATA = {
         "Poster"
       ],
       "url": "https://www.floridafacs.org/2027-annual-meeting",
-      "guideline": "https://www.floridafacs.org/abstract-submissions-1",
+      "guideline": "https://www.floridafacs.org/2027-annual-meeting",
       "evidence": "official",
-      "note": "Florida regional meeting. Florida surgical residents and fellows eligible for research podium awards; Florida medical students may submit posters. Call opens Nov 2 (day shown; precise opening year not explicitly stated).",
+      "note": "Florida ACS 2027 Resident Paper/Abstract Competition opens November 2, 2026 and closes January 31, 2027 (per 2027 abstract instructions).",
       "flag": null,
       "tags": [
         "florida-regional",
@@ -7171,6 +7180,13 @@ window.RISE_DATA = {
           "checked_at": "2026-10-24",
           "verified_by": "Official Florida society meeting or submission page",
           "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "open": {
+          "url": "https://www.floridafacs.org/2027-annual-meeting",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "2027 Annual Meeting & Edward M. Copeland III Resident Research Symposium; Call for Resident Abstracts Opening November 2!",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -7437,9 +7453,9 @@ window.RISE_DATA = {
       "start": "2027-07-16",
       "end": "2027-07-18",
       "city": "Amelia Island, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
+      "open": "2027-01-04",
+      "deadline": "2027-05-14",
+      "deadlineTime": "12:00 PM ET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
@@ -7448,9 +7464,9 @@ window.RISE_DATA = {
         "Radiology education / trainees; research abstract categories to confirm"
       ],
       "url": "https://www.flrad.org/frs-annual-meeting/",
-      "guideline": null,
+      "guideline": "https://www.flrad.org/resident-poster-session/",
       "evidence": "official",
-      "note": "Florida regional meeting. Ritz-Carlton Amelia Island; scientific abstract submission date not available.",
+      "note": "2027 Florida Radiological Society resident/medical-student poster session submission portal opens January 4, 2027 and closes May 14, 2027, 12 noon ET. Restriction: first authors must be eligible Florida students or residents/fellows; verify details. Generic abstracts page currently shows May 15 but is not explicitly edition-specific, so the specific 2027 poster-page deadline governs.",
       "flag": null,
       "tags": [
         "florida-regional",
@@ -7472,6 +7488,20 @@ window.RISE_DATA = {
           "checked_at": "2026-10-24",
           "verified_by": "Official Florida society meeting or submission page",
           "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "open": {
+          "url": "https://www.flrad.org/resident-poster-session/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "2027 FRS/FRBMA Annual Meeting July 16–18, 2027; Online Submission Open and Close Dates: Open date January 4, 2027; Close date May 14, 2027 (12 pm Noon ET).",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.flrad.org/resident-poster-session/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "2027 FRS/FRBMA Annual Meeting July 16–18, 2027; Online Submission Open and Close Dates: Open date January 4, 2027; Close date May 14, 2027 (12 pm Noon ET).",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
