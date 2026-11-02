@@ -15,7 +15,7 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <link rel="stylesheet" href="dark-theme.css?v=3ee8e5c35e76" />
 <link rel="stylesheet" href="abstract-matcher.css?v=529158aa3252" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
-<link rel="stylesheet" href="editorial-design.css?v=5bd1adb923" />
+<link rel="stylesheet" href="editorial-design.css?v=20261102-countdown" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css?v=5bd1adb923"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -51,6 +51,10 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
               <h2>GME Research Day <span>2027</span></h2>
               <p>Friday, April 30, 2027 <span class="featured-gme-separator" aria-hidden="true">·</span> 10:00 AM–4:00 PM</p>
               <span class="featured-gme-location">Whole Life Church · 2800 N Orange Ave, Orlando, FL</span>
+              <div class="featured-gme-countdown" id="featuredGmeCountdown" aria-label="Countdown to GME Research Day" hidden>
+                <strong id="featuredGmeCountdownValue"></strong>
+                <span id="featuredGmeCountdownLabel"></span>
+              </div>
             </div>
             <div class="featured-gme-side">
               <span class="featured-gme-side-kicker">ALSO FEATURED</span>
@@ -163,6 +167,6 @@ catch (error) { /* Private browsing and blocked storage still support the toggle
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script src="data.js?v=20261102-191"></script>
 <script src="abstract-matcher.js?v=efe82c480572"></script>
-<script src="app.js?v=eaa0b325"></script>
+<script src="app.js?v=20261102-countdown"></script>
 </body>
 </html>
