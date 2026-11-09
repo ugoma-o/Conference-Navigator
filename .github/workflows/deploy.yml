@@ -5,7 +5,6 @@ on:
     paths:
       - 'index.html'
       - 'styles.css'
-      - 'dark-theme.css'
       - 'abstract-matcher.css'
       - 'accessibility.css'
       - 'editorial-design.css'
@@ -39,7 +38,7 @@ jobs:
           root=Path('.')
           allowed=(
             'index.html','app.js','abstract-matcher.js','data.js','data.json',
-            'styles.css','dark-theme.css','abstract-matcher.css',
+            'styles.css','abstract-matcher.css',
             'accessibility.css','editorial-design.css'
           )
           for name in allowed:
