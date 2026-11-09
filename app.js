@@ -19,26 +19,6 @@ function escape(s){return String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<'
 const iconPaths={grid:'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>',layers:'<path d="m12 2 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 17l9 5 9-5"/>',award:'<circle cx="12" cy="8" r="6"/><path d="m8 14-1 8 5-3 5 3-1-8"/>',shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/>',download:'<path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/>',search:'<circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/>',stethoscope:'<path d="M6 3v6a5 5 0 0 0 10 0V3M4 3h4M14 3h4M11 14v2a4 4 0 0 0 8 0v-2"/><circle cx="19" cy="12" r="2"/>',info:'<circle cx="12" cy="12" r="10"/><path d="M12 10v7M12 7h.01"/>',map:'<path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"/>',external:'<path d="M14 4h6v6M20 4l-9 9"/><path d="M20 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6"/>',check:'<path d="m4 12 5 5 11-11"/>',moon:'<path d="M20.6 13.4A8.6 8.6 0 0 1 10.6 3.4 8.6 8.6 0 1 0 20.6 13.4Z"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>',arrow:'<path d="M5 12h14m-6-6 6 6-6 6"/>'};
 function ico(n){return `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${iconPaths[n]||iconPaths.info}</svg>`}
 document.querySelectorAll('[data-icon]').forEach(el=>el.innerHTML=ico(el.dataset.icon));
-// The visitor's explicit choice is saved locally; the existing light design stays the default.
-function applyTheme(theme) {
- const dark=theme==='dark';
- document.documentElement.dataset.theme=dark?'dark':'light';
- const button=get('themeToggle');
- const title=dark?'Switch to light mode':'Switch to dark mode';
- button.setAttribute('aria-pressed',String(dark));
- button.setAttribute('aria-label',title);
- button.title=title;
- get('themeToggleText').textContent=dark?'Light mode':'Dark mode';
- button.querySelector('.theme-toggle-icon').innerHTML=ico(dark?'sun':'moon');
- const themeMeta=document.querySelector('meta[name="theme-color"]');
- if(themeMeta)themeMeta.setAttribute('content',dark?'#101e2b':'#07527f');
-}
-applyTheme(document.documentElement.dataset.theme==='dark'?'dark':'light');
-get('themeToggle').addEventListener('click',()=>{
- const next=document.documentElement.dataset.theme==='dark'?'light':'dark';
- applyTheme(next);
- try { localStorage.setItem('rise-theme',next); } catch (error) { /* Toggle still works. */ }
-});
 function status(c){
  if(c.flag==='conflict')return ['Source conflict','conflict'];
  const regularAvailable=!!c.deadline&&c.deadline>=todayKey;
@@ -681,30 +661,6 @@ function renderFunding(){
    return `<article class="funding-card" data-award-card="${escape(a.id)}"><div class="fund-top"><div class="fund-ico">${ico('award')}</div><div class="fund-amount">${escape(a.amount)}</div></div><div><div class="fund-cat">${escape(a.category)} · ${escape(kind)}</div><div class="fund-title">${escape(a.name)}</div><div class="fund-society">${escape(a.society)}</div></div>${meeting}<div class="fund-desc">${escape(a.eligibility)} ${a.note?escape(a.note):''}</div><div class="award-window"><div><span>${a.nominationBased?'NOMINATIONS OPEN':'APPLICATIONS OPEN'}</span><strong>${a.open?fmt(a.open):'Not announced'}</strong></div><div><span>${escape(a.deadlineLabel||'APPLICATION DEADLINE').toUpperCase()}</span><strong>${a.deadline?fmt(a.deadline):'Not confirmed'}</strong></div></div>${a.stages?.length?'<div class="award-extra-steps">'+a.stages.map(s=>escape(s.label)+': '+fmt(s.date)).join(' · ')+'</div>':''}${a.applicationProcess?'<p class="award-extra-steps"><strong>'+(a.nominationBased?'Nomination: ':'How to apply: ')+'</strong>'+escape(a.applicationProcess)+'</p>':''}<p class="award-verified">${a.lastVerified?'Award details reviewed '+escape(fmt(a.lastVerified)):a.scope==='institutional'?'Confirm funding with your institution':'Current-cycle details not fully verified'}</p><div class="fund-info-row"><span>${a.deadline&&a.deadline<todayKey?'Closed · Last published deadline: '+fmt(a.deadline):a.open&&a.deadline?'Application window: '+fmt(a.open)+' – '+fmt(a.deadline):a.deadline?'Deadline: '+fmt(a.deadline):a.nominationBased?'Nomination dates to verify':'Application dates to verify'}</span>${safeExternal(a.url,'Award details')}</div></article>`;
  }).join('');
 }
-// This countdown reads the curated conference date and updates as the calendar day changes.
-function refreshFeaturedGmeCountdown(){
- const container=get('featuredGmeCountdown');
- if(!container)return;
- const featured=C.find(c=>c.id==='adventhealth-gme-research-day27');
- const target=featured?.start;
- if(!/^20\d{2}-\d{2}-\d{2}$/.test(target||'')){container.hidden=true;return}
- const preview=new URLSearchParams(location.search).get('demoDate');
- const current=preview&&/^20\d{2}-\d{2}-\d{2}$/.test(preview)?preview:key(new Date());
- const utcDay=s=>{const [year,month,day]=s.split('-').map(Number);return Date.UTC(year,month-1,day)};
- const remaining=Math.round((utcDay(target)-utcDay(current))/86400000);
- const value=get('featuredGmeCountdownValue'),label=get('featuredGmeCountdownLabel');
- if(remaining>1){value.textContent=remaining.toLocaleString('en-US');label.textContent='days until GME Research Day'}
- else if(remaining===1){value.textContent='1';label.textContent='day until GME Research Day'}
- else if(remaining===0){value.textContent='Today';label.textContent='GME Research Day is here'}
- else{value.textContent='Completed';label.textContent='GME Research Day 2027'}
- container.setAttribute('aria-label',value.textContent+' '+label.textContent);
- container.hidden=false;
-}
-refreshFeaturedGmeCountdown();
-// Refresh after a day rollover, when returning to a tab, and when refocusing the window.
-setInterval(refreshFeaturedGmeCountdown,60*60*1000);
-document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshFeaturedGmeCountdown()});
-window.addEventListener('focus',refreshFeaturedGmeCountdown);
 // The featured AdventHealth event stays discoverable above specialty filters.
 const featuredGmeButton=get('featuredGmeOpen');
 if(featuredGmeButton)featuredGmeButton.addEventListener('click',()=>showConference('adventhealth-gme-research-day27'));
