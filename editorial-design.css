@@ -1957,36 +1957,6 @@ html[data-theme="dark"] .award-verified{color:var(--ed-muted,#aac2ce)}
   line-height:1.55;
   margin-top:5px;
 }
-#discoverView .featured-gme-countdown {
-  display:inline-flex;
-  align-items:center;
-  flex-wrap:wrap;
-  column-gap:10px;
-  row-gap:3px;
-  max-width:100%;
-  margin-top:12px;
-  padding:7px 12px;
-  background:rgba(6,27,63,.28);
-  border:1px solid rgba(151,239,230,.43);
-  border-radius:9px;
-  color:#fff;
-}
-#discoverView .featured-gme-countdown[hidden]{display:none}
-#discoverView .featured-gme-countdown strong {
-  font-family:'Manrope',sans-serif;
-  font-size:21px;
-  line-height:1.2;
-  font-weight:850;
-  color:#b5fff0;
-  font-variant-numeric:tabular-nums;
-}
-#discoverView .featured-gme-countdown span {
-  font-size:11px;
-  line-height:1.4;
-  font-weight:750;
-  letter-spacing:.015em;
-  color:#edfaff;
-}
 #discoverView .featured-gme-side {
   display:flex;
   flex-direction:column;
