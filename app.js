@@ -3,9 +3,23 @@
    Everything here is read-only; authentication/personal projects are deliberately excluded. */
 (() => {
 'use strict';
-const {conferences: C, awards: A, asOf} = window.RISE_DATA;
+const {conferences: C, awards: A, asOf, monitorStatus} = window.RISE_DATA;
 const get = id => document.getElementById(id);
 const freshnessLabel = get('lastDatasetUpdated');
+const lastCheckLabel=get('lastSourceCheck');
+if(lastCheckLabel && monitorStatus?.lastCheckedAt){
+ const checked=new Date(monitorStatus.lastCheckedAt);
+ const formatted=Number.isNaN(checked.getTime())?'Date unavailable':
+   checked.toLocaleString('en-US',{
+     timeZone:'America/New_York',month:'short',day:'numeric',year:'numeric',
+     hour:'numeric',minute:'2-digit',timeZoneName:'short'
+   });
+ const attempted=Number(monitorStatus.sourcesAttempted)||0;
+ const reachable=Number(monitorStatus.sourcesReachable)||0;
+ lastCheckLabel.textContent='Last automated source check: '+formatted+
+   ' · '+reachable+' of '+attempted+' sources reachable.';
+}
+
 if(freshnessLabel && /^\d{4}-\d{2}-\d{2}$/.test(asOf||'')) freshnessLabel.textContent = new Date(asOf+'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
 const today = (() => { const q = new URLSearchParams(location.search).get('demoDate'); return q && /^\d{4}-\d{2}-\d{2}$/.test(q) ? new Date(q+'T12:00:00') : new Date(); })();
 const todayKey = key(today);
