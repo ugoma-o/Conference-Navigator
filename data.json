@@ -11226,5 +11226,13 @@
       "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
       "fieldSources": {}
     }
-  ]
+  ],
+  "monitorStatus": {
+    "lastCheckedAt": "2026-11-10T00:05:09.864328+00:00",
+    "sourcesAttempted": 403,
+    "sourcesReachable": 335,
+    "proposalsFound": 25,
+    "publishedChanges": 0,
+    "conflictsHeld": 12
+  }
 }
