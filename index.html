@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="abstract-matcher.css?v=529158aa3252" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
 <link rel="stylesheet" href="editorial-design.css?v=5bd1adb9239c" />
-<script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css?v=5bd1adb9239c"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
+<script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
 <div class="app-shell">
@@ -146,7 +146,7 @@
             <p>The site checks tracked sources weekly. Confirmed changes may publish automatically; uncertain dates are held for review.</p>
           </div>
         </div>
-        <p class="source-bottom source-bottom-compact"><strong>Data updated: <span id="lastDatasetUpdated">October 16, 2026</span>.</strong> Verify submission deadlines with the organizer.</p>
+        <p class="source-bottom source-bottom-compact"><strong>Data updated: <span id="lastDatasetUpdated">October 16, 2026</span>.</strong> <span id="lastSourceCheck">Automated source check: no completed scan recorded.</span> Verify submission deadlines with the organizer.</p>
       </section>
     </main>
     <footer class="footer"><span>© RISE collaborative · RISE Conference Navigator</span><span>Conference details may change. Refer to official sources.</span></footer>
@@ -157,6 +157,6 @@
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script src="data.js?v=20261102-manual-audit-3"></script>
 <script src="abstract-matcher.js?v=efe82c480572"></script>
-<script src="app.js?v=2e7969213970"></script>
+<script src="app.js?v=49f9bbb2e91e"></script>
 </body>
 </html>
