@@ -277,9 +277,10 @@ html[data-theme="dark"] .profile-skip { color: #c6dce1; }
 }
 .jane-panel-head {
   display: block;
-  max-width: 840px;
-  margin-inline: auto;
+  width: 100%;
+  max-width: none;
 }
+.jane-panel-head > div { width: 100%; }
 .jane-title-line {
   display: flex;
   align-items: center;
@@ -299,6 +300,12 @@ html[data-theme="dark"] .profile-skip { color: #c6dce1; }
   font-size: 15px;
   line-height: 1.7;
   color: #52717b;
+}
+.jane-panel .jane-description {
+  width: 100%;
+  max-width: none;
+  font-size: 18px;
+  line-height: 1.7;
 }
 .jane-panel .jane-instructions {
   max-width: 75ch;
@@ -352,6 +359,7 @@ html[data-theme="dark"] .profile-skip { color: #c6dce1; }
 .jane-empty-hint[hidden] { display: none; }
 @media (max-width: 730px) {
   .jane-panel { padding: 24px 22px; }
+  .jane-panel .jane-description { font-size: 16px; }
   .jane-embed-controls .btn-primary { width: 100%; }
   .jane-title-line { align-items: flex-start; }
 }
