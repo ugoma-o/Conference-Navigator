@@ -266,14 +266,14 @@ html[data-theme="dark"] .profile-close {
 }
 html[data-theme="dark"] .profile-skip { color: #c6dce1; }
 
-/* External journal discovery: open directly rather than embed in an iframe. */
+/* Full-width journal discovery panel beneath conference results. */
 .jane-panel {
-  margin-top: 0;
+  margin-top: 24px;
   min-width: 0;
   background: #fff;
   border: 1px solid #dce7e8;
   border-radius: 13px;
-  padding: 19px;
+  padding: 24px;
 }
 .jane-panel-head {
   display: flex;
@@ -320,6 +320,7 @@ html[data-theme="dark"] .profile-skip { color: #c6dce1; }
   text-decoration: none;
 }
 .jane-external:hover { background: #e2f3f5; }
+.jane-search-form { margin: 0; }
 .jane-embed-controls {
   display: flex;
   gap: 10px;
@@ -327,12 +328,16 @@ html[data-theme="dark"] .profile-skip { color: #c6dce1; }
   margin-top: 18px;
   flex-wrap: wrap;
 }
-#janeCopyAbstract:disabled {
+.jane-embed-controls .btn { min-height: 41px; }
+.jane-embed-controls .btn-primary { min-width: 208px; }
+#janeCopyAbstract:disabled,
+#janeFind:disabled {
   opacity: .55;
   cursor: not-allowed;
 }
 @media (max-width: 730px) {
   .jane-panel { padding: 18px; }
+  .jane-embed-controls .btn-primary { min-width: 0; }
   .jane-panel-head { flex-direction: column; gap: 12px; }
 }
 html[data-theme="dark"] .jane-panel {

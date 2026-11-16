@@ -750,11 +750,28 @@ function runMatcher(){
  const items=n?result.results.map((m,i)=>matcherResultItem(m,i+1)).join(''):'<div class="matcher-message">No strong conference matches were identified. Broad specialty overlap is excluded. Try adding specific diagnoses, procedures, or research topics, or include closed submission windows.</div>';
  get('matchOutput').innerHTML=heading+topics+notice+'<div class="matcher-results">'+items+'</div>';
 }
-/* JANE is a separate website. Copying is local and never sends an
-   abstract to JANE or an analytics provider. The visitor opens JANE directly. */
+/* JANE search is a native cross-site form POST triggered by a visitor click.
+   A single abstract entry is reused locally; nothing is submitted until then.
+   The form targets JANE's published suggestions.php / findJournals endpoint. */
 const janeCopyButton=get('janeCopyAbstract');
-function syncJaneCopyButton(){
- if(janeCopyButton)janeCopyButton.disabled=!get('matchAbstractText').value.trim();
+const janeFindButton=get('janeFind');
+function syncJaneButtons(){
+ const hasAbstract=!!get('matchAbstractText').value.trim();
+ if(janeCopyButton)janeCopyButton.disabled=!hasAbstract;
+ if(janeFindButton)janeFindButton.disabled=!hasAbstract;
+}
+const janeForm=get('janeForm');
+if(janeForm){
+ janeForm.addEventListener('submit',event=>{
+  const abstract=get('matchAbstractText').value.trim();
+  if(!abstract){
+   event.preventDefault();
+   showToast('Paste an abstract first to search for journals.');
+   return;
+  }
+  // Preserve browser-native submit: a real POST to JANE, no CORS or iframe.
+  get('janeAbstractPayload').value=abstract;
+ });
 }
 if(janeCopyButton){
  janeCopyButton.addEventListener('click',async()=>{
@@ -769,15 +786,15 @@ if(janeCopyButton){
     field.select();
     if(!document.execCommand('copy'))throw new Error('Clipboard unavailable');
    }
-   showToast('Abstract copied. Open JANE and paste it into the search field.');
+   showToast('Abstract copied to clipboard.');
   }catch(_){
    showToast('Copy unavailable. Select and copy the abstract above manually.');
   }
  });
- get('matchAbstractText').addEventListener('input',syncJaneCopyButton);
- get('matchClear').addEventListener('click',()=>{janeCopyButton.disabled=true;});
- syncJaneCopyButton();
 }
+get('matchAbstractText').addEventListener('input',syncJaneButtons);
+get('matchClear').addEventListener('click',()=>{if(janeCopyButton)janeCopyButton.disabled=true;if(janeFindButton)janeFindButton.disabled=true;});
+syncJaneButtons();
 get('matchAbstractText').addEventListener('input',matcherWordCount);
 get('matchRun').addEventListener('click',runMatcher);
 get('matchClear').addEventListener('click',()=>{

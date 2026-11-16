@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="abstract-matcher.css?v=dab495ede536" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
 <link rel="stylesheet" href="editorial-design.css?v=f945c3261ddf" />
-<link rel="stylesheet" href="profile.css?v=3f354938294b" />
+<link rel="stylesheet" href="profile.css?v=03a5758fea54" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -115,20 +115,7 @@
             <label class="matcher-check"><input id="matchShowClosed" type="checkbox" /><span>Include conferences with closed submission windows</span></label>
             <div class="matcher-actions"><button id="matchRun" class="btn btn-primary" type="button">Find matching conferences</button><button id="matchClear" class="btn btn-soft" type="button">Clear</button></div>
           </div>
-          <section class="jane-panel" aria-labelledby="janeHeading">
-            <div class="jane-panel-head">
-              <div>
-                <span class="jane-kicker">JOURNAL MATCHING</span>
-                <h2 id="janeHeading">JANE — Journal/Author Name Estimator</h2>
-                <p>Find journals, related articles, and authors using JANE. This service is separate from the RISE Conference Abstract Matcher.</p>
-              </div>
-            </div>
-            <div class="jane-embed-controls">
-              <button type="button" class="btn btn-primary" id="janeCopyAbstract" disabled>Copy abstract</button>
-              <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Open JANE in a new tab</a>
-            </div>
-            <p class="jane-instructions">Copy the abstract entered above, open JANE, and paste it into JANE's search field. JANE runs the search on its own website. Do not submit patient-identifying information.</p>
-          </section>
+
           </div>
           <div class="matcher-output" id="matchOutput" role="region" aria-label="Conference matching results" tabindex="0" aria-live="polite" aria-atomic="false">
             <div class="matcher-placeholder">
@@ -138,6 +125,24 @@
             </div>
           </div>
         </div>
+        <section class="jane-panel" aria-labelledby="janeHeading">
+          <div class="jane-panel-head">
+            <div>
+              <span class="jane-kicker">JOURNAL MATCHING</span>
+              <h2 id="janeHeading">Find matching journals with JANE</h2>
+              <p>Use the abstract entered above to search JANE for relevant journals and supporting articles.</p>
+            </div>
+          </div>
+          <form id="janeForm" class="jane-search-form" action="https://jane.biosemantics.org/suggestions.php" method="post" target="_blank" rel="noopener noreferrer">
+            <input type="hidden" id="janeAbstractPayload" name="text" value="" />
+            <div class="jane-embed-controls">
+              <button type="submit" class="btn btn-primary" id="janeFind" name="findJournals" value="Find journals" disabled>Find matching journals</button>
+              <button type="button" class="btn btn-soft" id="janeCopyAbstract" disabled>Copy abstract</button>
+              <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Visit JANE</a>
+            </div>
+          </form>
+          <p class="jane-instructions">Selecting “Find matching journals” sends your abstract directly to JANE and opens its journal results in a separate tab. No additional pasting is needed. Do not include patient-identifying information.</p>
+        </section>
       </section>
       <section id="plannerView" class="view" aria-label="Research planner"><div class="page-heading"><h1>Research roadmap</h1><p>Reverse-plan your milestones based on your project type and the submission deadline you’re targeting.</p></div><div class="planner-layout"><div class="panel planner-form"><div class="panel-heading"><h2>Build your timeline</h2><p>Select a conference and project type to calculate an estimated preparation timeline.</p></div><div class="planner-target-picker">
 <label class="form-label planner-target-heading" for="planSearch">Target conference</label>
@@ -204,6 +209,6 @@
 <!-- Set a public GA4 Measurement ID (G-...) only after creating the RISE Analytics property. Never place private credentials here. -->
 <script>window.RISE_ANALYTICS_ID = '';</script>
 <script src="profile.js?v=719e1a0c09ef"></script>
-<script src="app.js?v=caaebee52b74"></script>
+<script src="app.js?v=e326fc7cad35"></script>
 </body>
 </html>
