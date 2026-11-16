@@ -747,20 +747,34 @@ function runMatcher(){
  const items=n?result.results.map((m,i)=>matcherResultItem(m,i+1)).join(''):'<div class="matcher-message">No sufficiently relevant conference was found in the current directory with these filters. Try including closed meetings or adding more clinical subject detail.</div>';
  get('matchOutput').innerHTML=heading+topics+notice+'<div class="matcher-results">'+items+'</div>';
 }
-/* JANE is a separate third-party service. Its iframe loads only when requested.
-   Abstract text is never transferred from the RISE matcher. */
-const janeLoadButton=get('janeLoad');
-if(janeLoadButton)janeLoadButton.addEventListener('click',()=>{
- const area=get('janeFrameContainer');
- const expanding=area.classList.contains('hidden');
- if(expanding){
-  const frame=get('janeFrame');
-  if(!frame.getAttribute('src'))frame.setAttribute('src','https://jane.biosemantics.org/');
- }
- area.classList.toggle('hidden',!expanding);
- janeLoadButton.setAttribute('aria-expanded',String(expanding));
- janeLoadButton.textContent=expanding?'Hide JANE':'Load JANE on this page';
-});
+/* JANE is a separate website. Copying is local and never sends an
+   abstract to JANE or an analytics provider. The visitor opens JANE directly. */
+const janeCopyButton=get('janeCopyAbstract');
+function syncJaneCopyButton(){
+ if(janeCopyButton)janeCopyButton.disabled=!get('matchAbstractText').value.trim();
+}
+if(janeCopyButton){
+ janeCopyButton.addEventListener('click',async()=>{
+  const abstract=get('matchAbstractText').value.trim();
+  if(!abstract)return;
+  try{
+   if(navigator.clipboard?.writeText){
+    await navigator.clipboard.writeText(abstract);
+   }else{
+    const field=get('matchAbstractText');
+    field.focus();
+    field.select();
+    if(!document.execCommand('copy'))throw new Error('Clipboard unavailable');
+   }
+   showToast('Abstract copied. Open JANE and paste it into the search field.');
+  }catch(_){
+   showToast('Copy unavailable. Select and copy the abstract above manually.');
+  }
+ });
+ get('matchAbstractText').addEventListener('input',syncJaneCopyButton);
+ get('matchClear').addEventListener('click',()=>{janeCopyButton.disabled=true;});
+ syncJaneCopyButton();
+}
 get('matchAbstractText').addEventListener('input',matcherWordCount);
 get('matchRun').addEventListener('click',runMatcher);
 get('matchClear').addEventListener('click',()=>{

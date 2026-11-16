@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="abstract-matcher.css?v=529158aa3252" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
 <link rel="stylesheet" href="editorial-design.css?v=f945c3261ddf" />
-<link rel="stylesheet" href="profile.css?v=ec284858bfad" />
+<link rel="stylesheet" href="profile.css?v=a38bc63b5253" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -127,18 +127,14 @@
             <div>
               <span class="jane-kicker">JOURNAL MATCHING</span>
               <h2 id="janeHeading">JANE — Journal/Author Name Estimator</h2>
-              <p>Use JANE to find journals, related articles, and authors based on a manuscript title or abstract. This is a separate service from the RISE Conference Abstract Matcher.</p>
+              <p>Find journals, related articles, and authors using JANE. This service is separate from the RISE Conference Abstract Matcher.</p>
             </div>
-            <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Open JANE in a new tab</a>
           </div>
           <div class="jane-embed-controls">
-            <button type="button" class="btn btn-primary" id="janeLoad" aria-controls="janeFrameContainer" aria-expanded="false">Load JANE on this page</button>
-            <span>JANE is hosted externally. Only load it if you want to use the service; enter abstracts directly into JANE.</span>
+            <button type="button" class="btn btn-primary" id="janeCopyAbstract" disabled>Copy abstract</button>
+            <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Open JANE in a new tab</a>
           </div>
-          <div class="jane-frame-container hidden" id="janeFrameContainer">
-            <iframe id="janeFrame" title="JANE — external journal matching service" loading="lazy" referrerpolicy="no-referrer" allow="clipboard-write" height="640"></iframe>
-            <p>If JANE cannot load inside the Navigator, use <a href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">the direct JANE website</a>. External sites may restrict embedding.</p>
-          </div>
+          <p class="jane-instructions">Copy the abstract entered above, open JANE, and paste it into JANE's search field. JANE runs the search on its own website. Do not submit patient-identifying information.</p>
         </section>
       </section>
       <section id="plannerView" class="view" aria-label="Research planner"><div class="page-heading"><h1>Research roadmap</h1><p>Reverse-plan your milestones based on your project type and the submission deadline you’re targeting.</p></div><div class="planner-layout"><div class="panel planner-form"><div class="panel-heading"><h2>Build your timeline</h2><p>Select a conference and project type to calculate an estimated preparation timeline.</p></div><div class="planner-target-picker">
@@ -206,6 +202,6 @@
 <!-- Set a public GA4 Measurement ID (G-...) only after creating the RISE Analytics property. Never place private credentials here. -->
 <script>window.RISE_ANALYTICS_ID = '';</script>
 <script src="profile.js?v=719e1a0c09ef"></script>
-<script src="app.js?v=73d4c9446c5a"></script>
+<script src="app.js?v=fe7b725ef0a7"></script>
 </body>
 </html>

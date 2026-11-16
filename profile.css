@@ -266,7 +266,7 @@ html[data-theme="dark"] .profile-close {
 }
 html[data-theme="dark"] .profile-skip { color: #c6dce1; }
 
-/* External journal discovery service: opt-in embedded view. */
+/* External journal discovery: open directly rather than embed in an iframe. */
 .jane-panel {
   margin-top: 28px;
   background: #fff;
@@ -300,10 +300,16 @@ html[data-theme="dark"] .profile-skip { color: #c6dce1; }
   line-height: 1.65;
   color: #52717b;
 }
+.jane-panel .jane-instructions {
+  margin-top: 14px;
+  font-size: 11px;
+}
 .jane-external {
-  flex: none;
   display: inline-flex;
-  padding: 9px 12px;
+  align-items: center;
+  justify-content: center;
+  min-height: 39px;
+  padding: 9px 13px;
   border: 1px solid #b8d4da;
   border-radius: 7px;
   color: #086981;
@@ -315,40 +321,23 @@ html[data-theme="dark"] .profile-skip { color: #c6dce1; }
 .jane-external:hover { background: #e2f3f5; }
 .jane-embed-controls {
   display: flex;
-  gap: 13px;
+  gap: 10px;
   align-items: center;
-  margin-top: 19px;
+  margin-top: 18px;
   flex-wrap: wrap;
 }
-.jane-embed-controls span {
-  max-width: 560px;
-  font-size: 11px;
-  color: #63808a;
-  line-height: 1.6;
+#janeCopyAbstract:disabled {
+  opacity: .55;
+  cursor: not-allowed;
 }
-.jane-frame-container { margin-top: 18px; }
-#janeFrame {
-  display: block;
-  width: 100%;
-  min-height: 550px;
-  border: 1px solid #c9dde1;
-  border-radius: 8px;
-  background: #fff;
-}
-.jane-frame-container p { margin: 10px 0 0; }
-.jane-frame-container a { color: #086981; font-weight: 800; text-decoration: underline; }
 @media (max-width: 730px) {
   .jane-panel { padding: 18px; }
   .jane-panel-head { flex-direction: column; gap: 12px; }
-  .jane-external { flex: none; }
-  #janeFrame { height: 600px; }
 }
 html[data-theme="dark"] .jane-panel {
   background: #1a343f;
   border-color: #395861;
 }
 html[data-theme="dark"] .jane-panel h2 { color: #e9f2f5; }
-html[data-theme="dark"] .jane-panel p,
-html[data-theme="dark"] .jane-embed-controls span { color: #b5cbd2; }
+html[data-theme="dark"] .jane-panel p { color: #b5cbd2; }
 html[data-theme="dark"] .jane-external { background: #214752; color: #c4eef2; }
-html[data-theme="dark"] .jane-frame-container a { color: #c4eef2; }
