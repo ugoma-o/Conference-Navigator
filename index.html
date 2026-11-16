@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="abstract-matcher.css?v=529158aa3252" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
 <link rel="stylesheet" href="editorial-design.css?v=f945c3261ddf" />
+<link rel="stylesheet" href="profile.css?v=e118934d9f4e" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -34,7 +35,7 @@
   <div class="content-shell">
     <header class="topbar">
       <div class="topbar-left"><button class="menu-button" id="menuBtn" aria-label="Open menu" type="button">☰</button><button type="button" class="workspace-title brand-home" data-home-nav aria-label="RISE Conference Navigator — Explore conferences"><span class="workspace-rise"><span class="rise-letter rise-letter-r">R</span><span class="rise-letter rise-letter-i">I</span><span class="rise-letter rise-letter-s">S</span><span class="rise-letter rise-letter-e">E</span></span><span class="workspace-name">Conference Navigator</span></button></div>
-      <div class="topbar-right"><span class="date-note" id="asOfLabel">Data snapshot · Oct 10, 2026</span></div>
+      <div class="topbar-right"><span class="date-note" id="asOfLabel">Data snapshot · Oct 10, 2026</span><button class="profile-entry" id="profileOpen" type="button">Set my specialty</button></div>
     </header>
     <main id="main" class="main-content">
       <section id="discoverView" class="view active" aria-label="Conference discovery">
@@ -154,9 +155,38 @@
 </div>
 <div class="modal-scrim hidden" id="modalScrim" role="presentation"><div class="modal" id="conferenceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button id="modalClose" type="button" class="modal-close" aria-label="Close details">×</button><div id="modalBody"></div></div></div>
 <div id="calendarDayOverlay" class="calendar-day-overlay hidden" role="presentation"><div class="calendar-day-dialog" role="dialog" aria-modal="true" aria-labelledby="calendarDayTitle"><div class="calendar-day-dialog-header"><h3 id="calendarDayTitle"></h3><button type="button" id="calendarDayClose" aria-label="Close day events">×</button></div><p>Select any event to open its details.</p><div id="calendarDayList" class="calendar-day-list"></div></div></div>
+<div id="profileScrim" class="profile-scrim hidden" role="presentation">
+  <div id="profileDialog" class="profile-dialog" role="dialog" aria-modal="true" aria-labelledby="profileTitle" aria-describedby="profileDescription">
+    <div class="profile-dialog-head">
+      <div><span class="profile-eyebrow">RISE Navigator profile</span><h2 id="profileTitle">Make the Navigator yours</h2></div>
+      <button type="button" class="profile-close" id="profileClose" aria-label="Close specialty profile">×</button>
+    </div>
+    <p class="profile-description" id="profileDescription">Choose your primary specialty to see relevant conferences first. No registration, password, or email address is needed.</p>
+    <form id="profileForm">
+      <label class="profile-field-label" for="profileSpecialty">Primary specialty</label>
+      <select class="profile-select" id="profileSpecialty" required>
+        <option value="">Choose your specialty</option>
+      </select>
+      <p class="profile-field-help">Your selection becomes the default conference filter. You can still explore every specialty and change this preference at any time.</p>
+      <label class="profile-analytics-choice">
+        <input id="profileAnalytics" type="checkbox" />
+        <span><strong>Allow usage analytics (optional)</strong><small>If enabled, Google Analytics uses analytics cookies to estimate visits and feature usage by selected specialty. We do not send your abstract text, searches, or research plans.</small></span>
+      </label>
+      <p class="profile-error" id="profileError" role="alert" aria-live="polite"></p>
+      <div class="profile-actions">
+        <button class="profile-save" type="submit">Save my preference</button>
+        <button class="profile-skip" id="profileSkip" type="button">Continue without a profile</button>
+      </div>
+    </form>
+    <p class="profile-footnote">This is a browser-based preference, not a verified resident account. Your specialty stays on this device unless you opt into analytics, and it will not sync across browsers or devices.</p>
+  </div>
+</div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script src="data.js?v=f2d87f8ea836"></script>
 <script src="abstract-matcher.js?v=efe82c480572"></script>
-<script src="app.js?v=1544265a31bc"></script>
+<!-- Set a public GA4 Measurement ID (G-...) only after creating the RISE Analytics property. Never place private credentials here. -->
+<script>window.RISE_ANALYTICS_ID = '';</script>
+<script src="profile.js?v=89826bbb8572"></script>
+<script src="app.js?v=a02524f0e99e"></script>
 </body>
 </html>
