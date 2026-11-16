@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="abstract-matcher.css?v=529158aa3252" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
 <link rel="stylesheet" href="editorial-design.css?v=f945c3261ddf" />
-<link rel="stylesheet" href="profile.css?v=e118934d9f4e" />
+<link rel="stylesheet" href="profile.css?v=ec284858bfad" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -122,6 +122,24 @@
             </div>
           </div>
         </div>
+        <section class="jane-panel" aria-labelledby="janeHeading">
+          <div class="jane-panel-head">
+            <div>
+              <span class="jane-kicker">JOURNAL MATCHING</span>
+              <h2 id="janeHeading">JANE — Journal/Author Name Estimator</h2>
+              <p>Use JANE to find journals, related articles, and authors based on a manuscript title or abstract. This is a separate service from the RISE Conference Abstract Matcher.</p>
+            </div>
+            <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Open JANE in a new tab</a>
+          </div>
+          <div class="jane-embed-controls">
+            <button type="button" class="btn btn-primary" id="janeLoad" aria-controls="janeFrameContainer" aria-expanded="false">Load JANE on this page</button>
+            <span>JANE is hosted externally. Only load it if you want to use the service; enter abstracts directly into JANE.</span>
+          </div>
+          <div class="jane-frame-container hidden" id="janeFrameContainer">
+            <iframe id="janeFrame" title="JANE — external journal matching service" loading="lazy" referrerpolicy="no-referrer" allow="clipboard-write" height="640"></iframe>
+            <p>If JANE cannot load inside the Navigator, use <a href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">the direct JANE website</a>. External sites may restrict embedding.</p>
+          </div>
+        </section>
       </section>
       <section id="plannerView" class="view" aria-label="Research planner"><div class="page-heading"><h1>Research roadmap</h1><p>Reverse-plan your milestones based on your project type and the submission deadline you’re targeting.</p></div><div class="planner-layout"><div class="panel planner-form"><div class="panel-heading"><h2>Build your timeline</h2><p>Select a conference and project type to calculate an estimated preparation timeline.</p></div><div class="planner-target-picker">
 <label class="form-label planner-target-heading" for="planSearch">Target conference</label>
@@ -158,27 +176,28 @@
 <div id="profileScrim" class="profile-scrim hidden" role="presentation">
   <div id="profileDialog" class="profile-dialog" role="dialog" aria-modal="true" aria-labelledby="profileTitle" aria-describedby="profileDescription">
     <div class="profile-dialog-head">
-      <div><span class="profile-eyebrow">RISE Navigator profile</span><h2 id="profileTitle">Make the Navigator yours</h2></div>
-      <button type="button" class="profile-close" id="profileClose" aria-label="Close specialty profile">×</button>
+      <div><span class="profile-eyebrow">RISE Navigator profile</span><h2 id="profileTitle">Set up your profile</h2></div>
+      <button type="button" class="profile-close" id="profileClose" aria-label="Close profile">×</button>
     </div>
-    <p class="profile-description" id="profileDescription">Choose your primary specialty to see relevant conferences first. No registration, password, or email address is needed.</p>
+    <p class="profile-description" id="profileDescription">Select your residency program and the specialties you want to follow.</p>
     <form id="profileForm">
-      <label class="profile-field-label" for="profileSpecialty">Primary specialty</label>
-      <select class="profile-select" id="profileSpecialty" required>
-        <option value="">Choose your specialty</option>
+      <label class="profile-field-label" for="profileProgram">Residency program</label>
+      <select class="profile-select" id="profileProgram" required>
+        <option value="">Select a residency program</option>
       </select>
-      <p class="profile-field-help">Your selection becomes the default conference filter. You can still explore every specialty and change this preference at any time.</p>
+      <div class="profile-field-heading"><span class="profile-field-label" id="profileSpecialtyLabel">Specialty interests</span><span class="profile-interest-count" id="profileInterestCount">None selected</span></div>
+      <p class="profile-field-help">Select multiple specialties. These become your default conference filters.</p>
+      <div class="profile-specialty-options" id="profileSpecialtyOptions" role="group" aria-labelledby="profileSpecialtyLabel"></div>
       <label class="profile-analytics-choice">
         <input id="profileAnalytics" type="checkbox" />
-        <span><strong>Allow usage analytics (optional)</strong><small>If enabled, Google Analytics uses analytics cookies to estimate visits and feature usage by selected specialty. We do not send your abstract text, searches, or research plans.</small></span>
+        <span><strong>Allow usage analytics (optional)</strong><small>Helps RISE understand which residency programs and specialties are represented and how residents use the Navigator. With your permission, Google Analytics collects usage statistics; abstracts, searches, and research plans are not sent.</small></span>
       </label>
       <p class="profile-error" id="profileError" role="alert" aria-live="polite"></p>
       <div class="profile-actions">
-        <button class="profile-save" type="submit">Save my preference</button>
+        <button class="profile-save" type="submit">Save profile</button>
         <button class="profile-skip" id="profileSkip" type="button">Continue without a profile</button>
       </div>
     </form>
-    <p class="profile-footnote">This is a browser-based preference, not a verified resident account. Your specialty stays on this device unless you opt into analytics, and it will not sync across browsers or devices.</p>
   </div>
 </div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
@@ -186,7 +205,7 @@
 <script src="abstract-matcher.js?v=efe82c480572"></script>
 <!-- Set a public GA4 Measurement ID (G-...) only after creating the RISE Analytics property. Never place private credentials here. -->
 <script>window.RISE_ANALYTICS_ID = '';</script>
-<script src="profile.js?v=89826bbb8572"></script>
-<script src="app.js?v=a02524f0e99e"></script>
+<script src="profile.js?v=719e1a0c09ef"></script>
+<script src="app.js?v=73d4c9446c5a"></script>
 </body>
 </html>

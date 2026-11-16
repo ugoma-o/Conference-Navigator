@@ -23,7 +23,7 @@ if(lastCheckLabel && monitorStatus?.lastCheckedAt){
 if(freshnessLabel && /^\d{4}-\d{2}-\d{2}$/.test(asOf||'')) freshnessLabel.textContent = new Date(asOf+'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
 const today = (() => { const q = new URLSearchParams(location.search).get('demoDate'); return q && /^\d{4}-\d{2}-\d{2}$/.test(q) ? new Date(q+'T12:00:00') : new Date(); })();
 const todayKey = key(today);
-const state={view:'discover',exploreMode:'list', specialties:window.RISE_PROFILE?.getSpecialty() ? [window.RISE_PROFILE.getSpecialty()] : [],search:'',status:'all',sort:'meeting',monthKey:null,dateTypes:[],calDate:new Date(today.getFullYear(),today.getMonth(),1),funding:'all', fundingSpecialties:[], selected:null,plan:null};
+const state={view:'discover',exploreMode:'list', specialties:window.RISE_PROFILE?.getSpecialties() || [],search:'',status:'all',sort:'meeting',monthKey:null,dateTypes:[],calDate:new Date(today.getFullYear(),today.getMonth(),1),funding:'all', fundingSpecialties:[], selected:null,plan:null};
 function key(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
 function date(s){return s ? new Date(s+'T12:00:00'):null}
 function shift(d,days){let r=new Date(d);r.setDate(r.getDate()+days);return r}
@@ -261,8 +261,8 @@ function initSpecialties(){
  syncCalendarSpecialty();
 }
 window.addEventListener('rise:profile-saved', event => {
- const selected=event.detail?.specialty;
- state.specialties=selected&&specialties.includes(selected)?[selected]:[];
+ const selected=event.detail?.specialties;
+ state.specialties=Array.isArray(selected) ? selected.filter(s=>specialties.includes(s)) : [];
  initSpecialties();
  renderHorizon();renderDirectory();
  if(state.exploreMode==='calendar')renderCalendar();
@@ -747,6 +747,20 @@ function runMatcher(){
  const items=n?result.results.map((m,i)=>matcherResultItem(m,i+1)).join(''):'<div class="matcher-message">No sufficiently relevant conference was found in the current directory with these filters. Try including closed meetings or adding more clinical subject detail.</div>';
  get('matchOutput').innerHTML=heading+topics+notice+'<div class="matcher-results">'+items+'</div>';
 }
+/* JANE is a separate third-party service. Its iframe loads only when requested.
+   Abstract text is never transferred from the RISE matcher. */
+const janeLoadButton=get('janeLoad');
+if(janeLoadButton)janeLoadButton.addEventListener('click',()=>{
+ const area=get('janeFrameContainer');
+ const expanding=area.classList.contains('hidden');
+ if(expanding){
+  const frame=get('janeFrame');
+  if(!frame.getAttribute('src'))frame.setAttribute('src','https://jane.biosemantics.org/');
+ }
+ area.classList.toggle('hidden',!expanding);
+ janeLoadButton.setAttribute('aria-expanded',String(expanding));
+ janeLoadButton.textContent=expanding?'Hide JANE':'Load JANE on this page';
+});
 get('matchAbstractText').addEventListener('input',matcherWordCount);
 get('matchRun').addEventListener('click',runMatcher);
 get('matchClear').addEventListener('click',()=>{
