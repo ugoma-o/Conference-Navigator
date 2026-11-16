@@ -7,10 +7,10 @@
 <meta name="description" content="RISE Conference Navigator — resident research conference deadlines, meetings, funding and reverse research planning." />
 <title>RISE Conference Navigator</title>
 <link rel="stylesheet" href="styles.css?v=fb546c09f4b3" />
-<link rel="stylesheet" href="abstract-matcher.css?v=529158aa3252" />
+<link rel="stylesheet" href="abstract-matcher.css?v=dab495ede536" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
 <link rel="stylesheet" href="editorial-design.css?v=f945c3261ddf" />
-<link rel="stylesheet" href="profile.css?v=a38bc63b5253" />
+<link rel="stylesheet" href="profile.css?v=3f354938294b" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -96,6 +96,7 @@
           <p>Paste your abstract to discover conferences that align with its medical topics, scientific focus, and presentation type.</p>
         </div>
         <div class="matcher-layout">
+          <div class="matcher-controls-column">
           <div class="panel matcher-input-panel">
             <h2>Find relevant conferences</h2>
             <p class="matcher-intro">The matcher recognizes medical terminology and related concepts, rather than relying on exact conference-name matches.</p>
@@ -114,7 +115,22 @@
             <label class="matcher-check"><input id="matchShowClosed" type="checkbox" /><span>Include conferences with closed submission windows</span></label>
             <div class="matcher-actions"><button id="matchRun" class="btn btn-primary" type="button">Find matching conferences</button><button id="matchClear" class="btn btn-soft" type="button">Clear</button></div>
           </div>
-          <div class="matcher-output" id="matchOutput" aria-live="polite" aria-atomic="false">
+          <section class="jane-panel" aria-labelledby="janeHeading">
+            <div class="jane-panel-head">
+              <div>
+                <span class="jane-kicker">JOURNAL MATCHING</span>
+                <h2 id="janeHeading">JANE — Journal/Author Name Estimator</h2>
+                <p>Find journals, related articles, and authors using JANE. This service is separate from the RISE Conference Abstract Matcher.</p>
+              </div>
+            </div>
+            <div class="jane-embed-controls">
+              <button type="button" class="btn btn-primary" id="janeCopyAbstract" disabled>Copy abstract</button>
+              <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Open JANE in a new tab</a>
+            </div>
+            <p class="jane-instructions">Copy the abstract entered above, open JANE, and paste it into JANE's search field. JANE runs the search on its own website. Do not submit patient-identifying information.</p>
+          </section>
+          </div>
+          <div class="matcher-output" id="matchOutput" role="region" aria-label="Conference matching results" tabindex="0" aria-live="polite" aria-atomic="false">
             <div class="matcher-placeholder">
               <span class="matcher-placeholder-icon" data-icon="search"></span>
               <h2>Your conference matches will appear here</h2>
@@ -122,20 +138,6 @@
             </div>
           </div>
         </div>
-        <section class="jane-panel" aria-labelledby="janeHeading">
-          <div class="jane-panel-head">
-            <div>
-              <span class="jane-kicker">JOURNAL MATCHING</span>
-              <h2 id="janeHeading">JANE — Journal/Author Name Estimator</h2>
-              <p>Find journals, related articles, and authors using JANE. This service is separate from the RISE Conference Abstract Matcher.</p>
-            </div>
-          </div>
-          <div class="jane-embed-controls">
-            <button type="button" class="btn btn-primary" id="janeCopyAbstract" disabled>Copy abstract</button>
-            <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Open JANE in a new tab</a>
-          </div>
-          <p class="jane-instructions">Copy the abstract entered above, open JANE, and paste it into JANE's search field. JANE runs the search on its own website. Do not submit patient-identifying information.</p>
-        </section>
       </section>
       <section id="plannerView" class="view" aria-label="Research planner"><div class="page-heading"><h1>Research roadmap</h1><p>Reverse-plan your milestones based on your project type and the submission deadline you’re targeting.</p></div><div class="planner-layout"><div class="panel planner-form"><div class="panel-heading"><h2>Build your timeline</h2><p>Select a conference and project type to calculate an estimated preparation timeline.</p></div><div class="planner-target-picker">
 <label class="form-label planner-target-heading" for="planSearch">Target conference</label>
@@ -202,6 +204,6 @@
 <!-- Set a public GA4 Measurement ID (G-...) only after creating the RISE Analytics property. Never place private credentials here. -->
 <script>window.RISE_ANALYTICS_ID = '';</script>
 <script src="profile.js?v=719e1a0c09ef"></script>
-<script src="app.js?v=fe7b725ef0a7"></script>
+<script src="app.js?v=7640b9b3e76d"></script>
 </body>
 </html>

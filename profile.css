@@ -268,11 +268,12 @@ html[data-theme="dark"] .profile-skip { color: #c6dce1; }
 
 /* External journal discovery: open directly rather than embed in an iframe. */
 .jane-panel {
-  margin-top: 28px;
+  margin-top: 0;
+  min-width: 0;
   background: #fff;
   border: 1px solid #dce7e8;
   border-radius: 13px;
-  padding: 24px;
+  padding: 19px;
 }
 .jane-panel-head {
   display: flex;

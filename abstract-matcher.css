@@ -1,7 +1,8 @@
 /* Abstract Matcher — visual styling uses the existing RISE light/dark palettes. */
 .matcher-heading{margin-bottom:24px}
 .matcher-layout{display:grid;grid-template-columns:minmax(320px,410px) minmax(0,1fr);gap:22px;align-items:start}
-.matcher-input-panel{position:sticky;top:18px}
+.matcher-controls-column{display:flex;flex-direction:column;gap:16px;min-width:0}
+.matcher-input-panel{position:static}
 .matcher-input-panel h2{margin:0 0 7px}
 .matcher-intro{color:#667d8c;font-size:13px;line-height:1.6;margin:0 0 20px}
 .matcher-abstract{display:block;width:100%;min-height:255px;padding:14px;resize:vertical;border:1px solid #cddfe8;border-radius:9px;background:#fcfefe;color:#1b4054;font:500 14px/1.6 'DM Sans','Segoe UI',sans-serif}
@@ -17,7 +18,8 @@
 .matcher-privacy svg{flex:none;width:19px;height:19px}
 .matcher-privacy p{font-size:11px;line-height:1.6;margin:0;color:#416963}
 .matcher-privacy strong{color:#226963}
-.matcher-output{min-width:0}
+.matcher-output{min-width:0;max-height:clamp(430px,78dvh,800px);overflow-y:auto;overscroll-behavior-y:contain;scrollbar-gutter:stable;padding:0 6px 6px 0;scrollbar-width:thin;scrollbar-color:#a3bfcb transparent}
+.matcher-output:focus-visible{outline:3px solid rgba(0,114,167,.3);outline-offset:3px;border-radius:10px}
 .matcher-placeholder{display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;padding:55px 26px;min-height:370px;background:#fff;border:1px dashed #b7d6e4;border-radius:12px}
 .matcher-placeholder-icon{width:56px;height:56px;border-radius:16px;background:#e9f4fa;color:#297ea7;display:flex;align-items:center;justify-content:center}
 .matcher-placeholder-icon svg{width:29px;height:29px}
@@ -41,6 +43,8 @@
 .matcher-specialty{font-size:11.5px;font-weight:750;color:#0b769c;margin-top:8px}
 .matcher-result-card h3{font:800 16px/1.45 'Manrope','Segoe UI',sans-serif;margin:5px 0;color:#214358;overflow-wrap:anywhere}
 .matcher-society{font-size:11.5px;line-height:1.5;color:#718794;margin:0}
+.matcher-meeting-date{display:flex;gap:5px;flex-wrap:wrap;align-items:baseline;margin:9px 0 0;font-size:12px;line-height:1.55;color:#355f73}
+.matcher-meeting-date strong{color:#144f6e;font-weight:850}
 .matcher-strength{flex:none;max-width:150px;display:inline-block;padding:6px 9px;border:1px solid #cde3dc;border-radius:6px;background:#eef8f2;color:#236b52;font-size:10.5px;line-height:1.4;font-weight:800;text-align:center}
 .matcher-reason{padding:11px 13px;margin:15px 0 12px;background:#f6f9fb;border:1px solid #e5eef2;border-radius:8px}
 .matcher-reason strong{font-size:11px;font-weight:850;color:#255d72}
@@ -84,10 +88,15 @@ html[data-theme="dark"] .matcher-privacy strong{color:#c0ebea}
 html[data-theme="dark"] .matcher-detected>span{color:#b1cddd}
 html[data-theme="dark"] .matcher-topic{background:#203f56;border-color:#47728a;color:#d0eaf9}
 html[data-theme="dark"] .matcher-specialty{color:#9cdaed}
+html[data-theme="dark"] .matcher-meeting-date{color:#c3dce9}
+html[data-theme="dark"] .matcher-meeting-date strong{color:#e5f2f9}
 html[data-theme="dark"] .matcher-strength{background:#21453a;border-color:#44836c;color:#beebd0}
 html[data-theme="dark"] .matcher-result-details{border-color:#385164}
 html[data-theme="dark"] .matcher-format.matched{background:#234c41;color:#c1ead8}
 html[data-theme="dark"] .matcher-format.check{background:#293c4e;color:#c5d9e6}
 @media(max-width:1100px){.matcher-layout{grid-template-columns:minmax(285px,370px) minmax(0,1fr)}.matcher-result-head{flex-wrap:wrap}}
-@media(max-width:900px){.matcher-layout{grid-template-columns:1fr}.matcher-input-panel{position:static}.matcher-placeholder{min-height:230px}}
+@media(max-width:900px){.matcher-layout{grid-template-columns:1fr}.matcher-placeholder{min-height:230px}.matcher-output{max-height:clamp(360px,70dvh,680px)}}
 @media(max-width:540px){.matcher-result-head{flex-direction:column}.matcher-strength{max-width:none}.matcher-result-details{gap:10px}.matcher-result-card{padding:15px}.matcher-actions .btn{flex:1 1 auto}}
+
+/* Keep results separately scrollable in dark mode as well. */
+html[data-theme="dark"] .matcher-output{scrollbar-color:#527587 transparent}

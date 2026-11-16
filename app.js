@@ -696,6 +696,7 @@ document.querySelectorAll('[data-funding]').forEach(btn=>btn.addEventListener('c
 /* Conference Abstract Matcher — all analysis stays in the current browser tab.
    Neither raw text nor extracted terms are persisted or sent to an API. */
 function renderMatcherPlaceholder(){
+ get('matchOutput').scrollTop=0;
  get('matchOutput').innerHTML='<div class="matcher-placeholder"><span class="matcher-placeholder-icon">'+ico('search')+'</span><h2>Your conference matches will appear here</h2><p>Enter an abstract to compare its topics and research methods with the currently listed meetings.</p></div>';
 }
 function matcherWordCount(){
@@ -707,13 +708,14 @@ function matcherResultItem(match,number){
  const labels=match.topics.map(x=>x.label);
  const why=labels.length?('Topic connections: '+labels.slice(0,3).join(', ')+'.'):match.matchedTerms.length?('Overlapping terminology: '+match.matchedTerms.join(', ')+'.'):'Broader specialty relationship.';
  const record=C.find(c=>c.id===match.id);
+ const meetingDate=record?dateRange(record.start,record.end):'Not yet verified';
  const deadline=match.opportunity.date?matcherDate(match.opportunity.date):'Not yet verified';
  const statusName=match.opportunity.status==='open'?'Open':match.opportunity.status==='closed'?'Closed':match.opportunity.status==='upcoming'?'Upcoming':match.opportunity.status==='review'?'Verify dates':'Not yet verified';
  const deadlineType='Submission deadline';
  const statusCls=match.opportunity.status==='open'?'open':match.opportunity.status==='closed'?'closed':match.opportunity.status==='upcoming'?'upcoming':'pending';
  const verified=match.fit.status==='confirmed';
  return `<article class="matcher-result-card">
- <div class="matcher-result-head"><div><span class="matcher-rank">#${number} matched conference</span><div class="matcher-specialty">${escape(match.specialty)}</div><h3>${escape(match.name)}</h3><p class="matcher-society">${escape(match.society)}</p></div><span class="matcher-strength">${escape(match.strength)}</span></div>
+ <div class="matcher-result-head"><div><span class="matcher-rank">#${number} matched conference</span><div class="matcher-specialty">${escape(match.specialty)}</div><h3>${escape(match.name)}</h3><p class="matcher-society">${escape(match.society)}</p><p class="matcher-meeting-date"><strong>Conference dates:</strong> ${escape(meetingDate)}</p></div><span class="matcher-strength">${escape(match.strength)}</span></div>
  <div class="matcher-reason"><strong>Why it matches</strong><p>${escape(why)}</p></div>
  <div class="matcher-result-details"><div><span>${escape(deadlineType)}</span><strong>${escape(deadline)}</strong></div><div><span>Submission status</span><strong><span class="status-pill ${statusCls}">${escape(statusName)}</span></strong></div></div>
  <p class="matcher-format ${verified?'matched':'check'}">${verified?'✓':'i'} ${escape(match.fit.label)}${verified?' — verify current call requirements.':' — do not assume this abstract type is accepted.'}</p>
@@ -721,6 +723,7 @@ function matcherResultItem(match,number){
  </article>`;
 }
 function runMatcher(){
+ get('matchOutput').scrollTop=0;
  const abstract=get('matchAbstractText').value;
  const engine=window.RISE_ABSTRACT_MATCHER;
  if(!engine||typeof engine.matchAbstract!=='function'){
