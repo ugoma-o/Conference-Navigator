@@ -747,7 +747,7 @@ function runMatcher(){
  '<p class="matcher-no-topics">No specific subject phrase was recognized. These suggestions rely on overlapping terminology and should be reviewed particularly carefully.</p>';
  const heading=`<div class="matcher-results-head"><div><h2>${n} potential conference ${n===1?'match':'matches'}</h2><p>Abstract type: <strong>${escape(result.formatLabel)}</strong> · Ranked by topical alignment, not acceptance likelihood.</p></div></div>`;
  const notice='<p class="matcher-disclaimer">Matching considers subject matter and available organizer metadata. A strong topical match does not establish eligibility, acceptance, an active call for abstracts, or an appropriate presentation category. Check official requirements before submitting.</p>';
- const items=n?result.results.map((m,i)=>matcherResultItem(m,i+1)).join(''):'<div class="matcher-message">No sufficiently relevant conference was found in the current directory with these filters. Try including closed meetings or adding more clinical subject detail.</div>';
+ const items=n?result.results.map((m,i)=>matcherResultItem(m,i+1)).join(''):'<div class="matcher-message">No strong conference matches were identified. Broad specialty overlap is excluded. Try adding specific diagnoses, procedures, or research topics, or include closed submission windows.</div>';
  get('matchOutput').innerHTML=heading+topics+notice+'<div class="matcher-results">'+items+'</div>';
 }
 /* JANE is a separate website. Copying is local and never sends an

@@ -51,7 +51,7 @@ var TOPICS=[
  topic('Nuclear medicine','nuclear medicine|spect|pet ct|pet mri|radiotracer|theranostics|radioisotope',{Radiology:1,'Medical Physics':.8,'Radiation Oncology':.7,Oncology:.5}),
  topic('Cardiology and cardiovascular disease','cardiovascular|cardiology|heart failure|myocardial infarction|coronary artery|acute coronary syndrome|arrhythmia|atrial fibrillation|valvular|echocardiography|heart disease',{Cardiology:1,'Cardiothoracic Surgery':.6,'General Internal Medicine':.35,'Vascular Surgery':.3}),
  topic('Interventional cardiology','pci|percutaneous coronary intervention|stent|coronary intervention|structural heart|transcatheter|tavr|cardiac catheterization',{Cardiology:1,'Cardiothoracic Surgery':.65,'Vascular Surgery':.3}),
- topic('Vascular surgery','peripheral arterial disease|vascular surgery|aortic aneurysm|endovascular|carotid stenosis|limb ischemia|revascularization',{ 'Vascular Surgery':1,Cardiology:.6,Surgery:.6,'Cardiothoracic Surgery':.4}),
+ topic('Vascular surgery','peripheral arterial disease|vascular surgery|aortic aneurysm|carotid stenosis|limb ischemia|revascularization',{ 'Vascular Surgery':1,Cardiology:.6,Surgery:.6,'Cardiothoracic Surgery':.4}),
  topic('Pulmonology / respiratory','asthma|copd|chronic obstructive pulmonary|pulmonary fibrosis|interstitial lung disease|pulmonology|respiratory failure|bronchoscopy|bronchiectasis',{ 'Pulmonary & Critical Care':1,'Allergy & Immunology':.55,'General Internal Medicine':.3}),
  topic('Critical care / sepsis','critical care|intensive care|icu|sepsis|septic shock|ventilator|mechanical ventilation|ards|acute respiratory distress syndrome',{ 'Pulmonary & Critical Care':1,'Anesthesiology':.75,'Emergency Medicine':.7,'Hospital Medicine':.55,Surgery:.3}),
  topic('Infectious disease','infection|infectious disease|bacteremia|antibiotic|antimicrobial|mrsa|tuberculosis|hiv|viral infection|fungal infection|covid 19',{ 'Infectious Diseases':1,'General Internal Medicine':.4,'Pulmonary & Critical Care':.3,Pediatrics:.3}),
@@ -71,7 +71,7 @@ var TOPICS=[
  topic('Otolaryngology / ear nose throat','otolaryngology|hearing loss|cochlear|otology|neurotology|vestibular|vertigo|sinusitis|head neck surgery|laryngology',{Otolaryngology:1,Neurology:.35,Neurosurgery:.25}),
  topic('Orthopedics / musculoskeletal','orthopedic|orthopaedic|bone fracture|arthroplasty|joint replacement|anterior cruciate ligament|rotator cuff|sports medicine|musculoskeletal',{ 'Orthopedic Surgery':1,'Physical Medicine & Rehabilitation':.6,Surgery:.3}),
  topic('Surgery / perioperative care','surgery|surgical|laparoscopy|laparoscopic|robotic surgery|postoperative|perioperative|operative complication',{Surgery:1,'Anesthesiology':.5,'Cardiothoracic Surgery':.4,'Vascular Surgery':.35,'Plastic Surgery':.35}),
- topic('Anesthesia / analgesia','anesthesia|anaesthesia|anesthesiology|airway management|regional anesthesia|nerve block|perioperative analgesia|postoperative pain',{Anesthesiology:1,Surgery:.4,'Physical Medicine & Rehabilitation':.25}),
+ topic('Anesthesia / analgesia','anesthesia|anaesthesia|anesthesiology|airway management|regional anesthesia|nerve block|perioperative analgesia',{Anesthesiology:1,Surgery:.4,'Physical Medicine & Rehabilitation':.25}),
  topic('Plastic and reconstructive surgery','plastic surgery|reconstructive surgery|free flap|microsurgery|burn reconstruction|cleft palate',{ 'Plastic Surgery':1,Surgery:.65}),
  topic('Transplantation','transplantation|organ transplantation|allogeneic transplant|solid organ transplant|graft rejection|donor recipient',{Transplantation:1,Hematology:.65,Nephrology:.65,Surgery:.5}),
  topic('Geriatrics / aging','geriatrics|geriatric|older adults|aging|ageing|frailty|falls prevention|nursing home|long term care',{Geriatrics:1,'General Internal Medicine':.45,'Palliative Medicine':.3}),
@@ -84,6 +84,63 @@ var TOPICS=[
  topic('Machine learning / AI','machine learning|deep learning|artificial intelligence|neural network|computer vision|prediction model|large language model|natural language processing|radiomics',{Radiology:.65,'Medical Physics':.6,Pathology:.45,Oncology:.35,'Medical Education':.2}),
  topic('Healthcare systems / implementation','implementation science|health services|health policy|cost effectiveness|value based care|hospital readmission|healthcare delivery',{ 'Public Health':1,'General Internal Medicine':.8,'Hospital Medicine':.8,'Family Medicine':.6})
 ];
+/* Subspecialty-restricted meetings must fit the actual manuscript topic,
+   not merely share a broad parent specialty (oncology, neurology, surgery). */
+var CONFERENCE_SCOPES=[
+ {pattern:/\b(?:headache|migraine)\b/,topics:['Headache and migraine']},
+ {pattern:/\b(?:parkinson|movement disorders?|m d s congress)\b/,topics:['Movement disorders / Parkinson disease']},
+ {pattern:/\b(?:multiple sclerosis|neuroimmunology|actrims|ectrims)\b/,topics:['Multiple sclerosis / neuroimmunology']},
+ {pattern:/\b(?:breast)\b/,topics:['Breast cancer'],terms:/\bbreast\b/},
+ {pattern:/\b(?:gi cancers?|gastrointestinal cancers?|colorectal cancers?)\b/,topics:['Gastrointestinal cancers']},
+ {pattern:/\b(?:gu cancers?|genitourinary cancers?|urogenital cancers?)\b/,topics:['Genitourinary cancers']},
+ {pattern:/\b(?:thyroid)\b/,topics:['Endocrinology / metabolism'],terms:/\b(?:thyroid|thyrotoxicosis|hypothyroidism|hyperthyroidism)\b/},
+ {pattern:/\b(?:transplantation|cellular therapy|bone marrow transplant|hematopoietic stem cell transplant)\b/,
+  topics:['Transplantation','Hematologic malignancies','Cancer immunology']},
+ {pattern:/\b(?:pediatric|paediatric|child neurology|children s|newborn|neonatal)\b/,
+  topics:['Pediatrics / newborns','Child and adolescent mental health'],terms:/\b(?:pediatric|paediatric|child|children|adolescent|neonat|newborn|infant)\b/},
+ {pattern:/\b(?:gynecologic oncology|gynecologic cancer)\b/,topics:['Gynecologic cancers']},
+ {pattern:/\b(?:orthopedic|orthopaedic|orthopedics|musculoskeletal)\b/,topics:['Orthopedics / musculoskeletal']},
+ {pattern:/\b(?:ophthalmology|ophthalmic|retina|retinal|glaucoma|cataract)\b/,topics:['Ophthalmology']},
+ {pattern:/\b(?:otolaryngology|otology|oto expo|ear nose throat)\b/,topics:['Otolaryngology / ear nose throat']},
+ {pattern:/\b(?:interventional cardiology|structural heart|tavr|coronary intervention)\b/,topics:['Interventional cardiology']},
+ {pattern:/\b(?:thoracic oncology|lung cancer|lung cancers)\b/,topics:['Lung cancer']},
+ {pattern:/\b(?:society for immunotherapy of cancer|sitc annual)\b/,topics:['Cancer immunology']},
+ {pattern:/\b(?:ash annual|eha congress|isth congress|society of hematology|society of haematology|hematology association|haematology association|thrombosis and hemostasis|thrombosis and haemostasis)\b/,
+  topics:['Hematologic malignancies','Hematology / blood disorders','Cancer immunology']},
+ {pattern:/\b(?:targeting ras)\b/,topics:['Cancer / oncology','Precision medicine / genomics'],terms:/\bras\b/},
+ {pattern:/\b(?:creog|apgo|fellows and residents training|fellows residents training)\b/,topics:['Health professions education']},
+ {pattern:/\b(?:ascrs tripartite|colon and rectal surgeons)\b/,
+  topics:['Gastrointestinal cancers','Gastroenterology / hepatology','Surgery / perioperative care'],
+  terms:/\b(?:colon|rectal|colorectal|bowel|hemorrhoid|anorectal|anal cancer|ileostomy|colectomy)\b/},
+ {pattern:/\b(?:heart failure)\b/,topics:['Cardiology and cardiovascular disease'],terms:/\bheart failure\b/},
+ {pattern:/\b(?:electrophysiology|arrhythmia)\b/,topics:['Cardiology and cardiovascular disease','Interventional cardiology'],
+  terms:/\b(?:arrhythmia|atrial fibrillation|ventricular tachycardia|pacemaker|electrophysiology)\b/}
+];
+function conferenceScopeCompatible(c,recognized,input) {
+ var title=norm((c.name||'')+' '+(c.society||''));
+ var labels=new Set(recognized.map(function(t){return t.label}));
+ var text=norm(input);
+ return CONFERENCE_SCOPES.every(function(rule){
+  if(!rule.pattern.test(title))return true;
+  if(rule.terms && !rule.terms.test(text))return false;
+  return rule.topics.some(function(label){return labels.has(label)});
+ });
+}
+function matchingPhrases(phrases,normalized) {
+ return phrases.filter(function(p){return p && normalized.indexOf(' '+p+' ')>=0}).length;
+}
+// A single named disease or highly specific therapeutic concept is meaningful
+// even if another portion of the abstract has more repeated descriptors.
+var SPECIFIC_TOPICS=new Set([
+ 'Brain tumors','Radiotherapy','Breast cancer','Lung cancer',
+ 'Gastrointestinal cancers','Genitourinary cancers','Gynecologic cancers',
+ 'Hematologic malignancies','Cancer immunology',
+ 'Stroke and cerebrovascular disease','Multiple sclerosis / neuroimmunology',
+ 'Movement disorders / Parkinson disease','Epilepsy / seizures',
+ 'Headache and migraine','Neurodegeneration / cognition','Neurorehabilitation',
+ 'Reproductive health / fertility','Transplantation','Palliative medicine',
+ 'Pediatrics / newborns'
+]);
 var FORMATS=[
  {value:'original',label:'Original research',check:/\b(?:original research|clinical research|clinical trials?|scientific abstracts?|research|prospective clinical|basic science|translational|cohort)\b/i},
  {value:'case',label:'Case report / clinical vignette',check:/\b(?:case reports?|case series|clinical vignettes?|vignettes?|clinical images?|excerpta|case stud(?:y|ies))\b/i},
@@ -101,10 +158,9 @@ function detectFormat(text) {
 }
 function formatLabel(v){return (FORMATS.find(function(f){return f.value===v})||FORMATS[0]).label}
 function getTopics(input) {
- var x=' '+norm(input)+' ';
- return TOPICS.filter(function(t){
-  return t.phrases.some(function(p){return p && x.indexOf(' '+p+' ')>=0});
- });
+ // HbA1c (glycated hemoglobin) is an endocrine marker, not hematology.
+ var x=' '+norm(input).replace(/\b(?:hemoglobin|haemoglobin) a1c\b/g,'hba1c')+' ';
+ return TOPICS.filter(function(t){return matchingPhrases(t.phrases,x)>0});
 }
 function scoreTermVectors(items) {
  var df={};
@@ -153,29 +209,46 @@ function matchAbstract(abstract,conferences,options) {
  if(!FORMATS.some(function(f){return f.value===format}))format='original';
  var today=options.today||new Date().toISOString().slice(0,10);
  var topical=getTopics(input);
+ var normalizedInput=' '+norm(input).replace(/\b(?:hemoglobin|haemoglobin) a1c\b/g,'hba1c')+' ';
+ var evidence=topical.map(function(t){return matchingPhrases(t.phrases,normalizedInput)});
+ var maxEvidence=Math.max(0,...evidence);
  var words=tokenize(input);
+ // Prefer an empty set to plausible-looking but poorly aligned suggestions.
+ // Keyword overlap and compatible submission formats never establish topic fit.
+ var MIN_RELEVANCE_SCORE=.48;
+ var MIN_DIRECT_AFFINITY=.8;
  if(words.length<12)return {error:'Paste a longer abstract (approximately 30 or more words) so the topic can be identified reliably.',format:format,topics:[],results:[]};
  var conferenceList=Array.isArray(conferences)?conferences:[];
  var docs=conferenceList.map(function(c){return tokenize(confText(c))});
  var idf=scoreTermVectors(docs);
  var query=tf(words,idf);
  var results=conferenceList.map(function(c,i) {
-  var topicItems=topical.map(function(t){
+  var topicItems=topical.map(function(t,index){
    var aff=t.affinity[c.specialty]||0;
    // Combined Heme/Onc conferences retain both legacy topic affinities.
    if(c.specialty==='Hematology & Oncology')aff=Math.max(aff,t.affinity.Hematology||0,t.affinity.Oncology||0);
+   if(c.specialty==='Internal Medicine')aff=Math.max(aff,t.affinity['General Internal Medicine']||0);
    var ctext=' '+norm(confText(c))+' ';
    var specific=t.phrases.some(function(p){return p.length>=5 && ctext.indexOf(' '+p+' ')>=0});
-   return {label:t.label,affinity:aff,focused:specific};
-  }).filter(function(t){return t.affinity>.0||t.focused});
-  var ranked=topicItems.map(function(t){return Math.max(t.affinity*.75,t.focused ? 0.98 : 0)}).sort(function(a,b){return b-a});
+   return {label:t.label,affinity:aff,focused:specific,evidence:evidence[index]};
+  }).filter(function(t){return t.affinity>0 || t.focused});
+  // A single secondary mention must not outweigh a central topic supported
+  // by multiple terms (e.g. a diabetes paper measuring hemoglobin A1c).
+  var substantial=topicItems.filter(function(t){
+   return maxEvidence<=1 || t.evidence>=2 || SPECIFIC_TOPICS.has(t.label);
+  });
+  var ranked=substantial.map(function(t){return t.affinity*.75}).sort(function(a,b){return b-a});
   var strength=ranked.length?Math.min(1,(ranked[0]||0)*.90+(ranked[1]||0)*.08+(ranked[2]||0)*.02):0;
   var keyword=similarity(query,tf(docs[i],idf));
   var fit=formatFit(c,format);
-  // Topic fit dominates generic research terms; format matters only if verified.
-  var score=.82*strength+.15*keyword+(fit.status==='confirmed' ? .03 : 0);
+  // A strong subject relationship is required. A generic specialty, research
+  // keyword, or confirmed abstract format cannot by itself qualify a meeting.
+  var directTopic=substantial.some(function(t){return t.affinity>=MIN_DIRECT_AFFINITY});
+  var topicScore=.82*strength+.15*keyword;
+  var qualifies=topical.length>0 && directTopic &&
+    topicScore>=MIN_RELEVANCE_SCORE && conferenceScopeCompatible(c,topical,input);
+  var score=topicScore+(fit.status==='confirmed' ? .03 : 0);
   if(fit.status==='unconfirmed')score*=.93;
-  if(topical.length===0)score=.85*keyword+(fit.status==='confirmed' ? .02 : 0);
   var opportunityInfo=opportunity(c,today);
   var shared=Array.from(new Set(words.filter(function(t){return docs[i].indexOf(t)>=0}))).slice(0,4);
   return {
@@ -184,10 +257,11 @@ function matchAbstract(abstract,conferences,options) {
    fit:fit,opportunity:opportunityInfo,
    topics:topicItems.sort(function(a,b){return (b.focused?2:0)+b.affinity-((a.focused?2:0)+a.affinity)}).slice(0,4),
    matchedTerms:shared,
-   strength:score>=.55?'Strong topic alignment':score>=.3?'Relevant topic alignment':'Broader specialty match',
-   focused:topicItems.some(function(t){return t.focused})
+   strength:score>=.58?'Strong topic alignment':'Focused topic alignment',
+   focused:topicItems.some(function(t){return t.focused}),
+   qualifies:qualifies
   };
- }).filter(function(r){return r.score>=.065 && (options.includeClosed||r.opportunity.status!=='closed')})
+ }).filter(function(r){return r.qualifies && (options.includeClosed||r.opportunity.status!=='closed')})
  .sort(function(a,b){
   return b.score-a.score || (a.opportunity.status==='open'?-1:0)-(b.opportunity.status==='open'?-1:0) ||
     a.name.localeCompare(b.name);
