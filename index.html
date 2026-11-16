@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="abstract-matcher.css?v=dab495ede536" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
 <link rel="stylesheet" href="editorial-design.css?v=f945c3261ddf" />
-<link rel="stylesheet" href="profile.css?v=ce005afc2894" />
+<link rel="stylesheet" href="profile.css?v=1df218bda6a4" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -128,7 +128,6 @@
         <section class="jane-panel" aria-labelledby="janeHeading">
           <div class="jane-panel-head">
             <div>
-              <span class="jane-kicker">JOURNAL MATCHING</span>
               <div class="jane-title-line">
                 <h2 id="janeHeading">Find matching journals with JANE</h2>
                 <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Visit JANE</a>
@@ -141,6 +140,7 @@
             <div class="jane-embed-controls">
               <button type="submit" class="btn btn-primary" id="janeFind" name="findJournals" value="Find journals" disabled>Find matching journals</button>
             </div>
+            <p class="jane-empty-hint" id="janeEmptyHint" role="status">Paste abstract above</p>
           </form>
           <p class="jane-instructions">Selecting “Find matching journals” sends your abstract directly to JANE and opens its journal results in a separate tab. No additional pasting is needed. Do not include patient-identifying information.</p>
         </section>
@@ -210,6 +210,6 @@
 <!-- Set a public GA4 Measurement ID (G-...) only after creating the RISE Analytics property. Never place private credentials here. -->
 <script>window.RISE_ANALYTICS_ID = '';</script>
 <script src="profile.js?v=719e1a0c09ef"></script>
-<script src="app.js?v=4776258d98b9"></script>
+<script src="app.js?v=8afe4ac9100a"></script>
 </body>
 </html>

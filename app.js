@@ -754,8 +754,11 @@ function runMatcher(){
    A single abstract entry is reused locally; nothing is submitted until then.
    The form targets JANE's published suggestions.php / findJournals endpoint. */
 const janeFindButton=get('janeFind');
+const janeEmptyHint=get('janeEmptyHint');
 function syncJaneFindButton(){
- janeFindButton.disabled=!get('matchAbstractText').value.trim();
+ const noAbstract=!get('matchAbstractText').value.trim();
+ janeFindButton.disabled=noAbstract;
+ janeEmptyHint.hidden=!noAbstract;
 }
 const janeForm=get('janeForm');
 if(janeForm){
@@ -771,7 +774,10 @@ if(janeForm){
  });
 }
 get('matchAbstractText').addEventListener('input',syncJaneFindButton);
-get('matchClear').addEventListener('click',()=>{janeFindButton.disabled=true;});
+get('matchClear').addEventListener('click',()=>{
+ janeFindButton.disabled=true;
+ janeEmptyHint.hidden=false;
+});
 syncJaneFindButton();
 get('matchAbstractText').addEventListener('input',matcherWordCount);
 get('matchRun').addEventListener('click',runMatcher);
