@@ -7,10 +7,10 @@
 <meta name="description" content="RISE Conference Navigator — resident research conference deadlines, meetings, funding and reverse research planning." />
 <title>RISE Conference Navigator</title>
 <link rel="stylesheet" href="styles.css?v=fb546c09f4b3" />
-<link rel="stylesheet" href="abstract-matcher.css?v=dab495ede536" />
+<link rel="stylesheet" href="abstract-matcher.css?v=4daf5e34dfee" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
 <link rel="stylesheet" href="editorial-design.css?v=f945c3261ddf" />
-<link rel="stylesheet" href="profile.css?v=1df218bda6a4" />
+<link rel="stylesheet" href="profile.css?v=057274b904cf" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -117,11 +117,13 @@
           </div>
 
           </div>
-          <div class="matcher-output" id="matchOutput" role="region" aria-label="Conference matching results" tabindex="0" aria-live="polite" aria-atomic="false">
-            <div class="matcher-placeholder">
-              <span class="matcher-placeholder-icon" data-icon="search"></span>
-              <h2>Your conference matches will appear here</h2>
-              <p>We'll look for scientific subject areas, specialty connections, and available submission information in the RISE conference directory.</p>
+          <div class="matcher-results-column">
+            <div class="matcher-output" id="matchOutput" role="region" aria-label="Conference matching results" tabindex="0" aria-live="polite" aria-atomic="false">
+              <div class="matcher-placeholder">
+                <span class="matcher-placeholder-icon" data-icon="search"></span>
+                <h2>Your conference matches will appear here</h2>
+                <p>We'll look for scientific subject areas, specialty connections, and available submission information in the RISE conference directory.</p>
+              </div>
             </div>
           </div>
         </div>

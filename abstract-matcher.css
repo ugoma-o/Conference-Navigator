@@ -1,6 +1,6 @@
 /* Abstract Matcher — visual styling uses the existing RISE light/dark palettes. */
 .matcher-heading{margin-bottom:24px}
-.matcher-layout{display:grid;grid-template-columns:minmax(320px,410px) minmax(0,1fr);gap:22px;align-items:start}
+.matcher-layout{display:grid;grid-template-columns:minmax(320px,410px) minmax(0,1fr);gap:22px;align-items:stretch}
 .matcher-controls-column{display:flex;flex-direction:column;gap:16px;min-width:0}
 .matcher-input-panel{position:static}
 .matcher-input-panel h2{margin:0 0 7px}
@@ -18,9 +18,12 @@
 .matcher-privacy svg{flex:none;width:19px;height:19px}
 .matcher-privacy p{font-size:11px;line-height:1.6;margin:0;color:#416963}
 .matcher-privacy strong{color:#226963}
-.matcher-output{min-width:0;max-height:clamp(430px,78dvh,800px);overflow-y:auto;overscroll-behavior-y:contain;scrollbar-gutter:stable;padding:0 6px 6px 0;scrollbar-width:thin;scrollbar-color:#a3bfcb transparent}
+/* The input card sets the grid row height. The absolutely positioned results
+   panel fills the other cell without letting long results expand the page. */
+.matcher-results-column{position:relative;min-width:0;min-height:0}
+.matcher-output{position:absolute;inset:0;min-width:0;min-height:0;overflow-y:auto;overscroll-behavior-y:contain;scrollbar-gutter:stable;padding:20px;border:1px solid #dce6ec;border-radius:12px;background:#fff;box-shadow:0 2px 10px rgba(9,54,85,.025);scrollbar-width:thin;scrollbar-color:#a3bfcb transparent}
 .matcher-output:focus-visible{outline:3px solid rgba(0,114,167,.3);outline-offset:3px;border-radius:10px}
-.matcher-placeholder{display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;padding:55px 26px;min-height:370px;background:#fff;border:1px dashed #b7d6e4;border-radius:12px}
+.matcher-placeholder{display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;padding:45px 22px;min-height:100%;background:#f8fbfd;border:1px dashed #b7d6e4;border-radius:12px}
 .matcher-placeholder-icon{width:56px;height:56px;border-radius:16px;background:#e9f4fa;color:#297ea7;display:flex;align-items:center;justify-content:center}
 .matcher-placeholder-icon svg{width:29px;height:29px}
 .matcher-placeholder h2{font:800 19px/1.35 'Manrope','Segoe UI',sans-serif;color:#1b4962;margin:18px 0 8px}
@@ -79,6 +82,7 @@ html[data-theme="dark"] .matcher-result-card,
 html[data-theme="dark"] .matcher-reason,
 html[data-theme="dark"] .matcher-disclaimer,
 html[data-theme="dark"] .matcher-message{background:#182d3e;border-color:#395c70}
+html[data-theme="dark"] .matcher-output{background:#182d3e;border-color:#395c70}
 html[data-theme="dark"] .matcher-placeholder-icon{background:#29475e;color:#b5e5fa}
 html[data-theme="dark"] .matcher-privacy p,
 html[data-theme="dark"] .matcher-placeholder p,
@@ -95,7 +99,7 @@ html[data-theme="dark"] .matcher-result-details{border-color:#385164}
 html[data-theme="dark"] .matcher-format.matched{background:#234c41;color:#c1ead8}
 html[data-theme="dark"] .matcher-format.check{background:#293c4e;color:#c5d9e6}
 @media(max-width:1100px){.matcher-layout{grid-template-columns:minmax(285px,370px) minmax(0,1fr)}.matcher-result-head{flex-wrap:wrap}}
-@media(max-width:900px){.matcher-layout{grid-template-columns:1fr}.matcher-placeholder{min-height:230px}.matcher-output{max-height:clamp(360px,70dvh,680px)}}
+@media(max-width:900px){.matcher-layout{grid-template-columns:1fr}.matcher-results-column{height:clamp(360px,70dvh,680px)}.matcher-placeholder{min-height:100%}}
 @media(max-width:540px){.matcher-result-head{flex-direction:column}.matcher-strength{max-width:none}.matcher-result-details{gap:10px}.matcher-result-card{padding:15px}.matcher-actions .btn{flex:1 1 auto}}
 
 /* Keep results separately scrollable in dark mode as well. */
