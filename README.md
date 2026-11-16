@@ -12,3 +12,9 @@ This repository contains the **published static website only**: HTML, CSS, JavaS
 - The private repository's `RISE_PUBLIC_DEPLOY_TOKEN` Actions secret must have Contents read/write permission for this public repository. Without that credential, automatic cross-repository publishing cannot work.
 
 This site should never contain monitoring Python files, private credentials, unpublished scan reports, or patient information.
+
+## Current site features
+
+The Navigator supports local profiles with a residency-program selection and multiple specialty interests. A visitor can use the site without a profile. The Abstract Matcher includes a separate on-demand embedded JANE journal finder with a direct link fallback. Usage analytics remain disabled unless configured by the administrator and consented to by a visitor.
+
+The GitHub Pages deployment workflow includes `profile.js` and `profile.css` among the approved static assets. All source-monitoring code remains in the private repository.
