@@ -11229,11 +11229,11 @@ window.RISE_DATA = {
     }
   ],
   "monitorStatus": {
-    "lastCheckedAt": "2026-11-10T00:05:09.864328+00:00",
-    "sourcesAttempted": 403,
-    "sourcesReachable": 335,
+    "lastCheckedAt": "2026-11-16T13:19:59.871622+00:00",
+    "sourcesAttempted": 408,
+    "sourcesReachable": 342,
     "proposalsFound": 25,
     "publishedChanges": 0,
-    "conflictsHeld": 12
+    "conflictsHeld": 13
   }
 };
