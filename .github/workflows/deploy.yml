@@ -10,6 +10,8 @@ on:
       - 'editorial-design.css'
       - 'abstract-matcher.js'
       - 'app.js'
+      - 'profile.js'
+      - 'profile.css'
       - 'data.json'
       - 'data.js'
       - '.github/workflows/deploy.yml'
@@ -37,8 +39,8 @@ jobs:
           import json, shutil
           root=Path('.')
           allowed=(
-            'index.html','app.js','abstract-matcher.js','data.js','data.json',
-            'styles.css','abstract-matcher.css',
+            'index.html','app.js','profile.js','abstract-matcher.js','data.js','data.json',
+            'styles.css','profile.css','abstract-matcher.css',
             'accessibility.css','editorial-design.css'
           )
           for name in allowed:
