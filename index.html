@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="abstract-matcher.css?v=dab495ede536" />
 <link rel="stylesheet" href="accessibility.css?v=cd1c0b152627" />
 <link rel="stylesheet" href="editorial-design.css?v=f945c3261ddf" />
-<link rel="stylesheet" href="profile.css?v=03a5758fea54" />
+<link rel="stylesheet" href="profile.css?v=ce005afc2894" />
 <script>if (new URLSearchParams(location.search).get("design") === "classic") { document.documentElement.dataset.design = "classic"; const editorialSheet = document.querySelector('link[href^="editorial-design.css"]'); if (editorialSheet) editorialSheet.disabled = true; }</script>
 </head>
 <body>
@@ -129,16 +129,17 @@
           <div class="jane-panel-head">
             <div>
               <span class="jane-kicker">JOURNAL MATCHING</span>
-              <h2 id="janeHeading">Find matching journals with JANE</h2>
-              <p>Use the abstract entered above to search JANE for relevant journals and supporting articles.</p>
+              <div class="jane-title-line">
+                <h2 id="janeHeading">Find matching journals with JANE</h2>
+                <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Visit JANE</a>
+              </div>
+              <p>JANE (Journal/Author Name Estimator) compares your abstract with published research indexed in PubMed to suggest relevant journals, related articles, and authors. Its confidence scores reflect similarity, not likelihood of acceptance.</p>
             </div>
           </div>
           <form id="janeForm" class="jane-search-form" action="https://jane.biosemantics.org/suggestions.php" method="post" target="_blank" rel="noopener noreferrer">
             <input type="hidden" id="janeAbstractPayload" name="text" value="" />
             <div class="jane-embed-controls">
               <button type="submit" class="btn btn-primary" id="janeFind" name="findJournals" value="Find journals" disabled>Find matching journals</button>
-              <button type="button" class="btn btn-soft" id="janeCopyAbstract" disabled>Copy abstract</button>
-              <a class="jane-external" href="https://jane.biosemantics.org/" target="_blank" rel="noopener noreferrer">Visit JANE</a>
             </div>
           </form>
           <p class="jane-instructions">Selecting “Find matching journals” sends your abstract directly to JANE and opens its journal results in a separate tab. No additional pasting is needed. Do not include patient-identifying information.</p>
@@ -209,6 +210,6 @@
 <!-- Set a public GA4 Measurement ID (G-...) only after creating the RISE Analytics property. Never place private credentials here. -->
 <script>window.RISE_ANALYTICS_ID = '';</script>
 <script src="profile.js?v=719e1a0c09ef"></script>
-<script src="app.js?v=e326fc7cad35"></script>
+<script src="app.js?v=4776258d98b9"></script>
 </body>
 </html>
