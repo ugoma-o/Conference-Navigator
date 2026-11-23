@@ -48,6 +48,8 @@ var TOPICS=[
  topic('Psychiatry / mental health','depression|anxiety|psychiatry|psychiatric|psychosis|schizophrenia|bipolar disorder|suicide|ptsd|post traumatic stress|substance use disorder|addiction',{Psychiatry:1,'General Internal Medicine':.25,Pediatrics:.25,Geriatrics:.25}),
  topic('Child and adolescent mental health','child psychiatry|adolescent psychiatry|autism|adhd|attention deficit hyperactivity|pediatric mental health',{Psychiatry:1,Pediatrics:.9,Neurology:.3}),
  topic('Medical imaging','magnetic resonance imaging|mri|functional mri|fmri|computed tomography|ct scan|pet scan|positron emission tomography|ultrasound imaging|radiomics|medical imaging',{Radiology:1,'Medical Physics':.65,Neurology:.25,'Radiation Oncology':.3}),
+ topic('Interventional radiology / image-guided procedures','interventional radiology|image guided intervention|image guided therapy|endovascular embolization|transarterial embolization|uterine artery embolization|prostatic artery embolization|radioembolization|embolization|chemoembolization|percutaneous ablation|microwave ablation|thermal ablation|cryoablation|yttrium 90|y 90|y90|tace|transjugular intrahepatic portosystemic shunt|tips procedure',{'Interventional Radiology':1,Radiology:.45,'Vascular Surgery':.4,'Hematology & Oncology':.2}),
+ topic('Interventional oncology','interventional oncology|tumor embolization|hepatic radioembolization|transarterial chemoembolization|liver tumor ablation|liver ablation|hepatic ablation|locoregional tumor therapy|yttrium 90|y 90|y90|tace|hepatic artery infusion',{'Interventional Radiology':1,'Hematology & Oncology':.55,'Radiation Oncology':.25,Gastroenterology:.25}),
  topic('Nuclear medicine','nuclear medicine|spect|pet ct|pet mri|radiotracer|theranostics|radioisotope',{Radiology:1,'Medical Physics':.8,'Radiation Oncology':.7,Oncology:.5}),
  topic('Cardiology and cardiovascular disease','cardiovascular|cardiology|heart failure|myocardial infarction|coronary artery|acute coronary syndrome|arrhythmia|atrial fibrillation|valvular|echocardiography|heart disease',{Cardiology:1,'Cardiothoracic Surgery':.6,'General Internal Medicine':.35,'Vascular Surgery':.3}),
  topic('Interventional cardiology','pci|percutaneous coronary intervention|stent|coronary intervention|structural heart|transcatheter|tavr|cardiac catheterization',{Cardiology:1,'Cardiothoracic Surgery':.65,'Vascular Surgery':.3}),
@@ -103,6 +105,7 @@ var CONFERENCE_SCOPES=[
  {pattern:/\b(?:ophthalmology|ophthalmic|retina|retinal|glaucoma|cataract)\b/,topics:['Ophthalmology']},
  {pattern:/\b(?:otolaryngology|otology|oto expo|ear nose throat)\b/,topics:['Otolaryngology / ear nose throat']},
  {pattern:/\b(?:interventional cardiology|structural heart|tavr|coronary intervention)\b/,topics:['Interventional cardiology']},
+ {pattern:/\b(?:society of interventional oncology|sio annual scientific meeting)\b/,topics:['Interventional oncology']},
  {pattern:/\b(?:thoracic oncology|lung cancer|lung cancers)\b/,topics:['Lung cancer']},
  {pattern:/\b(?:society for immunotherapy of cancer|sitc annual)\b/,topics:['Cancer immunology']},
  {pattern:/\b(?:ash annual|eha congress|isth congress|society of hematology|society of haematology|hematology association|haematology association|thrombosis and hemostasis|thrombosis and haemostasis)\b/,
@@ -139,6 +142,7 @@ var SPECIFIC_TOPICS=new Set([
  'Movement disorders / Parkinson disease','Epilepsy / seizures',
  'Headache and migraine','Neurodegeneration / cognition','Neurorehabilitation',
  'Reproductive health / fertility','Transplantation','Palliative medicine',
+ 'Interventional radiology / image-guided procedures','Interventional oncology',
  'Pediatrics / newborns'
 ]);
 var FORMATS=[

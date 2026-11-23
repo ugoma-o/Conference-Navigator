@@ -1,789 +1,7 @@
 /* Curated snapshot — verify dates against society sources. */
 window.RISE_DATA = {
-  "asOf": "2026-11-02",
+  "asOf": "2026-11-23",
   "conferences": [
-    {
-      "id": "aan27",
-      "name": "AAN Annual Meeting 2027",
-      "society": "American Academy of Neurology",
-      "specialty": "Neurology",
-      "start": "2027-05-01",
-      "end": "2027-05-05",
-      "city": "Washington, DC",
-      "open": "2026-08-27",
-      "deadline": "2026-10-13",
-      "deadlineTime": "11:59 PM CT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": "$25 eligible trainees; $125 members; $225 nonmembers",
-      "types": [
-        "Original research",
-        "Neurology science"
-      ],
-      "url": "https://www.aan.com/events/annual-meeting/abstracts",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Abstracts are presented in person. Confirm regular submission categories and attendance rules with the organizer.",
-      "flag": null,
-      "tags": [
-        "trainee"
-      ],
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "open": {
-          "url": "https://www.aan.com/events/annual-meeting/abstracts",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE manual review of official 2027 abstract page",
-          "source_quote": "Abstract submissions will open on August 27, 2026. The submission deadline is October 13, 2026, at 11:59 p.m. CT.",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "ascogu27",
-      "name": "ASCO GU Cancers Symposium 2027",
-      "society": "American Society of Clinical Oncology",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-02-11",
-      "end": "2027-02-13",
-      "city": "To be announced",
-      "open": "2026-08-19",
-      "deadline": "2026-10-13",
-      "deadlineTime": "11:59 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Genitourinary oncology",
-        "Clinical research"
-      ],
-      "url": "https://www.asco.org/meetings-education/meetings/abstract-submissions",
-      "guideline": null,
-      "evidence": "official",
-      "note": "",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "epi27",
-      "name": "AHA EPI|Lifestyle 2027",
-      "society": "American Heart Association",
-      "specialty": "Cardiology",
-      "start": "2027-03-01",
-      "end": "2027-03-04",
-      "city": "Boston, MA",
-      "open": "2026-07-29",
-      "deadline": "2026-10-14",
-      "deadlineTime": "6:00 PM CT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research",
-        "Clinical case report",
-        "Implementation/QI"
-      ],
-      "url": "https://professional.heart.org/en/meetings/epi-lifestyle/abstracts-and-awards",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Offers clinical case reports and an implementation science/QI track in 2027.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "acc27",
-      "name": "ACC.27 / World Congress of Cardiology",
-      "society": "American College of Cardiology",
-      "specialty": "Cardiology",
-      "start": "2027-04-10",
-      "end": "2027-04-12",
-      "city": "Houston, TX",
-      "open": "2026-08-25",
-      "deadline": "2026-10-08",
-      "deadlineTime": "1:00 PM ET",
-      "limit": 1900,
-      "limitType": "characters_no_spaces",
-      "limitNote": "Per abstract/case; figures/tables may affect count.",
-      "fee": null,
-      "types": [
-        "Original research",
-        "Complex clinical case",
-        "CV team abstracts"
-      ],
-      "url": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts",
-      "guideline": "https://accscientificsession.acc.org/Information-Pages/Frequently-Asked-Questions/Abstract-and-Case-Submission",
-      "evidence": "official",
-      "note": "DATE CONFLICT: ACC.27's official abstract submission page lists October 8, 2026 at 1 p.m. ET, while its FAQ and downloadable submission policies list October 6, 2026 at 1 p.m. ET. The navigator displays October 8 because it is on the current submission-specific page, but this remains disputed; verify the authoritative deadline with the organizer. Submissions are now closed.",
-      "flag": "conflict",
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral",
-        "Moderated poster",
-        "Traditional poster"
-      ],
-      "presentationPolicy": "The ACC program considers eligible abstracts for oral, moderated poster, and traditional poster placement; presenters are not guaranteed their preferred format.",
-      "presentationSource": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE official-source date conflict audit",
-          "source_quote": "Submission Dates: Aug. 25 - Oct. 8 at 1 p.m. ET on current abstract page; official FAQ states October 6, 2026.",
-          "confidence": "disputed_between_official_pages",
-          "corroborating_sources": [
-            "https://accscientificsession.acc.org/Information-Pages/Frequently-Asked-Questions/Abstract-and-Case-Submission"
-          ]
-        }
-      }
-    },
-    {
-      "id": "ats27",
-      "name": "ATS International Conference 2027",
-      "society": "American Thoracic Society",
-      "specialty": "Pulmonary & Critical Care",
-      "start": "2027-05-14",
-      "end": "2027-05-19",
-      "city": "New Orleans, LA",
-      "open": null,
-      "deadline": "2026-11-04",
-      "deadlineTime": "5:00 PM ET",
-      "limit": 400,
-      "limitType": "words",
-      "limitNote": null,
-      "fee": "Varies by ATS membership",
-      "types": [
-        "Original research",
-        "Case reports",
-        "QI",
-        "Medical education"
-      ],
-      "url": "https://site.thoracic.org/conference/program/call-for-scientific-abstracts-and-case-reports",
-      "guideline": null,
-      "evidence": "official",
-      "note": "ATS abstract criteria and 400-word maximum, meeting dates verified against ATS website.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "acp27",
-      "name": "ACP Internal Medicine Meeting 2027 & National Abstract Competitions",
-      "society": "American College of Physicians",
-      "specialty": "Internal Medicine",
-      "start": "2027-04-15",
-      "end": "2027-04-17",
-      "city": "Los Angeles, CA",
-      "open": "2026-10-01",
-      "deadline": "2026-11-12",
-      "deadlineTime": "3:00 PM ET",
-      "limit": 500,
-      "limitType": "words",
-      "limitNote": "Abstract body only; title, author information and references excluded.",
-      "fee": "$45 per abstract; ACP membership required",
-      "types": [
-        "Clinical vignette",
-        "Clinical research",
-        "Basic research",
-        "QI/patient safety",
-        "High-value care",
-        "Physician well-being"
-      ],
-      "url": "https://annualmeeting.acponline.org/educational-program/abstract-competition",
-      "guideline": "https://www.acponline.org/membership/residents/competitions-awards/acp-national-abstract-competitions/acp-national-abstract-competition-faqs",
-      "evidence": "official",
-      "note": "ACP national competition includes research and clinical vignettes; check chapter competition rules separately.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "shm27",
-      "name": "SHM Converge 2027",
-      "society": "Society of Hospital Medicine",
-      "specialty": "Internal Medicine",
-      "start": "2027-03-30",
-      "end": "2027-04-02",
-      "city": "Las Vegas, NV",
-      "open": "2026-09-11",
-      "deadline": "2026-11-23",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": "$55 per abstract (RISE tracker)",
-      "types": [
-        "Research",
-        "Clinical vignette",
-        "QI/patient safety",
-        "Innovations"
-      ],
-      "url": "https://shmconverge.hospitalmedicine.org/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Main conference March 31–April 2; pre-courses March 30.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "researchOpportunity": "Hospital medicine and scholarly practice"
-    },
-    {
-      "id": "aace27",
-      "name": "AACE Annual Meeting 2027",
-      "society": "American Association of Clinical Endocrinology",
-      "specialty": "Endocrinology",
-      "start": "2027-05-14",
-      "end": "2027-05-16",
-      "city": "San Diego, CA",
-      "open": "2026-08-10",
-      "deadline": "2026-12-01",
-      "deadlineTime": "11:59 PM ET",
-      "limit": 3300,
-      "limitType": "characters_with_spaces",
-      "limitNote": "Abstract body only; structured section limits apply. The society lists 3,300 characters. ",
-      "fee": null,
-      "types": [
-        "Original research",
-        "Clinical trials",
-        "Case study/series",
-        "QI"
-      ],
-      "url": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Domestic resident/fellow abstract travel grants up to $1,000.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ags27",
-      "name": "AGS Annual Scientific Meeting 2027",
-      "society": "American Geriatrics Society",
-      "specialty": "Geriatrics",
-      "start": "2027-05-19",
-      "end": "2027-05-22",
-      "city": "Atlanta, GA",
-      "open": null,
-      "deadline": "2026-12-02",
-      "deadlineTime": "11:59 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": "$45 per abstract",
-      "types": [
-        "Research",
-        "Clinical geriatrics",
-        "QI"
-      ],
-      "url": "https://www.meeting.americangeriatrics.org/submissions",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 AGS regular research abstracts: organizer meeting submissions overview identifies opening in mid-September 2026 (exact calendar day not stated) and closing December 2, 2026 at 11:59 p.m. ET. Educational program proposals have a separate June 30 deadline.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "openMonth": "2026-09",
-      "fieldSources": {
-        "openMonth": {
-          "url": "https://stagemeeting.americangeriatrics.org/submissions",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE manual inspection of organizer-controlled staging meeting overview",
-          "source_quote": "2027 Submissions Overview: Mid-September: Call for Abstracts Opens; December 2, 2026, 11:59pm ET: Abstract Submission Deadline",
-          "confidence": "month_only_official_staging_page",
-          "precision": "month"
-        }
-      }
-    },
-    {
-      "id": "ddw27",
-      "name": "Digestive Disease Week 2027",
-      "society": "DDW / AGA / AASLD / ASGE / SSAT",
-      "specialty": "Gastroenterology",
-      "start": "2027-05-15",
-      "end": "2027-05-18",
-      "city": "Washington, DC + Online",
-      "open": "2026-10-22",
-      "deadline": "2026-12-02",
-      "deadlineTime": "9:00 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research",
-        "Clinical studies",
-        "Basic science"
-      ],
-      "url": "https://news.ddw.org/news/your-roadmap-to-ddw-2027-key-dates-to-add-to-your-calendar/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "AGA resident travel awards may support accepted presenters.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "sgim27",
-      "name": "SGIM Annual Meeting 2027",
-      "society": "Society of General Internal Medicine",
-      "specialty": "Internal Medicine",
-      "start": "2027-05-05",
-      "end": "2027-05-08",
-      "city": "Seattle, WA",
-      "open": "2026-10-13",
-      "deadline": "2026-12-11",
-      "deadlineTime": null,
-      "limit": 3000,
-      "limitType": "characters_with_spaces",
-      "limitNote": "Scientific abstracts / clinical vignettes; requirements differ for other categories.",
-      "fee": null,
-      "types": [
-        "Scientific abstract",
-        "Clinical vignette",
-        "Medical education innovation",
-        "QI"
-      ],
-      "url": "https://annualmeeting.sgim.org/",
-      "guideline": "https://annualmeeting.sgim.org/present/scientific-abstracts/",
-      "evidence": "official",
-      "note": "",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [],
-      "submissionCategoryNote": "The official SGIM27 call includes scientific abstracts, clinical vignettes, and innovations. Verify the applicable subtrack before submitting.",
-      "submissionSource": "https://annualmeeting.sgim.org/present/"
-    },
-    {
-      "id": "ada27",
-      "name": "ADA Scientific Sessions 2027",
-      "society": "American Diabetes Association",
-      "specialty": "Endocrinology",
-      "start": "2027-06-18",
-      "end": "2027-06-21",
-      "city": "Washington, DC",
-      "open": "2026-09-28",
-      "deadline": "2027-01-05",
-      "deadlineTime": "5:00 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": "$90 regular abstract processing fee",
-      "types": [
-        "Research",
-        "Clinical science",
-        "Translational science"
-      ],
-      "url": "https://professional.diabetes.org/scientific-sessions/abstracts/abstracts-faq",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Confirm the standard research submission categories with the organizer.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "asco27",
-      "name": "ASCO Annual Meeting 2027",
-      "society": "American Society of Clinical Oncology",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-06-04",
-      "end": "2027-06-08",
-      "city": "Chicago, IL",
-      "open": "2026-11-04",
-      "deadline": "2027-01-26",
-      "deadlineTime": "11:59 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Clinical research",
-        "Trials in progress",
-        "Outcomes research",
-        "Translational science"
-      ],
-      "url": "https://www.asco.org/annual-meeting/dates-know",
-      "guideline": "https://www.asco.org/annual-meeting/abstracts-presentations/submission-details",
-      "evidence": "official",
-      "note": "Regular abstract submission requirements apply. The 2027 formatting guidance was expected in November.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ascobr27",
-      "name": "ASCO Breakthrough 2027",
-      "society": "American Society of Clinical Oncology",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-06-24",
-      "end": "2027-06-26",
-      "city": "To be announced",
-      "open": "2026-12-02",
-      "deadline": "2027-02-23",
-      "deadlineTime": "11:59 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Cancer research",
-        "Clinical innovation"
-      ],
-      "url": "https://www.asco.org/meetings-education/meetings/abstract-submissions",
-      "guideline": null,
-      "evidence": "official",
-      "note": "",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ascogi27",
-      "name": "ASCO GI Cancers Symposium 2027",
-      "society": "American Society of Clinical Oncology",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-01-21",
-      "end": "2027-01-23",
-      "city": "To be announced",
-      "open": "2026-07-28",
-      "deadline": "2026-09-22",
-      "deadlineTime": "11:59 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "GI oncology",
-        "Research"
-      ],
-      "url": "https://www.asco.org/meetings-education/meetings/abstract-submissions",
-      "guideline": null,
-      "evidence": "official",
-      "note": "",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "endo27",
-      "name": "ENDO 2027",
-      "society": "Endocrine Society",
-      "specialty": "Endocrinology",
-      "start": "2027-06-05",
-      "end": "2027-06-07",
-      "city": "Toronto, ON, Canada",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Endocrine research",
-        "Clinical science"
-      ],
-      "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "International meeting. 2027 abstract dates not yet confirmed in RISE tracker. Meeting location and dates confirmed from the organizer's current published schedule.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "city": {
-          "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer page"
-        }
-      }
-    },
-    {
-      "id": "acg27",
-      "name": "ACG Annual Scientific Meeting 2027",
-      "society": "American College of Gastroenterology",
-      "specialty": "Gastroenterology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "GI clinical research",
-        "Clinical case reports"
-      ],
-      "url": "https://acgmeetings.gi.org/abstracts-closed/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "The official ACG 2026 submission portal expressly states the ACG 2027 submission period will OPEN SPRING 2027 and CLOSE EARLY JUNE 2027. Exact dates are not published. The March 2–June 1 calendar on the ACG abstract page is for 2026, not 2027; do not copy it.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "additionalSources": [
-        "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=STDAYIWX"
-      ]
-    },
-    {
-      "id": "asn27",
-      "name": "ASN Kidney Week 2027",
-      "society": "American Society of Nephrology",
-      "specialty": "Nephrology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Kidney disease",
-        "Nephrology research",
-        "QI"
-      ],
-      "url": "https://www.asn-online.org/education/kidneyweek/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "aha27",
-      "name": "AHA Scientific Sessions 2027",
-      "society": "American Heart Association",
-      "specialty": "Cardiology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Cardiovascular research",
-        "Prevention",
-        "Clinical science"
-      ],
-      "url": "https://professional.heart.org/en/meetings",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ash26",
-      "name": "ASH Annual Meeting 2026",
-      "society": "American Society of Hematology",
-      "specialty": "Hematology & Oncology",
-      "start": "2026-12-12",
-      "end": "2026-12-15",
-      "city": "New Orleans, Louisiana",
-      "open": "2026-06-02",
-      "deadline": "2026-08-04",
-      "deadlineTime": "11:59 p.m. Pacific time",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Hematology research",
-        "Clinical trials",
-        "Translational science"
-      ],
-      "url": "https://www.hematology.org/meetings/annual-meeting",
-      "guideline": "https://www.hematology.org/meetings/annual-meeting/abstracts",
-      "evidence": "official",
-      "note": "68th ASH Annual Meeting (2026): December 12–15 in New Orleans. Regular abstracts closed August 4, 2026. These dates do not apply to 2027.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.hematology.org/meetings/annual-meeting",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE official meeting-page review",
-          "source_quote": "68th ASH Annual Meeting and Exposition, taking place December 12–15, 2026"
-        },
-        "end": {
-          "url": "https://www.hematology.org/meetings/annual-meeting",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE official meeting-page review",
-          "source_quote": "December 12–15, 2026"
-        },
-        "open": {
-          "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE official abstract-page review",
-          "source_quote": "Abstract submission site opens June 2, 2026"
-        },
-        "deadline": {
-          "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE official abstract-page review",
-          "source_quote": "Abstract submission deadline August 4, 2026"
-        }
-      }
-    },
-    {
-      "id": "ash27",
-      "name": "ASH Annual Meeting 2027",
-      "society": "American Society of Hematology",
-      "specialty": "Hematology & Oncology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Hematology research",
-        "Clinical trials",
-        "Translational science"
-      ],
-      "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "The official ASH annual-meeting website currently describes the December 12–15, 2026 edition. Meeting and abstract dates for ASH 2027 have not been verified; do not carry 2026 dates forward.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "additionalSources": [
-        "https://www.hematology.org/meetings/annual-meeting"
-      ]
-    },
-    {
-      "id": "acr27",
-      "name": "ACR Convergence 2027",
-      "society": "American College of Rheumatology",
-      "specialty": "Rheumatology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Rheumatology research",
-        "Clinical studies"
-      ],
-      "url": "https://rheumatology.org/annual-meeting",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "chest27",
-      "name": "CHEST Annual Meeting 2027",
-      "society": "American College of Chest Physicians",
-      "specialty": "Pulmonary & Critical Care",
-      "start": "2027-10-24",
-      "end": "2027-10-27",
-      "city": "Vancouver, Canada",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Clinical research",
-        "Case reports",
-        "Pulmonary/critical care"
-      ],
-      "url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting",
-      "guideline": null,
-      "evidence": "official",
-      "note": "CHEST 2027 organizer page lists a December 1, 2026 2:00 p.m. CT CALL FOR EDUCATIONAL TOPICS/SESSION IDEAS, NOT a regular scientific research abstract deadline. The 2027 standard research abstract opening/closing dates remain unverified.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "additionalSources": [
-        "https://info.chestnet.org/chest-call-for-topics"
-      ]
-    },
-    {
-      "id": "idweek27",
-      "name": "IDWeek 2027",
-      "society": "IDSA / Partner Societies",
-      "specialty": "Infectious Diseases",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Infectious disease",
-        "Antimicrobial stewardship",
-        "Clinical research"
-      ],
-      "url": "https://www.idweek.org/abstracts/abstracts/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Do not reuse 2026 submission dates as 2027 deadlines.",
-      "flag": "unannounced",
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
     {
       "id": "aaaa27",
       "name": "AAAAI Annual Meeting 2027",
@@ -820,6 +38,390 @@ window.RISE_DATA = {
         }
       },
       "submissionSource": "https://annualmeeting.aaaai.org/attendee/discovery-program"
+    },
+    {
+      "id": "aaaai-discovery27",
+      "name": "AAAAI Discovery 2027",
+      "society": "American Academy of Allergy, Asthma & Immunology",
+      "specialty": "Allergy & Immunology",
+      "start": "2027-02-18",
+      "end": "2027-02-20",
+      "city": "New Orleans, LA",
+      "open": "2026-06-26",
+      "deadline": "2026-11-02",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://annualmeeting.aaaai.org/",
+      "additionalSources": [
+        "https://annualmeeting.aaaai.org/attendee/full-meeting-timeline"
+      ],
+      "guideline": null,
+      "evidence": "official",
+      "note": "Research-focused AAAAI Discovery conference held February 18–20, 2027 alongside the Annual Meeting. Discovery abstracts opened June 26, 2026 (official meeting timeline image) and closed November 2, 2026.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://annualmeeting.aaaai.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://annualmeeting.aaaai.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://annualmeeting.aaaai.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
+        },
+        "open": {
+          "url": "https://annualmeeting.aaaai.org/UserFiles/image/AMTimeline-Member_v2.png",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE manual review of official 2027 timeline graphic",
+          "source_quote": "June 26, 2026 — Abstract sites open (AM Abstracts, Discovery, Case Reports)",
+          "confidence": "official_visual_timeline",
+          "precision": "day"
+        }
+      }
+    },
+    {
+      "id": "aacap27",
+      "name": "AACAP Annual Meeting 2027",
+      "society": "American Academy of Child and Adolescent Psychiatry",
+      "specialty": "Psychiatry",
+      "start": "2027-10-25",
+      "end": "2027-10-30",
+      "city": "New York, NY",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.aacap.org/AACAP/CME_and_Meetings/Future_Annual_Meetings.aspx",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Established child and adolescent psychiatry meeting; confirmed official 2027 meeting dates. Abstract deadline awaiting confirmation.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aacap.org/AACAP/Your_Career/Early_Career_Psychiatrists/AACAP/CME_and_Meetings/Future_Annual_Meetings.aspx",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.aacap.org/AACAP/Your_Career/Early_Career_Psychiatrists/AACAP/CME_and_Meetings/Future_Annual_Meetings.aspx",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        }
+      }
+    },
+    {
+      "id": "aace27",
+      "name": "AACE Annual Meeting 2027",
+      "society": "American Association of Clinical Endocrinology",
+      "specialty": "Endocrinology",
+      "start": "2027-05-14",
+      "end": "2027-05-16",
+      "city": "San Diego, CA",
+      "open": "2026-08-10",
+      "deadline": "2026-12-01",
+      "deadlineTime": "11:59 PM ET",
+      "limit": 3300,
+      "limitType": "characters_with_spaces",
+      "limitNote": "Abstract body only; structured section limits apply. The society lists 3,300 characters. ",
+      "fee": null,
+      "types": [
+        "Original research",
+        "Clinical trials",
+        "Case study/series",
+        "QI"
+      ],
+      "url": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Domestic resident/fellow abstract travel grants up to $1,000.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "aacr27",
+      "name": "AACR Annual Meeting 2027",
+      "society": "American Association for Cancer Research",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-04-02",
+      "end": "2027-04-07",
+      "city": "Orlando, FL",
+      "open": "2026-09-28",
+      "deadline": "2026-11-10",
+      "deadlineTime": "11:59 PM ET",
+      "types": [
+        "Basic cancer research",
+        "Translational research",
+        "Clinical cancer research",
+        "Population science and prevention"
+      ],
+      "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+      "guideline": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/",
+      "evidence": "official",
+      "note": "Regular abstracts have their own submission deadline. Meeting held at Orange County Convention Center.",
+      "venue": "Orange County Convention Center",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "open": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "deadline": {
+          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "aacrras27",
+      "name": "AACR Special Conference: Targeting RAS 2027",
+      "society": "American Association for Cancer Research",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-01-28",
+      "end": "2027-01-31",
+      "city": "San Diego, CA",
+      "open": null,
+      "deadline": "2026-11-09",
+      "deadlineTime": "1:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Specialized cancer biology and therapeutic research. Regular abstract deadline extended by organizer to November 9, 2026 at 1:00 p.m. U.S. ET; replaces previously displayed November 2 date.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE individual manual review of organizer webpage",
+          "source_quote": "Extended Abstract Submission Deadline: Monday, November 9, 2026, 1 p.m. U.S. ET.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "aad27",
+      "name": "AAD Annual Meeting 2027",
+      "society": "American Academy of Dermatology",
+      "specialty": "Dermatology",
+      "start": "2027-03-19",
+      "end": "2027-03-23",
+      "city": "San Francisco, CA",
+      "open": "2026-06-10",
+      "deadline": "2026-09-02",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Dermatologic research",
+        "Clinical case"
+      ],
+      "url": "https://www.aad.org/member/meetings-education/am27",
+      "guideline": null,
+      "evidence": "official",
+      "note": "The AAD 2027 official meeting page lists its abstract proposal deadline as September 2, 2026. Confirm the cutoff time and category with the organizer. Regular 2027 AAD Annual Meeting abstract programs (Gross & Microscopic, Resident/Fellows, and Poster Exhibit): submissions open 2026-06-10.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aad.org/member/meetings-education/am27",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer page"
+        },
+        "open": {
+          "url": "https://www.aad.org/member/meetings-education/am27/faculty/abstracts",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE official-source opening-date audit",
+          "source_quote": "Submission timeline: June 10 - Sept. 2, 2026, at 11:59 a.m. CST",
+          "confidence": "explicit_statement"
+        }
+      }
+    },
+    {
+      "id": "aaem27",
+      "name": "AAEM Scientific Assembly 2027",
+      "society": "American Academy of Emergency Medicine",
+      "specialty": "Emergency Medicine",
+      "start": "2027-04-25",
+      "end": "2027-04-29",
+      "city": "San Antonio, TX",
+      "open": "2026-08-19",
+      "deadline": "2026-09-23",
+      "deadlineTime": "10:59 PM CT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Clinical case",
+        "Research abstract"
+      ],
+      "url": "https://www.aaem.org/aaem27/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "aafpfmx27",
+      "name": "Family Medicine Experience (FMX) 2027",
+      "society": "American Academy of Family Physicians",
+      "specialty": "Family Medicine",
+      "start": "2027-09-20",
+      "end": "2027-09-24",
+      "city": "San Diego, CA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Family medicine",
+        "Primary care innovations",
+        "Clinical education"
+      ],
+      "url": "https://www.aafp.org/cme-and-events/in-person/fmx/what-is-fmx/faq",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Annual family medicine conference dates verified. Availability of a trainee abstract track for 2027 must be confirmed; not necessarily a general research-abstract meeting.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "aahpm27",
+      "name": "AAHPM Annual Assembly of Hospice and Palliative Care 2027",
+      "society": "American Academy of Hospice and Palliative Medicine and Hospice and Palliative Nurses Association",
+      "specialty": "Palliative Medicine",
+      "start": "2027-03-17",
+      "end": "2027-03-20",
+      "city": "Pittsburgh, PA",
+      "open": "2026-06-15",
+      "deadline": "2026-07-07",
+      "deadlineTime": "11:59 p.m. PT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Palliative research",
+        "Quality improvement"
+      ],
+      "url": "https://aahpm.org/education-events/annual-assembly/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 AAHPM Assembly primary abstract submissions ran June 15–July 7, 2026. Verify eligibility for the selected regular research category.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://aahpm.org/education-events/annual-assembly/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://aahpm.org/education-events/annual-assembly/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Summer Call for Abstracts opens Monday June 15 through Tuesday July 7, 2026; Fall Call for Abstracts Sept 8–28, 2026.",
+          "confidence": "explicit_statement"
+        },
+        "deadline": {
+          "url": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Summer Call for Abstracts opens Monday June 15 through Tuesday July 7, 2026; Fall Call for Abstracts Sept 8–28, 2026.",
+          "confidence": "explicit_statement"
+        }
+      },
+      "submissionSource": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
+      "additionalSources": [
+        "https://aahpm.org/education-events/annual-assembly/fall-abstract-call/"
+      ]
     },
     {
       "id": "aaim27",
@@ -869,6 +471,1027 @@ window.RISE_DATA = {
           "corroborating_sources": [
             "https://www.im.org/"
           ]
+        }
+      }
+    },
+    {
+      "id": "aaimfall27",
+      "name": "AAIM APDIM Fall Meeting 2027",
+      "society": "Alliance for Academic Internal Medicine",
+      "specialty": "Internal Medicine",
+      "start": "2027-09-16",
+      "end": "2027-09-18",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific program / submission categories to confirm"
+      ],
+      "url": "https://im.org/learning/conferences",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://im.org/learning/conferences",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "end": {
+          "url": "https://im.org/learning/conferences",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        }
+      }
+    },
+    {
+      "id": "aaimwinter27",
+      "name": "AAIM APM Winter Meeting 2027",
+      "society": "Alliance for Academic Internal Medicine",
+      "specialty": "Internal Medicine",
+      "start": "2027-02-24",
+      "end": "2027-02-27",
+      "city": "Savannah, GA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific program / submission categories to confirm"
+      ],
+      "url": "https://im.org/learning/conferences",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://im.org/learning/conferences",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "end": {
+          "url": "https://im.org/learning/conferences",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        }
+      }
+    },
+    {
+      "id": "aamc-innovation27",
+      "name": "AAMC Medical Education Innovation Conference 2027",
+      "society": "Association of American Medical Colleges",
+      "specialty": "Medical Education",
+      "start": "2027-04-17",
+      "end": "2027-04-20",
+      "city": "Indianapolis, IN",
+      "open": null,
+      "deadline": "2026-09-15",
+      "deadlineTime": "11:59 p.m. HST",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Medical education research",
+        "Curricular innovation",
+        "Scholarship of teaching and learning"
+      ],
+      "url": "https://www.aamc.org/learn-network/affinity-groups/curriculum-assessment-instruction-research-evaluation-group",
+      "guideline": null,
+      "evidence": "official",
+      "note": "AAMC medical education scholarly meeting; its verified 2027 call includes research, educational innovation, posters, oral talks and workshops. It is not a traditional clinical-specialty basic-science congress. Medical Education Innovation Conference call for abstracts: oral abstracts, posters, workshops, panels and small-group discussions. 2027 abstracts/proposals closed September 15, 2026 at 11:59 p.m. HST.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Research poster",
+        "Innovation poster",
+        "Oral presentation",
+        "Workshop",
+        "Panel"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aamc.org/learn-network/affinity-groups/curriculum-assessment-instruction-research-evaluation-group",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.aamc.org/learn-network/affinity-groups/curriculum-assessment-instruction-research-evaluation-group",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=IAEHWKDF",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "All submissions must be submitted online no later than September 15, 2026 at 11:59pm HST.",
+          "confidence": "explicit_statement"
+        }
+      },
+      "submissionSource": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=IAEHWKDF"
+    },
+    {
+      "id": "aamc-lsl27",
+      "name": "Learn Serve Lead 2027",
+      "society": "Association of American Medical Colleges",
+      "specialty": "Medical Education",
+      "start": "2027-11-12",
+      "end": "2027-11-16",
+      "city": "Washington, DC",
+      "open": null,
+      "deadline": "2026-12-07",
+      "deadlineTime": "11:59 p.m. PT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.aamc.org/learn-network/learn-serve-lead",
+      "guideline": "https://www.aamc.org/about-us/medical-education/scholarship-submissions",
+      "evidence": "official",
+      "note": "Major AAMC academic medicine meeting; primarily education, institutional leadership and networking. Confirm suitability for a specific original-research poster. Learn Serve Lead 2027 medical education call covers research abstracts, innovation abstracts and sessions. Deadline December 7, 2026 at 11:59 p.m. PT; this is not the reviewer-interest deadline.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aamc.org/learn-network/learn-serve-lead",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.aamc.org/learn-network/learn-serve-lead",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://abstractscorecard.com/cfp/submit/login.asp?EventKey=AVDHHBQQ",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Abstracts must be submitted online no later than 11:59pm (PST) on December 7, 2026.",
+          "confidence": "explicit_statement"
+        }
+      },
+      "researchOpportunity": "Academic education and leadership",
+      "submissionSource": "https://abstractscorecard.com/cfp/submit/login.asp?EventKey=AVDHHBQQ"
+    },
+    {
+      "id": "aan27",
+      "name": "AAN Annual Meeting 2027",
+      "society": "American Academy of Neurology",
+      "specialty": "Neurology",
+      "start": "2027-05-01",
+      "end": "2027-05-05",
+      "city": "Washington, DC",
+      "open": "2026-08-27",
+      "deadline": "2026-10-13",
+      "deadlineTime": "11:59 PM CT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": "$25 eligible trainees; $125 members; $225 nonmembers",
+      "types": [
+        "Original research",
+        "Neurology science"
+      ],
+      "url": "https://www.aan.com/events/annual-meeting/abstracts",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Abstracts are presented in person. Confirm regular submission categories and attendance rules with the organizer.",
+      "flag": null,
+      "tags": [
+        "trainee"
+      ],
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "open": {
+          "url": "https://www.aan.com/events/annual-meeting/abstracts",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of official 2027 abstract page",
+          "source_quote": "Abstract submissions will open on August 27, 2026. The submission deadline is October 13, 2026, at 11:59 p.m. CT.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "aans27",
+      "name": "AANS Annual Scientific Meeting 2027",
+      "society": "American Association of Neurological Surgeons",
+      "specialty": "Neurosurgery",
+      "start": "2027-04-09",
+      "end": "2027-04-12",
+      "city": "San Diego, CA",
+      "open": "2026-07-22",
+      "deadline": "2026-10-04",
+      "deadlineTime": "11:59 p.m. ET",
+      "limit": 320,
+      "limitType": "words",
+      "limitNote": "Abstract body maximum 320 words.",
+      "fee": null,
+      "types": [
+        "Original neurosurgical research",
+        "Cerebrovascular",
+        "Spine",
+        "Pediatric neurosurgery",
+        "Neurosurgical oncology"
+      ],
+      "url": "https://annualmeeting.aans.org/abstract-center/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "AANS extended its 2027 Annual Scientific Meeting abstract submission deadline to October 4, 2026, at 11:59 p.m. ET (submission site closed). The main Abstract Center headings and submission FAQ confirm October 4 as the extension; older page copy also mentions October 1 (original close) and October 5, but these are superseded by the posted extension. Scientific abstracts maximum 320 words.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral presentation",
+        "Rapid-fire oral",
+        "Oral paper poster",
+        "ePoster"
+      ],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://annualmeeting.aans.org/abstract-center/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official 2027 meeting audit",
+          "source_quote": "Abstract Center Extension Sunday, October 4, 2026 – CLOSED. Authors may edit before the submission deadline, October 4, 2026, 11:59PM ET.",
+          "confidence": "explicit_final_extension"
+        }
+      },
+      "additionalSources": []
+    },
+    {
+      "id": "aao-hns27",
+      "name": "AAO-HNSF Annual Meeting & OTO EXPO 2027",
+      "society": "American Academy of Otolaryngology–Head and Neck Surgery Foundation",
+      "specialty": "Otolaryngology",
+      "start": "2027-09-18",
+      "end": "2027-09-21",
+      "city": "New Orleans, LA",
+      "open": "2026-10-17",
+      "deadline": "2026-12-16",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "ENT basic science",
+        "Clinical research",
+        "Case reports"
+      ],
+      "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "deadline": {
+          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "aao-oph27",
+      "name": "AAO Annual Meeting 2027 (Ophthalmology)",
+      "society": "American Academy of Ophthalmology",
+      "specialty": "Ophthalmology",
+      "start": "2027-11-12",
+      "end": "2027-11-15",
+      "city": "Las Vegas, NV",
+      "open": "2027-03-11",
+      "deadline": "2027-04-13",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Ophthalmology research"
+      ],
+      "url": "https://www.aao.org/annual-meeting/presenter/dates",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 AAO Paper/Poster and Video abstract window: March 11–April 13, 2027. Instruction Courses use a separate December 10, 2026–January 12, 2027 submission period; do not confuse the two.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aao.org/annual-meeting/past-and-future-meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.aao.org/annual-meeting/past-and-future-meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://www.aao.org/annual-meeting/presenter/dates",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent 2027 organizer webpage manual audit",
+          "source_quote": "AAO 2027 Paper/Poster and Video abstract submitter opens March 11, 2027 and closes April 13, 2027; Instruction Course submitter has separate December 10, 2026 through January 12, 2027 dates.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.aao.org/annual-meeting/presenter/dates",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent 2027 organizer webpage manual audit",
+          "source_quote": "AAO 2027 Paper/Poster and Video abstract submitter opens March 11, 2027 and closes April 13, 2027; Instruction Course submitter has separate December 10, 2026 through January 12, 2027 dates.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "aaos27",
+      "name": "AAOS Annual Meeting 2027",
+      "society": "American Academy of Orthopaedic Surgeons",
+      "specialty": "Orthopedic Surgery",
+      "start": "2027-03-03",
+      "end": "2027-03-06",
+      "city": "Las Vegas, NV",
+      "open": null,
+      "deadline": "2026-06-08",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Orthopedic clinical research",
+        "Orthopaedic education",
+        "Surgical techniques"
+      ],
+      "url": "https://www.aaos.org/annual",
+      "guideline": "https://www.aaos.org/annual/explore-the-program/abstracts-applications/",
+      "evidence": "official",
+      "note": "Regular paper/poster/ePoster submissions closed June 8, 2026. Confirm accepted presentation formats directly with the organizer.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Scientific paper",
+        "Poster",
+        "ePoster"
+      ],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aaos.org/annual/explore-the-program/abstracts-applications/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "start": {
+          "url": "https://www.aaos.org/annual",
+          "checked_at": "2026-10-24",
+          "verified_by": "AAOS 2027 organizer"
+        },
+        "end": {
+          "url": "https://www.aaos.org/annual",
+          "checked_at": "2026-10-24",
+          "verified_by": "AAOS 2027 organizer"
+        }
+      },
+      "additionalSources": []
+    },
+    {
+      "id": "aap27",
+      "name": "AAP National Conference & Exhibition 2027",
+      "society": "American Academy of Pediatrics",
+      "specialty": "Pediatrics",
+      "start": "2027-10-15",
+      "end": "2027-10-19",
+      "city": "Chicago, IL",
+      "open": null,
+      "deadline": "2027-04-09",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Case reports",
+        "Original research",
+        "QI",
+        "Advocacy projects"
+      ],
+      "url": "https://aapexperience.org/call-for-educational-content/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Abstract submission expected to open February 2027 (exact day unannounced); April 9 deadline confirmed. AAP 2027 National Conference abstracts, not the separate plenary session proposal call: opening month 2027-02 confirmed; exact day not published.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "openMonth": "2027-02",
+      "fieldSources": {
+        "openMonth": {
+          "url": "https://aapexperience.org/call-for-educational-content/",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE official-source opening-date audit",
+          "source_quote": "The Call for Abstracts will open February 2027.",
+          "confidence": "official_month_only",
+          "precision": "month"
+        }
+      }
+    },
+    {
+      "id": "aapath27",
+      "name": "AAPath Annual Meeting 2027",
+      "society": "Association for Academic Pathology",
+      "specialty": "Pathology",
+      "start": "2027-07-18",
+      "end": "2027-07-21",
+      "city": "San Francisco, CA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Pathology education",
+        "Laboratory research",
+        "Academic pathology"
+      ],
+      "url": "https://www.apcprods.org/m-future-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Annual meeting date and location confirmed; abstract cycle not yet verified.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "aapm27",
+      "name": "AAPM Annual Meeting & Exhibition 2027",
+      "society": "American Association of Physicists in Medicine",
+      "specialty": "Medical Physics",
+      "start": "2027-07-25",
+      "end": "2027-07-28",
+      "city": "Columbus, OH",
+      "open": "2026-11-10",
+      "deadline": "2027-01-26",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Therapy physics",
+        "Imaging physics",
+        "Clinical and translational research"
+      ],
+      "url": "https://site.aapm.org/annual-meeting/2027",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Abstract site opens Nov 10, 2026; deadline Jan 26, 2027. Note: earlier Sep/Oct dates concern session proposals (RFP), not abstract submissions.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "aapmr27",
+      "name": "AAPM&R Annual Assembly 2027",
+      "society": "American Academy of Physical Medicine and Rehabilitation",
+      "specialty": "Physical Medicine & Rehabilitation",
+      "start": "2027-11-10",
+      "end": "2027-11-13",
+      "city": "Phoenix, AZ",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Rehabilitation medicine",
+        "Pain medicine",
+        "Clinical research"
+      ],
+      "url": "https://www.aapmr.org/education/live-events/calendar/future-and-past-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society future-meetings schedule; abstract call not yet confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "aapmspring27",
+      "name": "AAPM Spring Clinical Meeting 2027",
+      "society": "American Association of Physicists in Medicine",
+      "specialty": "Medical Physics",
+      "start": "2027-04-10",
+      "end": "2027-04-13",
+      "city": "Denver, CO",
+      "open": "2026-08-05",
+      "deadline": "2026-09-16",
+      "deadlineTime": "8:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://site.aapm.org/spring-clinical/2027",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Clinical case presentations, medical physics research and best poster competition.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://site.aapm.org/spring-clinical/2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://site.aapm.org/spring-clinical/2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "open": {
+          "url": "https://site.aapm.org/spring-clinical/2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://site.aapm.org/spring-clinical/2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aapmsummer27",
+      "name": "AAPM Summer School 2027",
+      "society": "American Association of Physicists in Medicine",
+      "specialty": "Medical Physics",
+      "start": "2027-06-24",
+      "end": "2027-06-29",
+      "city": "Boston, MA",
+      "open": "",
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://site.aapm.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Educational summer school; verify whether it accepts original scientific abstracts.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://site.aapm.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://site.aapm.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aasld27",
+      "name": "AASLD The Liver Meeting 2027",
+      "society": "American Association for the Study of Liver Diseases",
+      "specialty": "Gastroenterology",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "types": [
+        "Hepatology",
+        "Liver disease",
+        "Clinical research"
+      ],
+      "url": "https://www.aasld.org/the-liver-meeting",
+      "evidence": "unannounced",
+      "flag": "unannounced",
+      "note": "Flagship hepatology research meeting. No verified 2027 meeting or abstract dates; 2026 dates must not be carried forward.",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {}
+    },
+    {
+      "id": "aats27",
+      "name": "AATS 107th Annual Meeting 2027",
+      "society": "American Association for Thoracic Surgery",
+      "specialty": "Cardiothoracic Surgery",
+      "start": "2027-05-01",
+      "end": "2027-05-04",
+      "city": "Los Angeles, CA",
+      "open": null,
+      "deadline": "2026-10-13",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://events.aats.org/am27",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Regular abstract and surgical case-video deadline October 13, 2026.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://events.aats.org/am27",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://events.aats.org/am27",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://events.aats.org/am27",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aatsmitral27",
+      "name": "AATS Mitral Conclave 2027",
+      "society": "American Association for Thoracic Surgery",
+      "specialty": "Cardiothoracic Surgery",
+      "start": "2027-12-16",
+      "end": "2027-12-17",
+      "city": "New York, NY",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.aats.org/all-future-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aats.org/all-future-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.aats.org/all-future-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "aatsonc27",
+      "name": "AATS International Thoracic Surgical Oncology Summit 2027",
+      "society": "American Association for Thoracic Surgery",
+      "specialty": "Cardiothoracic Surgery",
+      "start": "2027-09-17",
+      "end": "2027-09-18",
+      "city": "New York, NY",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.aats.org/all-future-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.aats.org/all-future-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.aats.org/all-future-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "abs27",
+      "name": "American Brachytherapy Society Annual Conference 2027",
+      "society": "American Brachytherapy Society",
+      "specialty": "Radiation Oncology",
+      "start": "2027-06-23",
+      "end": "2027-06-26",
+      "city": "Tampa, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Brachytherapy",
+        "Interventional radiation oncology"
+      ],
+      "url": "https://www.americanbrachytherapy.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates and Tampa location confirmed by ABS; abstract window not verified.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "acaai27",
+      "name": "ACAAI Annual Scientific Meeting 2027",
+      "society": "American College of Allergy, Asthma & Immunology",
+      "specialty": "Allergy & Immunology",
+      "start": "2027-11-11",
+      "end": "2027-11-15",
+      "city": "Nashville, TN",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://annualmeeting.acaai.org/2027/proposal_submissions.cfm",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://annualmeeting.acaai.org/2027/proposal_submissions.cfm",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://annualmeeting.acaai.org/2027/proposal_submissions.cfm",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        }
+      }
+    },
+    {
+      "id": "acc27",
+      "name": "ACC.27 / World Congress of Cardiology",
+      "society": "American College of Cardiology",
+      "specialty": "Cardiology",
+      "start": "2027-04-10",
+      "end": "2027-04-12",
+      "city": "Houston, TX",
+      "open": "2026-08-25",
+      "deadline": "2026-10-08",
+      "deadlineTime": "1:00 PM ET",
+      "limit": 1900,
+      "limitType": "characters_no_spaces",
+      "limitNote": "Per abstract/case; figures/tables may affect count.",
+      "fee": null,
+      "types": [
+        "Original research",
+        "Complex clinical case",
+        "CV team abstracts"
+      ],
+      "url": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts",
+      "guideline": "https://accscientificsession.acc.org/Information-Pages/Frequently-Asked-Questions/Abstract-and-Case-Submission",
+      "evidence": "official",
+      "note": "DATE CONFLICT: ACC.27's official abstract submission page lists October 8, 2026 at 1 p.m. ET, while its FAQ and downloadable submission policies list October 6, 2026 at 1 p.m. ET. The navigator displays October 8 because it is on the current submission-specific page, but this remains disputed; verify the authoritative deadline with the organizer. Submissions are now closed.",
+      "flag": "conflict",
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Moderated poster",
+        "Traditional poster"
+      ],
+      "presentationPolicy": "The ACC program considers eligible abstracts for oral, moderated poster, and traditional poster placement; presenters are not guaranteed their preferred format.",
+      "presentationSource": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://accscientificsession.acc.org/Submit-Your-Science/Abstracts",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official-source date conflict audit",
+          "source_quote": "Submission Dates: Aug. 25 - Oct. 8 at 1 p.m. ET on current abstract page; official FAQ states October 6, 2026.",
+          "confidence": "disputed_between_official_pages",
+          "corroborating_sources": [
+            "https://accscientificsession.acc.org/Information-Pages/Frequently-Asked-Questions/Abstract-and-Case-Submission"
+          ]
+        }
+      }
+    },
+    {
+      "id": "acep27",
+      "name": "ACEP Scientific Assembly 2027",
+      "society": "American College of Emergency Physicians",
+      "specialty": "Emergency Medicine",
+      "start": "2027-10-25",
+      "end": "2027-10-28",
+      "city": "Boston, MA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.acep.org/SA",
+      "guideline": null,
+      "evidence": "official",
+      "note": "ACEP national emergency medicine meeting; official 2027 dates verified. Confirm research presentation categories and deadlines.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acep.org/ems/meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.acep.org/ems/meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        }
+      }
+    },
+    {
+      "id": "acg27",
+      "name": "ACG Annual Scientific Meeting 2027",
+      "society": "American College of Gastroenterology",
+      "specialty": "Gastroenterology",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "GI clinical research",
+        "Clinical case reports"
+      ],
+      "url": "https://acgmeetings.gi.org/abstracts-closed/",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "The official ACG 2026 submission portal expressly states the ACG 2027 submission period will OPEN SPRING 2027 and CLOSE EARLY JUNE 2027. Exact dates are not published. The March 2–June 1 calendar on the ACG abstract page is for 2026, not 2027; do not copy it.",
+      "flag": "unannounced",
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "additionalSources": [
+        "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=STDAYIWX"
+      ]
+    },
+    {
+      "id": "acgme-conclave28",
+      "name": "ACGME Annual Educational Conference 2028",
+      "society": "Accreditation Council for Graduate Medical Education",
+      "specialty": "Medical Education",
+      "start": "2028-02-24",
+      "end": "2028-02-26",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/future-annual-educational-conference-dates-and-locations/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2028 ACGME Annual Educational Conference, February 24-26, Orlando, Florida. Regular abstract submission schedule not yet published.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/future-annual-educational-conference-dates-and-locations/",
+          "checked_at": "2026-10-24",
+          "verified_by": "ACGME published future conference calendar"
+        },
+        "end": {
+          "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/future-annual-educational-conference-dates-and-locations/",
+          "checked_at": "2026-10-24",
+          "verified_by": "ACGME published future conference calendar"
         }
       }
     },
@@ -932,75 +1555,63 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "saem27",
-      "name": "SAEM Annual Meeting 2027",
-      "society": "Society for Academic Emergency Medicine",
-      "specialty": "Emergency Medicine",
-      "start": "2027-05-18",
-      "end": "2027-05-21",
-      "city": "San Francisco, CA",
-      "open": "2026-11-02",
-      "deadline": "2027-01-05",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Original research",
-        "Clinical images",
-        "Innovations",
-        "Medical education"
-      ],
-      "url": "https://www.saem.org/meetings-and-events/annual-meeting/annual-meeting-navigation/education/submission-deadlines",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Clinical images have a separate January 12, 2027 deadline.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "aap27",
-      "name": "AAP National Conference & Exhibition 2027",
-      "society": "American Academy of Pediatrics",
-      "specialty": "Pediatrics",
-      "start": "2027-10-15",
-      "end": "2027-10-19",
-      "city": "Chicago, IL",
+      "id": "acnp27",
+      "name": "ACNP Annual Meeting 2027",
+      "society": "American College of Neuropsychopharmacology",
+      "specialty": "Psychiatry",
+      "start": "2027-01-10",
+      "end": "2027-01-13",
+      "city": "San Diego, CA",
       "open": null,
-      "deadline": "2027-04-09",
-      "deadlineTime": null,
+      "openMonth": "2026-06",
+      "deadline": "2026-08-27",
+      "deadlineTime": "5:00 p.m. CT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [
-        "Case reports",
-        "Original research",
-        "QI",
-        "Advocacy projects"
-      ],
-      "url": "https://aapexperience.org/call-for-educational-content/",
+      "types": [],
+      "url": "https://acnp.org/annual-meeting/",
       "guideline": null,
       "evidence": "official",
-      "note": "Abstract submission expected to open February 2027 (exact day unannounced); April 9 deadline confirmed. AAP 2027 National Conference abstracts, not the separate plenary session proposal call: opening month 2027-02 confirmed; exact day not published.",
+      "note": "Highly prestigious psychopharmacology meeting, but ACNP nonmembers require an invitation to attend. Not generally open for trainee registration. The ACNP 2027 general poster deadline was August 27, 2026 at 5:00 p.m. CT. Separate Promising Targets submissions open October 14, 2026, and abstracts are due October 28, 2026 at 5:00 p.m. CT; that is NOT an extension of general poster submissions. Attendance/invitation requirements apply.",
       "flag": null,
-      "tags": null,
+      "tags": [
+        "invitation-only"
+      ],
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
-      "openMonth": "2027-02",
       "fieldSources": {
+        "start": {
+          "url": "https://acnp.org/annual-meeting/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://acnp.org/annual-meeting/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://acnp.org/annual-meeting/submissions/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "The final deadline to submit was August 27, 2026 at 5:00pm Central time.",
+          "confidence": "explicit_statement"
+        },
         "openMonth": {
-          "url": "https://aapexperience.org/call-for-educational-content/",
+          "url": "https://acnp.org/annual-meeting/submissions/",
           "checked_at": "2026-10-13",
-          "verified_by": "RISE official-source opening-date audit",
-          "source_quote": "The Call for Abstracts will open February 2027.",
-          "confidence": "official_month_only",
+          "verified_by": "RISE official-source review",
+          "source_quote": "The College started accepting poster abstracts for consideration for the January 2027 Annual Meeting in June.",
           "precision": "month"
         }
-      }
+      },
+      "researchOpportunity": "Restricted participation",
+      "accessRequirement": "Nonmembers require invitation from an ACNP member. Consult organizer's invitation policies before planning a submission or trip.",
+      "submissionSource": "https://acnp.org/annual-meeting/submissions/"
     },
     {
       "id": "acog27",
@@ -1036,66 +1647,13 @@ window.RISE_DATA = {
       ]
     },
     {
-      "id": "apa27",
-      "name": "APA Annual Meeting 2027",
-      "society": "American Psychiatric Association",
-      "specialty": "Psychiatry",
-      "start": "2027-05-01",
-      "end": "2027-05-05",
-      "city": "New York, NY",
-      "open": "2026-11-12",
-      "deadline": "2027-01-08",
-      "deadlineTime": "5:00 PM ET (New Research posters)",
-      "limit": 3000,
-      "limitType": "characters_with_spaces",
-      "limitNote": "New Research poster category; regular general/poster session deadline was Sept 10, 2026.",
-      "fee": null,
-      "types": [
-        "New Research poster",
-        "Research",
-        "Clinical trials"
-      ],
-      "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
-      "guideline": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
-      "evidence": "official",
-      "note": "Dates shown are the APA 2027 New Research poster submission window (November 12, 2026–January 8, 2027, 5:00 p.m. ET). General sessions, courses, and other poster categories had an earlier September 10, 2026, 5:00 p.m. ET deadline. Clinical Trials Plenary has a separate January 8 cutoff at 2:00 p.m. ET. These are distinct submission tracks; verify category eligibility on the official FAQ.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "clinicalTrialsDeadline": "2027-01-08",
-      "clinicalTrialsDeadlineTime": "2:00 PM ET",
-      "clinicalTrialsSource": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
-      "fieldSources": {
-        "clinicalTrialsDeadline": {
-          "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE direct official-site review"
-        },
-        "open": {
-          "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE manual review of official 2027 APA FAQ",
-          "source_quote": "New Research poster submission site opens November 12, 2026 and closes January 8, 2027 at 5:00 p.m. ET.",
-          "confidence": "direct_official_edition_statement"
-        },
-        "deadline": {
-          "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE manual review of official 2027 APA FAQ",
-          "source_quote": "New Research poster submission site opens November 12, 2026 and closes January 8, 2027 at 5:00 p.m. ET.",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "rsna27",
-      "name": "RSNA Annual Meeting 2027",
-      "society": "Radiological Society of North America",
-      "specialty": "Radiology",
-      "start": "2027-11-14",
-      "end": "2027-11-18",
-      "city": "Chicago, IL",
+      "id": "acp-fl-next",
+      "name": "ACP Florida Chapter Annual Scientific Meeting — Next Edition",
+      "society": "American College of Physicians — Florida Chapter",
+      "specialty": "Internal Medicine",
+      "start": null,
+      "end": null,
+      "city": "Florida (location not announced)",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -1104,229 +1662,117 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [
-        "Scientific research",
-        "Education exhibits",
-        "QI"
+        "Resident scientific posters and clinical vignettes (historical; 2027 rules pending)"
       ],
-      "url": "https://www.rsna.org/annual-meeting/abstract-submission",
+      "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings",
       "guideline": null,
-      "evidence": "official",
-      "note": "2027 submission deadline not yet published. Meeting date verified from RSNA future meetings.",
+      "evidence": "unannounced",
+      "note": "Florida regional meeting. Recurring Florida Chapter meeting; 2027 dates and regular abstract deadline are not yet published. No prior-year deadline carried over.",
       "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "astro27",
-      "name": "ASTRO Annual Meeting 2027",
-      "society": "American Society for Radiation Oncology",
-      "specialty": "Radiation Oncology",
-      "start": "2027-09-18",
-      "end": "2027-09-22",
-      "city": "Chicago, IL",
-      "open": "2026-12-02",
-      "deadline": "2027-02-24",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Radiation oncology research",
-        "Clinical trials",
-        "QI"
+      "tags": [
+        "florida-regional",
+        "trainee"
       ],
-      "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/am-exhibitors/general-information/future-annual-meeting",
-      "guideline": null,
-      "evidence": "official",
-      "note": "ASTRO's October 14, 2026 announcement confirms the 2027 Annual Meeting regular abstract window: December 2, 2026 to February 24, 2027. Other 2027 symposia have separate submissions.",
-      "flag": null,
-      "tags": null,
+      "level": "regional",
+      "region": "Florida",
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
-      "submissionSource": "https://www.astro.org/news-and-publications/astrogram/2026/astrogram_101426",
-      "fieldSources": {
-        "open": {
-          "url": "https://www.astro.org/ASTRO/media/ASTRO/Meetings%20and%20Education/PDFs/AM26/AM26-Daily-News_Tuesday-1.pdf",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE review of official 2027 organizer pages",
-          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
-        },
-        "deadline": {
-          "url": "https://www.astro.org/news-and-publications/astrogram/2026/astrogram_101426",
-          "checked_at": "2026-10-25",
-          "verified_by": "Official ASTRO newsletter published October 14, 2026",
-          "source_quote": "Abstracts submissions: December 2, 2026 – February 24, 2027"
-        }
-      }
+      "fieldSources": {}
     },
     {
-      "id": "acs27",
-      "name": "ACS Clinical Congress 2027",
-      "society": "American College of Surgeons",
-      "specialty": "Surgery",
-      "start": "2027-10-16",
-      "end": "2027-10-19",
-      "city": "San Diego, CA",
+      "id": "acp-fl26",
+      "name": "ACP Florida Chapter Annual Scientific Meeting 2026",
+      "society": "American College of Physicians — Florida Chapter",
+      "specialty": "Internal Medicine",
+      "start": "2026-10-23",
+      "end": "2026-10-25",
+      "city": "Fort Lauderdale, FL",
       "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Surgical research",
-        "Clinical research",
-        "QI"
-      ],
-      "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/clinical-congress-2027/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Abstract call expected in December 2026; not the same as session proposal deadline October 14.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "aans27",
-      "name": "AANS Annual Scientific Meeting 2027",
-      "society": "American Association of Neurological Surgeons",
-      "specialty": "Neurosurgery",
-      "start": "2027-04-09",
-      "end": "2027-04-12",
-      "city": "San Diego, CA",
-      "open": "2026-07-22",
-      "deadline": "2026-10-04",
-      "deadlineTime": "11:59 p.m. ET",
-      "limit": 320,
-      "limitType": "words",
-      "limitNote": "Abstract body maximum 320 words.",
-      "fee": null,
-      "types": [
-        "Original neurosurgical research",
-        "Cerebrovascular",
-        "Spine",
-        "Pediatric neurosurgery",
-        "Neurosurgical oncology"
-      ],
-      "url": "https://annualmeeting.aans.org/abstract-center/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "AANS extended its 2027 Annual Scientific Meeting abstract submission deadline to October 4, 2026, at 11:59 p.m. ET (submission site closed). The main Abstract Center headings and submission FAQ confirm October 4 as the extension; older page copy also mentions October 1 (original close) and October 5, but these are superseded by the posted extension. Scientific abstracts maximum 320 words.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral presentation",
-        "Rapid-fire oral",
-        "Oral paper poster",
-        "ePoster"
-      ],
-      "fieldSources": {
-        "deadline": {
-          "url": "https://annualmeeting.aans.org/abstract-center/",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE official 2027 meeting audit",
-          "source_quote": "Abstract Center Extension Sunday, October 4, 2026 – CLOSED. Authors may edit before the submission deadline, October 4, 2026, 11:59PM ET.",
-          "confidence": "explicit_final_extension"
-        }
-      },
-      "additionalSources": []
-    },
-    {
-      "id": "aaem27",
-      "name": "AAEM Scientific Assembly 2027",
-      "society": "American Academy of Emergency Medicine",
-      "specialty": "Emergency Medicine",
-      "start": "2027-04-25",
-      "end": "2027-04-29",
-      "city": "San Antonio, TX",
-      "open": "2026-08-19",
-      "deadline": "2026-09-23",
-      "deadlineTime": "10:59 PM CT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Clinical case",
-        "Research abstract"
-      ],
-      "url": "https://www.aaem.org/aaem27/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ascrs27",
-      "name": "ASCRS Tripartite Meeting 2027",
-      "society": "American Society of Colon and Rectal Surgeons",
-      "specialty": "Surgery",
-      "start": "2027-05-22",
-      "end": "2027-05-25",
-      "city": "New Orleans, LA",
-      "open": "2026-05-08",
-      "deadline": "2026-10-13",
+      "deadline": "2026-08-23",
       "deadlineTime": "11:59 PM ET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
-      "fee": "$50 per abstract",
+      "fee": null,
       "types": [
-        "Colorectal surgery research"
+        "Resident clinical vignette",
+        "Research poster competition",
+        "Doctor's Dilemma"
       ],
-      "url": "https://ascrsasm2027.eventscribe.net/aaStatic.asp?SFP=UUdZUlFHQ1pAMjYxMTY",
+      "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
       "guideline": null,
       "evidence": "official",
-      "note": "Check official regular abstract submission instructions and eligibility.",
+      "note": "Florida regional meeting. Florida resident and student abstract competition closed August 23, 2026; meeting October 23–25. Do not assume a 2027 meeting date.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "acp27",
+      "name": "ACP Internal Medicine Meeting 2027 & National Abstract Competitions",
+      "society": "American College of Physicians",
+      "specialty": "Internal Medicine",
+      "start": "2027-04-15",
+      "end": "2027-04-17",
+      "city": "Los Angeles, CA",
+      "open": "2026-10-01",
+      "deadline": "2026-11-12",
+      "deadlineTime": "3:00 PM ET",
+      "limit": 500,
+      "limitType": "words",
+      "limitNote": "Abstract body only; title, author information and references excluded.",
+      "fee": "$45 per abstract; ACP membership required",
+      "types": [
+        "Clinical vignette",
+        "Clinical research",
+        "Basic research",
+        "QI/patient safety",
+        "High-value care",
+        "Physician well-being"
+      ],
+      "url": "https://annualmeeting.acponline.org/educational-program/abstract-competition",
+      "guideline": "https://www.acponline.org/membership/residents/competitions-awards/acp-national-abstract-competitions/acp-national-abstract-competition-faqs",
+      "evidence": "official",
+      "note": "ACP national competition includes research and clinical vignettes; check chapter competition rules separately.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": []
     },
     {
-      "id": "uscap27",
-      "name": "USCAP Annual Meeting 2027",
-      "society": "United States and Canadian Academy of Pathology",
-      "specialty": "Pathology",
-      "start": "2027-03-13",
-      "end": "2027-03-18",
-      "city": "Vancouver, Canada",
-      "open": null,
-      "deadline": "2026-09-24",
-      "deadlineTime": "11:00 AM PT / 2:00 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": "$50 per abstract",
-      "types": [
-        "Original research",
-        "Pathology science"
-      ],
-      "url": "https://uscap.org/abstracts/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Abstract deadline has passed. Previously presented/published work is restricted.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "cap27",
-      "name": "CAP Annual Meeting 2027",
-      "society": "College of American Pathologists",
-      "specialty": "Pathology",
-      "start": "2027-09-09",
-      "end": "2027-09-12",
-      "city": "Chicago, IL",
+      "id": "acpm-pm27",
+      "name": "ACPM Preventive Medicine (PM2027) Conference",
+      "society": "American College of Preventive Medicine",
+      "specialty": "Preventive Medicine",
+      "start": "2027-05-03",
+      "end": "2027-05-06",
+      "city": "San Diego, CA",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -1335,68 +1781,37 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [
-        "Pathology research",
-        "Laboratory quality"
+        "Scientific research abstract submissions (check official call)"
       ],
-      "url": "https://www.cap.org/event/cap27-college-of-american-pathologist-annual-meeting/",
+      "url": "https://acpm.org/membership-partners/awards-scholarships/",
       "guideline": null,
       "evidence": "official",
-      "note": "Meeting confirmed; 2027 abstract call has not been confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "aad27",
-      "name": "AAD Annual Meeting 2027",
-      "society": "American Academy of Dermatology",
-      "specialty": "Dermatology",
-      "start": "2027-03-19",
-      "end": "2027-03-23",
-      "city": "San Francisco, CA",
-      "open": "2026-06-10",
-      "deadline": "2026-09-02",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Dermatologic research",
-        "Clinical case"
-      ],
-      "url": "https://www.aad.org/member/meetings-education/am27",
-      "guideline": null,
-      "evidence": "official",
-      "note": "The AAD 2027 official meeting page lists its abstract proposal deadline as September 2, 2026. Confirm the cutoff time and category with the organizer. Regular 2027 AAD Annual Meeting abstract programs (Gross & Microscopic, Resident/Fellows, and Poster Exhibit): submissions open 2026-06-10.",
+      "note": "Meeting dates verified; abstract deadline not yet verified.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
-        "deadline": {
-          "url": "https://www.aad.org/member/meetings-education/am27",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer page"
+        "start": {
+          "url": "https://acpm.org/membership-partners/awards-scholarships/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
         },
-        "open": {
-          "url": "https://www.aad.org/member/meetings-education/am27/faculty/abstracts",
-          "checked_at": "2026-10-13",
-          "verified_by": "RISE official-source opening-date audit",
-          "source_quote": "Submission timeline: June 10 - Sept. 2, 2026, at 11:59 a.m. CST",
-          "confidence": "explicit_statement"
+        "end": {
+          "url": "https://acpm.org/membership-partners/awards-scholarships/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer"
         }
       }
     },
     {
-      "id": "aapath27",
-      "name": "AAPath Annual Meeting 2027",
-      "society": "Association for Academic Pathology",
-      "specialty": "Pathology",
-      "start": "2027-07-18",
-      "end": "2027-07-21",
-      "city": "San Francisco, CA",
+      "id": "acr27",
+      "name": "ACR Convergence 2027",
+      "society": "American College of Rheumatology",
+      "specialty": "Rheumatology",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -1405,15 +1820,14 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [
-        "Pathology education",
-        "Laboratory research",
-        "Academic pathology"
+        "Rheumatology research",
+        "Clinical studies"
       ],
-      "url": "https://www.apcprods.org/m-future-meetings",
+      "url": "https://rheumatology.org/annual-meeting",
       "guideline": null,
-      "evidence": "official",
-      "note": "Annual meeting date and location confirmed; abstract cycle not yet verified.",
-      "flag": null,
+      "evidence": "unannounced",
+      "note": "",
+      "flag": "unannounced",
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": []
@@ -1447,13 +1861,13 @@ window.RISE_DATA = {
       "presentationFormats": []
     },
     {
-      "id": "abs27",
-      "name": "American Brachytherapy Society Annual Conference 2027",
-      "society": "American Brachytherapy Society",
-      "specialty": "Radiation Oncology",
-      "start": "2027-06-23",
-      "end": "2027-06-26",
-      "city": "Tampa, FL",
+      "id": "acs27",
+      "name": "ACS Clinical Congress 2027",
+      "society": "American College of Surgeons",
+      "specialty": "Surgery",
+      "start": "2027-10-16",
+      "end": "2027-10-19",
+      "city": "San Diego, CA",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -1462,275 +1876,285 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [
-        "Brachytherapy",
-        "Interventional radiation oncology"
+        "Surgical research",
+        "Clinical research",
+        "QI"
       ],
-      "url": "https://www.americanbrachytherapy.org/",
+      "url": "https://www.facs.org/for-medical-professionals/conferences-and-meetings/clinical-congress-2027/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates and Tampa location confirmed by ABS; abstract window not verified.",
+      "note": "Abstract call expected in December 2026; not the same as session proposal deadline October 14.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": []
     },
     {
-      "id": "estro27",
-      "name": "ESTRO Congress 2027",
-      "society": "European Society for Radiotherapy and Oncology",
-      "specialty": "Radiation Oncology",
-      "start": "2027-05-21",
-      "end": "2027-05-25",
-      "city": "Milan, Italy",
-      "open": null,
-      "deadline": "2026-11-11",
-      "deadlineTime": "11:59 PM CET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Radiation oncology",
-        "Medical physics",
-        "Radiobiology"
-      ],
-      "url": "https://www.estro.org/Congresses/ESTRO-2027-%281%29?viewmode=0",
-      "guideline": null,
-      "evidence": "official",
-      "note": "International meeting. Official regular abstract deadline November 11, 2026.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "aapm27",
-      "name": "AAPM Annual Meeting & Exhibition 2027",
-      "society": "American Association of Physicists in Medicine",
-      "specialty": "Medical Physics",
-      "start": "2027-07-25",
-      "end": "2027-07-28",
-      "city": "Columbus, OH",
-      "open": "2026-11-10",
-      "deadline": "2027-01-26",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Therapy physics",
-        "Imaging physics",
-        "Clinical and translational research"
-      ],
-      "url": "https://site.aapm.org/annual-meeting/2027",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Abstract site opens Nov 10, 2026; deadline Jan 26, 2027. Note: earlier Sep/Oct dates concern session proposals (RFP), not abstract submissions.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "hrs27",
-      "name": "Heart Rhythm 2027",
-      "society": "Heart Rhythm Society",
-      "specialty": "Cardiology",
-      "start": "2027-05-13",
-      "end": "2027-05-16",
-      "city": "San Francisco, CA",
-      "open": null,
-      "deadline": "2026-12-16",
-      "deadlineTime": "11:59 PM EST",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Cardiac electrophysiology",
-        "Device therapy",
-        "Arrhythmia research"
-      ],
-      "url": "https://heartrhythm.com/present",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 HRS Scientific Abstracts deadline December 16, 2026, 11:59 p.m. Eastern Standard Time; open as of November 2, 2026, but the exact opening date is not published on the linked organizer page. Reviewer application closes November 15, a separate process.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "deadline": {
-          "url": "https://heartrhythm.com/present",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE independent 2027 organizer webpage manual audit",
-          "source_quote": "Call for Scientific Abstracts: submissions are now open; deadline December 16, 2026 at 11:59 PM EST; official meeting May 13–16, 2027. No exact opening day provided.",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "sccm27",
-      "name": "SCCM Critical Care Congress 2027",
-      "society": "Society of Critical Care Medicine",
-      "specialty": "Pulmonary & Critical Care",
-      "start": "2027-03-14",
-      "end": "2027-03-16",
-      "city": "San Diego, CA",
-      "open": "2026-06-01",
-      "deadline": "2026-09-03",
-      "deadlineTime": "11:59 p.m. CT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Critical care research",
-        "Case reports",
-        "ICU QI"
-      ],
-      "url": "https://www.sccm.org/annual-congress/future-congress-dates",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Congress 14–16 March; pre-congress programs 12–13 March. Abstract deadline not confirmed in this review. 2027 Critical Care Congress regular abstract and case report submissions opened June 1 and closed September 3, 2026 at 11:59 p.m. CT.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "submissionSource": "https://www.sccm.org/annual-congress/abstracts-and-case-reports",
-      "fieldSources": {
-        "open": {
-          "url": "https://www.sccm.org/annual-congress/abstracts-and-case-reports",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "June 1, 2026: Submission period opens. September 3, 2026: Submission period closes at 11:59 p.m. Central Time.",
-          "confidence": "explicit_statement"
-        },
-        "deadline": {
-          "url": "https://www.sccm.org/annual-congress/abstracts-and-case-reports",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "June 1, 2026: Submission period opens. September 3, 2026: Submission period closes at 11:59 p.m. Central Time.",
-          "confidence": "explicit_statement"
-        }
-      }
-    },
-    {
-      "id": "sgo27",
-      "name": "SGO Annual Meeting on Gynecologic Cancer 2027",
-      "society": "Society of Gynecologic Oncology",
-      "specialty": "Obstetrics & Gynecology",
-      "start": "2027-03-19",
-      "end": "2027-03-22",
+      "id": "actrims27",
+      "name": "ACTRIMS Forum 2027",
+      "society": "Americas Committee for Treatment and Research in Multiple Sclerosis",
+      "specialty": "Neurology",
+      "start": "2027-03-11",
+      "end": "2027-03-13",
       "city": "Phoenix, AZ",
-      "open": "2026-07-13",
-      "deadline": "2026-09-21",
-      "deadlineTime": "11:59 PM CT",
-      "limit": null,
-      "limitType": null,
+      "open": "2026-08-03",
+      "deadline": "2026-11-06",
+      "deadlineTime": null,
+      "limit": 2500,
+      "limitType": "characters_no_spaces",
       "limitNote": null,
       "fee": null,
       "types": [
-        "Gynecologic oncology research",
-        "Trials in progress",
-        "Surgical films"
+        "MS and neuroimmunology",
+        "Clinical research",
+        "Case series"
       ],
-      "url": "https://www.sgo.org/events/abstracts/",
+      "url": "https://www.forum.actrims.org/submit",
       "guideline": null,
       "evidence": "official",
-      "note": "Official extended regular abstract deadline September 21, 2026. Verify submission categories with the organizer.",
+      "note": "Peer-reviewed MS/neuroimmunology scientific meeting; regular abstracts due November 6, 2026.",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": true,
+      "submissionCategoriesVerified": false,
       "presentationFormats": [
         "Oral",
-        "Poster"
+        "Poster",
+        "ePoster"
       ],
       "fieldSources": {
+        "start": {
+          "url": "https://www.forum.actrims.org/submit",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.forum.actrims.org/submit",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://www.forum.actrims.org/submit",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
+        },
         "deadline": {
-          "url": "https://www.sgo.org/events/abstracts/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
-          "source_quote": "SGO 2027: Deadline Extended: Submit Your Abstract by Monday, September 21, 2026, at 11:59 p.m. CT.",
-          "confidence": "direct_official_edition_statement"
+          "url": "https://www.forum.actrims.org/submit",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
         }
       }
     },
     {
-      "id": "pas27",
-      "name": "Pediatric Academic Societies Meeting 2027",
-      "society": "Pediatric Academic Societies",
-      "specialty": "Pediatrics",
-      "start": "2027-04-30",
-      "end": "2027-05-03",
-      "city": "Minneapolis, MN",
-      "open": "2026-08-12",
-      "deadline": "2026-11-02",
-      "deadlineTime": "11:59 PM CT",
+      "id": "ada27",
+      "name": "ADA Scientific Sessions 2027",
+      "society": "American Diabetes Association",
+      "specialty": "Endocrinology",
+      "start": "2027-06-18",
+      "end": "2027-06-21",
+      "city": "Washington, DC",
+      "open": "2026-09-28",
+      "deadline": "2027-01-05",
+      "deadlineTime": "5:00 PM ET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
-      "fee": "$100 per abstract",
+      "fee": "$90 regular abstract processing fee",
       "types": [
-        "Pediatric research",
-        "Trainee ongoing project posters"
+        "Research",
+        "Clinical science",
+        "Translational science"
       ],
-      "url": "https://www.pas-meeting.org/2027-key-dates/",
-      "guideline": "https://www.pas-meeting.org/2027-abstracts/",
+      "url": "https://professional.diabetes.org/scientific-sessions/abstracts/abstracts-faq",
+      "guideline": null,
       "evidence": "official",
-      "note": "PAS official key dates list Apr 30–May 3, 2027; some partner listings include April 29 preconference events. Oral/poster placement determined by program committee.",
+      "note": "Confirm the standard research submission categories with the organizer.",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Platform",
-        "Poster"
-      ]
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
     },
     {
-      "id": "phm27",
-      "name": "Pediatric Hospital Medicine Meeting 2027",
-      "society": "Academic Pediatric Association / AAP / SHM",
-      "specialty": "Pediatrics",
-      "start": "2027-07-29",
-      "end": "2027-08-01",
-      "city": "New Orleans, LA",
-      "open": "2027-01-11",
-      "deadline": "2027-02-10",
+      "id": "adventhealth-gme-research-day27",
+      "name": "AdventHealth GME Research Day 2027",
+      "society": "AdventHealth Graduate Medical Education / AdventHealth Research Institute",
+      "specialty": "Medical Education",
+      "featuredForAllSpecialties": true,
+      "eventType": "institutional_research_day",
+      "start": "2027-04-30",
+      "end": "2027-04-30",
+      "city": "Orlando, FL",
+      "venue": "Whole Life Church, 2800 N Orange Ave, Orlando, FL",
+      "open": null,
+      "deadline": null,
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [
-        "Pediatric hospital medicine abstracts",
-        "Clinical conundrums"
+        "Original and clinical research",
+        "Quality improvement",
+        "Case studies",
+        "Medical education"
       ],
-      "url": "https://www.academicpeds.org/events/phmmeeting/phmmeeting2027-keydates/",
+      "url": "https://www.adventhealth.com/adventhealth-graduate-medical-education/research",
       "guideline": null,
       "evidence": "official",
-      "note": "Abstracts and clinical conundrums submit January 11–February 10, 2027; earlier October 12–December 14, 2026 Call for Content concerns educational content, not regular research abstracts.",
+      "note": "Featured AdventHealth resident and fellow research event, Friday, April 30, 2027, 10:00 AM–4:00 PM (doors open 9:30 AM), Whole Life Church, 2800 N Orange Ave, Orlando, FL. Companion AdventHealth Research Day for clinicians and scientists is Thursday, April 29, 2027. Dates and venue are from the AdventHealth Research Institute save-the-date flyer provided to RISE; the linked institutional research page describes prior GME Research Days and awards but does not yet publish the 2027 abstract call. Confirm participant eligibility, abstract submission opening/deadline, and categories with the AdventHealth GME Research Office.",
+      "flag": null,
+      "tags": [
+        "trainee",
+        "resident",
+        "fellow",
+        "institutional",
+        "featured"
+      ],
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "dateEvidence": "AdventHealth Research Institute save-the-date announcement supplied to RISE on 2026-10-24",
+      "eventTime": "10:00 AM–4:00 PM ET; doors open at 9:30 AM",
+      "fieldSources": {
+        "start": {
+          "checked_at": "2026-10-24",
+          "verified_by": "AdventHealth Research Institute save-the-date flyer provided to RISE",
+          "source_quote": "GME Research Day — Friday, April 30, 2027",
+          "confidence": "organizer_flyer",
+          "source_kind": "organizer_flyer"
+        },
+        "end": {
+          "checked_at": "2026-10-24",
+          "verified_by": "AdventHealth Research Institute save-the-date flyer provided to RISE",
+          "source_quote": "GME Research Day — Friday, April 30, 2027",
+          "confidence": "organizer_flyer",
+          "source_kind": "organizer_flyer"
+        }
+      }
+    },
+    {
+      "id": "ags27",
+      "name": "AGS Annual Scientific Meeting 2027",
+      "society": "American Geriatrics Society",
+      "specialty": "Geriatrics",
+      "start": "2027-05-19",
+      "end": "2027-05-22",
+      "city": "Atlanta, GA",
+      "open": null,
+      "deadline": "2026-12-02",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": "$45 per abstract",
+      "types": [
+        "Research",
+        "Clinical geriatrics",
+        "QI"
+      ],
+      "url": "https://www.meeting.americangeriatrics.org/submissions",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 AGS regular research abstracts: organizer meeting submissions overview identifies opening in mid-September 2026 (exact calendar day not stated) and closing December 2, 2026 at 11:59 p.m. ET. Educational program proposals have a separate June 30 deadline.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "openMonth": "2026-09",
+      "fieldSources": {
+        "openMonth": {
+          "url": "https://stagemeeting.americangeriatrics.org/submissions",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual inspection of organizer-controlled staging meeting overview",
+          "source_quote": "2027 Submissions Overview: Mid-September: Call for Abstracts Opens; December 2, 2026, 11:59pm ET: Abstract Submission Deadline",
+          "confidence": "month_only_official_staging_page",
+          "precision": "month"
+        }
+      }
+    },
+    {
+      "id": "agsglaucoma27",
+      "name": "American Glaucoma Society Annual Meeting 2027",
+      "society": "American Glaucoma Society",
+      "specialty": "Ophthalmology",
+      "start": "2027-03-04",
+      "end": "2027-03-07",
+      "city": "Tucson, AZ",
+      "open": "2026-09-02",
+      "deadline": "2026-10-19",
+      "deadlineTime": "11:59 PM CT (general submissions)",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.americanglaucomasociety.net/meetings-events/annual-meeting/abstracts",
+      "guideline": null,
+      "evidence": "official",
+      "note": "General abstract deadline October 19, 2026; resident/student forum has an EARLIER deadline. Organizer's own webpage conflicts: headline lists October 2, 2026, while the FAQ lists October 1, 2026. Resident-specific deadline therefore requires organizer clarification; use the earlier date for conservative planning.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
+        "start": {
+          "url": "https://www.americanglaucomasociety.net/events/calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.americanglaucomasociety.net/events/calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
         "open": {
-          "url": "https://www.academicpeds.org/events/phmmeeting/phmmeeting2027-keydates/",
+          "url": "https://www.americanglaucomasociety.net/meetings-events/annual-meeting/abstracts",
           "checked_at": "2026-11-02",
-          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
-          "source_quote": "Call for Abstracts and Conundrums Monday, January 11, 2027; Abstracts and Conundrums Deadline Wednesday, February 10, 2027. Call for Content October 12, 2026 is a different pathway.",
+          "verified_by": "RISE manual review of 2027 organizer's abstract information",
+          "source_quote": "Submission of abstract proposals ... for the 2027 Annual Meeting will open Wednesday, September 2, 2026. Deadline for AGS members and non-members ... Monday, October 19, 2026, 11:59pm Central.",
           "confidence": "direct_official_edition_statement"
         },
         "deadline": {
-          "url": "https://www.academicpeds.org/events/phmmeeting/phmmeeting2027-keydates/",
+          "url": "https://www.americanglaucomasociety.net/meetings-events/annual-meeting/abstracts",
           "checked_at": "2026-11-02",
-          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
-          "source_quote": "Call for Abstracts and Conundrums Monday, January 11, 2027; Abstracts and Conundrums Deadline Wednesday, February 10, 2027. Call for Content October 12, 2026 is a different pathway.",
+          "verified_by": "RISE manual review of 2027 organizer's abstract information",
+          "source_quote": "Submission of abstract proposals ... for the 2027 Annual Meeting will open Wednesday, September 2, 2026. Deadline for AGS members and non-members ... Monday, October 19, 2026, 11:59pm Central.",
           "confidence": "direct_official_edition_statement"
         }
       }
+    },
+    {
+      "id": "aha27",
+      "name": "AHA Scientific Sessions 2027",
+      "society": "American Heart Association",
+      "specialty": "Cardiology",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Cardiovascular research",
+        "Prevention",
+        "Clinical science"
+      ],
+      "url": "https://professional.heart.org/en/meetings",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "",
+      "flag": "unannounced",
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
     },
     {
       "id": "ahabcvs27",
@@ -1822,922 +2246,350 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "croi27",
-      "name": "Conference on Retroviruses and Opportunistic Infections 2027",
-      "society": "CROI Foundation / IAS–USA",
-      "specialty": "Infectious Diseases",
-      "start": "2027-03-21",
-      "end": "2027-03-24",
+      "id": "ahs27",
+      "name": "69th American Headache Society Annual Scientific Meeting",
+      "society": "American Headache Society",
+      "specialty": "Neurology",
+      "start": "2027-06-10",
+      "end": "2027-06-13",
       "city": "San Diego, CA",
-      "open": "2026-08-27",
-      "deadline": "2026-10-01",
-      "deadlineTime": "5:00 PM PT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "HIV/AIDS",
-        "Retrovirology",
-        "Opportunistic infections"
-      ],
-      "url": "https://www.croiconference.org/about/croi-2027-preliminary-important-dates-and-deadlines/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Meeting page marks the regular submission timeline preliminary; confirm before submitting.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "tandem27",
-      "name": "Tandem Transplantation & Cellular Therapy Meetings 2027",
-      "society": "ASTCT / CIBMTR",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-02-17",
-      "end": "2027-02-20",
-      "city": "Orlando, FL",
       "open": null,
-      "deadline": "2026-10-09",
+      "deadline": null,
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [
-        "Hematopoietic transplantation",
-        "Cell therapy",
-        "Gene therapy"
+        "Headache and migraine research"
       ],
-      "url": "https://cibmtr.org/CIBMTR/Meetings/Tandem-Meetings",
+      "url": "https://americanheadachesociety.org/events",
       "guideline": null,
       "evidence": "official",
-      "note": "Main scientific meeting Feb 17–20, with Feb 16 preconference; abstract deadline not confirmed. CIBMTR confirms 2027 Tandem regular abstracts due Friday, October 9, 2026. The Tandem organizer's abstract page may still show 2026-cycle historical dates; avoid importing them.",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
-      "submissionSource": "https://www.tandemmeetings.com/Abstracts/Abstract-Information",
       "fieldSources": {
-        "deadline": {
-          "url": "https://cibmtr.org/",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "Please submit your 2027 Tandem Meetings abstracts by Friday, October 9, 2026.",
-          "confidence": "explicit_statement"
+        "start": {
+          "url": "https://americanheadachesociety.org/events",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://americanheadachesociety.org/events",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
         }
       }
     },
     {
-      "id": "aaos27",
-      "name": "AAOS Annual Meeting 2027",
-      "society": "American Academy of Orthopaedic Surgeons",
-      "specialty": "Orthopedic Surgery",
-      "start": "2027-03-03",
-      "end": "2027-03-06",
-      "city": "Las Vegas, NV",
+      "id": "amssm-fellows27",
+      "name": "AMSSM Fellows Research & Leadership Conference 2027",
+      "society": "American Medical Society for Sports Medicine",
+      "specialty": "Sports Medicine",
+      "start": "2027-07-22",
+      "end": "2027-07-25",
+      "city": "Minneapolis, MN",
       "open": null,
-      "deadline": "2026-06-08",
+      "deadline": null,
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [
-        "Orthopedic clinical research",
-        "Orthopaedic education",
-        "Surgical techniques"
+        "Research abstracts (confirm society-specific submission rules)"
       ],
-      "url": "https://www.aaos.org/annual",
-      "guideline": "https://www.aaos.org/annual/explore-the-program/abstracts-applications/",
+      "url": "https://www.amssm.org/Conferences.html",
+      "guideline": null,
       "evidence": "official",
-      "note": "Regular paper/poster/ePoster submissions closed June 8, 2026. Confirm accepted presentation formats directly with the organizer.",
+      "note": "Fellows-focused research and leadership; resident eligibility must be confirmed.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.amssm.org/Conferences.html",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.amssm.org/Conferences.html",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "amssm27",
+      "name": "AMSSM Annual Meeting 2027",
+      "society": "American Medical Society for Sports Medicine",
+      "specialty": "Sports Medicine",
+      "start": "2027-04-16",
+      "end": "2027-04-21",
+      "city": "Louisville, KY",
+      "open": null,
+      "deadline": "2026-12-01",
+      "deadlineTime": "11:00 AM CT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.amssm.org/Submissions.php",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 research abstract submissions opened in late August 2026 (organizer identifies month only; not an exact day). Submission closes December 1, 2026 at 11:00 AM Central Time. Society membership required to submit. Case reports may have a distinct schedule.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.amssm.org/Conferences.html",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.amssm.org/Conferences.html",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "openMonth": {
+          "url": "https://www.amssm.org/Submissions.php",
+          "checked_at": "2026-11-02",
+          "verified_by": "Manual review of official 2027 meeting submission page",
+          "source_quote": "Research Abstract Submission for the 2027 Annual Meeting will open in late August. Deadline: December 1, 2026, at 11:00am Central Time.",
+          "confidence": "official_month_only"
+        },
+        "deadline": {
+          "url": "https://www.amssm.org/Submissions.php",
+          "checked_at": "2026-11-02",
+          "verified_by": "Manual review of official 2027 meeting submission page",
+          "source_quote": "Research Abstract Submission for the 2027 Annual Meeting will open in late August. Deadline: December 1, 2026, at 11:00am Central Time.",
+          "confidence": "direct_official_statement"
+        }
+      },
+      "openMonth": "2026-08"
+    },
+    {
+      "id": "ans-neurotology27",
+      "name": "American Neurotology Society Spring Meeting 2027",
+      "society": "American Neurotology Society",
+      "specialty": "Otolaryngology",
+      "start": "2027-04-09",
+      "end": "2027-04-10",
+      "city": "Seattle, WA",
+      "open": "2026-09-01",
+      "deadline": "2026-10-22",
+      "deadlineTime": "11:59 PM PT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Neurotology and vestibular science",
+        "Otology clinical research"
+      ],
+      "url": "https://www.americanneurotologysociety.com/ans-spring-meeting-2027-seattle",
+      "guideline": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
+      "evidence": "official",
+      "note": "Established specialist research meeting during the Combined Otolaryngology Spring Meetings. Scientific oral and poster opportunities include trainee awards and vestibular research support.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": true,
       "presentationFormats": [
-        "Scientific paper",
-        "Poster",
-        "ePoster"
+        "Oral scientific session",
+        "Scientific poster"
       ],
       "fieldSources": {
-        "deadline": {
-          "url": "https://www.aaos.org/annual/explore-the-program/abstracts-applications/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE review of official 2027 organizer pages",
-          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
-        },
         "start": {
-          "url": "https://www.aaos.org/annual",
-          "checked_at": "2026-10-24",
-          "verified_by": "AAOS 2027 organizer"
+          "url": "https://www.americanneurotologysociety.com/ans-spring-meeting-2027-seattle",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
         },
         "end": {
-          "url": "https://www.aaos.org/annual",
-          "checked_at": "2026-10-24",
-          "verified_by": "AAOS 2027 organizer"
-        }
-      },
-      "additionalSources": []
-    },
-    {
-      "id": "aapmr27",
-      "name": "AAPM&R Annual Assembly 2027",
-      "society": "American Academy of Physical Medicine and Rehabilitation",
-      "specialty": "Physical Medicine & Rehabilitation",
-      "start": "2027-11-10",
-      "end": "2027-11-13",
-      "city": "Phoenix, AZ",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Rehabilitation medicine",
-        "Pain medicine",
-        "Clinical research"
-      ],
-      "url": "https://www.aapmr.org/education/live-events/calendar/future-and-past-meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society future-meetings schedule; abstract call not yet confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "ata27",
-      "name": "American Thyroid Association Annual Meeting 2027",
-      "society": "American Thyroid Association",
-      "specialty": "Endocrinology",
-      "start": "2027-11-10",
-      "end": "2027-11-13",
-      "city": "Denver, CO",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Thyroid research",
-        "Clinical endocrinology"
-      ],
-      "url": "https://www.thyroid.org/professionals/meetings/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Annual meeting schedule confirmed by ATA; abstract cycle not verified.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "pstm27",
-      "name": "Plastic Surgery The Meeting 2027",
-      "society": "American Society of Plastic Surgeons",
-      "specialty": "Plastic Surgery",
-      "start": "2027-09-16",
-      "end": "2027-09-19",
-      "city": "Baltimore, MD",
-      "open": null,
-      "deadline": "2027-02-25",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Plastic and reconstructive surgery",
-        "Aesthetic surgery"
-      ],
-      "url": "https://www.plasticsurgerythemeeting.com/registration/plan-now-for-2027",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 Plastic Surgery The Meeting general Oral and Poster Abstract deadline: February 25, 2027 (opening day not stated). Separate RESIDENT-ONLY call, restricted to current residents (not fellows/students), opens March 4, 2027 and closes April 30, 2027 at 11:59 p.m. US Eastern. Each abstract may enter only one call.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "submissionSource": "https://ww6.aievolution.com/asps/index.cfm?do=cnt.page&pg=1013",
-      "fieldSources": {
+          "url": "https://www.americanneurotologysociety.com/ans-spring-meeting-2027-seattle",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "open": {
+          "url": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
         "deadline": {
-          "url": "https://ww6.aievolution.com/asps/index.cfm?do=cnt.page&pg=1013",
+          "url": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
           "checked_at": "2026-11-02",
-          "verified_by": "RISE manual inspection of the official meeting abstract submission portal",
-          "source_quote": "Main Meeting Call for Abstracts and Posters deadline February 25, 2027; Resident Only opens March 4, 2027, deadline April 30, 2027, 11:59 pm US Eastern.",
+          "verified_by": "RISE independent manual official congress review",
+          "source_quote": "The Call for Papers officially closed on October 22, 2026. Deadline Thursday, October 22, 2026 at 11:59 PM Pacific Time.",
           "confidence": "direct_official_edition_statement"
         }
       }
     },
     {
-      "id": "aafpfmx27",
-      "name": "Family Medicine Experience (FMX) 2027",
-      "society": "American Academy of Family Physicians",
-      "specialty": "Family Medicine",
-      "start": "2027-09-20",
-      "end": "2027-09-24",
-      "city": "San Diego, CA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Family medicine",
-        "Primary care innovations",
-        "Clinical education"
-      ],
-      "url": "https://www.aafp.org/cme-and-events/in-person/fmx/what-is-fmx/faq",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Annual family medicine conference dates verified. Availability of a trainee abstract track for 2027 must be confirmed; not necessarily a general research-abstract meeting.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "sid27",
-      "name": "Society for Investigative Dermatology Annual Meeting 2027",
-      "society": "Society for Investigative Dermatology",
-      "specialty": "Dermatology",
-      "start": "2027-05-12",
-      "end": "2027-05-15",
-      "city": "Orlando, FL",
-      "open": "2026-11-02",
-      "deadline": "2027-01-12",
-      "deadlineTime": "11:59 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Investigative dermatology",
-        "Translational skin research"
-      ],
-      "url": "https://www.sidnet.org/annualmeeting/",
-      "guideline": "https://www.sidnet.org/annualmeeting/key-dates/",
-      "evidence": "official",
-      "note": "Official SID 2027 abstract submission page confirms regular submissions November 2, 2026–January 12, 2027 (11:59 PM ET).",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "open": {
-          "url": "https://www.sidnet.org/annualmeeting/abstracts/",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official SID 2027 abstract submissions webpage",
-          "confidence": "explicit_statement",
-          "source_quote": "Abstract Submissions Open November 2, 2026, and must be submitted by 11:59 pm Eastern Time (US) on January 12, 2027."
-        },
-        "deadline": {
-          "url": "https://www.sidnet.org/annualmeeting/abstracts/",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official SID 2027 abstract submissions webpage",
-          "confidence": "explicit_statement",
-          "source_quote": "Abstract Submissions Open November 2, 2026, and must be submitted by 11:59 pm Eastern Time (US) on January 12, 2027."
-        }
-      },
-      "submissionSource": "https://www.sidnet.org/annualmeeting/abstracts/"
-    },
-    {
-      "id": "saaapm27",
-      "name": "SAAAPM Annual Meeting 2027",
-      "society": "Society of Academic Associations of Anesthesiology and Perioperative Medicine",
-      "specialty": "Anesthesiology",
-      "start": "2027-11-05",
-      "end": "2027-11-06",
-      "city": "Chicago, IL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Academic anesthesiology",
-        "Education and residency training"
-      ],
-      "url": "https://www.saaapm.org/events/2027-annual-meeting",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Academic anesthesiology meeting date confirmed; abstract availability must be checked separately.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": []
-    },
-    {
-      "id": "asbrs27",
-      "name": "American Society of Breast Surgeons Annual Meeting 2027",
-      "society": "American Society of Breast Surgeons",
-      "specialty": "Surgery",
-      "start": "2027-04-07",
-      "end": "2027-04-11",
-      "city": "Orlando, FL",
-      "open": null,
-      "deadline": "2026-11-04",
-      "deadlineTime": "11:59 PM ET",
-      "limit": 500,
-      "limitType": "words",
-      "limitNote": "500 combined words for background, methods, objectives and results; excluding title/authors. CASE REPORTS NOT ACCEPTED.",
-      "fee": "$60 per abstract",
-      "types": [
-        "Breast surgery original research",
-        "Prospective clinical trials",
-        "International poster research"
-      ],
-      "url": "https://www.breastsurgeons.org/meeting/2027/abstracts",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Regular abstract deadline November 4, 2026, with a $60 nonrefundable submission fee and 500-word body. Early international-only poster submissions closed October 5, 2026; verify regular research categories and case-report eligibility directly.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral",
-        "Quick Shot",
-        "Poster"
-      ],
-      "fieldSources": {},
-      "additionalSources": []
-    },
-    {
-      "id": "aacr27",
-      "name": "AACR Annual Meeting 2027",
-      "society": "American Association for Cancer Research",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-04-02",
-      "end": "2027-04-07",
-      "city": "Orlando, FL",
-      "open": "2026-09-28",
-      "deadline": "2026-11-10",
-      "deadlineTime": "11:59 PM ET",
-      "types": [
-        "Basic cancer research",
-        "Translational research",
-        "Clinical cancer research",
-        "Population science and prevention"
-      ],
-      "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
-      "guideline": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/",
-      "evidence": "official",
-      "note": "Regular abstracts have their own submission deadline. Meeting held at Orange County Convention Center.",
-      "venue": "Orange County Convention Center",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        },
-        "end": {
-          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        },
-        "open": {
-          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        },
-        "deadline": {
-          "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/key-dates/",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        }
-      }
-    },
-    {
-      "id": "sitc27",
-      "name": "SITC Annual Meeting 2027",
-      "society": "Society for Immunotherapy of Cancer",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-11-03",
-      "end": "2027-11-07",
-      "city": "National Harbor, MD",
-      "open": null,
-      "deadline": null,
-      "types": [
-        "Cancer immunotherapy",
-        "Clinical research",
-        "Translational immuno-oncology"
-      ],
-      "url": "https://www.sitcancer.org/edu/41st-annual-meeting/archive",
-      "evidence": "official",
-      "note": "Includes annual meeting and pre-conference programs; abstract submissions not yet confirmed.",
-      "venue": "Gaylord National Resort and Convention Center",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "guideline": null,
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.sitcancer.org/edu/41st-annual-meeting/archive",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        },
-        "end": {
-          "url": "https://www.sitcancer.org/edu/41st-annual-meeting/archive",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        }
-      }
-    },
-    {
-      "id": "sabcs27",
-      "name": "San Antonio Breast Cancer Symposium 2027",
-      "society": "San Antonio Breast Cancer Symposium",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-12-07",
-      "end": "2027-12-10",
-      "city": "San Antonio, TX",
-      "open": null,
-      "deadline": null,
-      "types": [
-        "Breast cancer",
-        "Clinical oncology",
-        "Translational breast cancer research"
-      ],
-      "url": "https://sabcs.org/media/future-symposia/",
-      "evidence": "official",
-      "note": "Organizer confirms the 2027 symposium dates; abstract submission dates not yet confirmed.",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "guideline": null,
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://sabcs.org/media/future-symposia/",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        },
-        "end": {
-          "url": "https://sabcs.org/media/future-symposia/",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        }
-      }
-    },
-    {
-      "id": "tct27",
-      "name": "TCT 2027",
-      "society": "Cardiovascular Research Foundation",
-      "specialty": "Cardiology",
-      "start": "2027-10-18",
-      "end": "2027-10-21",
-      "city": "San Francisco, CA",
-      "open": null,
-      "deadline": null,
-      "types": [
-        "Interventional cardiology",
-        "Clinical trials",
-        "Cardiovascular devices"
-      ],
-      "url": "https://www.tctmd.com/node/50962",
-      "evidence": "official",
-      "note": "Transcatheter Cardiovascular Therapeutics meeting. Future abstract submission windows have not yet been confirmed.",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "guideline": null,
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.tctmd.com/node/50962",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        },
-        "end": {
-          "url": "https://www.tctmd.com/node/50962",
-          "checked_at": "2026-10-10",
-          "verified_by": "Official organizer"
-        }
-      }
-    },
-    {
-      "id": "esmo27",
-      "name": "ESMO Congress 2027",
-      "society": "European Society for Medical Oncology",
-      "specialty": "Hematology & Oncology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "types": [
-        "Medical oncology",
-        "Clinical trials",
-        "Translational cancer research"
-      ],
-      "url": "https://www.esmo.org/meeting-calendar",
-      "evidence": "unannounced",
-      "flag": "unannounced",
-      "note": "International flagship medical oncology congress. 2027 meeting and abstract dates require organizer confirmation.",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "guideline": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {}
-    },
-    {
-      "id": "aasld27",
-      "name": "AASLD The Liver Meeting 2027",
-      "society": "American Association for the Study of Liver Diseases",
-      "specialty": "Gastroenterology",
-      "start": null,
-      "end": null,
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "types": [
-        "Hepatology",
-        "Liver disease",
-        "Clinical research"
-      ],
-      "url": "https://www.aasld.org/the-liver-meeting",
-      "evidence": "unannounced",
-      "flag": "unannounced",
-      "note": "Flagship hepatology research meeting. No verified 2027 meeting or abstract dates; 2026 dates must not be carried forward.",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "guideline": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {}
-    },
-    {
-      "id": "endo28",
-      "name": "ENDO 2028",
-      "society": "Endocrine Society",
-      "specialty": "Endocrinology",
-      "start": "2028-06-03",
-      "end": "2028-06-06",
-      "city": "To be announced",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
+      "id": "aossm27",
+      "name": "AOSSM Annual Meeting 2027",
+      "society": "American Orthopaedic Society for Sports Medicine",
+      "specialty": "Orthopedic Surgery",
+      "start": "2027-07-07",
+      "end": "2027-07-10",
+      "city": "Boston, MA",
+      "open": "2026-07-15",
+      "deadline": "2026-09-09",
+      "deadlineTime": "1:00 p.m. ET",
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+      "url": "https://events.sportsmed.org/am2026",
       "guideline": null,
       "evidence": "official",
-      "flag": null,
-      "note": "Meeting dates verified from the official organizer page; abstract dates and submission rules have not yet been announced.",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "priorCycleId": "endo27",
-      "fieldSources": {
-        "start": {
-          "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
-          "checked_at": "2026-10-11T01:44:54.833258+00:00",
-          "verified_by": "RISE future-cycle monitor",
-          "source_quote": ". ENDO 2028 . June 3–6, 2028"
-        },
-        "end": {
-          "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
-          "checked_at": "2026-10-11T01:44:54.833258+00:00",
-          "verified_by": "RISE future-cycle monitor",
-          "source_quote": ". ENDO 2028 . June 3–6, 2028"
-        }
-      }
-    },
-    {
-      "id": "actrims27",
-      "name": "ACTRIMS Forum 2027",
-      "society": "Americas Committee for Treatment and Research in Multiple Sclerosis",
-      "specialty": "Neurology",
-      "start": "2027-03-11",
-      "end": "2027-03-13",
-      "city": "Phoenix, AZ",
-      "open": "2026-08-03",
-      "deadline": "2026-11-06",
-      "deadlineTime": null,
-      "limit": 2500,
-      "limitType": "characters_no_spaces",
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "MS and neuroimmunology",
-        "Clinical research",
-        "Case series"
-      ],
-      "url": "https://www.forum.actrims.org/submit",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Peer-reviewed MS/neuroimmunology scientific meeting; regular abstracts due November 6, 2026.",
+      "note": "Official AOSSM site lists 2027 dates, July 7–10 Boston; current page hosts 2026 program so use for future meeting only. 2027 AOSSM abstract and instructional course submissions opened July 15, 2026 and closed September 9, 2026 at 1:00 p.m. ET.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": [
-        "Oral",
-        "Poster",
-        "ePoster"
-      ],
+      "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.forum.actrims.org/submit",
+          "url": "https://events.sportsmed.org/am2026",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://www.forum.actrims.org/submit",
+          "url": "https://events.sportsmed.org/am2026",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "open": {
-          "url": "https://www.forum.actrims.org/submit",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
+          "url": "https://www.sportsmed.org/education/abstract-and-instructional-course-submissions",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "AOSSM 2027 Abstract and Instructional Course Center opens July 15, 2026, closes September 9, 2026.",
+          "confidence": "explicit_statement"
         },
         "deadline": {
-          "url": "https://www.forum.actrims.org/submit",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
+          "url": "https://www.sportsmed.org/education/abstract-and-instructional-course-submissions",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "AOSSM 2027 Abstract and Instructional Course Center opens July 15, 2026, closes September 9, 2026.",
+          "confidence": "explicit_statement"
         }
-      }
+      },
+      "submissionSource": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=QLTZSHMP"
     },
     {
-      "id": "isc27",
-      "name": "International Stroke Conference 2027",
-      "society": "American Heart Association / American Stroke Association",
-      "specialty": "Neurology",
-      "start": "2027-02-10",
-      "end": "2027-02-12",
-      "city": "Houston, TX",
-      "open": null,
-      "deadline": "2026-08-18",
-      "deadlineTime": "11:59 PM CDT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": "$45 AHA members; $95 nonmembers",
+      "id": "apa27",
+      "name": "APA Annual Meeting 2027",
+      "society": "American Psychiatric Association",
+      "specialty": "Psychiatry",
+      "start": "2027-05-01",
+      "end": "2027-05-05",
+      "city": "New York, NY",
+      "open": "2026-11-12",
+      "deadline": "2027-01-08",
+      "deadlineTime": "5:00 PM ET (New Research posters)",
+      "limit": 3000,
+      "limitType": "characters_with_spaces",
+      "limitNote": "New Research poster category; regular general/poster session deadline was Sept 10, 2026.",
+      "fee": null,
       "types": [
-        "Stroke research",
-        "Neurocritical care",
+        "New Research poster",
+        "Research",
         "Clinical trials"
       ],
-      "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
+      "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
+      "guideline": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
+      "evidence": "official",
+      "note": "Dates shown are the APA 2027 New Research poster submission window (November 12, 2026–January 8, 2027, 5:00 p.m. ET). General sessions, courses, and other poster categories had an earlier September 10, 2026, 5:00 p.m. ET deadline. Clinical Trials Plenary has a separate January 8 cutoff at 2:00 p.m. ET. These are distinct submission tracks; verify category eligibility on the official FAQ.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "clinicalTrialsDeadline": "2027-01-08",
+      "clinicalTrialsDeadlineTime": "2:00 PM ET",
+      "clinicalTrialsSource": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
+      "fieldSources": {
+        "clinicalTrialsDeadline": {
+          "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE direct official-site review"
+        },
+        "open": {
+          "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of official 2027 APA FAQ",
+          "source_quote": "New Research poster submission site opens November 12, 2026 and closes January 8, 2027 at 5:00 p.m. ET.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.psychiatry.org/psychiatrists/education/meeting-submission-and-guidelines/annual-meeting-submission-guidelines/frequently-asked-questions",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of official 2027 APA FAQ",
+          "source_quote": "New Research poster submission site opens November 12, 2026 and closes January 8, 2027 at 5:00 p.m. ET.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "apha27",
+      "name": "APHA Annual Meeting & Expo 2027",
+      "society": "American Public Health Association",
+      "specialty": "Public Health",
+      "start": "2027-11-07",
+      "end": "2027-11-10",
+      "city": "Philadelphia, PA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Public health research",
+        "Population health"
+      ],
+      "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
       "guideline": null,
       "evidence": "official",
-      "note": "International Stroke Conference 2027 regular abstracts were due August 18, 2026. Case-study submissions follow separate requirements.",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [
         "Oral",
-        "Digital oral",
         "Poster"
       ],
       "fieldSources": {
         "start": {
-          "url": "https://professional.heart.org/en/meetings/international-stroke-conference",
+          "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
+          "verified_by": "RISE official society page audit"
         },
         "end": {
-          "url": "https://professional.heart.org/en/meetings/international-stroke-conference",
+          "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "deadline": {
-          "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "Trainees should submit their ISC abstract by the August 18 deadline.",
-          "confidence": "explicit_statement"
-        }
-      },
-      "submissionSource": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science"
-    },
-    {
-      "id": "childcns27",
-      "name": "Child Neurology Society Annual Meeting 2027",
-      "society": "Child Neurology Society",
-      "specialty": "Neurology",
-      "start": "2027-11-10",
-      "end": "2027-11-13",
-      "city": "Milwaukee, WI",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.childneurologysociety.org/event/56th-cns-annual-meeting/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.childneurologysociety.org/event/56th-cns-annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.childneurologysociety.org/event/56th-cns-annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
+          "verified_by": "RISE official society page audit"
         }
       }
-    },
-    {
-      "id": "sobp27",
-      "name": "Society of Biological Psychiatry Annual Meeting 2027",
-      "society": "Society of Biological Psychiatry",
-      "specialty": "Psychiatry",
-      "start": "2027-05-06",
-      "end": "2027-05-08",
-      "city": "Chicago, IL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://sobp.org/sobp-annual-meeting/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://sobp.org/sobp-annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://sobp.org/sobp-annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        }
-      }
-    },
-    {
-      "id": "aacap27",
-      "name": "AACAP Annual Meeting 2027",
-      "society": "American Academy of Child and Adolescent Psychiatry",
-      "specialty": "Psychiatry",
-      "start": "2027-10-25",
-      "end": "2027-10-30",
-      "city": "New York, NY",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.aacap.org/AACAP/CME_and_Meetings/Future_Annual_Meetings.aspx",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Established child and adolescent psychiatry meeting; confirmed official 2027 meeting dates. Abstract deadline awaiting confirmation.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.aacap.org/AACAP/Your_Career/Early_Career_Psychiatrists/AACAP/CME_and_Meetings/Future_Annual_Meetings.aspx",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.aacap.org/AACAP/Your_Career/Early_Career_Psychiatrists/AACAP/CME_and_Meetings/Future_Annual_Meetings.aspx",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        }
-      }
-    },
-    {
-      "id": "acnp27",
-      "name": "ACNP Annual Meeting 2027",
-      "society": "American College of Neuropsychopharmacology",
-      "specialty": "Psychiatry",
-      "start": "2027-01-10",
-      "end": "2027-01-13",
-      "city": "San Diego, CA",
-      "open": null,
-      "openMonth": "2026-06",
-      "deadline": "2026-08-27",
-      "deadlineTime": "5:00 p.m. CT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://acnp.org/annual-meeting/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Highly prestigious psychopharmacology meeting, but ACNP nonmembers require an invitation to attend. Not generally open for trainee registration. The ACNP 2027 general poster deadline was August 27, 2026 at 5:00 p.m. CT. Separate Promising Targets submissions open October 14, 2026, and abstracts are due October 28, 2026 at 5:00 p.m. CT; that is NOT an extension of general poster submissions. Attendance/invitation requirements apply.",
-      "flag": null,
-      "tags": [
-        "invitation-only"
-      ],
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://acnp.org/annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://acnp.org/annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "deadline": {
-          "url": "https://acnp.org/annual-meeting/submissions/",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "The final deadline to submit was August 27, 2026 at 5:00pm Central time.",
-          "confidence": "explicit_statement"
-        },
-        "openMonth": {
-          "url": "https://acnp.org/annual-meeting/submissions/",
-          "checked_at": "2026-10-13",
-          "verified_by": "RISE official-source review",
-          "source_quote": "The College started accepting poster abstracts for consideration for the January 2027 Annual Meeting in June.",
-          "precision": "month"
-        }
-      },
-      "researchOpportunity": "Restricted participation",
-      "accessRequirement": "Nonmembers require invitation from an ACNP member. Consult organizer's invitation policies before planning a submission or trip.",
-      "submissionSource": "https://acnp.org/annual-meeting/submissions/"
     },
     {
       "id": "arrs27",
@@ -2784,6 +2636,642 @@ window.RISE_DATA = {
           "url": "https://www2.arrs.org/am27/call-for-abstracts-arrs-2027/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE official abstract page audit"
+        }
+      }
+    },
+    {
+      "id": "arvo27",
+      "name": "ARVO Annual Meeting 2027",
+      "society": "Association for Research in Vision and Ophthalmology",
+      "specialty": "Ophthalmology",
+      "start": "2027-05-02",
+      "end": "2027-05-06",
+      "city": "San Diego, CA",
+      "open": "2026-10-16",
+      "deadline": "2026-12-04",
+      "deadlineTime": "5:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.arvo.org/annual-meeting/about",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 ARVO membership required to submit a regular abstract.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.arvo.org/annual-meeting/about",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.arvo.org/annual-meeting/about",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "open": {
+          "url": "https://www.arvo.org/annual-meeting/about",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://www.arvo.org/annual-meeting/about",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "asbrs27",
+      "name": "American Society of Breast Surgeons Annual Meeting 2027",
+      "society": "American Society of Breast Surgeons",
+      "specialty": "Surgery",
+      "start": "2027-04-07",
+      "end": "2027-04-11",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": "2026-11-04",
+      "deadlineTime": "11:59 PM ET",
+      "limit": 500,
+      "limitType": "words",
+      "limitNote": "500 combined words for background, methods, objectives and results; excluding title/authors. CASE REPORTS NOT ACCEPTED.",
+      "fee": "$60 per abstract",
+      "types": [
+        "Breast surgery original research",
+        "Prospective clinical trials",
+        "International poster research"
+      ],
+      "url": "https://www.breastsurgeons.org/meeting/2027/abstracts",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Regular abstract deadline November 4, 2026, with a $60 nonrefundable submission fee and 500-word body. Early international-only poster submissions closed October 5, 2026; verify regular research categories and case-report eligibility directly.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Quick Shot",
+        "Poster"
+      ],
+      "fieldSources": {},
+      "additionalSources": []
+    },
+    {
+      "id": "asc27",
+      "name": "Academic Surgical Congress 2027",
+      "society": "Association for Academic Surgery and Society of University Surgeons",
+      "specialty": "Surgery",
+      "start": "2027-02-09",
+      "end": "2027-02-11",
+      "city": "Washington, DC",
+      "open": "2026-06-20",
+      "deadline": "2026-08-17",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://academicsurgicalcongress.us/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://academicsurgicalcongress.us/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://academicsurgicalcongress.us/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://academicsurgicalcongress.us/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
+        },
+        "deadline": {
+          "url": "https://academicsurgicalcongress.us/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
+        }
+      }
+    },
+    {
+      "id": "asco27",
+      "name": "ASCO Annual Meeting 2027",
+      "society": "American Society of Clinical Oncology",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-06-04",
+      "end": "2027-06-08",
+      "city": "Chicago, IL",
+      "open": "2026-11-04",
+      "deadline": "2027-01-26",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Clinical research",
+        "Trials in progress",
+        "Outcomes research",
+        "Translational science"
+      ],
+      "url": "https://www.asco.org/annual-meeting/dates-know",
+      "guideline": "https://www.asco.org/annual-meeting/abstracts-presentations/submission-details",
+      "evidence": "official",
+      "note": "Regular abstract submission requirements apply. The 2027 formatting guidance was expected in November.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "ascobr27",
+      "name": "ASCO Breakthrough 2027",
+      "society": "American Society of Clinical Oncology",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-06-24",
+      "end": "2027-06-26",
+      "city": "To be announced",
+      "open": "2026-12-02",
+      "deadline": "2027-02-23",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Cancer research",
+        "Clinical innovation"
+      ],
+      "url": "https://www.asco.org/meetings-education/meetings/abstract-submissions",
+      "guideline": null,
+      "evidence": "official",
+      "note": "",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "ascogi27",
+      "name": "ASCO GI Cancers Symposium 2027",
+      "society": "American Society of Clinical Oncology",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-01-21",
+      "end": "2027-01-23",
+      "city": "To be announced",
+      "open": "2026-07-28",
+      "deadline": "2026-09-22",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "GI oncology",
+        "Research"
+      ],
+      "url": "https://www.asco.org/meetings-education/meetings/abstract-submissions",
+      "guideline": null,
+      "evidence": "official",
+      "note": "",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "ascogu27",
+      "name": "ASCO GU Cancers Symposium 2027",
+      "society": "American Society of Clinical Oncology",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-02-11",
+      "end": "2027-02-13",
+      "city": "To be announced",
+      "open": "2026-08-19",
+      "deadline": "2026-10-13",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Genitourinary oncology",
+        "Clinical research"
+      ],
+      "url": "https://www.asco.org/meetings-education/meetings/abstract-submissions",
+      "guideline": null,
+      "evidence": "official",
+      "note": "",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "ascrs27",
+      "name": "ASCRS Tripartite Meeting 2027",
+      "society": "American Society of Colon and Rectal Surgeons",
+      "specialty": "Surgery",
+      "start": "2027-05-22",
+      "end": "2027-05-25",
+      "city": "New Orleans, LA",
+      "open": "2026-05-08",
+      "deadline": "2026-10-13",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": "$50 per abstract",
+      "types": [
+        "Colorectal surgery research"
+      ],
+      "url": "https://ascrsasm2027.eventscribe.net/aaStatic.asp?SFP=UUdZUlFHQ1pAMjYxMTY",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Check official regular abstract submission instructions and eligibility.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "asdp27",
+      "name": "American Society of Dermatopathology Annual Meeting 2027",
+      "society": "American Society of Dermatopathology",
+      "specialty": "Pathology",
+      "start": "2027-11-04",
+      "end": "2027-11-07",
+      "city": "Austin, TX",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific program / submission categories to confirm"
+      ],
+      "url": "https://www.asdp.org/ASDPAnnualMeeting/ASDPWeb/Meetings---Events/Events_Calendar.aspx",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.asdp.org/ASDPAnnualMeeting/ASDPWeb/Meetings---Events/Events_Calendar.aspx",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "end": {
+          "url": "https://www.asdp.org/ASDPAnnualMeeting/ASDPWeb/Meetings---Events/Events_Calendar.aspx",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        }
+      }
+    },
+    {
+      "id": "asds27",
+      "name": "ASDS Annual Meeting 2027",
+      "society": "American Society for Dermatologic Surgery",
+      "specialty": "Dermatology",
+      "start": "2027-10-14",
+      "end": "2027-10-17",
+      "city": "Chicago, IL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.asds.net/medical-professionals/annual-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.asds.net/medical-professionals/annual-meeting",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.asds.net/medical-professionals/annual-meeting",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        }
+      }
+    },
+    {
+      "id": "asent27",
+      "name": "ASENT Annual Meeting 2027",
+      "society": "American Society for Experimental Neurotherapeutics",
+      "specialty": "Neurology",
+      "start": "2027-03-17",
+      "end": "2027-03-19",
+      "city": "Bethesda, MD",
+      "open": "2026-09-07",
+      "deadline": "2026-10-30",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": "$25 trainees; $75 members; $175 nonmembers",
+      "types": [
+        "Neurotherapeutics development",
+        "Clinical trials",
+        "Translational neuroscience"
+      ],
+      "url": "https://www.asent.org/AnnualMeeting2027",
+      "guideline": "https://www.asent.org/event-6830500",
+      "evidence": "official",
+      "note": "Established scientific and translational neurotherapeutics society. Abstracts include trials-in-progress and encore abstracts, but case reports are not accepted. Clinical trials course occurs March 15–16; annual scientific meeting March 17–19.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.asent.org/AnnualMeeting2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "end": {
+          "url": "https://www.asent.org/AnnualMeeting2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "open": {
+          "url": "https://www.asent.org/event-6830500",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "deadline": {
+          "url": "https://www.asent.org/event-6830500",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        }
+      }
+    },
+    {
+      "id": "ash26",
+      "name": "ASH Annual Meeting 2026",
+      "society": "American Society of Hematology",
+      "specialty": "Hematology & Oncology",
+      "start": "2026-12-12",
+      "end": "2026-12-15",
+      "city": "New Orleans, Louisiana",
+      "open": "2026-06-02",
+      "deadline": "2026-08-04",
+      "deadlineTime": "11:59 p.m. Pacific time",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Hematology research",
+        "Clinical trials",
+        "Translational science"
+      ],
+      "url": "https://www.hematology.org/meetings/annual-meeting",
+      "guideline": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+      "evidence": "official",
+      "note": "68th ASH Annual Meeting (2026): December 12–15 in New Orleans. Regular abstracts closed August 4, 2026. These dates do not apply to 2027.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.hematology.org/meetings/annual-meeting",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official meeting-page review",
+          "source_quote": "68th ASH Annual Meeting and Exposition, taking place December 12–15, 2026"
+        },
+        "end": {
+          "url": "https://www.hematology.org/meetings/annual-meeting",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official meeting-page review",
+          "source_quote": "December 12–15, 2026"
+        },
+        "open": {
+          "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official abstract-page review",
+          "source_quote": "Abstract submission site opens June 2, 2026"
+        },
+        "deadline": {
+          "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official abstract-page review",
+          "source_quote": "Abstract submission deadline August 4, 2026"
+        }
+      }
+    },
+    {
+      "id": "ash27",
+      "name": "ASH Annual Meeting 2027",
+      "society": "American Society of Hematology",
+      "specialty": "Hematology & Oncology",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Hematology research",
+        "Clinical trials",
+        "Translational science"
+      ],
+      "url": "https://www.hematology.org/meetings/annual-meeting/abstracts",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "The official ASH annual-meeting website currently describes the December 12–15, 2026 edition. Meeting and abstract dates for ASH 2027 have not been verified; do not carry 2026 dates forward.",
+      "flag": "unannounced",
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "additionalSources": [
+        "https://www.hematology.org/meetings/annual-meeting"
+      ]
+    },
+    {
+      "id": "asmmicrobe27",
+      "name": "ASM Microbe 2027",
+      "society": "American Society for Microbiology",
+      "specialty": "Infectious Diseases",
+      "start": "2027-06-22",
+      "end": "2027-06-25",
+      "city": "Chicago, IL",
+      "open": "2026-12-02",
+      "deadline": "2027-01-20",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://asm.org/events/asm-microbe/present",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 ASM Microbe regular abstract window: December 2, 2026–January 20, 2027; separate early abstract window is November 10–December 1, 2026. Do not conflate the early deadline with the main regular deadline.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://asm.org/events/asm-microbe/home",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://asm.org/events/asm-microbe/home",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://asm.org/events/asm-microbe/present",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE individual manual review of organizer webpage",
+          "source_quote": "Dec. 2 Regular Abstract submission opens; Jan. 20, 2027 Regular Abstract submission closes. Early abstracts use a separate November 10–December 1, 2026 window.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://asm.org/events/asm-microbe/present",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE individual manual review of organizer webpage",
+          "source_quote": "Dec. 2 Regular Abstract submission opens; Jan. 20, 2027 Regular Abstract submission closes. Early abstracts use a separate November 10–December 1, 2026 window.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "asn27",
+      "name": "ASN Kidney Week 2027",
+      "society": "American Society of Nephrology",
+      "specialty": "Nephrology",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Kidney disease",
+        "Nephrology research",
+        "QI"
+      ],
+      "url": "https://www.asn-online.org/education/kidneyweek/",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "",
+      "flag": "unannounced",
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "asnr-rehab27",
+      "name": "American Society of Neurorehabilitation Annual Meeting 2027",
+      "society": "American Society of Neurorehabilitation",
+      "specialty": "Physical Medicine & Rehabilitation",
+      "start": "2027-03-16",
+      "end": "2027-03-18",
+      "city": "Durham, NC",
+      "open": null,
+      "deadline": "2026-11-29",
+      "deadlineTime": "11:59 PM CST",
+      "limit": 300,
+      "limitType": "words",
+      "limitNote": "Structured abstract body maximum 300 words; title maximum 50 words.",
+      "fee": null,
+      "types": [
+        "Neurorehabilitation original research",
+        "Case reports and series",
+        "Systematic reviews",
+        "Qualitative research"
+      ],
+      "url": "https://www.asnr.com/asnr2027-poster-abstracts/",
+      "guideline": "https://www.asnr.com/asnr2027-poster-abstracts/",
+      "evidence": "official",
+      "note": "ASNR2027 research poster abstract deadline November 29, 2026 11:59 PM US Central Standard Time; submission site open by November 2, but the exact opening day is not stated.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Poster"
+      ],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.asnr.com/asnr2027-poster-abstracts/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "ASNR2027 Poster Abstracts DUE Sunday, November 29, 2026 at 11:59pm Central. Abstract submission site is now OPEN!",
+          "confidence": "direct_official_edition_statement"
+        },
+        "start": {
+          "url": "https://bsky.app/profile/asnrehab.bsky.social",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official ASNR 2027 announcement corroborated by WFNR event calendar",
+          "source_quote": "ASNR2027 March 16-18, 2027 Durham Convention Center; ASNR Annual Meeting",
+          "confidence": "explicit_meeting_dates"
+        },
+        "end": {
+          "url": "https://bsky.app/profile/asnrehab.bsky.social",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official ASNR 2027 announcement corroborated by WFNR event calendar",
+          "source_quote": "ASNR2027 March 16-18, 2027 Durham Convention Center; ASNR Annual Meeting",
+          "confidence": "explicit_meeting_dates"
         }
       }
     },
@@ -2843,13 +3331,479 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "snmmi27",
-      "name": "SNMMI Annual Meeting 2027",
-      "society": "Society of Nuclear Medicine and Molecular Imaging",
+      "id": "asrm-micro27",
+      "name": "ASRM Reconstructive Microsurgery Annual Meeting 2027",
+      "society": "American Society for Reconstructive Microsurgery",
+      "specialty": "Plastic Surgery",
+      "start": "2027-01-29",
+      "end": "2027-02-02",
+      "city": "Aventura, FL",
+      "open": null,
+      "deadline": "2026-07-16",
+      "deadlineTime": "11:59 p.m. CT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.microsurg.org/future-asrm-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed. ASRM 2027 reconstructive microsurgery conference oral abstracts closed July 16, 2026 at 11:59 p.m. CT (ASRM category, not AAHS or ASPN).",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.microsurg.org/future-asrm-meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.microsurg.org/future-asrm-meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://aahsaspnasrm.confex.com/aahsaspnasrm/2027/cfp.cgi",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "ASRM DEADLINE: Thursday, July 16, 2026 at 11:59pm (CT)",
+          "confidence": "explicit_statement"
+        }
+      },
+      "submissionSource": "https://aahsaspnasrm.confex.com/aahsaspnasrm/2027/cfp.cgi"
+    },
+    {
+      "id": "asrs27",
+      "name": "ASRS Annual Meeting 2027",
+      "society": "American Society of Retina Specialists",
+      "specialty": "Ophthalmology",
+      "start": "2027-07-28",
+      "end": "2027-07-31",
+      "city": "San Francisco, CA",
+      "open": "2026-12-03",
+      "deadline": "2027-01-28",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.asrs.org/annual-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Annual ASRS meeting regular abstracts open December 3, 2026 and close January 28, 2027. Late-breaking research uses different May–June 2027 window.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.asrs.org/annual-meeting/future-annual-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.asrs.org/annual-meeting/future-annual-meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "open": {
+          "url": "https://www.asrs.org/annual-meeting",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of 2027 organizer's abstract information",
+          "source_quote": "Mark your calendar for our 45th ASRS Annual Scientific Meeting, July 28-31 in San Francisco. Abstract submissions will open on December 3, 2026 and close on January 28, 2027.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.asrs.org/annual-meeting",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual review of 2027 organizer's abstract information",
+          "source_quote": "Mark your calendar for our 45th ASRS Annual Scientific Meeting, July 28-31 in San Francisco. Abstract submissions will open on December 3, 2026 and close on January 28, 2027.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "assr27",
+      "name": "American Society of Spine Radiology Annual Symposium 2027",
+      "society": "American Society of Spine Radiology",
       "specialty": "Radiology",
+      "start": "2027-02-10",
+      "end": "2027-02-13",
+      "city": "San Francisco, CA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.asnr.org/future-events/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.asnr.org/future-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.asnr.org/future-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "astro27",
+      "name": "ASTRO Annual Meeting 2027",
+      "society": "American Society for Radiation Oncology",
+      "specialty": "Radiation Oncology",
+      "start": "2027-09-18",
+      "end": "2027-09-22",
+      "city": "Chicago, IL",
+      "open": "2026-12-02",
+      "deadline": "2027-02-24",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Radiation oncology research",
+        "Clinical trials",
+        "QI"
+      ],
+      "url": "https://www.astro.org/meetings-and-education/micro-sites/2027/am-exhibitors/general-information/future-annual-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "ASTRO's October 14, 2026 announcement confirms the 2027 Annual Meeting regular abstract window: December 2, 2026 to February 24, 2027. Other 2027 symposia have separate submissions.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "submissionSource": "https://www.astro.org/news-and-publications/astrogram/2026/astrogram_101426",
+      "fieldSources": {
+        "open": {
+          "url": "https://www.astro.org/ASTRO/media/ASTRO/Meetings%20and%20Education/PDFs/AM26/AM26-Daily-News_Tuesday-1.pdf",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
+        },
+        "deadline": {
+          "url": "https://www.astro.org/news-and-publications/astrogram/2026/astrogram_101426",
+          "checked_at": "2026-10-25",
+          "verified_by": "Official ASTRO newsletter published October 14, 2026",
+          "source_quote": "Abstracts submissions: December 2, 2026 – February 24, 2027"
+        }
+      }
+    },
+    {
+      "id": "ata27",
+      "name": "American Thyroid Association Annual Meeting 2027",
+      "society": "American Thyroid Association",
+      "specialty": "Endocrinology",
+      "start": "2027-11-10",
+      "end": "2027-11-13",
+      "city": "Denver, CO",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Thyroid research",
+        "Clinical endocrinology"
+      ],
+      "url": "https://www.thyroid.org/professionals/meetings/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Annual meeting schedule confirmed by ATA; abstract cycle not verified.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "atc27",
+      "name": "American Transplant Congress 2027",
+      "society": "American Society of Transplantation and American Society of Transplant Surgeons",
+      "specialty": "Transplantation",
       "start": "2027-06-05",
-      "end": "2027-06-08",
-      "city": "Washington, DC",
+      "end": "2027-06-09",
+      "city": "Seattle, WA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Transplant research"
+      ],
+      "url": "https://www.atcmeeting.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.atcmeeting.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.atcmeeting.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "ats27",
+      "name": "ATS International Conference 2027",
+      "society": "American Thoracic Society",
+      "specialty": "Pulmonary & Critical Care",
+      "start": "2027-05-14",
+      "end": "2027-05-19",
+      "city": "New Orleans, LA",
+      "open": null,
+      "deadline": "2026-11-04",
+      "deadlineTime": "5:00 PM ET",
+      "limit": 400,
+      "limitType": "words",
+      "limitNote": null,
+      "fee": "Varies by ATS membership",
+      "types": [
+        "Original research",
+        "Case reports",
+        "QI",
+        "Medical education"
+      ],
+      "url": "https://site.thoracic.org/conference/program/call-for-scientific-abstracts-and-case-reports",
+      "guideline": null,
+      "evidence": "official",
+      "note": "ATS abstract criteria and 400-word maximum, meeting dates verified against ATS website.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "aua-urology27",
+      "name": "AUA Annual Meeting 2027 (Urology)",
+      "society": "American Urological Association",
+      "specialty": "Urology",
+      "start": "2027-05-21",
+      "end": "2027-05-24",
+      "city": "San Diego, CA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Urologic research"
+      ],
+      "url": "https://www.auadailynews.org/meeting-coverage/article/22967770/mark-your-calendar-for-aua2027",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Flagship US urology meeting; note that AUA also abbreviates Association of University Anesthesiologists. 2027 abstract submission deadline not independently confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.auadailynews.org/meeting-coverage/article/22967770/mark-your-calendar-for-aua2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.auadailynews.org/meeting-coverage/article/22967770/mark-your-calendar-for-aua2027",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "avf27",
+      "name": "American Venous Forum Annual Meeting 2027",
+      "society": "American Venous Forum",
+      "specialty": "Vascular Surgery",
+      "start": "2027-02-27",
+      "end": "2027-03-02",
+      "city": "Nashville, TN",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://vascular.org/vascular-specialists/meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "national",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "cap27",
+      "name": "CAP Annual Meeting 2027",
+      "society": "College of American Pathologists",
+      "specialty": "Pathology",
+      "start": "2027-09-09",
+      "end": "2027-09-12",
+      "city": "Chicago, IL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Pathology research",
+        "Laboratory quality"
+      ],
+      "url": "https://www.cap.org/event/cap27-college-of-american-pathologist-annual-meeting/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting confirmed; 2027 abstract call has not been confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "capcseminar27",
+      "name": "CAPC National Seminar 2027",
+      "society": "Center to Advance Palliative Care",
+      "specialty": "Palliative Medicine",
+      "start": "2027-10-13",
+      "end": "2027-10-15",
+      "city": "Columbus, OH",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.capc.org/seminar/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Interdisciplinary palliative care leadership, systems innovation, policy and research; registration opens in early 2027.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.capc.org/seminar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.capc.org/seminar/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "chest27",
+      "name": "CHEST Annual Meeting 2027",
+      "society": "American College of Chest Physicians",
+      "specialty": "Pulmonary & Critical Care",
+      "start": "2027-10-24",
+      "end": "2027-10-27",
+      "city": "Vancouver, Canada",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Clinical research",
+        "Case reports",
+        "Pulmonary/critical care"
+      ],
+      "url": "https://www.chestnet.org/learning-and-events/events/chest-annual-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "CHEST 2027 organizer page lists a December 1, 2026 2:00 p.m. CT CALL FOR EDUCATIONAL TOPICS/SESSION IDEAS, NOT a regular scientific research abstract deadline. The 2027 standard research abstract opening/closing dates remain unverified.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "additionalSources": [
+        "https://info.chestnet.org/chest-call-for-topics"
+      ]
+    },
+    {
+      "id": "childcns27",
+      "name": "Child Neurology Society Annual Meeting 2027",
+      "society": "Child Neurology Society",
+      "specialty": "Neurology",
+      "start": "2027-11-10",
+      "end": "2027-11-13",
+      "city": "Milwaukee, WI",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -2858,7 +3812,7 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.snmmi.org/",
+      "url": "https://www.childneurologysociety.org/event/56th-cns-annual-meeting/",
       "guideline": null,
       "evidence": "official",
       "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
@@ -2868,16 +3822,2614 @@ window.RISE_DATA = {
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.snmmi.org/",
+          "url": "https://www.childneurologysociety.org/event/56th-cns-annual-meeting/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://www.snmmi.org/",
+          "url": "https://www.childneurologysociety.org/event/56th-cns-annual-meeting/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        }
+      }
+    },
+    {
+      "id": "cnsns27",
+      "name": "CNS Annual Meeting 2027",
+      "society": "Congress of Neurological Surgeons",
+      "specialty": "Neurosurgery",
+      "start": "2027-10-23",
+      "end": "2027-10-27",
+      "city": "Phoenix, AZ",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://painsection.cns.org/meetings/past-and-future-annual-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://painsection.cns.org/meetings/past-and-future-annual-meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://painsection.cns.org/meetings/past-and-future-annual-meetings",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        }
+      }
+    },
+    {
+      "id": "creog-apgo27",
+      "name": "CREOG & APGO Annual Meeting 2027",
+      "society": "Council on Resident Education in Obstetrics and Gynecology and Association of Professors of Gynecology and Obstetrics",
+      "specialty": "Obstetrics & Gynecology",
+      "start": "2027-02-24",
+      "end": "2027-02-27",
+      "city": "Denver, CO",
+      "open": null,
+      "deadline": "2026-08-04",
+      "deadlineTime": "5:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Obstetrics and gynecology medical education research",
+        "Teaching innovation"
+      ],
+      "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "A research and scholarship meeting specific to OB/GYN education. Call for abstracts and session proposals closed August 4, 2026 at 5:00 PM ET; accepts oral abstracts, posters and educational films.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral abstract",
+        "Poster",
+        "Educational film"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "end": {
+          "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        },
+        "deadline": {
+          "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official 2027 society verification",
+          "source_quote": "Official year-specific meeting or abstract call."
+        }
+      }
+    },
+    {
+      "id": "croi27",
+      "name": "Conference on Retroviruses and Opportunistic Infections 2027",
+      "society": "CROI Foundation / IAS–USA",
+      "specialty": "Infectious Diseases",
+      "start": "2027-03-21",
+      "end": "2027-03-24",
+      "city": "San Diego, CA",
+      "open": "2026-08-27",
+      "deadline": "2026-10-01",
+      "deadlineTime": "5:00 PM PT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "HIV/AIDS",
+        "Retrovirology",
+        "Opportunistic infections"
+      ],
+      "url": "https://www.croiconference.org/about/croi-2027-preliminary-important-dates-and-deadlines/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting page marks the regular submission timeline preliminary; confirm before submitting.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "ddw27",
+      "name": "Digestive Disease Week 2027",
+      "society": "DDW / AGA / AASLD / ASGE / SSAT",
+      "specialty": "Gastroenterology",
+      "start": "2027-05-15",
+      "end": "2027-05-18",
+      "city": "Washington, DC + Online",
+      "open": "2026-10-22",
+      "deadline": "2026-12-02",
+      "deadlineTime": "9:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research",
+        "Clinical studies",
+        "Basic science"
+      ],
+      "url": "https://news.ddw.org/news/your-roadmap-to-ddw-2027-key-dates-to-add-to-your-calendar/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "AGA resident travel awards may support accepted presenters.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "eaaci27",
+      "name": "EAACI Congress 2027",
+      "society": "European Academy of Allergy and Clinical Immunology",
+      "specialty": "Allergy & Immunology",
+      "start": "2027-06-11",
+      "end": "2027-06-14",
+      "city": "Helsinki, Finland",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific program / submission categories to confirm"
+      ],
+      "url": "https://eaaci.org/events_congress/eaaci-congress-2027/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://eaaci.org/events_congress/eaaci-congress-2027/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "end": {
+          "url": "https://eaaci.org/events_congress/eaaci-congress-2027/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        }
+      }
+    },
+    {
+      "id": "ean27",
+      "name": "EAN Congress 2027",
+      "society": "European Academy of Neurology",
+      "specialty": "Neurology",
+      "start": "2027-06-12",
+      "end": "2027-06-15",
+      "city": "Gothenburg, Sweden",
+      "open": "2026-10-29",
+      "deadline": "2027-01-14",
+      "deadlineTime": "11:59 PM CET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Clinical neurology",
+        "Basic and translational research"
+      ],
+      "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+      "guideline": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster",
+        "Poster display"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "deadline": {
+          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual official date/time verification",
+          "source_quote": "Abstract Submission Deadline Thursday 14 January 2027, 23:59 CET (not CEST)."
+        }
+      }
+    },
+    {
+      "id": "eau27",
+      "name": "EAU Congress 2027",
+      "society": "European Association of Urology",
+      "specialty": "Urology",
+      "start": "2027-03-19",
+      "end": "2027-03-22",
+      "city": "Amsterdam, Netherlands",
+      "open": "2026-08-03",
+      "deadline": "2026-11-01",
+      "deadlineTime": "11:59 PM CET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Urologic oncology",
+        "Non-oncologic urology"
+      ],
+      "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+      "guideline": null,
+      "evidence": "official",
+      "note": "High-value European urology scientific congress; confirmed meeting dates and abstract deadline.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [
+        "Oral",
+        "Video abstract"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "open": {
+          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "deadline": {
+          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "eha27",
+      "name": "EHA Congress 2027",
+      "society": "European Hematology Association",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-06-10",
+      "end": "2027-06-13",
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://ehaweb.org/connect-network/future-congresses",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://ehaweb.org/connect-network/future-congresses",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://ehaweb.org/connect-network/future-congresses",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        }
+      }
+    },
+    {
+      "id": "endo27",
+      "name": "ENDO 2027",
+      "society": "Endocrine Society",
+      "specialty": "Endocrinology",
+      "start": "2027-06-05",
+      "end": "2027-06-07",
+      "city": "Toronto, ON, Canada",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Endocrine research",
+        "Clinical science"
+      ],
+      "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "International meeting. 2027 abstract dates not yet confirmed in RISE tracker. Meeting location and dates confirmed from the organizer's current published schedule.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "city": {
+          "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer page"
+        }
+      }
+    },
+    {
+      "id": "endo28",
+      "name": "ENDO 2028",
+      "society": "Endocrine Society",
+      "specialty": "Endocrinology",
+      "start": "2028-06-03",
+      "end": "2028-06-06",
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+      "guideline": null,
+      "evidence": "official",
+      "flag": null,
+      "note": "Meeting dates verified from the official organizer page; abstract dates and submission rules have not yet been announced.",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "priorCycleId": "endo27",
+      "fieldSources": {
+        "start": {
+          "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+          "checked_at": "2026-10-11T01:44:54.833258+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": ". ENDO 2028 . June 3–6, 2028"
+        },
+        "end": {
+          "url": "https://www.endocrine.org/meetings-and-events/endo-future-meetings",
+          "checked_at": "2026-10-11T01:44:54.833258+00:00",
+          "verified_by": "RISE future-cycle monitor",
+          "source_quote": ". ENDO 2028 . June 3–6, 2028"
+        }
+      }
+    },
+    {
+      "id": "epa27",
+      "name": "European Congress of Psychiatry 2027",
+      "society": "European Psychiatric Association",
+      "specialty": "Psychiatry",
+      "start": "2027-04-03",
+      "end": "2027-04-06",
+      "city": "Florence, Italy",
+      "open": null,
+      "deadline": "2026-10-07",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific program / submission categories to confirm"
+      ],
+      "url": "https://epa-congress.org/abstract-submission/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Regular abstract deadline not independently confirmed; resident awards may have a different deadline. 2027 main regular abstract deadline extended to October 7, 2026; exact opening date not confirmed on official 2027 submission page.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://epa-congress.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "end": {
+          "url": "https://epa-congress.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "deadline": {
+          "url": "https://epa-congress.org/abstract-submission/",
+          "checked_at": "2026-11-02",
+          "verified_by": "Manual review of official 2027 meeting submission page",
+          "source_quote": "Abstracts must be received by the extended deadline on 7 October 2026. Abstracts received after the deadline will not be considered.",
+          "confidence": "direct_official_statement"
+        }
+      }
+    },
+    {
+      "id": "epi27",
+      "name": "AHA EPI|Lifestyle 2027",
+      "society": "American Heart Association",
+      "specialty": "Cardiology",
+      "start": "2027-03-01",
+      "end": "2027-03-04",
+      "city": "Boston, MA",
+      "open": "2026-07-29",
+      "deadline": "2026-10-14",
+      "deadlineTime": "6:00 PM CT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research",
+        "Clinical case report",
+        "Implementation/QI"
+      ],
+      "url": "https://professional.heart.org/en/meetings/epi-lifestyle/abstracts-and-awards",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Offers clinical case reports and an implementation science/QI track in 2027.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "era27",
+      "name": "ERA Congress 2027 (European Renal Association)",
+      "society": "European Renal Association",
+      "specialty": "Nephrology",
+      "start": "2027-06-03",
+      "end": "2027-06-06",
+      "city": "Rotterdam, Netherlands",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://www.era-online.org/events/rotterdam-2027/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.era-online.org/events/rotterdam-2027/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://www.era-online.org/events/rotterdam-2027/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "ers27",
+      "name": "European Respiratory Society Congress 2027",
+      "society": "European Respiratory Society",
+      "specialty": "Pulmonary & Critical Care",
+      "start": "2027-09-11",
+      "end": "2027-09-14",
+      "city": "Milan, Italy",
+      "open": "2026-12-01",
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific program / submission categories to confirm"
+      ],
+      "url": "https://www.ersnet.org/congress-and-events/congress/abstract-and-clinical-case-submission/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "ERS Congress 2027 regular abstracts open December 1, 2026; the official 2027 regular abstract deadline is not yet announced. The submission table currently shown on the official ERS page ('First round abstracts' December 1, 2025–February 12, 2026, extended) belongs to ERS Congress 2026, not 2027. Do not carry dates forward. Regular abstracts only; separate late-breaking and RCT windows excluded.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.ersnet.org/congress-and-events/congress/abstract-and-clinical-case-submission/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "end": {
+          "url": "https://www.ersnet.org/congress-and-events/congress/abstract-and-clinical-case-submission/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "open": {
+          "url": "https://www.ersnet.org/congress-and-events/congress/abstract-and-clinical-case-submission/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        }
+      }
+    },
+    {
+      "id": "esc27",
+      "name": "ESC Congress 2027",
+      "society": "European Society of Cardiology",
+      "specialty": "Cardiology",
+      "start": "2027-08-27",
+      "end": "2027-08-30",
+      "city": "Milan, Italy",
+      "open": null,
+      "deadline": "2027-03-01",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific program / submission categories to confirm"
+      ],
+      "url": "https://www.escardio.org/events/congresses/esc-congress/",
+      "guideline": "https://www.escardio.org/events/congresses/esc-congress/",
+      "evidence": "official",
+      "note": "Official ESC Congress 2027 page states that Call for Science opens in mid-December 2026, with regular abstract deadline March 1, 2027. The opening is month-level only; March 8 clinical case and June 1 late-breaking deadlines are separate.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.escardio.org/events/congresses/esc-congress/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "end": {
+          "url": "https://www.escardio.org/events/congresses/esc-congress/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "openMonth": {
+          "url": "https://www.escardio.org/events/congresses/esc-congress/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent manual official congress review",
+          "source_quote": "The Call for Science and registration open in mid-December. Abstract submission deadline 01 Mar 2027.",
+          "confidence": "official_month_only"
+        },
+        "deadline": {
+          "url": "https://www.escardio.org/events/congresses/esc-congress/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent manual official congress review",
+          "source_quote": "The Call for Science and registration open in mid-December. Abstract submission deadline 01 Mar 2027.",
+          "confidence": "direct_official_edition_statement"
+        }
+      },
+      "openMonth": "2026-12"
+    },
+    {
+      "id": "esmo27",
+      "name": "ESMO Congress 2027",
+      "society": "European Society for Medical Oncology",
+      "specialty": "Hematology & Oncology",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "types": [
+        "Medical oncology",
+        "Clinical trials",
+        "Translational cancer research"
+      ],
+      "url": "https://www.esmo.org/meeting-calendar",
+      "evidence": "unannounced",
+      "flag": "unannounced",
+      "note": "International flagship medical oncology congress. 2027 meeting and abstract dates require organizer confirmation.",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {}
+    },
+    {
+      "id": "estro27",
+      "name": "ESTRO Congress 2027",
+      "society": "European Society for Radiotherapy and Oncology",
+      "specialty": "Radiation Oncology",
+      "start": "2027-05-21",
+      "end": "2027-05-25",
+      "city": "Milan, Italy",
+      "open": null,
+      "deadline": "2026-11-11",
+      "deadlineTime": "11:59 PM CET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Radiation oncology",
+        "Medical physics",
+        "Radiobiology"
+      ],
+      "url": "https://www.estro.org/Congresses/ESTRO-2027-%281%29?viewmode=0",
+      "guideline": null,
+      "evidence": "official",
+      "note": "International meeting. Official regular abstract deadline November 11, 2026.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "eular27",
+      "name": "EULAR Congress 2027",
+      "society": "European Alliance of Associations for Rheumatology",
+      "specialty": "Rheumatology",
+      "start": "2027-06-09",
+      "end": "2027-06-12",
+      "city": "Berlin, Germany",
+      "open": "2026-10-01",
+      "deadline": "2027-01-15",
+      "deadlineTime": "23:59 CET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://congress.eular.org/abstractgeneralinfo",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://congress.eular.org/abstractgeneralinfo",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://congress.eular.org/abstractgeneralinfo",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://congress.eular.org/abstractgeneralinfo",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
+        },
+        "deadline": {
+          "url": "https://congress.eular.org/abstractgeneralinfo",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
+        }
+      }
+    },
+    {
+      "id": "fl-acs27",
+      "name": "Florida ACS Annual Meeting & Copeland Resident Research Symposium 2027",
+      "society": "Florida Chapter of the American College of Surgeons",
+      "specialty": "Surgery",
+      "start": "2027-04-24",
+      "end": "2027-04-25",
+      "city": "Orlando, FL",
+      "open": "2026-11-02",
+      "deadline": "2027-01-31",
+      "deadlineTime": null,
+      "limit": 250,
+      "limitType": "words",
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Basic science resident papers",
+        "Clinical science resident papers",
+        "Commission on Cancer research",
+        "Advocacy / education / cases",
+        "Poster"
+      ],
+      "url": "https://www.floridafacs.org/2027-annual-meeting",
+      "guideline": "https://www.floridafacs.org/2027-annual-meeting",
+      "evidence": "official",
+      "note": "Florida ACS 2027 Resident Paper/Abstract Competition opens November 2, 2026 and closes January 31, 2027 (per 2027 abstract instructions).",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.floridafacs.org/2027-annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.floridafacs.org/2027-annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://www.floridafacs.org/abstract-submissions-1",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "open": {
+          "url": "https://www.floridafacs.org/2027-annual-meeting",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "2027 Annual Meeting & Edward M. Copeland III Resident Research Symposium; Call for Resident Abstracts Opening November 2!",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "fl-derm27",
+      "name": "Florida Academy of Dermatology Annual Meeting 2027",
+      "society": "Florida Academy of Dermatology",
+      "specialty": "Dermatology",
+      "start": "2027-07-09",
+      "end": "2027-07-11",
+      "city": "Palm Beach, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Dermatology scientific meeting; resident presentation call to confirm"
+      ],
+      "url": "https://www.faderm.org/future_meetings.php",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. The Breakers; original research deadline unannounced.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.faderm.org/future_meetings.php",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.faderm.org/future_meetings.php",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-em-fcep27",
+      "name": "FCEP Symposium by the Sea — Next Edition",
+      "society": "Florida College of Emergency Physicians",
+      "specialty": "Emergency Medicine",
+      "start": null,
+      "end": null,
+      "city": "Florida (date and site pending)",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Emergency medicine CME and resident engagement; 2027 abstract call unannounced"
+      ],
+      "url": "https://fcep.org/events-and-cme/",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "Florida regional meeting. Annual statewide meeting confirmed as recurring, but 2027 edition date, city and abstract deadline are not published.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {}
+    },
+    {
+      "id": "fl-ent26",
+      "name": "Florida Combined Otolaryngology Meeting 2026",
+      "society": "Florida Society of Otolaryngology – Head & Neck Surgery",
+      "specialty": "Otolaryngology",
+      "start": "2026-11-12",
+      "end": "2026-11-15",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Medical student research posters",
+        "Florida resident ENT poster competition"
+      ],
+      "url": "https://fcomnow.com/",
+      "guideline": "https://fcomnow.com/poster-submissions/medstudent-resident/",
+      "evidence": "official",
+      "note": "Florida regional meeting. Official 2026 home page reports November 12–15; a future-events page also lists November 12–16 (end-date discrepancy). Residency poster competition restricted to Florida trainees.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://fcomnow.com/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fcomnow.com/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-ent27",
+      "name": "Florida Combined Otolaryngology Meeting 2027",
+      "society": "Florida Society of Otolaryngology – Head & Neck Surgery",
+      "specialty": "Otolaryngology",
+      "start": "2027-11-11",
+      "end": "2027-11-14",
+      "city": "Boca Raton, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "ENT education and research posters (2027 criteria pending)"
+      ],
+      "url": "https://fcomnow.com/future-events/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Boca Raton Resort, official future meetings schedule; do not reuse 2026 research poster deadline.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://fcomnow.com/future-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fcomnow.com/future-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fm-annual27",
+      "name": "FAFP Summit Family Medicine Annual Meeting 2027",
+      "society": "Florida Academy of Family Physicians",
+      "specialty": "Family Medicine",
+      "start": "2027-12-10",
+      "end": "2027-12-12",
+      "city": "Amelia Island, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Primary care education; resident scientific submission eligibility to confirm"
+      ],
+      "url": "https://www.fafp.org/education-and-events",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. The Ritz-Carlton Amelia Island; call for resident abstracts not posted.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fm-spring27",
+      "name": "FAFP Ignite Spring Forum 2027",
+      "society": "Florida Academy of Family Physicians",
+      "specialty": "Family Medicine",
+      "start": "2027-04-09",
+      "end": "2027-04-11",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Family medicine CME / scholarly submissions to confirm"
+      ],
+      "url": "https://www.fafp.org/education-and-events",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Caribe Royale Orlando; submission track and dates not announced.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fm-summer27",
+      "name": "FAFP Elevate Summer Retreat 2027",
+      "society": "Florida Academy of Family Physicians",
+      "specialty": "Family Medicine",
+      "start": "2027-07-09",
+      "end": "2027-07-11",
+      "city": "Clearwater Beach, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Family medicine continuing education; research abstracts to confirm"
+      ],
+      "url": "https://www.fafp.org/education-and-events",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Wyndham Grand Clearwater Beach; not confirmed to have a resident research abstract call.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fafp.org/education-and-events",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fso-urol26",
+      "name": "Florida Urological Society Annual Meeting 2026",
+      "society": "Florida Urological Society",
+      "specialty": "Urology",
+      "start": "2026-12-11",
+      "end": null,
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Urology annual academic meeting; research submission rules unconfirmed"
+      ],
+      "url": "https://lugpa.memberclicks.net/all-urology-wide-calendar",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. External urology association calendar lists Dec. 11, 2026 but not meeting end date; no official society event page corroboration; confirm before travel.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://lugpa.memberclicks.net/all-urology-wide-calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fsps26",
+      "name": "Florida Society of Plastic Surgeons Annual Meeting 2026",
+      "society": "Florida Society of Plastic Surgeons",
+      "specialty": "Plastic Surgery",
+      "start": "2026-12-10",
+      "end": "2026-12-13",
+      "city": "Palm Beach, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Plastic surgery research and clinical education (submission rules to verify)"
+      ],
+      "url": "https://www.fsps.org/meetings/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. The Breakers, Palm Beach; official page confirms 2026 event.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fsps.org/meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fsps.org/meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fstcs27",
+      "name": "Florida Society of Thoracic and Cardiovascular Surgeons Annual Meeting 2027",
+      "society": "Florida Society of Thoracic & Cardiovascular Surgeons",
+      "specialty": "Cardiothoracic Surgery",
+      "start": "2027-07-08",
+      "end": "2027-07-11",
+      "city": "Key Largo, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Cardiothoracic surgery education; original research submissions to confirm"
+      ],
+      "url": "https://www.fstcs.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Ocean Reef Club, Key Largo; no regular abstract deadline posted.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.fstcs.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.fstcs.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-fvs27",
+      "name": "Florida Vascular Society Scientific Sessions 2027",
+      "society": "Florida Vascular Society",
+      "specialty": "Vascular Surgery",
+      "start": "2027-04-15",
+      "end": "2027-04-18",
+      "city": "Orlando, FL",
+      "open": "2026-09-01",
+      "deadline": "2026-10-23",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Resident vascular research oral presentations",
+        "Surgery and vascular fellow scientific abstracts",
+        "Clinical case reports"
+      ],
+      "url": "https://fvs.org/fvs-annual-meeting/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Regular abstract deadline extended from October 16 through October 23, 2026; multiple Florida resident research prizes offered.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://fvs.org/fvs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fvs.org/fvs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "open": {
+          "url": "https://fvs.org/fvs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://fvs.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-geriatric27",
+      "name": "Florida Geriatrics Society Annual Symposium 2027",
+      "society": "Florida Geriatrics Society",
+      "specialty": "Geriatrics",
+      "start": "2027-06-12",
+      "end": "2027-06-13",
+      "city": "Clearwater Beach, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Geriatric medicine research posters",
+        "David T. Lowenthal Founder's Poster Session"
+      ],
+      "url": "https://www.floridageriatricssociety.org/Events-%26-Meetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Society event listing confirms June 12–13; separate home page includes a June 11 premeeting and inconsistent end-day text. Poster abstract opening noted for September; exact cutoff unverified.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.floridageriatricssociety.org/Events-%26-Meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.floridageriatricssociety.org/Events-%26-Meetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-gi27",
+      "name": "ACG / Florida Gastroenterology Society Annual Spring Symposium 2027",
+      "society": "American College of Gastroenterology / Florida Gastroenterology Society",
+      "specialty": "Gastroenterology",
+      "start": "2027-03-05",
+      "end": "2027-03-07",
+      "city": "Naples, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Esophagus school",
+        "Gastroenterology continuing education (abstracts unconfirmed)"
+      ],
+      "url": "https://gi.org/2027acg-fgs/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Regional clinical education symposium. Original research submission pathway not confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://gi.org/2027acg-fgs/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://gi.org/2027acg-fgs/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-nephro27",
+      "name": "Florida Society of Nephrology 60th Annual Meeting 2027",
+      "society": "Florida Society of Nephrology",
+      "specialty": "Nephrology",
+      "start": "2027-01-15",
+      "end": "2027-01-17",
+      "city": "Tampa, FL",
+      "open": null,
+      "deadline": "2026-11-01",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Robert Geronemus renal research competition",
+        "Resident/fellow original research",
+        "Posters"
+      ],
+      "url": "https://www.floridasocietyofnephrology.com/events/EventDetails.aspx?id=2032249",
+      "guideline": "https://www.floridasocietyofnephrology.com/page/ResearchCompetition",
+      "evidence": "official",
+      "note": "Florida regional meeting. Florida PGY-2/3 IM residents and nephrology fellows eligible for Nov 1 research competition; oral finalists and poster presentations.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.floridasocietyofnephrology.com/events/EventDetails.aspx?id=2032249",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.floridasocietyofnephrology.com/events/EventDetails.aspx?id=2032249",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://www.floridasocietyofnephrology.com/page/ResearchCompetition",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-neuro27",
+      "name": "Florida Society of Neurology Annual Meeting 2027",
+      "society": "Florida Society of Neurology",
+      "specialty": "Neurology",
+      "start": "2027-01-16",
+      "end": "2027-01-17",
+      "city": "Lake Buena Vista, FL",
+      "open": null,
+      "deadline": "2026-12-01",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Original research",
+        "Case reports and case series",
+        "Previously presented abstracts"
+      ],
+      "url": "https://fsneuro.org/annual-meeting-info-6/",
+      "guideline": "https://fsneuro.org/abstract-submissions/",
+      "evidence": "official",
+      "note": "Florida regional meeting Jan 16–17, 2027 at Disney's Yacht & Beach Club. The 20th Annual Resident & Fellow Research Day is Sat, Jan 16. Peer-reviewed platform and poster presentations; case reports/series and previously presented abstracts welcome. First author must be a resident, fellow, or student (medical, graduate, or undergraduate). No meeting registration fee for residents/fellows; accepted medical/graduate student presenters also receive waived registration. Abstract submission deadline Dec 1, 2026. Opening date and submission cutoff time not stated in the available announcement.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://fsneuro.org/annual-meeting-info-6/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fsneuro.org/annual-meeting-info-6/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://fsneuro.org/abstract-submissions/",
+          "checked_at": "2026-10-25",
+          "verified_by": "Official Florida Society of Neurology page (screenshot of call for abstracts)",
+          "source_quote": "DEADLINE – DECEMBER 1, 2026"
+        }
+      }
+    },
+    {
+      "id": "fl-onc-fellows26",
+      "name": "FLASCO Fellows & Residents Training Program 2026",
+      "society": "Florida Society of Clinical Oncology",
+      "specialty": "Hematology & Oncology",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Oncology trainee research presentations",
+        "Fellow and resident education",
+        "Mentorship"
+      ],
+      "url": "https://flasco.org/flasco-events/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. JW Marriott Orlando Bonnet Creek; society advertises research presentations, but no general abstract submission date confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://flasco.org/flasco-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://flasco.org/flasco-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-onc-thoracic27",
+      "name": "FLASCO Thoracic Oncology Summit 2027",
+      "society": "Florida Society of Clinical Oncology",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-04-02",
+      "end": "2027-04-03",
+      "city": "Aventura, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Thoracic oncology clinical and translational education; abstracts to confirm"
+      ],
+      "url": "https://flasco.org/flasco-events/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Hilton Miami Aventura; regular resident abstract submission not confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://flasco.org/flasco-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://flasco.org/flasco-events/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-ophth27",
+      "name": "Florida Society of Ophthalmology Masters in Ophthalmology 2027",
+      "society": "Florida Society of Ophthalmology",
+      "specialty": "Ophthalmology",
+      "start": "2027-06-04",
+      "end": "2027-06-06",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Ophthalmology education / resident mentorship"
+      ],
+      "url": "https://beta.mdeye.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Waldorf Astoria Orlando; original abstract submission not confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://beta.mdeye.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://beta.mdeye.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-ortho27",
+      "name": "Florida Orthopaedic Society FL OrthoCon 2027",
+      "society": "Florida Orthopaedic Society",
+      "specialty": "Orthopedic Surgery",
+      "start": "2027-05-20",
+      "end": "2027-05-23",
+      "city": "Key Largo, FL",
+      "open": null,
+      "deadline": "2027-01-08",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Orthopaedic scientific research abstracts"
+      ],
+      "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Ocean Reef Club; research abstract deadline January 8, 2027.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-path27",
+      "name": "Florida Society of Pathologists Annual Pathology Conference 2027",
+      "society": "Florida Society of Pathologists",
+      "specialty": "Pathology",
+      "start": "2027-02-12",
+      "end": "2027-02-14",
+      "city": "Lake Buena Vista, FL",
+      "open": null,
+      "deadline": "2026-12-01",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Original case and research posters",
+        "Resident/fellow poster competition",
+        "Medical student poster competition",
+        "Rare and interesting cases"
+      ],
+      "url": "https://flpath.org/event/Conference2027",
+      "guideline": "https://flpath.org/page/Poster_Submissions",
+      "evidence": "official",
+      "note": "Florida regional meeting. Poster submissions close December 1, 2026. Separate Rare & Interesting Case Competition closes November 27, 2026; not the regular poster deadline.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://flpath.org/event/Conference2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://flpath.org/event/Conference2027",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://flpath.org/page/Poster_Submissions",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-peds-fpp27",
+      "name": "Florida AAP Future of Pediatric Practice — Next Edition",
+      "society": "Florida Chapter of the American Academy of Pediatrics",
+      "specialty": "Pediatrics",
+      "start": null,
+      "end": null,
+      "city": "Florida (date and site pending)",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Competitive resident forum",
+        "Medical student research forum"
+      ],
+      "url": "https://www.fcaap.org/the-future-of-pediatric-practice/",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "Florida regional meeting. Annual Florida pediatrics conference held around Labor Day; no verified exact 2027 date or abstract submission deadline.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {}
+    },
+    {
+      "id": "fl-psych27",
+      "name": "Florida Psychiatric Society Spring CME Meeting 2027",
+      "society": "Florida Psychiatric Society",
+      "specialty": "Psychiatry",
+      "start": "2027-04-02",
+      "end": "2027-04-04",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Psychiatry continuing education; abstract submission eligibility to confirm"
+      ],
+      "url": "https://www.floridapsych.org/page/AnnualMeetings",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Renaissance Orlando at SeaWorld; submission program unannounced.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.floridapsych.org/page/AnnualMeetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.floridapsych.org/page/AnnualMeetings",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fl-radiology27",
+      "name": "Florida Radiological Society Annual Meeting 2027",
+      "society": "Florida Radiological Society and Florida Radiology Business Management Association",
+      "specialty": "Radiology",
+      "start": "2027-07-16",
+      "end": "2027-07-18",
+      "city": "Amelia Island, FL",
+      "open": "2027-01-04",
+      "deadline": "2027-05-14",
+      "deadlineTime": "12:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Radiology education / trainees; research abstract categories to confirm"
+      ],
+      "url": "https://www.flrad.org/frs-annual-meeting/",
+      "guideline": "https://www.flrad.org/resident-poster-session/",
+      "evidence": "official",
+      "note": "2027 Florida Radiological Society resident/medical-student poster session submission portal opens January 4, 2027 and closes May 14, 2027, 12 noon ET. Restriction: first authors must be eligible Florida students or residents/fellows; verify details. Generic abstracts page currently shows May 15 but is not explicitly edition-specific, so the specific 2027 poster-page deadline governs.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.flrad.org/frs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.flrad.org/frs-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "open": {
+          "url": "https://www.flrad.org/resident-poster-session/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "2027 FRS/FRBMA Annual Meeting July 16–18, 2027; Online Submission Open and Close Dates: Open date January 4, 2027; Close date May 14, 2027 (12 pm Noon ET).",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.flrad.org/resident-poster-session/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "2027 FRS/FRBMA Annual Meeting July 16–18, 2027; Online Submission Open and Close Dates: Open date January 4, 2027; Close date May 14, 2027 (12 pm Noon ET).",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "fl-rheum27",
+      "name": "Florida Society of Rheumatology Annual Meeting 2027",
+      "society": "Florida Society of Rheumatology",
+      "specialty": "Rheumatology",
+      "start": "2027-07-22",
+      "end": "2027-07-25",
+      "city": "Orlando, FL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Florida trainee original research",
+        "Resident/fellow case reports",
+        "Competitive oral presentations"
+      ],
+      "url": "https://floridarheumatology.org/events/EventDetails.aspx?id=2012072",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Hyatt Regency Grand Cypress; organization invites Florida trainees for abstract competition, 2027 submission deadline not confirmed.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://floridarheumatology.org/events/EventDetails.aspx?id=2012072",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://floridarheumatology.org/events/EventDetails.aspx?id=2012072",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "flacc-annual27",
+      "name": "Florida Chapter ACC Annual Meeting 2027",
+      "society": "Florida Chapter of the American College of Cardiology",
+      "specialty": "Cardiology",
+      "start": "2027-08-06",
+      "end": "2027-08-08",
+      "city": "Florida (venue pending)",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Cardiovascular clinical education",
+        "Scientific program — submission rules pending"
+      ],
+      "url": "https://www.accfl.org/Calendar",
+      "guideline": "https://www.accfl.org/Annual-Meeting-Home/",
+      "evidence": "official",
+      "note": "Florida ACC 2027 Scientific Abstract/Case Study/Quality competitions are scheduled to open March 2027 (only a month is supplied; exact opening day and closing date not announced). Registration opens February 15, 2027, which is not the abstract opening.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.accfl.org/Calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.accfl.org/Calendar",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "openMonth": {
+          "url": "https://www.accfl.org/Annual-Meeting-Home/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual examination of 2027 official organizer page",
+          "source_quote": "Florida Chapter ACC 2027 Annual Meeting August 6-8: Scientific Abstract, Case Study & Quality Competitions Open March 2027",
+          "confidence": "official_month_only"
+        }
+      },
+      "openMonth": "2027-03"
+    },
+    {
+      "id": "flacc27",
+      "name": "Florida ACC FIT Forum & Jeopardy 2027",
+      "society": "Florida Chapter of the American College of Cardiology",
+      "specialty": "Cardiology",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "city": "Miami, FL",
+      "open": null,
+      "deadline": "2027-01-05",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Florida resident/fellow research abstracts",
+        "Clinical case presentation",
+        "Poster competition"
+      ],
+      "url": "https://www.accfl.org/Fit-Forum",
+      "guideline": "https://www.accfl.org/Fit-Forum",
+      "evidence": "official",
+      "note": "Florida regional meeting. For residents, students, and adult/pediatric cardiology fellows in Florida programs; submissions due January 5, 2027. Verify event-specific format.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.accfl.org/Fit-Forum",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://www.accfl.org/Fit-Forum",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "deadline": {
+          "url": "https://www.accfl.org/Fit-Forum",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        }
+      }
+    },
+    {
+      "id": "fsa27",
+      "name": "Florida Society of Anesthesiologists Annual Meeting 2027",
+      "society": "Florida Society of Anesthesiologists",
+      "specialty": "Anesthesiology",
+      "start": "2027-06-11",
+      "end": "2027-06-13",
+      "city": "Palm Beach, FL",
+      "open": null,
+      "deadline": "2027-02-26",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Anesthesiology research abstracts",
+        "Clinical education"
+      ],
+      "url": "https://fsahq.org/2027-annual-meeting/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Florida regional meeting. Abstract call listed as October 2026 on one organizer page and November 2026 on another. Exact submission opening/day and deadline unconfirmed. FSA 2027 organizer timeline specifies Call for Abstracts October 2026 (month only, exact day unannounced) and deadline February 26, 2027. Call for Topics September–October 2026 is a separate category.",
+      "flag": null,
+      "tags": [
+        "florida-regional",
+        "trainee"
+      ],
+      "level": "regional",
+      "region": "Florida",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://fsahq.org/2027-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "end": {
+          "url": "https://fsahq.org/2027-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official Florida society meeting or submission page",
+          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
+        },
+        "openMonth": {
+          "url": "https://fsahq.org/2027-annual-meeting/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual inspection of official 2027 meeting timeline",
+          "source_quote": "Call for Abstracts: October 2026; Call for Abstracts Deadline: February 26, 2027.",
+          "confidence": "official_month_only"
+        },
+        "deadline": {
+          "url": "https://fsahq.org/2027-annual-meeting/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct manual inspection of official 2027 meeting timeline",
+          "source_quote": "Call for Abstracts: October 2026; Call for Abstracts Deadline: February 26, 2027.",
+          "confidence": "direct_official_edition_statement"
+        }
+      },
+      "openMonth": "2026-10"
+    },
+    {
+      "id": "gsa27",
+      "name": "GSA Annual Scientific Meeting 2027",
+      "society": "Gerontological Society of America",
+      "specialty": "Geriatrics",
+      "start": "2027-11-03",
+      "end": "2027-11-06",
+      "city": "Phoenix, AZ",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.geron.org/home-original",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Established multidisciplinary gerontology scientific research meeting. The organizing society's future meeting schedule confirms November 3–6, 2027 in Phoenix; 2027 abstract call not yet confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.geron.org/home-original",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society 2027 future-meetings page"
+        },
+        "end": {
+          "url": "https://www.geron.org/home-original",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society 2027 future-meetings page"
+        }
+      }
+    },
+    {
+      "id": "hrs27",
+      "name": "Heart Rhythm 2027",
+      "society": "Heart Rhythm Society",
+      "specialty": "Cardiology",
+      "start": "2027-05-13",
+      "end": "2027-05-16",
+      "city": "San Francisco, CA",
+      "open": null,
+      "deadline": "2026-12-16",
+      "deadlineTime": "11:59 PM EST",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Cardiac electrophysiology",
+        "Device therapy",
+        "Arrhythmia research"
+      ],
+      "url": "https://heartrhythm.com/present",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 HRS Scientific Abstracts deadline December 16, 2026, 11:59 p.m. Eastern Standard Time; open as of November 2, 2026, but the exact opening date is not published on the linked organizer page. Reviewer application closes November 15, a separate process.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "deadline": {
+          "url": "https://heartrhythm.com/present",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE independent 2027 organizer webpage manual audit",
+          "source_quote": "Call for Scientific Abstracts: submissions are now open; deadline December 16, 2026 at 11:59 PM EST; official meeting May 13–16, 2027. No exact opening day provided.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "idf27",
+      "name": "IDF World Diabetes Congress 2027",
+      "society": "International Diabetes Federation",
+      "specialty": "Endocrinology",
+      "start": "2027-04-09",
+      "end": "2027-04-12",
+      "city": "Singapore",
+      "open": "2026-06-15",
+      "deadline": "2026-09-30",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific program / submission categories to confirm"
+      ],
+      "url": "https://idf2027.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://idf2027.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "end": {
+          "url": "https://idf2027.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "open": {
+          "url": "https://idf2027.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        },
+        "deadline": {
+          "url": "https://idf2027.org/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society page review"
+        }
+      }
+    },
+    {
+      "id": "idweek27",
+      "name": "IDWeek 2027",
+      "society": "IDSA / Partner Societies",
+      "specialty": "Infectious Diseases",
+      "start": null,
+      "end": null,
+      "city": "To be announced",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Infectious disease",
+        "Antimicrobial stewardship",
+        "Clinical research"
+      ],
+      "url": "https://www.idweek.org/abstracts/abstracts/",
+      "guideline": null,
+      "evidence": "unannounced",
+      "note": "Do not reuse 2026 submission dates as 2027 deadlines.",
+      "flag": "unannounced",
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "isc27",
+      "name": "International Stroke Conference 2027",
+      "society": "American Heart Association / American Stroke Association",
+      "specialty": "Neurology",
+      "start": "2027-02-10",
+      "end": "2027-02-12",
+      "city": "Houston, TX",
+      "open": null,
+      "deadline": "2026-08-18",
+      "deadlineTime": "11:59 PM CDT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": "$45 AHA members; $95 nonmembers",
+      "types": [
+        "Stroke research",
+        "Neurocritical care",
+        "Clinical trials"
+      ],
+      "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
+      "guideline": null,
+      "evidence": "official",
+      "note": "International Stroke Conference 2027 regular abstracts were due August 18, 2026. Case-study submissions follow separate requirements.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [
+        "Oral",
+        "Digital oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://professional.heart.org/en/meetings/international-stroke-conference",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://professional.heart.org/en/meetings/international-stroke-conference",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "Trainees should submit their ISC abstract by the August 18 deadline.",
+          "confidence": "explicit_statement"
+        }
+      },
+      "submissionSource": "https://professional.heart.org/en/meetings/international-stroke-conference/submit-science"
+    },
+    {
+      "id": "ishlt27",
+      "name": "ISHLT 47th Annual Meeting & Scientific Sessions 2027",
+      "society": "International Society for Heart and Lung Transplantation",
+      "specialty": "Transplantation",
+      "start": "2027-04-14",
+      "end": "2027-04-17",
+      "city": "Sydney, Australia",
+      "open": "2026-08-03",
+      "deadline": "2026-09-29",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://www.ishlt.org/annual-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Cardiothoracic transplant, heart failure, pulmonary vascular medicine and mechanical circulatory support. Annual travel awards open December 2026.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.ishlt.org/annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://www.ishlt.org/annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "open": {
+          "url": "https://www.ishlt.org/annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "deadline": {
+          "url": "https://www.ishlt.org/annual-meeting",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        }
+      }
+    },
+    {
+      "id": "isth27",
+      "name": "ISTH Congress 2027",
+      "society": "International Society on Thrombosis and Haemostasis",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-06-26",
+      "end": "2027-06-30",
+      "city": "Vancouver, Canada",
+      "open": "2026-11-23",
+      "deadline": "2027-01-11",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.isthcongress.org/guide",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.isthcongress.org/guide",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.isthcongress.org/guide",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://www.isthcongress.org/guide",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
+        },
+        "deadline": {
+          "url": "https://www.isthcongress.org/guide",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
+        }
+      }
+    },
+    {
+      "id": "mds27",
+      "name": "International Congress of Parkinson’s Disease and Movement Disorders 2027",
+      "society": "International Parkinson and Movement Disorder Society",
+      "specialty": "Neurology",
+      "start": "2027-09-26",
+      "end": "2027-09-30",
+      "city": "Amsterdam, Netherlands",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Parkinson disease and movement disorders"
+      ],
+      "url": "https://www.mdscongress.org/About/Past-future",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.mdscongress.org/About/Past-future",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        },
+        "end": {
+          "url": "https://www.mdscongress.org/About/Past-future",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official society page audit"
+        }
+      }
+    },
+    {
+      "id": "naemsp27",
+      "name": "NAEMSP Annual Meeting 2027",
+      "society": "National Association of EMS Physicians",
+      "specialty": "Emergency Medicine",
+      "start": "2027-01-11",
+      "end": "2027-01-16",
+      "city": "Austin, TX",
+      "open": null,
+      "deadline": "2026-09-01",
+      "deadlineTime": null,
+      "limit": 350,
+      "limitType": "words",
+      "limitNote": "Scientific/QI abstract body maximum 350 words, excluding section headings.",
+      "fee": null,
+      "types": [
+        "EMS original research",
+        "Quality improvement",
+        "Innovations in EMS education"
+      ],
+      "url": "https://naemsp.org/2027-annual-meeting/",
+      "guideline": "https://naemsp.org/annual-meeting/call-for-abstracts/",
+      "evidence": "official",
+      "note": "The regular research, quality-improvement, and EMS education innovation abstract deadline was September 1, 2026 (date confirmed; submissions closed). The organizer's page inconsistently lists 11:55 p.m. ET and 11:59 p.m. ET, so no submission time is displayed. Meeting January 11–16, 2027, in Austin.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://naemsp.org/2027-annual-meeting/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://naemsp.org/2027-annual-meeting/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://naemsp.org/annual-meeting/call-for-abstracts/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE official meeting-source review",
+          "source_quote": "The submission site will automatically close at 11:55 PM ET on Tuesday, September 1, 2026. Electronic Submission Rules list 11:59 PM ET on the same date.",
+          "confidence": "date_confirmed_time_conflicted"
+        }
+      },
+      "additionalSources": []
+    },
+    {
+      "id": "napcrg26",
+      "name": "NAPCRG 54th Annual Meeting 2026",
+      "society": "North American Primary Care Research Group",
+      "specialty": "Family Medicine",
+      "start": "2026-11-20",
+      "end": "2026-11-24",
+      "city": "Toronto, Canada",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://napcrgwebsite.azurewebsites.net/conferences/annual/annualmeeting/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://napcrgwebsite.azurewebsites.net/conferences/annual/annualmeeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://napcrgwebsite.azurewebsites.net/conferences/annual/annualmeeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        }
+      }
+    },
+    {
+      "id": "napcrg27",
+      "name": "NAPCRG 55th Annual Meeting 2027",
+      "society": "North American Primary Care Research Group",
+      "specialty": "Family Medicine",
+      "start": "2027-11-13",
+      "end": "2027-11-17",
+      "city": "Vancouver, Canada",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Research abstracts (confirm society-specific submission rules)"
+      ],
+      "url": "https://napcrgwebsite.azurewebsites.net/conferences/future-conferences/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
+      "flag": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://napcrgwebsite.azurewebsites.net/conferences/future-conferences/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
+        },
+        "end": {
+          "url": "https://napcrgwebsite.azurewebsites.net/conferences/future-conferences/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society meeting calendar"
         }
       }
     },
@@ -2943,64 +6495,400 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "wcn27",
-      "name": "World Congress of Nephrology 2027",
-      "society": "International Society of Nephrology",
-      "specialty": "Nephrology",
-      "start": "2027-04-01",
-      "end": "2027-04-04",
-      "city": "Kuala Lumpur, Malaysia",
-      "open": "2026-06-22",
-      "deadline": "2026-10-28",
+      "id": "ors27",
+      "name": "ORS Annual Meeting 2027",
+      "society": "Orthopaedic Research Society",
+      "specialty": "Orthopedic Surgery",
+      "start": "2027-02-19",
+      "end": "2027-02-23",
+      "city": "San Francisco, CA",
+      "open": "2026-06-15",
+      "deadline": "2026-08-31",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.theisn.org/wcn/",
+      "url": "https://www.ors.org/2027-annual-meeting/",
       "guideline": null,
       "evidence": "official",
-      "note": "Flagship World Congress of Nephrology. Abstract deadline Oct 28, 2026; travel-grant application deadline Oct 31. World Congress of Nephrology 2027 abstract submissions: submissions open 2026-06-22.",
+      "note": "ORS 2027 regular abstracts were accepted June 15–August 31, 2026.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.theisn.org/in-action/events/world-congress-of-nephrology/",
+          "url": "https://www.ors.org/2027-annual-meeting/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://www.theisn.org/in-action/events/world-congress-of-nephrology/",
+          "url": "https://www.ors.org/2027-annual-meeting/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "open": {
+          "url": "https://www.ors.org/futureannualmeetings/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "ORS 2027 Annual Meeting: Abstract Submission June 15 – August 31.",
+          "confidence": "explicit_statement"
+        },
+        "deadline": {
+          "url": "https://www.ors.org/futureannualmeetings/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "ORS 2027 Annual Meeting: Abstract Submission June 15 – August 31.",
+          "confidence": "explicit_statement"
+        }
+      },
+      "submissionSource": "https://www.ors.org/2027-annual-meeting/"
+    },
+    {
+      "id": "pas27",
+      "name": "Pediatric Academic Societies Meeting 2027",
+      "society": "Pediatric Academic Societies",
+      "specialty": "Pediatrics",
+      "start": "2027-04-30",
+      "end": "2027-05-03",
+      "city": "Minneapolis, MN",
+      "open": "2026-08-12",
+      "deadline": "2026-11-02",
+      "deadlineTime": "11:59 PM CT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": "$100 per abstract",
+      "types": [
+        "Pediatric research",
+        "Trainee ongoing project posters"
+      ],
+      "url": "https://www.pas-meeting.org/2027-key-dates/",
+      "guideline": "https://www.pas-meeting.org/2027-abstracts/",
+      "evidence": "official",
+      "note": "PAS official key dates list Apr 30–May 3, 2027; some partner listings include April 29 preconference events. Oral/poster placement determined by program committee.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Platform",
+        "Poster"
+      ]
+    },
+    {
+      "id": "phm27",
+      "name": "Pediatric Hospital Medicine Meeting 2027",
+      "society": "Academic Pediatric Association / AAP / SHM",
+      "specialty": "Pediatrics",
+      "start": "2027-07-29",
+      "end": "2027-08-01",
+      "city": "New Orleans, LA",
+      "open": "2027-01-11",
+      "deadline": "2027-02-10",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Pediatric hospital medicine abstracts",
+        "Clinical conundrums"
+      ],
+      "url": "https://www.academicpeds.org/events/phmmeeting/phmmeeting2027-keydates/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Abstracts and clinical conundrums submit January 11–February 10, 2027; earlier October 12–December 14, 2026 Call for Content concerns educational content, not regular research abstracts.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "open": {
+          "url": "https://www.academicpeds.org/events/phmmeeting/phmmeeting2027-keydates/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
+          "source_quote": "Call for Abstracts and Conundrums Monday, January 11, 2027; Abstracts and Conundrums Deadline Wednesday, February 10, 2027. Call for Content October 12, 2026 is a different pathway.",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.academicpeds.org/events/phmmeeting/phmmeeting2027-keydates/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
+          "source_quote": "Call for Abstracts and Conundrums Monday, January 11, 2027; Abstracts and Conundrums Deadline Wednesday, February 10, 2027. Call for Content October 12, 2026 is a different pathway.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "physiatry27",
+      "name": "Physiatry '27 — AAP Annual Meeting",
+      "society": "Association of Academic Physiatrists",
+      "specialty": "Physical Medicine & Rehabilitation",
+      "start": "2027-02-16",
+      "end": "2027-02-20",
+      "city": "Long Beach, CA",
+      "open": null,
+      "deadline": "2026-09-10",
+      "deadlineTime": "11:59 p.m. ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.physiatry.org/meetings-events/annual-meeting/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Physiatry '27 regular abstract submissions closed September 10, 2026 at 11:59 p.m. ET. Verify presentation eligibility directly with AAP.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.physiatry.org/meetings-events/annual-meeting/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.physiatry.org/meetings-events/annual-meeting/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "deadline": {
-          "url": "https://www.theisn.org/wcn/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official abstract page audit"
-        },
-        "open": {
-          "url": "https://www.theisn.org/wcn/abstracts/",
-          "checked_at": "2026-10-13",
-          "verified_by": "RISE official-source opening-date audit",
-          "source_quote": "Important dates: Submission opens June 22, 2026; Submission deadline October 28, 2026",
+          "url": "https://www.physiatry.org/meetings-events/annual-meeting/abstracts/",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "All submissions must be received via online submission by 11:59 pm (EST) September 10, 2026.",
           "confidence": "explicit_statement"
+        }
+      },
+      "submissionSource": "https://www.physiatry.org/meetings-events/annual-meeting/abstracts/"
+    },
+    {
+      "id": "pstm27",
+      "name": "Plastic Surgery The Meeting 2027",
+      "society": "American Society of Plastic Surgeons",
+      "specialty": "Plastic Surgery",
+      "start": "2027-09-16",
+      "end": "2027-09-19",
+      "city": "Baltimore, MD",
+      "open": null,
+      "deadline": "2027-02-25",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Plastic and reconstructive surgery",
+        "Aesthetic surgery"
+      ],
+      "url": "https://www.plasticsurgerythemeeting.com/registration/plan-now-for-2027",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 Plastic Surgery The Meeting general Oral and Poster Abstract deadline: February 25, 2027 (opening day not stated). Separate RESIDENT-ONLY call, restricted to current residents (not fellows/students), opens March 4, 2027 and closes April 30, 2027 at 11:59 p.m. US Eastern. Each abstract may enter only one call.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "submissionSource": "https://ww6.aievolution.com/asps/index.cfm?do=cnt.page&pg=1013",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://ww6.aievolution.com/asps/index.cfm?do=cnt.page&pg=1013",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE manual inspection of the official meeting abstract submission portal",
+          "source_quote": "Main Meeting Call for Abstracts and Posters deadline February 25, 2027; Resident Only opens March 4, 2027, deadline April 30, 2027, 11:59 pm US Eastern.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
     {
-      "id": "eha27",
-      "name": "EHA Congress 2027",
-      "society": "European Hematology Association",
+      "id": "rsna27",
+      "name": "RSNA Annual Meeting 2027",
+      "society": "Radiological Society of North America",
+      "specialty": "Radiology",
+      "start": "2027-11-14",
+      "end": "2027-11-18",
+      "city": "Chicago, IL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Scientific research",
+        "Education exhibits",
+        "QI"
+      ],
+      "url": "https://www.rsna.org/annual-meeting/abstract-submission",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 submission deadline not yet published. Meeting date verified from RSNA future meetings.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "saaapm27",
+      "name": "SAAAPM Annual Meeting 2027",
+      "society": "Society of Academic Associations of Anesthesiology and Perioperative Medicine",
+      "specialty": "Anesthesiology",
+      "start": "2027-11-05",
+      "end": "2027-11-06",
+      "city": "Chicago, IL",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Academic anesthesiology",
+        "Education and residency training"
+      ],
+      "url": "https://www.saaapm.org/events/2027-annual-meeting",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Academic anesthesiology meeting date confirmed; abstract availability must be checked separately.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "sabcs27",
+      "name": "San Antonio Breast Cancer Symposium 2027",
+      "society": "San Antonio Breast Cancer Symposium",
       "specialty": "Hematology & Oncology",
-      "start": "2027-06-10",
-      "end": "2027-06-13",
-      "city": "To be announced",
+      "start": "2027-12-07",
+      "end": "2027-12-10",
+      "city": "San Antonio, TX",
+      "open": null,
+      "deadline": null,
+      "types": [
+        "Breast cancer",
+        "Clinical oncology",
+        "Translational breast cancer research"
+      ],
+      "url": "https://sabcs.org/media/future-symposia/",
+      "evidence": "official",
+      "note": "Organizer confirms the 2027 symposium dates; abstract submission dates not yet confirmed.",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://sabcs.org/media/future-symposia/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://sabcs.org/media/future-symposia/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "saem27",
+      "name": "SAEM Annual Meeting 2027",
+      "society": "Society for Academic Emergency Medicine",
+      "specialty": "Emergency Medicine",
+      "start": "2027-05-18",
+      "end": "2027-05-21",
+      "city": "San Francisco, CA",
+      "open": "2026-11-02",
+      "deadline": "2027-01-05",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Original research",
+        "Clinical images",
+        "Innovations",
+        "Medical education"
+      ],
+      "url": "https://www.saem.org/meetings-and-events/annual-meeting/annual-meeting-navigation/education/submission-deadlines",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Clinical images have a separate January 12, 2027 deadline.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "sages27",
+      "name": "SAGES Annual Meeting 2027",
+      "society": "Society of American Gastrointestinal and Endoscopic Surgeons",
+      "specialty": "Surgery",
+      "start": "2027-04-06",
+      "end": "2027-04-09",
+      "city": "Las Vegas, NV",
+      "open": null,
+      "deadline": "2026-09-11",
+      "deadlineTime": "11:59 PM PDT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [],
+      "url": "https://www.sages2027.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.sages2027.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "end": {
+          "url": "https://www.sages2027.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://www.sages2027.org/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 abstract submission dates"
+        }
+      }
+    },
+    {
+      "id": "scai27",
+      "name": "SCAI Scientific Sessions 2027",
+      "society": "Society for Cardiovascular Angiography and Interventions",
+      "specialty": "Cardiology",
+      "start": "2027-05-02",
+      "end": "2027-05-04",
+      "city": "Fort Lauderdale, FL",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -3009,7 +6897,7 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://ehaweb.org/connect-network/future-congresses",
+      "url": "https://www.scai.org/education-and-events/events-schedule/scai-2027-scientific-sessions",
       "guideline": null,
       "evidence": "official",
       "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
@@ -3019,13 +6907,13 @@ window.RISE_DATA = {
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://ehaweb.org/connect-network/future-congresses",
+          "url": "https://www.scai.org/education-and-events/events-schedule/scai-2027-scientific-sessions",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://ehaweb.org/connect-network/future-congresses",
+          "url": "https://www.scai.org/education-and-events/events-schedule/scai-2027-scientific-sessions",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
@@ -3033,104 +6921,121 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "isth27",
-      "name": "ISTH Congress 2027",
-      "society": "International Society on Thrombosis and Haemostasis",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-06-26",
-      "end": "2027-06-30",
-      "city": "Vancouver, Canada",
-      "open": "2026-11-23",
-      "deadline": "2027-01-11",
+      "id": "sccm27",
+      "name": "SCCM Critical Care Congress 2027",
+      "society": "Society of Critical Care Medicine",
+      "specialty": "Pulmonary & Critical Care",
+      "start": "2027-03-14",
+      "end": "2027-03-16",
+      "city": "San Diego, CA",
+      "open": "2026-06-01",
+      "deadline": "2026-09-03",
+      "deadlineTime": "11:59 p.m. CT",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Critical care research",
+        "Case reports",
+        "ICU QI"
+      ],
+      "url": "https://www.sccm.org/annual-congress/future-congress-dates",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Congress 14–16 March; pre-congress programs 12–13 March. Abstract deadline not confirmed in this review. 2027 Critical Care Congress regular abstract and case report submissions opened June 1 and closed September 3, 2026 at 11:59 p.m. CT.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "submissionSource": "https://www.sccm.org/annual-congress/abstracts-and-case-reports",
+      "fieldSources": {
+        "open": {
+          "url": "https://www.sccm.org/annual-congress/abstracts-and-case-reports",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "June 1, 2026: Submission period opens. September 3, 2026: Submission period closes at 11:59 p.m. Central Time.",
+          "confidence": "explicit_statement"
+        },
+        "deadline": {
+          "url": "https://www.sccm.org/annual-congress/abstracts-and-case-reports",
+          "checked_at": "2026-10-12",
+          "verified_by": "RISE manual official-source audit",
+          "source_quote": "June 1, 2026: Submission period opens. September 3, 2026: Submission period closes at 11:59 p.m. Central Time.",
+          "confidence": "explicit_statement"
+        }
+      }
+    },
+    {
+      "id": "sgim27",
+      "name": "SGIM Annual Meeting 2027",
+      "society": "Society of General Internal Medicine",
+      "specialty": "Internal Medicine",
+      "start": "2027-05-05",
+      "end": "2027-05-08",
+      "city": "Seattle, WA",
+      "open": "2026-10-13",
+      "deadline": "2026-12-11",
       "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
+      "limit": 3000,
+      "limitType": "characters_with_spaces",
+      "limitNote": "Scientific abstracts / clinical vignettes; requirements differ for other categories.",
       "fee": null,
-      "types": [],
-      "url": "https://www.isthcongress.org/guide",
-      "guideline": null,
+      "types": [
+        "Scientific abstract",
+        "Clinical vignette",
+        "Medical education innovation",
+        "QI"
+      ],
+      "url": "https://annualmeeting.sgim.org/",
+      "guideline": "https://annualmeeting.sgim.org/present/scientific-abstracts/",
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": false,
+      "submissionCategoriesVerified": true,
       "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.isthcongress.org/guide",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.isthcongress.org/guide",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "open": {
-          "url": "https://www.isthcongress.org/guide",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
-        },
-        "deadline": {
-          "url": "https://www.isthcongress.org/guide",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
-        }
-      }
+      "submissionCategoryNote": "The official SGIM27 call includes scientific abstracts, clinical vignettes, and innovations. Verify the applicable subtrack before submitting.",
+      "submissionSource": "https://annualmeeting.sgim.org/present/"
     },
     {
-      "id": "eular27",
-      "name": "EULAR Congress 2027",
-      "society": "European Alliance of Associations for Rheumatology",
-      "specialty": "Rheumatology",
-      "start": "2027-06-09",
-      "end": "2027-06-12",
-      "city": "Berlin, Germany",
-      "open": "2026-10-01",
-      "deadline": "2027-01-15",
-      "deadlineTime": "23:59 CET",
+      "id": "sgo27",
+      "name": "SGO Annual Meeting on Gynecologic Cancer 2027",
+      "society": "Society of Gynecologic Oncology",
+      "specialty": "Obstetrics & Gynecology",
+      "start": "2027-03-19",
+      "end": "2027-03-22",
+      "city": "Phoenix, AZ",
+      "open": "2026-07-13",
+      "deadline": "2026-09-21",
+      "deadlineTime": "11:59 PM CT",
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
-      "url": "https://congress.eular.org/abstractgeneralinfo",
+      "types": [
+        "Gynecologic oncology research",
+        "Trials in progress",
+        "Surgical films"
+      ],
+      "url": "https://www.sgo.org/events/abstracts/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "Official extended regular abstract deadline September 21, 2026. Verify submission categories with the organizer.",
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
       "fieldSources": {
-        "start": {
-          "url": "https://congress.eular.org/abstractgeneralinfo",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://congress.eular.org/abstractgeneralinfo",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "open": {
-          "url": "https://congress.eular.org/abstractgeneralinfo",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
-        },
         "deadline": {
-          "url": "https://congress.eular.org/abstractgeneralinfo",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
+          "url": "https://www.sgo.org/events/abstracts/",
+          "checked_at": "2026-11-02",
+          "verified_by": "RISE direct inspection of 2027 official conference submission dates",
+          "source_quote": "SGO 2027: Deadline Extended: Submit Your Abstract by Monday, September 21, 2026, at 11:59 p.m. CT.",
+          "confidence": "direct_official_edition_statement"
         }
       }
     },
@@ -3196,66 +7101,347 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "asmmicrobe27",
-      "name": "ASM Microbe 2027",
-      "society": "American Society for Microbiology",
-      "specialty": "Infectious Diseases",
-      "start": "2027-06-22",
-      "end": "2027-06-25",
-      "city": "Chicago, IL",
-      "open": "2026-12-02",
-      "deadline": "2027-01-20",
+      "id": "shm27",
+      "name": "SHM Converge 2027",
+      "society": "Society of Hospital Medicine",
+      "specialty": "Internal Medicine",
+      "start": "2027-03-30",
+      "end": "2027-04-02",
+      "city": "Las Vegas, NV",
+      "open": "2026-09-11",
+      "deadline": "2026-11-23",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": "$55 per abstract (RISE tracker)",
+      "types": [
+        "Research",
+        "Clinical vignette",
+        "QI/patient safety",
+        "Innovations"
+      ],
+      "url": "https://shmconverge.hospitalmedicine.org/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Main conference March 31–April 2; pre-courses March 30.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "researchOpportunity": "Hospital medicine and scholarly practice"
+    },
+    {
+      "id": "sid27",
+      "name": "Society for Investigative Dermatology Annual Meeting 2027",
+      "society": "Society for Investigative Dermatology",
+      "specialty": "Dermatology",
+      "start": "2027-05-12",
+      "end": "2027-05-15",
+      "city": "Orlando, FL",
+      "open": "2026-11-02",
+      "deadline": "2027-01-12",
+      "deadlineTime": "11:59 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Investigative dermatology",
+        "Translational skin research"
+      ],
+      "url": "https://www.sidnet.org/annualmeeting/",
+      "guideline": "https://www.sidnet.org/annualmeeting/key-dates/",
+      "evidence": "official",
+      "note": "Official SID 2027 abstract submission page confirms regular submissions November 2, 2026–January 12, 2027 (11:59 PM ET).",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "open": {
+          "url": "https://www.sidnet.org/annualmeeting/abstracts/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official SID 2027 abstract submissions webpage",
+          "confidence": "explicit_statement",
+          "source_quote": "Abstract Submissions Open November 2, 2026, and must be submitted by 11:59 pm Eastern Time (US) on January 12, 2027."
+        },
+        "deadline": {
+          "url": "https://www.sidnet.org/annualmeeting/abstracts/",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official SID 2027 abstract submissions webpage",
+          "confidence": "explicit_statement",
+          "source_quote": "Abstract Submissions Open November 2, 2026, and must be submitted by 11:59 pm Eastern Time (US) on January 12, 2027."
+        }
+      },
+      "submissionSource": "https://www.sidnet.org/annualmeeting/abstracts/"
+    },
+    {
+      "id": "sio27",
+      "name": "SIO Annual Scientific Meeting 2027",
+      "society": "Society of Interventional Oncology",
+      "specialty": "Interventional Radiology",
+      "start": "2027-02-24",
+      "end": "2027-02-28",
+      "city": "Toronto, ON, Canada",
+      "open": null,
+      "deadline": "2026-10-02",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [],
-      "url": "https://asm.org/events/asm-microbe/present",
-      "guideline": null,
+      "guideline": "https://www.sio-central.org/abstracts",
+      "flag": null,
+      "tags": [
+        "trainee"
+      ],
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "types": [
+        "Interventional oncology research abstracts"
+      ],
+      "url": "https://www.sio-central.org/SIOToronto",
       "evidence": "official",
-      "note": "2027 ASM Microbe regular abstract window: December 2, 2026–January 20, 2027; separate early abstract window is November 10–December 1, 2026. Do not conflate the early deadline with the main regular deadline.",
+      "note": "Flagship international interventional oncology meeting in Toronto, Canada (February 24–28, 2027). SIO confirmed regular abstracts due October 2, 2026; an exact original opening date has not been verified. The regular abstract deadline is closed.",
+      "fieldSources": {
+        "start": {
+          "url": "https://www.sio-central.org/SIOToronto",
+          "checked_at": "2026-11-23",
+          "verified_by": "RISE manual review of official 2027/2028 organizer publication",
+          "source_quote": "SIO 2027 Annual Scientific Meeting, 24–28 February 2027, Toronto, Canada",
+          "confidence": "direct_official_edition_statement"
+        },
+        "end": {
+          "url": "https://www.sio-central.org/SIOToronto",
+          "checked_at": "2026-11-23",
+          "verified_by": "RISE manual review of official 2027/2028 organizer publication",
+          "source_quote": "SIO 2027 Annual Scientific Meeting, 24–28 February 2027, Toronto, Canada",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://multibriefs.com/briefs/sio/SIO091026.php",
+          "checked_at": "2026-11-23",
+          "verified_by": "RISE manual review of official 2027/2028 organizer publication",
+          "source_quote": "SIO 2027 abstract submissions are open; submit by 2 October [2026].",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "sir27",
+      "name": "SIR Annual Scientific Meeting 2027",
+      "society": "Society of Interventional Radiology",
+      "specialty": "Interventional Radiology",
+      "start": "2027-03-20",
+      "end": "2027-03-24",
+      "city": "Los Angeles, CA",
+      "open": "2026-07-27",
+      "deadline": "2026-09-24",
+      "deadlineTime": "5 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": "https://www.abstractscorecard.com/cfp/submit/loginSSO.asp?EventKey=YWXWIAAB",
+      "flag": null,
+      "tags": [
+        "trainee"
+      ],
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [],
+      "types": [
+        "Original scientific research",
+        "Educational exhibits"
+      ],
+      "url": "https://www.sirweb.org/learn/events/sir-2027-annual-scientific-meeting/",
+      "evidence": "official",
+      "note": "Regular scientific-research and educational-exhibit abstract window closed September 24, 2026. This entry excludes invited and late-breaking submissions. Meeting dates March 20–24, 2027; verify category eligibility at the organizer submission portal.",
+      "fieldSources": {
+        "start": {
+          "url": "https://www.sirmeeting.org/aaStatic.asp?SFP=VkxBUVhVSlFAMjY2MjlATWVldGluZyBpbmZvcm1hdGlvbiAtIERhdGVzIHRvIGtub3c",
+          "checked_at": "2026-11-23",
+          "verified_by": "RISE manual review of official 2027/2028 organizer publication",
+          "source_quote": "2027 SIR Annual Scientific Meeting, March 20–24, Los Angeles, CA",
+          "confidence": "direct_official_edition_statement"
+        },
+        "end": {
+          "url": "https://www.sirmeeting.org/aaStatic.asp?SFP=VkxBUVhVSlFAMjY2MjlATWVldGluZyBpbmZvcm1hdGlvbiAtIERhdGVzIHRvIGtub3c",
+          "checked_at": "2026-11-23",
+          "verified_by": "RISE manual review of official 2027/2028 organizer publication",
+          "source_quote": "2027 SIR Annual Scientific Meeting, March 20–24, Los Angeles, CA",
+          "confidence": "direct_official_edition_statement"
+        },
+        "open": {
+          "url": "https://www.sirmeeting.org/aaStatic.asp?SFP=VkxBUVhVSlFAMjY2MjlATWVldGluZyBpbmZvcm1hdGlvbiAtIERhdGVzIHRvIGtub3c",
+          "checked_at": "2026-11-23",
+          "verified_by": "RISE manual review of official 2027/2028 organizer publication",
+          "source_quote": "July 27, 2026 — Call for Abstracts opens",
+          "confidence": "direct_official_edition_statement"
+        },
+        "deadline": {
+          "url": "https://www.sirweb.org/publications/news/deadline-for-sir-2027-annual-scientific-meeting-abstracts-approaching/",
+          "checked_at": "2026-11-23",
+          "verified_by": "RISE manual review of official 2027/2028 organizer publication",
+          "source_quote": "Regular abstracts must be submitted by Thursday, Sept. 24, 2026 at 5 p.m. ET.",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "sir28",
+      "name": "SIR Annual Scientific Meeting 2028",
+      "society": "Society of Interventional Radiology",
+      "specialty": "Interventional Radiology",
+      "start": "2028-03-18",
+      "end": "2028-03-22",
+      "city": "Philadelphia, PA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
+      "flag": null,
+      "tags": [
+        "trainee"
+      ],
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "types": [
+        "Scientific research",
+        "Educational exhibits"
+      ],
+      "url": "https://www.sirmeeting.org/aaStatic.asp?SFP=VkxBUVhVSlFAMjY2MjlATWVldGluZyBpbmZvcm1hdGlvbiAtIERhdGVzIHRvIGtub3c",
+      "evidence": "official",
+      "note": "SIR has officially announced March 18–22, 2028 in Philadelphia. Regular 2028 abstract opening and deadline have not been published; do not carry over 2027 dates.",
+      "fieldSources": {
+        "start": {
+          "url": "https://www.sirmeeting.org/aaStatic.asp?SFP=VkxBUVhVSlFAMjY2MjlATWVldGluZyBpbmZvcm1hdGlvbiAtIERhdGVzIHRvIGtub3c",
+          "checked_at": "2026-11-23",
+          "verified_by": "RISE manual review of official 2027/2028 organizer publication",
+          "source_quote": "SIR 2028 53rd Annual Scientific Meeting, March 18–22, Philadelphia, PA",
+          "confidence": "direct_official_edition_statement"
+        },
+        "end": {
+          "url": "https://www.sirmeeting.org/aaStatic.asp?SFP=VkxBUVhVSlFAMjY2MjlATWVldGluZyBpbmZvcm1hdGlvbiAtIERhdGVzIHRvIGtub3c",
+          "checked_at": "2026-11-23",
+          "verified_by": "RISE manual review of official 2027/2028 organizer publication",
+          "source_quote": "SIR 2028 53rd Annual Scientific Meeting, March 18–22, Philadelphia, PA",
+          "confidence": "direct_official_edition_statement"
+        }
+      }
+    },
+    {
+      "id": "sitc27",
+      "name": "SITC Annual Meeting 2027",
+      "society": "Society for Immunotherapy of Cancer",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-11-03",
+      "end": "2027-11-07",
+      "city": "National Harbor, MD",
+      "open": null,
+      "deadline": null,
+      "types": [
+        "Cancer immunotherapy",
+        "Clinical research",
+        "Translational immuno-oncology"
+      ],
+      "url": "https://www.sitcancer.org/edu/41st-annual-meeting/archive",
+      "evidence": "official",
+      "note": "Includes annual meeting and pre-conference programs; abstract submissions not yet confirmed.",
+      "venue": "Gaylord National Resort and Convention Center",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://asm.org/events/asm-microbe/home",
+          "url": "https://www.sitcancer.org/edu/41st-annual-meeting/archive",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://www.sitcancer.org/edu/41st-annual-meeting/archive",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "smfm27",
+      "name": "SMFM Pregnancy Meeting 2027",
+      "society": "Society for Maternal-Fetal Medicine",
+      "specialty": "Obstetrics & Gynecology",
+      "start": "2027-03-21",
+      "end": "2027-03-26",
+      "city": "National Harbor, MD",
+      "open": "2026-07-10",
+      "deadline": "2026-09-14",
+      "deadlineTime": "9:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Maternal-fetal medicine research",
+        "Obstetric complications",
+        "Perinatal research"
+      ],
+      "url": "https://www.smfm.org/events/2027-pregnancy-meeting",
+      "guideline": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
+      "evidence": "official",
+      "note": "SMFM 2027 regular abstracts closed September 14, 2026. Presenting authors must register and attend; registration is not waived for abstract presenters.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": true,
+      "presentationFormats": [
+        "Oral",
+        "Poster"
+      ],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.smfm.org/events/2027-pregnancy-meeting",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://asm.org/events/asm-microbe/home",
+          "url": "https://www.smfm.org/events/2027-pregnancy-meeting",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "open": {
-          "url": "https://asm.org/events/asm-microbe/present",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE individual manual review of organizer webpage",
-          "source_quote": "Dec. 2 Regular Abstract submission opens; Jan. 20, 2027 Regular Abstract submission closes. Early abstracts use a separate November 10–December 1, 2026 window.",
-          "confidence": "direct_official_edition_statement"
+          "url": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
         },
         "deadline": {
-          "url": "https://asm.org/events/asm-microbe/present",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE individual manual review of organizer webpage",
-          "source_quote": "Dec. 2 Regular Abstract submission opens; Jan. 20, 2027 Regular Abstract submission closes. Early abstracts use a separate November 10–December 1, 2026 window.",
-          "confidence": "direct_official_edition_statement"
+          "url": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE review of official 2027 organizer pages",
+          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
         }
       }
     },
     {
-      "id": "acaai27",
-      "name": "ACAAI Annual Scientific Meeting 2027",
-      "society": "American College of Allergy, Asthma & Immunology",
-      "specialty": "Allergy & Immunology",
-      "start": "2027-11-11",
-      "end": "2027-11-15",
-      "city": "Nashville, TN",
+      "id": "snmmi27",
+      "name": "SNMMI Annual Meeting 2027",
+      "society": "Society of Nuclear Medicine and Molecular Imaging",
+      "specialty": "Radiology",
+      "start": "2027-06-05",
+      "end": "2027-06-08",
+      "city": "Washington, DC",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -3264,7 +7450,7 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://annualmeeting.acaai.org/2027/proposal_submissions.cfm",
+      "url": "https://www.snmmi.org/",
       "guideline": null,
       "evidence": "official",
       "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
@@ -3274,13 +7460,13 @@ window.RISE_DATA = {
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://annualmeeting.acaai.org/2027/proposal_submissions.cfm",
+          "url": "https://www.snmmi.org/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://annualmeeting.acaai.org/2027/proposal_submissions.cfm",
+          "url": "https://www.snmmi.org/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
@@ -3288,69 +7474,13 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "aaaai-discovery27",
-      "name": "AAAAI Discovery 2027",
-      "society": "American Academy of Allergy, Asthma & Immunology",
-      "specialty": "Allergy & Immunology",
-      "start": "2027-02-18",
-      "end": "2027-02-20",
-      "city": "New Orleans, LA",
-      "open": "2026-06-26",
-      "deadline": "2026-11-02",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://annualmeeting.aaaai.org/",
-      "additionalSources": [
-        "https://annualmeeting.aaaai.org/attendee/full-meeting-timeline"
-      ],
-      "guideline": null,
-      "evidence": "official",
-      "note": "Research-focused AAAAI Discovery conference held February 18–20, 2027 alongside the Annual Meeting. Discovery abstracts opened June 26, 2026 (official meeting timeline image) and closed November 2, 2026.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://annualmeeting.aaaai.org/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://annualmeeting.aaaai.org/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "deadline": {
-          "url": "https://annualmeeting.aaaai.org/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
-        },
-        "open": {
-          "url": "https://annualmeeting.aaaai.org/UserFiles/image/AMTimeline-Member_v2.png",
-          "checked_at": "2026-10-13",
-          "verified_by": "RISE manual review of official 2027 timeline graphic",
-          "source_quote": "June 26, 2026 — Abstract sites open (AM Abstracts, Discovery, Case Reports)",
-          "confidence": "official_visual_timeline",
-          "precision": "day"
-        }
-      }
-    },
-    {
-      "id": "gsa27",
-      "name": "GSA Annual Scientific Meeting 2027",
-      "society": "Gerontological Society of America",
-      "specialty": "Geriatrics",
-      "start": "2027-11-03",
-      "end": "2027-11-06",
-      "city": "Phoenix, AZ",
+      "id": "soap27",
+      "name": "SOAP Annual Meeting 2027",
+      "society": "Society for Obstetric Anesthesia and Perinatology",
+      "specialty": "Anesthesiology",
+      "start": "2027-05-20",
+      "end": "2027-05-23",
+      "city": "Rancho Mirage, CA",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -3359,139 +7489,36 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.geron.org/home-original",
+      "url": "https://www.soap.org/future-annual-meetings",
       "guideline": null,
       "evidence": "official",
-      "note": "Established multidisciplinary gerontology scientific research meeting. The organizing society's future meeting schedule confirms November 3–6, 2027 in Phoenix; 2027 abstract call not yet confirmed.",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.geron.org/home-original",
+          "url": "https://www.soap.org/future-annual-meetings",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE official society 2027 future-meetings page"
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://www.geron.org/home-original",
+          "url": "https://www.soap.org/future-annual-meetings",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE official society 2027 future-meetings page"
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
         }
       }
     },
     {
-      "id": "aamc-lsl27",
-      "name": "Learn Serve Lead 2027",
-      "society": "Association of American Medical Colleges",
-      "specialty": "Medical Education",
-      "start": "2027-11-12",
-      "end": "2027-11-16",
-      "city": "Washington, DC",
-      "open": null,
-      "deadline": "2026-12-07",
-      "deadlineTime": "11:59 p.m. PT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.aamc.org/learn-network/learn-serve-lead",
-      "guideline": "https://www.aamc.org/about-us/medical-education/scholarship-submissions",
-      "evidence": "official",
-      "note": "Major AAMC academic medicine meeting; primarily education, institutional leadership and networking. Confirm suitability for a specific original-research poster. Learn Serve Lead 2027 medical education call covers research abstracts, innovation abstracts and sessions. Deadline December 7, 2026 at 11:59 p.m. PT; this is not the reviewer-interest deadline.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.aamc.org/learn-network/learn-serve-lead",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.aamc.org/learn-network/learn-serve-lead",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "deadline": {
-          "url": "https://abstractscorecard.com/cfp/submit/login.asp?EventKey=AVDHHBQQ",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "Abstracts must be submitted online no later than 11:59pm (PST) on December 7, 2026.",
-          "confidence": "explicit_statement"
-        }
-      },
-      "researchOpportunity": "Academic education and leadership",
-      "submissionSource": "https://abstractscorecard.com/cfp/submit/login.asp?EventKey=AVDHHBQQ"
-    },
-    {
-      "id": "aamc-innovation27",
-      "name": "AAMC Medical Education Innovation Conference 2027",
-      "society": "Association of American Medical Colleges",
-      "specialty": "Medical Education",
-      "start": "2027-04-17",
-      "end": "2027-04-20",
-      "city": "Indianapolis, IN",
-      "open": null,
-      "deadline": "2026-09-15",
-      "deadlineTime": "11:59 p.m. HST",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Medical education research",
-        "Curricular innovation",
-        "Scholarship of teaching and learning"
-      ],
-      "url": "https://www.aamc.org/learn-network/affinity-groups/curriculum-assessment-instruction-research-evaluation-group",
-      "guideline": null,
-      "evidence": "official",
-      "note": "AAMC medical education scholarly meeting; its verified 2027 call includes research, educational innovation, posters, oral talks and workshops. It is not a traditional clinical-specialty basic-science congress. Medical Education Innovation Conference call for abstracts: oral abstracts, posters, workshops, panels and small-group discussions. 2027 abstracts/proposals closed September 15, 2026 at 11:59 p.m. HST.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Research poster",
-        "Innovation poster",
-        "Oral presentation",
-        "Workshop",
-        "Panel"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.aamc.org/learn-network/affinity-groups/curriculum-assessment-instruction-research-evaluation-group",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.aamc.org/learn-network/affinity-groups/curriculum-assessment-instruction-research-evaluation-group",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "deadline": {
-          "url": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=IAEHWKDF",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "All submissions must be submitted online no later than September 15, 2026 at 11:59pm HST.",
-          "confidence": "explicit_statement"
-        }
-      },
-      "submissionSource": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=IAEHWKDF"
-    },
-    {
-      "id": "stfm-spring27",
-      "name": "STFM Annual Spring Conference 2027",
-      "society": "Society of Teachers of Family Medicine",
-      "specialty": "Family Medicine",
-      "start": "2027-05-01",
-      "end": "2027-05-05",
+      "id": "sobp27",
+      "name": "Society of Biological Psychiatry Annual Meeting 2027",
+      "society": "Society of Biological Psychiatry",
+      "specialty": "Psychiatry",
+      "start": "2027-05-06",
+      "end": "2027-05-08",
       "city": "Chicago, IL",
       "open": null,
       "deadline": null,
@@ -3501,26 +7528,65 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://stfm.org/conferences/annual/overview/",
-      "guideline": "https://www.stfm.org/annualcfp",
+      "url": "https://sobp.org/sobp-annual-meeting/",
+      "guideline": null,
       "evidence": "official",
-      "note": "The 2027 STFM Annual Spring Conference general presentation/session proposal call closed September 4, 2026. This is NOT the separate Fellow/Resident/Student completed or work-in-progress research poster call, which the official organizer states will open later in 2026. Its abstract/poster deadline remains unannounced; do not label September 4 as the research poster deadline.",
+      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://stfm.org/conferences/annual/overview/",
+          "url": "https://sobp.org/sobp-annual-meeting/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://stfm.org/conferences/annual/overview/",
+          "url": "https://sobp.org/sobp-annual-meeting/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
+        }
+      }
+    },
+    {
+      "id": "spaannual27",
+      "name": "Society for Pediatric Anesthesia Annual Meeting 2027",
+      "society": "Society for Pediatric Anesthesia",
+      "specialty": "Anesthesiology",
+      "start": "2027-10-15",
+      "end": "2027-10-15",
+      "city": "Boston, MA",
+      "open": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "See official call for abstracts or educational program"
+      ],
+      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
+        },
+        "end": {
+          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official organizer website"
         }
       }
     },
@@ -3611,539 +7677,12 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "acep27",
-      "name": "ACEP Scientific Assembly 2027",
-      "society": "American College of Emergency Physicians",
-      "specialty": "Emergency Medicine",
-      "start": "2027-10-25",
-      "end": "2027-10-28",
-      "city": "Boston, MA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.acep.org/SA",
-      "guideline": null,
-      "evidence": "official",
-      "note": "ACEP national emergency medicine meeting; official 2027 dates verified. Confirm research presentation categories and deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.acep.org/ems/meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.acep.org/ems/meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        }
-      }
-    },
-    {
-      "id": "naemsp27",
-      "name": "NAEMSP Annual Meeting 2027",
-      "society": "National Association of EMS Physicians",
-      "specialty": "Emergency Medicine",
-      "start": "2027-01-11",
-      "end": "2027-01-16",
-      "city": "Austin, TX",
-      "open": null,
-      "deadline": "2026-09-01",
-      "deadlineTime": null,
-      "limit": 350,
-      "limitType": "words",
-      "limitNote": "Scientific/QI abstract body maximum 350 words, excluding section headings.",
-      "fee": null,
-      "types": [
-        "EMS original research",
-        "Quality improvement",
-        "Innovations in EMS education"
-      ],
-      "url": "https://naemsp.org/2027-annual-meeting/",
-      "guideline": "https://naemsp.org/annual-meeting/call-for-abstracts/",
-      "evidence": "official",
-      "note": "The regular research, quality-improvement, and EMS education innovation abstract deadline was September 1, 2026 (date confirmed; submissions closed). The organizer's page inconsistently lists 11:55 p.m. ET and 11:59 p.m. ET, so no submission time is displayed. Meeting January 11–16, 2027, in Austin.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral",
-        "Poster"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://naemsp.org/2027-annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://naemsp.org/2027-annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "deadline": {
-          "url": "https://naemsp.org/annual-meeting/call-for-abstracts/",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE official meeting-source review",
-          "source_quote": "The submission site will automatically close at 11:55 PM ET on Tuesday, September 1, 2026. Electronic Submission Rules list 11:59 PM ET on the same date.",
-          "confidence": "date_confirmed_time_conflicted"
-        }
-      },
-      "additionalSources": []
-    },
-    {
-      "id": "smfm27",
-      "name": "SMFM Pregnancy Meeting 2027",
-      "society": "Society for Maternal-Fetal Medicine",
-      "specialty": "Obstetrics & Gynecology",
-      "start": "2027-03-21",
-      "end": "2027-03-26",
-      "city": "National Harbor, MD",
-      "open": "2026-07-10",
-      "deadline": "2026-09-14",
-      "deadlineTime": "9:00 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Maternal-fetal medicine research",
-        "Obstetric complications",
-        "Perinatal research"
-      ],
-      "url": "https://www.smfm.org/events/2027-pregnancy-meeting",
-      "guideline": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
-      "evidence": "official",
-      "note": "SMFM 2027 regular abstracts closed September 14, 2026. Presenting authors must register and attend; registration is not waived for abstract presenters.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral",
-        "Poster"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.smfm.org/events/2027-pregnancy-meeting",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.smfm.org/events/2027-pregnancy-meeting",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "open": {
-          "url": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE review of official 2027 organizer pages",
-          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
-        },
-        "deadline": {
-          "url": "https://smfm2027.eventscribe.net/aaStatic.asp?SFP=WUZHRU1WTUZAMjY1NDVAQWJzdHJhY3Rz",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE review of official 2027 organizer pages",
-          "source_quote": "Meeting-edition-specific organizer statement; see linked original source."
-        }
-      }
-    },
-    {
-      "id": "soap27",
-      "name": "SOAP Annual Meeting 2027",
-      "society": "Society for Obstetric Anesthesia and Perinatology",
-      "specialty": "Anesthesiology",
-      "start": "2027-05-20",
-      "end": "2027-05-23",
-      "city": "Rancho Mirage, CA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.soap.org/future-annual-meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.soap.org/future-annual-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.soap.org/future-annual-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        }
-      }
-    },
-    {
-      "id": "sages27",
-      "name": "SAGES Annual Meeting 2027",
-      "society": "Society of American Gastrointestinal and Endoscopic Surgeons",
-      "specialty": "Surgery",
-      "start": "2027-04-06",
-      "end": "2027-04-09",
-      "city": "Las Vegas, NV",
-      "open": null,
-      "deadline": "2026-09-11",
-      "deadlineTime": "11:59 PM PDT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.sages2027.org/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.sages2027.org/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.sages2027.org/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "deadline": {
-          "url": "https://www.sages2027.org/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
-        }
-      }
-    },
-    {
-      "id": "asc27",
-      "name": "Academic Surgical Congress 2027",
-      "society": "Association for Academic Surgery and Society of University Surgeons",
-      "specialty": "Surgery",
-      "start": "2027-02-09",
-      "end": "2027-02-11",
-      "city": "Washington, DC",
-      "open": "2026-06-20",
-      "deadline": "2026-08-17",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://academicsurgicalcongress.us/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://academicsurgicalcongress.us/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://academicsurgicalcongress.us/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "open": {
-          "url": "https://academicsurgicalcongress.us/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
-        },
-        "deadline": {
-          "url": "https://academicsurgicalcongress.us/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 abstract submission dates"
-        }
-      }
-    },
-    {
-      "id": "cnsns27",
-      "name": "CNS Annual Meeting 2027",
-      "society": "Congress of Neurological Surgeons",
-      "specialty": "Neurosurgery",
-      "start": "2027-10-23",
-      "end": "2027-10-27",
-      "city": "Phoenix, AZ",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://painsection.cns.org/meetings/past-and-future-annual-meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://painsection.cns.org/meetings/past-and-future-annual-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://painsection.cns.org/meetings/past-and-future-annual-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        }
-      }
-    },
-    {
-      "id": "ors27",
-      "name": "ORS Annual Meeting 2027",
-      "society": "Orthopaedic Research Society",
-      "specialty": "Orthopedic Surgery",
-      "start": "2027-02-19",
-      "end": "2027-02-23",
-      "city": "San Francisco, CA",
-      "open": "2026-06-15",
-      "deadline": "2026-08-31",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.ors.org/2027-annual-meeting/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "ORS 2027 regular abstracts were accepted June 15–August 31, 2026.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.ors.org/2027-annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.ors.org/2027-annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "open": {
-          "url": "https://www.ors.org/futureannualmeetings/",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "ORS 2027 Annual Meeting: Abstract Submission June 15 – August 31.",
-          "confidence": "explicit_statement"
-        },
-        "deadline": {
-          "url": "https://www.ors.org/futureannualmeetings/",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "ORS 2027 Annual Meeting: Abstract Submission June 15 – August 31.",
-          "confidence": "explicit_statement"
-        }
-      },
-      "submissionSource": "https://www.ors.org/2027-annual-meeting/"
-    },
-    {
-      "id": "aossm27",
-      "name": "AOSSM Annual Meeting 2027",
-      "society": "American Orthopaedic Society for Sports Medicine",
-      "specialty": "Orthopedic Surgery",
-      "start": "2027-07-07",
-      "end": "2027-07-10",
-      "city": "Boston, MA",
-      "open": "2026-07-15",
-      "deadline": "2026-09-09",
-      "deadlineTime": "1:00 p.m. ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://events.sportsmed.org/am2026",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Official AOSSM site lists 2027 dates, July 7–10 Boston; current page hosts 2026 program so use for future meeting only. 2027 AOSSM abstract and instructional course submissions opened July 15, 2026 and closed September 9, 2026 at 1:00 p.m. ET.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://events.sportsmed.org/am2026",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://events.sportsmed.org/am2026",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "open": {
-          "url": "https://www.sportsmed.org/education/abstract-and-instructional-course-submissions",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "AOSSM 2027 Abstract and Instructional Course Center opens July 15, 2026, closes September 9, 2026.",
-          "confidence": "explicit_statement"
-        },
-        "deadline": {
-          "url": "https://www.sportsmed.org/education/abstract-and-instructional-course-submissions",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "AOSSM 2027 Abstract and Instructional Course Center opens July 15, 2026, closes September 9, 2026.",
-          "confidence": "explicit_statement"
-        }
-      },
-      "submissionSource": "https://www.abstractscorecard.com/cfp/submit/login.asp?EventKey=QLTZSHMP"
-    },
-    {
-      "id": "physiatry27",
-      "name": "Physiatry '27 — AAP Annual Meeting",
-      "society": "Association of Academic Physiatrists",
-      "specialty": "Physical Medicine & Rehabilitation",
-      "start": "2027-02-16",
-      "end": "2027-02-20",
-      "city": "Long Beach, CA",
-      "open": null,
-      "deadline": "2026-09-10",
-      "deadlineTime": "11:59 p.m. ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.physiatry.org/meetings-events/annual-meeting/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Physiatry '27 regular abstract submissions closed September 10, 2026 at 11:59 p.m. ET. Verify presentation eligibility directly with AAP.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.physiatry.org/meetings-events/annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.physiatry.org/meetings-events/annual-meeting/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "deadline": {
-          "url": "https://www.physiatry.org/meetings-events/annual-meeting/abstracts/",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "All submissions must be received via online submission by 11:59 pm (EST) September 10, 2026.",
-          "confidence": "explicit_statement"
-        }
-      },
-      "submissionSource": "https://www.physiatry.org/meetings-events/annual-meeting/abstracts/"
-    },
-    {
-      "id": "asrm-micro27",
-      "name": "ASRM Reconstructive Microsurgery Annual Meeting 2027",
-      "society": "American Society for Reconstructive Microsurgery",
-      "specialty": "Plastic Surgery",
-      "start": "2027-01-29",
-      "end": "2027-02-02",
-      "city": "Aventura, FL",
-      "open": null,
-      "deadline": "2026-07-16",
-      "deadlineTime": "11:59 p.m. CT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.microsurg.org/future-asrm-meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed. ASRM 2027 reconstructive microsurgery conference oral abstracts closed July 16, 2026 at 11:59 p.m. CT (ASRM category, not AAHS or ASPN).",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.microsurg.org/future-asrm-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.microsurg.org/future-asrm-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "deadline": {
-          "url": "https://aahsaspnasrm.confex.com/aahsaspnasrm/2027/cfp.cgi",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "ASRM DEADLINE: Thursday, July 16, 2026 at 11:59pm (CT)",
-          "confidence": "explicit_statement"
-        }
-      },
-      "submissionSource": "https://aahsaspnasrm.confex.com/aahsaspnasrm/2027/cfp.cgi"
-    },
-    {
-      "id": "asds27",
-      "name": "ASDS Annual Meeting 2027",
-      "society": "American Society for Dermatologic Surgery",
-      "specialty": "Dermatology",
-      "start": "2027-10-14",
-      "end": "2027-10-17",
+      "id": "stfm-spring27",
+      "name": "STFM Annual Spring Conference 2027",
+      "society": "Society of Teachers of Family Medicine",
+      "specialty": "Family Medicine",
+      "start": "2027-05-01",
+      "end": "2027-05-05",
       "city": "Chicago, IL",
       "open": null,
       "deadline": null,
@@ -4153,452 +7692,26 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [],
-      "url": "https://www.asds.net/medical-professionals/annual-meeting",
-      "guideline": null,
+      "url": "https://stfm.org/conferences/annual/overview/",
+      "guideline": "https://www.stfm.org/annualcfp",
       "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
+      "note": "The 2027 STFM Annual Spring Conference general presentation/session proposal call closed September 4, 2026. This is NOT the separate Fellow/Resident/Student completed or work-in-progress research poster call, which the official organizer states will open later in 2026. Its abstract/poster deadline remains unannounced; do not label September 4 as the research poster deadline.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.asds.net/medical-professionals/annual-meeting",
+          "url": "https://stfm.org/conferences/annual/overview/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://www.asds.net/medical-professionals/annual-meeting",
+          "url": "https://stfm.org/conferences/annual/overview/",
           "checked_at": "2026-10-11",
           "verified_by": "RISE conference-coverage audit",
           "source_quote": "Official 2027 meeting dates"
-        }
-      }
-    },
-    {
-      "id": "scai27",
-      "name": "SCAI Scientific Sessions 2027",
-      "society": "Society for Cardiovascular Angiography and Interventions",
-      "specialty": "Cardiology",
-      "start": "2027-05-02",
-      "end": "2027-05-04",
-      "city": "Fort Lauderdale, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [],
-      "url": "https://www.scai.org/education-and-events/events-schedule/scai-2027-scientific-sessions",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates checked against the linked official organizer page. Abstract submission details not populated unless explicitly confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.scai.org/education-and-events/events-schedule/scai-2027-scientific-sessions",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        },
-        "end": {
-          "url": "https://www.scai.org/education-and-events/events-schedule/scai-2027-scientific-sessions",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE conference-coverage audit",
-          "source_quote": "Official 2027 meeting dates"
-        }
-      }
-    },
-    {
-      "id": "ahs27",
-      "name": "69th American Headache Society Annual Scientific Meeting",
-      "society": "American Headache Society",
-      "specialty": "Neurology",
-      "start": "2027-06-10",
-      "end": "2027-06-13",
-      "city": "San Diego, CA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Headache and migraine research"
-      ],
-      "url": "https://americanheadachesociety.org/events",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://americanheadachesociety.org/events",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://americanheadachesociety.org/events",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        }
-      }
-    },
-    {
-      "id": "mds27",
-      "name": "International Congress of Parkinson’s Disease and Movement Disorders 2027",
-      "society": "International Parkinson and Movement Disorder Society",
-      "specialty": "Neurology",
-      "start": "2027-09-26",
-      "end": "2027-09-30",
-      "city": "Amsterdam, Netherlands",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Parkinson disease and movement disorders"
-      ],
-      "url": "https://www.mdscongress.org/About/Past-future",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [
-        "Oral",
-        "Poster"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.mdscongress.org/About/Past-future",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://www.mdscongress.org/About/Past-future",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        }
-      }
-    },
-    {
-      "id": "ean27",
-      "name": "EAN Congress 2027",
-      "society": "European Academy of Neurology",
-      "specialty": "Neurology",
-      "start": "2027-06-12",
-      "end": "2027-06-15",
-      "city": "Gothenburg, Sweden",
-      "open": "2026-10-29",
-      "deadline": "2027-01-14",
-      "deadlineTime": "11:59 PM CET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Clinical neurology",
-        "Basic and translational research"
-      ],
-      "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
-      "guideline": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
-      "evidence": "official",
-      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral",
-        "Poster",
-        "Poster display"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "open": {
-          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "deadline": {
-          "url": "https://www.ean.org/congress2027/abstracts/public-submission-instructions",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE manual official date/time verification",
-          "source_quote": "Abstract Submission Deadline Thursday 14 January 2027, 23:59 CET (not CEST)."
-        }
-      }
-    },
-    {
-      "id": "aua-urology27",
-      "name": "AUA Annual Meeting 2027 (Urology)",
-      "society": "American Urological Association",
-      "specialty": "Urology",
-      "start": "2027-05-21",
-      "end": "2027-05-24",
-      "city": "San Diego, CA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Urologic research"
-      ],
-      "url": "https://www.auadailynews.org/meeting-coverage/article/22967770/mark-your-calendar-for-aua2027",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Flagship US urology meeting; note that AUA also abbreviates Association of University Anesthesiologists. 2027 abstract submission deadline not independently confirmed.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.auadailynews.org/meeting-coverage/article/22967770/mark-your-calendar-for-aua2027",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://www.auadailynews.org/meeting-coverage/article/22967770/mark-your-calendar-for-aua2027",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        }
-      }
-    },
-    {
-      "id": "eau27",
-      "name": "EAU Congress 2027",
-      "society": "European Association of Urology",
-      "specialty": "Urology",
-      "start": "2027-03-19",
-      "end": "2027-03-22",
-      "city": "Amsterdam, Netherlands",
-      "open": "2026-08-03",
-      "deadline": "2026-11-01",
-      "deadlineTime": "11:59 PM CET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Urologic oncology",
-        "Non-oncologic urology"
-      ],
-      "url": "https://eaucongress.uroweb.org/the-congress/general-information",
-      "guideline": null,
-      "evidence": "official",
-      "note": "High-value European urology scientific congress; confirmed meeting dates and abstract deadline.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [
-        "Oral",
-        "Video abstract"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "open": {
-          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "deadline": {
-          "url": "https://eaucongress.uroweb.org/the-congress/general-information",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        }
-      }
-    },
-    {
-      "id": "aao-oph27",
-      "name": "AAO Annual Meeting 2027 (Ophthalmology)",
-      "society": "American Academy of Ophthalmology",
-      "specialty": "Ophthalmology",
-      "start": "2027-11-12",
-      "end": "2027-11-15",
-      "city": "Las Vegas, NV",
-      "open": "2027-03-11",
-      "deadline": "2027-04-13",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Ophthalmology research"
-      ],
-      "url": "https://www.aao.org/annual-meeting/presenter/dates",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 AAO Paper/Poster and Video abstract window: March 11–April 13, 2027. Instruction Courses use a separate December 10, 2026–January 12, 2027 submission period; do not confuse the two.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.aao.org/annual-meeting/past-and-future-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://www.aao.org/annual-meeting/past-and-future-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "open": {
-          "url": "https://www.aao.org/annual-meeting/presenter/dates",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE independent 2027 organizer webpage manual audit",
-          "source_quote": "AAO 2027 Paper/Poster and Video abstract submitter opens March 11, 2027 and closes April 13, 2027; Instruction Course submitter has separate December 10, 2026 through January 12, 2027 dates.",
-          "confidence": "direct_official_edition_statement"
-        },
-        "deadline": {
-          "url": "https://www.aao.org/annual-meeting/presenter/dates",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE independent 2027 organizer webpage manual audit",
-          "source_quote": "AAO 2027 Paper/Poster and Video abstract submitter opens March 11, 2027 and closes April 13, 2027; Instruction Course submitter has separate December 10, 2026 through January 12, 2027 dates.",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "aao-hns27",
-      "name": "AAO-HNSF Annual Meeting & OTO EXPO 2027",
-      "society": "American Academy of Otolaryngology–Head and Neck Surgery Foundation",
-      "specialty": "Otolaryngology",
-      "start": "2027-09-18",
-      "end": "2027-09-21",
-      "city": "New Orleans, LA",
-      "open": "2026-10-17",
-      "deadline": "2026-12-16",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "ENT basic science",
-        "Clinical research",
-        "Case reports"
-      ],
-      "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral",
-        "Poster"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "open": {
-          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "deadline": {
-          "url": "https://www.entnet.org/events/annual-meeting/call-for-science/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        }
-      }
-    },
-    {
-      "id": "vam27",
-      "name": "Vascular Annual Meeting 2027",
-      "society": "Society for Vascular Surgery",
-      "specialty": "Vascular Surgery",
-      "start": "2027-06-02",
-      "end": "2027-06-05",
-      "city": "San Diego, CA",
-      "open": "2026-11-18",
-      "deadline": "2027-01-13",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Vascular research"
-      ],
-      "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
-      "guideline": "https://vam.vascular.org/present-at-vam/",
-      "evidence": "official",
-      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [
-        "Oral",
-        "Poster"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "open": {
-          "url": "https://vam.vascular.org/present-at-vam/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "deadline": {
-          "url": "https://vam.vascular.org/present-at-vam/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
         }
       }
     },
@@ -4653,371 +7766,162 @@ window.RISE_DATA = {
       "submissionSource": "https://www.sts.org/annual-meeting-faq"
     },
     {
-      "id": "atc27",
-      "name": "American Transplant Congress 2027",
-      "society": "American Society of Transplantation and American Society of Transplant Surgeons",
-      "specialty": "Transplantation",
-      "start": "2027-06-05",
-      "end": "2027-06-09",
-      "city": "Seattle, WA",
+      "id": "tandem27",
+      "name": "Tandem Transplantation & Cellular Therapy Meetings 2027",
+      "society": "ASTCT / CIBMTR",
+      "specialty": "Hematology & Oncology",
+      "start": "2027-02-17",
+      "end": "2027-02-20",
+      "city": "Orlando, FL",
       "open": null,
-      "deadline": null,
+      "deadline": "2026-10-09",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
       "types": [
-        "Transplant research"
+        "Hematopoietic transplantation",
+        "Cell therapy",
+        "Gene therapy"
       ],
-      "url": "https://www.atcmeeting.org/",
+      "url": "https://cibmtr.org/CIBMTR/Meetings/Tandem-Meetings",
       "guideline": null,
       "evidence": "official",
-      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "note": "Main scientific meeting Feb 17–20, with Feb 16 preconference; abstract deadline not confirmed. CIBMTR confirms 2027 Tandem regular abstracts due Friday, October 9, 2026. The Tandem organizer's abstract page may still show 2026-cycle historical dates; avoid importing them.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
-      "presentationFormats": [
-        "Oral",
-        "Poster"
-      ],
+      "presentationFormats": [],
+      "submissionSource": "https://www.tandemmeetings.com/Abstracts/Abstract-Information",
       "fieldSources": {
-        "start": {
-          "url": "https://www.atcmeeting.org/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://www.atcmeeting.org/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        }
-      }
-    },
-    {
-      "id": "aahpm27",
-      "name": "AAHPM Annual Assembly of Hospice and Palliative Care 2027",
-      "society": "American Academy of Hospice and Palliative Medicine and Hospice and Palliative Nurses Association",
-      "specialty": "Palliative Medicine",
-      "start": "2027-03-17",
-      "end": "2027-03-20",
-      "city": "Pittsburgh, PA",
-      "open": "2026-06-15",
-      "deadline": "2026-07-07",
-      "deadlineTime": "11:59 p.m. PT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Palliative research",
-        "Quality improvement"
-      ],
-      "url": "https://aahpm.org/education-events/annual-assembly/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 AAHPM Assembly primary abstract submissions ran June 15–July 7, 2026. Verify eligibility for the selected regular research category.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [
-        "Oral",
-        "Poster"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://aahpm.org/education-events/annual-assembly/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://aahpm.org/education-events/annual-assembly/",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "open": {
-          "url": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE manual official-source audit",
-          "source_quote": "Summer Call for Abstracts opens Monday June 15 through Tuesday July 7, 2026; Fall Call for Abstracts Sept 8–28, 2026.",
-          "confidence": "explicit_statement"
-        },
         "deadline": {
-          "url": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
+          "url": "https://cibmtr.org/",
           "checked_at": "2026-10-12",
           "verified_by": "RISE manual official-source audit",
-          "source_quote": "Summer Call for Abstracts opens Monday June 15 through Tuesday July 7, 2026; Fall Call for Abstracts Sept 8–28, 2026.",
+          "source_quote": "Please submit your 2027 Tandem Meetings abstracts by Friday, October 9, 2026.",
           "confidence": "explicit_statement"
-        }
-      },
-      "submissionSource": "https://aahpm.org/education-events/annual-assembly/summer-abstract-call/",
-      "additionalSources": [
-        "https://aahpm.org/education-events/annual-assembly/fall-abstract-call/"
-      ]
-    },
-    {
-      "id": "apha27",
-      "name": "APHA Annual Meeting & Expo 2027",
-      "society": "American Public Health Association",
-      "specialty": "Public Health",
-      "start": "2027-11-07",
-      "end": "2027-11-10",
-      "city": "Philadelphia, PA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Public health research",
-        "Population health"
-      ],
-      "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [
-        "Oral",
-        "Poster"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
-        },
-        "end": {
-          "url": "https://www.apha.org/events-and-meetings/annual/about/past-and-future-annual-meetings",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official society page audit"
         }
       }
     },
     {
-      "id": "asent27",
-      "name": "ASENT Annual Meeting 2027",
-      "society": "American Society for Experimental Neurotherapeutics",
-      "specialty": "Neurology",
-      "start": "2027-03-17",
-      "end": "2027-03-19",
-      "city": "Bethesda, MD",
-      "open": "2026-09-07",
-      "deadline": "2026-10-30",
-      "deadlineTime": "11:59 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": "$25 trainees; $75 members; $175 nonmembers",
+      "id": "tct27",
+      "name": "TCT 2027",
+      "society": "Cardiovascular Research Foundation",
+      "specialty": "Cardiology",
+      "start": "2027-10-18",
+      "end": "2027-10-21",
+      "city": "San Francisco, CA",
+      "open": null,
+      "deadline": null,
       "types": [
-        "Neurotherapeutics development",
+        "Interventional cardiology",
         "Clinical trials",
-        "Translational neuroscience"
+        "Cardiovascular devices"
       ],
-      "url": "https://www.asent.org/AnnualMeeting2027",
-      "guideline": "https://www.asent.org/event-6830500",
+      "url": "https://www.tctmd.com/node/50962",
       "evidence": "official",
-      "note": "Established scientific and translational neurotherapeutics society. Abstracts include trials-in-progress and encore abstracts, but case reports are not accepted. Clinical trials course occurs March 15–16; annual scientific meeting March 17–19.",
+      "note": "Transcatheter Cardiovascular Therapeutics meeting. Future abstract submission windows have not yet been confirmed.",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "guideline": null,
       "flag": null,
       "tags": null,
-      "submissionCategoriesVerified": true,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": [],
+      "fieldSources": {
+        "start": {
+          "url": "https://www.tctmd.com/node/50962",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        },
+        "end": {
+          "url": "https://www.tctmd.com/node/50962",
+          "checked_at": "2026-10-10",
+          "verified_by": "Official organizer"
+        }
+      }
+    },
+    {
+      "id": "uscap27",
+      "name": "USCAP Annual Meeting 2027",
+      "society": "United States and Canadian Academy of Pathology",
+      "specialty": "Pathology",
+      "start": "2027-03-13",
+      "end": "2027-03-18",
+      "city": "Vancouver, Canada",
+      "open": null,
+      "deadline": "2026-09-24",
+      "deadlineTime": "11:00 AM PT / 2:00 PM ET",
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": "$50 per abstract",
+      "types": [
+        "Original research",
+        "Pathology science"
+      ],
+      "url": "https://uscap.org/abstracts/",
+      "guideline": null,
+      "evidence": "official",
+      "note": "Abstract deadline has passed. Previously presented/published work is restricted.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
+      "presentationFormats": []
+    },
+    {
+      "id": "vam27",
+      "name": "Vascular Annual Meeting 2027",
+      "society": "Society for Vascular Surgery",
+      "specialty": "Vascular Surgery",
+      "start": "2027-06-02",
+      "end": "2027-06-05",
+      "city": "San Diego, CA",
+      "open": "2026-11-18",
+      "deadline": "2027-01-13",
+      "deadlineTime": null,
+      "limit": null,
+      "limitType": null,
+      "limitNote": null,
+      "fee": null,
+      "types": [
+        "Vascular research"
+      ],
+      "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
+      "guideline": "https://vam.vascular.org/present-at-vam/",
+      "evidence": "official",
+      "note": "Established scientific society meeting; 2027 dates verified from official sources. Unpublished submission dates are not inferred.",
+      "flag": null,
+      "tags": null,
+      "submissionCategoriesVerified": false,
       "presentationFormats": [
         "Oral",
         "Poster"
       ],
       "fieldSources": {
         "start": {
-          "url": "https://www.asent.org/AnnualMeeting2027",
+          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
+          "verified_by": "RISE official society page audit"
         },
         "end": {
-          "url": "https://www.asent.org/AnnualMeeting2027",
+          "url": "https://vascular.org/vascular-specialists/education-and-meetings/vascular-annual-meeting/future-vam-dates",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
+          "verified_by": "RISE official society page audit"
         },
         "open": {
-          "url": "https://www.asent.org/event-6830500",
+          "url": "https://vam.vascular.org/present-at-vam/",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
+          "verified_by": "RISE official society page audit"
         },
         "deadline": {
-          "url": "https://www.asent.org/event-6830500",
+          "url": "https://vam.vascular.org/present-at-vam/",
           "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
-        }
-      }
-    },
-    {
-      "id": "ans-neurotology27",
-      "name": "American Neurotology Society Spring Meeting 2027",
-      "society": "American Neurotology Society",
-      "specialty": "Otolaryngology",
-      "start": "2027-04-09",
-      "end": "2027-04-10",
-      "city": "Seattle, WA",
-      "open": "2026-09-01",
-      "deadline": "2026-10-22",
-      "deadlineTime": "11:59 PM PT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Neurotology and vestibular science",
-        "Otology clinical research"
-      ],
-      "url": "https://www.americanneurotologysociety.com/ans-spring-meeting-2027-seattle",
-      "guideline": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
-      "evidence": "official",
-      "note": "Established specialist research meeting during the Combined Otolaryngology Spring Meetings. Scientific oral and poster opportunities include trainee awards and vestibular research support.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral scientific session",
-        "Scientific poster"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.americanneurotologysociety.com/ans-spring-meeting-2027-seattle",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
-        },
-        "end": {
-          "url": "https://www.americanneurotologysociety.com/ans-spring-meeting-2027-seattle",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
-        },
-        "open": {
-          "url": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
-        },
-        "deadline": {
-          "url": "https://www.americanneurotologysociety.com/ans-abstract-submission-instructions-2027",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE independent manual official congress review",
-          "source_quote": "The Call for Papers officially closed on October 22, 2026. Deadline Thursday, October 22, 2026 at 11:59 PM Pacific Time.",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "creog-apgo27",
-      "name": "CREOG & APGO Annual Meeting 2027",
-      "society": "Council on Resident Education in Obstetrics and Gynecology and Association of Professors of Gynecology and Obstetrics",
-      "specialty": "Obstetrics & Gynecology",
-      "start": "2027-02-24",
-      "end": "2027-02-27",
-      "city": "Denver, CO",
-      "open": null,
-      "deadline": "2026-08-04",
-      "deadlineTime": "5:00 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Obstetrics and gynecology medical education research",
-        "Teaching innovation"
-      ],
-      "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
-      "guideline": null,
-      "evidence": "official",
-      "note": "A research and scholarship meeting specific to OB/GYN education. Call for abstracts and session proposals closed August 4, 2026 at 5:00 PM ET; accepts oral abstracts, posters and educational films.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral abstract",
-        "Poster",
-        "Educational film"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
-        },
-        "end": {
-          "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
-        },
-        "deadline": {
-          "url": "https://www.acog.org/education-and-events/meetings/creog-apgo-annual-meeting",
-          "checked_at": "2026-10-11",
-          "verified_by": "RISE official 2027 society verification",
-          "source_quote": "Official year-specific meeting or abstract call."
-        }
-      }
-    },
-    {
-      "id": "asnr-rehab27",
-      "name": "American Society of Neurorehabilitation Annual Meeting 2027",
-      "society": "American Society of Neurorehabilitation",
-      "specialty": "Physical Medicine & Rehabilitation",
-      "start": "2027-03-16",
-      "end": "2027-03-18",
-      "city": "Durham, NC",
-      "open": null,
-      "deadline": "2026-11-29",
-      "deadlineTime": "11:59 PM CST",
-      "limit": 300,
-      "limitType": "words",
-      "limitNote": "Structured abstract body maximum 300 words; title maximum 50 words.",
-      "fee": null,
-      "types": [
-        "Neurorehabilitation original research",
-        "Case reports and series",
-        "Systematic reviews",
-        "Qualitative research"
-      ],
-      "url": "https://www.asnr.com/asnr2027-poster-abstracts/",
-      "guideline": "https://www.asnr.com/asnr2027-poster-abstracts/",
-      "evidence": "official",
-      "note": "ASNR2027 research poster abstract deadline November 29, 2026 11:59 PM US Central Standard Time; submission site open by November 2, but the exact opening day is not stated.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Poster"
-      ],
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.asnr.com/asnr2027-poster-abstracts/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE direct manual examination of 2027 official organizer page",
-          "source_quote": "ASNR2027 Poster Abstracts DUE Sunday, November 29, 2026 at 11:59pm Central. Abstract submission site is now OPEN!",
-          "confidence": "direct_official_edition_statement"
-        },
-        "start": {
-          "url": "https://bsky.app/profile/asnrehab.bsky.social",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE official ASNR 2027 announcement corroborated by WFNR event calendar",
-          "source_quote": "ASNR2027 March 16-18, 2027 Durham Convention Center; ASNR Annual Meeting",
-          "confidence": "explicit_meeting_dates"
-        },
-        "end": {
-          "url": "https://bsky.app/profile/asnrehab.bsky.social",
-          "checked_at": "2026-10-12",
-          "verified_by": "RISE official ASNR 2027 announcement corroborated by WFNR event calendar",
-          "source_quote": "ASNR2027 March 16-18, 2027 Durham Convention Center; ASNR Annual Meeting",
-          "confidence": "explicit_meeting_dates"
+          "verified_by": "RISE official society page audit"
         }
       }
     },
@@ -5139,13 +8043,13 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "aaimwinter27",
-      "name": "AAIM APM Winter Meeting 2027",
-      "society": "Alliance for Academic Internal Medicine",
-      "specialty": "Internal Medicine",
-      "start": "2027-02-24",
-      "end": "2027-02-27",
-      "city": "Savannah, GA",
+      "id": "veith26",
+      "name": "VEITHsymposium 2026",
+      "society": "VEITHsymposium",
+      "specialty": "Vascular Surgery",
+      "start": "2026-11-17",
+      "end": "2026-11-21",
+      "city": "New York, NY",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -5154,37 +8058,40 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [
-        "Scientific program / submission categories to confirm"
+        "Research abstracts (confirm society-specific submission rules)"
       ],
-      "url": "https://im.org/learning/conferences",
+      "url": "https://vascular.org/vascular-specialists/meetings",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
       "flag": null,
-      "tags": null,
+      "tags": [
+        "resident-relevant"
+      ],
+      "level": "international",
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://im.org/learning/conferences",
+          "url": "https://vascular.org/vascular-specialists/meetings",
           "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
+          "verified_by": "Official society meeting calendar"
         },
         "end": {
-          "url": "https://im.org/learning/conferences",
+          "url": "https://vascular.org/vascular-specialists/meetings",
           "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
+          "verified_by": "Official society meeting calendar"
         }
       }
     },
     {
-      "id": "aaimfall27",
-      "name": "AAIM APDIM Fall Meeting 2027",
-      "society": "Alliance for Academic Internal Medicine",
-      "specialty": "Internal Medicine",
-      "start": "2027-09-16",
-      "end": "2027-09-18",
-      "city": "Orlando, FL",
+      "id": "vesswinter27",
+      "name": "Vascular and Endovascular Surgery Society Winter Meeting 2027",
+      "society": "Vascular and Endovascular Surgery Society",
+      "specialty": "Vascular Surgery",
+      "start": "2027-01-21",
+      "end": "2027-01-24",
+      "city": "Steamboat Springs, CO",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -5193,209 +8100,29 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [
-        "Scientific program / submission categories to confirm"
+        "Research abstracts (confirm society-specific submission rules)"
       ],
-      "url": "https://im.org/learning/conferences",
+      "url": "https://vascular.org/vascular-specialists/meetings",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
       "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://im.org/learning/conferences",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://im.org/learning/conferences",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "esc27",
-      "name": "ESC Congress 2027",
-      "society": "European Society of Cardiology",
-      "specialty": "Cardiology",
-      "start": "2027-08-27",
-      "end": "2027-08-30",
-      "city": "Milan, Italy",
-      "open": null,
-      "deadline": "2027-03-01",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
+      "tags": [
+        "resident-relevant"
       ],
-      "url": "https://www.escardio.org/events/congresses/esc-congress/",
-      "guideline": "https://www.escardio.org/events/congresses/esc-congress/",
-      "evidence": "official",
-      "note": "Official ESC Congress 2027 page states that Call for Science opens in mid-December 2026, with regular abstract deadline March 1, 2027. The opening is month-level only; March 8 clinical case and June 1 late-breaking deadlines are separate.",
-      "flag": null,
-      "tags": null,
+      "level": "national",
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.escardio.org/events/congresses/esc-congress/",
+          "url": "https://vascular.org/vascular-specialists/meetings",
           "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
+          "verified_by": "Official society meeting calendar"
         },
         "end": {
-          "url": "https://www.escardio.org/events/congresses/esc-congress/",
+          "url": "https://vascular.org/vascular-specialists/meetings",
           "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "openMonth": {
-          "url": "https://www.escardio.org/events/congresses/esc-congress/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE independent manual official congress review",
-          "source_quote": "The Call for Science and registration open in mid-December. Abstract submission deadline 01 Mar 2027.",
-          "confidence": "official_month_only"
-        },
-        "deadline": {
-          "url": "https://www.escardio.org/events/congresses/esc-congress/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE independent manual official congress review",
-          "source_quote": "The Call for Science and registration open in mid-December. Abstract submission deadline 01 Mar 2027.",
-          "confidence": "direct_official_edition_statement"
-        }
-      },
-      "openMonth": "2026-12"
-    },
-    {
-      "id": "ers27",
-      "name": "European Respiratory Society Congress 2027",
-      "society": "European Respiratory Society",
-      "specialty": "Pulmonary & Critical Care",
-      "start": "2027-09-11",
-      "end": "2027-09-14",
-      "city": "Milan, Italy",
-      "open": "2026-12-01",
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.ersnet.org/congress-and-events/congress/abstract-and-clinical-case-submission/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "ERS Congress 2027 regular abstracts open December 1, 2026; the official 2027 regular abstract deadline is not yet announced. The submission table currently shown on the official ERS page ('First round abstracts' December 1, 2025–February 12, 2026, extended) belongs to ERS Congress 2026, not 2027. Do not carry dates forward. Regular abstracts only; separate late-breaking and RCT windows excluded.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.ersnet.org/congress-and-events/congress/abstract-and-clinical-case-submission/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://www.ersnet.org/congress-and-events/congress/abstract-and-clinical-case-submission/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "open": {
-          "url": "https://www.ersnet.org/congress-and-events/congress/abstract-and-clinical-case-submission/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "eaaci27",
-      "name": "EAACI Congress 2027",
-      "society": "European Academy of Allergy and Clinical Immunology",
-      "specialty": "Allergy & Immunology",
-      "start": "2027-06-11",
-      "end": "2027-06-14",
-      "city": "Helsinki, Finland",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://eaaci.org/events_congress/eaaci-congress-2027/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://eaaci.org/events_congress/eaaci-congress-2027/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://eaaci.org/events_congress/eaaci-congress-2027/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "epa27",
-      "name": "European Congress of Psychiatry 2027",
-      "society": "European Psychiatric Association",
-      "specialty": "Psychiatry",
-      "start": "2027-04-03",
-      "end": "2027-04-06",
-      "city": "Florence, Italy",
-      "open": null,
-      "deadline": "2026-10-07",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://epa-congress.org/abstract-submission/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Regular abstract deadline not independently confirmed; resident awards may have a different deadline. 2027 main regular abstract deadline extended to October 7, 2026; exact opening date not confirmed on official 2027 submission page.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://epa-congress.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://epa-congress.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "deadline": {
-          "url": "https://epa-congress.org/abstract-submission/",
-          "checked_at": "2026-11-02",
-          "verified_by": "Manual review of official 2027 meeting submission page",
-          "source_quote": "Abstracts must be received by the extended deadline on 7 October 2026. Abstracts received after the deadline will not be considered.",
-          "confidence": "direct_official_statement"
+          "verified_by": "Official society meeting calendar"
         }
       }
     },
@@ -5446,41 +8173,53 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "asdp27",
-      "name": "American Society of Dermatopathology Annual Meeting 2027",
-      "society": "American Society of Dermatopathology",
-      "specialty": "Pathology",
-      "start": "2027-11-04",
-      "end": "2027-11-07",
-      "city": "Austin, TX",
-      "open": null,
-      "deadline": null,
+      "id": "wcn27",
+      "name": "World Congress of Nephrology 2027",
+      "society": "International Society of Nephrology",
+      "specialty": "Nephrology",
+      "start": "2027-04-01",
+      "end": "2027-04-04",
+      "city": "Kuala Lumpur, Malaysia",
+      "open": "2026-06-22",
+      "deadline": "2026-10-28",
       "deadlineTime": null,
       "limit": null,
       "limitType": null,
       "limitNote": null,
       "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://www.asdp.org/ASDPAnnualMeeting/ASDPWeb/Meetings---Events/Events_Calendar.aspx",
+      "types": [],
+      "url": "https://www.theisn.org/wcn/",
       "guideline": null,
       "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
+      "note": "Flagship World Congress of Nephrology. Abstract deadline Oct 28, 2026; travel-grant application deadline Oct 31. World Congress of Nephrology 2027 abstract submissions: submissions open 2026-06-22.",
       "flag": null,
       "tags": null,
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
       "fieldSources": {
         "start": {
-          "url": "https://www.asdp.org/ASDPAnnualMeeting/ASDPWeb/Meetings---Events/Events_Calendar.aspx",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
+          "url": "https://www.theisn.org/in-action/events/world-congress-of-nephrology/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
         },
         "end": {
-          "url": "https://www.asdp.org/ASDPAnnualMeeting/ASDPWeb/Meetings---Events/Events_Calendar.aspx",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
+          "url": "https://www.theisn.org/in-action/events/world-congress-of-nephrology/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE conference-coverage audit",
+          "source_quote": "Official 2027 meeting dates"
+        },
+        "deadline": {
+          "url": "https://www.theisn.org/wcn/",
+          "checked_at": "2026-10-11",
+          "verified_by": "RISE official abstract page audit"
+        },
+        "open": {
+          "url": "https://www.theisn.org/wcn/abstracts/",
+          "checked_at": "2026-10-13",
+          "verified_by": "RISE official-source opening-date audit",
+          "source_quote": "Important dates: Submission opens June 22, 2026; Submission deadline October 28, 2026",
+          "confidence": "explicit_statement"
         }
       }
     },
@@ -5520,845 +8259,6 @@ window.RISE_DATA = {
           "url": "https://wfns.org/events/14/wfns-events/370/wfns-2027-the-20th-world-congress-of-neurosurgery",
           "checked_at": "2026-10-24",
           "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "idf27",
-      "name": "IDF World Diabetes Congress 2027",
-      "society": "International Diabetes Federation",
-      "specialty": "Endocrinology",
-      "start": "2027-04-09",
-      "end": "2027-04-12",
-      "city": "Singapore",
-      "open": "2026-06-15",
-      "deadline": "2026-09-30",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific program / submission categories to confirm"
-      ],
-      "url": "https://idf2027.org/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 meeting dates confirmed by the organizing society. Regular abstract submission eligibility/deadline must be checked on the official page; other proposal deadlines are not automatically abstract deadlines.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://idf2027.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "end": {
-          "url": "https://idf2027.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "open": {
-          "url": "https://idf2027.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        },
-        "deadline": {
-          "url": "https://idf2027.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society page review"
-        }
-      }
-    },
-    {
-      "id": "arvo27",
-      "name": "ARVO Annual Meeting 2027",
-      "society": "Association for Research in Vision and Ophthalmology",
-      "specialty": "Ophthalmology",
-      "start": "2027-05-02",
-      "end": "2027-05-06",
-      "city": "San Diego, CA",
-      "open": "2026-10-16",
-      "deadline": "2026-12-04",
-      "deadlineTime": "5:00 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://www.arvo.org/annual-meeting/about",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 ARVO membership required to submit a regular abstract.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.arvo.org/annual-meeting/about",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://www.arvo.org/annual-meeting/about",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "open": {
-          "url": "https://www.arvo.org/annual-meeting/about",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "deadline": {
-          "url": "https://www.arvo.org/annual-meeting/about",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "asrs27",
-      "name": "ASRS Annual Meeting 2027",
-      "society": "American Society of Retina Specialists",
-      "specialty": "Ophthalmology",
-      "start": "2027-07-28",
-      "end": "2027-07-31",
-      "city": "San Francisco, CA",
-      "open": "2026-12-03",
-      "deadline": "2027-01-28",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://www.asrs.org/annual-meeting",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Annual ASRS meeting regular abstracts open December 3, 2026 and close January 28, 2027. Late-breaking research uses different May–June 2027 window.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.asrs.org/annual-meeting/future-annual-meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://www.asrs.org/annual-meeting/future-annual-meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "open": {
-          "url": "https://www.asrs.org/annual-meeting",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE manual review of 2027 organizer's abstract information",
-          "source_quote": "Mark your calendar for our 45th ASRS Annual Scientific Meeting, July 28-31 in San Francisco. Abstract submissions will open on December 3, 2026 and close on January 28, 2027.",
-          "confidence": "direct_official_edition_statement"
-        },
-        "deadline": {
-          "url": "https://www.asrs.org/annual-meeting",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE manual review of 2027 organizer's abstract information",
-          "source_quote": "Mark your calendar for our 45th ASRS Annual Scientific Meeting, July 28-31 in San Francisco. Abstract submissions will open on December 3, 2026 and close on January 28, 2027.",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "agsglaucoma27",
-      "name": "American Glaucoma Society Annual Meeting 2027",
-      "society": "American Glaucoma Society",
-      "specialty": "Ophthalmology",
-      "start": "2027-03-04",
-      "end": "2027-03-07",
-      "city": "Tucson, AZ",
-      "open": "2026-09-02",
-      "deadline": "2026-10-19",
-      "deadlineTime": "11:59 PM CT (general submissions)",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://www.americanglaucomasociety.net/meetings-events/annual-meeting/abstracts",
-      "guideline": null,
-      "evidence": "official",
-      "note": "General abstract deadline October 19, 2026; resident/student forum has an EARLIER deadline. Organizer's own webpage conflicts: headline lists October 2, 2026, while the FAQ lists October 1, 2026. Resident-specific deadline therefore requires organizer clarification; use the earlier date for conservative planning.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.americanglaucomasociety.net/events/calendar",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://www.americanglaucomasociety.net/events/calendar",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "open": {
-          "url": "https://www.americanglaucomasociety.net/meetings-events/annual-meeting/abstracts",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE manual review of 2027 organizer's abstract information",
-          "source_quote": "Submission of abstract proposals ... for the 2027 Annual Meeting will open Wednesday, September 2, 2026. Deadline for AGS members and non-members ... Monday, October 19, 2026, 11:59pm Central.",
-          "confidence": "direct_official_edition_statement"
-        },
-        "deadline": {
-          "url": "https://www.americanglaucomasociety.net/meetings-events/annual-meeting/abstracts",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE manual review of 2027 organizer's abstract information",
-          "source_quote": "Submission of abstract proposals ... for the 2027 Annual Meeting will open Wednesday, September 2, 2026. Deadline for AGS members and non-members ... Monday, October 19, 2026, 11:59pm Central.",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "ishlt27",
-      "name": "ISHLT 47th Annual Meeting & Scientific Sessions 2027",
-      "society": "International Society for Heart and Lung Transplantation",
-      "specialty": "Transplantation",
-      "start": "2027-04-14",
-      "end": "2027-04-17",
-      "city": "Sydney, Australia",
-      "open": "2026-08-03",
-      "deadline": "2026-09-29",
-      "deadlineTime": "11:59 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://www.ishlt.org/annual-meeting",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Cardiothoracic transplant, heart failure, pulmonary vascular medicine and mechanical circulatory support. Annual travel awards open December 2026.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.ishlt.org/annual-meeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://www.ishlt.org/annual-meeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "open": {
-          "url": "https://www.ishlt.org/annual-meeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "deadline": {
-          "url": "https://www.ishlt.org/annual-meeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "aats27",
-      "name": "AATS 107th Annual Meeting 2027",
-      "society": "American Association for Thoracic Surgery",
-      "specialty": "Cardiothoracic Surgery",
-      "start": "2027-05-01",
-      "end": "2027-05-04",
-      "city": "Los Angeles, CA",
-      "open": null,
-      "deadline": "2026-10-13",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://events.aats.org/am27",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Regular abstract and surgical case-video deadline October 13, 2026.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://events.aats.org/am27",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://events.aats.org/am27",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "deadline": {
-          "url": "https://events.aats.org/am27",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "spaannual27",
-      "name": "Society for Pediatric Anesthesia Annual Meeting 2027",
-      "society": "Society for Pediatric Anesthesia",
-      "specialty": "Anesthesiology",
-      "start": "2027-10-15",
-      "end": "2027-10-15",
-      "city": "Boston, MA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://pedsanesthesia.org/education-and-meetings/upcoming-meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "aapmspring27",
-      "name": "AAPM Spring Clinical Meeting 2027",
-      "society": "American Association of Physicists in Medicine",
-      "specialty": "Medical Physics",
-      "start": "2027-04-10",
-      "end": "2027-04-13",
-      "city": "Denver, CO",
-      "open": "2026-08-05",
-      "deadline": "2026-09-16",
-      "deadlineTime": "8:00 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://site.aapm.org/spring-clinical/2027",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Clinical case presentations, medical physics research and best poster competition.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://site.aapm.org/spring-clinical/2027",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://site.aapm.org/spring-clinical/2027",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "open": {
-          "url": "https://site.aapm.org/spring-clinical/2027",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "deadline": {
-          "url": "https://site.aapm.org/spring-clinical/2027",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "aapmsummer27",
-      "name": "AAPM Summer School 2027",
-      "society": "American Association of Physicists in Medicine",
-      "specialty": "Medical Physics",
-      "start": "2027-06-24",
-      "end": "2027-06-29",
-      "city": "Boston, MA",
-      "open": "",
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://site.aapm.org/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Educational summer school; verify whether it accepts original scientific abstracts.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://site.aapm.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://site.aapm.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "capcseminar27",
-      "name": "CAPC National Seminar 2027",
-      "society": "Center to Advance Palliative Care",
-      "specialty": "Palliative Medicine",
-      "start": "2027-10-13",
-      "end": "2027-10-15",
-      "city": "Columbus, OH",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://www.capc.org/seminar/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Interdisciplinary palliative care leadership, systems innovation, policy and research; registration opens in early 2027.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.capc.org/seminar/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://www.capc.org/seminar/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "aacrras27",
-      "name": "AACR Special Conference: Targeting RAS 2027",
-      "society": "American Association for Cancer Research",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-01-28",
-      "end": "2027-01-31",
-      "city": "San Diego, CA",
-      "open": null,
-      "deadline": "2026-11-09",
-      "deadlineTime": "1:00 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Specialized cancer biology and therapeutic research. Regular abstract deadline extended by organizer to November 9, 2026 at 1:00 p.m. U.S. ET; replaces previously displayed November 2 date.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "deadline": {
-          "url": "https://www.aacr.org/meeting/aacr-special-conference-in-cancer-research-targeting-ras-mechanisms-novel-therapeutics-and-clinical-impact/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE individual manual review of organizer webpage",
-          "source_quote": "Extended Abstract Submission Deadline: Monday, November 9, 2026, 1 p.m. U.S. ET.",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "aatsonc27",
-      "name": "AATS International Thoracic Surgical Oncology Summit 2027",
-      "society": "American Association for Thoracic Surgery",
-      "specialty": "Cardiothoracic Surgery",
-      "start": "2027-09-17",
-      "end": "2027-09-18",
-      "city": "New York, NY",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://www.aats.org/all-future-meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.aats.org/all-future-meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://www.aats.org/all-future-meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "aatsmitral27",
-      "name": "AATS Mitral Conclave 2027",
-      "society": "American Association for Thoracic Surgery",
-      "specialty": "Cardiothoracic Surgery",
-      "start": "2027-12-16",
-      "end": "2027-12-17",
-      "city": "New York, NY",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "See official call for abstracts or educational program"
-      ],
-      "url": "https://www.aats.org/all-future-meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Meeting details verified from official society calendar; abstract submission dates not published unless shown.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.aats.org/all-future-meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        },
-        "end": {
-          "url": "https://www.aats.org/all-future-meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer website"
-        }
-      }
-    },
-    {
-      "id": "napcrg26",
-      "name": "NAPCRG 54th Annual Meeting 2026",
-      "society": "North American Primary Care Research Group",
-      "specialty": "Family Medicine",
-      "start": "2026-11-20",
-      "end": "2026-11-24",
-      "city": "Toronto, Canada",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://napcrgwebsite.azurewebsites.net/conferences/annual/annualmeeting/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "international",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://napcrgwebsite.azurewebsites.net/conferences/annual/annualmeeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://napcrgwebsite.azurewebsites.net/conferences/annual/annualmeeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
-      "id": "napcrg27",
-      "name": "NAPCRG 55th Annual Meeting 2027",
-      "society": "North American Primary Care Research Group",
-      "specialty": "Family Medicine",
-      "start": "2027-11-13",
-      "end": "2027-11-17",
-      "city": "Vancouver, Canada",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://napcrgwebsite.azurewebsites.net/conferences/future-conferences/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "international",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://napcrgwebsite.azurewebsites.net/conferences/future-conferences/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://napcrgwebsite.azurewebsites.net/conferences/future-conferences/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
-      "id": "vesswinter27",
-      "name": "Vascular and Endovascular Surgery Society Winter Meeting 2027",
-      "society": "Vascular and Endovascular Surgery Society",
-      "specialty": "Vascular Surgery",
-      "start": "2027-01-21",
-      "end": "2027-01-24",
-      "city": "Steamboat Springs, CO",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://vascular.org/vascular-specialists/meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "national",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://vascular.org/vascular-specialists/meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://vascular.org/vascular-specialists/meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
-      "id": "avf27",
-      "name": "American Venous Forum Annual Meeting 2027",
-      "society": "American Venous Forum",
-      "specialty": "Vascular Surgery",
-      "start": "2027-02-27",
-      "end": "2027-03-02",
-      "city": "Nashville, TN",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://vascular.org/vascular-specialists/meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "national",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://vascular.org/vascular-specialists/meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://vascular.org/vascular-specialists/meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
-      "id": "womensvascular27",
-      "name": "Women's Vascular Summit 2027",
-      "society": "Women's Vascular Summit",
-      "specialty": "Vascular Surgery",
-      "start": "2027-04-30",
-      "end": "2027-05-02",
-      "city": "Washington, DC",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://vascular.org/vascular-specialists/meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "national",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://vascular.org/vascular-specialists/meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://vascular.org/vascular-specialists/meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
-      "id": "veith26",
-      "name": "VEITHsymposium 2026",
-      "society": "VEITHsymposium",
-      "specialty": "Vascular Surgery",
-      "start": "2026-11-17",
-      "end": "2026-11-21",
-      "city": "New York, NY",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://vascular.org/vascular-specialists/meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "international",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://vascular.org/vascular-specialists/meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://vascular.org/vascular-specialists/meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
         }
       }
     },
@@ -6419,1743 +8319,13 @@ window.RISE_DATA = {
       "openMonth": "2026-07"
     },
     {
-      "id": "era27",
-      "name": "ERA Congress 2027 (European Renal Association)",
-      "society": "European Renal Association",
-      "specialty": "Nephrology",
-      "start": "2027-06-03",
-      "end": "2027-06-06",
-      "city": "Rotterdam, Netherlands",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://www.era-online.org/events/rotterdam-2027/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "international",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.era-online.org/events/rotterdam-2027/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://www.era-online.org/events/rotterdam-2027/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
-      "id": "amssm27",
-      "name": "AMSSM Annual Meeting 2027",
-      "society": "American Medical Society for Sports Medicine",
-      "specialty": "Sports Medicine",
-      "start": "2027-04-16",
-      "end": "2027-04-21",
-      "city": "Louisville, KY",
-      "open": null,
-      "deadline": "2026-12-01",
-      "deadlineTime": "11:00 AM CT",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://www.amssm.org/Submissions.php",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2027 research abstract submissions opened in late August 2026 (organizer identifies month only; not an exact day). Submission closes December 1, 2026 at 11:00 AM Central Time. Society membership required to submit. Case reports may have a distinct schedule.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "national",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.amssm.org/Conferences.html",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://www.amssm.org/Conferences.html",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "openMonth": {
-          "url": "https://www.amssm.org/Submissions.php",
-          "checked_at": "2026-11-02",
-          "verified_by": "Manual review of official 2027 meeting submission page",
-          "source_quote": "Research Abstract Submission for the 2027 Annual Meeting will open in late August. Deadline: December 1, 2026, at 11:00am Central Time.",
-          "confidence": "official_month_only"
-        },
-        "deadline": {
-          "url": "https://www.amssm.org/Submissions.php",
-          "checked_at": "2026-11-02",
-          "verified_by": "Manual review of official 2027 meeting submission page",
-          "source_quote": "Research Abstract Submission for the 2027 Annual Meeting will open in late August. Deadline: December 1, 2026, at 11:00am Central Time.",
-          "confidence": "direct_official_statement"
-        }
-      },
-      "openMonth": "2026-08"
-    },
-    {
-      "id": "amssm-fellows27",
-      "name": "AMSSM Fellows Research & Leadership Conference 2027",
-      "society": "American Medical Society for Sports Medicine",
-      "specialty": "Sports Medicine",
-      "start": "2027-07-22",
-      "end": "2027-07-25",
-      "city": "Minneapolis, MN",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://www.amssm.org/Conferences.html",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Fellows-focused research and leadership; resident eligibility must be confirmed.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "national",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.amssm.org/Conferences.html",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://www.amssm.org/Conferences.html",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
-      "id": "assr27",
-      "name": "American Society of Spine Radiology Annual Symposium 2027",
-      "society": "American Society of Spine Radiology",
-      "specialty": "Radiology",
-      "start": "2027-02-10",
-      "end": "2027-02-13",
-      "city": "San Francisco, CA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://www.asnr.org/future-events/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "national",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.asnr.org/future-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        },
-        "end": {
-          "url": "https://www.asnr.org/future-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society meeting calendar"
-        }
-      }
-    },
-    {
-      "id": "acgme-conclave28",
-      "name": "ACGME Annual Educational Conference 2028",
-      "society": "Accreditation Council for Graduate Medical Education",
-      "specialty": "Medical Education",
-      "start": "2028-02-24",
-      "end": "2028-02-26",
-      "city": "Orlando, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Research abstracts (confirm society-specific submission rules)"
-      ],
-      "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/future-annual-educational-conference-dates-and-locations/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "2028 ACGME Annual Educational Conference, February 24-26, Orlando, Florida. Regular abstract submission schedule not yet published.",
-      "flag": null,
-      "tags": [
-        "resident-relevant"
-      ],
-      "level": "national",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/future-annual-educational-conference-dates-and-locations/",
-          "checked_at": "2026-10-24",
-          "verified_by": "ACGME published future conference calendar"
-        },
-        "end": {
-          "url": "https://www.acgme.org/education-and-resources/annual-educational-conference/future-annual-educational-conference-dates-and-locations/",
-          "checked_at": "2026-10-24",
-          "verified_by": "ACGME published future conference calendar"
-        }
-      }
-    },
-    {
-      "id": "acpm-pm27",
-      "name": "ACPM Preventive Medicine (PM2027) Conference",
-      "society": "American College of Preventive Medicine",
-      "specialty": "Preventive Medicine",
-      "start": "2027-05-03",
-      "end": "2027-05-06",
-      "city": "San Diego, CA",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Scientific research abstract submissions (check official call)"
-      ],
-      "url": "https://acpm.org/membership-partners/awards-scholarships/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Meeting dates verified; abstract deadline not yet verified.",
-      "flag": null,
-      "tags": null,
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://acpm.org/membership-partners/awards-scholarships/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer"
-        },
-        "end": {
-          "url": "https://acpm.org/membership-partners/awards-scholarships/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official organizer"
-        }
-      }
-    },
-    {
-      "id": "acp-fl26",
-      "name": "ACP Florida Chapter Annual Scientific Meeting 2026",
-      "society": "American College of Physicians — Florida Chapter",
-      "specialty": "Internal Medicine",
-      "start": "2026-10-23",
-      "end": "2026-10-25",
-      "city": "Fort Lauderdale, FL",
-      "open": null,
-      "deadline": "2026-08-23",
-      "deadlineTime": "11:59 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Resident clinical vignette",
-        "Research poster competition",
-        "Doctor's Dilemma"
-      ],
-      "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Florida resident and student abstract competition closed August 23, 2026; meeting October 23–25. Do not assume a 2027 meeting date.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings/2026-florida-chapter-annual-scientific-meeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "deadline": {
-          "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "acp-fl-next",
-      "name": "ACP Florida Chapter Annual Scientific Meeting — Next Edition",
-      "society": "American College of Physicians — Florida Chapter",
-      "specialty": "Internal Medicine",
-      "start": null,
-      "end": null,
-      "city": "Florida (location not announced)",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Resident scientific posters and clinical vignettes (historical; 2027 rules pending)"
-      ],
-      "url": "https://www.acponline.org/about-acp/chapters-regions/united-states/florida-chapter/news-meetings",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Florida regional meeting. Recurring Florida Chapter meeting; 2027 dates and regular abstract deadline are not yet published. No prior-year deadline carried over.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {}
-    },
-    {
-      "id": "flacc27",
-      "name": "Florida ACC FIT Forum & Jeopardy 2027",
-      "society": "Florida Chapter of the American College of Cardiology",
-      "specialty": "Cardiology",
-      "start": "2027-01-30",
-      "end": "2027-01-31",
-      "city": "Miami, FL",
-      "open": null,
-      "deadline": "2027-01-05",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Florida resident/fellow research abstracts",
-        "Clinical case presentation",
-        "Poster competition"
-      ],
-      "url": "https://www.accfl.org/Fit-Forum",
-      "guideline": "https://www.accfl.org/Fit-Forum",
-      "evidence": "official",
-      "note": "Florida regional meeting. For residents, students, and adult/pediatric cardiology fellows in Florida programs; submissions due January 5, 2027. Verify event-specific format.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.accfl.org/Fit-Forum",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.accfl.org/Fit-Forum",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "deadline": {
-          "url": "https://www.accfl.org/Fit-Forum",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "flacc-annual27",
-      "name": "Florida Chapter ACC Annual Meeting 2027",
-      "society": "Florida Chapter of the American College of Cardiology",
-      "specialty": "Cardiology",
-      "start": "2027-08-06",
-      "end": "2027-08-08",
-      "city": "Florida (venue pending)",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Cardiovascular clinical education",
-        "Scientific program — submission rules pending"
-      ],
-      "url": "https://www.accfl.org/Calendar",
-      "guideline": "https://www.accfl.org/Annual-Meeting-Home/",
-      "evidence": "official",
-      "note": "Florida ACC 2027 Scientific Abstract/Case Study/Quality competitions are scheduled to open March 2027 (only a month is supplied; exact opening day and closing date not announced). Registration opens February 15, 2027, which is not the abstract opening.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.accfl.org/Calendar",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.accfl.org/Calendar",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "openMonth": {
-          "url": "https://www.accfl.org/Annual-Meeting-Home/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE direct manual examination of 2027 official organizer page",
-          "source_quote": "Florida Chapter ACC 2027 Annual Meeting August 6-8: Scientific Abstract, Case Study & Quality Competitions Open March 2027",
-          "confidence": "official_month_only"
-        }
-      },
-      "openMonth": "2027-03"
-    },
-    {
-      "id": "fl-neuro27",
-      "name": "Florida Society of Neurology Annual Meeting 2027",
-      "society": "Florida Society of Neurology",
-      "specialty": "Neurology",
-      "start": "2027-01-16",
-      "end": "2027-01-17",
-      "city": "Lake Buena Vista, FL",
-      "open": null,
-      "deadline": "2026-12-01",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Original research",
-        "Case reports and case series",
-        "Previously presented abstracts"
-      ],
-      "url": "https://fsneuro.org/annual-meeting-info-6/",
-      "guideline": "https://fsneuro.org/abstract-submissions/",
-      "evidence": "official",
-      "note": "Florida regional meeting Jan 16–17, 2027 at Disney's Yacht & Beach Club. The 20th Annual Resident & Fellow Research Day is Sat, Jan 16. Peer-reviewed platform and poster presentations; case reports/series and previously presented abstracts welcome. First author must be a resident, fellow, or student (medical, graduate, or undergraduate). No meeting registration fee for residents/fellows; accepted medical/graduate student presenters also receive waived registration. Abstract submission deadline Dec 1, 2026. Opening date and submission cutoff time not stated in the available announcement.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [
-        "Oral",
-        "Poster"
-      ],
-      "fieldSources": {
-        "start": {
-          "url": "https://fsneuro.org/annual-meeting-info-6/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://fsneuro.org/annual-meeting-info-6/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "deadline": {
-          "url": "https://fsneuro.org/abstract-submissions/",
-          "checked_at": "2026-10-25",
-          "verified_by": "Official Florida Society of Neurology page (screenshot of call for abstracts)",
-          "source_quote": "DEADLINE – DECEMBER 1, 2026"
-        }
-      }
-    },
-    {
-      "id": "fsa27",
-      "name": "Florida Society of Anesthesiologists Annual Meeting 2027",
-      "society": "Florida Society of Anesthesiologists",
-      "specialty": "Anesthesiology",
-      "start": "2027-06-11",
-      "end": "2027-06-13",
-      "city": "Palm Beach, FL",
-      "open": null,
-      "deadline": "2027-02-26",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Anesthesiology research abstracts",
-        "Clinical education"
-      ],
-      "url": "https://fsahq.org/2027-annual-meeting/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Abstract call listed as October 2026 on one organizer page and November 2026 on another. Exact submission opening/day and deadline unconfirmed. FSA 2027 organizer timeline specifies Call for Abstracts October 2026 (month only, exact day unannounced) and deadline February 26, 2027. Call for Topics September–October 2026 is a separate category.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://fsahq.org/2027-annual-meeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://fsahq.org/2027-annual-meeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "openMonth": {
-          "url": "https://fsahq.org/2027-annual-meeting/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE direct manual inspection of official 2027 meeting timeline",
-          "source_quote": "Call for Abstracts: October 2026; Call for Abstracts Deadline: February 26, 2027.",
-          "confidence": "official_month_only"
-        },
-        "deadline": {
-          "url": "https://fsahq.org/2027-annual-meeting/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE direct manual inspection of official 2027 meeting timeline",
-          "source_quote": "Call for Abstracts: October 2026; Call for Abstracts Deadline: February 26, 2027.",
-          "confidence": "direct_official_edition_statement"
-        }
-      },
-      "openMonth": "2026-10"
-    },
-    {
-      "id": "fl-fm-spring27",
-      "name": "FAFP Ignite Spring Forum 2027",
-      "society": "Florida Academy of Family Physicians",
-      "specialty": "Family Medicine",
-      "start": "2027-04-09",
-      "end": "2027-04-11",
-      "city": "Orlando, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Family medicine CME / scholarly submissions to confirm"
-      ],
-      "url": "https://www.fafp.org/education-and-events",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Caribe Royale Orlando; submission track and dates not announced.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.fafp.org/education-and-events",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.fafp.org/education-and-events",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-fm-summer27",
-      "name": "FAFP Elevate Summer Retreat 2027",
-      "society": "Florida Academy of Family Physicians",
-      "specialty": "Family Medicine",
-      "start": "2027-07-09",
-      "end": "2027-07-11",
-      "city": "Clearwater Beach, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Family medicine continuing education; research abstracts to confirm"
-      ],
-      "url": "https://www.fafp.org/education-and-events",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Wyndham Grand Clearwater Beach; not confirmed to have a resident research abstract call.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.fafp.org/education-and-events",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.fafp.org/education-and-events",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-fm-annual27",
-      "name": "FAFP Summit Family Medicine Annual Meeting 2027",
-      "society": "Florida Academy of Family Physicians",
-      "specialty": "Family Medicine",
-      "start": "2027-12-10",
-      "end": "2027-12-12",
-      "city": "Amelia Island, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Primary care education; resident scientific submission eligibility to confirm"
-      ],
-      "url": "https://www.fafp.org/education-and-events",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. The Ritz-Carlton Amelia Island; call for resident abstracts not posted.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.fafp.org/education-and-events",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.fafp.org/education-and-events",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-acs27",
-      "name": "Florida ACS Annual Meeting & Copeland Resident Research Symposium 2027",
-      "society": "Florida Chapter of the American College of Surgeons",
-      "specialty": "Surgery",
-      "start": "2027-04-24",
-      "end": "2027-04-25",
-      "city": "Orlando, FL",
-      "open": "2026-11-02",
-      "deadline": "2027-01-31",
-      "deadlineTime": null,
-      "limit": 250,
-      "limitType": "words",
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Basic science resident papers",
-        "Clinical science resident papers",
-        "Commission on Cancer research",
-        "Advocacy / education / cases",
-        "Poster"
-      ],
-      "url": "https://www.floridafacs.org/2027-annual-meeting",
-      "guideline": "https://www.floridafacs.org/2027-annual-meeting",
-      "evidence": "official",
-      "note": "Florida ACS 2027 Resident Paper/Abstract Competition opens November 2, 2026 and closes January 31, 2027 (per 2027 abstract instructions).",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.floridafacs.org/2027-annual-meeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.floridafacs.org/2027-annual-meeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "deadline": {
-          "url": "https://www.floridafacs.org/abstract-submissions-1",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "open": {
-          "url": "https://www.floridafacs.org/2027-annual-meeting",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE direct manual examination of 2027 official organizer page",
-          "source_quote": "2027 Annual Meeting & Edward M. Copeland III Resident Research Symposium; Call for Resident Abstracts Opening November 2!",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "fl-ortho27",
-      "name": "Florida Orthopaedic Society FL OrthoCon 2027",
-      "society": "Florida Orthopaedic Society",
-      "specialty": "Orthopedic Surgery",
-      "start": "2027-05-20",
-      "end": "2027-05-23",
-      "city": "Key Largo, FL",
-      "open": null,
-      "deadline": "2027-01-08",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Orthopaedic scientific research abstracts"
-      ],
-      "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Ocean Reef Club; research abstract deadline January 8, 2027.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "deadline": {
-          "url": "https://floridaorthopaedicsociety.org/page/AnnualScientificMeeting",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-nephro27",
-      "name": "Florida Society of Nephrology 60th Annual Meeting 2027",
-      "society": "Florida Society of Nephrology",
-      "specialty": "Nephrology",
-      "start": "2027-01-15",
-      "end": "2027-01-17",
-      "city": "Tampa, FL",
-      "open": null,
-      "deadline": "2026-11-01",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Robert Geronemus renal research competition",
-        "Resident/fellow original research",
-        "Posters"
-      ],
-      "url": "https://www.floridasocietyofnephrology.com/events/EventDetails.aspx?id=2032249",
-      "guideline": "https://www.floridasocietyofnephrology.com/page/ResearchCompetition",
-      "evidence": "official",
-      "note": "Florida regional meeting. Florida PGY-2/3 IM residents and nephrology fellows eligible for Nov 1 research competition; oral finalists and poster presentations.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.floridasocietyofnephrology.com/events/EventDetails.aspx?id=2032249",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.floridasocietyofnephrology.com/events/EventDetails.aspx?id=2032249",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "deadline": {
-          "url": "https://www.floridasocietyofnephrology.com/page/ResearchCompetition",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-rheum27",
-      "name": "Florida Society of Rheumatology Annual Meeting 2027",
-      "society": "Florida Society of Rheumatology",
-      "specialty": "Rheumatology",
-      "start": "2027-07-22",
-      "end": "2027-07-25",
-      "city": "Orlando, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Florida trainee original research",
-        "Resident/fellow case reports",
-        "Competitive oral presentations"
-      ],
-      "url": "https://floridarheumatology.org/events/EventDetails.aspx?id=2012072",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Hyatt Regency Grand Cypress; organization invites Florida trainees for abstract competition, 2027 submission deadline not confirmed.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://floridarheumatology.org/events/EventDetails.aspx?id=2012072",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://floridarheumatology.org/events/EventDetails.aspx?id=2012072",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-path27",
-      "name": "Florida Society of Pathologists Annual Pathology Conference 2027",
-      "society": "Florida Society of Pathologists",
-      "specialty": "Pathology",
-      "start": "2027-02-12",
-      "end": "2027-02-14",
-      "city": "Lake Buena Vista, FL",
-      "open": null,
-      "deadline": "2026-12-01",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Original case and research posters",
-        "Resident/fellow poster competition",
-        "Medical student poster competition",
-        "Rare and interesting cases"
-      ],
-      "url": "https://flpath.org/event/Conference2027",
-      "guideline": "https://flpath.org/page/Poster_Submissions",
-      "evidence": "official",
-      "note": "Florida regional meeting. Poster submissions close December 1, 2026. Separate Rare & Interesting Case Competition closes November 27, 2026; not the regular poster deadline.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": true,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://flpath.org/event/Conference2027",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://flpath.org/event/Conference2027",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "deadline": {
-          "url": "https://flpath.org/page/Poster_Submissions",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-psych27",
-      "name": "Florida Psychiatric Society Spring CME Meeting 2027",
-      "society": "Florida Psychiatric Society",
-      "specialty": "Psychiatry",
-      "start": "2027-04-02",
-      "end": "2027-04-04",
-      "city": "Orlando, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Psychiatry continuing education; abstract submission eligibility to confirm"
-      ],
-      "url": "https://www.floridapsych.org/page/AnnualMeetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Renaissance Orlando at SeaWorld; submission program unannounced.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.floridapsych.org/page/AnnualMeetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.floridapsych.org/page/AnnualMeetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-radiology27",
-      "name": "Florida Radiological Society Annual Meeting 2027",
-      "society": "Florida Radiological Society and Florida Radiology Business Management Association",
-      "specialty": "Radiology",
-      "start": "2027-07-16",
-      "end": "2027-07-18",
-      "city": "Amelia Island, FL",
-      "open": "2027-01-04",
-      "deadline": "2027-05-14",
-      "deadlineTime": "12:00 PM ET",
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Radiology education / trainees; research abstract categories to confirm"
-      ],
-      "url": "https://www.flrad.org/frs-annual-meeting/",
-      "guideline": "https://www.flrad.org/resident-poster-session/",
-      "evidence": "official",
-      "note": "2027 Florida Radiological Society resident/medical-student poster session submission portal opens January 4, 2027 and closes May 14, 2027, 12 noon ET. Restriction: first authors must be eligible Florida students or residents/fellows; verify details. Generic abstracts page currently shows May 15 but is not explicitly edition-specific, so the specific 2027 poster-page deadline governs.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.flrad.org/frs-annual-meeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.flrad.org/frs-annual-meeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "open": {
-          "url": "https://www.flrad.org/resident-poster-session/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE direct manual examination of 2027 official organizer page",
-          "source_quote": "2027 FRS/FRBMA Annual Meeting July 16–18, 2027; Online Submission Open and Close Dates: Open date January 4, 2027; Close date May 14, 2027 (12 pm Noon ET).",
-          "confidence": "direct_official_edition_statement"
-        },
-        "deadline": {
-          "url": "https://www.flrad.org/resident-poster-session/",
-          "checked_at": "2026-11-02",
-          "verified_by": "RISE direct manual examination of 2027 official organizer page",
-          "source_quote": "2027 FRS/FRBMA Annual Meeting July 16–18, 2027; Online Submission Open and Close Dates: Open date January 4, 2027; Close date May 14, 2027 (12 pm Noon ET).",
-          "confidence": "direct_official_edition_statement"
-        }
-      }
-    },
-    {
-      "id": "fl-derm27",
-      "name": "Florida Academy of Dermatology Annual Meeting 2027",
-      "society": "Florida Academy of Dermatology",
-      "specialty": "Dermatology",
-      "start": "2027-07-09",
-      "end": "2027-07-11",
-      "city": "Palm Beach, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Dermatology scientific meeting; resident presentation call to confirm"
-      ],
-      "url": "https://www.faderm.org/future_meetings.php",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. The Breakers; original research deadline unannounced.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.faderm.org/future_meetings.php",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.faderm.org/future_meetings.php",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-ophth27",
-      "name": "Florida Society of Ophthalmology Masters in Ophthalmology 2027",
-      "society": "Florida Society of Ophthalmology",
-      "specialty": "Ophthalmology",
-      "start": "2027-06-04",
-      "end": "2027-06-06",
-      "city": "Orlando, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Ophthalmology education / resident mentorship"
-      ],
-      "url": "https://beta.mdeye.org/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Waldorf Astoria Orlando; original abstract submission not confirmed.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://beta.mdeye.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://beta.mdeye.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-fvs27",
-      "name": "Florida Vascular Society Scientific Sessions 2027",
-      "society": "Florida Vascular Society",
+      "id": "womensvascular27",
+      "name": "Women's Vascular Summit 2027",
+      "society": "Women's Vascular Summit",
       "specialty": "Vascular Surgery",
-      "start": "2027-04-15",
-      "end": "2027-04-18",
-      "city": "Orlando, FL",
-      "open": "2026-09-01",
-      "deadline": "2026-10-23",
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Resident vascular research oral presentations",
-        "Surgery and vascular fellow scientific abstracts",
-        "Clinical case reports"
-      ],
-      "url": "https://fvs.org/fvs-annual-meeting/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Regular abstract deadline extended from October 16 through October 23, 2026; multiple Florida resident research prizes offered.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://fvs.org/fvs-annual-meeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://fvs.org/fvs-annual-meeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "open": {
-          "url": "https://fvs.org/fvs-annual-meeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "deadline": {
-          "url": "https://fvs.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-fstcs27",
-      "name": "Florida Society of Thoracic and Cardiovascular Surgeons Annual Meeting 2027",
-      "society": "Florida Society of Thoracic & Cardiovascular Surgeons",
-      "specialty": "Cardiothoracic Surgery",
-      "start": "2027-07-08",
-      "end": "2027-07-11",
-      "city": "Key Largo, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Cardiothoracic surgery education; original research submissions to confirm"
-      ],
-      "url": "https://www.fstcs.org/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Ocean Reef Club, Key Largo; no regular abstract deadline posted.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.fstcs.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.fstcs.org/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-onc-fellows26",
-      "name": "FLASCO Fellows & Residents Training Program 2026",
-      "society": "Florida Society of Clinical Oncology",
-      "specialty": "Hematology & Oncology",
-      "start": "2026-11-21",
-      "end": "2026-11-21",
-      "city": "Orlando, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Oncology trainee research presentations",
-        "Fellow and resident education",
-        "Mentorship"
-      ],
-      "url": "https://flasco.org/flasco-events/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. JW Marriott Orlando Bonnet Creek; society advertises research presentations, but no general abstract submission date confirmed.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://flasco.org/flasco-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://flasco.org/flasco-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-onc-thoracic27",
-      "name": "FLASCO Thoracic Oncology Summit 2027",
-      "society": "Florida Society of Clinical Oncology",
-      "specialty": "Hematology & Oncology",
-      "start": "2027-04-02",
-      "end": "2027-04-03",
-      "city": "Aventura, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Thoracic oncology clinical and translational education; abstracts to confirm"
-      ],
-      "url": "https://flasco.org/flasco-events/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Hilton Miami Aventura; regular resident abstract submission not confirmed.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://flasco.org/flasco-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://flasco.org/flasco-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-geriatric27",
-      "name": "Florida Geriatrics Society Annual Symposium 2027",
-      "society": "Florida Geriatrics Society",
-      "specialty": "Geriatrics",
-      "start": "2027-06-12",
-      "end": "2027-06-13",
-      "city": "Clearwater Beach, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Geriatric medicine research posters",
-        "David T. Lowenthal Founder's Poster Session"
-      ],
-      "url": "https://www.floridageriatricssociety.org/Events-%26-Meetings",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Society event listing confirms June 12–13; separate home page includes a June 11 premeeting and inconsistent end-day text. Poster abstract opening noted for September; exact cutoff unverified.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.floridageriatricssociety.org/Events-%26-Meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.floridageriatricssociety.org/Events-%26-Meetings",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-gi27",
-      "name": "ACG / Florida Gastroenterology Society Annual Spring Symposium 2027",
-      "society": "American College of Gastroenterology / Florida Gastroenterology Society",
-      "specialty": "Gastroenterology",
-      "start": "2027-03-05",
-      "end": "2027-03-07",
-      "city": "Naples, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Esophagus school",
-        "Gastroenterology continuing education (abstracts unconfirmed)"
-      ],
-      "url": "https://gi.org/2027acg-fgs/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Regional clinical education symposium. Original research submission pathway not confirmed.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://gi.org/2027acg-fgs/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://gi.org/2027acg-fgs/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-ent26",
-      "name": "Florida Combined Otolaryngology Meeting 2026",
-      "society": "Florida Society of Otolaryngology – Head & Neck Surgery",
-      "specialty": "Otolaryngology",
-      "start": "2026-11-12",
-      "end": "2026-11-15",
-      "city": "Orlando, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Medical student research posters",
-        "Florida resident ENT poster competition"
-      ],
-      "url": "https://fcomnow.com/",
-      "guideline": "https://fcomnow.com/poster-submissions/medstudent-resident/",
-      "evidence": "official",
-      "note": "Florida regional meeting. Official 2026 home page reports November 12–15; a future-events page also lists November 12–16 (end-date discrepancy). Residency poster competition restricted to Florida trainees.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://fcomnow.com/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://fcomnow.com/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-ent27",
-      "name": "Florida Combined Otolaryngology Meeting 2027",
-      "society": "Florida Society of Otolaryngology – Head & Neck Surgery",
-      "specialty": "Otolaryngology",
-      "start": "2027-11-11",
-      "end": "2027-11-14",
-      "city": "Boca Raton, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "ENT education and research posters (2027 criteria pending)"
-      ],
-      "url": "https://fcomnow.com/future-events/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. Boca Raton Resort, official future meetings schedule; do not reuse 2026 research poster deadline.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://fcomnow.com/future-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://fcomnow.com/future-events/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-fsps26",
-      "name": "Florida Society of Plastic Surgeons Annual Meeting 2026",
-      "society": "Florida Society of Plastic Surgeons",
-      "specialty": "Plastic Surgery",
-      "start": "2026-12-10",
-      "end": "2026-12-13",
-      "city": "Palm Beach, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Plastic surgery research and clinical education (submission rules to verify)"
-      ],
-      "url": "https://www.fsps.org/meetings/",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. The Breakers, Palm Beach; official page confirms 2026 event.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://www.fsps.org/meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        },
-        "end": {
-          "url": "https://www.fsps.org/meetings/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "fl-em-fcep27",
-      "name": "FCEP Symposium by the Sea — Next Edition",
-      "society": "Florida College of Emergency Physicians",
-      "specialty": "Emergency Medicine",
-      "start": null,
-      "end": null,
-      "city": "Florida (date and site pending)",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Emergency medicine CME and resident engagement; 2027 abstract call unannounced"
-      ],
-      "url": "https://fcep.org/events-and-cme/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Florida regional meeting. Annual statewide meeting confirmed as recurring, but 2027 edition date, city and abstract deadline are not published.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {}
-    },
-    {
-      "id": "fl-peds-fpp27",
-      "name": "Florida AAP Future of Pediatric Practice — Next Edition",
-      "society": "Florida Chapter of the American Academy of Pediatrics",
-      "specialty": "Pediatrics",
-      "start": null,
-      "end": null,
-      "city": "Florida (date and site pending)",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Competitive resident forum",
-        "Medical student research forum"
-      ],
-      "url": "https://www.fcaap.org/the-future-of-pediatric-practice/",
-      "guideline": null,
-      "evidence": "unannounced",
-      "note": "Florida regional meeting. Annual Florida pediatrics conference held around Labor Day; no verified exact 2027 date or abstract submission deadline.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {}
-    },
-    {
-      "id": "fl-fso-urol26",
-      "name": "Florida Urological Society Annual Meeting 2026",
-      "society": "Florida Urological Society",
-      "specialty": "Urology",
-      "start": "2026-12-11",
-      "end": null,
-      "city": "Orlando, FL",
-      "open": null,
-      "deadline": null,
-      "deadlineTime": null,
-      "limit": null,
-      "limitType": null,
-      "limitNote": null,
-      "fee": null,
-      "types": [
-        "Urology annual academic meeting; research submission rules unconfirmed"
-      ],
-      "url": "https://lugpa.memberclicks.net/all-urology-wide-calendar",
-      "guideline": null,
-      "evidence": "official",
-      "note": "Florida regional meeting. External urology association calendar lists Dec. 11, 2026 but not meeting end date; no official society event page corroboration; confirm before travel.",
-      "flag": null,
-      "tags": [
-        "florida-regional",
-        "trainee"
-      ],
-      "level": "regional",
-      "region": "Florida",
-      "submissionCategoriesVerified": false,
-      "presentationFormats": [],
-      "fieldSources": {
-        "start": {
-          "url": "https://lugpa.memberclicks.net/all-urology-wide-calendar",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official Florida society meeting or submission page",
-          "source_quote": "Organizer's date-specific 2026/2027 meeting announcement"
-        }
-      }
-    },
-    {
-      "id": "adventhealth-gme-research-day27",
-      "name": "AdventHealth GME Research Day 2027",
-      "society": "AdventHealth Graduate Medical Education / AdventHealth Research Institute",
-      "specialty": "Medical Education",
-      "featuredForAllSpecialties": true,
-      "eventType": "institutional_research_day",
       "start": "2027-04-30",
-      "end": "2027-04-30",
-      "city": "Orlando, FL",
-      "venue": "Whole Life Church, 2800 N Orange Ave, Orlando, FL",
+      "end": "2027-05-02",
+      "city": "Washington, DC",
       "open": null,
       "deadline": null,
       "deadlineTime": null,
@@ -8164,2427 +8334,34 @@ window.RISE_DATA = {
       "limitNote": null,
       "fee": null,
       "types": [
-        "Original and clinical research",
-        "Quality improvement",
-        "Case studies",
-        "Medical education"
+        "Research abstracts (confirm society-specific submission rules)"
       ],
-      "url": "https://www.adventhealth.com/adventhealth-graduate-medical-education/research",
+      "url": "https://vascular.org/vascular-specialists/meetings",
       "guideline": null,
       "evidence": "official",
-      "note": "Featured AdventHealth resident and fellow research event, Friday, April 30, 2027, 10:00 AM–4:00 PM (doors open 9:30 AM), Whole Life Church, 2800 N Orange Ave, Orlando, FL. Companion AdventHealth Research Day for clinicians and scientists is Thursday, April 29, 2027. Dates and venue are from the AdventHealth Research Institute save-the-date flyer provided to RISE; the linked institutional research page describes prior GME Research Days and awards but does not yet publish the 2027 abstract call. Confirm participant eligibility, abstract submission opening/deadline, and categories with the AdventHealth GME Research Office.",
+      "note": "Society meeting dates confirmed; regular abstract deadline not published or not independently verified.",
       "flag": null,
       "tags": [
-        "trainee",
-        "resident",
-        "fellow",
-        "institutional",
-        "featured"
+        "resident-relevant"
       ],
+      "level": "national",
       "submissionCategoriesVerified": false,
       "presentationFormats": [],
-      "dateEvidence": "AdventHealth Research Institute save-the-date announcement supplied to RISE on 2026-10-24",
-      "eventTime": "10:00 AM–4:00 PM ET; doors open at 9:30 AM",
       "fieldSources": {
         "start": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
           "checked_at": "2026-10-24",
-          "verified_by": "AdventHealth Research Institute save-the-date flyer provided to RISE",
-          "source_quote": "GME Research Day — Friday, April 30, 2027",
-          "confidence": "organizer_flyer",
-          "source_kind": "organizer_flyer"
+          "verified_by": "Official society meeting calendar"
         },
         "end": {
+          "url": "https://vascular.org/vascular-specialists/meetings",
           "checked_at": "2026-10-24",
-          "verified_by": "AdventHealth Research Institute save-the-date flyer provided to RISE",
-          "source_quote": "GME Research Day — Friday, April 30, 2027",
-          "confidence": "organizer_flyer",
-          "source_kind": "organizer_flyer"
+          "verified_by": "Official society meeting calendar"
         }
       }
     }
   ],
   "awards": [
-    {
-      "id": "ahaepi",
-      "name": "AHA EPI Council Travel Stipend",
-      "society": "American Heart Association",
-      "amount": "$1,000",
-      "category": "Travel award",
-      "deadline": "2026-10-23",
-      "opens": null,
-      "eligibility": "EPI Council membership by October 21; early-career applicants and students; no abstract required.",
-      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-travel-stipend-for-epi-lifestyle-scientific-sessions-no-abstract-required",
-      "conferenceId": "epi27",
-      "note": "Registration not covered; membership deadline precedes application.",
-      "flag": null,
-      "specialties": [
-        "Cardiology"
-      ],
-      "scope": "conference",
-      "open": null,
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-travel-stipend-for-epi-lifestyle-scientific-sessions-no-abstract-required",
-      "verificationNote": "2026 application deadline and $1,000 travel amount confirmed.",
-      "fieldSources": {}
-    },
-    {
-      "id": "ahaabstract",
-      "name": "AHA EPI Early Career Travel Stipend",
-      "society": "American Heart Association",
-      "amount": "$1,000",
-      "category": "Travel award",
-      "deadline": "2026-10-14",
-      "opens": null,
-      "eligibility": "Eligible early-career applicants submit an abstract and select the award during submission.",
-      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-early-career-travel-stipend-for-epi-lifetstyle-scientific-sessions-abstract-required",
-      "conferenceId": "epi27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Cardiology"
-      ],
-      "scope": "conference",
-      "open": null,
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-early-career-travel-stipend-for-epi-lifetstyle-scientific-sessions-abstract-required",
-      "verificationNote": "2026 abstract deadline and $1,000 travel award confirmed.",
-      "fieldSources": {}
-    },
-    {
-      "id": "agastudent",
-      "name": "AGA Student Abstract Award",
-      "society": "American Gastroenterological Association",
-      "amount": "$500–$1,000",
-      "category": "Travel award",
-      "deadline": "2027-02-18",
-      "opens": "2026-11-16",
-      "eligibility": "Medical residents through PGY-3 or eligible students with accepted DDW abstract-based presentation.",
-      "url": "https://gastro.org/research-and-awards/apply-for-awards/award/aga-student-abstract-award/",
-      "conferenceId": "ddw27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Gastroenterology"
-      ],
-      "scope": "conference",
-      "open": "2026-11-16",
-      "dateEvidence": "AGA official 2027 application cycle; https://gastro.org/research-and-awards/apply-for-awards/award/aga-student-abstract-award/",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://gastro.org/research-and-awards/apply-for-awards/award/aga-student-abstract-award/",
-      "verificationNote": "2027 AGA opening and deadline; travel awards $500–$1,000 verified.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aacegrant",
-      "name": "AACE Resident/Fellow Travel Grant",
-      "society": "American Association of Clinical Endocrinology",
-      "amount": "Up to $1,000 (2 domestic awards)",
-      "category": "Travel award",
-      "deadline": "2026-12-01",
-      "opens": "2026-08-10",
-      "eligibility": "Up to two domestic residents/fellows receive travel awards based on the scientific merit of accepted AACE 2027 abstracts; not a separate standalone grant application.",
-      "url": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
-      "conferenceId": "aace27",
-      "note": "Awarded through regular conference abstract review. Regular abstracts due December 1, 2026; this is not a separate travel-grant application deadline.",
-      "flag": null,
-      "specialties": [
-        "Endocrinology"
-      ],
-      "scope": "conference",
-      "open": "2026-08-10",
-      "deadlineLabel": "Regular abstract submission deadline",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
-      "verificationNote": "2027 award amount, eligibility, and regular abstract window confirmed from AACE organizer.",
-      "fieldSources": {}
-    },
-    {
-      "id": "ascomerit",
-      "name": "ASCO Merit Awards",
-      "society": "American Society of Clinical Oncology",
-      "amount": "Varies",
-      "category": "Merit award",
-      "deadline": null,
-      "opens": null,
-      "eligibility": "Eligible trainees/residents/fellows, depending on meeting-specific criteria and accepted abstract.",
-      "url": "https://www.asco.org/meetings-education/meetings/abstract-submissions",
-      "conferenceId": "asco27",
-      "note": "Award values and eligibility vary by meeting.",
-      "flag": null,
-      "specialties": [
-        "Hematology & Oncology"
-      ],
-      "scope": "conference",
-      "open": null
-    },
-    {
-      "id": "sgimscholar",
-      "name": "SGIM National Young Scholars Program",
-      "society": "Society of General Internal Medicine",
-      "amount": "Scholarship / varies",
-      "category": "Trainee scholarship",
-      "deadline": null,
-      "opens": null,
-      "eligibility": "Medical students, interns and residents interested in general internal medicine; active SGIM membership required. Abstract presentation is not mandatory.",
-      "url": "https://www.sgim.org/professional-career-development/programs/trainee-engagement-programs/",
-      "conferenceId": "sgim27",
-      "note": "SGIM says the 2027 scholarship program will open in December 2026; an exact day and application deadline are not yet published. The February 19, 2026 deadline shown on the page belongs to the prior cycle.",
-      "flag": null,
-      "specialties": [
-        "Internal Medicine"
-      ],
-      "scope": "conference",
-      "open": null,
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.sgim.org/professional-career-development/programs/trainee-engagement-programs/",
-      "verificationNote": "2027 opening month confirmed; exact date and deadline not yet verified.",
-      "fieldSources": {}
-    },
-    {
-      "id": "ashachieve",
-      "name": "ASH Abstract Achievement Awards",
-      "society": "American Society of Hematology",
-      "amount": "$500",
-      "category": "Merit award",
-      "deadline": null,
-      "opens": null,
-      "eligibility": "Medical students, resident physicians and eligible other trainees who are qualifying first/senior authors and presenters of a high-scoring ASH annual meeting abstract. Trainee declaration and mentor/program-director letter required.",
-      "url": "https://www.hematology.org/awards/achievement-awards",
-      "conferenceId": "ash27",
-      "note": "Annual ASH award amount and procedure are confirmed; application occurs within ASH annual meeting abstract submission. ASH 2027 abstract submission and award cycle dates remain unannounced; do not copy 2026 dates.",
-      "flag": null,
-      "specialties": [
-        "Hematology & Oncology"
-      ],
-      "scope": "conference",
-      "open": null,
-      "applicationProcess": "2026 guidance: request consideration within the annual meeting abstract submission; 2027 process must be confirmed.",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.hematology.org/awards/achievement-awards",
-      "verificationNote": "Evergreen award rules confirmed, 2027 cycle dates not available.",
-      "fieldSources": {}
-    },
-    {
-      "id": "rsnaprize",
-      "name": "RSNA Trainee Research Prizes",
-      "society": "Radiological Society of North America",
-      "amount": "$1,000",
-      "category": "Presentation prize",
-      "deadline": null,
-      "opens": null,
-      "eligibility": "RSNA Member-in-Training; scientific abstract presenter who is a radiology resident, fellow, medical student, or medical physics trainee and receives an outstanding presentation score.",
-      "url": "https://www.rsna.org/annual-meeting/abstract-submission",
-      "conferenceId": "rsna27",
-      "note": "Competitive prize judged on meeting scientific presentation; no verified separate prize application deadline for RSNA 2027. Do not substitute the 2026 meeting's abstract dates.",
-      "flag": null,
-      "specialties": [
-        "Radiology"
-      ],
-      "scope": "conference",
-      "open": null,
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.rsna.org/annual-meeting/abstract-submission",
-      "verificationNote": "Prize amount and general eligibility verified; 2027 submission dates unavailable.",
-      "fieldSources": {}
-    },
-    {
-      "id": "institutional",
-      "name": "Institutional GME / Departmental Research Support",
-      "society": "Your residency program",
-      "amount": "Institution-dependent",
-      "category": "Institutional support",
-      "deadline": null,
-      "opens": null,
-      "eligibility": "Ask GME/research office about travel reimbursement, conference budgets, institutional pilot funding and mentor-supported applications.",
-      "url": "",
-      "conferenceId": null,
-      "note": "Not a confirmed grant; displayed as a funding route, not an advertised external award.",
-      "flag": "local",
-      "specialties": [
-        "All specialties"
-      ],
-      "scope": "institutional",
-      "open": null
-    },
-    {
-      "id": "aapath67",
-      "name": "Society of ’67 Pathology Trainee Project Grant",
-      "society": "Association for Academic Pathology",
-      "amount": "Up to $5,000",
-      "category": "Research grant",
-      "deadline": "2026-10-12",
-      "opens": null,
-      "eligibility": "Pathology residents at AAPath member institutions, medical students or eligible fellows; faculty sponsor required. Letter of intent due Oct 12.",
-      "url": "https://www.apcprods.org/societyof67-grant-trainee",
-      "note": "LOI deadline Oct 12, 2026, 2 PM ET. Invited full proposals due Nov 19. Funds held by department, not individual.",
-      "flag": null,
-      "specialties": [
-        "Pathology"
-      ],
-      "scope": "independent",
-      "relatedConferenceId": "aapath27",
-      "open": null,
-      "stages": [
-        {
-          "label": "Invited full proposal",
-          "date": "2026-11-19"
-        }
-      ],
-      "deadlineLabel": "Letter of intent deadline",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.apcprods.org/societyof67-grant-trainee",
-      "verificationNote": "2026 LOI and full-proposal deadline confirmed.",
-      "fieldSources": {}
-    },
-    {
-      "id": "ahns-pilot",
-      "name": "AHNS Resident Research Pilot Grant",
-      "society": "American Head and Neck Society",
-      "amount": "Up to $20,000",
-      "category": "Research grant",
-      "deadline": "2026-12-15",
-      "opens": "2026-10-01",
-      "eligibility": "Eligible residents and other trainees working in head/neck oncology, AHNS membership, mentor support and no overlapping funding for the same project.",
-      "url": "https://www.ahns.info/2027-grant-applications-now-open/",
-      "conferenceId": null,
-      "note": "CORE letter of intent due December 15, 2026. If eligible/invited, full application due January 15, 2027. Institutional COI review appropriate.",
-      "flag": null,
-      "specialties": [
-        "Otolaryngology",
-        "Hematology & Oncology"
-      ],
-      "scope": "independent",
-      "relatedConferenceId": null,
-      "open": "2026-10-01",
-      "dateEvidence": "AHNS official applications-now-open announcement dated October 1, 2026; https://www.ahns.info/2027-grant-applications-now-open/",
-      "deadlineLabel": "Letter of intent deadline",
-      "stages": [
-        {
-          "label": "Full application (after LOI)",
-          "date": "2027-01-15"
-        }
-      ],
-      "applicationProcess": "Submit a CORE letter of intent through ProposalCentral by December 15, 2026, 11:59 p.m. ET; eligible full applications are due January 15, 2027.",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/",
-      "verificationNote": "2027 CORE letter-of-intent and full application deadlines confirmed.",
-      "fieldSources": {}
-    },
-    {
-      "id": "rsna-resident",
-      "name": "RSNA Research Resident Grant",
-      "society": "Radiological Society of North America",
-      "amount": "Up to $50,000",
-      "category": "Research grant",
-      "deadline": "2027-01-22",
-      "opens": null,
-      "eligibility": "RSNA-member residents in radiology, radiation oncology, nuclear medicine or medical physics carrying out a mentored research project at an eligible North American institution; required research effort and advisor/institutional approvals apply.",
-      "url": "https://www.rsna.org/research/funding-opportunities/research-grants/resident-fellow-research-grant",
-      "note": "2027 grant applications are open; deadline Jan. 22, 2027 at 11:59 p.m. CT. Resident award up to $50,000 over 1–2 years; fellow award is a distinct $75,000 track. RSNA permits one R&E Foundation grant application per cycle.",
-      "flag": null,
-      "specialties": [
-        "Radiology"
-      ],
-      "scope": "independent",
-      "relatedConferenceId": "rsna27",
-      "open": null,
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.rsna.org/research/funding-opportunities/research-grants/resident-fellow-research-grant",
-      "verificationNote": "2027 deadline, award amounts and resident eligibility verified on official RSNA program page."
-    },
-    {
-      "id": "acrotravel27",
-      "name": "ACRO 2027 Resident & Trainee Travel Grant",
-      "society": "American College of Radiation Oncology",
-      "amount": "$500 (15 awards)",
-      "category": "Travel award",
-      "deadline": "2026-11-16",
-      "opens": null,
-      "open": null,
-      "eligibility": "ACRO member in good standing; eligible medical students, radiation oncology residents/fellows, and SEAL leaders; CV, statement and program-director/chair support letter required.",
-      "url": "https://acro.org/page/acro-travel-grant",
-      "conferenceId": "acro27",
-      "note": "Funding supported through ISTRO/Dr. Luther Brady Foundation; disclose any applicable institutional COI requirements. Abstract acceptance is not stated as a universal prerequisite.",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology"
-      ],
-      "scope": "conference",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://acro.org/page/acro-travel-grant",
-      "verificationNote": "2027 $500 travel award deadline, eligibility and documentation confirmed.",
-      "fieldSources": {}
-    },
-    {
-      "id": "asbrsres27",
-      "name": "ASBrS 2027 Scientific Presentation Award",
-      "society": "American Society of Breast Surgeons",
-      "amount": "$500",
-      "category": "Presentation prize",
-      "deadline": "2027-04-01",
-      "opens": null,
-      "open": null,
-      "eligibility": "Medical students, residents, and fellows selected for oral or Quick Shot presentations; manuscript submission by April 1 required for eligibility.",
-      "url": "https://www.breastsurgeons.org/meeting/2027/abstracts",
-      "conferenceId": "asbrs27",
-      "note": "Competitive recognition, not guaranteed travel funding. Manuscript deadline is NOT an abstract submission deadline.",
-      "flag": null,
-      "specialties": [
-        "Surgery"
-      ],
-      "scope": "conference",
-      "deadlineLabel": "Manuscript deadline (not abstracts)",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.breastsurgeons.org/meeting/2027/abstracts",
-      "verificationNote": "Award eligibility and manuscript deadline for ASBrS 2027 confirmed.",
-      "fieldSources": {}
-    },
-    {
-      "id": "rsna-medstudent27",
-      "name": "RSNA Medical Student Research Grant",
-      "society": "Radiological Society of North America",
-      "amount": "$3,000 stipend",
-      "category": "Research grant",
-      "opens": null,
-      "open": null,
-      "deadline": "2027-02-05",
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Full-time medical students at accredited North American medical schools; RSNA membership required (free for students); 8–10 weeks of full-time mentored research in radiology, radiation oncology or nuclear medicine.",
-      "url": "https://www.rsna.org/research/funding-opportunities/research-grants/medical-student-research-grant",
-      "scope": "independent",
-      "conferenceId": null,
-      "specialties": [
-        "Radiology",
-        "Radiation Oncology",
-        "Nuclear Medicine"
-      ],
-      "note": "2027 deadline Feb. 5 at 11:59 p.m. CT. RSNA provides a $3,000 stipend, which must be matched by the sponsoring department ($6,000 total student stipend). Project involves 8–10 weeks full time. This is not meeting travel funding.",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.rsna.org/research/funding-opportunities/research-grants/medical-student-research-grant",
-      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aao-hns-core-resident27",
-      "name": "AAO-HNSF CORE Resident Research Grant 2027",
-      "society": "American Academy of Otolaryngology–Head and Neck Surgery Foundation",
-      "amount": "$10,000",
-      "category": "Research grant",
-      "opens": "2026-10-01",
-      "open": "2026-10-01",
-      "deadline": "2026-12-15",
-      "deadlineLabel": "Letter of intent deadline",
-      "eligibility": "Eligible otolaryngology residents seeking mentored research funding; see the 2027 CORE resident award opportunity for full requirements. A letter of intent is mandatory.",
-      "url": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
-      "scope": "independent",
-      "conferenceId": null,
-      "specialties": [
-        "Otolaryngology"
-      ],
-      "note": "2027 CORE LOI due December 15, 2026, at 11:59 p.m. ET. Full application due January 15, 2027 if eligible.",
-      "stages": [
-        {
-          "label": "Full application",
-          "date": "2027-01-15"
-        }
-      ],
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
-      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "ahns-trainee-pilot27",
-      "name": "AHNS Trainee Pilot Research Award 2027",
-      "society": "American Head and Neck Society",
-      "amount": "Up to $20,000",
-      "category": "Research grant",
-      "opens": "2026-10-01",
-      "open": "2026-10-01",
-      "deadline": "2026-12-15",
-      "deadlineLabel": "Letter of intent deadline",
-      "eligibility": "AHNS members who are U.S./Canada-based medical students, residents, fellows or graduate students in head and neck oncology research; faculty mentoring and departmental support letters required.",
-      "url": "https://www.ahns.info/2027-grant-applications-now-open/",
-      "scope": "independent",
-      "conferenceId": null,
-      "specialties": [
-        "Otolaryngology",
-        "Hematology & Oncology",
-        "Radiation Oncology"
-      ],
-      "note": "Separate from the Alando J. Ballantyne Resident Research Pilot Grant. CORE LOI is due December 15, 2026; full application January 15, 2027. No duplicate funding for the same project.",
-      "stages": [
-        {
-          "label": "Full application",
-          "date": "2027-01-15"
-        }
-      ],
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.ahns.info/2027-grant-applications-now-open/",
-      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aace-garber27",
-      "name": "AACE Jeffrey R. Garber Trainee Abstract Award 2027",
-      "society": "American Association of Clinical Endocrinology",
-      "amount": "$500 (up to 2)",
-      "category": "Merit award",
-      "opens": "2026-08-10",
-      "open": "2026-08-10",
-      "deadline": "2026-12-01",
-      "deadlineLabel": "Regular abstract submission deadline",
-      "eligibility": "Trainees whose AACE 2027 abstracts address clinical endocrinology practice innovation, guideline implementation, education or decision-support; up to two recipients selected via abstract review.",
-      "url": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
-      "scope": "conference",
-      "conferenceId": "aace27",
-      "specialties": [
-        "Endocrinology"
-      ],
-      "note": "Award determined from eligible regular conference abstracts; no separate grant application identified. Regular abstracts due December 1, 2026.",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
-      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "ash-outstanding27",
-      "name": "ASH Outstanding Abstract Achievement Awards",
-      "society": "American Society of Hematology",
-      "amount": "$2,000 plus eligible travel",
-      "category": "Merit award",
-      "opens": null,
-      "open": null,
-      "deadline": null,
-      "eligibility": "Trainees with highest-scoring ASH meeting abstracts, including eligible medical students and resident physicians, who meet annual abstract author/presenter and mentor verification requirements.",
-      "url": "https://www.hematology.org/awards/achievement-awards",
-      "scope": "conference",
-      "conferenceId": "ash27",
-      "specialties": [
-        "Hematology & Oncology"
-      ],
-      "note": "Distinct from the $500 standard Abstract Achievement Awards. Annual program terms confirmed, but 2027 submission dates are not yet announced.",
-      "lastVerified": "2026-10-12",
-      "verificationSource": "https://www.hematology.org/awards/achievement-awards",
-      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "acgme-leach",
-      "name": "ACGME David C. Leach Award",
-      "society": "Accreditation Council for Graduate Medical Education",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Current residents, fellows, or trainee teams demonstrating innovation, educational improvement, humanism, or improved residency training.",
-      "url": "https://www.acgme.org/initiatives/awards/david-c-leach-award/",
-      "conferenceId": null,
-      "note": "2027 awardees already announced; the 2028 nomination cycle is expected in early 2027.",
-      "flag": null,
-      "specialties": [
-        "All specialties"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Nomination through ACGME; annual nomination criteria and 2028 deadlines must be reconfirmed.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.acgme.org/initiatives/awards/david-c-leach-award/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "acgme-blackman",
-      "name": "ACGME Lewis Blackman Patient Safety Award",
-      "society": "Accreditation Council for Graduate Medical Education",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Current ACGME-accredited residents or fellows who led a patient-safety or team-communication initiative with demonstrable measurable improvement.",
-      "url": "https://www.acgme.org/initiatives/awards/lewis-blackman-patient-safety-award/",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "All specialties"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Institutional/colleague nomination describing resident-led patient safety improvement and outcomes.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.acgme.org/initiatives/awards/lewis-blackman-patient-safety-award/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "acgme-back-bedside",
-      "name": "ACGME Back to Bedside Resident-Led Grants",
-      "society": "Accreditation Council for Graduate Medical Education",
-      "amount": "Up to $10,000 (2026 cycle)",
-      "category": "Research grant",
-      "deadline": "2026-04-20",
-      "opens": null,
-      "open": null,
-      "eligibility": "Resident- or fellow-led patient connection and clinical learning-environment innovation projects; institutional participation and project proposal required.",
-      "url": "https://www.acgme.org/residents-and-fellows/back-to-bedside/",
-      "conferenceId": null,
-      "note": "2026–2028 round awarded; next cycle not announced.",
-      "flag": null,
-      "specialties": [
-        "All specialties"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Submit resident/fellow-led project proposal; no 2027 call confirmed.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.acgme.org/residents-and-fellows/back-to-bedside/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.acgme.org/residents-and-fellows/back-to-bedside/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "arro-educator",
-      "name": "ARRO Resident Educator of the Year",
-      "society": "Association of Residents in Radiation Oncology / ASTRO",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": "2026-04-17",
-      "opens": null,
-      "open": null,
-      "eligibility": "PGY-2–PGY-5 radiation oncology residents with educational innovation, teaching impact, curriculum development or leadership.",
-      "url": "https://www.astro.org/interest-groups/arro/about-arro/arro-resident-educator-of-the-year-award",
-      "conferenceId": null,
-      "note": "2026 nominations closed; do not apply this date to 2027.",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Self-, resident-, or attending nomination; provide CV and a support letter.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.astro.org/interest-groups/arro/about-arro/arro-resident-educator-of-the-year-award",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.astro.org/interest-groups/arro/about-arro/arro-resident-educator-of-the-year-award",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "arro-access-publication",
-      "name": "ARRO Healthcare Access Publication Award",
-      "society": "ARRO / ASTRO Foundation",
-      "amount": "$1,500 (2026 cycle)",
-      "category": "Recognition award",
-      "deadline": "2026-07-07",
-      "opens": null,
-      "open": null,
-      "eligibility": "Eligible ASTRO-member medical students or residents who were first/last author of an eligible peer-reviewed healthcare-access publication.",
-      "url": "https://www.astro.org/interest-groups/arro/latest-news/arro-2026-health-care-access-publication-award-call",
-      "conferenceId": null,
-      "note": "2026 cycle closed; publication dates and membership window change by year.",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Nomination or self-nomination by ASTRO member with article and one-page support statement.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.astro.org/interest-groups/arro/latest-news/arro-2026-health-care-access-publication-award-call",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.astro.org/interest-groups/arro/latest-news/arro-2026-health-care-access-publication-award-call",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "aawr-montague",
-      "name": "AAWR Eleanor Montague Distinguished Resident Award in Radiation Oncology",
-      "society": "American Association for Women in Radiology",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "AAWR-member radiation oncology residents recognized for clinical care, teaching, scholarship, community service, or leadership.",
-      "url": "https://www.aawr.org/awards-descriptions",
-      "conferenceId": null,
-      "note": "Annual nominations closed on official page; one nomination per residency program.",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Residency-program nomination; consult AAWR for current materials.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aawr.org/awards-descriptions",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aawr-squire",
-      "name": "AAWR Lucy Frank Squire Distinguished Resident Award",
-      "society": "American Association for Women in Radiology",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "AAWR-member radiology residents with outstanding contributions to patient care and scholarship.",
-      "url": "https://www.aawr.org/awards-descriptions",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Radiology"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Nomination according to annual AAWR resident award rules.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aawr.org/awards-descriptions",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aawr-mit-astro",
-      "name": "AAWR Member-in-Training Award for Outstanding ASTRO Presentations",
-      "society": "American Association for Women in Radiology",
-      "amount": "Recognition",
-      "category": "Presentation prize",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Eligible AAWR members-in-training recognized for exceptional research presentations at ASTRO.",
-      "url": "https://www.aawr.org/awards-descriptions",
-      "conferenceId": null,
-      "note": "See annual AAWR research-recognition award criteria and ASTRO presentation eligibility.",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aawr.org/awards-descriptions",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aawr-mit-rsna",
-      "name": "AAWR Member-in-Training Award for Outstanding RSNA Presentations",
-      "society": "American Association for Women in Radiology",
-      "amount": "Recognition",
-      "category": "Presentation prize",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Eligible AAWR members-in-training recognized for exceptional RSNA presentations.",
-      "url": "https://www.aawr.org/awards-descriptions",
-      "conferenceId": null,
-      "note": "See annual AAWR research-recognition award criteria.",
-      "flag": null,
-      "specialties": [
-        "Radiology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aawr.org/awards-descriptions",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "astro-resident-science",
-      "name": "ASTRO Resident Clinical/Basic Science Research Abstract Awards",
-      "society": "American Society for Radiation Oncology",
-      "amount": "$1,500 plus registration (2026 rules)",
-      "category": "Merit award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Resident authors of the top rated significant ASTRO abstracts in biology, clinical practice and physics.",
-      "url": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
-      "conferenceId": "astro27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Award consideration through regular ASTRO abstract submission; confirm 2027 rules.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "astro-resident-quick",
-      "name": "ASTRO Resident Quick Pitch Oral Abstract Recognition",
-      "society": "American Society for Radiation Oncology",
-      "amount": "Trophy (2026 rules)",
-      "category": "Presentation prize",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Residents with top-rated qualifying ASTRO Quick Pitch scientific oral presentations.",
-      "url": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
-      "conferenceId": "astro27",
-      "note": "2026 policy; 2027 criteria not yet posted.",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "astro-resident-poster",
-      "name": "ASTRO Resident Poster Viewing Recognition",
-      "society": "American Society for Radiation Oncology",
-      "amount": "Trophy (2026 rules)",
-      "category": "Presentation prize",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Residents with top-rated qualifying ASTRO digital poster abstracts in clinical, biology or physics categories.",
-      "url": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
-      "conferenceId": "astro27",
-      "note": "2026 policy; 2027 criteria not yet posted.",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "ars-ecoa",
-      "name": "ARS Early Career Oncologist Award",
-      "society": "American Radium Society",
-      "amount": "$500 + up to $1,500 travel (latest guidelines)",
-      "category": "Merit award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "First-author trainees, fellows, or junior faculty within one year of residency with new oncology research submitted to the ARS Annual Meeting.",
-      "url": "https://www.americanradiumsociety.org/page/Recognition",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology",
-        "Hematology & Oncology",
-        "Surgery"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Meeting abstract, full manuscript, personal statement, and chair/program director support.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.americanradiumsociety.org/page/Recognition",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "ars-travel",
-      "name": "ARS Young Investigator Travel Grant",
-      "society": "American Radium Society",
-      "amount": "Up to $1,500 travel + registration",
-      "category": "Travel award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Eligible young first-author investigators presenting new oncology research at ARS.",
-      "url": "https://www.americanradiumsociety.org/page/Recognition",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Radiation Oncology",
-        "Hematology & Oncology",
-        "Surgery"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Annual meeting abstract, statement and program director/chair letter.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.americanradiumsociety.org/page/Recognition",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "sitc-rosenberg",
-      "name": "SITC Steven A. Rosenberg Scholars Award",
-      "society": "Society for Immunotherapy of Cancer",
-      "amount": "$150,000 (2026 cycle)",
-      "category": "Recognition award",
-      "deadline": "2026-06-12",
-      "opens": null,
-      "open": null,
-      "eligibility": "MD/PhD/MD-PhD early-career translational cancer immunotherapy researchers including eligible residents/postdoctoral fellows at cancer centers.",
-      "url": "https://www.sitcancer.org/get-involved/support/named-funds-awards/rosenberg",
-      "conferenceId": null,
-      "note": "2026 nominations closed.",
-      "flag": null,
-      "specialties": [
-        "Hematology & Oncology",
-        "Radiation Oncology",
-        "Pathology"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Research nomination under society annual call; check 2027 cycle.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.sitcancer.org/get-involved/support/named-funds-awards/rosenberg",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.sitcancer.org/get-involved/support/named-funds-awards/rosenberg",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "sitc-early",
-      "name": "SITC Early Career Investigator Abstract Awards",
-      "society": "Society for Immunotherapy of Cancer",
-      "amount": "Up to $750 travel; Presidential awards (2026)",
-      "category": "Merit award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Eligible SITC-member students, postgraduate trainees and early faculty serving as primary and presenting authors of immuno-oncology research abstracts.",
-      "url": "https://www.sitcancer.org/2026/abstracts/abstract-submission/abstracts-early-career",
-      "conferenceId": null,
-      "note": "2026 eligibility confirmed; 2027 submission details not posted.",
-      "flag": null,
-      "specialties": [
-        "Hematology & Oncology",
-        "Radiation Oncology",
-        "Pathology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Submit regular abstract and separate supervisor recommendation and contribution documentation.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.sitcancer.org/2026/abstracts/abstract-submission/abstracts-early-career",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aacr-sit27",
-      "name": "AACR 2027 Scholar-in-Training Awards",
-      "society": "American Association for Cancer Research",
-      "amount": "Meeting attendance support",
-      "category": "Travel award",
-      "deadline": "2026-11-10",
-      "opens": "2026-09-28",
-      "open": "2026-09-28",
-      "eligibility": "AACR Associate Member trainees including eligible medical students, residents, clinical fellows, graduate students, and postdocs with a regular first-author AACR abstract.",
-      "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/scholar-in-training-awards-annual-meeting/",
-      "conferenceId": "aacr27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Hematology & Oncology",
-        "Radiation Oncology",
-        "Pathology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "myAACR: submit abstract/control number, CV, personal statement, and lay summary; not late-breaking.",
-      "deadlineLabel": "Award application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/scholar-in-training-awards-annual-meeting/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/scholar-in-training-awards-annual-meeting/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "aacr-global27",
-      "name": "AACR 2027 Global Scholar-in-Training Awards",
-      "society": "American Association for Cancer Research",
-      "amount": "Meeting attendance support",
-      "category": "Travel award",
-      "deadline": "2026-11-10",
-      "opens": "2026-09-28",
-      "open": "2026-09-28",
-      "eligibility": "Eligible international early-career cancer investigators from qualifying countries, including medical students and residents, with a submitted AACR abstract.",
-      "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/global-scholar-in-training-awards-2/",
-      "conferenceId": "aacr27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Hematology & Oncology",
-        "Radiation Oncology",
-        "Pathology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "AACR Associate membership, abstract control number, biosketch, personal statement, institutional certification.",
-      "deadlineLabel": "Award application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/global-scholar-in-training-awards-2/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/global-scholar-in-training-awards-2/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "aacr-wicr27",
-      "name": "AACR 2027 Women in Cancer Research Scholar Awards",
-      "society": "American Association for Cancer Research",
-      "amount": "Meeting attendance support",
-      "category": "Travel award",
-      "deadline": "2026-11-10",
-      "opens": "2026-09-28",
-      "open": "2026-09-28",
-      "eligibility": "Women in Cancer Research member trainees including medical students, residents, fellows and postdocs who are first-author presenters of an AACR abstract.",
-      "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/women-in-cancer-research-scholar-awards/",
-      "conferenceId": "aacr27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Hematology & Oncology",
-        "Radiation Oncology",
-        "Pathology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Apply via AACR and meet WICR membership and abstract criteria.",
-      "deadlineLabel": "Award application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/women-in-cancer-research-scholar-awards/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/women-in-cancer-research-scholar-awards/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "aafp-resident-gme",
-      "name": "AAFP Award for Excellence in Graduate Medical Education",
-      "society": "American Academy of Family Physicians",
-      "amount": "Recognition and scholarship",
-      "category": "Recognition award",
-      "deadline": "2026-05-27",
-      "opens": null,
-      "open": null,
-      "eligibility": "Second-year ACGME family medicine residents who are AAFP resident members and have distinguished patient care, leadership, academics, and community engagement.",
-      "url": "https://www.aafp.org/residents/awards-and-grants/gme",
-      "conferenceId": null,
-      "note": "2026 nomination/application closed; next cycle not yet announced.",
-      "flag": null,
-      "specialties": [
-        "Family Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Review annual AAFP resident application and program endorsement requirements.",
-      "deadlineLabel": "Application / nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aafp.org/residents/awards-and-grants/gme",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.aafp.org/residents/awards-and-grants/gme",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "apa-resident-recognition",
-      "name": "APA Resident Recognition Award",
-      "society": "American Psychiatric Association",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "APA-member residents/fellows in good standing demonstrating compassion, clinical excellence, service, or leadership.",
-      "url": "https://www.psychiatry.org/membership/awards-leadership-opportunities/awards/resident-recognition-award",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Psychiatry"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "One nomination per training department: nominee CV, nomination letter, residency director endorsement. Annual March 31 deadline; verify cycle.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.psychiatry.org/membership/awards-leadership-opportunities/awards/resident-recognition-award",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "saem-rams-leadership",
-      "name": "SAEM RAMS Leadership in Emergency Medicine Award",
-      "society": "Society for Academic Emergency Medicine",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": "2026-12-04",
-      "opens": "2026-10-12",
-      "open": "2026-10-12",
-      "eligibility": "Eligible resident and medical-student SAEM members demonstrating exceptional leadership in academic emergency medicine.",
-      "url": "https://www.saem.org/research/saem-awards/saem-awards",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Emergency Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "SAEM nomination or self-nomination; eligibility/nominee career stage varies by award.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.saem.org/research/saem-awards/saem-awards",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.saem.org/research/saem-awards/saem-awards",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "saem-rams-research",
-      "name": "SAEM RAMS Excellence in Research Award",
-      "society": "Society for Academic Emergency Medicine",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": "2026-12-04",
-      "opens": "2026-10-12",
-      "open": "2026-10-12",
-      "eligibility": "Eligible SAEM residents or medical students recognized for outstanding research contributions.",
-      "url": "https://www.saem.org/research/saem-awards/saem-awards",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Emergency Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "SAEM nomination or self-nomination.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.saem.org/research/saem-awards/saem-awards",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.saem.org/research/saem-awards/saem-awards",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "saem-rams-education",
-      "name": "SAEM RAMS Excellence in Education Award",
-      "society": "Society for Academic Emergency Medicine",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": "2026-12-04",
-      "opens": "2026-10-12",
-      "open": "2026-10-12",
-      "eligibility": "Eligible SAEM resident and medical-student members recognized for educational leadership and accomplishment.",
-      "url": "https://www.saem.org/research/saem-awards/saem-awards",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Emergency Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "SAEM nomination or self-nomination.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.saem.org/research/saem-awards/saem-awards",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.saem.org/research/saem-awards/saem-awards",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "saem-rams-recognition",
-      "name": "SAEM RAMS Recognition Program",
-      "society": "Society for Academic Emergency Medicine",
-      "amount": "Recognition certificate",
-      "category": "Recognition award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Residents, medical students and fellows who meaningfully contributed to academic emergency medicine and deserve peer acknowledgment.",
-      "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/rams",
-      "conferenceId": null,
-      "note": "Year-round nominations reviewed quarterly.",
-      "flag": null,
-      "specialties": [
-        "Emergency Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Resident, medical student or fellow may nominate; recipients may be featured in SAEM media.",
-      "deadlineLabel": "Rolling nominations",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/rams",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "saem-best-resident",
-      "name": "SAEM Best Resident Abstract Presentation Award",
-      "society": "Society for Academic Emergency Medicine",
-      "amount": "Recognition",
-      "category": "Presentation prize",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Resident presenters of exceptional original research abstracts accepted at the SAEM Annual Meeting.",
-      "url": "https://www.saem.org/research/saem-awards/saem-awards",
-      "conferenceId": "saem27",
-      "note": "Selection based on meeting abstract/presentation review.",
-      "flag": null,
-      "specialties": [
-        "Emergency Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Opt into presentation award consideration during regular abstract submission.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.saem.org/research/saem-awards/saem-awards",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "saem-cdem-teacher",
-      "name": "CDEM Resident Teacher Award",
-      "society": "SAEM Clerkship Directors in Emergency Medicine",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Emergency medicine resident with outstanding teaching or precepting of medical and interprofessional learners.",
-      "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/cdem/about-cdem/cdem-awards",
-      "conferenceId": null,
-      "note": "Awarded by training program; faculty select program recipient.",
-      "flag": null,
-      "specialties": [
-        "Emergency Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Nomination by clerkship director or residency program director; no more than one per residency program.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/cdem/about-cdem/cdem-awards",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "saem-awaem-travel",
-      "name": "AWAEM Resident Travel Award",
-      "society": "SAEM Academy for Women in Academic Emergency Medicine",
-      "amount": "Recognition",
-      "category": "Travel award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Eligible senior EM residents who are members of SAEM and AWAEM and have demonstrated promise in research, service, teaching or advocacy.",
-      "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/awaem/resources/awaem-awards",
-      "conferenceId": null,
-      "note": "Do not roll forward the 2026 deadline.",
-      "flag": null,
-      "specialties": [
-        "Emergency Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Nomination typically requires CV and support letter; confirm 2027 eligibility.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/awaem/resources/awaem-awards",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "saem-simulation",
-      "name": "SAEM Simulation Academy Trainee Awards",
-      "society": "Society for Academic Emergency Medicine",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "deadline": "2026-12-04",
-      "opens": "2026-10-12",
-      "open": "2026-10-12",
-      "eligibility": "Eligible EM residents, simulation fellows and faculty who are current SAEM and Simulation Academy members.",
-      "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/simulation/resource/simulation-academy-awards",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Emergency Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Nomination statement (up to 300 words), with optional CV and support letters.",
-      "deadlineLabel": "Nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/simulation/resource/simulation-academy-awards",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/simulation/resource/simulation-academy-awards",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "sgo-resident",
-      "name": "SGO Outstanding Resident in Gynecologic Oncology Award",
-      "society": "Society of Gynecologic Oncology",
-      "amount": "National recognition",
-      "category": "Recognition award",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "OB/GYN residents selected by their programs for exceptional gynecologic oncology patient care, professionalism and leadership.",
-      "url": "https://www.sgo.org/members-only/program-directors-network/",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Obstetrics & Gynecology"
-      ],
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Program-directed annual selection; one resident per participating institution.",
-      "deadlineLabel": "Program nomination deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.sgo.org/members-only/program-directors-network/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "sgo-winter-presentation",
-      "name": "SGO Winter Meeting Best Resident/Fellow Abstract Presentation",
-      "society": "Society of Gynecologic Oncology",
-      "amount": "Best oral / best poster recognition",
-      "category": "Presentation prize",
-      "deadline": "2026-10-05",
-      "opens": null,
-      "open": null,
-      "eligibility": "Eligible students, residents and fellows presenting outstanding original research at the SGO Winter Meeting.",
-      "url": "https://www.sgo.org/events/call-for-abstracts-2/",
-      "conferenceId": null,
-      "note": "The 2027 Winter Meeting regular abstract deadline was Oct 5, 2026; closed.",
-      "flag": null,
-      "specialties": [
-        "Obstetrics & Gynecology",
-        "Hematology & Oncology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Submit research abstract; judged on scientific quality, novelty and presentation.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.sgo.org/events/call-for-abstracts-2/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.sgo.org/events/call-for-abstracts-2/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "apa-epa-nextgen27",
-      "name": "EPA Next Generation Psychiatrist Awards 2027",
-      "society": "European Psychiatric Association",
-      "amount": "€2,000 + registration + up to €500 travel",
-      "category": "Recognition award",
-      "deadline": "2026-11-02",
-      "opens": null,
-      "open": null,
-      "eligibility": "Early-career psychiatrists under 40 or within five years of specialist training working within WHO European region.",
-      "url": "https://epa-congress.org/scientific-programme/next-generation-psychiatrist-awards/",
-      "conferenceId": null,
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Psychiatry"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Apply to European Psychiatric Association for 2027 recognition and congress attendance.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": "epa27",
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://epa-congress.org/scientific-programme/next-generation-psychiatrist-awards/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://epa-congress.org/scientific-programme/next-generation-psychiatrist-awards/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "isn-wcntravel27",
-      "name": "ISN WCN 2027 Travel Grants",
-      "society": "International Society of Nephrology",
-      "amount": "Registration and fixed travel contribution for eligible applicants",
-      "category": "Travel award",
-      "deadline": "2026-10-31",
-      "opens": "2026-09-16",
-      "open": "2026-09-16",
-      "eligibility": "Eligible ISN members from low- and lower-middle-income countries, with WCN abstract/presenter criteria depending on grant type.",
-      "url": "https://www.theisn.org/wcn/about/deadlines/",
-      "conferenceId": "wcn27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Nephrology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Apply to the official WCN travel-grant program; country and membership restrictions.",
-      "deadlineLabel": "Grant application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.theisn.org/wcn/about/deadlines/",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.theisn.org/wcn/about/deadlines/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "aap-resident-research",
-      "name": "AAP Resident Research Grant",
-      "society": "American Academy of Pediatrics",
-      "amount": "Recognition",
-      "category": "Research grant",
-      "deadline": "2026-03-31",
-      "opens": null,
-      "open": null,
-      "eligibility": "Pediatric residents planning feasible mentored child-health research projects during residency training.",
-      "url": "https://publications.aap.org/aapnews/news/34083/Residents-with-research-interests-encouraged-to",
-      "conferenceId": null,
-      "note": "2026 cycle closed; next deadline not yet verified.",
-      "flag": null,
-      "specialties": [
-        "Pediatrics"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Apply for mentored pediatric resident research funding; project-focused review.",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://publications.aap.org/aapnews/news/34083/Residents-with-research-interests-encouraged-to",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://publications.aap.org/aapnews/news/34083/Residents-with-research-interests-encouraged-to",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "aad-health-disparities",
-      "name": "AAD Young Investigator Award — Health Disparities",
-      "society": "American Academy of Dermatology",
-      "amount": "$6,000 research support",
-      "category": "Research grant",
-      "deadline": null,
-      "opens": null,
-      "open": null,
-      "eligibility": "Dermatology residents conducting resident-led research on health disparities and access to dermatologic care.",
-      "url": "https://www.aad.org/member/career/diversity/pathways/residents",
-      "conferenceId": null,
-      "note": "Verify annual application eligibility and deadline on the AAD resident awards page.",
-      "flag": null,
-      "specialties": [
-        "Dermatology"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "",
-      "deadlineLabel": "Application deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aad.org/member/career/diversity/pathways/residents",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {}
-    },
-    {
-      "id": "acp-national-prize27",
-      "name": "ACP 2027 National Resident Research / Clinical Vignette Competition",
-      "society": "American College of Physicians",
-      "amount": "National competition recognition",
-      "category": "Presentation prize",
-      "deadline": "2026-11-12",
-      "opens": "2026-10-01",
-      "open": "2026-10-01",
-      "eligibility": "Eligible ACP-member medical students and resident physicians submitting clinical vignettes or research abstracts for national competition.",
-      "url": "https://annualmeeting.acponline.org/educational-program/abstract-competition",
-      "conferenceId": "acp27",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Internal Medicine"
-      ],
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Submit eligible abstract in research or vignette competition; ACP membership and $45 fee.",
-      "deadlineLabel": "Abstract submission deadline",
-      "relatedConferenceId": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://annualmeeting.acponline.org/educational-program/abstract-competition",
-      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://annualmeeting.acponline.org/educational-program/abstract-competition",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official society website"
-        }
-      }
-    },
-    {
-      "id": "aap-catchresident27",
-      "name": "AAP 2027 CATCH Resident Grant",
-      "society": "American Academy of Pediatrics",
-      "amount": "$2,000",
-      "category": "Research grant",
-      "open": "2026-11-01",
-      "opens": "2026-11-01",
-      "deadline": "2027-01-19",
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Pediatric residents in the US or Canada with at least two years of training remaining, proposing an innovative community-based health intervention.",
-      "url": "https://grants.aap.org/res/p/available-grant-applicati/",
-      "conferenceId": null,
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Apply to the 2027 CATCH Resident program with a community intervention project.",
-      "note": "November 1, 2026 through January 19, 2027, 11:59 PM CST.",
-      "flag": null,
-      "specialties": [
-        "Pediatrics"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://grants.aap.org/res/p/available-grant-applicati/",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://grants.aap.org/res/p/available-grant-applicati/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official award description"
-        }
-      }
-    },
-    {
-      "id": "ascp-40under40",
-      "name": "ASCP 40 Under Forty Recognition",
-      "society": "American Society for Clinical Pathology",
-      "amount": "Leadership recognition, career development; Top Five award",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Nomination / application deadline",
-      "eligibility": "ASCP pathologist, resident, fellow-in-training, or eligible laboratory professional member under age 40. Students and prior honorees are ineligible.",
-      "url": "https://www.ascp.org/membership-resources/awards-recognition/40-under-forty",
-      "conferenceId": null,
-      "scope": "standalone",
-      "nominationBased": true,
-      "applicationProcess": "Submit nomination or application demonstrating leadership, accomplishments and innovation.",
-      "note": "2026 cohort named; the next award application cycle is not yet posted.",
-      "flag": null,
-      "specialties": [
-        "Pathology"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.ascp.org/membership-resources/awards-recognition/40-under-forty",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {}
-    },
-    {
-      "id": "uscap-benjamin-castleman27",
-      "name": "USCAP Benjamin Castleman Award 2027",
-      "society": "United States and Canadian Academy of Pathology",
-      "amount": "$1,500",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Pathologist or pathology resident/fellow younger than 40 when an eligible original human pathology research paper was published.",
-      "url": "https://uscap.org/benjamin-castleman-award/",
-      "conferenceId": null,
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Submit an outstanding single English-language human-pathology publication from the award's eligible 12-month window; attendance at USCAP Annual Meeting not required.",
-      "note": "Independent publication recognition; confirm current cycle deadline.",
-      "flag": null,
-      "specialties": [
-        "Pathology"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://uscap.org/benjamin-castleman-award/",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {}
-    },
-    {
-      "id": "uscap-stowell27",
-      "name": "USCAP Stowell-Orbison Pathologist-in-Training Awards 2027",
-      "society": "United States and Canadian Academy of Pathology",
-      "amount": "Up to four $500 prizes",
-      "category": "Presentation prize",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Pathology residents or fellows who are major-contributor first authors of one qualifying USCAP annual-meeting abstract/poster.",
-      "url": "https://uscap.org/stowell-orbison-awards/",
-      "conferenceId": "uscap27",
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Complete the USCAP poster award eligibility verification during regular abstract submission.",
-      "note": "Surgical pathology and autopsy pathology subsidiary prizes also considered.",
-      "flag": null,
-      "specialties": [
-        "Pathology"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://uscap.org/stowell-orbison-awards/",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {}
-    },
-    {
-      "id": "uscap-travel27",
-      "name": "USCAP 2027 Pathologist-in-Training Travel Award",
-      "society": "United States and Canadian Academy of Pathology",
-      "amount": "$1,000; 20 awards",
-      "category": "Travel award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "US- or Canada-based USCAP-member pathology trainees who are first authors of an accepted 2027 Annual Meeting abstract.",
-      "url": "https://uscap.org/pathologist-in-training-travel-award/",
-      "conferenceId": "uscap27",
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Separate application opens November 2026; deadline not yet set.",
-      "note": "Application expected to open November 2026, no day confirmed.",
-      "flag": null,
-      "specialties": [
-        "Pathology"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://uscap.org/pathologist-in-training-travel-award/",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {}
-    },
-    {
-      "id": "uscap-adasp27",
-      "name": "USCAP ADASP Surgical / Autopsy Pathology Trainee Awards",
-      "society": "USCAP and Association of Directors of Anatomic and Surgical Pathology",
-      "amount": "Two $500 prizes",
-      "category": "Presentation prize",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Pathology resident or fellow with an original morphology-based surgical pathology or autopsy abstract entered into the Stowell-Orbison poster competition.",
-      "url": "https://uscap.org/stowell-orbison-awards/",
-      "conferenceId": "uscap27",
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Submit eligible first-author abstract to the Stowell-Orbison competition.",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Pathology"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://uscap.org/stowell-orbison-awards/",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aapm-ecis27",
-      "name": "AAPM 2027 Spring Clinical Early Career Investigator Symposium",
-      "society": "American Association of Physicists in Medicine",
-      "amount": "Oral presentation distinction",
-      "category": "Presentation prize",
-      "open": null,
-      "opens": null,
-      "deadline": "2026-09-16",
-      "deadlineLabel": "Abstract submission deadline",
-      "eligibility": "Early-career clinical medical physicists submitting top-rated qualifying scientific abstracts to the 2027 Spring Clinical Meeting.",
-      "url": "https://site.aapm.org/spring-clinical/2027/program",
-      "conferenceId": "aapmspring27",
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Submit original scientific abstract by regular abstract deadline.",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Medical Physics"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://site.aapm.org/spring-clinical/2027/program",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://site.aapm.org/spring-clinical/2027/program",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official award description"
-        }
-      }
-    },
-    {
-      "id": "aapm-bestposter27",
-      "name": "AAPM 2027 Spring Clinical Best Poster Competition",
-      "society": "American Association of Physicists in Medicine",
-      "amount": "Best poster recognition",
-      "category": "Presentation prize",
-      "open": null,
-      "opens": null,
-      "deadline": "2026-09-16",
-      "deadlineLabel": "Abstract submission deadline",
-      "eligibility": "Clinical medical physics presenters with accepted, competitively evaluated Spring Clinical Meeting posters.",
-      "url": "https://site.aapm.org/spring-clinical/2027/program",
-      "conferenceId": "aapmspring27",
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "Submit regular scientific abstract; accepted posters judged for clinical relevance, originality and clarity.",
-      "note": "",
-      "flag": null,
-      "specialties": [
-        "Medical Physics"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://site.aapm.org/spring-clinical/2027/program",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://site.aapm.org/spring-clinical/2027/program",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official award description"
-        }
-      }
-    },
-    {
-      "id": "ishlt-travel27",
-      "name": "ISHLT 2027 Trainee / Presenter Travel Awards",
-      "society": "International Society for Heart and Lung Transplantation",
-      "amount": "Travel/registration assistance",
-      "category": "Travel award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Eligible ISHLT annual-meeting abstract presenters including trainees and junior investigators, with application requirements to be confirmed.",
-      "url": "https://www.ishlt.org/about/news-detail/2026/08/03/now-open--ishlt2027-call-for-abstracts",
-      "conferenceId": "ishlt27",
-      "scope": "standalone",
-      "nominationBased": false,
-      "applicationProcess": "2027 travel award applications open December 2026; separate criteria and deadline pending.",
-      "note": "ISHLT confirms December 2026 opening but no exact day.",
-      "flag": null,
-      "specialties": [
-        "Transplantation",
-        "Cardiothoracic Surgery",
-        "Pulmonary & Critical Care"
-      ],
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.ishlt.org/about/news-detail/2026/08/03/now-open--ishlt2027-call-for-abstracts",
-      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
-      "fieldSources": {}
-    },
-    {
-      "id": "acs-resident-teaching",
-      "name": "ACS Resident Award for Exemplary Teaching",
-      "society": "American College of Surgeons",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Nomination deadline",
-      "eligibility": "Residents in good standing in an accredited surgery residency, including surgical specialty programs, demonstrating exceptional teaching and educational scholarship.",
-      "url": "https://www.facs.org/for-medical-professionals/education/residents/acs-resident-award-for-exemplary-teaching/",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": true,
-      "scope": "standalone",
-      "note": "2026 nominations closed; next cycle not announced.",
-      "applicationProcess": "Program director or department chair nominates; provide CV, teaching philosophy, awards and educational evidence.",
-      "specialties": [
-        "Surgery"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.facs.org/for-medical-professionals/education/residents/acs-resident-award-for-exemplary-teaching/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "acs-chassin-professionalism",
-      "name": "Jameson L. Chassin Award for Professionalism in General Surgery",
-      "society": "American College of Surgeons",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Nomination deadline",
-      "eligibility": "General surgery chief residents recognized for compassion, clinical and technical excellence, professionalism, and scholarly commitment.",
-      "url": "https://www.facs.org/for-medical-professionals/professional-growth-and-wellness/scholarships-fellowships-and-awards/resident/",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": true,
-      "scope": "standalone",
-      "note": "2026 cycle closed; confirm next nomination deadline.",
-      "applicationProcess": "Residency leadership nomination through ACS resident award selection.",
-      "specialties": [
-        "Surgery"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.facs.org/for-medical-professionals/professional-growth-and-wellness/scholarships-fellowships-and-awards/resident/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "acs-resident-volunteerism",
-      "name": "ACS Resident Surgical Volunteerism Award",
-      "society": "American College of Surgeons / ACS HOPE",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Nomination deadline",
-      "eligibility": "ACS member surgeons from any surgical specialty who performed meaningful organized surgical volunteerism during postgraduate surgical training.",
-      "url": "https://www.facs.org/for-medical-professionals/membership-community/acs-hope/acs-pfizer-awards/resident-surgical-volunteerism-award/",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": true,
-      "scope": "standalone",
-      "note": "Standalone surgical volunteerism recognition.",
-      "applicationProcess": "Nominate a resident surgeon with substantial documented domestic or international surgical service; confirm annual criteria.",
-      "specialties": [
-        "Surgery",
-        "Plastic Surgery",
-        "Orthopedic Surgery",
-        "Vascular Surgery",
-        "Neurosurgery",
-        "Cardiothoracic Surgery"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.facs.org/for-medical-professionals/membership-community/acs-hope/acs-pfizer-awards/resident-surgical-volunteerism-award/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aaem-resident-of-year",
-      "name": "AAEM Resident of the Year Award",
-      "society": "American Academy of Emergency Medicine",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Nomination deadline",
-      "eligibility": "Current emergency medicine resident who is an AAEM/RSA member with exceptional service, leadership, education, or contributions to the academy.",
-      "url": "https://www.aaem.org/about-us/awards/",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": true,
-      "scope": "standalone",
-      "note": "",
-      "applicationProcess": "Society annual award nomination; current-cycle nomination window must be verified.",
-      "specialties": [
-        "Emergency Medicine"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aaem.org/about-us/awards/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "asps-rising-star",
-      "name": "ASPS Rising Star Award",
-      "society": "American Society of Plastic Surgeons",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Plastic surgery resident or fellow with significant contributions to ASPS or its membership during the preceding year.",
-      "url": "https://www.plasticsurgery.org/for-medical-professionals/community/young-plastic-surgeons-forum/rising-star-award",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": true,
-      "scope": "standalone",
-      "note": "Society states applications reopen in April 2027; no exact opening or deadline announced.",
-      "applicationProcess": "Apply under the annual Rising Star Awards call; nominations/letters based on official instructions.",
-      "specialties": [
-        "Plastic Surgery"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.plasticsurgery.org/for-medical-professionals/community/young-plastic-surgeons-forum/rising-star-award",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "apsf-trainee-qi",
-      "name": "APSF Trainee Quality Improvement / Patient Safety Recognition",
-      "society": "Anesthesia Patient Safety Foundation",
-      "amount": "Conference travel and presentation (2026)",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Current physician anesthesiology residents or trainees who graduated in the immediately preceding academic year presenting anesthesia patient-safety or quality-improvement projects.",
-      "url": "https://www.apsf.org/grants-and-awards/quality-improvement-awards/",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "2026 submission cycle closed June 30; 2027 rules pending.",
-      "applicationProcess": "Submit QI/patient-safety project summary as a document or brief video and notify APSF.",
-      "specialties": [
-        "Anesthesiology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.apsf.org/grants-and-awards/quality-improvement-awards/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "acog-creighton-edwards",
-      "name": "CREOG Creighton L. Edwards, MD Award in Compassionate Care",
-      "society": "American College of Obstetricians and Gynecologists",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Nomination deadline",
-      "eligibility": "Obstetrics/gynecology resident training in Texas recognized for compassionate care.",
-      "url": "https://www.acog.org/education-and-events/creog/get-involved/awards",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": true,
-      "scope": "standalone",
-      "note": "Texas-specific resident recognition; consult CREOG for program nomination process.",
-      "applicationProcess": "Contact CREOG and residency leadership regarding annual nomination and documentation.",
-      "specialties": [
-        "Obstetrics & Gynecology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.acog.org/education-and-events/creog/get-involved/awards",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aad-resident-qi27",
-      "name": "AAD 2027 Resident Quality Improvement Award",
-      "society": "American Academy of Dermatology",
-      "amount": "Up to $2,000",
-      "category": "Recognition award",
-      "open": "2026-06-12",
-      "opens": "2026-06-12",
-      "deadline": "2026-08-28",
-      "deadlineLabel": "Award application deadline",
-      "eligibility": "AAD member dermatology residents in accredited US training programs implementing measurable resident-led quality or safety improvement projects.",
-      "url": "https://www.aad.org/member/career/awards/resident-improvement",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "2027 award-cycle deadline has passed; awardees present at AAD March 2027.",
-      "applicationProcess": "Submit mentored QI proposal; faculty sponsorship and improvement measures required.",
-      "specialties": [
-        "Dermatology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aad.org/member/career/awards/resident-improvement",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.aad.org/member/career/awards/resident-improvement",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official award program"
-        }
-      }
-    },
-    {
-      "id": "acr-philips-leaders",
-      "name": "ACR Philips Emerging Leader Scholarship",
-      "society": "American College of Radiology",
-      "amount": "Leadership training, travel and mentoring (2026)",
-      "category": "Trainee scholarship",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Current ACR-member resident or fellow enrolled in an accredited US or Canadian program, with leadership experience and relevant training level.",
-      "url": "https://www.acr.org/Education-and-CME/Radiology-Leadership-Institute/Scholarship-Recognitions",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "2026 requirements applied specifically to R3–R4 trainees/fellows.",
-      "applicationProcess": "Application, CV, leadership statements and program director/chair support letter; verify 2027 cohort criteria.",
-      "specialties": [
-        "Radiology",
-        "Radiation Oncology",
-        "Nuclear Medicine",
-        "Medical Physics"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.acr.org/Education-and-CME/Radiology-Leadership-Institute/Scholarship-Recognitions",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "auanet-resident-research",
-      "name": "AUA Urology Care Foundation Residency Research Award",
-      "society": "American Urological Association / Urology Care Foundation",
-      "amount": "Recognition",
-      "category": "Research grant",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Urology residents at accredited programs undertaking mentored research with institutional support and appropriate protected research time.",
-      "url": "https://www.auanet.org/about-us/aua-governance/awards/urology-care-foundation-awards",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "Do not infer a 2027 deadline from historical 2025 funding announcements.",
-      "applicationProcess": "Apply to annual Urology Care Foundation residency research funding call with mentor, project plan, and institutional commitments.",
-      "specialties": [
-        "Urology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.auanet.org/about-us/aua-governance/awards/urology-care-foundation-awards",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aaos-rock-study",
-      "name": "AAOS ROCK / ResStudy Resident Achievement Awards",
-      "society": "American Academy of Orthopaedic Surgeons",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Orthopaedic surgery residents and residency programs showing strong engagement in ROCK learning and ResStudy educational activities.",
-      "url": "https://www.aaos.org/education/resident-orthopaedic-core-knowledge/rock-awards/",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "Selection depends on educational-platform engagement metrics; not a traditional open nomination.",
-      "applicationProcess": "Recognized through AAOS ROCK / ResStudy participation and residency education engagement.",
-      "specialties": [
-        "Orthopedic Surgery"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aaos.org/education/resident-orthopaedic-core-knowledge/rock-awards/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aao-hns-amd-resident",
-      "name": "AMD Resident Research Award (CORE)",
-      "society": "Association of Migraine Disorders / AAO-HNS CORE",
-      "amount": "$12,000 (2027 CORE)",
-      "category": "Research grant",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Residents in accredited residency training programs worldwide undertaking research advancing migraine disease.",
-      "url": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "Part of official cross-society 2027 CORE awards.",
-      "applicationProcess": "Apply through the 2027 CORE grants program; confirm deadline, mentor and institutional eligibility.",
-      "specialties": [
-        "Otolaryngology",
-        "Neurology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "ars-resident-rhinology",
-      "name": "American Rhinologic Society CORE Resident Research Grant 2027",
-      "society": "American Rhinologic Society / CORE",
-      "amount": "$10,000 (2027 CORE)",
-      "category": "Research grant",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Residents in approved US or Canadian training programs conducting rhinology research with an ARS-member supervising faculty co-investigator.",
-      "url": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "",
-      "applicationProcess": "Submit grant application through CORE with supervising faculty support.",
-      "specialties": [
-        "Otolaryngology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "acpm-gemson27",
-      "name": "ACPM Donald Gemson Resident Award 2027",
-      "society": "American College of Preventive Medicine",
-      "amount": "Recognition",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": "2027-01-14",
-      "deadlineLabel": "Nomination deadline",
-      "eligibility": "Current ACPM resident members at any postgraduate level distinguished in community service, teaching, research, scholarship and leadership.",
-      "url": "https://acpm.org/membership-partners/awards-scholarships/",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": true,
-      "scope": "standalone",
-      "note": "",
-      "applicationProcess": "Self-nomination or nomination by a colleague through ACPM member awards portal.",
-      "specialties": [
-        "Preventive Medicine",
-        "Public Health"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://acpm.org/membership-partners/awards-scholarships/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://acpm.org/membership-partners/awards-scholarships/",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official award program"
-        }
-      }
-    },
-    {
-      "id": "acpm-resident-scholarship27",
-      "name": "ACPM PM2027 Resident Conference Scholarships",
-      "society": "American College of Preventive Medicine",
-      "amount": "Recognition",
-      "category": "Trainee scholarship",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Current PH/GPM, occupational medicine, or aerospace medicine residents attending the 2027 preventive medicine annual meeting.",
-      "url": "https://acpm.org/membership-partners/awards-scholarships/",
-      "conferenceId": "acpm-pm27",
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "conference",
-      "note": "",
-      "applicationProcess": "Review ACPM's 2027 scholarship application page for eligibility and travel-support criteria.",
-      "specialties": [
-        "Preventive Medicine",
-        "Public Health"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://acpm.org/membership-partners/awards-scholarships/",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aha-laennec-fit",
-      "name": "AHA Laennec Fellow-in-Training Clinician Award",
-      "society": "American Heart Association",
-      "amount": "Recognition",
-      "category": "Merit award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Clinical cardiology fellows-in-training undertaking notable clinical research; eligibility and AHA Council membership requirements vary by annual cycle.",
-      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "",
-      "applicationProcess": "AHA council-specific early-career award competition; check current program's eligibility and abstract requirements.",
-      "specialties": [
-        "Cardiology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aha-3cpr-early",
-      "name": "AHA Cournand and Comroe Early Career Investigator Award",
-      "society": "American Heart Association",
-      "amount": "Recognition",
-      "category": "Merit award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Qualifying early-career cardiopulmonary, resuscitation and critical-care investigators with original science.",
-      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "",
-      "applicationProcess": "Abstract-based AHA council competition; resident eligibility depends on career-stage conditions.",
-      "specialties": [
-        "Cardiology",
-        "Pulmonary & Critical Care",
-        "Anesthesiology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aha-stroke-siekert",
-      "name": "AHA Robert G. Siekert New Investigator Award",
-      "society": "American Heart Association / Stroke Council",
-      "amount": "Recognition",
-      "category": "Merit award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Qualifying new investigators with original stroke research selected for the International Stroke Conference.",
-      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
-      "conferenceId": "isc27",
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "conference",
-      "note": "",
-      "applicationProcess": "Submit eligible regular stroke conference abstract; verify investigator-stage requirements.",
-      "specialties": [
-        "Neurology",
-        "Cardiology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aha-bcvs-outreach",
-      "name": "AHA BCVS Cardiovascular Outreach Awards",
-      "society": "American Heart Association",
-      "amount": "Up to ten $500 awards",
-      "category": "Travel award",
-      "open": null,
-      "opens": null,
-      "deadline": null,
-      "deadlineLabel": "Application deadline",
-      "eligibility": "US early-career basic cardiovascular science investigators and students from groups underrepresented in research; strong abstract preferred but not mandatory.",
-      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/bcvs-cardiovascular-outreach-awards",
-      "conferenceId": null,
-      "relatedConferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "",
-      "applicationProcess": "Provide CV and endorsement letters; 2027 cycle abstract call scheduled spring 2027.",
-      "specialties": [
-        "Cardiology"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/bcvs-cardiovascular-outreach-awards",
-      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
-      "fieldSources": {}
-    },
-    {
-      "id": "aaaai-resident-travel27",
-      "name": "AAAAI 2027 Medical Resident Travel Scholarship",
-      "society": "American Academy of Allergy, Asthma & Immunology",
-      "amount": "Travel and meeting support",
-      "category": "Travel award",
-      "open": null,
-      "opens": null,
-      "deadline": "2026-11-27",
-      "deadlineLabel": "Scholarship application deadline",
-      "eligibility": "Eligible medical residents interested in allergy and immunology who meet the AAAAI 2027 scholarship requirements.",
-      "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
-      "conferenceId": "aaaa27",
-      "nominationBased": false,
-      "scope": "conference",
-      "note": "",
-      "applicationProcess": "Apply to the AAAAI Medical Resident Travel Scholarship; deadline is 11:59 a.m. Central Time.",
-      "specialties": [
-        "Allergy & Immunology",
-        "Internal Medicine",
-        "Pediatrics"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
-      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
-          "checked_at": "2026-10-24",
-          "verified_by": "Society award program"
-        }
-      }
-    },
     {
       "id": "aaaai-fellow-travel27",
       "name": "AAAAI 2027 Domestic Fellows-in-Training Travel Scholarship",
@@ -10650,79 +8427,577 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "aats-resident-investigator27",
-      "name": "AATS Foundation Resident Surgical Investigator Award",
-      "society": "American Association for Thoracic Surgery",
-      "amount": "Up to $40,000 annually for 2 years",
-      "category": "Research grant",
-      "open": "2026-09-01",
-      "opens": "2026-09-01",
-      "deadline": "2026-12-02",
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Eligible surgical residents pursuing mentored cardiothoracic surgery research, with an established research mentor and formal career/research statement.",
-      "url": "https://www.aats.org/foundation/resident-surgical-investigator-award",
-      "conferenceId": null,
+      "id": "aaaai-resident-travel27",
+      "name": "AAAAI 2027 Medical Resident Travel Scholarship",
+      "society": "American Academy of Allergy, Asthma & Immunology",
+      "amount": "Travel and meeting support",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-11-27",
+      "deadlineLabel": "Scholarship application deadline",
+      "eligibility": "Eligible medical residents interested in allergy and immunology who meet the AAAAI 2027 scholarship requirements.",
+      "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+      "conferenceId": "aaaa27",
       "nominationBased": false,
-      "scope": "standalone",
-      "note": "The official AATS page shows conflicting Dec. 1 and Dec. 2, 2026 deadline references; confirm the exact cutoff with AATS.",
-      "applicationProcess": "Apply with research plan, mentor support, and statement of career goals.",
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Apply to the AAAAI Medical Resident Travel Scholarship; deadline is 11:59 a.m. Central Time.",
       "specialties": [
-        "Cardiothoracic Surgery",
-        "Surgery"
+        "Allergy & Immunology",
+        "Internal Medicine",
+        "Pediatrics"
       ],
       "flag": null,
       "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aats.org/foundation/resident-surgical-investigator-award",
+      "verificationSource": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
       "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
       "fieldSources": {
         "deadline": {
-          "url": "https://www.aats.org/foundation/resident-surgical-investigator-award",
-          "checked_at": "2026-10-24T20:59:27.895807+00:00",
-          "verified_by": "RISE conservative auto-publisher",
-          "source_quote": "Apply by the December 2, 2026 deadline in order to be considered",
-          "confidence": "explicit_statement",
-          "corroborating_sources": [
-            "https://www.aats.org/foundation/resident-surgical-investigator-award"
-          ]
+          "url": "https://annualmeeting.aaaai.org/attendee/awards-and-scholarships",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
         }
       }
     },
     {
-      "id": "aats-sugarbaker27",
-      "name": "AATS David J. Sugarbaker Surgical Resident Investigator Award",
-      "society": "American Association for Thoracic Surgery",
-      "amount": "Mentored research funding",
+      "id": "aace-garber27",
+      "name": "AACE Jeffrey R. Garber Trainee Abstract Award 2027",
+      "society": "American Association of Clinical Endocrinology",
+      "amount": "$500 (up to 2)",
+      "category": "Merit award",
+      "opens": "2026-08-10",
+      "open": "2026-08-10",
+      "deadline": "2026-12-01",
+      "deadlineLabel": "Regular abstract submission deadline",
+      "eligibility": "Trainees whose AACE 2027 abstracts address clinical endocrinology practice innovation, guideline implementation, education or decision-support; up to two recipients selected via abstract review.",
+      "url": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
+      "scope": "conference",
+      "conferenceId": "aace27",
+      "specialties": [
+        "Endocrinology"
+      ],
+      "note": "Award determined from eligible regular conference abstracts; no separate grant application identified. Regular abstracts due December 1, 2026.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aacegrant",
+      "name": "AACE Resident/Fellow Travel Grant",
+      "society": "American Association of Clinical Endocrinology",
+      "amount": "Up to $1,000 (2 domestic awards)",
+      "category": "Travel award",
+      "deadline": "2026-12-01",
+      "opens": "2026-08-10",
+      "eligibility": "Up to two domestic residents/fellows receive travel awards based on the scientific merit of accepted AACE 2027 abstracts; not a separate standalone grant application.",
+      "url": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
+      "conferenceId": "aace27",
+      "note": "Awarded through regular conference abstract review. Regular abstracts due December 1, 2026; this is not a separate travel-grant application deadline.",
+      "flag": null,
+      "specialties": [
+        "Endocrinology"
+      ],
+      "scope": "conference",
+      "open": "2026-08-10",
+      "deadlineLabel": "Regular abstract submission deadline",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://pro.aace.com/events/2027/annual-meeting/call-for-abstracts",
+      "verificationNote": "2027 award amount, eligibility, and regular abstract window confirmed from AACE organizer.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aacr-global27",
+      "name": "AACR 2027 Global Scholar-in-Training Awards",
+      "society": "American Association for Cancer Research",
+      "amount": "Meeting attendance support",
+      "category": "Travel award",
+      "deadline": "2026-11-10",
+      "opens": "2026-09-28",
+      "open": "2026-09-28",
+      "eligibility": "Eligible international early-career cancer investigators from qualifying countries, including medical students and residents, with a submitted AACR abstract.",
+      "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/global-scholar-in-training-awards-2/",
+      "conferenceId": "aacr27",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Hematology & Oncology",
+        "Radiation Oncology",
+        "Pathology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "AACR Associate membership, abstract control number, biosketch, personal statement, institutional certification.",
+      "deadlineLabel": "Award application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/global-scholar-in-training-awards-2/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/global-scholar-in-training-awards-2/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "aacr-sit27",
+      "name": "AACR 2027 Scholar-in-Training Awards",
+      "society": "American Association for Cancer Research",
+      "amount": "Meeting attendance support",
+      "category": "Travel award",
+      "deadline": "2026-11-10",
+      "opens": "2026-09-28",
+      "open": "2026-09-28",
+      "eligibility": "AACR Associate Member trainees including eligible medical students, residents, clinical fellows, graduate students, and postdocs with a regular first-author AACR abstract.",
+      "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/scholar-in-training-awards-annual-meeting/",
+      "conferenceId": "aacr27",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Hematology & Oncology",
+        "Radiation Oncology",
+        "Pathology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "myAACR: submit abstract/control number, CV, personal statement, and lay summary; not late-breaking.",
+      "deadlineLabel": "Award application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/scholar-in-training-awards-annual-meeting/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/scholar-in-training-awards-annual-meeting/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "aacr-wicr27",
+      "name": "AACR 2027 Women in Cancer Research Scholar Awards",
+      "society": "American Association for Cancer Research",
+      "amount": "Meeting attendance support",
+      "category": "Travel award",
+      "deadline": "2026-11-10",
+      "opens": "2026-09-28",
+      "open": "2026-09-28",
+      "eligibility": "Women in Cancer Research member trainees including medical students, residents, fellows and postdocs who are first-author presenters of an AACR abstract.",
+      "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/women-in-cancer-research-scholar-awards/",
+      "conferenceId": "aacr27",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Hematology & Oncology",
+        "Radiation Oncology",
+        "Pathology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Apply via AACR and meet WICR membership and abstract criteria.",
+      "deadlineLabel": "Award application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/women-in-cancer-research-scholar-awards/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aacr.org/professionals/meetings/aacr-travel-grants/women-in-cancer-research-scholar-awards/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "aad-health-disparities",
+      "name": "AAD Young Investigator Award — Health Disparities",
+      "society": "American Academy of Dermatology",
+      "amount": "$6,000 research support",
       "category": "Research grant",
-      "open": "2026-09-01",
-      "opens": "2026-09-01",
-      "deadline": "2026-12-02",
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Eligible surgical residents conducting mentored translational or clinical thoracic oncology research, including mesothelioma or lung cancer.",
-      "url": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Dermatology residents conducting resident-led research on health disparities and access to dermatologic care.",
+      "url": "https://www.aad.org/member/career/diversity/pathways/residents",
       "conferenceId": null,
+      "note": "Verify annual application eligibility and deadline on the AAD resident awards page.",
+      "flag": null,
+      "specialties": [
+        "Dermatology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aad.org/member/career/diversity/pathways/residents",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aad-resident-qi27",
+      "name": "AAD 2027 Resident Quality Improvement Award",
+      "society": "American Academy of Dermatology",
+      "amount": "Up to $2,000",
+      "category": "Recognition award",
+      "open": "2026-06-12",
+      "opens": "2026-06-12",
+      "deadline": "2026-08-28",
+      "deadlineLabel": "Award application deadline",
+      "eligibility": "AAD member dermatology residents in accredited US training programs implementing measurable resident-led quality or safety improvement projects.",
+      "url": "https://www.aad.org/member/career/awards/resident-improvement",
+      "conferenceId": null,
+      "relatedConferenceId": null,
       "nominationBased": false,
       "scope": "standalone",
-      "note": "Official page has Dec. 1/2 deadline discrepancy; verify exact cutoff.",
-      "applicationProcess": "Apply through AATS Foundation with required mentor and research documentation.",
+      "note": "2027 award-cycle deadline has passed; awardees present at AAD March 2027.",
+      "applicationProcess": "Submit mentored QI proposal; faculty sponsorship and improvement measures required.",
       "specialties": [
-        "Cardiothoracic Surgery",
-        "Hematology & Oncology",
-        "Surgery"
+        "Dermatology"
       ],
       "flag": null,
       "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
-      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "verificationSource": "https://www.aad.org/member/career/awards/resident-improvement",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
       "fieldSources": {
         "deadline": {
-          "url": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
-          "checked_at": "2026-10-24T20:59:27.895807+00:00",
-          "verified_by": "RISE conservative auto-publisher",
-          "source_quote": "Apply by the December 2, 2026 deadline in order to be considered",
-          "confidence": "explicit_statement",
-          "corroborating_sources": [
-            "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award"
-          ]
+          "url": "https://www.aad.org/member/career/awards/resident-improvement",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "aaem-resident-of-year",
+      "name": "AAEM Resident of the Year Award",
+      "society": "American Academy of Emergency Medicine",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "Current emergency medicine resident who is an AAEM/RSA member with exceptional service, leadership, education, or contributions to the academy.",
+      "url": "https://www.aaem.org/about-us/awards/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Society annual award nomination; current-cycle nomination window must be verified.",
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aaem.org/about-us/awards/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aafp-resident-gme",
+      "name": "AAFP Award for Excellence in Graduate Medical Education",
+      "society": "American Academy of Family Physicians",
+      "amount": "Recognition and scholarship",
+      "category": "Recognition award",
+      "deadline": "2026-05-27",
+      "opens": null,
+      "open": null,
+      "eligibility": "Second-year ACGME family medicine residents who are AAFP resident members and have distinguished patient care, leadership, academics, and community engagement.",
+      "url": "https://www.aafp.org/residents/awards-and-grants/gme",
+      "conferenceId": null,
+      "note": "2026 nomination/application closed; next cycle not yet announced.",
+      "flag": null,
+      "specialties": [
+        "Family Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Review annual AAFP resident application and program endorsement requirements.",
+      "deadlineLabel": "Application / nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aafp.org/residents/awards-and-grants/gme",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.aafp.org/residents/awards-and-grants/gme",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "aao-hns-amd-resident",
+      "name": "AMD Resident Research Award (CORE)",
+      "society": "Association of Migraine Disorders / AAO-HNS CORE",
+      "amount": "$12,000 (2027 CORE)",
+      "category": "Research grant",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Residents in accredited residency training programs worldwide undertaking research advancing migraine disease.",
+      "url": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Part of official cross-society 2027 CORE awards.",
+      "applicationProcess": "Apply through the 2027 CORE grants program; confirm deadline, mentor and institutional eligibility.",
+      "specialties": [
+        "Otolaryngology",
+        "Neurology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aao-hns-core-resident27",
+      "name": "AAO-HNSF CORE Resident Research Grant 2027",
+      "society": "American Academy of Otolaryngology–Head and Neck Surgery Foundation",
+      "amount": "$10,000",
+      "category": "Research grant",
+      "opens": "2026-10-01",
+      "open": "2026-10-01",
+      "deadline": "2026-12-15",
+      "deadlineLabel": "Letter of intent deadline",
+      "eligibility": "Eligible otolaryngology residents seeking mentored research funding; see the 2027 CORE resident award opportunity for full requirements. A letter of intent is mandatory.",
+      "url": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "scope": "independent",
+      "conferenceId": null,
+      "specialties": [
+        "Otolaryngology"
+      ],
+      "note": "2027 CORE LOI due December 15, 2026, at 11:59 p.m. ET. Full application due January 15, 2027 if eligible.",
+      "stages": [
+        {
+          "label": "Full application",
+          "date": "2027-01-15"
+        }
+      ],
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aaos-rock-study",
+      "name": "AAOS ROCK / ResStudy Resident Achievement Awards",
+      "society": "American Academy of Orthopaedic Surgeons",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Orthopaedic surgery residents and residency programs showing strong engagement in ROCK learning and ResStudy educational activities.",
+      "url": "https://www.aaos.org/education/resident-orthopaedic-core-knowledge/rock-awards/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Selection depends on educational-platform engagement metrics; not a traditional open nomination.",
+      "applicationProcess": "Recognized through AAOS ROCK / ResStudy participation and residency education engagement.",
+      "specialties": [
+        "Orthopedic Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aaos.org/education/resident-orthopaedic-core-knowledge/rock-awards/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aap-catchresident27",
+      "name": "AAP 2027 CATCH Resident Grant",
+      "society": "American Academy of Pediatrics",
+      "amount": "$2,000",
+      "category": "Research grant",
+      "open": "2026-11-01",
+      "opens": "2026-11-01",
+      "deadline": "2027-01-19",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Pediatric residents in the US or Canada with at least two years of training remaining, proposing an innovative community-based health intervention.",
+      "url": "https://grants.aap.org/res/p/available-grant-applicati/",
+      "conferenceId": null,
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Apply to the 2027 CATCH Resident program with a community intervention project.",
+      "note": "November 1, 2026 through January 19, 2027, 11:59 PM CST.",
+      "flag": null,
+      "specialties": [
+        "Pediatrics"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://grants.aap.org/res/p/available-grant-applicati/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://grants.aap.org/res/p/available-grant-applicati/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award description"
+        }
+      }
+    },
+    {
+      "id": "aap-mclean-physiatry",
+      "name": "AAP McLean Outstanding Resident/Fellow Award",
+      "society": "Association of Academic Physiatrists",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "AAP resident or fellow member demonstrating exemplary academic leadership, teaching, education and research.",
+      "url": "https://www.physiatry.org/about-aap/awards/",
+      "conferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "Annual AAP award; 2026 honorees announced. Next nomination deadline not yet confirmed.",
+      "applicationProcess": "Nomination letter, CV, recommendation from program director; up to three additional letters of support.",
+      "specialties": [
+        "Physical Medicine & Rehabilitation"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.physiatry.org/about-aap/awards/",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aap-resident-research",
+      "name": "AAP Resident Research Grant",
+      "society": "American Academy of Pediatrics",
+      "amount": "Recognition",
+      "category": "Research grant",
+      "deadline": "2026-03-31",
+      "opens": null,
+      "open": null,
+      "eligibility": "Pediatric residents planning feasible mentored child-health research projects during residency training.",
+      "url": "https://publications.aap.org/aapnews/news/34083/Residents-with-research-interests-encouraged-to",
+      "conferenceId": null,
+      "note": "2026 cycle closed; next deadline not yet verified.",
+      "flag": null,
+      "specialties": [
+        "Pediatrics"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Apply for mentored pediatric resident research funding; project-focused review.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://publications.aap.org/aapnews/news/34083/Residents-with-research-interests-encouraged-to",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://publications.aap.org/aapnews/news/34083/Residents-with-research-interests-encouraged-to",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "aapath67",
+      "name": "Society of ’67 Pathology Trainee Project Grant",
+      "society": "Association for Academic Pathology",
+      "amount": "Up to $5,000",
+      "category": "Research grant",
+      "deadline": "2026-10-12",
+      "opens": null,
+      "eligibility": "Pathology residents at AAPath member institutions, medical students or eligible fellows; faculty sponsor required. Letter of intent due Oct 12.",
+      "url": "https://www.apcprods.org/societyof67-grant-trainee",
+      "note": "LOI deadline Oct 12, 2026, 2 PM ET. Invited full proposals due Nov 19. Funds held by department, not individual.",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "scope": "independent",
+      "relatedConferenceId": "aapath27",
+      "open": null,
+      "stages": [
+        {
+          "label": "Invited full proposal",
+          "date": "2026-11-19"
+        }
+      ],
+      "deadlineLabel": "Letter of intent deadline",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.apcprods.org/societyof67-grant-trainee",
+      "verificationNote": "2026 LOI and full-proposal deadline confirmed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aapm-bestposter27",
+      "name": "AAPM 2027 Spring Clinical Best Poster Competition",
+      "society": "American Association of Physicists in Medicine",
+      "amount": "Best poster recognition",
+      "category": "Presentation prize",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-09-16",
+      "deadlineLabel": "Abstract submission deadline",
+      "eligibility": "Clinical medical physics presenters with accepted, competitively evaluated Spring Clinical Meeting posters.",
+      "url": "https://site.aapm.org/spring-clinical/2027/program",
+      "conferenceId": "aapmspring27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit regular scientific abstract; accepted posters judged for clinical relevance, originality and clarity.",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Medical Physics"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://site.aapm.org/spring-clinical/2027/program",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://site.aapm.org/spring-clinical/2027/program",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award description"
+        }
+      }
+    },
+    {
+      "id": "aapm-ecis27",
+      "name": "AAPM 2027 Spring Clinical Early Career Investigator Symposium",
+      "society": "American Association of Physicists in Medicine",
+      "amount": "Oral presentation distinction",
+      "category": "Presentation prize",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-09-16",
+      "deadlineLabel": "Abstract submission deadline",
+      "eligibility": "Early-career clinical medical physicists submitting top-rated qualifying scientific abstracts to the 2027 Spring Clinical Meeting.",
+      "url": "https://site.aapm.org/spring-clinical/2027/program",
+      "conferenceId": "aapmspring27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit original scientific abstract by regular abstract deadline.",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Medical Physics"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://site.aapm.org/spring-clinical/2027/program",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://site.aapm.org/spring-clinical/2027/program",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award description"
         }
       }
     },
@@ -10852,125 +9127,812 @@ window.RISE_DATA = {
       }
     },
     {
-      "id": "svs-yao27",
-      "name": "SVS James S.T. Yao Resident Research Award 2027",
-      "society": "Society for Vascular Surgery",
-      "amount": "$5,000 and scientific presentation",
-      "category": "Recognition award",
-      "open": null,
-      "opens": null,
-      "deadline": "2027-01-13",
-      "deadlineLabel": "Research award application deadline",
-      "eligibility": "Surgery residents, vascular surgery residents, or vascular fellows in US/Canadian training programs with original, unpublished, publication-quality vascular research.",
-      "url": "https://vascular.org/svs-foundation/programs-and-awards/james-st-yao-resident-research-award",
+      "id": "aats-resident-investigator27",
+      "name": "AATS Foundation Resident Surgical Investigator Award",
+      "society": "American Association for Thoracic Surgery",
+      "amount": "Up to $40,000 annually for 2 years",
+      "category": "Research grant",
+      "open": "2026-09-01",
+      "opens": "2026-09-01",
+      "deadline": "2026-12-02",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible surgical residents pursuing mentored cardiothoracic surgery research, with an established research mentor and formal career/research statement.",
+      "url": "https://www.aats.org/foundation/resident-surgical-investigator-award",
       "conferenceId": null,
       "nominationBased": false,
       "scope": "standalone",
-      "note": "",
-      "applicationProcess": "Apply to the SVS Research Council; 11:59 p.m. Central Time deadline; one recipient.",
+      "note": "The official AATS page shows conflicting Dec. 1 and Dec. 2, 2026 deadline references; confirm the exact cutoff with AATS.",
+      "applicationProcess": "Apply with research plan, mentor support, and statement of career goals.",
       "specialties": [
-        "Vascular Surgery",
+        "Cardiothoracic Surgery",
         "Surgery"
       ],
       "flag": null,
       "lastVerified": "2026-10-24",
-      "verificationSource": "https://vascular.org/svs-foundation/programs-and-awards/james-st-yao-resident-research-award",
+      "verificationSource": "https://www.aats.org/foundation/resident-surgical-investigator-award",
       "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
       "fieldSources": {
         "deadline": {
-          "url": "https://vascular.org/svs-foundation/programs-and-awards/james-st-yao-resident-research-award",
-          "checked_at": "2026-10-24",
-          "verified_by": "Society award program"
+          "url": "https://www.aats.org/foundation/resident-surgical-investigator-award",
+          "checked_at": "2026-10-24T20:59:27.895807+00:00",
+          "verified_by": "RISE conservative auto-publisher",
+          "source_quote": "Apply by the December 2, 2026 deadline in order to be considered",
+          "confidence": "explicit_statement",
+          "corroborating_sources": [
+            "https://www.aats.org/foundation/resident-surgical-investigator-award"
+          ]
         }
       }
     },
     {
-      "id": "gsa-schutz26",
-      "name": "GSA Carol A. Schutz Student / Early-Career Travel Stipend",
-      "society": "Gerontological Society of America",
-      "amount": "Travel stipend (lottery)",
-      "category": "Travel award",
-      "open": "2026-06-09",
-      "opens": "2026-06-09",
-      "deadline": "2026-07-28",
+      "id": "aats-sugarbaker27",
+      "name": "AATS David J. Sugarbaker Surgical Resident Investigator Award",
+      "society": "American Association for Thoracic Surgery",
+      "amount": "Mentored research funding",
+      "category": "Research grant",
+      "open": "2026-09-01",
+      "opens": "2026-09-01",
+      "deadline": "2026-12-02",
       "deadlineLabel": "Application deadline",
-      "eligibility": "Current GSA student or early-career member with eligible membership and annual-meeting attendance; residents must verify their GSA membership eligibility.",
-      "url": "https://www.geron.org/Membership/Member-Center/Awards/Student-Travel-Stipends-/Carol-A-Schutz-Travel-Stipend",
+      "eligibility": "Eligible surgical residents conducting mentored translational or clinical thoracic oncology research, including mesothelioma or lung cancer.",
+      "url": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
       "conferenceId": null,
       "nominationBased": false,
       "scope": "standalone",
-      "note": "Closed 2026 cycle; recipient selected by lottery.",
-      "applicationProcess": "Apply according to GSA Student and Early Career membership requirements.",
+      "note": "Official page has Dec. 1/2 deadline discrepancy; verify exact cutoff.",
+      "applicationProcess": "Apply through AATS Foundation with required mentor and research documentation.",
       "specialties": [
-        "Geriatrics"
+        "Cardiothoracic Surgery",
+        "Hematology & Oncology",
+        "Surgery"
       ],
       "flag": null,
       "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.geron.org/Membership/Member-Center/Awards/Student-Travel-Stipends-/Carol-A-Schutz-Travel-Stipend",
+      "verificationSource": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
       "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
       "fieldSources": {
         "deadline": {
-          "url": "https://www.geron.org/Membership/Member-Center/Awards/Student-Travel-Stipends-/Carol-A-Schutz-Travel-Stipend",
-          "checked_at": "2026-10-24",
-          "verified_by": "Society award program"
+          "url": "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award",
+          "checked_at": "2026-10-24T20:59:27.895807+00:00",
+          "verified_by": "RISE conservative auto-publisher",
+          "source_quote": "Apply by the December 2, 2026 deadline in order to be considered",
+          "confidence": "explicit_statement",
+          "corroborating_sources": [
+            "https://www.aats.org/foundation/david-j-sugarbaker-surgical-resident-investigator-award"
+          ]
         }
       }
     },
     {
-      "id": "gsa-tj26",
-      "name": "GSA TJ McCallum Memorial Student Travel Award",
-      "society": "Gerontological Society of America",
-      "amount": "Travel support",
-      "category": "Travel award",
-      "open": "2026-06-09",
-      "opens": "2026-06-09",
-      "deadline": "2026-07-28",
-      "deadlineLabel": "Application deadline",
-      "eligibility": "GSA student or early-career members with an accepted paper, poster or symposium contribution focused on caregiving or technology and aging.",
-      "url": "https://www.geron.org/membership/member-center/awards/student-travel-stipends-/tj-mccallum-memorial-student-travel-award",
+      "id": "aawr-mit-astro",
+      "name": "AAWR Member-in-Training Award for Outstanding ASTRO Presentations",
+      "society": "American Association for Women in Radiology",
+      "amount": "Recognition",
+      "category": "Presentation prize",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Eligible AAWR members-in-training recognized for exceptional research presentations at ASTRO.",
+      "url": "https://www.aawr.org/awards-descriptions",
       "conferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "2026 cycle closed; clinical residents must independently meet GSA membership eligibility.",
-      "applicationProcess": "Self-nominate with blinded/unblinded paper, abstract ID, and coauthor statement.",
-      "specialties": [
-        "Geriatrics"
-      ],
+      "note": "See annual AAWR research-recognition award criteria and ASTRO presentation eligibility.",
       "flag": null,
+      "specialties": [
+        "Radiation Oncology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
       "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.geron.org/membership/member-center/awards/student-travel-stipends-/tj-mccallum-memorial-student-travel-award",
-      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "verificationSource": "https://www.aawr.org/awards-descriptions",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aawr-mit-rsna",
+      "name": "AAWR Member-in-Training Award for Outstanding RSNA Presentations",
+      "society": "American Association for Women in Radiology",
+      "amount": "Recognition",
+      "category": "Presentation prize",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Eligible AAWR members-in-training recognized for exceptional RSNA presentations.",
+      "url": "https://www.aawr.org/awards-descriptions",
+      "conferenceId": null,
+      "note": "See annual AAWR research-recognition award criteria.",
+      "flag": null,
+      "specialties": [
+        "Radiology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aawr.org/awards-descriptions",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aawr-montague",
+      "name": "AAWR Eleanor Montague Distinguished Resident Award in Radiation Oncology",
+      "society": "American Association for Women in Radiology",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "AAWR-member radiation oncology residents recognized for clinical care, teaching, scholarship, community service, or leadership.",
+      "url": "https://www.aawr.org/awards-descriptions",
+      "conferenceId": null,
+      "note": "Annual nominations closed on official page; one nomination per residency program.",
+      "flag": null,
+      "specialties": [
+        "Radiation Oncology"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Residency-program nomination; consult AAWR for current materials.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aawr.org/awards-descriptions",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aawr-squire",
+      "name": "AAWR Lucy Frank Squire Distinguished Resident Award",
+      "society": "American Association for Women in Radiology",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "AAWR-member radiology residents with outstanding contributions to patient care and scholarship.",
+      "url": "https://www.aawr.org/awards-descriptions",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Radiology"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Nomination according to annual AAWR resident award rules.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.aawr.org/awards-descriptions",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acgme-back-bedside",
+      "name": "ACGME Back to Bedside Resident-Led Grants",
+      "society": "Accreditation Council for Graduate Medical Education",
+      "amount": "Up to $10,000 (2026 cycle)",
+      "category": "Research grant",
+      "deadline": "2026-04-20",
+      "opens": null,
+      "open": null,
+      "eligibility": "Resident- or fellow-led patient connection and clinical learning-environment innovation projects; institutional participation and project proposal required.",
+      "url": "https://www.acgme.org/residents-and-fellows/back-to-bedside/",
+      "conferenceId": null,
+      "note": "2026–2028 round awarded; next cycle not announced.",
+      "flag": null,
+      "specialties": [
+        "All specialties"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit resident/fellow-led project proposal; no 2027 call confirmed.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.acgme.org/residents-and-fellows/back-to-bedside/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
       "fieldSources": {
         "deadline": {
-          "url": "https://www.geron.org/membership/member-center/awards/student-travel-stipends-/tj-mccallum-memorial-student-travel-award",
+          "url": "https://www.acgme.org/residents-and-fellows/back-to-bedside/",
           "checked_at": "2026-10-24",
-          "verified_by": "Society award program"
+          "verified_by": "Official society website"
         }
       }
     },
     {
-      "id": "aap-mclean-physiatry",
-      "name": "AAP McLean Outstanding Resident/Fellow Award",
-      "society": "Association of Academic Physiatrists",
+      "id": "acgme-blackman",
+      "name": "ACGME Lewis Blackman Patient Safety Award",
+      "society": "Accreditation Council for Graduate Medical Education",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Current ACGME-accredited residents or fellows who led a patient-safety or team-communication initiative with demonstrable measurable improvement.",
+      "url": "https://www.acgme.org/initiatives/awards/lewis-blackman-patient-safety-award/",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "All specialties"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Institutional/colleague nomination describing resident-led patient safety improvement and outcomes.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.acgme.org/initiatives/awards/lewis-blackman-patient-safety-award/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acgme-leach",
+      "name": "ACGME David C. Leach Award",
+      "society": "Accreditation Council for Graduate Medical Education",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Current residents, fellows, or trainee teams demonstrating innovation, educational improvement, humanism, or improved residency training.",
+      "url": "https://www.acgme.org/initiatives/awards/david-c-leach-award/",
+      "conferenceId": null,
+      "note": "2027 awardees already announced; the 2028 nomination cycle is expected in early 2027.",
+      "flag": null,
+      "specialties": [
+        "All specialties"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Nomination through ACGME; annual nomination criteria and 2028 deadlines must be reconfirmed.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.acgme.org/initiatives/awards/david-c-leach-award/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acog-creighton-edwards",
+      "name": "CREOG Creighton L. Edwards, MD Award in Compassionate Care",
+      "society": "American College of Obstetricians and Gynecologists",
       "amount": "Recognition",
       "category": "Recognition award",
       "open": null,
       "opens": null,
       "deadline": null,
       "deadlineLabel": "Nomination deadline",
-      "eligibility": "AAP resident or fellow member demonstrating exemplary academic leadership, teaching, education and research.",
-      "url": "https://www.physiatry.org/about-aap/awards/",
+      "eligibility": "Obstetrics/gynecology resident training in Texas recognized for compassionate care.",
+      "url": "https://www.acog.org/education-and-events/creog/get-involved/awards",
       "conferenceId": null,
+      "relatedConferenceId": null,
       "nominationBased": true,
       "scope": "standalone",
-      "note": "Annual AAP award; 2026 honorees announced. Next nomination deadline not yet confirmed.",
-      "applicationProcess": "Nomination letter, CV, recommendation from program director; up to three additional letters of support.",
+      "note": "Texas-specific resident recognition; consult CREOG for program nomination process.",
+      "applicationProcess": "Contact CREOG and residency leadership regarding annual nomination and documentation.",
       "specialties": [
+        "Obstetrics & Gynecology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.acog.org/education-and-events/creog/get-involved/awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acp-national-prize27",
+      "name": "ACP 2027 National Resident Research / Clinical Vignette Competition",
+      "society": "American College of Physicians",
+      "amount": "National competition recognition",
+      "category": "Presentation prize",
+      "deadline": "2026-11-12",
+      "opens": "2026-10-01",
+      "open": "2026-10-01",
+      "eligibility": "Eligible ACP-member medical students and resident physicians submitting clinical vignettes or research abstracts for national competition.",
+      "url": "https://annualmeeting.acponline.org/educational-program/abstract-competition",
+      "conferenceId": "acp27",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Internal Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit eligible abstract in research or vignette competition; ACP membership and $45 fee.",
+      "deadlineLabel": "Abstract submission deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://annualmeeting.acponline.org/educational-program/abstract-competition",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://annualmeeting.acponline.org/educational-program/abstract-competition",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "acpm-gemson27",
+      "name": "ACPM Donald Gemson Resident Award 2027",
+      "society": "American College of Preventive Medicine",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": "2027-01-14",
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "Current ACPM resident members at any postgraduate level distinguished in community service, teaching, research, scholarship and leadership.",
+      "url": "https://acpm.org/membership-partners/awards-scholarships/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Self-nomination or nomination by a colleague through ACPM member awards portal.",
+      "specialties": [
+        "Preventive Medicine",
+        "Public Health"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://acpm.org/membership-partners/awards-scholarships/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://acpm.org/membership-partners/awards-scholarships/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "acpm-resident-scholarship27",
+      "name": "ACPM PM2027 Resident Conference Scholarships",
+      "society": "American College of Preventive Medicine",
+      "amount": "Recognition",
+      "category": "Trainee scholarship",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Current PH/GPM, occupational medicine, or aerospace medicine residents attending the 2027 preventive medicine annual meeting.",
+      "url": "https://acpm.org/membership-partners/awards-scholarships/",
+      "conferenceId": "acpm-pm27",
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Review ACPM's 2027 scholarship application page for eligibility and travel-support criteria.",
+      "specialties": [
+        "Preventive Medicine",
+        "Public Health"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://acpm.org/membership-partners/awards-scholarships/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acr-philips-leaders",
+      "name": "ACR Philips Emerging Leader Scholarship",
+      "society": "American College of Radiology",
+      "amount": "Leadership training, travel and mentoring (2026)",
+      "category": "Trainee scholarship",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Current ACR-member resident or fellow enrolled in an accredited US or Canadian program, with leadership experience and relevant training level.",
+      "url": "https://www.acr.org/Education-and-CME/Radiology-Leadership-Institute/Scholarship-Recognitions",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "2026 requirements applied specifically to R3–R4 trainees/fellows.",
+      "applicationProcess": "Application, CV, leadership statements and program director/chair support letter; verify 2027 cohort criteria.",
+      "specialties": [
+        "Radiology",
+        "Radiation Oncology",
+        "Nuclear Medicine",
+        "Medical Physics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.acr.org/Education-and-CME/Radiology-Leadership-Institute/Scholarship-Recognitions",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acrotravel27",
+      "name": "ACRO 2027 Resident & Trainee Travel Grant",
+      "society": "American College of Radiation Oncology",
+      "amount": "$500 (15 awards)",
+      "category": "Travel award",
+      "deadline": "2026-11-16",
+      "opens": null,
+      "open": null,
+      "eligibility": "ACRO member in good standing; eligible medical students, radiation oncology residents/fellows, and SEAL leaders; CV, statement and program-director/chair support letter required.",
+      "url": "https://acro.org/page/acro-travel-grant",
+      "conferenceId": "acro27",
+      "note": "Funding supported through ISTRO/Dr. Luther Brady Foundation; disclose any applicable institutional COI requirements. Abstract acceptance is not stated as a universal prerequisite.",
+      "flag": null,
+      "specialties": [
+        "Radiation Oncology"
+      ],
+      "scope": "conference",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://acro.org/page/acro-travel-grant",
+      "verificationNote": "2027 $500 travel award deadline, eligibility and documentation confirmed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acs-chassin-professionalism",
+      "name": "Jameson L. Chassin Award for Professionalism in General Surgery",
+      "society": "American College of Surgeons",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "General surgery chief residents recognized for compassion, clinical and technical excellence, professionalism, and scholarly commitment.",
+      "url": "https://www.facs.org/for-medical-professionals/professional-growth-and-wellness/scholarships-fellowships-and-awards/resident/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "2026 cycle closed; confirm next nomination deadline.",
+      "applicationProcess": "Residency leadership nomination through ACS resident award selection.",
+      "specialties": [
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.facs.org/for-medical-professionals/professional-growth-and-wellness/scholarships-fellowships-and-awards/resident/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acs-resident-teaching",
+      "name": "ACS Resident Award for Exemplary Teaching",
+      "society": "American College of Surgeons",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "Residents in good standing in an accredited surgery residency, including surgical specialty programs, demonstrating exceptional teaching and educational scholarship.",
+      "url": "https://www.facs.org/for-medical-professionals/education/residents/acs-resident-award-for-exemplary-teaching/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "2026 nominations closed; next cycle not announced.",
+      "applicationProcess": "Program director or department chair nominates; provide CV, teaching philosophy, awards and educational evidence.",
+      "specialties": [
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.facs.org/for-medical-professionals/education/residents/acs-resident-award-for-exemplary-teaching/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "acs-resident-volunteerism",
+      "name": "ACS Resident Surgical Volunteerism Award",
+      "society": "American College of Surgeons / ACS HOPE",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination deadline",
+      "eligibility": "ACS member surgeons from any surgical specialty who performed meaningful organized surgical volunteerism during postgraduate surgical training.",
+      "url": "https://www.facs.org/for-medical-professionals/membership-community/acs-hope/acs-pfizer-awards/resident-surgical-volunteerism-award/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "Standalone surgical volunteerism recognition.",
+      "applicationProcess": "Nominate a resident surgeon with substantial documented domestic or international surgical service; confirm annual criteria.",
+      "specialties": [
+        "Surgery",
+        "Plastic Surgery",
+        "Orthopedic Surgery",
+        "Vascular Surgery",
+        "Neurosurgery",
+        "Cardiothoracic Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.facs.org/for-medical-professionals/membership-community/acs-hope/acs-pfizer-awards/resident-surgical-volunteerism-award/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "agastudent",
+      "name": "AGA Student Abstract Award",
+      "society": "American Gastroenterological Association",
+      "amount": "$500–$1,000",
+      "category": "Travel award",
+      "deadline": "2027-02-18",
+      "opens": "2026-11-16",
+      "eligibility": "Medical residents through PGY-3 or eligible students with accepted DDW abstract-based presentation.",
+      "url": "https://gastro.org/research-and-awards/apply-for-awards/award/aga-student-abstract-award/",
+      "conferenceId": "ddw27",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Gastroenterology"
+      ],
+      "scope": "conference",
+      "open": "2026-11-16",
+      "dateEvidence": "AGA official 2027 application cycle; https://gastro.org/research-and-awards/apply-for-awards/award/aga-student-abstract-award/",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://gastro.org/research-and-awards/apply-for-awards/award/aga-student-abstract-award/",
+      "verificationNote": "2027 AGA opening and deadline; travel awards $500–$1,000 verified.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aha-3cpr-early",
+      "name": "AHA Cournand and Comroe Early Career Investigator Award",
+      "society": "American Heart Association",
+      "amount": "Recognition",
+      "category": "Merit award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Qualifying early-career cardiopulmonary, resuscitation and critical-care investigators with original science.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Abstract-based AHA council competition; resident eligibility depends on career-stage conditions.",
+      "specialties": [
+        "Cardiology",
+        "Pulmonary & Critical Care",
+        "Anesthesiology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aha-bcvs-outreach",
+      "name": "AHA BCVS Cardiovascular Outreach Awards",
+      "society": "American Heart Association",
+      "amount": "Up to ten $500 awards",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "US early-career basic cardiovascular science investigators and students from groups underrepresented in research; strong abstract preferred but not mandatory.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/bcvs-cardiovascular-outreach-awards",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Provide CV and endorsement letters; 2027 cycle abstract call scheduled spring 2027.",
+      "specialties": [
+        "Cardiology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/bcvs-cardiovascular-outreach-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aha-laennec-fit",
+      "name": "AHA Laennec Fellow-in-Training Clinician Award",
+      "society": "American Heart Association",
+      "amount": "Recognition",
+      "category": "Merit award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Clinical cardiology fellows-in-training undertaking notable clinical research; eligibility and AHA Council membership requirements vary by annual cycle.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "AHA council-specific early-career award competition; check current program's eligibility and abstract requirements.",
+      "specialties": [
+        "Cardiology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "aha-stroke-siekert",
+      "name": "AHA Robert G. Siekert New Investigator Award",
+      "society": "American Heart Association / Stroke Council",
+      "amount": "Recognition",
+      "category": "Merit award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Qualifying new investigators with original stroke research selected for the International Stroke Conference.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "conferenceId": "isc27",
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Submit eligible regular stroke conference abstract; verify investigator-stage requirements.",
+      "specialties": [
+        "Neurology",
+        "Cardiology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/student-trainee-and-early-career-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ahaabstract",
+      "name": "AHA EPI Early Career Travel Stipend",
+      "society": "American Heart Association",
+      "amount": "$1,000",
+      "category": "Travel award",
+      "deadline": "2026-10-14",
+      "opens": null,
+      "eligibility": "Eligible early-career applicants submit an abstract and select the award during submission.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-early-career-travel-stipend-for-epi-lifetstyle-scientific-sessions-abstract-required",
+      "conferenceId": "epi27",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Cardiology"
+      ],
+      "scope": "conference",
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-early-career-travel-stipend-for-epi-lifetstyle-scientific-sessions-abstract-required",
+      "verificationNote": "2026 abstract deadline and $1,000 travel award confirmed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ahaepi",
+      "name": "AHA EPI Council Travel Stipend",
+      "society": "American Heart Association",
+      "amount": "$1,000",
+      "category": "Travel award",
+      "deadline": "2026-10-23",
+      "opens": null,
+      "eligibility": "EPI Council membership by October 21; early-career applicants and students; no abstract required.",
+      "url": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-travel-stipend-for-epi-lifestyle-scientific-sessions-no-abstract-required",
+      "conferenceId": "epi27",
+      "note": "Registration not covered; membership deadline precedes application.",
+      "flag": null,
+      "specialties": [
+        "Cardiology"
+      ],
+      "scope": "conference",
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://professional.heart.org/en/professional-membership/awards-and-lectures/epi-council-travel-stipend-for-epi-lifestyle-scientific-sessions-no-abstract-required",
+      "verificationNote": "2026 application deadline and $1,000 travel amount confirmed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ahns-pilot",
+      "name": "AHNS Resident Research Pilot Grant",
+      "society": "American Head and Neck Society",
+      "amount": "Up to $20,000",
+      "category": "Research grant",
+      "deadline": "2026-12-15",
+      "opens": "2026-10-01",
+      "eligibility": "Eligible residents and other trainees working in head/neck oncology, AHNS membership, mentor support and no overlapping funding for the same project.",
+      "url": "https://www.ahns.info/2027-grant-applications-now-open/",
+      "conferenceId": null,
+      "note": "CORE letter of intent due December 15, 2026. If eligible/invited, full application due January 15, 2027. Institutional COI review appropriate.",
+      "flag": null,
+      "specialties": [
+        "Otolaryngology",
+        "Hematology & Oncology"
+      ],
+      "scope": "independent",
+      "relatedConferenceId": null,
+      "open": "2026-10-01",
+      "dateEvidence": "AHNS official applications-now-open announcement dated October 1, 2026; https://www.ahns.info/2027-grant-applications-now-open/",
+      "deadlineLabel": "Letter of intent deadline",
+      "stages": [
+        {
+          "label": "Full application (after LOI)",
+          "date": "2027-01-15"
+        }
+      ],
+      "applicationProcess": "Submit a CORE letter of intent through ProposalCentral by December 15, 2026, 11:59 p.m. ET; eligible full applications are due January 15, 2027.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/",
+      "verificationNote": "2027 CORE letter-of-intent and full application deadlines confirmed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ahns-trainee-pilot27",
+      "name": "AHNS Trainee Pilot Research Award 2027",
+      "society": "American Head and Neck Society",
+      "amount": "Up to $20,000",
+      "category": "Research grant",
+      "opens": "2026-10-01",
+      "open": "2026-10-01",
+      "deadline": "2026-12-15",
+      "deadlineLabel": "Letter of intent deadline",
+      "eligibility": "AHNS members who are U.S./Canada-based medical students, residents, fellows or graduate students in head and neck oncology research; faculty mentoring and departmental support letters required.",
+      "url": "https://www.ahns.info/2027-grant-applications-now-open/",
+      "scope": "independent",
+      "conferenceId": null,
+      "specialties": [
+        "Otolaryngology",
+        "Hematology & Oncology",
+        "Radiation Oncology"
+      ],
+      "note": "Separate from the Alando J. Ballantyne Resident Research Pilot Grant. CORE LOI is due December 15, 2026; full application January 15, 2027. No duplicate funding for the same project.",
+      "stages": [
+        {
+          "label": "Full application",
+          "date": "2027-01-15"
+        }
+      ],
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.ahns.info/2027-grant-applications-now-open/",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "amssm-davenport",
+      "name": "AMSSM Jason Davenport Memorial Scholarship",
+      "society": "AMSSM Foundation",
+      "amount": "$500",
+      "category": "Trainee scholarship",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible underrepresented-minority AMSSM members presenting an accepted case report or research abstract at the upcoming AMSSM Annual Meeting.",
+      "url": "https://www.amssm.org/Resident-Scholarships.php",
+      "conferenceId": "amssm27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Submit scholarship application and qualifying case/research abstract; accepted poster or podium presentation required.",
+      "specialties": [
+        "Sports Medicine",
+        "Family Medicine",
+        "Internal Medicine",
+        "Pediatrics",
+        "Emergency Medicine",
         "Physical Medicine & Rehabilitation"
       ],
       "flag": null,
       "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.physiatry.org/about-aap/awards/",
+      "verificationSource": "https://www.amssm.org/Resident-Scholarships.php",
       "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
       "fieldSources": {}
     },
@@ -11006,67 +9968,242 @@ window.RISE_DATA = {
       "fieldSources": {}
     },
     {
-      "id": "amssm-davenport",
-      "name": "AMSSM Jason Davenport Memorial Scholarship",
-      "society": "AMSSM Foundation",
-      "amount": "$500",
-      "category": "Trainee scholarship",
+      "id": "apa-epa-nextgen27",
+      "name": "EPA Next Generation Psychiatrist Awards 2027",
+      "society": "European Psychiatric Association",
+      "amount": "€2,000 + registration + up to €500 travel",
+      "category": "Recognition award",
+      "deadline": "2026-11-02",
+      "opens": null,
+      "open": null,
+      "eligibility": "Early-career psychiatrists under 40 or within five years of specialist training working within WHO European region.",
+      "url": "https://epa-congress.org/scientific-programme/next-generation-psychiatrist-awards/",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Psychiatry"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Apply to European Psychiatric Association for 2027 recognition and congress attendance.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": "epa27",
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://epa-congress.org/scientific-programme/next-generation-psychiatrist-awards/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://epa-congress.org/scientific-programme/next-generation-psychiatrist-awards/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "apa-resident-recognition",
+      "name": "APA Resident Recognition Award",
+      "society": "American Psychiatric Association",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "APA-member residents/fellows in good standing demonstrating compassion, clinical excellence, service, or leadership.",
+      "url": "https://www.psychiatry.org/membership/awards-leadership-opportunities/awards/resident-recognition-award",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Psychiatry"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "One nomination per training department: nominee CV, nomination letter, residency director endorsement. Annual March 31 deadline; verify cycle.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.psychiatry.org/membership/awards-leadership-opportunities/awards/resident-recognition-award",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "apsf-trainee-qi",
+      "name": "APSF Trainee Quality Improvement / Patient Safety Recognition",
+      "society": "Anesthesia Patient Safety Foundation",
+      "amount": "Conference travel and presentation (2026)",
+      "category": "Recognition award",
       "open": null,
       "opens": null,
       "deadline": null,
       "deadlineLabel": "Application deadline",
-      "eligibility": "Eligible underrepresented-minority AMSSM members presenting an accepted case report or research abstract at the upcoming AMSSM Annual Meeting.",
-      "url": "https://www.amssm.org/Resident-Scholarships.php",
-      "conferenceId": "amssm27",
+      "eligibility": "Current physician anesthesiology residents or trainees who graduated in the immediately preceding academic year presenting anesthesia patient-safety or quality-improvement projects.",
+      "url": "https://www.apsf.org/grants-and-awards/quality-improvement-awards/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
       "nominationBased": false,
-      "scope": "conference",
-      "note": "",
-      "applicationProcess": "Submit scholarship application and qualifying case/research abstract; accepted poster or podium presentation required.",
+      "scope": "standalone",
+      "note": "2026 submission cycle closed June 30; 2027 rules pending.",
+      "applicationProcess": "Submit QI/patient-safety project summary as a document or brief video and notify APSF.",
       "specialties": [
-        "Sports Medicine",
-        "Family Medicine",
-        "Internal Medicine",
-        "Pediatrics",
-        "Emergency Medicine",
-        "Physical Medicine & Rehabilitation"
+        "Anesthesiology"
       ],
       "flag": null,
       "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.amssm.org/Resident-Scholarships.php",
-      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "verificationSource": "https://www.apsf.org/grants-and-awards/quality-improvement-awards/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
       "fieldSources": {}
     },
     {
-      "id": "arvo-travel27",
-      "name": "ARVO 2027 Member-in-Training and Early Career Travel Grants",
-      "society": "Association for Research in Vision and Ophthalmology",
-      "amount": "Meeting registration + travel stipend",
-      "category": "Travel award",
-      "open": "2026-10-16",
-      "opens": "2026-10-16",
-      "deadline": "2026-12-04",
-      "deadlineLabel": "Abstract and travel-grant deadline",
-      "eligibility": "ARVO member-in-training or early-career researchers with accepted original abstracts for ARVO Annual Meeting 2027.",
-      "url": "https://www.arvo.org/awards-and-grants/travel-grants",
-      "conferenceId": "arvo27",
-      "nominationBased": false,
-      "scope": "conference",
-      "note": "",
-      "applicationProcess": "Select travel-grant application during regular ARVO 2027 abstract submission; accepted abstract required.",
+      "id": "arro-access-publication",
+      "name": "ARRO Healthcare Access Publication Award",
+      "society": "ARRO / ASTRO Foundation",
+      "amount": "$1,500 (2026 cycle)",
+      "category": "Recognition award",
+      "deadline": "2026-07-07",
+      "opens": null,
+      "open": null,
+      "eligibility": "Eligible ASTRO-member medical students or residents who were first/last author of an eligible peer-reviewed healthcare-access publication.",
+      "url": "https://www.astro.org/interest-groups/arro/latest-news/arro-2026-health-care-access-publication-award-call",
+      "conferenceId": null,
+      "note": "2026 cycle closed; publication dates and membership window change by year.",
+      "flag": null,
       "specialties": [
-        "Ophthalmology"
+        "Radiation Oncology"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Nomination or self-nomination by ASTRO member with article and one-page support statement.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.astro.org/interest-groups/arro/latest-news/arro-2026-health-care-access-publication-award-call",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.astro.org/interest-groups/arro/latest-news/arro-2026-health-care-access-publication-award-call",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "arro-educator",
+      "name": "ARRO Resident Educator of the Year",
+      "society": "Association of Residents in Radiation Oncology / ASTRO",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": "2026-04-17",
+      "opens": null,
+      "open": null,
+      "eligibility": "PGY-2–PGY-5 radiation oncology residents with educational innovation, teaching impact, curriculum development or leadership.",
+      "url": "https://www.astro.org/interest-groups/arro/about-arro/arro-resident-educator-of-the-year-award",
+      "conferenceId": null,
+      "note": "2026 nominations closed; do not apply this date to 2027.",
+      "flag": null,
+      "specialties": [
+        "Radiation Oncology"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Self-, resident-, or attending nomination; provide CV and a support letter.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.astro.org/interest-groups/arro/about-arro/arro-resident-educator-of-the-year-award",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.astro.org/interest-groups/arro/about-arro/arro-resident-educator-of-the-year-award",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "ars-ecoa",
+      "name": "ARS Early Career Oncologist Award",
+      "society": "American Radium Society",
+      "amount": "$500 + up to $1,500 travel (latest guidelines)",
+      "category": "Merit award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "First-author trainees, fellows, or junior faculty within one year of residency with new oncology research submitted to the ARS Annual Meeting.",
+      "url": "https://www.americanradiumsociety.org/page/Recognition",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Radiation Oncology",
+        "Hematology & Oncology",
+        "Surgery"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Meeting abstract, full manuscript, personal statement, and chair/program director support.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.americanradiumsociety.org/page/Recognition",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ars-resident-rhinology",
+      "name": "American Rhinologic Society CORE Resident Research Grant 2027",
+      "society": "American Rhinologic Society / CORE",
+      "amount": "$10,000 (2027 CORE)",
+      "category": "Research grant",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Residents in approved US or Canadian training programs conducting rhinology research with an ARS-member supervising faculty co-investigator.",
+      "url": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Submit grant application through CORE with supervising faculty support.",
+      "specialties": [
+        "Otolaryngology"
       ],
       "flag": null,
       "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.arvo.org/awards-and-grants/travel-grants",
-      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.arvo.org/awards-and-grants/travel-grants",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official award program"
-        }
-      }
+      "verificationSource": "https://www.entnet.org/quality-practice/research/core-grants-program/2027-core-funding-opportunity-announcements/",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ars-travel",
+      "name": "ARS Young Investigator Travel Grant",
+      "society": "American Radium Society",
+      "amount": "Up to $1,500 travel + registration",
+      "category": "Travel award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Eligible young first-author investigators presenting new oncology research at ARS.",
+      "url": "https://www.americanradiumsociety.org/page/Recognition",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Radiation Oncology",
+        "Hematology & Oncology",
+        "Surgery"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Annual meeting abstract, statement and program director/chair letter.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.americanradiumsociety.org/page/Recognition",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
     },
     {
       "id": "arvo-clinician-scientist27",
@@ -11133,6 +10270,432 @@ window.RISE_DATA = {
       }
     },
     {
+      "id": "arvo-travel27",
+      "name": "ARVO 2027 Member-in-Training and Early Career Travel Grants",
+      "society": "Association for Research in Vision and Ophthalmology",
+      "amount": "Meeting registration + travel stipend",
+      "category": "Travel award",
+      "open": "2026-10-16",
+      "opens": "2026-10-16",
+      "deadline": "2026-12-04",
+      "deadlineLabel": "Abstract and travel-grant deadline",
+      "eligibility": "ARVO member-in-training or early-career researchers with accepted original abstracts for ARVO Annual Meeting 2027.",
+      "url": "https://www.arvo.org/awards-and-grants/travel-grants",
+      "conferenceId": "arvo27",
+      "nominationBased": false,
+      "scope": "conference",
+      "note": "",
+      "applicationProcess": "Select travel-grant application during regular ARVO 2027 abstract submission; accepted abstract required.",
+      "specialties": [
+        "Ophthalmology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.arvo.org/awards-and-grants/travel-grants",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.arvo.org/awards-and-grants/travel-grants",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "asbrsres27",
+      "name": "ASBrS 2027 Scientific Presentation Award",
+      "society": "American Society of Breast Surgeons",
+      "amount": "$500",
+      "category": "Presentation prize",
+      "deadline": "2027-04-01",
+      "opens": null,
+      "open": null,
+      "eligibility": "Medical students, residents, and fellows selected for oral or Quick Shot presentations; manuscript submission by April 1 required for eligibility.",
+      "url": "https://www.breastsurgeons.org/meeting/2027/abstracts",
+      "conferenceId": "asbrs27",
+      "note": "Competitive recognition, not guaranteed travel funding. Manuscript deadline is NOT an abstract submission deadline.",
+      "flag": null,
+      "specialties": [
+        "Surgery"
+      ],
+      "scope": "conference",
+      "deadlineLabel": "Manuscript deadline (not abstracts)",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.breastsurgeons.org/meeting/2027/abstracts",
+      "verificationNote": "Award eligibility and manuscript deadline for ASBrS 2027 confirmed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ascomerit",
+      "name": "ASCO Merit Awards",
+      "society": "American Society of Clinical Oncology",
+      "amount": "Varies",
+      "category": "Merit award",
+      "deadline": null,
+      "opens": null,
+      "eligibility": "Eligible trainees/residents/fellows, depending on meeting-specific criteria and accepted abstract.",
+      "url": "https://www.asco.org/meetings-education/meetings/abstract-submissions",
+      "conferenceId": "asco27",
+      "note": "Award values and eligibility vary by meeting.",
+      "flag": null,
+      "specialties": [
+        "Hematology & Oncology"
+      ],
+      "scope": "conference",
+      "open": null
+    },
+    {
+      "id": "ascp-40under40",
+      "name": "ASCP 40 Under Forty Recognition",
+      "society": "American Society for Clinical Pathology",
+      "amount": "Leadership recognition, career development; Top Five award",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Nomination / application deadline",
+      "eligibility": "ASCP pathologist, resident, fellow-in-training, or eligible laboratory professional member under age 40. Students and prior honorees are ineligible.",
+      "url": "https://www.ascp.org/membership-resources/awards-recognition/40-under-forty",
+      "conferenceId": null,
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Submit nomination or application demonstrating leadership, accomplishments and innovation.",
+      "note": "2026 cohort named; the next award application cycle is not yet posted.",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.ascp.org/membership-resources/awards-recognition/40-under-forty",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ash-outstanding27",
+      "name": "ASH Outstanding Abstract Achievement Awards",
+      "society": "American Society of Hematology",
+      "amount": "$2,000 plus eligible travel",
+      "category": "Merit award",
+      "opens": null,
+      "open": null,
+      "deadline": null,
+      "eligibility": "Trainees with highest-scoring ASH meeting abstracts, including eligible medical students and resident physicians, who meet annual abstract author/presenter and mentor verification requirements.",
+      "url": "https://www.hematology.org/awards/achievement-awards",
+      "scope": "conference",
+      "conferenceId": "ash27",
+      "specialties": [
+        "Hematology & Oncology"
+      ],
+      "note": "Distinct from the $500 standard Abstract Achievement Awards. Annual program terms confirmed, but 2027 submission dates are not yet announced.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.hematology.org/awards/achievement-awards",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "ashachieve",
+      "name": "ASH Abstract Achievement Awards",
+      "society": "American Society of Hematology",
+      "amount": "$500",
+      "category": "Merit award",
+      "deadline": null,
+      "opens": null,
+      "eligibility": "Medical students, resident physicians and eligible other trainees who are qualifying first/senior authors and presenters of a high-scoring ASH annual meeting abstract. Trainee declaration and mentor/program-director letter required.",
+      "url": "https://www.hematology.org/awards/achievement-awards",
+      "conferenceId": "ash27",
+      "note": "Annual ASH award amount and procedure are confirmed; application occurs within ASH annual meeting abstract submission. ASH 2027 abstract submission and award cycle dates remain unannounced; do not copy 2026 dates.",
+      "flag": null,
+      "specialties": [
+        "Hematology & Oncology"
+      ],
+      "scope": "conference",
+      "open": null,
+      "applicationProcess": "2026 guidance: request consideration within the annual meeting abstract submission; 2027 process must be confirmed.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.hematology.org/awards/achievement-awards",
+      "verificationNote": "Evergreen award rules confirmed, 2027 cycle dates not available.",
+      "fieldSources": {}
+    },
+    {
+      "id": "asps-rising-star",
+      "name": "ASPS Rising Star Award",
+      "society": "American Society of Plastic Surgeons",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Plastic surgery resident or fellow with significant contributions to ASPS or its membership during the preceding year.",
+      "url": "https://www.plasticsurgery.org/for-medical-professionals/community/young-plastic-surgeons-forum/rising-star-award",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": true,
+      "scope": "standalone",
+      "note": "Society states applications reopen in April 2027; no exact opening or deadline announced.",
+      "applicationProcess": "Apply under the annual Rising Star Awards call; nominations/letters based on official instructions.",
+      "specialties": [
+        "Plastic Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.plasticsurgery.org/for-medical-professionals/community/young-plastic-surgeons-forum/rising-star-award",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "astro-resident-poster",
+      "name": "ASTRO Resident Poster Viewing Recognition",
+      "society": "American Society for Radiation Oncology",
+      "amount": "Trophy (2026 rules)",
+      "category": "Presentation prize",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Residents with top-rated qualifying ASTRO digital poster abstracts in clinical, biology or physics categories.",
+      "url": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
+      "conferenceId": "astro27",
+      "note": "2026 policy; 2027 criteria not yet posted.",
+      "flag": null,
+      "specialties": [
+        "Radiation Oncology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "astro-resident-quick",
+      "name": "ASTRO Resident Quick Pitch Oral Abstract Recognition",
+      "society": "American Society for Radiation Oncology",
+      "amount": "Trophy (2026 rules)",
+      "category": "Presentation prize",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Residents with top-rated qualifying ASTRO Quick Pitch scientific oral presentations.",
+      "url": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
+      "conferenceId": "astro27",
+      "note": "2026 policy; 2027 criteria not yet posted.",
+      "flag": null,
+      "specialties": [
+        "Radiation Oncology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "astro-resident-science",
+      "name": "ASTRO Resident Clinical/Basic Science Research Abstract Awards",
+      "society": "American Society for Radiation Oncology",
+      "amount": "$1,500 plus registration (2026 rules)",
+      "category": "Merit award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Resident authors of the top rated significant ASTRO abstracts in biology, clinical practice and physics.",
+      "url": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
+      "conferenceId": "astro27",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Radiation Oncology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Award consideration through regular ASTRO abstract submission; confirm 2027 rules.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.astro.org/meetings-and-education/micro-sites/2026/annual-meeting/learn/scientific-program/abstracts",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "auanet-resident-research",
+      "name": "AUA Urology Care Foundation Residency Research Award",
+      "society": "American Urological Association / Urology Care Foundation",
+      "amount": "Recognition",
+      "category": "Research grant",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Urology residents at accredited programs undertaking mentored research with institutional support and appropriate protected research time.",
+      "url": "https://www.auanet.org/about-us/aua-governance/awards/urology-care-foundation-awards",
+      "conferenceId": null,
+      "relatedConferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Do not infer a 2027 deadline from historical 2025 funding announcements.",
+      "applicationProcess": "Apply to annual Urology Care Foundation residency research funding call with mentor, project plan, and institutional commitments.",
+      "specialties": [
+        "Urology"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.auanet.org/about-us/aua-governance/awards/urology-care-foundation-awards",
+      "verificationNote": "Eligibility and opportunity based on the official society source; unannounced dates are intentionally blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "gsa-schutz26",
+      "name": "GSA Carol A. Schutz Student / Early-Career Travel Stipend",
+      "society": "Gerontological Society of America",
+      "amount": "Travel stipend (lottery)",
+      "category": "Travel award",
+      "open": "2026-06-09",
+      "opens": "2026-06-09",
+      "deadline": "2026-07-28",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Current GSA student or early-career member with eligible membership and annual-meeting attendance; residents must verify their GSA membership eligibility.",
+      "url": "https://www.geron.org/Membership/Member-Center/Awards/Student-Travel-Stipends-/Carol-A-Schutz-Travel-Stipend",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "Closed 2026 cycle; recipient selected by lottery.",
+      "applicationProcess": "Apply according to GSA Student and Early Career membership requirements.",
+      "specialties": [
+        "Geriatrics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.geron.org/Membership/Member-Center/Awards/Student-Travel-Stipends-/Carol-A-Schutz-Travel-Stipend",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.geron.org/Membership/Member-Center/Awards/Student-Travel-Stipends-/Carol-A-Schutz-Travel-Stipend",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "gsa-tj26",
+      "name": "GSA TJ McCallum Memorial Student Travel Award",
+      "society": "Gerontological Society of America",
+      "amount": "Travel support",
+      "category": "Travel award",
+      "open": "2026-06-09",
+      "opens": "2026-06-09",
+      "deadline": "2026-07-28",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "GSA student or early-career members with an accepted paper, poster or symposium contribution focused on caregiving or technology and aging.",
+      "url": "https://www.geron.org/membership/member-center/awards/student-travel-stipends-/tj-mccallum-memorial-student-travel-award",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "2026 cycle closed; clinical residents must independently meet GSA membership eligibility.",
+      "applicationProcess": "Self-nominate with blinded/unblinded paper, abstract ID, and coauthor statement.",
+      "specialties": [
+        "Geriatrics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.geron.org/membership/member-center/awards/student-travel-stipends-/tj-mccallum-memorial-student-travel-award",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.geron.org/membership/member-center/awards/student-travel-stipends-/tj-mccallum-memorial-student-travel-award",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "institutional",
+      "name": "Institutional GME / Departmental Research Support",
+      "society": "Your residency program",
+      "amount": "Institution-dependent",
+      "category": "Institutional support",
+      "deadline": null,
+      "opens": null,
+      "eligibility": "Ask GME/research office about travel reimbursement, conference budgets, institutional pilot funding and mentor-supported applications.",
+      "url": "",
+      "conferenceId": null,
+      "note": "Not a confirmed grant; displayed as a funding route, not an advertised external award.",
+      "flag": "local",
+      "specialties": [
+        "All specialties"
+      ],
+      "scope": "institutional",
+      "open": null
+    },
+    {
+      "id": "ishlt-travel27",
+      "name": "ISHLT 2027 Trainee / Presenter Travel Awards",
+      "society": "International Society for Heart and Lung Transplantation",
+      "amount": "Travel/registration assistance",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Eligible ISHLT annual-meeting abstract presenters including trainees and junior investigators, with application requirements to be confirmed.",
+      "url": "https://www.ishlt.org/about/news-detail/2026/08/03/now-open--ishlt2027-call-for-abstracts",
+      "conferenceId": "ishlt27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "2027 travel award applications open December 2026; separate criteria and deadline pending.",
+      "note": "ISHLT confirms December 2026 opening but no exact day.",
+      "flag": null,
+      "specialties": [
+        "Transplantation",
+        "Cardiothoracic Surgery",
+        "Pulmonary & Critical Care"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.ishlt.org/about/news-detail/2026/08/03/now-open--ishlt2027-call-for-abstracts",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "isn-wcntravel27",
+      "name": "ISN WCN 2027 Travel Grants",
+      "society": "International Society of Nephrology",
+      "amount": "Registration and fixed travel contribution for eligible applicants",
+      "category": "Travel award",
+      "deadline": "2026-10-31",
+      "opens": "2026-09-16",
+      "open": "2026-09-16",
+      "eligibility": "Eligible ISN members from low- and lower-middle-income countries, with WCN abstract/presenter criteria depending on grant type.",
+      "url": "https://www.theisn.org/wcn/about/deadlines/",
+      "conferenceId": "wcn27",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Nephrology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Apply to the official WCN travel-grant program; country and membership restrictions.",
+      "deadlineLabel": "Grant application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.theisn.org/wcn/about/deadlines/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.theisn.org/wcn/about/deadlines/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
       "id": "rrf-choose-rheum26",
       "name": "Rheumatology Research Foundation Choose Rheumatology Scholarship",
       "society": "Rheumatology Research Foundation",
@@ -11152,40 +10715,6 @@ window.RISE_DATA = {
       "specialties": [
         "Rheumatology",
         "Internal Medicine"
-      ],
-      "flag": null,
-      "lastVerified": "2026-10-24",
-      "verificationSource": "https://www.rheumresearch.org/acr-convergence-awards",
-      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
-      "fieldSources": {
-        "deadline": {
-          "url": "https://www.rheumresearch.org/acr-convergence-awards",
-          "checked_at": "2026-10-24",
-          "verified_by": "Official award program"
-        }
-      }
-    },
-    {
-      "id": "rrf-student-resident26",
-      "name": "RRF Student & Resident Research Award",
-      "society": "Rheumatology Research Foundation",
-      "amount": "$1,000 award + $1,000 travel (2026)",
-      "category": "Merit award",
-      "open": null,
-      "opens": null,
-      "deadline": "2026-08-03",
-      "deadlineLabel": "Application deadline",
-      "eligibility": "Medical students or residents authoring or co-authoring research abstracts submitted to ACR Convergence.",
-      "url": "https://www.rheumresearch.org/acr-convergence-awards",
-      "conferenceId": null,
-      "nominationBased": false,
-      "scope": "standalone",
-      "note": "2026 award deadline closed; 2027 annual cycle not yet announced. The 2026 award is associated with ACR Convergence 2026, not the 2027 meeting.",
-      "applicationProcess": "Submit ACR Convergence original abstract and apply to the RRF Student & Resident Research Award.",
-      "specialties": [
-        "Rheumatology",
-        "Internal Medicine",
-        "Pediatrics"
       ],
       "flag": null,
       "lastVerified": "2026-10-24",
@@ -11225,6 +10754,707 @@ window.RISE_DATA = {
       "lastVerified": "2026-10-24",
       "verificationSource": "https://www.rheumresearch.org/awards-grants",
       "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {}
+    },
+    {
+      "id": "rrf-student-resident26",
+      "name": "RRF Student & Resident Research Award",
+      "society": "Rheumatology Research Foundation",
+      "amount": "$1,000 award + $1,000 travel (2026)",
+      "category": "Merit award",
+      "open": null,
+      "opens": null,
+      "deadline": "2026-08-03",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Medical students or residents authoring or co-authoring research abstracts submitted to ACR Convergence.",
+      "url": "https://www.rheumresearch.org/acr-convergence-awards",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "2026 award deadline closed; 2027 annual cycle not yet announced. The 2026 award is associated with ACR Convergence 2026, not the 2027 meeting.",
+      "applicationProcess": "Submit ACR Convergence original abstract and apply to the RRF Student & Resident Research Award.",
+      "specialties": [
+        "Rheumatology",
+        "Internal Medicine",
+        "Pediatrics"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.rheumresearch.org/acr-convergence-awards",
+      "verificationNote": "Official society award page confirmed; annual cycles or resident-specific eligibility must be reviewed.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.rheumresearch.org/acr-convergence-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official award program"
+        }
+      }
+    },
+    {
+      "id": "rsna-medstudent27",
+      "name": "RSNA Medical Student Research Grant",
+      "society": "Radiological Society of North America",
+      "amount": "$3,000 stipend",
+      "category": "Research grant",
+      "opens": null,
+      "open": null,
+      "deadline": "2027-02-05",
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Full-time medical students at accredited North American medical schools; RSNA membership required (free for students); 8–10 weeks of full-time mentored research in radiology, radiation oncology or nuclear medicine.",
+      "url": "https://www.rsna.org/research/funding-opportunities/research-grants/medical-student-research-grant",
+      "scope": "independent",
+      "conferenceId": null,
+      "specialties": [
+        "Radiology",
+        "Radiation Oncology",
+        "Nuclear Medicine"
+      ],
+      "note": "2027 deadline Feb. 5 at 11:59 p.m. CT. RSNA provides a $3,000 stipend, which must be matched by the sponsoring department ($6,000 total student stipend). Project involves 8–10 weeks full time. This is not meeting travel funding.",
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.rsna.org/research/funding-opportunities/research-grants/medical-student-research-grant",
+      "verificationNote": "2027 terms verified from official organizer; any unannounced exact date remains blank.",
+      "fieldSources": {}
+    },
+    {
+      "id": "rsna-resident",
+      "name": "RSNA Research Resident Grant",
+      "society": "Radiological Society of North America",
+      "amount": "Up to $50,000",
+      "category": "Research grant",
+      "deadline": "2027-01-22",
+      "opens": null,
+      "eligibility": "RSNA-member residents in radiology, radiation oncology, nuclear medicine or medical physics carrying out a mentored research project at an eligible North American institution; required research effort and advisor/institutional approvals apply.",
+      "url": "https://www.rsna.org/research/funding-opportunities/research-grants/resident-fellow-research-grant",
+      "note": "2027 grant applications are open; deadline Jan. 22, 2027 at 11:59 p.m. CT. Resident award up to $50,000 over 1–2 years; fellow award is a distinct $75,000 track. RSNA permits one R&E Foundation grant application per cycle.",
+      "flag": null,
+      "specialties": [
+        "Radiology"
+      ],
+      "scope": "independent",
+      "relatedConferenceId": "rsna27",
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.rsna.org/research/funding-opportunities/research-grants/resident-fellow-research-grant",
+      "verificationNote": "2027 deadline, award amounts and resident eligibility verified on official RSNA program page."
+    },
+    {
+      "id": "rsnaprize",
+      "name": "RSNA Trainee Research Prizes",
+      "society": "Radiological Society of North America",
+      "amount": "$1,000",
+      "category": "Presentation prize",
+      "deadline": null,
+      "opens": null,
+      "eligibility": "RSNA Member-in-Training; scientific abstract presenter who is a radiology resident, fellow, medical student, or medical physics trainee and receives an outstanding presentation score.",
+      "url": "https://www.rsna.org/annual-meeting/abstract-submission",
+      "conferenceId": "rsna27",
+      "note": "Competitive prize judged on meeting scientific presentation; no verified separate prize application deadline for RSNA 2027. Do not substitute the 2026 meeting's abstract dates.",
+      "flag": null,
+      "specialties": [
+        "Radiology"
+      ],
+      "scope": "conference",
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.rsna.org/annual-meeting/abstract-submission",
+      "verificationNote": "Prize amount and general eligibility verified; 2027 submission dates unavailable.",
+      "fieldSources": {}
+    },
+    {
+      "id": "saem-awaem-travel",
+      "name": "AWAEM Resident Travel Award",
+      "society": "SAEM Academy for Women in Academic Emergency Medicine",
+      "amount": "Recognition",
+      "category": "Travel award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Eligible senior EM residents who are members of SAEM and AWAEM and have demonstrated promise in research, service, teaching or advocacy.",
+      "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/awaem/resources/awaem-awards",
+      "conferenceId": null,
+      "note": "Do not roll forward the 2026 deadline.",
+      "flag": null,
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Nomination typically requires CV and support letter; confirm 2027 eligibility.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/awaem/resources/awaem-awards",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "saem-best-resident",
+      "name": "SAEM Best Resident Abstract Presentation Award",
+      "society": "Society for Academic Emergency Medicine",
+      "amount": "Recognition",
+      "category": "Presentation prize",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Resident presenters of exceptional original research abstracts accepted at the SAEM Annual Meeting.",
+      "url": "https://www.saem.org/research/saem-awards/saem-awards",
+      "conferenceId": "saem27",
+      "note": "Selection based on meeting abstract/presentation review.",
+      "flag": null,
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Opt into presentation award consideration during regular abstract submission.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.saem.org/research/saem-awards/saem-awards",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "saem-cdem-teacher",
+      "name": "CDEM Resident Teacher Award",
+      "society": "SAEM Clerkship Directors in Emergency Medicine",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Emergency medicine resident with outstanding teaching or precepting of medical and interprofessional learners.",
+      "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/cdem/about-cdem/cdem-awards",
+      "conferenceId": null,
+      "note": "Awarded by training program; faculty select program recipient.",
+      "flag": null,
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Nomination by clerkship director or residency program director; no more than one per residency program.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/cdem/about-cdem/cdem-awards",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "saem-rams-education",
+      "name": "SAEM RAMS Excellence in Education Award",
+      "society": "Society for Academic Emergency Medicine",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": "2026-12-04",
+      "opens": "2026-10-12",
+      "open": "2026-10-12",
+      "eligibility": "Eligible SAEM resident and medical-student members recognized for educational leadership and accomplishment.",
+      "url": "https://www.saem.org/research/saem-awards/saem-awards",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "SAEM nomination or self-nomination.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.saem.org/research/saem-awards/saem-awards",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.saem.org/research/saem-awards/saem-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "saem-rams-leadership",
+      "name": "SAEM RAMS Leadership in Emergency Medicine Award",
+      "society": "Society for Academic Emergency Medicine",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": "2026-12-04",
+      "opens": "2026-10-12",
+      "open": "2026-10-12",
+      "eligibility": "Eligible resident and medical-student SAEM members demonstrating exceptional leadership in academic emergency medicine.",
+      "url": "https://www.saem.org/research/saem-awards/saem-awards",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "SAEM nomination or self-nomination; eligibility/nominee career stage varies by award.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.saem.org/research/saem-awards/saem-awards",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.saem.org/research/saem-awards/saem-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "saem-rams-recognition",
+      "name": "SAEM RAMS Recognition Program",
+      "society": "Society for Academic Emergency Medicine",
+      "amount": "Recognition certificate",
+      "category": "Recognition award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Residents, medical students and fellows who meaningfully contributed to academic emergency medicine and deserve peer acknowledgment.",
+      "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/rams",
+      "conferenceId": null,
+      "note": "Year-round nominations reviewed quarterly.",
+      "flag": null,
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Resident, medical student or fellow may nominate; recipients may be featured in SAEM media.",
+      "deadlineLabel": "Rolling nominations",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/rams",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "saem-rams-research",
+      "name": "SAEM RAMS Excellence in Research Award",
+      "society": "Society for Academic Emergency Medicine",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": "2026-12-04",
+      "opens": "2026-10-12",
+      "open": "2026-10-12",
+      "eligibility": "Eligible SAEM residents or medical students recognized for outstanding research contributions.",
+      "url": "https://www.saem.org/research/saem-awards/saem-awards",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "SAEM nomination or self-nomination.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.saem.org/research/saem-awards/saem-awards",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.saem.org/research/saem-awards/saem-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "saem-simulation",
+      "name": "SAEM Simulation Academy Trainee Awards",
+      "society": "Society for Academic Emergency Medicine",
+      "amount": "Recognition",
+      "category": "Recognition award",
+      "deadline": "2026-12-04",
+      "opens": "2026-10-12",
+      "open": "2026-10-12",
+      "eligibility": "Eligible EM residents, simulation fellows and faculty who are current SAEM and Simulation Academy members.",
+      "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/simulation/resource/simulation-academy-awards",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Emergency Medicine"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Nomination statement (up to 300 words), with optional CV and support letters.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/simulation/resource/simulation-academy-awards",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.saem.org/about-saem/academies-interest-groups-affiliates2/simulation/resource/simulation-academy-awards",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "sgimscholar",
+      "name": "SGIM National Young Scholars Program",
+      "society": "Society of General Internal Medicine",
+      "amount": "Scholarship / varies",
+      "category": "Trainee scholarship",
+      "deadline": null,
+      "opens": null,
+      "eligibility": "Medical students, interns and residents interested in general internal medicine; active SGIM membership required. Abstract presentation is not mandatory.",
+      "url": "https://www.sgim.org/professional-career-development/programs/trainee-engagement-programs/",
+      "conferenceId": "sgim27",
+      "note": "SGIM says the 2027 scholarship program will open in December 2026; an exact day and application deadline are not yet published. The February 19, 2026 deadline shown on the page belongs to the prior cycle.",
+      "flag": null,
+      "specialties": [
+        "Internal Medicine"
+      ],
+      "scope": "conference",
+      "open": null,
+      "lastVerified": "2026-10-12",
+      "verificationSource": "https://www.sgim.org/professional-career-development/programs/trainee-engagement-programs/",
+      "verificationNote": "2027 opening month confirmed; exact date and deadline not yet verified.",
+      "fieldSources": {}
+    },
+    {
+      "id": "sgo-resident",
+      "name": "SGO Outstanding Resident in Gynecologic Oncology Award",
+      "society": "Society of Gynecologic Oncology",
+      "amount": "National recognition",
+      "category": "Recognition award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "OB/GYN residents selected by their programs for exceptional gynecologic oncology patient care, professionalism and leadership.",
+      "url": "https://www.sgo.org/members-only/program-directors-network/",
+      "conferenceId": null,
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Obstetrics & Gynecology"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Program-directed annual selection; one resident per participating institution.",
+      "deadlineLabel": "Program nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.sgo.org/members-only/program-directors-network/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "sgo-winter-presentation",
+      "name": "SGO Winter Meeting Best Resident/Fellow Abstract Presentation",
+      "society": "Society of Gynecologic Oncology",
+      "amount": "Best oral / best poster recognition",
+      "category": "Presentation prize",
+      "deadline": "2026-10-05",
+      "opens": null,
+      "open": null,
+      "eligibility": "Eligible students, residents and fellows presenting outstanding original research at the SGO Winter Meeting.",
+      "url": "https://www.sgo.org/events/call-for-abstracts-2/",
+      "conferenceId": null,
+      "note": "The 2027 Winter Meeting regular abstract deadline was Oct 5, 2026; closed.",
+      "flag": null,
+      "specialties": [
+        "Obstetrics & Gynecology",
+        "Hematology & Oncology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit research abstract; judged on scientific quality, novelty and presentation.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.sgo.org/events/call-for-abstracts-2/",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.sgo.org/events/call-for-abstracts-2/",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "sir-resident-in-training-scholarship27",
+      "name": "SIR Resident-in-Training Travel Scholarship 2027",
+      "society": "Society of Interventional Radiology",
+      "amount": "$1,000 travel + complimentary registration",
+      "category": "Travel award",
+      "deadline": "2026-10-20",
+      "eligibility": "Current U.S./Canadian PGY-1–4 interventional or diagnostic radiology residents who are SIR members, including eligible matched interns; excludes previous scholarship recipients and certain current RFS leaders.",
+      "url": "https://www.sirweb.org/about-sir/awards-grants-and-funding/resident-in-training-travel-scholarship/",
+      "conferenceId": "sir27",
+      "note": "Applications closed October 20, 2026 at 11:59 PM PT. Program includes meeting registration, travel support, networking and additional applicant essay/recommendation requirements.",
+      "specialties": [
+        "Interventional Radiology",
+        "Radiology"
+      ],
+      "lastVerified": "2026-11-23",
+      "verificationSource": "https://www.sirweb.org/about-sir/awards-grants-and-funding/resident-in-training-travel-scholarship/",
+      "verificationNote": "Official SIR Resident-in-Training Travel Scholarship page confirms 2027 timing and benefits.",
+      "flag": null,
+      "scope": "conference",
+      "open": null,
+      "opens": null,
+      "fieldSources": {}
+    },
+    {
+      "id": "sirfoundation-resident-research-award27",
+      "name": "SIR Foundation Resident Research Award 2027",
+      "society": "Society of Interventional Radiology Foundation",
+      "amount": "$1,000 travel stipend + registration (up to 2 awards)",
+      "category": "Travel award",
+      "deadline": "2026-11-15",
+      "eligibility": "Residents or fellows in IR-related training who are principal/co-principal investigators and presenters of an accepted original scientific research abstract at SIR 2027; oral presentation required.",
+      "url": "https://www.sirfoundation.org/get-funded/resident-research-award/",
+      "conferenceId": "sir27",
+      "note": "2027 applications closed November 15, 2026 at 5 p.m. ET. Abstracts were due September 24; award eligibility depends on accepted original research and an oral presentation.",
+      "specialties": [
+        "Interventional Radiology"
+      ],
+      "lastVerified": "2026-11-23",
+      "verificationSource": "https://www.sirfoundation.org/get-funded/resident-research-award/",
+      "verificationNote": "2027 SIR Foundation Resident Research Award official deadline, stipend and abstract presentation conditions.",
+      "flag": null,
+      "scope": "conference",
+      "open": null,
+      "opens": null,
+      "fieldSources": {}
+    },
+    {
+      "id": "sirfoundation-resident-research-grant27",
+      "name": "SIR Foundation Radiology Resident Research Grant",
+      "society": "Society of Interventional Radiology Foundation",
+      "amount": "Up to $20,000",
+      "category": "Research grant",
+      "deadline": "2027-01-15",
+      "open": "2026-04-01",
+      "opens": "2026-04-01",
+      "eligibility": "Full-time residents in an accredited clinical radiology residency in the U.S. or Canada; IR-focused mentored research, an advisor and at least 3 months of dedicated research time required.",
+      "url": "https://www.sirfoundation.org/get-funded/radiology-resident-research-grant/",
+      "conferenceId": null,
+      "note": "2027 grant cycle: applications opened April 1, 2026 and close January 15, 2027 at 5 p.m. ET. One-year funding for project supplies/equipment; SIR membership encouraged, not required. Review all eligibility and institutional commitments.",
+      "specialties": [
+        "Interventional Radiology",
+        "Radiology"
+      ],
+      "lastVerified": "2026-11-23",
+      "verificationSource": "https://www.sirfoundation.org/get-funded/radiology-resident-research-grant/",
+      "verificationNote": "Official SIR Foundation grant page and application portal confirm 2027 dates, up-to-$20,000 funding and residency eligibility.",
+      "flag": null,
+      "scope": "independent",
+      "fieldSources": {},
+      "deadlineLabel": "Final application deadline"
+    },
+    {
+      "id": "sitc-early",
+      "name": "SITC Early Career Investigator Abstract Awards",
+      "society": "Society for Immunotherapy of Cancer",
+      "amount": "Up to $750 travel; Presidential awards (2026)",
+      "category": "Merit award",
+      "deadline": null,
+      "opens": null,
+      "open": null,
+      "eligibility": "Eligible SITC-member students, postgraduate trainees and early faculty serving as primary and presenting authors of immuno-oncology research abstracts.",
+      "url": "https://www.sitcancer.org/2026/abstracts/abstract-submission/abstracts-early-career",
+      "conferenceId": null,
+      "note": "2026 eligibility confirmed; 2027 submission details not posted.",
+      "flag": null,
+      "specialties": [
+        "Hematology & Oncology",
+        "Radiation Oncology",
+        "Pathology"
+      ],
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit regular abstract and separate supervisor recommendation and contribution documentation.",
+      "deadlineLabel": "Application deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.sitcancer.org/2026/abstracts/abstract-submission/abstracts-early-career",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {}
+    },
+    {
+      "id": "sitc-rosenberg",
+      "name": "SITC Steven A. Rosenberg Scholars Award",
+      "society": "Society for Immunotherapy of Cancer",
+      "amount": "$150,000 (2026 cycle)",
+      "category": "Recognition award",
+      "deadline": "2026-06-12",
+      "opens": null,
+      "open": null,
+      "eligibility": "MD/PhD/MD-PhD early-career translational cancer immunotherapy researchers including eligible residents/postdoctoral fellows at cancer centers.",
+      "url": "https://www.sitcancer.org/get-involved/support/named-funds-awards/rosenberg",
+      "conferenceId": null,
+      "note": "2026 nominations closed.",
+      "flag": null,
+      "specialties": [
+        "Hematology & Oncology",
+        "Radiation Oncology",
+        "Pathology"
+      ],
+      "scope": "standalone",
+      "nominationBased": true,
+      "applicationProcess": "Research nomination under society annual call; check 2027 cycle.",
+      "deadlineLabel": "Nomination deadline",
+      "relatedConferenceId": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://www.sitcancer.org/get-involved/support/named-funds-awards/rosenberg",
+      "verificationNote": "Official society award information reviewed; dates only shown when confirmed for stated cycle.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://www.sitcancer.org/get-involved/support/named-funds-awards/rosenberg",
+          "checked_at": "2026-10-24",
+          "verified_by": "Official society website"
+        }
+      }
+    },
+    {
+      "id": "svs-yao27",
+      "name": "SVS James S.T. Yao Resident Research Award 2027",
+      "society": "Society for Vascular Surgery",
+      "amount": "$5,000 and scientific presentation",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": "2027-01-13",
+      "deadlineLabel": "Research award application deadline",
+      "eligibility": "Surgery residents, vascular surgery residents, or vascular fellows in US/Canadian training programs with original, unpublished, publication-quality vascular research.",
+      "url": "https://vascular.org/svs-foundation/programs-and-awards/james-st-yao-resident-research-award",
+      "conferenceId": null,
+      "nominationBased": false,
+      "scope": "standalone",
+      "note": "",
+      "applicationProcess": "Apply to the SVS Research Council; 11:59 p.m. Central Time deadline; one recipient.",
+      "specialties": [
+        "Vascular Surgery",
+        "Surgery"
+      ],
+      "flag": null,
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://vascular.org/svs-foundation/programs-and-awards/james-st-yao-resident-research-award",
+      "verificationNote": "Official society award page reviewed October 24, 2026; annual eligibility and dates may change.",
+      "fieldSources": {
+        "deadline": {
+          "url": "https://vascular.org/svs-foundation/programs-and-awards/james-st-yao-resident-research-award",
+          "checked_at": "2026-10-24",
+          "verified_by": "Society award program"
+        }
+      }
+    },
+    {
+      "id": "uscap-adasp27",
+      "name": "USCAP ADASP Surgical / Autopsy Pathology Trainee Awards",
+      "society": "USCAP and Association of Directors of Anatomic and Surgical Pathology",
+      "amount": "Two $500 prizes",
+      "category": "Presentation prize",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Pathology resident or fellow with an original morphology-based surgical pathology or autopsy abstract entered into the Stowell-Orbison poster competition.",
+      "url": "https://uscap.org/stowell-orbison-awards/",
+      "conferenceId": "uscap27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit eligible first-author abstract to the Stowell-Orbison competition.",
+      "note": "",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://uscap.org/stowell-orbison-awards/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "uscap-benjamin-castleman27",
+      "name": "USCAP Benjamin Castleman Award 2027",
+      "society": "United States and Canadian Academy of Pathology",
+      "amount": "$1,500",
+      "category": "Recognition award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Pathologist or pathology resident/fellow younger than 40 when an eligible original human pathology research paper was published.",
+      "url": "https://uscap.org/benjamin-castleman-award/",
+      "conferenceId": null,
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Submit an outstanding single English-language human-pathology publication from the award's eligible 12-month window; attendance at USCAP Annual Meeting not required.",
+      "note": "Independent publication recognition; confirm current cycle deadline.",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://uscap.org/benjamin-castleman-award/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "uscap-stowell27",
+      "name": "USCAP Stowell-Orbison Pathologist-in-Training Awards 2027",
+      "society": "United States and Canadian Academy of Pathology",
+      "amount": "Up to four $500 prizes",
+      "category": "Presentation prize",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "Pathology residents or fellows who are major-contributor first authors of one qualifying USCAP annual-meeting abstract/poster.",
+      "url": "https://uscap.org/stowell-orbison-awards/",
+      "conferenceId": "uscap27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Complete the USCAP poster award eligibility verification during regular abstract submission.",
+      "note": "Surgical pathology and autopsy pathology subsidiary prizes also considered.",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://uscap.org/stowell-orbison-awards/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
+      "fieldSources": {}
+    },
+    {
+      "id": "uscap-travel27",
+      "name": "USCAP 2027 Pathologist-in-Training Travel Award",
+      "society": "United States and Canadian Academy of Pathology",
+      "amount": "$1,000; 20 awards",
+      "category": "Travel award",
+      "open": null,
+      "opens": null,
+      "deadline": null,
+      "deadlineLabel": "Application deadline",
+      "eligibility": "US- or Canada-based USCAP-member pathology trainees who are first authors of an accepted 2027 Annual Meeting abstract.",
+      "url": "https://uscap.org/pathologist-in-training-travel-award/",
+      "conferenceId": "uscap27",
+      "scope": "standalone",
+      "nominationBased": false,
+      "applicationProcess": "Separate application opens November 2026; deadline not yet set.",
+      "note": "Application expected to open November 2026, no day confirmed.",
+      "flag": null,
+      "specialties": [
+        "Pathology"
+      ],
+      "lastVerified": "2026-10-24",
+      "verificationSource": "https://uscap.org/pathologist-in-training-travel-award/",
+      "verificationNote": "Society award details reviewed; dates represent confirmed published cycle only.",
       "fieldSources": {}
     }
   ],

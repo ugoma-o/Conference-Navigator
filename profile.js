@@ -12,7 +12,7 @@
   const programs = [
     'Internal Medicine', 'General Surgery', 'Family Medicine',
     'Obstetrics & Gynecology', 'Pediatrics', 'Emergency Medicine',
-    'Psychiatry', 'Neurology', 'Anesthesiology', 'Diagnostic Radiology',
+    'Psychiatry', 'Neurology', 'Anesthesiology', 'Diagnostic Radiology', 'Interventional Radiology',
     'Radiation Oncology', 'Pathology', 'Dermatology',
     'Orthopaedic Surgery', 'Neurosurgery', 'Otolaryngology',
     'Ophthalmology', 'Urology', 'Plastic Surgery',
