@@ -1,4 +1,7 @@
 name: Publish RISE static website
+# Keep the public GitHub Pages release tied to the actual static asset commits.
+# This release refresh verifies the November 2026 IR specialty rollout.
+run-name: "RISE GitHub Pages deployment — ${{ github.ref_name }}"
 on:
   push:
     branches: [main]
