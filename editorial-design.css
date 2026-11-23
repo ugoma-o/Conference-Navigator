@@ -2085,3 +2085,25 @@ html[data-theme="dark"] .award-verified{color:var(--ed-muted,#aac2ce)}
 .brand-home:hover .workspace-name,
 .brand-home:hover .brand-subtitle {text-decoration:underline;text-underline-offset:4px}
 .brand-home:focus-visible {outline:3px solid #0a9393;outline-offset:4px}
+
+/* Outlook navigation is a readable, accessible affordance within the navy header. */
+html:not([data-design="classic"]) .horizon-top .horizon-swipe-hint,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-top .horizon-swipe-hint{
+  color:var(--rise-header-sub);
+  font-size:12px;
+  font-weight:650;
+}
+html:not([data-design="classic"]) .horizon-top .horizon-nudge,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-top .horizon-nudge{
+  background:transparent;
+  color:#fff;
+  border:1px solid #82abbc;
+  border-radius:5px;
+}
+html:not([data-design="classic"]) .horizon-top .horizon-nudge:hover:not(:disabled),
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-top .horizon-nudge:hover:not(:disabled){
+  background:#20526d;
+  border-color:#b2dce4;
+}
+html:not([data-design="classic"]) .horizon-nudge .horizon-chevron,
+html[data-theme="dark"]:not([data-design="classic"]) .horizon-nudge .horizon-chevron{color:inherit}

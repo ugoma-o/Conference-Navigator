@@ -173,6 +173,24 @@ function matchesMonth(c,m,type='all'){return (!m&&(type==='all'||Array.isArray(t
 function selectedDate(c){return monthMatches(c,state.monthKey,state.dateTypes)[0]?.day||'9999'}
 const DATE_TYPE_NAMES={all:'all dates',meeting:'meeting dates',open:'abstract openings',deadline:'abstract deadlines'};
 function horizonMonths(){const t=new Date(today.getFullYear(),today.getMonth(),1);return Array.from({length:18},(_,i)=>{const d=new Date(t.getFullYear(),t.getMonth()+i,1);return key(d).slice(0,7)})}
+function updateHorizonNavigation(){
+ const scroll=get('horizonScroll'),view=get('horizonViewport');
+ const max=Math.max(0,scroll.scrollWidth-scroll.clientWidth);
+ const hasOverflow=max>2;
+ const canGoBack=hasOverflow&&scroll.scrollLeft>2;
+ const canGoForward=hasOverflow&&scroll.scrollLeft<max-2;
+ get('outlookPrev').disabled=!canGoBack;
+ get('outlookNext').disabled=!canGoForward;
+ get('horizonSwipeHint').hidden=!hasOverflow;
+ view.classList.toggle('can-scroll-left',canGoBack);
+ view.classList.toggle('can-scroll-right',canGoForward);
+}
+function moveHorizon(direction){
+ const scroll=get('horizonScroll');
+ const distance=Math.max(129,Math.round(scroll.clientWidth*.78));
+ const reduceMotion=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ scroll.scrollBy({left:direction*distance,behavior:reduceMotion?'auto':'smooth'});
+}
 function renderHorizon(){
  const list=C.filter(c=>matchesSelectedSpecialty(c.specialty,state.specialties));
  const months=horizonMonths();const yearGroups=new Map();
@@ -197,6 +215,7 @@ function renderHorizon(){
  const typeText=state.dateTypes.length?state.dateTypes.map(t=>DATE_TYPE_NAMES[t]).join(', '):'all date types';
  const msg=state.dateTypes.length?'Showing '+typeText+when+'.':state.monthKey?'Showing all recorded date types'+when+'.':'Select date types and/or a month to filter conferences.';
  get('horizonContext').textContent=msg;get('clearMonth').classList.toggle('hidden',!state.monthKey);
+ requestAnimationFrame(updateHorizonNavigation);
 }
 function applyDateView(){
  state.dateTypes=[...document.querySelectorAll('input[name="date-type"]:checked')].map(input=>input.value);
@@ -238,6 +257,10 @@ function clearAllConferenceFilters(){
 get('clearAllFilters').addEventListener('click',clearAllConferenceFilters);
 get('horizonStrip').addEventListener('click',e=>{const btn=e.target.closest('[data-outlook-month]');if(!btn)return;selectOutlookMonth(state.monthKey===btn.dataset.outlookMonth?null:btn.dataset.outlookMonth)});
 get('clearMonth').addEventListener('click',()=>selectOutlookMonth(null));
+get('outlookPrev').addEventListener('click',()=>moveHorizon(-1));
+get('outlookNext').addEventListener('click',()=>moveHorizon(1));
+get('horizonScroll').addEventListener('scroll',updateHorizonNavigation,{passive:true});
+window.addEventListener('resize',updateHorizonNavigation);
 const specialties=['All specialties',...new Set(C.map(c=>c.specialty))].sort((a,b)=>a==='All specialties'?-1:b==='All specialties'?1:a.localeCompare(b));
 const fundingSpecialties=['All specialties',...new Set(A.flatMap(a=>a.specialties||[]).filter(s=>s!=='All specialties'))].sort((a,b)=>a==='All specialties'?-1:b==='All specialties'?1:a.localeCompare(b));
 function awardSpecialties(a){return a.specialties?.length?a.specialties:(a.conferenceId?[C.find(c=>c.id===a.conferenceId)?.specialty].filter(Boolean):['All specialties']);}

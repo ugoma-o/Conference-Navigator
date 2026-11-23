@@ -1141,3 +1141,33 @@ html[data-theme="dark"] .v7-roadmap .v6-bottom-rail {
     padding:9px 11px;
   }
 }
+
+/* The 18-month horizon visibly advertises its horizontal overflow. */
+.horizon-top .horizon-actions{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:9px}
+.horizon-top .horizon-swipe-hint{font-size:11.5px;font-weight:650;color:#58768b;white-space:nowrap}
+.horizon-swipe-hint[hidden]{display:none!important}
+.horizon-nav{display:inline-flex;align-items:center;gap:5px;flex:0 0 auto}
+.horizon-nudge{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:0;background:#f7fbfe;border:1px solid #b7d2e0;border-radius:7px;color:#006098;transition:background .15s,border-color .15s,opacity .15s}
+.horizon-nudge:hover:not(:disabled){background:#e5f3fa;border-color:#0077a5}
+.horizon-nudge:disabled{opacity:.36;cursor:not-allowed}
+.horizon-nudge:focus-visible{outline:3px solid #e6a052;outline-offset:2px}
+.horizon-nudge .horizon-chevron{display:block;width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;color:inherit}
+.horizon-chevron-left{transform:rotate(135deg);margin-left:4px}
+.horizon-chevron-right{transform:rotate(-45deg);margin-right:4px}
+.horizon-viewport{position:relative;min-width:0}
+.horizon-viewport::before,.horizon-viewport::after{content:"";position:absolute;top:0;bottom:0;width:23px;z-index:5;pointer-events:none;opacity:0;transition:opacity .18s}
+.horizon-viewport::before{left:0;background:linear-gradient(to right,var(--ed-paper,#fff),transparent)}
+.horizon-viewport::after{right:0;background:linear-gradient(to left,var(--ed-paper,#fff),transparent)}
+.horizon-viewport.can-scroll-left::before,.horizon-viewport.can-scroll-right::after{opacity:1}
+.horizon-scroll{scroll-behavior:smooth;-webkit-overflow-scrolling:touch}
+.horizon-scroll:focus-visible{outline:2px solid #0077a5;outline-offset:-2px}
+@media(max-width:750px){
+ .horizon-top{flex-wrap:wrap}
+ .horizon-top .horizon-actions{width:100%;justify-content:space-between;gap:8px}
+ .horizon-top .horizon-swipe-hint{font-size:11px}
+ .horizon-nudge{width:39px;height:39px}
+}
+@media(prefers-reduced-motion:reduce){
+ .horizon-scroll{scroll-behavior:auto}
+ .horizon-viewport::before,.horizon-viewport::after{transition:none}
+}
